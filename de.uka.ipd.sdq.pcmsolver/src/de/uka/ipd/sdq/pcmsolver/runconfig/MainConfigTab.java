@@ -24,8 +24,7 @@ import org.eclipse.swt.widgets.DirectoryDialog;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
-
-import de.uka.ipd.sdq.workflow.pcm.runconfig.FileNamesInputTab;
+import org.palladiosimulator.analyzer.workflow.runconfig.FileNamesInputTab;
 
 public class MainConfigTab extends FileNamesInputTab {
 

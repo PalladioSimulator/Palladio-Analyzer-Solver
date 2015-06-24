@@ -3,10 +3,10 @@ package de.uka.ipd.sdq.pcmsolver.runconfig;
 import org.eclipse.debug.ui.AbstractLaunchConfigurationTabGroup;
 import org.eclipse.debug.ui.ILaunchConfigurationDialog;
 import org.eclipse.debug.ui.ILaunchConfigurationTab;
+import org.palladiosimulator.analyzer.workflow.runconfig.ConfigurationTab;
+import org.palladiosimulator.analyzer.workflow.runconfig.FileNamesInputTab;
 
 import de.uka.ipd.sdq.workflow.launchconfig.tabs.DebugEnabledCommonTab;
-import de.uka.ipd.sdq.workflow.pcm.runconfig.ConfigurationTab;
-import de.uka.ipd.sdq.workflow.pcm.runconfig.FileNamesInputTab;
 
 /**
  * The configuration tabs shown in the run dialog or debug dialog for the PCM Solver launch.

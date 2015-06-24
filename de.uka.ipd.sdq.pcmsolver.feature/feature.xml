@@ -51,7 +51,7 @@ dependencies.
       <import plugin="org.palladiosimulator.pcm.dialogs"/>
       <import plugin="de.uka.ipd.sdq.dialogs"/>
       <import plugin="de.uka.ipd.sdq.workflow.mdsd"/>
-      <import plugin="de.uka.ipd.sdq.workflow.pcm"/>
+      <import plugin="org.palladiosimulator.analyzer.workflow"/>
       <import plugin="de.fzi.se.accuracy" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.apache.commons.math" version="2.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.common"/>

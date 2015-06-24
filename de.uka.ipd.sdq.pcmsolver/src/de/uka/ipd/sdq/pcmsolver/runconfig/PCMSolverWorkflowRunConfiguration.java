@@ -1,6 +1,6 @@
 package de.uka.ipd.sdq.pcmsolver.runconfig;
 
-import de.uka.ipd.sdq.workflow.pcm.configurations.AbstractCodeGenerationWorkflowRunConfiguration;
+import org.palladiosimulator.analyzer.workflow.configurations.AbstractCodeGenerationWorkflowRunConfiguration;
 
 public class PCMSolverWorkflowRunConfiguration extends
 		AbstractCodeGenerationWorkflowRunConfiguration {

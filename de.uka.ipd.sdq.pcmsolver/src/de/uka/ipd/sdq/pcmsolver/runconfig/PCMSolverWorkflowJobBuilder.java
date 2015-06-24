@@ -1,10 +1,10 @@
 package de.uka.ipd.sdq.pcmsolver.runconfig;
 
 import org.eclipse.debug.core.ILaunch;
+import org.palladiosimulator.analyzer.workflow.configurations.AbstractPCMWorkflowRunConfiguration;
+import org.palladiosimulator.analyzer.workflow.jobs.PCMWorkflowJobBuilder;
 
 import de.uka.ipd.sdq.workflow.jobs.IJob;
-import de.uka.ipd.sdq.workflow.pcm.configurations.AbstractPCMWorkflowRunConfiguration;
-import de.uka.ipd.sdq.workflow.pcm.jobs.PCMWorkflowJobBuilder;
 
 /**
  * This class creates a workflow for a PCM solver analysis.
@@ -31,7 +31,7 @@ public class PCMSolverWorkflowJobBuilder extends PCMWorkflowJobBuilder {
 
 	/*
 	 * (non-Javadoc)
-	 * @see de.uka.ipd.sdq.workflow.pcm.jobs.PCMWorkflowJobBuilder#buildJob(de.uka.ipd.sdq.workflow.pcm.configurations.AbstractPCMWorkflowRunConfiguration)
+	 * @see org.palladiosimulator.analyzer.workflow.jobs.PCMWorkflowJobBuilder#buildJob(org.palladiosimulator.analyzer.workflow.configurations.AbstractPCMWorkflowRunConfiguration)
 	 */
 	public IJob buildJob(AbstractPCMWorkflowRunConfiguration config) {
 		return new PCMSolverJob(
