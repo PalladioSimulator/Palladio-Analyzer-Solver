@@ -18,131 +18,127 @@ import de.uka.ipd.sdq.spa.expression.util.ExpressionSwitch;
 
 public class PerformanceVisitor {
 
-	private PerformanceAlternativeHandler altHandler;
+    private PerformanceAlternativeHandler altHandler;
 
-	private PerformanceLoopHandler loopHandler;
+    private PerformanceLoopHandler loopHandler;
 
-	private PerformanceSequenceHandler seqHandler;
+    private PerformanceSequenceHandler seqHandler;
 
-	private PerformanceSymbolHandler symHandler;
+    private PerformanceSymbolHandler symHandler;
 
-	private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
-	
-	private ExpressionSwitch exprswitch = new ExpressionSwitch() {
+    private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
 
-		@Override
-		public Object caseAlternative(Alternative alternative) {
-			doSwitch(alternative.getLeftOption().getRegexp());
-			doSwitch(alternative.getRightOption().getRegexp());
-			altHandler.handle(alternative);
-			return alternative;
-		}
+    private ExpressionSwitch exprswitch = new ExpressionSwitch() {
 
-		@Override
-		public Object caseLoop(Loop loop) {
-			doSwitch(loop.getRegExp());
-			loopHandler.handle(loop);
-			return loop;
-		}
+        @Override
+        public Object caseAlternative(Alternative alternative) {
+            doSwitch(alternative.getLeftOption().getRegexp());
+            doSwitch(alternative.getRightOption().getRegexp());
+            altHandler.handle(alternative);
+            return alternative;
+        }
 
-		@Override
-		public Object caseSequence(Sequence sequence) {
-			doSwitch(sequence.getLeftRegExp());
-			doSwitch(sequence.getRightRegExp());
-			seqHandler.handle(sequence);
-			return sequence;
-		}
+        @Override
+        public Object caseLoop(Loop loop) {
+            doSwitch(loop.getRegExp());
+            loopHandler.handle(loop);
+            return loop;
+        }
 
-		@Override
-		public Object caseSymbol(Symbol symbol) {
-			symHandler.handle(symbol);
-			return symbol;
-		}
+        @Override
+        public Object caseSequence(Sequence sequence) {
+            doSwitch(sequence.getLeftRegExp());
+            doSwitch(sequence.getRightRegExp());
+            seqHandler.handle(sequence);
+            return sequence;
+        }
 
-	};
+        @Override
+        public Object caseSymbol(Symbol symbol) {
+            symHandler.handle(symbol);
+            return symbol;
+        }
 
-	
-	private PerformanceVisitor(){
-		super();
-	}
+    };
 
-	public PerformanceVisitor(PerformanceAlternativeHandler altHandler,
-			PerformanceLoopHandler loopHandler,
-			PerformanceSequenceHandler seqHandler,
-			PerformanceSymbolHandler symHandler, Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
-		this();
-		this.altHandler = altHandler;
-		this.loopHandler = loopHandler;
-		this.seqHandler = seqHandler;
-		this.symHandler = symHandler;
-		this.pdfTable = pdfTable;
-	}
+    private PerformanceVisitor() {
+        super();
+    }
 
-	public PerformanceVisitor(PerformanceHandlerFactory factory) {
-		this();
-		this.altHandler = factory.createAlternativeHandler();
-		this.seqHandler = factory.createSequenceHandler();
-		this.loopHandler = factory.createLoopHandler();
-		this.symHandler = factory.createSymbolHandler();
-		pdfTable = factory.getPdfTable();
-	}
+    public PerformanceVisitor(PerformanceAlternativeHandler altHandler, PerformanceLoopHandler loopHandler,
+            PerformanceSequenceHandler seqHandler, PerformanceSymbolHandler symHandler,
+            Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
+        this();
+        this.altHandler = altHandler;
+        this.loopHandler = loopHandler;
+        this.seqHandler = seqHandler;
+        this.symHandler = symHandler;
+        this.pdfTable = pdfTable;
+    }
 
-	public IProbabilityDensityFunction getResponseTime(
-			Expression expression) {
-		try {
-			if (pdfTable.get(expression) == null) {
-				exprswitch.doSwitch(expression);
-			}
-			return pdfTable.get(expression).getInverseFourierTransform();
-		} catch (FunctionNotInFrequencyDomainException e) {
-			e.printStackTrace();
-			System.exit(1);
-		}
-		return null;
-	}
+    public PerformanceVisitor(PerformanceHandlerFactory factory) {
+        this();
+        this.altHandler = factory.createAlternativeHandler();
+        this.seqHandler = factory.createSequenceHandler();
+        this.loopHandler = factory.createLoopHandler();
+        this.symHandler = factory.createSymbolHandler();
+        pdfTable = factory.getPdfTable();
+    }
 
-	public void reset() {
-		pdfTable.clear();
-	}
+    public IProbabilityDensityFunction getResponseTime(Expression expression) {
+        try {
+            if (pdfTable.get(expression) == null) {
+                exprswitch.doSwitch(expression);
+            }
+            return pdfTable.get(expression).getInverseFourierTransform();
+        } catch (FunctionNotInFrequencyDomainException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+        return null;
+    }
 
-	public void setPDFTable(
-			Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
-		this.pdfTable = pdfTable;
-		loopHandler.setPdfTable(pdfTable);
-		altHandler.setPdfTable(pdfTable);
-		seqHandler.setPdfTable(pdfTable);
-		symHandler.setPdfTable(pdfTable);
-	}
+    public void reset() {
+        pdfTable.clear();
+    }
 
-	public AlternativeHandler getAltHandler() {
-		return altHandler;
-	}
+    public void setPDFTable(Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
+        this.pdfTable = pdfTable;
+        loopHandler.setPdfTable(pdfTable);
+        altHandler.setPdfTable(pdfTable);
+        seqHandler.setPdfTable(pdfTable);
+        symHandler.setPdfTable(pdfTable);
+    }
 
-	public void setAltHandler(PerformanceAlternativeHandler altHandler) {
-		this.altHandler = altHandler;
-	}
+    public AlternativeHandler getAltHandler() {
+        return altHandler;
+    }
 
-	public LoopHandler getLoopHandler() {
-		return loopHandler;
-	}
+    public void setAltHandler(PerformanceAlternativeHandler altHandler) {
+        this.altHandler = altHandler;
+    }
 
-	public void setLoopHandler(PerformanceLoopHandler loopHandler) {
-		this.loopHandler = loopHandler;
-	}
+    public LoopHandler getLoopHandler() {
+        return loopHandler;
+    }
 
-	public SequenceHandler getSeqHandler() {
-		return seqHandler;
-	}
+    public void setLoopHandler(PerformanceLoopHandler loopHandler) {
+        this.loopHandler = loopHandler;
+    }
 
-	public void setSeqHandler(PerformanceSequenceHandler seqHandler) {
-		this.seqHandler = seqHandler;
-	}
+    public SequenceHandler getSeqHandler() {
+        return seqHandler;
+    }
 
-	public SymbolHandler getSymHandler() {
-		return symHandler;
-	}
+    public void setSeqHandler(PerformanceSequenceHandler seqHandler) {
+        this.seqHandler = seqHandler;
+    }
 
-	public void setSymHandler(PerformanceSymbolHandler symHandler) {
-		this.symHandler = symHandler;
-	}
+    public SymbolHandler getSymHandler() {
+        return symHandler;
+    }
+
+    public void setSymHandler(PerformanceSymbolHandler symHandler) {
+        this.symHandler = symHandler;
+    }
 }

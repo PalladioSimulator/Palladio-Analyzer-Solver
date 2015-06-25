@@ -14,64 +14,56 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 import de.uka.ipd.sdq.spa.SpaPackage;
 
-
 public class EMFTools {
-	
-	@SuppressWarnings("unchecked")
-	public static EObject loadFromXMI(String fileName) {
+
+    public static EObject loadFromXMI(final String fileName) {
         // Create a resource set to hold the resources.
-        ResourceSet resourceSet = new ResourceSetImpl();
+        final ResourceSet resourceSet = new ResourceSetImpl();
 
         // Register the appropriate resource factory to handle all file
         // extentions.
         resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
-                .put(Resource.Factory.Registry.DEFAULT_EXTENSION,
-                        new XMIResourceFactoryImpl());
+                .put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 
         // Register the package to ensure it is available during loading.
-        resourceSet.getPackageRegistry().put(SpaPackage.eNS_URI,
-        		SpaPackage.eINSTANCE);
+        resourceSet.getPackageRegistry().put(SpaPackage.eNS_URI, SpaPackage.eINSTANCE);
 
         // Construct the URI for the instance file.
         // The argument is treated as a file path only if it denotes an existing
         // file. Otherwise, it's directly treated as a URL.
-        File file = new File(fileName);
-        URI uri = file.isFile() ? URI.createFileURI(file.getAbsolutePath())
-                : URI.createURI(fileName);
+        final File file = new File(fileName);
+        final URI uri = file.isFile() ? URI.createFileURI(file.getAbsolutePath()) : URI.createURI(fileName);
 
         // Demand load resource for this file.
-        Resource resource = resourceSet.getResource(uri, true);
+        final Resource resource = resourceSet.getResource(uri, true);
         System.out.println("Loaded " + uri);
 
-   
-        EObject eObject = (EObject)resource.getContents().iterator().next();
+        final EObject eObject = resource.getContents().iterator().next();
         return EcoreUtil.getRootContainer(eObject);
     }
-	
-	@SuppressWarnings("unchecked")
-	public static void saveToXMI(EObject objectToSave, String fileName) {
-		  // Create a resource set.
-		  ResourceSet resourceSet = new ResourceSetImpl();
 
-		  // Register the default resource factory -- only needed for stand-alone!
-		  resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put(
-		    Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
+    public static void saveToXMI(final EObject objectToSave, final String fileName) {
+        // Create a resource set.
+        final ResourceSet resourceSet = new ResourceSetImpl();
 
-		  // Get the URI of the model file.
-		  URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
+        // Register the default resource factory -- only needed for stand-alone!
+        resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
+                .put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
 
-		  // Create a resource for this file.
-		  Resource resource = resourceSet.createResource(fileURI);
+        // Get the URI of the model file.
+        final URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
 
-		  // Add the book and writer objects to the contents.
-		  resource.getContents().add(objectToSave);
+        // Create a resource for this file.
+        final Resource resource = resourceSet.createResource(fileURI);
 
-		  // Save the contents of the resource to the file system.
-		  try
-		  {
-		    resource.save(Collections.EMPTY_MAP);
-		  }
-		  catch (IOException e) {}
-	}	
+        // Add the book and writer objects to the contents.
+        resource.getContents().add(objectToSave);
+
+        // Save the contents of the resource to the file system.
+        try {
+            resource.save(Collections.EMPTY_MAP);
+        } catch (final IOException e) {
+        }
+    }
 
 }

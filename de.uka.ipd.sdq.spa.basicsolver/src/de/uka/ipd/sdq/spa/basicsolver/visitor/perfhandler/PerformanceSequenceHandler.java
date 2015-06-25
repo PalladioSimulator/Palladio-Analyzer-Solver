@@ -19,45 +19,41 @@ import de.uka.ipd.sdq.spa.expression.Sequence;
  */
 public class PerformanceSequenceHandler implements SequenceHandler {
 
-	private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
+    private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
 
-	protected PerformanceSequenceHandler(
-			Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
-		super();
-		this.pdfTable = pdfTable;
-	}
+    protected PerformanceSequenceHandler(Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
+        super();
+        this.pdfTable = pdfTable;
+    }
 
-	public void handle(Sequence seq) {
-		try {
-			IProbabilityDensityFunction leftDF = pdfTable.get(seq
-					.getLeftRegExp());
-			IProbabilityDensityFunction rightDF = pdfTable.get(seq
-					.getRightRegExp());
-			IProbabilityDensityFunction seqPDF = leftDF.mult(rightDF);
-			pdfTable.put(seq, seqPDF);
-		} catch (FunctionsInDifferenDomainsException e) {
-			e.printStackTrace();
-			System.exit(1);
-		} catch (UnknownPDFTypeException e) {
-			e.printStackTrace();
-			System.exit(1);
-		} catch (IncompatibleUnitsException e) {
-			e.printStackTrace();
-			System.exit(1);
-		}
-	}
+    public void handle(Sequence seq) {
+        try {
+            IProbabilityDensityFunction leftDF = pdfTable.get(seq.getLeftRegExp());
+            IProbabilityDensityFunction rightDF = pdfTable.get(seq.getRightRegExp());
+            IProbabilityDensityFunction seqPDF = leftDF.mult(rightDF);
+            pdfTable.put(seq, seqPDF);
+        } catch (FunctionsInDifferenDomainsException e) {
+            e.printStackTrace();
+            System.exit(1);
+        } catch (UnknownPDFTypeException e) {
+            e.printStackTrace();
+            System.exit(1);
+        } catch (IncompatibleUnitsException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
 
-	public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable() {
-		return pdfTable;
-	}
+    public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable() {
+        return pdfTable;
+    }
 
-	public void setPdfTable(
-			Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
-		this.pdfTable = pdfTable;
-	}
+    public void setPdfTable(Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
+        this.pdfTable = pdfTable;
+    }
 
-	protected PerformanceSequenceHandler() {
-		super();
-	}
+    protected PerformanceSequenceHandler() {
+        super();
+    }
 
 }

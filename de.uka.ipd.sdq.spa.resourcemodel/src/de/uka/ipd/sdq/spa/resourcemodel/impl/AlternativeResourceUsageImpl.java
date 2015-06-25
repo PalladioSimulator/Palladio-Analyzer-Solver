@@ -33,6 +33,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public class AlternativeResourceUsageImpl extends AbstractResourceUsageImpl implements AlternativeResourceUsage {
+
     /**
      * The cached value of the '{@link #getOptions() <em>Options</em>}' containment reference list.
      * <!-- begin-user-doc --> <!-- end-user-doc -->

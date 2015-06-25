@@ -21,85 +21,92 @@ import de.uka.ipd.sdq.spa.resourcemodel.ActiveResource;
 import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
 
 public class PerformanceSolver {
-	
-	private IProbabilityFunctionFactory pfFactory = IProbabilityFunctionFactory.eINSTANCE;
-	
-	private RUPerformanceOps performanceOps;
-	
-	private ExpressionSwitch exprSwitch = new ExpressionSwitch() {
 
-		@Override
-		public Object caseAcquire(Acquire object) {
-			System.err.println("Acquire ignored in performance computation!");
-			return super.caseAcquire(object);
-		}
+    private final IProbabilityFunctionFactory pfFactory = IProbabilityFunctionFactory.eINSTANCE;
 
-		@SuppressWarnings("unchecked")
-		@Override
-		public Object caseAlternative(Alternative object) {
-			 
-			Hashtable<ActiveResource, ManagedPDF> leftRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(object.getLeftOption().getRegexp());
-			Hashtable<ActiveResource, ManagedPDF> rightRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(object.getRightOption().getRegexp());
-			double leftProb = object.getLeftOption().getProbability();
-			double rightProb = object.getRightOption().getProbability();
-			return performanceOps.computeAlternative(leftRUs, leftProb , rightRUs, rightProb);
-		}
+    private final RUPerformanceOps performanceOps;
 
-		@SuppressWarnings("unchecked")
-		@Override
-		public Object caseLoop(Loop loop) {
-			Hashtable<ActiveResource, ManagedPDF> innerRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(loop.getRegExp());
-			IProbabilityMassFunction iterations = pfFactory.transformToPMF( loop.getIterationsPMF() );
-			try {
-				return performanceOps.computeIteration(innerRUs, iterations);
-			} catch (ConfigurationNotSetException e) {
-				e.printStackTrace();
-				System.exit(-1);
-				return null;
-			}
-		}
+    private final ExpressionSwitch exprSwitch = new ExpressionSwitch() {
 
-		@SuppressWarnings("unchecked")
-		@Override
-		public Object caseParallel(Parallel object) {
-			Hashtable<ActiveResource, ManagedPDF> leftRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(object.getLeftTask());
-			Hashtable<ActiveResource, ManagedPDF> rightRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(object.getRightTask());
-			return performanceOps.computeParallel(leftRUs, rightRUs);
-		}
+        @Override
+        public Object caseAcquire(final Acquire object) {
+            System.err.println("Acquire ignored in performance computation!");
+            return super.caseAcquire(object);
+        }
 
-		@Override
-		public Object caseRelease(Release object) {
-			System.err.println("Release ignored in performance prediction!");
-			return super.caseRelease(object);
-		}
+        @SuppressWarnings("unchecked")
+        @Override
+        public Object caseAlternative(final Alternative object) {
 
-		@SuppressWarnings("unchecked")
-		@Override
-		public Object caseSequence(Sequence object) {
-			Hashtable<ActiveResource, ManagedPDF> leftRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(object.getLeftRegExp());
-			Hashtable<ActiveResource, ManagedPDF> rightRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(object.getRightRegExp());
-			return performanceOps.computeSequence(leftRUs, rightRUs);
-		}
+            final Hashtable<ActiveResource, ManagedPDF> leftRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(
+                    object.getLeftOption().getRegexp());
+            final Hashtable<ActiveResource, ManagedPDF> rightRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(
+                    object.getRightOption().getRegexp());
+            final double leftProb = object.getLeftOption().getProbability();
+            final double rightProb = object.getRightOption().getProbability();
+            return PerformanceSolver.this.performanceOps.computeAlternative(leftRUs, leftProb, rightRUs, rightProb);
+        }
 
-		@SuppressWarnings("unchecked")
-		@Override
-		public Object caseSymbol(Symbol symbol) {
-			List<ResourceUsage> resourceUsageList = (List<ResourceUsage>) symbol.getResourceUsages();
-			return performanceOps.getResourceUsageTimes(resourceUsageList);
-		}
-	};
-	
-	public PerformanceSolver(RUPerformanceOps performanceOps){
-		this.performanceOps = performanceOps;
-	}
-	
-	public PerformanceSolver(){
-		this.performanceOps = new RUPerformanceOps();
-	}
+        @SuppressWarnings("unchecked")
+        @Override
+        public Object caseLoop(final Loop loop) {
+            final Hashtable<ActiveResource, ManagedPDF> innerRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(
+                    loop.getRegExp());
+            final IProbabilityMassFunction iterations = PerformanceSolver.this.pfFactory
+                    .transformToPMF(loop.getIterationsPMF());
+            try {
+                return PerformanceSolver.this.performanceOps.computeIteration(innerRUs, iterations);
+            } catch (final ConfigurationNotSetException e) {
+                e.printStackTrace();
+                System.exit(-1);
+                return null;
+            }
+        }
 
-	@SuppressWarnings("unchecked")
-	public Hashtable<ActiveResource, ManagedPDF> getResourceUsageTimes(Expression expression){
-		return (Hashtable<ActiveResource, ManagedPDF>) exprSwitch.doSwitch(expression);
-	}
+        @SuppressWarnings("unchecked")
+        @Override
+        public Object caseParallel(final Parallel object) {
+            final Hashtable<ActiveResource, ManagedPDF> leftRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(
+                    object.getLeftTask());
+            final Hashtable<ActiveResource, ManagedPDF> rightRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(
+                    object.getRightTask());
+            return PerformanceSolver.this.performanceOps.computeParallel(leftRUs, rightRUs);
+        }
+
+        @Override
+        public Object caseRelease(final Release object) {
+            System.err.println("Release ignored in performance prediction!");
+            return super.caseRelease(object);
+        }
+
+        @SuppressWarnings("unchecked")
+        @Override
+        public Object caseSequence(final Sequence object) {
+            final Hashtable<ActiveResource, ManagedPDF> leftRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(
+                    object.getLeftRegExp());
+            final Hashtable<ActiveResource, ManagedPDF> rightRUs = (Hashtable<ActiveResource, ManagedPDF>) doSwitch(
+                    object.getRightRegExp());
+            return PerformanceSolver.this.performanceOps.computeSequence(leftRUs, rightRUs);
+        }
+
+        @Override
+        public Object caseSymbol(final Symbol symbol) {
+            final List<ResourceUsage> resourceUsageList = symbol.getResourceUsages();
+            return PerformanceSolver.this.performanceOps.getResourceUsageTimes(resourceUsageList);
+        }
+    };
+
+    public PerformanceSolver(final RUPerformanceOps performanceOps) {
+        this.performanceOps = performanceOps;
+    }
+
+    public PerformanceSolver() {
+        this.performanceOps = new RUPerformanceOps();
+    }
+
+    @SuppressWarnings("unchecked")
+    public Hashtable<ActiveResource, ManagedPDF> getResourceUsageTimes(final Expression expression) {
+        return (Hashtable<ActiveResource, ManagedPDF>) this.exprSwitch.doSwitch(expression);
+    }
 
 }

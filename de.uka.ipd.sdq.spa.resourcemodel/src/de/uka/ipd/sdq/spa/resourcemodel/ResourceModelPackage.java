@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.EReference;
  * @generated
  */
 public interface ResourceModelPackage extends EPackage {
+
     /**
      * The package name. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
@@ -703,6 +704,7 @@ public interface ResourceModelPackage extends EPackage {
      * @generated
      */
     interface Literals {
+
         /**
          * The meta object literal for the '
          * {@link de.uka.ipd.sdq.spa.resourcemodel.impl.SequentialResourceUsageImpl

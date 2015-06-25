@@ -23,7 +23,8 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- * <li>{@link de.uka.ipd.sdq.spa.resourcemodel.impl.OptionImpl#getProbability <em>Probability</em>}</li>
+ * <li>{@link de.uka.ipd.sdq.spa.resourcemodel.impl.OptionImpl#getProbability <em>Probability</em>}
+ * </li>
  * <li>{@link de.uka.ipd.sdq.spa.resourcemodel.impl.OptionImpl#getResourceUsage <em>Resource Usage
  * </em>}</li>
  * </ul>
@@ -32,6 +33,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public class OptionImpl extends EObjectImpl implements Option {
+
     /**
      * The default value of the '{@link #getProbability() <em>Probability</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
@@ -139,11 +141,11 @@ public class OptionImpl extends EObjectImpl implements Option {
         if (newResourceUsage != resourceUsage) {
             NotificationChain msgs = null;
             if (resourceUsage != null)
-                msgs = ((InternalEObject) resourceUsage).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-                        - ResourceModelPackage.OPTION__RESOURCE_USAGE, null, msgs);
+                msgs = ((InternalEObject) resourceUsage).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ResourceModelPackage.OPTION__RESOURCE_USAGE, null, msgs);
             if (newResourceUsage != null)
-                msgs = ((InternalEObject) newResourceUsage).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
-                        - ResourceModelPackage.OPTION__RESOURCE_USAGE, null, msgs);
+                msgs = ((InternalEObject) newResourceUsage).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ResourceModelPackage.OPTION__RESOURCE_USAGE, null, msgs);
             msgs = basicSetResourceUsage(newResourceUsage, msgs);
             if (msgs != null)
                 msgs.dispatch();

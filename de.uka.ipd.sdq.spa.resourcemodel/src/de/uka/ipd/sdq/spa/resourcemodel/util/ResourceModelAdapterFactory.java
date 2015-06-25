@@ -32,6 +32,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.SequentialResourceUsage;
  * @generated
  */
 public class ResourceModelAdapterFactory extends AdapterFactoryImpl {
+
     /**
      * The cached model package. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
@@ -75,6 +76,7 @@ public class ResourceModelAdapterFactory extends AdapterFactoryImpl {
      * @generated
      */
     protected ResourceModelSwitch modelSwitch = new ResourceModelSwitch() {
+
         public Object caseSequentialResourceUsage(SequentialResourceUsage object) {
             return createSequentialResourceUsageAdapter();
         }

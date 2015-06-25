@@ -25,6 +25,7 @@ import de.uka.ipd.sdq.probfunction.ProbabilityDensityFunction;
  * @generated
  */
 public interface ResourceUsage extends AbstractResourceUsage {
+
     /**
      * Returns the value of the '<em><b>Usage Time</b></em>' containment reference. <!--
      * begin-user-doc -->

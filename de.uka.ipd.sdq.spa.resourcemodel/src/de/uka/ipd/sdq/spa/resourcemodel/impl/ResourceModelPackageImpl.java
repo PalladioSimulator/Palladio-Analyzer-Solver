@@ -35,6 +35,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.SequentialResourceUsage;
  * @generated
  */
 public class ResourceModelPackageImpl extends EPackageImpl implements ResourceModelPackage {
+
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
@@ -162,8 +163,8 @@ public class ResourceModelPackageImpl extends EPackageImpl implements ResourceMo
 
         // Obtain or create and register package
         ResourceModelPackageImpl theResourceModelPackage = (ResourceModelPackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(eNS_URI) instanceof ResourceModelPackageImpl ? EPackage.Registry.INSTANCE
-                .getEPackage(eNS_URI) : new ResourceModelPackageImpl());
+                .getEPackage(eNS_URI) instanceof ResourceModelPackageImpl
+                        ? EPackage.Registry.INSTANCE.getEPackage(eNS_URI) : new ResourceModelPackageImpl());
 
         isInited = true;
 
@@ -495,11 +496,11 @@ public class ResourceModelPackageImpl extends EPackageImpl implements ResourceMo
         initEClass(passiveResourceEClass, PassiveResource.class, "PassiveResource", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
 
-        initEClass(contentionResourceEClass, ContentionResource.class, "ContentionResource", IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEClass(contentionResourceEClass, ContentionResource.class, "ContentionResource", IS_ABSTRACT, !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         initEAttribute(getContentionResource_NumReplicas(), ecorePackage.getEInt(), "numReplicas", null, 1, 1,
-                ContentionResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                ContentionResource.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
 
         initEClass(processingResourceEClass, ProcessingResource.class, "ProcessingResource", !IS_ABSTRACT,
                 !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -512,7 +513,8 @@ public class ResourceModelPackageImpl extends EPackageImpl implements ResourceMo
 
         initEClass(optionEClass, Option.class, "Option", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         initEAttribute(getOption_Probability(), ecorePackage.getEDouble(), "probability", null, 1, 1, Option.class,
-                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED,
+                IS_ORDERED);
         initEReference(getOption_ResourceUsage(), this.getAbstractResourceUsage(), null, "resourceUsage", null, 1, 1,
                 Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

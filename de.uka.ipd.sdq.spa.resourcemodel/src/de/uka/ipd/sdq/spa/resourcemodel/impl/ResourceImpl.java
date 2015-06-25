@@ -29,6 +29,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public abstract class ResourceImpl extends EObjectImpl implements Resource {
+
     /**
      * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!-- begin-user-doc
      * --> <!-- end-user-doc -->

@@ -20,6 +20,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public class ProcessingResourceImpl extends ContentionResourceImpl implements ProcessingResource {
+
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 

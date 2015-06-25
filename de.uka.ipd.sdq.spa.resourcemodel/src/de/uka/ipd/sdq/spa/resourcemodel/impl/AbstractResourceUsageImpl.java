@@ -21,6 +21,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public abstract class AbstractResourceUsageImpl extends EObjectImpl implements AbstractResourceUsage {
+
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 

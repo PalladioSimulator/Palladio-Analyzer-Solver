@@ -20,6 +20,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public abstract class ActiveResourceImpl extends ResourceImpl implements ActiveResource {
+
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>de.uka.ipd.sdq.spa.basicsolver</name>
+	<name>org.palladiosimulator.solver.spa.basicsolver</name>
 	<comment></comment>
 	<projects>
 	</projects>

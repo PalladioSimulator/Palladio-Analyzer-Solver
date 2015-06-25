@@ -23,6 +23,7 @@ package de.uka.ipd.sdq.spa.resourcemodel;
  * @generated
  */
 public interface ContentionResource extends Resource {
+
     /**
      * Returns the value of the '<em><b>Num Replicas</b></em>' attribute. <!-- begin-user-doc -->
      * <p>

@@ -35,6 +35,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.SequentialResourceUsage;
  * @generated
  */
 public class ResourceModelSwitch {
+
     /**
      * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
      * 

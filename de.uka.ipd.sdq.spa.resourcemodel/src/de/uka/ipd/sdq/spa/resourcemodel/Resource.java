@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Resource extends EObject {
+
     /**
      * Returns the value of the '<em><b>Name</b></em>' attribute. The default value is
      * <code>""</code>. <!-- begin-user-doc -->
@@ -44,8 +45,8 @@ public interface Resource extends EObject {
     String getName();
 
     /**
-     * Sets the value of the '{@link de.uka.ipd.sdq.spa.resourcemodel.Resource#getName
-     * <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '{@link de.uka.ipd.sdq.spa.resourcemodel.Resource#getName <em>Name</em>
+     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Name</em>' attribute.

@@ -25,6 +25,7 @@ import org.eclipse.emf.common.util.EList;
  * @generated
  */
 public interface AlternativeResourceUsage extends AbstractResourceUsage {
+
     /**
      * Returns the value of the '<em><b>Options</b></em>' containment reference list. The list
      * contents are of type {@link de.uka.ipd.sdq.spa.resourcemodel.Option}. <!-- begin-user-doc -->

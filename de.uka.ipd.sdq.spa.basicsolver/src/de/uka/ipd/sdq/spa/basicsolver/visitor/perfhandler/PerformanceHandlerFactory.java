@@ -15,32 +15,32 @@ import de.uka.ipd.sdq.spa.expression.Expression;
  */
 public class PerformanceHandlerFactory implements HandlerFactory {
 
-	private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
-	private int domainSize;
+    private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
+    private int domainSize;
 
-	public PerformanceHandlerFactory(int domainSize) {
-		super();
-		this.domainSize = domainSize;
-		this.pdfTable = new Hashtable<Expression, IProbabilityDensityFunction>();
-	}
+    public PerformanceHandlerFactory(int domainSize) {
+        super();
+        this.domainSize = domainSize;
+        this.pdfTable = new Hashtable<Expression, IProbabilityDensityFunction>();
+    }
 
-	public PerformanceSymbolHandler createSymbolHandler() {
-		return new PerformanceSymbolHandler(pdfTable, domainSize);
-	}
+    public PerformanceSymbolHandler createSymbolHandler() {
+        return new PerformanceSymbolHandler(pdfTable, domainSize);
+    }
 
-	public PerformanceSequenceHandler createSequenceHandler() {
-		return new PerformanceSequenceHandler(pdfTable);
-	}
+    public PerformanceSequenceHandler createSequenceHandler() {
+        return new PerformanceSequenceHandler(pdfTable);
+    }
 
-	public PerformanceAlternativeHandler createAlternativeHandler() {
-		return new PerformanceAlternativeHandler(pdfTable);
-	}
+    public PerformanceAlternativeHandler createAlternativeHandler() {
+        return new PerformanceAlternativeHandler(pdfTable);
+    }
 
-	public PerformanceLoopHandler createLoopHandler() {
-		return new PerformanceLoopHandler(pdfTable);
-	}
-	
-	public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable(){
-		return pdfTable;
-	}
+    public PerformanceLoopHandler createLoopHandler() {
+        return new PerformanceLoopHandler(pdfTable);
+    }
+
+    public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable() {
+        return pdfTable;
+    }
 }

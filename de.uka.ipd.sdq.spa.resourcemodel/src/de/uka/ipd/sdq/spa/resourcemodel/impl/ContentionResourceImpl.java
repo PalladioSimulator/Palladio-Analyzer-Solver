@@ -27,6 +27,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public abstract class ContentionResourceImpl extends ResourceImpl implements ContentionResource {
+
     /**
      * The default value of the '{@link #getNumReplicas() <em>Num Replicas</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->

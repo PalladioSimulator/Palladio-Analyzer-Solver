@@ -33,6 +33,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.SequentialResourceUsage;
  * @generated
  */
 public class SequentialResourceUsageImpl extends AbstractResourceUsageImpl implements SequentialResourceUsage {
+
     /**
      * The cached value of the '{@link #getResourceUsages() <em>Resource Usages</em>}' containment
      * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->

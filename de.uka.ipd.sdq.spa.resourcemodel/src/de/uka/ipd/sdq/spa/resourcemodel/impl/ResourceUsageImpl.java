@@ -33,6 +33,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
  * @generated
  */
 public class ResourceUsageImpl extends AbstractResourceUsageImpl implements ResourceUsage {
+
     /**
      * The cached value of the '{@link #getUsageTime() <em>Usage Time</em>}' containment reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -108,11 +109,11 @@ public class ResourceUsageImpl extends AbstractResourceUsageImpl implements Reso
         if (newUsageTime != usageTime) {
             NotificationChain msgs = null;
             if (usageTime != null)
-                msgs = ((InternalEObject) usageTime).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-                        - ResourceModelPackage.RESOURCE_USAGE__USAGE_TIME, null, msgs);
+                msgs = ((InternalEObject) usageTime).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ResourceModelPackage.RESOURCE_USAGE__USAGE_TIME, null, msgs);
             if (newUsageTime != null)
-                msgs = ((InternalEObject) newUsageTime).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
-                        - ResourceModelPackage.RESOURCE_USAGE__USAGE_TIME, null, msgs);
+                msgs = ((InternalEObject) newUsageTime).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ResourceModelPackage.RESOURCE_USAGE__USAGE_TIME, null, msgs);
             msgs = basicSetUsageTime(newUsageTime, msgs);
             if (msgs != null)
                 msgs.dispatch();

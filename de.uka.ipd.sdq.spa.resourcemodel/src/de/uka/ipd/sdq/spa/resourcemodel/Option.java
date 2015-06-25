@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Option extends EObject {
+
     /**
      * Returns the value of the '<em><b>Probability</b></em>' attribute. <!-- begin-user-doc -->
      * <p>

@@ -20,6 +20,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public class DelayResourceImpl extends ActiveResourceImpl implements DelayResource {
+
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 

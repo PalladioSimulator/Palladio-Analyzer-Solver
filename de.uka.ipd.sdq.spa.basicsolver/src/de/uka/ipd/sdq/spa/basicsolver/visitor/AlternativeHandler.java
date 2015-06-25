@@ -5,8 +5,6 @@ package de.uka.ipd.sdq.spa.basicsolver.visitor;
 
 import de.uka.ipd.sdq.spa.expression.Alternative;
 
-
-
 /**
  * An Alternative handler is responsible for handling Alternative instances.
  * 
@@ -14,6 +12,6 @@ import de.uka.ipd.sdq.spa.expression.Alternative;
  *
  */
 public interface AlternativeHandler {
-	
-	public void handle(Alternative alt) throws Exception;
+
+    public void handle(Alternative alt) throws Exception;
 }

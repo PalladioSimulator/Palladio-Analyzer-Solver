@@ -28,6 +28,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.SequentialResourceUsage;
  * @generated
  */
 public class ResourceModelFactoryImpl extends EFactoryImpl implements ResourceModelFactory {
+
     /**
      * Creates the default factory implementation. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 

@@ -5,7 +5,6 @@ package de.uka.ipd.sdq.spa.basicsolver.visitor;
 
 import de.uka.ipd.sdq.spa.expression.Loop;
 
-
 /**
  * A Loop handler is responsible for handling Loop instances.
  * 
@@ -13,7 +12,7 @@ import de.uka.ipd.sdq.spa.expression.Loop;
  *
  */
 public interface LoopHandler {
-	
-	public void handle(Loop loop) throws Exception;
-	
+
+    public void handle(Loop loop) throws Exception;
+
 }

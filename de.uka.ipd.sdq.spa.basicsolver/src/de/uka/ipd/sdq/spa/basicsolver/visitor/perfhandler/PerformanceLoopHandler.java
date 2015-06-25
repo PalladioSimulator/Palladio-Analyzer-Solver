@@ -26,80 +26,74 @@ import de.uka.ipd.sdq.spa.expression.Loop;
  */
 public class PerformanceLoopHandler implements LoopHandler {
 
-	private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
+    private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
 
-	private static IProbabilityFunctionFactory pfFactory = IProbabilityFunctionFactory.eINSTANCE;
+    private static IProbabilityFunctionFactory pfFactory = IProbabilityFunctionFactory.eINSTANCE;
 
-	protected PerformanceLoopHandler(
-			Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
-		super();
-		this.pdfTable = pdfTable;
-	}
+    protected PerformanceLoopHandler(Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
+        super();
+        this.pdfTable = pdfTable;
+    }
 
-	/**
-	 * the iterations of a loop have to be specified as a probability mass
-	 * functions whose samples are integer values (type Integer)
-	 * 
-	 * @throws UnknownPDFTypeException
-	 * @throws FunctionNotInTimeDomainException
-	 * @throws FunctionsInDifferenDomainsException
-	 */
-	public void handle(Loop loop) {
-		try {
-			
-			ISamplePDF innerPDF = pfFactory.transformToSamplePDF(pdfTable
-					.get(loop.getRegExp()));
-			IProbabilityMassFunction iterations = pfFactory.transformToPMF(loop.getIterationsPMF());
-			ISamplePDF result = solveIterative(iterations, innerPDF);
-			pdfTable.put(loop, result);
-			
-		} catch (ProbabilityFunctionException e) {
-			e.printStackTrace();
-			System.exit(1);
-		}
+    /**
+     * the iterations of a loop have to be specified as a probability mass functions whose samples
+     * are integer values (type Integer)
+     * 
+     * @throws UnknownPDFTypeException
+     * @throws FunctionNotInTimeDomainException
+     * @throws FunctionsInDifferenDomainsException
+     */
+    public void handle(Loop loop) {
+        try {
 
-	}
+            ISamplePDF innerPDF = pfFactory.transformToSamplePDF(pdfTable.get(loop.getRegExp()));
+            IProbabilityMassFunction iterations = pfFactory.transformToPMF(loop.getIterationsPMF());
+            ISamplePDF result = solveIterative(iterations, innerPDF);
+            pdfTable.put(loop, result);
 
-	public static ISamplePDF solveIterative(IProbabilityMassFunction iterations, ISamplePDF innerFourier) throws ProbabilityFunctionException {
-		int numSamplingPoints = innerFourier.getValuesAsDouble().size();
-		double distance = innerFourier.getDistance();
-		IUnit unit = innerFourier.getUnit();
+        } catch (ProbabilityFunctionException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
 
-		ISamplePDF result = (ISamplePDF)pfFactory.createZeroFunction(numSamplingPoints,
-				distance, unit).getFourierTransform();
+    }
 
-		ISamplePDF dirac = pfFactory.createDiracImpulse(numSamplingPoints,
-				distance, unit);
+    public static ISamplePDF solveIterative(IProbabilityMassFunction iterations, ISamplePDF innerFourier)
+            throws ProbabilityFunctionException {
+        int numSamplingPoints = innerFourier.getValuesAsDouble().size();
+        double distance = innerFourier.getDistance();
+        IUnit unit = innerFourier.getUnit();
 
-		IProbabilityDensityFunction tmp = dirac.getFourierTransform();
+        ISamplePDF result = (ISamplePDF) pfFactory.createZeroFunction(numSamplingPoints, distance, unit)
+                .getFourierTransform();
 
+        ISamplePDF dirac = pfFactory.createDiracImpulse(numSamplingPoints, distance, unit);
 
-		int pos = 0;
-		for (Iterator<ISample> iter = iterations.getSamples().iterator(); iter
-				.hasNext();) {
-			ISample sample = iter.next();
-			Integer nextPos = (Integer) sample.getValue();
-			while (pos < nextPos) {
-				tmp = tmp.mult(innerFourier);
-				pos++;
-			}
-			result = (ISamplePDF) result.add(tmp.scale(sample
-					.getProbability()));
-		}
-		return result;
-	}
+        IProbabilityDensityFunction tmp = dirac.getFourierTransform();
 
-	public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable() {
-		return pdfTable;
-	}
+        int pos = 0;
+        for (Iterator<ISample> iter = iterations.getSamples().iterator(); iter.hasNext();) {
+            ISample sample = iter.next();
+            Integer nextPos = (Integer) sample.getValue();
+            while (pos < nextPos) {
+                tmp = tmp.mult(innerFourier);
+                pos++;
+            }
+            result = (ISamplePDF) result.add(tmp.scale(sample.getProbability()));
+        }
+        return result;
+    }
 
-	public void setPdfTable(
-			Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
-		this.pdfTable = pdfTable;
-	}
+    public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable() {
+        return pdfTable;
+    }
 
-	protected PerformanceLoopHandler() {
-		super();
-	}
+    public void setPdfTable(Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
+        this.pdfTable = pdfTable;
+    }
+
+    protected PerformanceLoopHandler() {
+        super();
+    }
 
 }

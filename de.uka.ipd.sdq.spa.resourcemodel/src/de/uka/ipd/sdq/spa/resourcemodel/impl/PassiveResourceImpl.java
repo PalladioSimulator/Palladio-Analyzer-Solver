@@ -20,6 +20,7 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
  * @generated
  */
 public class PassiveResourceImpl extends ContentionResourceImpl implements PassiveResource {
+
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 

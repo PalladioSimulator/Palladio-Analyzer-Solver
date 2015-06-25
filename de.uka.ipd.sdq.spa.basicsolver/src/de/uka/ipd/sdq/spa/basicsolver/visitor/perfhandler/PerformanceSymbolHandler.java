@@ -17,45 +17,43 @@ import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
  */
 public class PerformanceSymbolHandler implements SymbolHandler {
 
-	private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
+    private Hashtable<Expression, IProbabilityDensityFunction> pdfTable;
 
-	private IProbabilityFunctionFactory pfFactory = IProbabilityFunctionFactory.eINSTANCE;
+    private IProbabilityFunctionFactory pfFactory = IProbabilityFunctionFactory.eINSTANCE;
 
-	private int domainSize;
+    private int domainSize;
 
-	protected PerformanceSymbolHandler(
-			Hashtable<Expression, IProbabilityDensityFunction> pdfTable, int domainSize) {
-		this(domainSize);
-		this.pdfTable = pdfTable;
-	}
+    protected PerformanceSymbolHandler(Hashtable<Expression, IProbabilityDensityFunction> pdfTable, int domainSize) {
+        this(domainSize);
+        this.pdfTable = pdfTable;
+    }
 
-	protected PerformanceSymbolHandler(int domainSize) {
-		super();
-		this.domainSize = domainSize;
-	}
+    protected PerformanceSymbolHandler(int domainSize) {
+        super();
+        this.domainSize = domainSize;
+    }
 
-	public void handle(Symbol symbol) {
+    public void handle(Symbol symbol) {
 
-		try {
-			ResourceUsage resourceUsage = (ResourceUsage) symbol.getResourceUsages().get(0);
-			IProbabilityDensityFunction pdf = pfFactory.transformToPDF(resourceUsage.getUsageTime());
-			ISamplePDF spdf = pfFactory.transformToSamplePDF(pdf);
-			spdf.expand(domainSize);
-			IProbabilityDensityFunction fftPDF = spdf.getFourierTransform();
-			pdfTable.put(symbol, fftPDF);
-		} catch (ProbabilityFunctionException e) {
-			e.printStackTrace();
-			System.exit(1);
-		}
-	}
+        try {
+            ResourceUsage resourceUsage = (ResourceUsage) symbol.getResourceUsages().get(0);
+            IProbabilityDensityFunction pdf = pfFactory.transformToPDF(resourceUsage.getUsageTime());
+            ISamplePDF spdf = pfFactory.transformToSamplePDF(pdf);
+            spdf.expand(domainSize);
+            IProbabilityDensityFunction fftPDF = spdf.getFourierTransform();
+            pdfTable.put(symbol, fftPDF);
+        } catch (ProbabilityFunctionException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
 
-	public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable() {
-		return pdfTable;
-	}
+    public Hashtable<Expression, IProbabilityDensityFunction> getPdfTable() {
+        return pdfTable;
+    }
 
-	public void setPdfTable(
-			Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
-		this.pdfTable = pdfTable;
-	}
+    public void setPdfTable(Hashtable<Expression, IProbabilityDensityFunction> pdfTable) {
+        this.pdfTable = pdfTable;
+    }
 
 }
