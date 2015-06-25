@@ -36,7 +36,7 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * @generated
      * @ordered
      */
-    protected org.palladiosimulator.solver.resourcemodel.PassiveResource resource;
+    protected org.palladiosimulator.solver.spa.resourcemodel.PassiveResource resource;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -63,10 +63,10 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * @generated
      */
     @Override
-    public org.palladiosimulator.solver.resourcemodel.PassiveResource getResource() {
+    public org.palladiosimulator.solver.spa.resourcemodel.PassiveResource getResource() {
         if (this.resource != null && this.resource.eIsProxy()) {
             final InternalEObject oldResource = (InternalEObject) this.resource;
-            this.resource = (org.palladiosimulator.solver.resourcemodel.PassiveResource) this
+            this.resource = (org.palladiosimulator.solver.spa.resourcemodel.PassiveResource) this
                     .eResolveProxy(oldResource);
             if (this.resource != oldResource) {
                 if (this.eNotificationRequired()) {
@@ -83,7 +83,7 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * 
      * @generated
      */
-    public org.palladiosimulator.solver.resourcemodel.PassiveResource basicGetResource() {
+    public org.palladiosimulator.solver.spa.resourcemodel.PassiveResource basicGetResource() {
         return this.resource;
     }
 
@@ -93,8 +93,8 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * @generated
      */
     @Override
-    public void setResource(final org.palladiosimulator.solver.resourcemodel.PassiveResource newResource) {
-        final org.palladiosimulator.solver.resourcemodel.PassiveResource oldResource = this.resource;
+    public void setResource(final org.palladiosimulator.solver.spa.resourcemodel.PassiveResource newResource) {
+        final org.palladiosimulator.solver.spa.resourcemodel.PassiveResource oldResource = this.resource;
         this.resource = newResource;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.RELEASE__RESOURCE, oldResource,
@@ -128,7 +128,7 @@ public class ReleaseImpl extends TerminalImpl implements Release {
     public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.RELEASE__RESOURCE:
-            this.setResource((org.palladiosimulator.solver.resourcemodel.PassiveResource) newValue);
+            this.setResource((org.palladiosimulator.solver.spa.resourcemodel.PassiveResource) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -143,7 +143,7 @@ public class ReleaseImpl extends TerminalImpl implements Release {
     public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.RELEASE__RESOURCE:
-            this.setResource((org.palladiosimulator.solver.resourcemodel.PassiveResource) null);
+            this.setResource((org.palladiosimulator.solver.spa.resourcemodel.PassiveResource) null);
             return;
         }
         super.eUnset(featureID);

@@ -33,12 +33,12 @@ public interface Release extends Terminal {
      * <!-- end-user-doc -->
      * 
      * @return the value of the '<em>Resource</em>' reference.
-     * @see #setResource(org.palladiosimulator.solver.resourcemodel.PassiveResource)
+     * @see #setResource(org.palladiosimulator.solver.spa.resourcemodel.PassiveResource)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getRelease_Resource()
      * @model required="true"
      * @generated
      */
-    org.palladiosimulator.solver.resourcemodel.PassiveResource getResource();
+    org.palladiosimulator.solver.spa.resourcemodel.PassiveResource getResource();
 
     /**
      * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Release#getResource
@@ -49,6 +49,6 @@ public interface Release extends Terminal {
      * @see #getResource()
      * @generated
      */
-    void setResource(org.palladiosimulator.solver.resourcemodel.PassiveResource value);
+    void setResource(org.palladiosimulator.solver.spa.resourcemodel.PassiveResource value);
 
 } // Release

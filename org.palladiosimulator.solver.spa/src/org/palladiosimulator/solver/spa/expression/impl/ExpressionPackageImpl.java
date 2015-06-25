@@ -165,7 +165,7 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
         isInited = true;
 
         // Initialize simple dependencies
-        org.palladiosimulator.solver.resourcemodel.ResourceModelPackage.eINSTANCE.eClass();
+        org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage.eINSTANCE.eClass();
 
         // Obtain or create and register interdependencies
         final SpaPackageImpl theSpaPackage = (SpaPackageImpl) (EPackage.Registry.INSTANCE
@@ -541,8 +541,8 @@ public class ExpressionPackageImpl extends EPackageImpl implements ExpressionPac
         this.setNsURI(eNS_URI);
 
         // Obtain other dependent packages
-        final org.palladiosimulator.solver.resourcemodel.ResourceModelPackage theResourceModelPackage = (org.palladiosimulator.solver.resourcemodel.ResourceModelPackage) EPackage.Registry.INSTANCE
-                .getEPackage(org.palladiosimulator.solver.resourcemodel.ResourceModelPackage.eNS_URI);
+        final org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage theResourceModelPackage = (org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage) EPackage.Registry.INSTANCE
+                .getEPackage(org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage.eNS_URI);
         final ProbfunctionPackage theProbfunctionPackage = (ProbfunctionPackage) EPackage.Registry.INSTANCE
                 .getEPackage(ProbfunctionPackage.eNS_URI);
 

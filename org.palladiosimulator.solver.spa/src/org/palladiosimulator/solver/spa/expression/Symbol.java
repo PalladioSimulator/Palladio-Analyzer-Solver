@@ -70,6 +70,6 @@ public interface Symbol extends Terminal {
      * @model type="org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage" containment="true"
      * @generated
      */
-    EList<org.palladiosimulator.solver.resourcemodel.ResourceUsage> getResourceUsages();
+    EList<org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage> getResourceUsages();
 
 } // Symbol

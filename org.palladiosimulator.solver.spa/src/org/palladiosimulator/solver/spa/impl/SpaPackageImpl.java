@@ -91,7 +91,7 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
         isInited = true;
 
         // Initialize simple dependencies
-        org.palladiosimulator.solver.resourcemodel.ResourceModelPackage.eINSTANCE.eClass();
+        org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage.eINSTANCE.eClass();
 
         // Obtain or create and register interdependencies
         final ExpressionPackageImpl theExpressionPackage = (ExpressionPackageImpl) (EPackage.Registry.INSTANCE
@@ -252,8 +252,8 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
         // Obtain other dependent packages
         final ExpressionPackage theExpressionPackage = (ExpressionPackage) EPackage.Registry.INSTANCE
                 .getEPackage(ExpressionPackage.eNS_URI);
-        final org.palladiosimulator.solver.resourcemodel.ResourceModelPackage theResourceModelPackage = (org.palladiosimulator.solver.resourcemodel.ResourceModelPackage) EPackage.Registry.INSTANCE
-                .getEPackage(org.palladiosimulator.solver.resourcemodel.ResourceModelPackage.eNS_URI);
+        final org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage theResourceModelPackage = (org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage) EPackage.Registry.INSTANCE
+                .getEPackage(org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage.eNS_URI);
 
         // Add subpackages
         this.getESubpackages().add(theExpressionPackage);

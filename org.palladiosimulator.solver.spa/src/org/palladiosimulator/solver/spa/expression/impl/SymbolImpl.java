@@ -64,7 +64,7 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * @generated
      * @ordered
      */
-    protected EList<org.palladiosimulator.solver.resourcemodel.ResourceUsage> resourceUsages;
+    protected EList<org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage> resourceUsages;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -116,10 +116,10 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * @generated
      */
     @Override
-    public EList<org.palladiosimulator.solver.resourcemodel.ResourceUsage> getResourceUsages() {
+    public EList<org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage> getResourceUsages() {
         if (this.resourceUsages == null) {
-            this.resourceUsages = new EObjectContainmentEList<org.palladiosimulator.solver.resourcemodel.ResourceUsage>(
-                    org.palladiosimulator.solver.resourcemodel.ResourceUsage.class, this,
+            this.resourceUsages = new EObjectContainmentEList<org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage>(
+                    org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage.class, this,
                     ExpressionPackage.SYMBOL__RESOURCE_USAGES);
         }
         return this.resourceUsages;
@@ -171,7 +171,7 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
         case ExpressionPackage.SYMBOL__RESOURCE_USAGES:
             this.getResourceUsages().clear();
             this.getResourceUsages()
-                    .addAll((Collection<? extends org.palladiosimulator.solver.resourcemodel.ResourceUsage>) newValue);
+                    .addAll((Collection<? extends org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage>) newValue);
             return;
         }
         super.eSet(featureID, newValue);

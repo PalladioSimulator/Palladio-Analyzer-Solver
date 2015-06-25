@@ -54,7 +54,7 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      * @ordered
      */
-    protected EList<org.palladiosimulator.solver.resourcemodel.Resource> resources;
+    protected EList<org.palladiosimulator.solver.spa.resourcemodel.Resource> resources;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -95,10 +95,10 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      */
     @Override
-    public EList<org.palladiosimulator.solver.resourcemodel.Resource> getResources() {
+    public EList<org.palladiosimulator.solver.spa.resourcemodel.Resource> getResources() {
         if (this.resources == null) {
-            this.resources = new EObjectContainmentEList<org.palladiosimulator.solver.resourcemodel.Resource>(
-                    org.palladiosimulator.solver.resourcemodel.Resource.class, this, SpaPackage.SPA_MODEL__RESOURCES);
+            this.resources = new EObjectContainmentEList<org.palladiosimulator.solver.spa.resourcemodel.Resource>(
+                    org.palladiosimulator.solver.spa.resourcemodel.Resource.class, this, SpaPackage.SPA_MODEL__RESOURCES);
         }
         return this.resources;
     }
@@ -152,7 +152,7 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
         case SpaPackage.SPA_MODEL__RESOURCES:
             this.getResources().clear();
             this.getResources()
-                    .addAll((Collection<? extends org.palladiosimulator.solver.resourcemodel.Resource>) newValue);
+                    .addAll((Collection<? extends org.palladiosimulator.solver.spa.resourcemodel.Resource>) newValue);
             return;
         }
         super.eSet(featureID, newValue);

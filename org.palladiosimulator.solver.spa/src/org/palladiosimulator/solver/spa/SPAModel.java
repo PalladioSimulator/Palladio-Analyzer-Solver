@@ -46,7 +46,7 @@ public interface SPAModel extends EObject {
 
     /**
      * Returns the value of the '<em><b>Resources</b></em>' containment reference list. The list
-     * contents are of type {@link org.palladiosimulator.solver.resourcemodel.Resource}. <!--
+     * contents are of type {@link org.palladiosimulator.solver.spa.resourcemodel.Resource}. <!--
      * begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Resources</em>' containment reference list isn't clear, there
@@ -59,6 +59,6 @@ public interface SPAModel extends EObject {
      * @model containment="true"
      * @generated
      */
-    EList<org.palladiosimulator.solver.resourcemodel.Resource> getResources();
+    EList<org.palladiosimulator.solver.spa.resourcemodel.Resource> getResources();
 
 } // SPAModel
