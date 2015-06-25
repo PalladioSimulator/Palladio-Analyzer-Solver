@@ -13,8 +13,8 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated ResourceModel -->
       <package
-            uri="http://palladiosimulator.org/Solver/ResourceModel/1.0"
-            class="org.palladiosimulator.solver.resourcemodel.ResourceModelPackage"
+            uri="http://palladiosimulator.org/Solver/StochasticProcessAlgebra/ResourceModel/1.0"
+            class="org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage"
             genModel="model/ResourceModel.genmodel"/>
    </extension>
 

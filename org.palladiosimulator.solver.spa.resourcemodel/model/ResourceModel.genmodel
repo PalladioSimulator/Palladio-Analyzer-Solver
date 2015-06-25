@@ -10,8 +10,8 @@
     editorPluginID="org.palladiosimulator.solver.spa.resourcemodel.editor" usedGenPackages="platform:/plugin/de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction platform:/plugin/de.uka.ipd.sdq.units/model/Units.genmodel#//units"
     cleanup="true">
   <foreignModel>ResourceModel.ecore</foreignModel>
-  <genPackages prefix="ResourceModel" basePackage="org.palladiosimulator.solver" disposableProviderFactory="true"
-      ecorePackage="ResourceModel.ecore#/">
+  <genPackages prefix="ResourceModel" basePackage="org.palladiosimulator.solver.spa"
+      disposableProviderFactory="true" ecorePackage="ResourceModel.ecore#/">
     <genClasses ecoreClass="ResourceModel.ecore#//SequentialResourceUsage">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ResourceModel.ecore#//SequentialResourceUsage/resourceUsages"/>
     </genClasses>
