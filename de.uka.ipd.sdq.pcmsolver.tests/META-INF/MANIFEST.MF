@@ -6,7 +6,7 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: de.uka.ipd.sdq.pcmsolver.tests.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.junit,
- LQNModel,
+ org.palladiosimulator.solver.lqn,
  org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
