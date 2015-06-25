@@ -30,4 +30,34 @@
        genModel = "model/context.genmodel" /> 
   </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated context -->
+      <package
+            uri="http://palladiosimulator.org/Solver/Context/Usage/1.0"
+            class="org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage"
+            genModel="model/context.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated context -->
+      <package
+            uri="http://sdq.ipd.uka.de/Context/Allocation/1.0"
+            class="org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage"
+            genModel="model/context.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated context -->
+      <package
+            uri="http://palladiosimulator.org/Solver/Context/AggregatedUsage/1.0"
+            class="org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage"
+            genModel="model/context.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated context -->
+      <parser
+            type="aggregatedusagecontext"
+            class="org.palladiosimulator.solver.context.aggregatedUsageContext.util.AggregatedUsageContextResourceFactoryImpl"/>
+   </extension>
 </plugin>

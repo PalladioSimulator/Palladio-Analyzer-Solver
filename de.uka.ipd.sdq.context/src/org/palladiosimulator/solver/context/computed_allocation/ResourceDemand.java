@@ -1,0 +1,101 @@
+/**
+ * Copyright 2006, SDQ Group, University Karlsruhe (TH)
+ */
+package org.palladiosimulator.solver.context.computed_allocation;
+
+import org.eclipse.emf.ecore.EObject;
+import org.palladiosimulator.pcm.core.PCMRandomVariable;
+import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
+
+/**
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Resource Demand</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ * <li>
+ * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getParametricResourceDemand_ResourceDemand
+ * <em>Parametric Resource Demand Resource Demand</em>}</li>
+ * <li>
+ * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getSpecification_ResourceDemand
+ * <em>Specification Resource Demand</em>}</li>
+ * </ul>
+ *
+ * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getResourceDemand()
+ * @model
+ * @generated
+ */
+public interface ResourceDemand extends EObject {
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
+
+    /**
+     * Returns the value of the '<em><b>Parametric Resource Demand Resource Demand</b></em>'
+     * reference. <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Parametric Resource Demand Resource Demand</em>' reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * 
+     * @return the value of the '<em>Parametric Resource Demand Resource Demand</em>' reference.
+     * @see #setParametricResourceDemand_ResourceDemand(ParametricResourceDemand)
+     * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getResourceDemand_ParametricResourceDemand_ResourceDemand()
+     * @model required="true" ordered="false"
+     * @generated
+     */
+    ParametricResourceDemand getParametricResourceDemand_ResourceDemand();
+
+    /**
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getParametricResourceDemand_ResourceDemand
+     * <em>Parametric Resource Demand Resource Demand</em>}' reference. <!-- begin-user-doc --> <!--
+     * end-user-doc -->
+     * 
+     * @param value
+     *            the new value of the '<em>Parametric Resource Demand Resource Demand</em>'
+     *            reference.
+     * @see #getParametricResourceDemand_ResourceDemand()
+     * @generated
+     */
+    void setParametricResourceDemand_ResourceDemand(ParametricResourceDemand value);
+
+    /**
+     * Returns the value of the '<em><b>Specification Resource Demand</b></em>' containment
+     * reference. <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Specification Resource Demand</em>' containment reference isn't
+     * clear, there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * 
+     * @return the value of the '<em>Specification Resource Demand</em>' containment reference.
+     * @see #setSpecification_ResourceDemand(PCMRandomVariable)
+     * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getResourceDemand_Specification_ResourceDemand()
+     * @model containment="true" required="true" ordered="false"
+     * @generated
+     */
+    PCMRandomVariable getSpecification_ResourceDemand();
+
+    /**
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getSpecification_ResourceDemand
+     * <em>Specification Resource Demand</em>}' containment reference. <!-- begin-user-doc --> <!--
+     * end-user-doc -->
+     * 
+     * @param value
+     *            the new value of the '<em>Specification Resource Demand</em>' containment
+     *            reference.
+     * @see #getSpecification_ResourceDemand()
+     * @generated
+     */
+    void setSpecification_ResourceDemand(PCMRandomVariable value);
+
+} // ResourceDemand

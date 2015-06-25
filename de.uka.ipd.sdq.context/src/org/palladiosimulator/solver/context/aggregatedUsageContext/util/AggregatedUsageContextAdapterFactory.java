@@ -1,0 +1,187 @@
+/**
+ * Copyright 2006, SDQ Group, University Karlsruhe (TH)
+ */
+package org.palladiosimulator.solver.context.aggregatedUsageContext.util;
+
+import org.eclipse.emf.common.notify.Adapter;
+import org.eclipse.emf.common.notify.Notifier;
+import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+import org.eclipse.emf.ecore.EObject;
+import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication;
+import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand;
+import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage;
+import org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage;
+import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext;
+
+/**
+ * <!-- begin-user-doc --> The <b>Adapter Factory</b> for the model. It provides an adapter
+ * <code>createXXX</code> method for each class of the model. <!-- end-user-doc -->
+ * 
+ * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage
+ * @generated
+ */
+public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
+
+    /**
+     * The cached model package. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    protected static AggregatedUsageContextPackage modelPackage;
+
+    /**
+     * Creates an instance of the adapter factory. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    public AggregatedUsageContextAdapterFactory() {
+        if (modelPackage == null) {
+            modelPackage = AggregatedUsageContextPackage.eINSTANCE;
+        }
+    }
+
+    /**
+     * Returns whether this factory is applicable for the type of the object. <!-- begin-user-doc
+     * --> This implementation returns <code>true</code> if the object is either the model's package
+     * or is an instance object of the model. <!-- end-user-doc -->
+     * 
+     * @return whether this factory is applicable for the type of the object.
+     * @generated
+     */
+    @Override
+    public boolean isFactoryForType(final Object object) {
+        if (object == modelPackage) {
+            return true;
+        }
+        if (object instanceof EObject) {
+            return ((EObject) object).eClass().getEPackage() == modelPackage;
+        }
+        return false;
+    }
+
+    /**
+     * The switch that delegates to the <code>createXXX</code> methods. <!-- begin-user-doc --> <!--
+     * end-user-doc -->
+     * 
+     * @generated
+     */
+    protected AggregatedUsageContextSwitch<Adapter> modelSwitch = new AggregatedUsageContextSwitch<Adapter>() {
+
+        @Override
+        public Adapter caseServiceExecutionContext(final ServiceExecutionContext object) {
+            return AggregatedUsageContextAdapterFactory.this.createServiceExecutionContextAdapter();
+        }
+
+        @Override
+        public Adapter caseAggregatedResourceDemand(final AggregatedResourceDemand object) {
+            return AggregatedUsageContextAdapterFactory.this.createAggregatedResourceDemandAdapter();
+        }
+
+        @Override
+        public Adapter caseAggregatedCommunication(final AggregatedCommunication object) {
+            return AggregatedUsageContextAdapterFactory.this.createAggregatedCommunicationAdapter();
+        }
+
+        @Override
+        public Adapter caseComputedAggregatedUsage(final ComputedAggregatedUsage object) {
+            return AggregatedUsageContextAdapterFactory.this.createComputedAggregatedUsageAdapter();
+        }
+
+        @Override
+        public Adapter defaultCase(final EObject object) {
+            return AggregatedUsageContextAdapterFactory.this.createEObjectAdapter();
+        }
+    };
+
+    /**
+     * Creates an adapter for the <code>target</code>. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @param target
+     *            the object to adapt.
+     * @return the adapter for the <code>target</code>.
+     * @generated
+     */
+    @Override
+    public Adapter createAdapter(final Notifier target) {
+        return this.modelSwitch.doSwitch((EObject) target);
+    }
+
+    /**
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext
+     * <em>Service Execution Context</em>}'. <!-- begin-user-doc --> This default implementation
+     * returns null so that we can easily ignore cases; it's useful to ignore a case when
+     * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+     * 
+     * @return the new adapter.
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext
+     * @generated
+     */
+    public Adapter createServiceExecutionContextAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand
+     * <em>Aggregated Resource Demand</em>}'. <!-- begin-user-doc --> This default implementation
+     * returns null so that we can easily ignore cases; it's useful to ignore a case when
+     * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+     * 
+     * @return the new adapter.
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand
+     * @generated
+     */
+    public Adapter createAggregatedResourceDemandAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication
+     * <em>Aggregated Communication</em>}'. <!-- begin-user-doc --> This default implementation
+     * returns null so that we can easily ignore cases; it's useful to ignore a case when
+     * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+     * 
+     * @return the new adapter.
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication
+     * @generated
+     */
+    public Adapter createAggregatedCommunicationAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage
+     * <em>Computed Aggregated Usage</em>}'. <!-- begin-user-doc --> This default implementation
+     * returns null so that we can easily ignore cases; it's useful to ignore a case when
+     * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+     * 
+     * @return the new adapter.
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage
+     * @generated
+     */
+    public Adapter createComputedAggregatedUsageAdapter() {
+        return null;
+    }
+
+    /**
+     * Creates a new adapter for the default case. <!-- begin-user-doc --> This default
+     * implementation returns null. <!-- end-user-doc -->
+     * 
+     * @return the new adapter.
+     * @generated
+     */
+    public Adapter createEObjectAdapter() {
+        return null;
+    }
+
+} // AggregatedUsageContextAdapterFactory

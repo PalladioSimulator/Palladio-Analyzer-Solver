@@ -65,4 +65,87 @@
         contributorClass="de.uka.ipd.sdq.context.actual_allocation.presentation.Actual_AllocationActionBarContributor" >
     </editor>
   </extension>    
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated context -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.palladiosimulator.solver.context.computed_usage.presentation.ComputedUsageModelWizardID"
+            name="%_UI_ComputedUsageModelWizard_label"
+            class="org.palladiosimulator.solver.context.computed_usage.presentation.ComputedUsageModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ComputedUsageModelFile.gif">
+         <description>%_UI_ComputedUsageModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated context -->
+      <editor
+            id="org.palladiosimulator.solver.context.computed_usage.presentation.ComputedUsageEditorID"
+            name="%_UI_ComputedUsageEditor_label"
+            icon="icons/full/obj16/ComputedUsageModelFile.gif"
+            extensions="computedusage"
+            class="org.palladiosimulator.solver.context.computed_usage.presentation.ComputedUsageEditor"
+            contributorClass="org.palladiosimulator.solver.context.computed_usage.presentation.ComputedUsageActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated context -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.palladiosimulator.solver.context.computed_allocation.presentation.ComputedAllocationModelWizardID"
+            name="%_UI_ComputedAllocationModelWizard_label"
+            class="org.palladiosimulator.solver.context.computed_allocation.presentation.ComputedAllocationModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ComputedAllocationModelFile.gif">
+         <description>%_UI_ComputedAllocationModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated context -->
+      <editor
+            id="org.palladiosimulator.solver.context.computed_allocation.presentation.ComputedAllocationEditorID"
+            name="%_UI_ComputedAllocationEditor_label"
+            icon="icons/full/obj16/ComputedAllocationModelFile.gif"
+            extensions="computedallocation"
+            class="org.palladiosimulator.solver.context.computed_allocation.presentation.ComputedAllocationEditor"
+            contributorClass="org.palladiosimulator.solver.context.computed_allocation.presentation.ComputedAllocationActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated context -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.palladiosimulator.solver.context.aggregatedUsageContext.presentation.AggregatedUsageContextModelWizardID"
+            name="%_UI_AggregatedUsageContextModelWizard_label"
+            class="org.palladiosimulator.solver.context.aggregatedUsageContext.presentation.AggregatedUsageContextModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AggregatedUsageContextModelFile.gif">
+         <description>%_UI_AggregatedUsageContextModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated context -->
+      <editor
+            id="org.palladiosimulator.solver.context.aggregatedUsageContext.presentation.AggregatedUsageContextEditorID"
+            name="%_UI_AggregatedUsageContextEditor_label"
+            icon="icons/full/obj16/AggregatedUsageContextModelFile.gif"
+            extensions="aggregatedusagecontext"
+            class="org.palladiosimulator.solver.context.aggregatedUsageContext.presentation.AggregatedUsageContextEditor"
+            contributorClass="org.palladiosimulator.solver.context.aggregatedUsageContext.presentation.AggregatedUsageContextActionBarContributor">
+      </editor>
+   </extension>
 </plugin>
