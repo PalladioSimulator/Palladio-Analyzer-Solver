@@ -137,7 +137,7 @@ public class LQNTest {
 		content = content.replaceAll("underrelaxCoeff", "underrelax_coeff");
 		content = content.replaceAll("hostDemandMean", "host-demand-mean");
 		content = content.replaceAll("callsMean", "calls-mean");
-		content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Reliability/Sensitivity/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
+		content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
 		content = content.replaceAll("xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"", "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
 		
 		
