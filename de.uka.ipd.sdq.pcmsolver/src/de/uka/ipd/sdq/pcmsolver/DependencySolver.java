@@ -15,6 +15,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+import org.palladiosimulator.solver.spa.expression.Expression;
 
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.transformations.pcm2regex.ExpressionPrinter;
@@ -28,7 +29,6 @@ import de.uka.ipd.sdq.probfunction.math.PDFConfiguration;
 import de.uka.ipd.sdq.probfunction.math.exception.ConfigurationNotSetException;
 import de.uka.ipd.sdq.probfunction.math.exception.ProbabilityFunctionException;
 import de.uka.ipd.sdq.probfunction.math.exception.UnknownPDFTypeException;
-import de.uka.ipd.sdq.spa.expression.Expression;
 
 /**
  * TODO: It seems that this class is never used, and the functionality expected here is implemented elsewhere. 

@@ -11,11 +11,11 @@ Require-Bundle: org.eclipse.emf,
  de.uka.ipd.sdq.probfunction.math,
  org.palladiosimulator.solver.spa,
  org.palladiosimulator.solver.spa.resourcemodel
-Export-Package: de.uka.ipd.sdq.spa.basicsolver,
- de.uka.ipd.sdq.spa.basicsolver.exceptions,
- de.uka.ipd.sdq.spa.basicsolver.operations,
- de.uka.ipd.sdq.spa.basicsolver.visitor,
- de.uka.ipd.sdq.spa.basicsolver.visitor.perfhandler,
- de.uka.ipd.sdq.spa.basicsolver.visitor.perfhandler.exception
+Export-Package: org.palladiosimulator.solver.spa.basicsolver,
+ org.palladiosimulator.solver.spa.basicsolver.exceptions,
+ org.palladiosimulator.solver.spa.basicsolver.operations,
+ org.palladiosimulator.solver.spa.basicsolver.visitor,
+ org.palladiosimulator.solver.spa.basicsolver.visitor.perfhandler,
+ org.palladiosimulator.solver.spa.basicsolver.visitor.perfhandler.exception
 Bundle-Vendor: sdq.ipd.uka.de
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

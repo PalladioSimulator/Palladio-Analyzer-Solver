@@ -2,10 +2,10 @@ package de.uka.ipd.sdq.pcmsolver.transformations.pcm2regex;
 
 import java.util.List;
 
-import de.uka.ipd.sdq.spa.expression.Alternative;
-import de.uka.ipd.sdq.spa.expression.Expression;
-import de.uka.ipd.sdq.spa.expression.ExpressionFactory;
-import de.uka.ipd.sdq.spa.expression.Option;
+import org.palladiosimulator.solver.spa.expression.Alternative;
+import org.palladiosimulator.solver.spa.expression.Expression;
+import org.palladiosimulator.solver.spa.expression.ExpressionFactory;
+import org.palladiosimulator.solver.spa.expression.Option;
 
 public class Pcm2RegexHelper {
 

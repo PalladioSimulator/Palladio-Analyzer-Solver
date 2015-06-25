@@ -5,6 +5,12 @@ import java.util.List;
 
 import org.apache.commons.math.complex.Complex;
 import org.apache.log4j.Logger;
+import org.palladiosimulator.solver.spa.expression.Alternative;
+import org.palladiosimulator.solver.spa.expression.Expression;
+import org.palladiosimulator.solver.spa.expression.Loop;
+import org.palladiosimulator.solver.spa.expression.Sequence;
+import org.palladiosimulator.solver.spa.expression.Symbol;
+import org.palladiosimulator.solver.spa.expression.util.ExpressionSwitch;
 
 import de.uka.ipd.sdq.pcmsolver.visitors.ExpressionHelper;
 import de.uka.ipd.sdq.probfunction.ProbabilityMassFunction;
@@ -20,12 +26,6 @@ import de.uka.ipd.sdq.probfunction.math.exception.ConfigurationNotSetException;
 import de.uka.ipd.sdq.probfunction.math.exception.FunctionsInDifferenDomainsException;
 import de.uka.ipd.sdq.probfunction.math.exception.IncompatibleUnitsException;
 import de.uka.ipd.sdq.probfunction.math.exception.UnknownPDFTypeException;
-import de.uka.ipd.sdq.spa.expression.Alternative;
-import de.uka.ipd.sdq.spa.expression.Expression;
-import de.uka.ipd.sdq.spa.expression.Loop;
-import de.uka.ipd.sdq.spa.expression.Sequence;
-import de.uka.ipd.sdq.spa.expression.Symbol;
-import de.uka.ipd.sdq.spa.expression.util.ExpressionSwitch;
 import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
 import de.uka.ipd.sdq.stoex.ProbabilityFunctionLiteral;
 

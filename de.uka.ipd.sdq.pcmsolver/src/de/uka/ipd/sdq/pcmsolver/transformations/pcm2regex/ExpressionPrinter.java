@@ -1,12 +1,11 @@
 package de.uka.ipd.sdq.pcmsolver.transformations.pcm2regex;
 
 import org.eclipse.emf.ecore.EObject;
-
-import de.uka.ipd.sdq.spa.expression.Alternative;
-import de.uka.ipd.sdq.spa.expression.Loop;
-import de.uka.ipd.sdq.spa.expression.Sequence;
-import de.uka.ipd.sdq.spa.expression.Symbol;
-import de.uka.ipd.sdq.spa.expression.util.ExpressionSwitch;
+import org.palladiosimulator.solver.spa.expression.Alternative;
+import org.palladiosimulator.solver.spa.expression.Loop;
+import org.palladiosimulator.solver.spa.expression.Sequence;
+import org.palladiosimulator.solver.spa.expression.Symbol;
+import org.palladiosimulator.solver.spa.expression.util.ExpressionSwitch;
 
 public class ExpressionPrinter extends ExpressionSwitch{
 	

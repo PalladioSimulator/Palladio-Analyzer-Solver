@@ -19,16 +19,16 @@ import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour;
 import org.palladiosimulator.pcm.usagemodel.Start;
 import org.palladiosimulator.pcm.usagemodel.Stop;
 import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
+import org.palladiosimulator.solver.spa.expression.Expression;
+import org.palladiosimulator.solver.spa.expression.ExpressionFactory;
+import org.palladiosimulator.solver.spa.expression.Option;
+import org.palladiosimulator.solver.spa.expression.Sequence;
+import org.palladiosimulator.solver.spa.expression.Symbol;
 
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
 import de.uka.ipd.sdq.probfunction.math.IProbabilityFunctionFactory;
-import de.uka.ipd.sdq.spa.expression.Expression;
-import de.uka.ipd.sdq.spa.expression.ExpressionFactory;
-import de.uka.ipd.sdq.spa.expression.Option;
-import de.uka.ipd.sdq.spa.expression.Sequence;
-import de.uka.ipd.sdq.spa.expression.Symbol;
 import de.uka.ipd.sdq.stoex.RandomVariable;
 
 public class TransformUsageModelVisitor extends UsagemodelSwitch {
@@ -144,7 +144,7 @@ public class TransformUsageModelVisitor extends UsagemodelSwitch {
 
 	@Override
 	public Object caseLoop(Loop object) {
-		de.uka.ipd.sdq.spa.expression.Loop loop = expFactory.createLoop();
+		org.palladiosimulator.solver.spa.expression.Loop loop = expFactory.createLoop();
 		RandomVariable iterations = (RandomVariable)object.getLoopIteration_Loop();
 		loop.setIterationsString(iterations.getSpecification());
 		loop.setRegExp((Expression)doSwitch(object.getBodyBehaviour_Loop()));

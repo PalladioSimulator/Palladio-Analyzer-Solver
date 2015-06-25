@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.EObject;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+import org.palladiosimulator.solver.spa.expression.Expression;
 
 import de.uka.ipd.sdq.pcmsolver.exprsolver.ExpressionSolver;
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
@@ -22,7 +23,6 @@ import de.uka.ipd.sdq.probfunction.math.exception.ConfigurationNotSetException;
 import de.uka.ipd.sdq.probfunction.math.exception.ProbabilityFunctionException;
 import de.uka.ipd.sdq.probfunction.math.exception.UnknownPDFTypeException;
 import de.uka.ipd.sdq.probfunction.print.ProbFunctionCSVPrint;
-import de.uka.ipd.sdq.spa.expression.Expression;
 
 /**
  * This is an excerpt of Heiko's dissertation (see below for link)

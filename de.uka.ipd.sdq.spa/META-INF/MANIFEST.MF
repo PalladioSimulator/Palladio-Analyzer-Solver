@@ -6,12 +6,12 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: de.uka.ipd.sdq.spa,
- de.uka.ipd.sdq.spa.expression,
- de.uka.ipd.sdq.spa.expression.impl,
- de.uka.ipd.sdq.spa.expression.util,
- de.uka.ipd.sdq.spa.impl,
- de.uka.ipd.sdq.spa.util
+Export-Package: org.palladiosimulator.solver.spa,
+ org.palladiosimulator.solver.spa.expression,
+ org.palladiosimulator.solver.spa.expression.impl,
+ org.palladiosimulator.solver.spa.expression.util,
+ org.palladiosimulator.solver.spa.impl,
+ org.palladiosimulator.solver.spa.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  de.uka.ipd.sdq.probfunction;visibility:=reexport,

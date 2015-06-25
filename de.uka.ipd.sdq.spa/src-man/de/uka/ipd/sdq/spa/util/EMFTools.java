@@ -11,8 +11,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-
-import de.uka.ipd.sdq.spa.SpaPackage;
+import org.palladiosimulator.solver.spa.SpaPackage;
 
 public class EMFTools {
 

@@ -20,6 +20,11 @@ import org.palladiosimulator.pcm.seff.StartAction;
 import org.palladiosimulator.pcm.seff.StopAction;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 import org.palladiosimulator.pcm.seff.util.SeffSwitch;
+import org.palladiosimulator.solver.spa.expression.Expression;
+import org.palladiosimulator.solver.spa.expression.ExpressionFactory;
+import org.palladiosimulator.solver.spa.expression.Option;
+import org.palladiosimulator.solver.spa.expression.Sequence;
+import org.palladiosimulator.solver.spa.expression.Symbol;
 
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
@@ -33,11 +38,6 @@ import de.uka.ipd.sdq.probfunction.math.IUnit;
 import de.uka.ipd.sdq.probfunction.math.PDFConfiguration;
 import de.uka.ipd.sdq.probfunction.math.exception.ConfigurationNotSetException;
 import de.uka.ipd.sdq.probfunction.math.exception.UnknownPDFTypeException;
-import de.uka.ipd.sdq.spa.expression.Expression;
-import de.uka.ipd.sdq.spa.expression.ExpressionFactory;
-import de.uka.ipd.sdq.spa.expression.Option;
-import de.uka.ipd.sdq.spa.expression.Sequence;
-import de.uka.ipd.sdq.spa.expression.Symbol;
 import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelFactory;
 import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
 import de.uka.ipd.sdq.stoex.Atom;
@@ -161,7 +161,7 @@ public class TransformSeffVisitor extends SeffSwitch{
 
 	@Override
 	public Object caseCollectionIteratorAction(CollectionIteratorAction object) {
-		de.uka.ipd.sdq.spa.expression.Loop loop = expFactory.createLoop();
+		org.palladiosimulator.solver.spa.expression.Loop loop = expFactory.createLoop();
 		loop.setIterationsString(myContextWrapper.getLoopIterations(object).toString());
 		loop.setRegExp((Expression)doSwitch(object.getBodyBehaviour_Loop()));
 	
@@ -175,7 +175,7 @@ public class TransformSeffVisitor extends SeffSwitch{
 	
 	@Override
 	public Object caseLoopAction(LoopAction object) {
-		de.uka.ipd.sdq.spa.expression.Loop loop = expFactory.createLoop();
+		org.palladiosimulator.solver.spa.expression.Loop loop = expFactory.createLoop();
 		loop.setIterationsString(myContextWrapper.getLoopIterations(object).toString());
 		loop.setRegExp((Expression)doSwitch(object.getBodyBehaviour_Loop()));
 		
