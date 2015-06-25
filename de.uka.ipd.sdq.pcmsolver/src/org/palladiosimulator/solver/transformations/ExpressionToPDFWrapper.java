@@ -40,7 +40,7 @@ public class ExpressionToPDFWrapper {
 	Double standardDeviation;
 	boolean originalPDF;
 	
-	protected static Logger logger = Logger.getLogger("de.uka.ipd.sdq.pcmsolver.transformations");
+	protected static Logger logger = Logger.getLogger("org.palladiosimulator.solver.transformations");
 	
 	public ExpressionToPDFWrapper(ProbabilityDensityFunction pdf){
 		this.pdf = pdf;

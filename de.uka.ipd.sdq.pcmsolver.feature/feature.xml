@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="de.uka.ipd.sdq.pcmsolver.feature"
+      id="org.palladiosimulator.solver.feature"
       label="Palladio Component Model - Analyzer: Analytical Solver"
       version="4.0.0.qualifier"
       plugin="org.palladiosimulator.branding"
@@ -80,7 +80,7 @@ dependencies.
          unpack="false"/>
 
    <plugin
-         id="de.uka.ipd.sdq.pcmsolver"
+         id="org.palladiosimulator.solver"
          download-size="0"
          install-size="0"
          version="0.0.0"

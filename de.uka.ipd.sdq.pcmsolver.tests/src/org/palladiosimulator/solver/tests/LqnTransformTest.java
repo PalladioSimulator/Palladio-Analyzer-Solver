@@ -12,10 +12,10 @@ public class LqnTransformTest {
 	private Properties props = new Properties();
 	
 //	private static final String PATH = "D:\\Diss\\svn\\code\\" +
-//			"PalladioCM.PCMSolver\\trunk\\de.uka.ipd.sdq.pcmsolver\\" +
+//			"PalladioCM.PCMSolver\\trunk\\org.palladiosimulator.solver\\" +
 //			"src\\de\\uka\\ipd\\sdq\\pcmsolver\\tests\\MediaStore";
 	private static final String PATH = "D:\\Diss\\svn\\code\\" +
-	"PalladioCM.PCMSolver\\trunk\\de.uka.ipd.sdq.pcmsolver\\" +
+	"PalladioCM.PCMSolver\\trunk\\org.palladiosimulator.solver\\" +
 	"src\\de\\uka\\ipd\\sdq\\pcmsolver\\tests\\MediaStore2";
 
 	@Before

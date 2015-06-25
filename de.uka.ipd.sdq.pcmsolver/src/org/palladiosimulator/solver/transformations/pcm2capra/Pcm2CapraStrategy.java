@@ -1,5 +1,5 @@
 package org.palladiosimulator.solver.transformations.pcm2capra;
-//package de.uka.ipd.sdq.pcmsolver.transformations.pcm2capra;
+//package org.palladiosimulator.solver.transformations.pcm2capra;
 //
 //import de.uka.ipd.sdq.capra.CapraFactory;
 //import de.uka.ipd.sdq.capra.CapraModel;
@@ -10,8 +10,8 @@ package org.palladiosimulator.solver.transformations.pcm2capra;
 //import org.palladiosimulator.pcm.usagemodel.OpenWorkload;
 //import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 //import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
-//import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
-//import de.uka.ipd.sdq.pcmsolver.transformations.SolverStrategy;
+//import org.palladiosimulator.solver.models.PCMInstance;
+//import org.palladiosimulator.solver.transformations.SolverStrategy;
 //
 //public class Pcm2CapraStrategy implements SolverStrategy {
 //

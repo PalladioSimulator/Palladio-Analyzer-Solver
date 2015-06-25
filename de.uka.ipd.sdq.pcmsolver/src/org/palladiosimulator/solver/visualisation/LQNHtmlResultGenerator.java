@@ -237,7 +237,7 @@ public class LQNHtmlResultGenerator {
 				if (page != null) {
 					try {
 						page.openEditor(new LQNResultEditorInput(htmlText.toString()),
-								"de.uka.ipd.sdq.pcmsolver.LQNResultEditor");
+								"org.palladiosimulator.solver.LQNResultEditor");
 					} catch (PartInitException e) {
 						e.printStackTrace();
 					}

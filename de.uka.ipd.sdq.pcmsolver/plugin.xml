@@ -28,7 +28,7 @@
                class="org.palladiosimulator.solver.visualisation.LQNResultEditor"
                extensions="lqnresult"
                icon="icons/favicon.ico"
-               id="de.uka.ipd.sdq.pcmsolver.LQNResultEditor"
+               id="org.palladiosimulator.solver.LQNResultEditor"
                name="LQNS Analysis Results">
          </editor>
    </extension>

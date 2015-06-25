@@ -170,7 +170,7 @@ public class EMFHelper {
 	}
 	
 	/**
-	 * Copied From de.uka.ipd.sdq.pcmsolver.models.PCMInstance.
+	 * Copied From org.palladiosimulator.solver.models.PCMInstance.
 	 * 
 	 * @param resourceSet
 	 *            The resource set to register all contained model packages

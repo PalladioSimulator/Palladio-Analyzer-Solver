@@ -1,5 +1,5 @@
 package org.palladiosimulator.solver.transformations.pcm2capra;
-//package de.uka.ipd.sdq.pcmsolver.transformations.pcm2capra;
+//package org.palladiosimulator.solver.transformations.pcm2capra;
 //
 //import org.eclipse.emf.common.util.EList;
 //

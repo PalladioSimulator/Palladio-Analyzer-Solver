@@ -51,7 +51,7 @@ public class PCMSolverLaunchConfigurationDelegate
 			throws CoreException {
 		ArrayList<LoggerAppenderStruct> loggerList = super
 				.setupLogging(logLevel);
-		loggerList.add(setupLogger("de.uka.ipd.sdq.pcmsolver", logLevel,
+		loggerList.add(setupLogger("org.palladiosimulator.solver", logLevel,
 				Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN
 						: SHORT_LOG_PATTERN));
 

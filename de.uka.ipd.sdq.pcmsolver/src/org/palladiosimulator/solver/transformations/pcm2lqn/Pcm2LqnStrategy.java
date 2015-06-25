@@ -332,7 +332,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				if (page != null) {
 					try {
 						page.openEditor(new LQNResultEditorInput(htmlText),
-								"de.uka.ipd.sdq.pcmsolver.LQNResultEditor");
+								"org.palladiosimulator.solver.LQNResultEditor");
 					} catch (PartInitException e) {
 						e.printStackTrace();
 					}
