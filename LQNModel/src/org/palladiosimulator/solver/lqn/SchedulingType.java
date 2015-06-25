@@ -79,7 +79,13 @@ public enum SchedulingType implements Enumerator {
      * @generated
      * @ordered
      */
-    PS_PP(6, "psPp", "ps-pp");
+    PS_PP(6, "psPp", "ps-pp"),
+
+    /**
+     * @generated This would appear if the latest LQN model would be read in. However, I did not
+     *            succeed in recreating the models automatically, so I have done it manually.
+     */
+    INF(7, "inf", "inf");
 
     /**
      * The '<em><b>Fcfs</b></em>' literal value. <!-- begin-user-doc -->
@@ -185,6 +191,8 @@ public enum SchedulingType implements Enumerator {
      * @ordered
      */
     public static final int PS_PP_VALUE = 6;
+
+    public static final int INF_VALUE = 7;
 
     /**
      * An array of all the '<em><b>Scheduling Type</b></em>' enumerators. <!-- begin-user-doc -->
