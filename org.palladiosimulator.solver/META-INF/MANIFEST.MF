@@ -31,7 +31,7 @@ Require-Bundle: org.eclipse.ui,
  de.uka.ipd.sdq.dialogs,
  de.uka.ipd.sdq.workflow.mdsd,
  org.palladiosimulator.analyzer.workflow,
- de.fzi.se.accuracy;bundle-version="1.0.0",
+ org.palladiosimulator.analyzer.accuracy;bundle-version="1.0.0",
  org.apache.commons.math;bundle-version="2.1.0",
  org.junit;bundle-version="4.11.0"
 Bundle-ActivationPolicy: lazy

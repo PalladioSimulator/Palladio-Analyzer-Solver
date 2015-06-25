@@ -1,6 +1,7 @@
 package org.palladiosimulator.solver.runconfig;
 
 import org.eclipse.debug.core.ILaunch;
+import org.palladiosimulator.analyzer.accuracy.jobs.TransformPCMForAccuracyInfluenceAnalysisJob;
 import org.palladiosimulator.analyzer.workflow.jobs.EventsTransformationJob;
 import org.palladiosimulator.analyzer.workflow.jobs.LoadMiddlewareConfigurationIntoBlackboardJob;
 import org.palladiosimulator.analyzer.workflow.jobs.LoadPCMModelsIntoBlackboardJob;
@@ -8,7 +9,6 @@ import org.palladiosimulator.analyzer.workflow.jobs.StoreAllPCMModelsJob;
 import org.palladiosimulator.analyzer.workflow.jobs.ValidatePCMModelsJob;
 import org.palladiosimulator.solver.RunPCMAnalysisJob;
 
-import de.fzi.se.accuracy.jobs.TransformPCMForAccuracyInfluenceAnalysisJob;
 import de.uka.ipd.sdq.workflow.jobs.ICompositeJob;
 import de.uka.ipd.sdq.workflow.jobs.SequentialBlackboardInteractingJob;
 import de.uka.ipd.sdq.workflow.mdsd.blackboard.MDSDBlackboard;
