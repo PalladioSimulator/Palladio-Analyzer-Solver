@@ -101,7 +101,7 @@ dependencies.
          unpack="false"/>
 
    <plugin
-         id="de.uka.ipd.sdq.spa.resourcemodel"
+         id="org.palladiosimulator.solver.spa.resourcemodel"
          download-size="0"
          install-size="0"
          version="0.0.0"

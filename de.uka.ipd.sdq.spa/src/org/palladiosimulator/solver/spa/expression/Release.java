@@ -6,7 +6,7 @@
  */
 package org.palladiosimulator.solver.spa.expression;
 
-import de.uka.ipd.sdq.spa.resourcemodel.PassiveResource;
+import org.palladiosimulator.solver.spa.resourcemodel.PassiveResource;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>Release</b></em>'. <!--

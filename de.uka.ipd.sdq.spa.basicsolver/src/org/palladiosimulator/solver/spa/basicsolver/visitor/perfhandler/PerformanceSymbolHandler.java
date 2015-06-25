@@ -10,7 +10,7 @@ import de.uka.ipd.sdq.probfunction.math.IProbabilityDensityFunction;
 import de.uka.ipd.sdq.probfunction.math.IProbabilityFunctionFactory;
 import de.uka.ipd.sdq.probfunction.math.ISamplePDF;
 import de.uka.ipd.sdq.probfunction.math.exception.ProbabilityFunctionException;
-import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
+import org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage;
 
 /**
  * @author Ihssane

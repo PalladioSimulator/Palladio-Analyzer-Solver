@@ -26,7 +26,7 @@ import de.uka.ipd.sdq.probfunction.math.exception.ConfigurationNotSetException;
 import de.uka.ipd.sdq.probfunction.math.exception.FunctionsInDifferenDomainsException;
 import de.uka.ipd.sdq.probfunction.math.exception.IncompatibleUnitsException;
 import de.uka.ipd.sdq.probfunction.math.exception.UnknownPDFTypeException;
-import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
+import org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage;
 import de.uka.ipd.sdq.stoex.ProbabilityFunctionLiteral;
 
 public class ExpressionSolver {

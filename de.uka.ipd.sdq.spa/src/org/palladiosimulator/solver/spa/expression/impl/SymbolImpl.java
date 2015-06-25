@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 import org.palladiosimulator.solver.spa.expression.ExpressionPackage;
 import org.palladiosimulator.solver.spa.expression.Symbol;
 
-import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
+import org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>Symbol</b></em>'. <!--

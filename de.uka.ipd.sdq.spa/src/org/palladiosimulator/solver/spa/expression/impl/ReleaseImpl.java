@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.palladiosimulator.solver.spa.expression.ExpressionPackage;
 import org.palladiosimulator.solver.spa.expression.Release;
 
-import de.uka.ipd.sdq.spa.resourcemodel.PassiveResource;
+import org.palladiosimulator.solver.spa.resourcemodel.PassiveResource;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>Release</b></em>'. <!--

@@ -9,7 +9,7 @@ package org.palladiosimulator.solver.spa;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
-import de.uka.ipd.sdq.spa.resourcemodel.Resource;
+import org.palladiosimulator.solver.spa.resourcemodel.Resource;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>SPA Model</b></em>'. <!--
@@ -47,7 +47,7 @@ public interface SPAModel extends EObject {
 
     /**
      * Returns the value of the '<em><b>Resources</b></em>' containment reference list. The list
-     * contents are of type {@link de.uka.ipd.sdq.spa.resourcemodel.Resource}. <!-- begin-user-doc
+     * contents are of type {@link org.palladiosimulator.solver.spa.resourcemodel.Resource}. <!-- begin-user-doc
      * -->
      * <p>
      * If the meaning of the '<em>Resources</em>' containment reference list isn't clear, there
@@ -57,7 +57,7 @@ public interface SPAModel extends EObject {
      * 
      * @return the value of the '<em>Resources</em>' containment reference list.
      * @see org.palladiosimulator.solver.spa.SpaPackage#getSPAModel_Resources()
-     * @model type="de.uka.ipd.sdq.spa.resourcemodel.Resource" containment="true"
+     * @model type="org.palladiosimulator.solver.spa.resourcemodel.Resource" containment="true"
      * @generated
      */
     EList<Resource> getResources();

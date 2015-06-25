@@ -19,7 +19,7 @@ import org.palladiosimulator.solver.spa.ProcessBehaviour;
 import org.palladiosimulator.solver.spa.SPAModel;
 import org.palladiosimulator.solver.spa.SpaPackage;
 
-import de.uka.ipd.sdq.spa.resourcemodel.Resource;
+import org.palladiosimulator.solver.spa.resourcemodel.Resource;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>SPA Model</b></em>'. <!--

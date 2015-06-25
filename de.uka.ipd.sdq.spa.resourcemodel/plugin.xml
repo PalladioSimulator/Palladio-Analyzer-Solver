@@ -10,12 +10,13 @@
 
 <plugin>
 
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package 
-       uri = "http://sdq.ipd.uka.de/ResourceModel/1.0" 
-       class = "de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage"
-       genModel = "model/ResourceModel.genmodel" /> 
-  </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ResourceModel -->
+      <package
+            uri="http://palladiosimulator.org/Solver/ResourceModel/1.0"
+            class="org.palladiosimulator.solver.resourcemodel.ResourceModelPackage"
+            genModel="model/ResourceModel.genmodel"/>
+   </extension>
 
 </plugin>
 

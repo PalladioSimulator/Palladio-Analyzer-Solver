@@ -8,7 +8,7 @@ package org.palladiosimulator.solver.spa.expression;
 
 import org.eclipse.emf.common.util.EList;
 
-import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
+import org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>Symbol</b></em>'. <!--
@@ -58,7 +58,7 @@ public interface Symbol extends Terminal {
 
     /**
      * Returns the value of the '<em><b>Resource Usages</b></em>' containment reference list. The
-     * list contents are of type {@link de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage}. <!--
+     * list contents are of type {@link org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage}. <!--
      * begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Resource Usages</em>' containment reference list isn't clear,
@@ -68,7 +68,7 @@ public interface Symbol extends Terminal {
      * 
      * @return the value of the '<em>Resource Usages</em>' containment reference list.
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getSymbol_ResourceUsages()
-     * @model type="de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage" containment="true"
+     * @model type="org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage" containment="true"
      * @generated
      */
     EList<ResourceUsage> getResourceUsages();

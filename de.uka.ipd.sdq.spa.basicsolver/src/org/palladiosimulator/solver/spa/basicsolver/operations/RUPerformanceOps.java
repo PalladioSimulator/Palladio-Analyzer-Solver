@@ -11,9 +11,9 @@ import de.uka.ipd.sdq.probfunction.math.IProbabilityMassFunction;
 import de.uka.ipd.sdq.probfunction.math.ManagedPDF;
 import de.uka.ipd.sdq.probfunction.math.exception.ConfigurationNotSetException;
 import de.uka.ipd.sdq.probfunction.math.exception.ProbabilityFunctionException;
-import de.uka.ipd.sdq.spa.resourcemodel.ActiveResource;
-import de.uka.ipd.sdq.spa.resourcemodel.Resource;
-import de.uka.ipd.sdq.spa.resourcemodel.ResourceUsage;
+import org.palladiosimulator.solver.spa.resourcemodel.ActiveResource;
+import org.palladiosimulator.solver.spa.resourcemodel.Resource;
+import org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage;
 
 public class RUPerformanceOps {
 

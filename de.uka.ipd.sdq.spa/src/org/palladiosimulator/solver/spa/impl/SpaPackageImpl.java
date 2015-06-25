@@ -19,7 +19,7 @@ import org.palladiosimulator.solver.spa.expression.ExpressionPackage;
 import org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl;
 
 import de.uka.ipd.sdq.probfunction.ProbfunctionPackage;
-import de.uka.ipd.sdq.spa.resourcemodel.ResourceModelPackage;
+import org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!-- end-user-doc -->
