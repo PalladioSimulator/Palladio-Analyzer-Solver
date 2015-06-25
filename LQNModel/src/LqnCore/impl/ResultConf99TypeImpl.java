@@ -22,254 +22,254 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.ResultConf99TypeImpl#getJoinVariance <em>Join Variance</em>}</li>
  *   <li>{@link LqnCore.impl.ResultConf99TypeImpl#getJoinWaiting <em>Join Waiting</em>}</li>
  *   <li>{@link LqnCore.impl.ResultConf99TypeImpl#getWaiting <em>Waiting</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class ResultConf99TypeImpl extends EObjectImpl implements ResultConf99Type {
 	/**
-	 * The default value of the '{@link #getJoinVariance() <em>Join Variance</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getJoinVariance() <em>Join Variance</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJoinVariance()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getJoinVariance()
+     * @generated
+     * @ordered
+     */
 	protected static final Object JOIN_VARIANCE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getJoinVariance() <em>Join Variance</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getJoinVariance() <em>Join Variance</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJoinVariance()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getJoinVariance()
+     * @generated
+     * @ordered
+     */
 	protected Object joinVariance = JOIN_VARIANCE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getJoinWaiting() <em>Join Waiting</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getJoinWaiting() <em>Join Waiting</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJoinWaiting()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getJoinWaiting()
+     * @generated
+     * @ordered
+     */
 	protected static final Object JOIN_WAITING_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getJoinWaiting() <em>Join Waiting</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getJoinWaiting() <em>Join Waiting</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getJoinWaiting()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getJoinWaiting()
+     * @generated
+     * @ordered
+     */
 	protected Object joinWaiting = JOIN_WAITING_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getWaiting() <em>Waiting</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getWaiting() <em>Waiting</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWaiting()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getWaiting()
+     * @generated
+     * @ordered
+     */
 	protected static final Object WAITING_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getWaiting() <em>Waiting</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getWaiting() <em>Waiting</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWaiting()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getWaiting()
+     * @generated
+     * @ordered
+     */
 	protected Object waiting = WAITING_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ResultConf99TypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.RESULT_CONF99_TYPE;
-	}
+        return LqnCorePackage.Literals.RESULT_CONF99_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Object getJoinVariance() {
-		return joinVariance;
-	}
+        return joinVariance;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setJoinVariance(Object newJoinVariance) {
-		Object oldJoinVariance = joinVariance;
-		joinVariance = newJoinVariance;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE, oldJoinVariance, joinVariance));
-	}
+        Object oldJoinVariance = joinVariance;
+        joinVariance = newJoinVariance;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE, oldJoinVariance, joinVariance));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Object getJoinWaiting() {
-		return joinWaiting;
-	}
+        return joinWaiting;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setJoinWaiting(Object newJoinWaiting) {
-		Object oldJoinWaiting = joinWaiting;
-		joinWaiting = newJoinWaiting;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING, oldJoinWaiting, joinWaiting));
-	}
+        Object oldJoinWaiting = joinWaiting;
+        joinWaiting = newJoinWaiting;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING, oldJoinWaiting, joinWaiting));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Object getWaiting() {
-		return waiting;
-	}
+        return waiting;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setWaiting(Object newWaiting) {
-		Object oldWaiting = waiting;
-		waiting = newWaiting;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.RESULT_CONF99_TYPE__WAITING, oldWaiting, waiting));
-	}
+        Object oldWaiting = waiting;
+        waiting = newWaiting;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.RESULT_CONF99_TYPE__WAITING, oldWaiting, waiting));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
-				return getJoinVariance();
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
-				return getJoinWaiting();
-			case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
-				return getWaiting();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
+                return getJoinVariance();
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
+                return getJoinWaiting();
+            case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
+                return getWaiting();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
-				setJoinVariance(newValue);
-				return;
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
-				setJoinWaiting(newValue);
-				return;
-			case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
-				setWaiting(newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
+                setJoinVariance(newValue);
+                return;
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
+                setJoinWaiting(newValue);
+                return;
+            case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
+                setWaiting(newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
-				setJoinVariance(JOIN_VARIANCE_EDEFAULT);
-				return;
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
-				setJoinWaiting(JOIN_WAITING_EDEFAULT);
-				return;
-			case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
-				setWaiting(WAITING_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
+                setJoinVariance(JOIN_VARIANCE_EDEFAULT);
+                return;
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
+                setJoinWaiting(JOIN_WAITING_EDEFAULT);
+                return;
+            case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
+                setWaiting(WAITING_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
-				return JOIN_VARIANCE_EDEFAULT == null ? joinVariance != null : !JOIN_VARIANCE_EDEFAULT.equals(joinVariance);
-			case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
-				return JOIN_WAITING_EDEFAULT == null ? joinWaiting != null : !JOIN_WAITING_EDEFAULT.equals(joinWaiting);
-			case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
-				return WAITING_EDEFAULT == null ? waiting != null : !WAITING_EDEFAULT.equals(waiting);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
+                return JOIN_VARIANCE_EDEFAULT == null ? joinVariance != null : !JOIN_VARIANCE_EDEFAULT.equals(joinVariance);
+            case LqnCorePackage.RESULT_CONF99_TYPE__JOIN_WAITING:
+                return JOIN_WAITING_EDEFAULT == null ? joinWaiting != null : !JOIN_WAITING_EDEFAULT.equals(joinWaiting);
+            case LqnCorePackage.RESULT_CONF99_TYPE__WAITING:
+                return WAITING_EDEFAULT == null ? waiting != null : !WAITING_EDEFAULT.equals(waiting);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (joinVariance: ");
-		result.append(joinVariance);
-		result.append(", joinWaiting: ");
-		result.append(joinWaiting);
-		result.append(", waiting: ");
-		result.append(waiting);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (joinVariance: ");
+        result.append(joinVariance);
+        result.append(", joinWaiting: ");
+        result.append(joinWaiting);
+        result.append(", waiting: ");
+        result.append(waiting);
+        result.append(')');
+        return result.toString();
+    }
 
 } //ResultConf99TypeImpl

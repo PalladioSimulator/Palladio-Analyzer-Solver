@@ -28,393 +28,393 @@ import org.eclipse.emf.ecore.util.EDataTypeEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.ParaTypeImpl#getStartValue <em>Start Value</em>}</li>
  *   <li>{@link LqnCore.impl.ParaTypeImpl#getEndValue <em>End Value</em>}</li>
  *   <li>{@link LqnCore.impl.ParaTypeImpl#getStepValue <em>Step Value</em>}</li>
  *   <li>{@link LqnCore.impl.ParaTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class ParaTypeImpl extends EObjectImpl implements ParaType {
 	/**
-	 * The default value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStartValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStartValue()
+     * @generated
+     * @ordered
+     */
 	protected static final int START_VALUE_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getStartValue() <em>Start Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStartValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStartValue()
+     * @generated
+     * @ordered
+     */
 	protected int startValue = START_VALUE_EDEFAULT;
 
 	/**
-	 * This is true if the Start Value attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the Start Value attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean startValueESet;
 
 	/**
-	 * The default value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEndValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getEndValue()
+     * @generated
+     * @ordered
+     */
 	protected static final int END_VALUE_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getEndValue() <em>End Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEndValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getEndValue()
+     * @generated
+     * @ordered
+     */
 	protected int endValue = END_VALUE_EDEFAULT;
 
 	/**
-	 * This is true if the End Value attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the End Value attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean endValueESet;
 
 	/**
-	 * The default value of the '{@link #getStepValue() <em>Step Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getStepValue() <em>Step Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStepValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStepValue()
+     * @generated
+     * @ordered
+     */
 	protected static final int STEP_VALUE_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getStepValue() <em>Step Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getStepValue() <em>Step Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getStepValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getStepValue()
+     * @generated
+     * @ordered
+     */
 	protected int stepValue = STEP_VALUE_EDEFAULT;
 
 	/**
-	 * This is true if the Step Value attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the Step Value attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean stepValueESet;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getValue() <em>Value</em>}' attribute list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getValue()
+     * @generated
+     * @ordered
+     */
 	protected EList<Integer> value;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ParaTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.PARA_TYPE;
-	}
+        return LqnCorePackage.Literals.PARA_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getStartValue() {
-		return startValue;
-	}
+        return startValue;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setStartValue(int newStartValue) {
-		int oldStartValue = startValue;
-		startValue = newStartValue;
-		boolean oldStartValueESet = startValueESet;
-		startValueESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PARA_TYPE__START_VALUE, oldStartValue, startValue, !oldStartValueESet));
-	}
+        int oldStartValue = startValue;
+        startValue = newStartValue;
+        boolean oldStartValueESet = startValueESet;
+        startValueESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PARA_TYPE__START_VALUE, oldStartValue, startValue, !oldStartValueESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetStartValue() {
-		int oldStartValue = startValue;
-		boolean oldStartValueESet = startValueESet;
-		startValue = START_VALUE_EDEFAULT;
-		startValueESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.PARA_TYPE__START_VALUE, oldStartValue, START_VALUE_EDEFAULT, oldStartValueESet));
-	}
+        int oldStartValue = startValue;
+        boolean oldStartValueESet = startValueESet;
+        startValue = START_VALUE_EDEFAULT;
+        startValueESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.PARA_TYPE__START_VALUE, oldStartValue, START_VALUE_EDEFAULT, oldStartValueESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetStartValue() {
-		return startValueESet;
-	}
+        return startValueESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getEndValue() {
-		return endValue;
-	}
+        return endValue;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setEndValue(int newEndValue) {
-		int oldEndValue = endValue;
-		endValue = newEndValue;
-		boolean oldEndValueESet = endValueESet;
-		endValueESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PARA_TYPE__END_VALUE, oldEndValue, endValue, !oldEndValueESet));
-	}
+        int oldEndValue = endValue;
+        endValue = newEndValue;
+        boolean oldEndValueESet = endValueESet;
+        endValueESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PARA_TYPE__END_VALUE, oldEndValue, endValue, !oldEndValueESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetEndValue() {
-		int oldEndValue = endValue;
-		boolean oldEndValueESet = endValueESet;
-		endValue = END_VALUE_EDEFAULT;
-		endValueESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.PARA_TYPE__END_VALUE, oldEndValue, END_VALUE_EDEFAULT, oldEndValueESet));
-	}
+        int oldEndValue = endValue;
+        boolean oldEndValueESet = endValueESet;
+        endValue = END_VALUE_EDEFAULT;
+        endValueESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.PARA_TYPE__END_VALUE, oldEndValue, END_VALUE_EDEFAULT, oldEndValueESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetEndValue() {
-		return endValueESet;
-	}
+        return endValueESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getStepValue() {
-		return stepValue;
-	}
+        return stepValue;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setStepValue(int newStepValue) {
-		int oldStepValue = stepValue;
-		stepValue = newStepValue;
-		boolean oldStepValueESet = stepValueESet;
-		stepValueESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PARA_TYPE__STEP_VALUE, oldStepValue, stepValue, !oldStepValueESet));
-	}
+        int oldStepValue = stepValue;
+        stepValue = newStepValue;
+        boolean oldStepValueESet = stepValueESet;
+        stepValueESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PARA_TYPE__STEP_VALUE, oldStepValue, stepValue, !oldStepValueESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetStepValue() {
-		int oldStepValue = stepValue;
-		boolean oldStepValueESet = stepValueESet;
-		stepValue = STEP_VALUE_EDEFAULT;
-		stepValueESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.PARA_TYPE__STEP_VALUE, oldStepValue, STEP_VALUE_EDEFAULT, oldStepValueESet));
-	}
+        int oldStepValue = stepValue;
+        boolean oldStepValueESet = stepValueESet;
+        stepValue = STEP_VALUE_EDEFAULT;
+        stepValueESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.PARA_TYPE__STEP_VALUE, oldStepValue, STEP_VALUE_EDEFAULT, oldStepValueESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetStepValue() {
-		return stepValueESet;
-	}
+        return stepValueESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<Integer> getValue() {
-		if (value == null) {
-			value = new EDataTypeEList<Integer>(Integer.class, this, LqnCorePackage.PARA_TYPE__VALUE);
-		}
-		return value;
-	}
+        if (value == null) {
+            value = new EDataTypeEList<Integer>(Integer.class, this, LqnCorePackage.PARA_TYPE__VALUE);
+        }
+        return value;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.PARA_TYPE__START_VALUE:
-				return new Integer(getStartValue());
-			case LqnCorePackage.PARA_TYPE__END_VALUE:
-				return new Integer(getEndValue());
-			case LqnCorePackage.PARA_TYPE__STEP_VALUE:
-				return new Integer(getStepValue());
-			case LqnCorePackage.PARA_TYPE__VALUE:
-				return getValue();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PARA_TYPE__START_VALUE:
+                return getStartValue();
+            case LqnCorePackage.PARA_TYPE__END_VALUE:
+                return getEndValue();
+            case LqnCorePackage.PARA_TYPE__STEP_VALUE:
+                return getStepValue();
+            case LqnCorePackage.PARA_TYPE__VALUE:
+                return getValue();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.PARA_TYPE__START_VALUE:
-				setStartValue(((Integer)newValue).intValue());
-				return;
-			case LqnCorePackage.PARA_TYPE__END_VALUE:
-				setEndValue(((Integer)newValue).intValue());
-				return;
-			case LqnCorePackage.PARA_TYPE__STEP_VALUE:
-				setStepValue(((Integer)newValue).intValue());
-				return;
-			case LqnCorePackage.PARA_TYPE__VALUE:
-				getValue().clear();
-				getValue().addAll((Collection<? extends Integer>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PARA_TYPE__START_VALUE:
+                setStartValue((Integer)newValue);
+                return;
+            case LqnCorePackage.PARA_TYPE__END_VALUE:
+                setEndValue((Integer)newValue);
+                return;
+            case LqnCorePackage.PARA_TYPE__STEP_VALUE:
+                setStepValue((Integer)newValue);
+                return;
+            case LqnCorePackage.PARA_TYPE__VALUE:
+                getValue().clear();
+                getValue().addAll((Collection<? extends Integer>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.PARA_TYPE__START_VALUE:
-				unsetStartValue();
-				return;
-			case LqnCorePackage.PARA_TYPE__END_VALUE:
-				unsetEndValue();
-				return;
-			case LqnCorePackage.PARA_TYPE__STEP_VALUE:
-				unsetStepValue();
-				return;
-			case LqnCorePackage.PARA_TYPE__VALUE:
-				getValue().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PARA_TYPE__START_VALUE:
+                unsetStartValue();
+                return;
+            case LqnCorePackage.PARA_TYPE__END_VALUE:
+                unsetEndValue();
+                return;
+            case LqnCorePackage.PARA_TYPE__STEP_VALUE:
+                unsetStepValue();
+                return;
+            case LqnCorePackage.PARA_TYPE__VALUE:
+                getValue().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.PARA_TYPE__START_VALUE:
-				return isSetStartValue();
-			case LqnCorePackage.PARA_TYPE__END_VALUE:
-				return isSetEndValue();
-			case LqnCorePackage.PARA_TYPE__STEP_VALUE:
-				return isSetStepValue();
-			case LqnCorePackage.PARA_TYPE__VALUE:
-				return value != null && !value.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PARA_TYPE__START_VALUE:
+                return isSetStartValue();
+            case LqnCorePackage.PARA_TYPE__END_VALUE:
+                return isSetEndValue();
+            case LqnCorePackage.PARA_TYPE__STEP_VALUE:
+                return isSetStepValue();
+            case LqnCorePackage.PARA_TYPE__VALUE:
+                return value != null && !value.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (startValue: ");
-		if (startValueESet) result.append(startValue); else result.append("<unset>");
-		result.append(", endValue: ");
-		if (endValueESet) result.append(endValue); else result.append("<unset>");
-		result.append(", stepValue: ");
-		if (stepValueESet) result.append(stepValue); else result.append("<unset>");
-		result.append(", value: ");
-		result.append(value);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (startValue: ");
+        if (startValueESet) result.append(startValue); else result.append("<unset>");
+        result.append(", endValue: ");
+        if (endValueESet) result.append(endValue); else result.append("<unset>");
+        result.append(", stepValue: ");
+        if (stepValueESet) result.append(stepValue); else result.append("<unset>");
+        result.append(", value: ");
+        result.append(value);
+        result.append(')');
+        return result.toString();
+    }
 
 } //ParaTypeImpl

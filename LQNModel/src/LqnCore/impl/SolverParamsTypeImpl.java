@@ -34,6 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.SolverParamsTypeImpl#getResultGeneral <em>Result General</em>}</li>
  *   <li>{@link LqnCore.impl.SolverParamsTypeImpl#getPragma <em>Pragma</em>}</li>
@@ -43,638 +44,637 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link LqnCore.impl.SolverParamsTypeImpl#getPrintInt <em>Print Int</em>}</li>
  *   <li>{@link LqnCore.impl.SolverParamsTypeImpl#getUnderrelaxCoeff <em>Underrelax Coeff</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsType {
 	/**
-	 * The cached value of the '{@link #getResultGeneral() <em>Result General</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getResultGeneral() <em>Result General</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getResultGeneral()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getResultGeneral()
+     * @generated
+     * @ordered
+     */
 	protected ResultGeneralType resultGeneral;
 
 	/**
-	 * The cached value of the '{@link #getPragma() <em>Pragma</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPragma() <em>Pragma</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPragma()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPragma()
+     * @generated
+     * @ordered
+     */
 	protected EList<PragmaType> pragma;
 
 	/**
-	 * The default value of the '{@link #getComment() <em>Comment</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getComment() <em>Comment</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getComment()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getComment()
+     * @generated
+     * @ordered
+     */
 	protected static final String COMMENT_EDEFAULT = "";
 
 	/**
-	 * The cached value of the '{@link #getComment() <em>Comment</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getComment() <em>Comment</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getComment()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getComment()
+     * @generated
+     * @ordered
+     */
 	protected String comment = COMMENT_EDEFAULT;
 
 	/**
-	 * This is true if the Comment attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the Comment attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean commentESet;
 
 	/**
-	 * The default value of the '{@link #getConvVal() <em>Conv Val</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getConvVal() <em>Conv Val</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConvVal()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getConvVal()
+     * @generated
+     * @ordered
+     */
 	protected static final Object CONV_VAL_EDEFAULT = LqnCoreFactory.eINSTANCE.createFromString(LqnCorePackage.eINSTANCE.getSrvnFloat(), "1");
 
 	/**
-	 * The cached value of the '{@link #getConvVal() <em>Conv Val</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getConvVal() <em>Conv Val</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConvVal()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getConvVal()
+     * @generated
+     * @ordered
+     */
 	protected Object convVal = CONV_VAL_EDEFAULT;
 
 	/**
-	 * This is true if the Conv Val attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the Conv Val attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean convValESet;
 
 	/**
-	 * The default value of the '{@link #getItLimit() <em>It Limit</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getItLimit() <em>It Limit</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getItLimit()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getItLimit()
+     * @generated
+     * @ordered
+     */
 	protected static final int IT_LIMIT_EDEFAULT = 50;
 
 	/**
-	 * The cached value of the '{@link #getItLimit() <em>It Limit</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getItLimit() <em>It Limit</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getItLimit()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getItLimit()
+     * @generated
+     * @ordered
+     */
 	protected int itLimit = IT_LIMIT_EDEFAULT;
 
 	/**
-	 * This is true if the It Limit attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the It Limit attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean itLimitESet;
 
 	/**
-	 * The default value of the '{@link #getPrintInt() <em>Print Int</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getPrintInt() <em>Print Int</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPrintInt()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPrintInt()
+     * @generated
+     * @ordered
+     */
 	protected static final int PRINT_INT_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getPrintInt() <em>Print Int</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPrintInt() <em>Print Int</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPrintInt()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPrintInt()
+     * @generated
+     * @ordered
+     */
 	protected int printInt = PRINT_INT_EDEFAULT;
 
 	/**
-	 * This is true if the Print Int attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the Print Int attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean printIntESet;
 
 	/**
-	 * The default value of the '{@link #getUnderrelaxCoeff() <em>Underrelax Coeff</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getUnderrelaxCoeff() <em>Underrelax Coeff</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUnderrelaxCoeff()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getUnderrelaxCoeff()
+     * @generated
+     * @ordered
+     */
 	protected static final Object UNDERRELAX_COEFF_EDEFAULT = LqnCoreFactory.eINSTANCE.createFromString(LqnCorePackage.eINSTANCE.getSrvnFloat(), "1");
 
 	/**
-	 * The cached value of the '{@link #getUnderrelaxCoeff() <em>Underrelax Coeff</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getUnderrelaxCoeff() <em>Underrelax Coeff</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUnderrelaxCoeff()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getUnderrelaxCoeff()
+     * @generated
+     * @ordered
+     */
 	protected Object underrelaxCoeff = UNDERRELAX_COEFF_EDEFAULT;
 
 	/**
-	 * This is true if the Underrelax Coeff attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the Underrelax Coeff attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean underrelaxCoeffESet;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SolverParamsTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.SOLVER_PARAMS_TYPE;
-	}
+        return LqnCorePackage.Literals.SOLVER_PARAMS_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ResultGeneralType getResultGeneral() {
-		return resultGeneral;
-	}
+        return resultGeneral;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetResultGeneral(ResultGeneralType newResultGeneral, NotificationChain msgs) {
-		ResultGeneralType oldResultGeneral = resultGeneral;
-		resultGeneral = newResultGeneral;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, oldResultGeneral, newResultGeneral);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        ResultGeneralType oldResultGeneral = resultGeneral;
+        resultGeneral = newResultGeneral;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, oldResultGeneral, newResultGeneral);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setResultGeneral(ResultGeneralType newResultGeneral) {
-		if (newResultGeneral != resultGeneral) {
-			NotificationChain msgs = null;
-			if (resultGeneral != null)
-				msgs = ((InternalEObject)resultGeneral).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
-			if (newResultGeneral != null)
-				msgs = ((InternalEObject)newResultGeneral).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
-			msgs = basicSetResultGeneral(newResultGeneral, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, newResultGeneral, newResultGeneral));
-	}
+        if (newResultGeneral != resultGeneral) {
+            NotificationChain msgs = null;
+            if (resultGeneral != null)
+                msgs = ((InternalEObject)resultGeneral).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
+            if (newResultGeneral != null)
+                msgs = ((InternalEObject)newResultGeneral).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
+            msgs = basicSetResultGeneral(newResultGeneral, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, newResultGeneral, newResultGeneral));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<PragmaType> getPragma() {
-		if (pragma == null) {
-			pragma = new EObjectContainmentEList<PragmaType>(PragmaType.class, this, LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA);
-		}
-		return pragma;
-	}
+        if (pragma == null) {
+            pragma = new EObjectContainmentEList<PragmaType>(PragmaType.class, this, LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA);
+        }
+        return pragma;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getComment() {
-		return comment;
-	}
+        return comment;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setComment(String newComment) {
-		String oldComment = comment;
-		comment = newComment;
-		boolean oldCommentESet = commentESet;
-		commentESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment, comment, !oldCommentESet));
-	}
+        String oldComment = comment;
+        comment = newComment;
+        boolean oldCommentESet = commentESet;
+        commentESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment, comment, !oldCommentESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetComment() {
-		String oldComment = comment;
-		boolean oldCommentESet = commentESet;
-		comment = COMMENT_EDEFAULT;
-		commentESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment, COMMENT_EDEFAULT, oldCommentESet));
-	}
+        String oldComment = comment;
+        boolean oldCommentESet = commentESet;
+        comment = COMMENT_EDEFAULT;
+        commentESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment, COMMENT_EDEFAULT, oldCommentESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetComment() {
-		return commentESet;
-	}
+        return commentESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Object getConvVal() {
-		return convVal;
-	}
+        return convVal;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setConvVal(Object newConvVal) {
-		Object oldConvVal = convVal;
-		convVal = newConvVal;
-		boolean oldConvValESet = convValESet;
-		convValESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal, convVal, !oldConvValESet));
-	}
+        Object oldConvVal = convVal;
+        convVal = newConvVal;
+        boolean oldConvValESet = convValESet;
+        convValESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal, convVal, !oldConvValESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetConvVal() {
-		Object oldConvVal = convVal;
-		boolean oldConvValESet = convValESet;
-		convVal = CONV_VAL_EDEFAULT;
-		convValESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal, CONV_VAL_EDEFAULT, oldConvValESet));
-	}
+        Object oldConvVal = convVal;
+        boolean oldConvValESet = convValESet;
+        convVal = CONV_VAL_EDEFAULT;
+        convValESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal, CONV_VAL_EDEFAULT, oldConvValESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetConvVal() {
-		return convValESet;
-	}
+        return convValESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getItLimit() {
-		return itLimit;
-	}
+        return itLimit;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setItLimit(int newItLimit) {
-		int oldItLimit = itLimit;
-		itLimit = newItLimit;
-		boolean oldItLimitESet = itLimitESet;
-		itLimitESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit, itLimit, !oldItLimitESet));
-	}
+        int oldItLimit = itLimit;
+        itLimit = newItLimit;
+        boolean oldItLimitESet = itLimitESet;
+        itLimitESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit, itLimit, !oldItLimitESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetItLimit() {
-		int oldItLimit = itLimit;
-		boolean oldItLimitESet = itLimitESet;
-		itLimit = IT_LIMIT_EDEFAULT;
-		itLimitESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit, IT_LIMIT_EDEFAULT, oldItLimitESet));
-	}
+        int oldItLimit = itLimit;
+        boolean oldItLimitESet = itLimitESet;
+        itLimit = IT_LIMIT_EDEFAULT;
+        itLimitESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit, IT_LIMIT_EDEFAULT, oldItLimitESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetItLimit() {
-		return itLimitESet;
-	}
+        return itLimitESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public int getPrintInt() {
-		return printInt;
-	}
+        return printInt;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPrintInt(int newPrintInt) {
-		int oldPrintInt = printInt;
-		printInt = newPrintInt;
-		boolean oldPrintIntESet = printIntESet;
-		printIntESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT, oldPrintInt, printInt, !oldPrintIntESet));
-	}
+        int oldPrintInt = printInt;
+        printInt = newPrintInt;
+        boolean oldPrintIntESet = printIntESet;
+        printIntESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT, oldPrintInt, printInt, !oldPrintIntESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetPrintInt() {
-		int oldPrintInt = printInt;
-		boolean oldPrintIntESet = printIntESet;
-		printInt = PRINT_INT_EDEFAULT;
-		printIntESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT, oldPrintInt, PRINT_INT_EDEFAULT, oldPrintIntESet));
-	}
+        int oldPrintInt = printInt;
+        boolean oldPrintIntESet = printIntESet;
+        printInt = PRINT_INT_EDEFAULT;
+        printIntESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT, oldPrintInt, PRINT_INT_EDEFAULT, oldPrintIntESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetPrintInt() {
-		return printIntESet;
-	}
+        return printIntESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public Object getUnderrelaxCoeff() {
-		return underrelaxCoeff;
-	}
+        return underrelaxCoeff;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setUnderrelaxCoeff(Object newUnderrelaxCoeff) {
-		Object oldUnderrelaxCoeff = underrelaxCoeff;
-		underrelaxCoeff = newUnderrelaxCoeff;
-		boolean oldUnderrelaxCoeffESet = underrelaxCoeffESet;
-		underrelaxCoeffESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF, oldUnderrelaxCoeff, underrelaxCoeff, !oldUnderrelaxCoeffESet));
-	}
+        Object oldUnderrelaxCoeff = underrelaxCoeff;
+        underrelaxCoeff = newUnderrelaxCoeff;
+        boolean oldUnderrelaxCoeffESet = underrelaxCoeffESet;
+        underrelaxCoeffESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF, oldUnderrelaxCoeff, underrelaxCoeff, !oldUnderrelaxCoeffESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetUnderrelaxCoeff() {
-		Object oldUnderrelaxCoeff = underrelaxCoeff;
-		boolean oldUnderrelaxCoeffESet = underrelaxCoeffESet;
-		underrelaxCoeff = UNDERRELAX_COEFF_EDEFAULT;
-		underrelaxCoeffESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF, oldUnderrelaxCoeff, UNDERRELAX_COEFF_EDEFAULT, oldUnderrelaxCoeffESet));
-	}
+        Object oldUnderrelaxCoeff = underrelaxCoeff;
+        boolean oldUnderrelaxCoeffESet = underrelaxCoeffESet;
+        underrelaxCoeff = UNDERRELAX_COEFF_EDEFAULT;
+        underrelaxCoeffESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF, oldUnderrelaxCoeff, UNDERRELAX_COEFF_EDEFAULT, oldUnderrelaxCoeffESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetUnderrelaxCoeff() {
-		return underrelaxCoeffESet;
-	}
+        return underrelaxCoeffESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
-				return basicSetResultGeneral(null, msgs);
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
-				return ((InternalEList<?>)getPragma()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
+                return basicSetResultGeneral(null, msgs);
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
+                return ((InternalEList<?>)getPragma()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
-				return getResultGeneral();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
-				return getPragma();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
-				return getComment();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
-				return getConvVal();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
-				return new Integer(getItLimit());
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
-				return new Integer(getPrintInt());
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
-				return getUnderrelaxCoeff();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
+                return getResultGeneral();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
+                return getPragma();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
+                return getComment();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
+                return getConvVal();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
+                return getItLimit();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
+                return getPrintInt();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
+                return getUnderrelaxCoeff();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
-				setResultGeneral((ResultGeneralType)newValue);
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
-				getPragma().clear();
-				getPragma().addAll((Collection<? extends PragmaType>)newValue);
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
-				setComment((String)newValue);
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
-				setConvVal(newValue);
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
-				setItLimit(((Integer)newValue).intValue());
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
-				setPrintInt(((Integer)newValue).intValue());
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
-				setUnderrelaxCoeff(newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
+                setResultGeneral((ResultGeneralType)newValue);
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
+                getPragma().clear();
+                getPragma().addAll((Collection<? extends PragmaType>)newValue);
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
+                setComment((String)newValue);
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
+                setConvVal(newValue);
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
+                setItLimit((Integer)newValue);
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
+                setPrintInt((Integer)newValue);
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
+                setUnderrelaxCoeff(newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
-				setResultGeneral((ResultGeneralType)null);
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
-				getPragma().clear();
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
-				unsetComment();
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
-				unsetConvVal();
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
-				unsetItLimit();
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
-				unsetPrintInt();
-				return;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
-				unsetUnderrelaxCoeff();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
+                setResultGeneral((ResultGeneralType)null);
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
+                getPragma().clear();
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
+                unsetComment();
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
+                unsetConvVal();
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
+                unsetItLimit();
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
+                unsetPrintInt();
+                return;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
+                unsetUnderrelaxCoeff();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
-				return resultGeneral != null;
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
-				return pragma != null && !pragma.isEmpty();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
-				return isSetComment();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
-				return isSetConvVal();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
-				return isSetItLimit();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
-				return isSetPrintInt();
-			case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
-				return isSetUnderrelaxCoeff();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
+                return resultGeneral != null;
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRAGMA:
+                return pragma != null && !pragma.isEmpty();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__COMMENT:
+                return isSetComment();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__CONV_VAL:
+                return isSetConvVal();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
+                return isSetItLimit();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__PRINT_INT:
+                return isSetPrintInt();
+            case LqnCorePackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
+                return isSetUnderrelaxCoeff();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (comment: ");
-		if (commentESet) result.append(comment); else result.append("<unset>");
-		result.append(", convVal: ");
-		if (convValESet) result.append(convVal); else result.append("<unset>");
-		result.append(", itLimit: ");
-		if (itLimitESet) result.append(itLimit); else result.append("<unset>");
-		result.append(", printInt: ");
-		if (printIntESet) result.append(printInt); else result.append("<unset>");
-		result.append(", underrelaxCoeff: ");
-		if (underrelaxCoeffESet) result.append(underrelaxCoeff); else result.append("<unset>");
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (comment: ");
+        if (commentESet) result.append(comment); else result.append("<unset>");
+        result.append(", convVal: ");
+        if (convValESet) result.append(convVal); else result.append("<unset>");
+        result.append(", itLimit: ");
+        if (itLimitESet) result.append(itLimit); else result.append("<unset>");
+        result.append(", printInt: ");
+        if (printIntESet) result.append(printInt); else result.append("<unset>");
+        result.append(", underrelaxCoeff: ");
+        if (underrelaxCoeffESet) result.append(underrelaxCoeff); else result.append("<unset>");
+        result.append(')');
+        return result.toString();
+    }
 
 } //SolverParamsTypeImpl

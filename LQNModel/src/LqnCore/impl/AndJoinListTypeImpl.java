@@ -34,229 +34,229 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.AndJoinListTypeImpl#getActivity <em>Activity</em>}</li>
  *   <li>{@link LqnCore.impl.AndJoinListTypeImpl#getQuorum <em>Quorum</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType {
 	/**
-	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getActivity()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getActivity()
+     * @generated
+     * @ordered
+     */
 	protected EList<ActivityType> activity;
 
 	/**
-	 * The default value of the '{@link #getQuorum() <em>Quorum</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getQuorum() <em>Quorum</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getQuorum()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getQuorum()
+     * @generated
+     * @ordered
+     */
 	protected static final BigInteger QUORUM_EDEFAULT = new BigInteger("0");
 
 	/**
-	 * The cached value of the '{@link #getQuorum() <em>Quorum</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getQuorum() <em>Quorum</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getQuorum()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getQuorum()
+     * @generated
+     * @ordered
+     */
 	protected BigInteger quorum = QUORUM_EDEFAULT;
 
 	/**
-	 * This is true if the Quorum attribute has been set.
-	 * <!-- begin-user-doc -->
+     * This is true if the Quorum attribute has been set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
+     * @generated
+     * @ordered
+     */
 	protected boolean quorumESet;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected AndJoinListTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.AND_JOIN_LIST_TYPE;
-	}
+        return LqnCorePackage.Literals.AND_JOIN_LIST_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ActivityType> getActivity() {
-		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityType>(ActivityType.class, this, LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY);
-		}
-		return activity;
-	}
+        if (activity == null) {
+            activity = new EObjectContainmentEList<ActivityType>(ActivityType.class, this, LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY);
+        }
+        return activity;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public BigInteger getQuorum() {
-		return quorum;
-	}
+        return quorum;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setQuorum(BigInteger newQuorum) {
-		BigInteger oldQuorum = quorum;
-		quorum = newQuorum;
-		boolean oldQuorumESet = quorumESet;
-		quorumESet = true;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum, quorum, !oldQuorumESet));
-	}
+        BigInteger oldQuorum = quorum;
+        quorum = newQuorum;
+        boolean oldQuorumESet = quorumESet;
+        quorumESet = true;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum, quorum, !oldQuorumESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void unsetQuorum() {
-		BigInteger oldQuorum = quorum;
-		boolean oldQuorumESet = quorumESet;
-		quorum = QUORUM_EDEFAULT;
-		quorumESet = false;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum, QUORUM_EDEFAULT, oldQuorumESet));
-	}
+        BigInteger oldQuorum = quorum;
+        boolean oldQuorumESet = quorumESet;
+        quorum = QUORUM_EDEFAULT;
+        quorumESet = false;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.UNSET, LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum, QUORUM_EDEFAULT, oldQuorumESet));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public boolean isSetQuorum() {
-		return quorumESet;
-	}
+        return quorumESet;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
-				return ((InternalEList<?>)getActivity()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
+                return ((InternalEList<?>)getActivity()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
-				return getActivity();
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
-				return getQuorum();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
+                return getActivity();
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
+                return getQuorum();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
-				getActivity().clear();
-				getActivity().addAll((Collection<? extends ActivityType>)newValue);
-				return;
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
-				setQuorum((BigInteger)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
+                getActivity().clear();
+                getActivity().addAll((Collection<? extends ActivityType>)newValue);
+                return;
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
+                setQuorum((BigInteger)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
-				getActivity().clear();
-				return;
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
-				unsetQuorum();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
+                getActivity().clear();
+                return;
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
+                unsetQuorum();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
-				return activity != null && !activity.isEmpty();
-			case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
-				return isSetQuorum();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__ACTIVITY:
+                return activity != null && !activity.isEmpty();
+            case LqnCorePackage.AND_JOIN_LIST_TYPE__QUORUM:
+                return isSetQuorum();
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (quorum: ");
-		if (quorumESet) result.append(quorum); else result.append("<unset>");
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (quorum: ");
+        if (quorumESet) result.append(quorum); else result.append("<unset>");
+        result.append(')');
+        return result.toString();
+    }
 
 } //AndJoinListTypeImpl

@@ -14,10 +14,10 @@ package LqnCore;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.ActivityOrType#getProb <em>Prob</em>}</li>
  * </ul>
- * </p>
  *
  * @see LqnCore.LqnCorePackage#getActivityOrType()
  * @model extendedMetaData="name='ActivityOrType' kind='empty'"
@@ -25,58 +25,58 @@ package LqnCore;
  */
 public interface ActivityOrType extends ActivityType {
 	/**
-	 * Returns the value of the '<em><b>Prob</b></em>' attribute.
-	 * The default value is <code>"1"</code>.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Prob</b></em>' attribute.
+     * The default value is <code>"1"</code>.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Prob</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Prob</em>' attribute.
-	 * @see #isSetProb()
-	 * @see #unsetProb()
-	 * @see #setProb(String)
-	 * @see LqnCore.LqnCorePackage#getActivityOrType_Prob()
-	 * @model default="1" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
-	 *        extendedMetaData="kind='attribute' name='prob' namespace='##targetNamespace'"
-	 * @generated
-	 */
+     * @return the value of the '<em>Prob</em>' attribute.
+     * @see #isSetProb()
+     * @see #unsetProb()
+     * @see #setProb(String)
+     * @see LqnCore.LqnCorePackage#getActivityOrType_Prob()
+     * @model default="1" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='prob' namespace='##targetNamespace'"
+     * @generated
+     */
 	String getProb();
 
 	/**
-	 * Sets the value of the '{@link LqnCore.ActivityOrType#getProb <em>Prob</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Sets the value of the '{@link LqnCore.ActivityOrType#getProb <em>Prob</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Prob</em>' attribute.
-	 * @see #isSetProb()
-	 * @see #unsetProb()
-	 * @see #getProb()
-	 * @generated
-	 */
+     * @param value the new value of the '<em>Prob</em>' attribute.
+     * @see #isSetProb()
+     * @see #unsetProb()
+     * @see #getProb()
+     * @generated
+     */
 	void setProb(String value);
 
 	/**
-	 * Unsets the value of the '{@link LqnCore.ActivityOrType#getProb <em>Prob</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * Unsets the value of the '{@link LqnCore.ActivityOrType#getProb <em>Prob</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isSetProb()
-	 * @see #getProb()
-	 * @see #setProb(String)
-	 * @generated
-	 */
+     * @see #isSetProb()
+     * @see #getProb()
+     * @see #setProb(String)
+     * @generated
+     */
 	void unsetProb();
 
 	/**
-	 * Returns whether the value of the '{@link LqnCore.ActivityOrType#getProb <em>Prob</em>}' attribute is set.
-	 * <!-- begin-user-doc -->
+     * Returns whether the value of the '{@link LqnCore.ActivityOrType#getProb <em>Prob</em>}' attribute is set.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return whether the value of the '<em>Prob</em>' attribute is set.
-	 * @see #unsetProb()
-	 * @see #getProb()
-	 * @see #setProb(String)
-	 * @generated
-	 */
+     * @return whether the value of the '<em>Prob</em>' attribute is set.
+     * @see #unsetProb()
+     * @see #getProb()
+     * @see #setProb(String)
+     * @generated
+     */
 	boolean isSetProb();
 
 } // ActivityOrType

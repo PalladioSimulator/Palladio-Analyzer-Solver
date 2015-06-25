@@ -27,30 +27,30 @@ import org.eclipse.emf.ecore.xmi.util.XMLProcessor;
 public class LqnCoreXMLProcessor extends XMLProcessor {
 
 	/**
-	 * Public constructor to instantiate the helper.
-	 * <!-- begin-user-doc -->
+     * Public constructor to instantiate the helper.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public LqnCoreXMLProcessor() {
-		super(new EPackageRegistryImpl(EPackage.Registry.INSTANCE));
-		extendedMetaData.putPackage(null, LqnCorePackage.eINSTANCE);
-	}
+        super(new EPackageRegistryImpl(EPackage.Registry.INSTANCE));
+        extendedMetaData.putPackage(null, LqnCorePackage.eINSTANCE);
+    }
 	
 	/**
-	 * Register for "*" and "xml" file extensions the LqnCoreResourceFactoryImpl factory.
-	 * <!-- begin-user-doc -->
+     * Register for "*" and "xml" file extensions the LqnCoreResourceFactoryImpl factory.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected Map<String, Resource.Factory> getRegistrations() {
-		if (registrations == null) {
-			super.getRegistrations();
-			registrations.put(XML_EXTENSION, new LqnCoreResourceFactoryImpl());
-			registrations.put(STAR_EXTENSION, new LqnCoreResourceFactoryImpl());
-		}
-		return registrations;
-	}
+        if (registrations == null) {
+            super.getRegistrations();
+            registrations.put(XML_EXTENSION, new LqnCoreResourceFactoryImpl());
+            registrations.put(STAR_EXTENSION, new LqnCoreResourceFactoryImpl());
+        }
+        return registrations;
+    }
 
 } //LqnCoreXMLProcessor

@@ -31,163 +31,163 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.ActivityGraphBaseImpl#getActivity <em>Activity</em>}</li>
  *   <li>{@link LqnCore.impl.ActivityGraphBaseImpl#getPrecedence <em>Precedence</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphBase {
 	/**
-	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getActivity()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getActivity()
+     * @generated
+     * @ordered
+     */
 	protected EList<ActivityDefType> activity;
 
 	/**
-	 * The cached value of the '{@link #getPrecedence() <em>Precedence</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPrecedence() <em>Precedence</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPrecedence()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPrecedence()
+     * @generated
+     * @ordered
+     */
 	protected EList<PrecedenceType> precedence;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityGraphBaseImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.ACTIVITY_GRAPH_BASE;
-	}
+        return LqnCorePackage.Literals.ACTIVITY_GRAPH_BASE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ActivityDefType> getActivity() {
-		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityDefType>(ActivityDefType.class, this, LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY);
-		}
-		return activity;
-	}
+        if (activity == null) {
+            activity = new EObjectContainmentEList<ActivityDefType>(ActivityDefType.class, this, LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY);
+        }
+        return activity;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<PrecedenceType> getPrecedence() {
-		if (precedence == null) {
-			precedence = new EObjectContainmentEList<PrecedenceType>(PrecedenceType.class, this, LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE);
-		}
-		return precedence;
-	}
+        if (precedence == null) {
+            precedence = new EObjectContainmentEList<PrecedenceType>(PrecedenceType.class, this, LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE);
+        }
+        return precedence;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
-				return ((InternalEList<?>)getActivity()).basicRemove(otherEnd, msgs);
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
-				return ((InternalEList<?>)getPrecedence()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
+                return ((InternalEList<?>)getActivity()).basicRemove(otherEnd, msgs);
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
+                return ((InternalEList<?>)getPrecedence()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
-				return getActivity();
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
-				return getPrecedence();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
+                return getActivity();
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
+                return getPrecedence();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
-				getActivity().clear();
-				getActivity().addAll((Collection<? extends ActivityDefType>)newValue);
-				return;
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
-				getPrecedence().clear();
-				getPrecedence().addAll((Collection<? extends PrecedenceType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
+                getActivity().clear();
+                getActivity().addAll((Collection<? extends ActivityDefType>)newValue);
+                return;
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
+                getPrecedence().clear();
+                getPrecedence().addAll((Collection<? extends PrecedenceType>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
-				getActivity().clear();
-				return;
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
-				getPrecedence().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
+                getActivity().clear();
+                return;
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
+                getPrecedence().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
-				return activity != null && !activity.isEmpty();
-			case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
-				return precedence != null && !precedence.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
+                return activity != null && !activity.isEmpty();
+            case LqnCorePackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
+                return precedence != null && !precedence.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //ActivityGraphBaseImpl

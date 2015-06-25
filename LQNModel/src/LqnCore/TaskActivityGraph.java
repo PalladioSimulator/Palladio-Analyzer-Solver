@@ -15,10 +15,10 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.TaskActivityGraph#getReplyEntry <em>Reply Entry</em>}</li>
  * </ul>
- * </p>
  *
  * @see LqnCore.LqnCorePackage#getTaskActivityGraph()
  * @model extendedMetaData="name='TaskActivityGraph' kind='elementOnly'"
@@ -26,20 +26,20 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface TaskActivityGraph extends ActivityGraphBase {
 	/**
-	 * Returns the value of the '<em><b>Reply Entry</b></em>' containment reference list.
-	 * The list contents are of type {@link LqnCore.ReplyEntryType}.
-	 * <!-- begin-user-doc -->
+     * Returns the value of the '<em><b>Reply Entry</b></em>' containment reference list.
+     * The list contents are of type {@link LqnCore.ReplyEntryType}.
+     * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Reply Entry</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Reply Entry</em>' containment reference list.
-	 * @see LqnCore.LqnCorePackage#getTaskActivityGraph_ReplyEntry()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='reply-entry' namespace='##targetNamespace'"
-	 * @generated
-	 */
+     * @return the value of the '<em>Reply Entry</em>' containment reference list.
+     * @see LqnCore.LqnCorePackage#getTaskActivityGraph_ReplyEntry()
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='reply-entry' namespace='##targetNamespace'"
+     * @generated
+     */
 	EList<ReplyEntryType> getReplyEntry();
 
 } // TaskActivityGraph

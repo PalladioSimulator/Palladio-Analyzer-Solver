@@ -38,1510 +38,1510 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
  */
 public class LqnCoreItemProviderAdapterFactory extends LqnCoreAdapterFactory implements ComposeableAdapterFactory, IChangeNotifier, IDisposable {
 	/**
-	 * This keeps track of the root adapter factory that delegates to this adapter factory.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the root adapter factory that delegates to this adapter factory.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ComposedAdapterFactory parentAdapterFactory;
 
 	/**
-	 * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
-	 * <!-- begin-user-doc -->
+     * This is used to implement {@link org.eclipse.emf.edit.provider.IChangeNotifier}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected IChangeNotifier changeNotifier = new ChangeNotifier();
 
 	/**
-	 * This keeps track of all the supported types checked by {@link #isFactoryForType isFactoryForType}.
-	 * <!-- begin-user-doc -->
+     * This keeps track of all the supported types checked by {@link #isFactoryForType isFactoryForType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected Collection<Object> supportedTypes = new ArrayList<Object>();
 
 	/**
-	 * This constructs an instance.
-	 * <!-- begin-user-doc -->
+     * This constructs an instance.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public LqnCoreItemProviderAdapterFactory() {
-		supportedTypes.add(IEditingDomainItemProvider.class);
-		supportedTypes.add(IStructuredItemContentProvider.class);
-		supportedTypes.add(ITreeItemContentProvider.class);
-		supportedTypes.add(IItemLabelProvider.class);
-		supportedTypes.add(IItemPropertySource.class);
-	}
+        supportedTypes.add(IEditingDomainItemProvider.class);
+        supportedTypes.add(IStructuredItemContentProvider.class);
+        supportedTypes.add(ITreeItemContentProvider.class);
+        supportedTypes.add(IItemLabelProvider.class);
+        supportedTypes.add(IItemPropertySource.class);
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityDefBase} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityDefBase} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityDefBaseItemProvider activityDefBaseItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityDefBase}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityDefBase}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityDefBaseAdapter() {
-		if (activityDefBaseItemProvider == null) {
-			activityDefBaseItemProvider = new ActivityDefBaseItemProvider(this);
-		}
+        if (activityDefBaseItemProvider == null) {
+            activityDefBaseItemProvider = new ActivityDefBaseItemProvider(this);
+        }
 
-		return activityDefBaseItemProvider;
-	}
+        return activityDefBaseItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityDefType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityDefType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityDefTypeItemProvider activityDefTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityDefType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityDefType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityDefTypeAdapter() {
-		if (activityDefTypeItemProvider == null) {
-			activityDefTypeItemProvider = new ActivityDefTypeItemProvider(this);
-		}
+        if (activityDefTypeItemProvider == null) {
+            activityDefTypeItemProvider = new ActivityDefTypeItemProvider(this);
+        }
 
-		return activityDefTypeItemProvider;
-	}
+        return activityDefTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityGraphBase} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityGraphBase} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityGraphBaseItemProvider activityGraphBaseItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityGraphBase}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityGraphBase}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityGraphBaseAdapter() {
-		if (activityGraphBaseItemProvider == null) {
-			activityGraphBaseItemProvider = new ActivityGraphBaseItemProvider(this);
-		}
+        if (activityGraphBaseItemProvider == null) {
+            activityGraphBaseItemProvider = new ActivityGraphBaseItemProvider(this);
+        }
 
-		return activityGraphBaseItemProvider;
-	}
+        return activityGraphBaseItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityListType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityListType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityListTypeItemProvider activityListTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityListType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityListType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityListTypeAdapter() {
-		if (activityListTypeItemProvider == null) {
-			activityListTypeItemProvider = new ActivityListTypeItemProvider(this);
-		}
+        if (activityListTypeItemProvider == null) {
+            activityListTypeItemProvider = new ActivityListTypeItemProvider(this);
+        }
 
-		return activityListTypeItemProvider;
-	}
+        return activityListTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityLoopListType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityLoopListType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityLoopListTypeItemProvider activityLoopListTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityLoopListType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityLoopListType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityLoopListTypeAdapter() {
-		if (activityLoopListTypeItemProvider == null) {
-			activityLoopListTypeItemProvider = new ActivityLoopListTypeItemProvider(this);
-		}
+        if (activityLoopListTypeItemProvider == null) {
+            activityLoopListTypeItemProvider = new ActivityLoopListTypeItemProvider(this);
+        }
 
-		return activityLoopListTypeItemProvider;
-	}
+        return activityLoopListTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityLoopType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityLoopType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityLoopTypeItemProvider activityLoopTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityLoopType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityLoopType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityLoopTypeAdapter() {
-		if (activityLoopTypeItemProvider == null) {
-			activityLoopTypeItemProvider = new ActivityLoopTypeItemProvider(this);
-		}
+        if (activityLoopTypeItemProvider == null) {
+            activityLoopTypeItemProvider = new ActivityLoopTypeItemProvider(this);
+        }
 
-		return activityLoopTypeItemProvider;
-	}
+        return activityLoopTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityMakingCallType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityMakingCallType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityMakingCallTypeItemProvider activityMakingCallTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityMakingCallType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityMakingCallType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityMakingCallTypeAdapter() {
-		if (activityMakingCallTypeItemProvider == null) {
-			activityMakingCallTypeItemProvider = new ActivityMakingCallTypeItemProvider(this);
-		}
+        if (activityMakingCallTypeItemProvider == null) {
+            activityMakingCallTypeItemProvider = new ActivityMakingCallTypeItemProvider(this);
+        }
 
-		return activityMakingCallTypeItemProvider;
-	}
+        return activityMakingCallTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityOrType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityOrType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityOrTypeItemProvider activityOrTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityOrType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityOrType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityOrTypeAdapter() {
-		if (activityOrTypeItemProvider == null) {
-			activityOrTypeItemProvider = new ActivityOrTypeItemProvider(this);
-		}
+        if (activityOrTypeItemProvider == null) {
+            activityOrTypeItemProvider = new ActivityOrTypeItemProvider(this);
+        }
 
-		return activityOrTypeItemProvider;
-	}
+        return activityOrTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityPhasesType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityPhasesType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityPhasesTypeItemProvider activityPhasesTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityPhasesType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityPhasesType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityPhasesTypeAdapter() {
-		if (activityPhasesTypeItemProvider == null) {
-			activityPhasesTypeItemProvider = new ActivityPhasesTypeItemProvider(this);
-		}
+        if (activityPhasesTypeItemProvider == null) {
+            activityPhasesTypeItemProvider = new ActivityPhasesTypeItemProvider(this);
+        }
 
-		return activityPhasesTypeItemProvider;
-	}
+        return activityPhasesTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ActivityType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ActivityType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ActivityTypeItemProvider activityTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ActivityType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ActivityType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createActivityTypeAdapter() {
-		if (activityTypeItemProvider == null) {
-			activityTypeItemProvider = new ActivityTypeItemProvider(this);
-		}
+        if (activityTypeItemProvider == null) {
+            activityTypeItemProvider = new ActivityTypeItemProvider(this);
+        }
 
-		return activityTypeItemProvider;
-	}
+        return activityTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.AndJoinListType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.AndJoinListType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected AndJoinListTypeItemProvider andJoinListTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.AndJoinListType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.AndJoinListType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createAndJoinListTypeAdapter() {
-		if (andJoinListTypeItemProvider == null) {
-			andJoinListTypeItemProvider = new AndJoinListTypeItemProvider(this);
-		}
+        if (andJoinListTypeItemProvider == null) {
+            andJoinListTypeItemProvider = new AndJoinListTypeItemProvider(this);
+        }
 
-		return andJoinListTypeItemProvider;
-	}
+        return andJoinListTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.AsynchCallType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.AsynchCallType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected AsynchCallTypeItemProvider asynchCallTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.AsynchCallType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.AsynchCallType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createAsynchCallTypeAdapter() {
-		if (asynchCallTypeItemProvider == null) {
-			asynchCallTypeItemProvider = new AsynchCallTypeItemProvider(this);
-		}
+        if (asynchCallTypeItemProvider == null) {
+            asynchCallTypeItemProvider = new AsynchCallTypeItemProvider(this);
+        }
 
-		return asynchCallTypeItemProvider;
-	}
+        return asynchCallTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.BindType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.BindType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected BindTypeItemProvider bindTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.BindType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.BindType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createBindTypeAdapter() {
-		if (bindTypeItemProvider == null) {
-			bindTypeItemProvider = new BindTypeItemProvider(this);
-		}
+        if (bindTypeItemProvider == null) {
+            bindTypeItemProvider = new BindTypeItemProvider(this);
+        }
 
-		return bindTypeItemProvider;
-	}
+        return bindTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.CallListType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.CallListType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected CallListTypeItemProvider callListTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.CallListType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.CallListType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createCallListTypeAdapter() {
-		if (callListTypeItemProvider == null) {
-			callListTypeItemProvider = new CallListTypeItemProvider(this);
-		}
+        if (callListTypeItemProvider == null) {
+            callListTypeItemProvider = new CallListTypeItemProvider(this);
+        }
 
-		return callListTypeItemProvider;
-	}
+        return callListTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.DocumentRoot} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.DocumentRoot} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected DocumentRootItemProvider documentRootItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.DocumentRoot}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.DocumentRoot}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createDocumentRootAdapter() {
-		if (documentRootItemProvider == null) {
-			documentRootItemProvider = new DocumentRootItemProvider(this);
-		}
+        if (documentRootItemProvider == null) {
+            documentRootItemProvider = new DocumentRootItemProvider(this);
+        }
 
-		return documentRootItemProvider;
-	}
+        return documentRootItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.EntryActivityDefType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.EntryActivityDefType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EntryActivityDefTypeItemProvider entryActivityDefTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.EntryActivityDefType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.EntryActivityDefType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createEntryActivityDefTypeAdapter() {
-		if (entryActivityDefTypeItemProvider == null) {
-			entryActivityDefTypeItemProvider = new EntryActivityDefTypeItemProvider(this);
-		}
+        if (entryActivityDefTypeItemProvider == null) {
+            entryActivityDefTypeItemProvider = new EntryActivityDefTypeItemProvider(this);
+        }
 
-		return entryActivityDefTypeItemProvider;
-	}
+        return entryActivityDefTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.EntryActivityGraph} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.EntryActivityGraph} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EntryActivityGraphItemProvider entryActivityGraphItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.EntryActivityGraph}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.EntryActivityGraph}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createEntryActivityGraphAdapter() {
-		if (entryActivityGraphItemProvider == null) {
-			entryActivityGraphItemProvider = new EntryActivityGraphItemProvider(this);
-		}
+        if (entryActivityGraphItemProvider == null) {
+            entryActivityGraphItemProvider = new EntryActivityGraphItemProvider(this);
+        }
 
-		return entryActivityGraphItemProvider;
-	}
+        return entryActivityGraphItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.EntryMakingCallType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.EntryMakingCallType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EntryMakingCallTypeItemProvider entryMakingCallTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.EntryMakingCallType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.EntryMakingCallType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createEntryMakingCallTypeAdapter() {
-		if (entryMakingCallTypeItemProvider == null) {
-			entryMakingCallTypeItemProvider = new EntryMakingCallTypeItemProvider(this);
-		}
+        if (entryMakingCallTypeItemProvider == null) {
+            entryMakingCallTypeItemProvider = new EntryMakingCallTypeItemProvider(this);
+        }
 
-		return entryMakingCallTypeItemProvider;
-	}
+        return entryMakingCallTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.EntryType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.EntryType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EntryTypeItemProvider entryTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.EntryType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.EntryType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createEntryTypeAdapter() {
-		if (entryTypeItemProvider == null) {
-			entryTypeItemProvider = new EntryTypeItemProvider(this);
-		}
+        if (entryTypeItemProvider == null) {
+            entryTypeItemProvider = new EntryTypeItemProvider(this);
+        }
 
-		return entryTypeItemProvider;
-	}
+        return entryTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.FirstPlotType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.FirstPlotType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected FirstPlotTypeItemProvider firstPlotTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.FirstPlotType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.FirstPlotType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createFirstPlotTypeAdapter() {
-		if (firstPlotTypeItemProvider == null) {
-			firstPlotTypeItemProvider = new FirstPlotTypeItemProvider(this);
-		}
+        if (firstPlotTypeItemProvider == null) {
+            firstPlotTypeItemProvider = new FirstPlotTypeItemProvider(this);
+        }
 
-		return firstPlotTypeItemProvider;
-	}
+        return firstPlotTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.HistogramBinType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.HistogramBinType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected HistogramBinTypeItemProvider histogramBinTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.HistogramBinType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.HistogramBinType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createHistogramBinTypeAdapter() {
-		if (histogramBinTypeItemProvider == null) {
-			histogramBinTypeItemProvider = new HistogramBinTypeItemProvider(this);
-		}
+        if (histogramBinTypeItemProvider == null) {
+            histogramBinTypeItemProvider = new HistogramBinTypeItemProvider(this);
+        }
 
-		return histogramBinTypeItemProvider;
-	}
+        return histogramBinTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.InPortType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.InPortType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected InPortTypeItemProvider inPortTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.InPortType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.InPortType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createInPortTypeAdapter() {
-		if (inPortTypeItemProvider == null) {
-			inPortTypeItemProvider = new InPortTypeItemProvider(this);
-		}
+        if (inPortTypeItemProvider == null) {
+            inPortTypeItemProvider = new InPortTypeItemProvider(this);
+        }
 
-		return inPortTypeItemProvider;
-	}
+        return inPortTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.InterfaceType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.InterfaceType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected InterfaceTypeItemProvider interfaceTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.InterfaceType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.InterfaceType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createInterfaceTypeAdapter() {
-		if (interfaceTypeItemProvider == null) {
-			interfaceTypeItemProvider = new InterfaceTypeItemProvider(this);
-		}
+        if (interfaceTypeItemProvider == null) {
+            interfaceTypeItemProvider = new InterfaceTypeItemProvider(this);
+        }
 
-		return interfaceTypeItemProvider;
-	}
+        return interfaceTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.LqnCoreType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.LqnCoreType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected LqnCoreTypeItemProvider lqnCoreTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.LqnCoreType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.LqnCoreType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createLqnCoreTypeAdapter() {
-		if (lqnCoreTypeItemProvider == null) {
-			lqnCoreTypeItemProvider = new LqnCoreTypeItemProvider(this);
-		}
+        if (lqnCoreTypeItemProvider == null) {
+            lqnCoreTypeItemProvider = new LqnCoreTypeItemProvider(this);
+        }
 
-		return lqnCoreTypeItemProvider;
-	}
+        return lqnCoreTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.LqnModelType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.LqnModelType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected LqnModelTypeItemProvider lqnModelTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.LqnModelType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.LqnModelType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createLqnModelTypeAdapter() {
-		if (lqnModelTypeItemProvider == null) {
-			lqnModelTypeItemProvider = new LqnModelTypeItemProvider(this);
-		}
+        if (lqnModelTypeItemProvider == null) {
+            lqnModelTypeItemProvider = new LqnModelTypeItemProvider(this);
+        }
 
-		return lqnModelTypeItemProvider;
-	}
+        return lqnModelTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.MakingCallType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.MakingCallType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected MakingCallTypeItemProvider makingCallTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.MakingCallType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.MakingCallType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createMakingCallTypeAdapter() {
-		if (makingCallTypeItemProvider == null) {
-			makingCallTypeItemProvider = new MakingCallTypeItemProvider(this);
-		}
+        if (makingCallTypeItemProvider == null) {
+            makingCallTypeItemProvider = new MakingCallTypeItemProvider(this);
+        }
 
-		return makingCallTypeItemProvider;
-	}
+        return makingCallTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.OrListType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.OrListType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OrListTypeItemProvider orListTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.OrListType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.OrListType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createOrListTypeAdapter() {
-		if (orListTypeItemProvider == null) {
-			orListTypeItemProvider = new OrListTypeItemProvider(this);
-		}
+        if (orListTypeItemProvider == null) {
+            orListTypeItemProvider = new OrListTypeItemProvider(this);
+        }
 
-		return orListTypeItemProvider;
-	}
+        return orListTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.OutPortType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.OutPortType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OutPortTypeItemProvider outPortTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.OutPortType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.OutPortType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createOutPortTypeAdapter() {
-		if (outPortTypeItemProvider == null) {
-			outPortTypeItemProvider = new OutPortTypeItemProvider(this);
-		}
+        if (outPortTypeItemProvider == null) {
+            outPortTypeItemProvider = new OutPortTypeItemProvider(this);
+        }
 
-		return outPortTypeItemProvider;
-	}
+        return outPortTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.OutputDistributionType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.OutputDistributionType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OutputDistributionTypeItemProvider outputDistributionTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.OutputDistributionType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.OutputDistributionType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createOutputDistributionTypeAdapter() {
-		if (outputDistributionTypeItemProvider == null) {
-			outputDistributionTypeItemProvider = new OutputDistributionTypeItemProvider(this);
-		}
+        if (outputDistributionTypeItemProvider == null) {
+            outputDistributionTypeItemProvider = new OutputDistributionTypeItemProvider(this);
+        }
 
-		return outputDistributionTypeItemProvider;
-	}
+        return outputDistributionTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.OutputEntryDistributionType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.OutputEntryDistributionType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OutputEntryDistributionTypeItemProvider outputEntryDistributionTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.OutputEntryDistributionType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.OutputEntryDistributionType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createOutputEntryDistributionTypeAdapter() {
-		if (outputEntryDistributionTypeItemProvider == null) {
-			outputEntryDistributionTypeItemProvider = new OutputEntryDistributionTypeItemProvider(this);
-		}
+        if (outputEntryDistributionTypeItemProvider == null) {
+            outputEntryDistributionTypeItemProvider = new OutputEntryDistributionTypeItemProvider(this);
+        }
 
-		return outputEntryDistributionTypeItemProvider;
-	}
+        return outputEntryDistributionTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.OutputResultForwardingANDJoinDelay} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.OutputResultForwardingANDJoinDelay} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OutputResultForwardingANDJoinDelayItemProvider outputResultForwardingANDJoinDelayItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.OutputResultForwardingANDJoinDelay}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.OutputResultForwardingANDJoinDelay}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createOutputResultForwardingANDJoinDelayAdapter() {
-		if (outputResultForwardingANDJoinDelayItemProvider == null) {
-			outputResultForwardingANDJoinDelayItemProvider = new OutputResultForwardingANDJoinDelayItemProvider(this);
-		}
+        if (outputResultForwardingANDJoinDelayItemProvider == null) {
+            outputResultForwardingANDJoinDelayItemProvider = new OutputResultForwardingANDJoinDelayItemProvider(this);
+        }
 
-		return outputResultForwardingANDJoinDelayItemProvider;
-	}
+        return outputResultForwardingANDJoinDelayItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.OutputResultType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.OutputResultType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OutputResultTypeItemProvider outputResultTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.OutputResultType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.OutputResultType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createOutputResultTypeAdapter() {
-		if (outputResultTypeItemProvider == null) {
-			outputResultTypeItemProvider = new OutputResultTypeItemProvider(this);
-		}
+        if (outputResultTypeItemProvider == null) {
+            outputResultTypeItemProvider = new OutputResultTypeItemProvider(this);
+        }
 
-		return outputResultTypeItemProvider;
-	}
+        return outputResultTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ParameterType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ParameterType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ParameterTypeItemProvider parameterTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ParameterType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ParameterType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createParameterTypeAdapter() {
-		if (parameterTypeItemProvider == null) {
-			parameterTypeItemProvider = new ParameterTypeItemProvider(this);
-		}
+        if (parameterTypeItemProvider == null) {
+            parameterTypeItemProvider = new ParameterTypeItemProvider(this);
+        }
 
-		return parameterTypeItemProvider;
-	}
+        return parameterTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ParaType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ParaType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ParaTypeItemProvider paraTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ParaType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ParaType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createParaTypeAdapter() {
-		if (paraTypeItemProvider == null) {
-			paraTypeItemProvider = new ParaTypeItemProvider(this);
-		}
+        if (paraTypeItemProvider == null) {
+            paraTypeItemProvider = new ParaTypeItemProvider(this);
+        }
 
-		return paraTypeItemProvider;
-	}
+        return paraTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.PhaseActivities} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.PhaseActivities} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PhaseActivitiesItemProvider phaseActivitiesItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.PhaseActivities}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.PhaseActivities}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createPhaseActivitiesAdapter() {
-		if (phaseActivitiesItemProvider == null) {
-			phaseActivitiesItemProvider = new PhaseActivitiesItemProvider(this);
-		}
+        if (phaseActivitiesItemProvider == null) {
+            phaseActivitiesItemProvider = new PhaseActivitiesItemProvider(this);
+        }
 
-		return phaseActivitiesItemProvider;
-	}
+        return phaseActivitiesItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.PlotControlType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.PlotControlType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PlotControlTypeItemProvider plotControlTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.PlotControlType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.PlotControlType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createPlotControlTypeAdapter() {
-		if (plotControlTypeItemProvider == null) {
-			plotControlTypeItemProvider = new PlotControlTypeItemProvider(this);
-		}
+        if (plotControlTypeItemProvider == null) {
+            plotControlTypeItemProvider = new PlotControlTypeItemProvider(this);
+        }
 
-		return plotControlTypeItemProvider;
-	}
+        return plotControlTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.PlotType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.PlotType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PlotTypeItemProvider plotTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.PlotType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.PlotType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createPlotTypeAdapter() {
-		if (plotTypeItemProvider == null) {
-			plotTypeItemProvider = new PlotTypeItemProvider(this);
-		}
+        if (plotTypeItemProvider == null) {
+            plotTypeItemProvider = new PlotTypeItemProvider(this);
+        }
 
-		return plotTypeItemProvider;
-	}
+        return plotTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.PortBindingType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.PortBindingType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PortBindingTypeItemProvider portBindingTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.PortBindingType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.PortBindingType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createPortBindingTypeAdapter() {
-		if (portBindingTypeItemProvider == null) {
-			portBindingTypeItemProvider = new PortBindingTypeItemProvider(this);
-		}
+        if (portBindingTypeItemProvider == null) {
+            portBindingTypeItemProvider = new PortBindingTypeItemProvider(this);
+        }
 
-		return portBindingTypeItemProvider;
-	}
+        return portBindingTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.PragmaType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.PragmaType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PragmaTypeItemProvider pragmaTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.PragmaType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.PragmaType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createPragmaTypeAdapter() {
-		if (pragmaTypeItemProvider == null) {
-			pragmaTypeItemProvider = new PragmaTypeItemProvider(this);
-		}
+        if (pragmaTypeItemProvider == null) {
+            pragmaTypeItemProvider = new PragmaTypeItemProvider(this);
+        }
 
-		return pragmaTypeItemProvider;
-	}
+        return pragmaTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.PrecedenceType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.PrecedenceType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PrecedenceTypeItemProvider precedenceTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.PrecedenceType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.PrecedenceType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createPrecedenceTypeAdapter() {
-		if (precedenceTypeItemProvider == null) {
-			precedenceTypeItemProvider = new PrecedenceTypeItemProvider(this);
-		}
+        if (precedenceTypeItemProvider == null) {
+            precedenceTypeItemProvider = new PrecedenceTypeItemProvider(this);
+        }
 
-		return precedenceTypeItemProvider;
-	}
+        return precedenceTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ProcessorBindingType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ProcessorBindingType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ProcessorBindingTypeItemProvider processorBindingTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ProcessorBindingType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ProcessorBindingType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createProcessorBindingTypeAdapter() {
-		if (processorBindingTypeItemProvider == null) {
-			processorBindingTypeItemProvider = new ProcessorBindingTypeItemProvider(this);
-		}
+        if (processorBindingTypeItemProvider == null) {
+            processorBindingTypeItemProvider = new ProcessorBindingTypeItemProvider(this);
+        }
 
-		return processorBindingTypeItemProvider;
-	}
+        return processorBindingTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ProcessorType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ProcessorType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ProcessorTypeItemProvider processorTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ProcessorType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ProcessorType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createProcessorTypeAdapter() {
-		if (processorTypeItemProvider == null) {
-			processorTypeItemProvider = new ProcessorTypeItemProvider(this);
-		}
+        if (processorTypeItemProvider == null) {
+            processorTypeItemProvider = new ProcessorTypeItemProvider(this);
+        }
 
-		return processorTypeItemProvider;
-	}
+        return processorTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ReplyActivityType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ReplyActivityType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ReplyActivityTypeItemProvider replyActivityTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ReplyActivityType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ReplyActivityType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createReplyActivityTypeAdapter() {
-		if (replyActivityTypeItemProvider == null) {
-			replyActivityTypeItemProvider = new ReplyActivityTypeItemProvider(this);
-		}
+        if (replyActivityTypeItemProvider == null) {
+            replyActivityTypeItemProvider = new ReplyActivityTypeItemProvider(this);
+        }
 
-		return replyActivityTypeItemProvider;
-	}
+        return replyActivityTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ReplyEntryType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ReplyEntryType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ReplyEntryTypeItemProvider replyEntryTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ReplyEntryType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ReplyEntryType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createReplyEntryTypeAdapter() {
-		if (replyEntryTypeItemProvider == null) {
-			replyEntryTypeItemProvider = new ReplyEntryTypeItemProvider(this);
-		}
+        if (replyEntryTypeItemProvider == null) {
+            replyEntryTypeItemProvider = new ReplyEntryTypeItemProvider(this);
+        }
 
-		return replyEntryTypeItemProvider;
-	}
+        return replyEntryTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ResultConf95Type} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ResultConf95Type} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ResultConf95TypeItemProvider resultConf95TypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ResultConf95Type}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ResultConf95Type}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createResultConf95TypeAdapter() {
-		if (resultConf95TypeItemProvider == null) {
-			resultConf95TypeItemProvider = new ResultConf95TypeItemProvider(this);
-		}
+        if (resultConf95TypeItemProvider == null) {
+            resultConf95TypeItemProvider = new ResultConf95TypeItemProvider(this);
+        }
 
-		return resultConf95TypeItemProvider;
-	}
+        return resultConf95TypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ResultConf95Type1} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ResultConf95Type1} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ResultConf95Type1ItemProvider resultConf95Type1ItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ResultConf95Type1}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ResultConf95Type1}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createResultConf95Type1Adapter() {
-		if (resultConf95Type1ItemProvider == null) {
-			resultConf95Type1ItemProvider = new ResultConf95Type1ItemProvider(this);
-		}
+        if (resultConf95Type1ItemProvider == null) {
+            resultConf95Type1ItemProvider = new ResultConf95Type1ItemProvider(this);
+        }
 
-		return resultConf95Type1ItemProvider;
-	}
+        return resultConf95Type1ItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ResultConf99Type} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ResultConf99Type} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ResultConf99TypeItemProvider resultConf99TypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ResultConf99Type}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ResultConf99Type}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createResultConf99TypeAdapter() {
-		if (resultConf99TypeItemProvider == null) {
-			resultConf99TypeItemProvider = new ResultConf99TypeItemProvider(this);
-		}
+        if (resultConf99TypeItemProvider == null) {
+            resultConf99TypeItemProvider = new ResultConf99TypeItemProvider(this);
+        }
 
-		return resultConf99TypeItemProvider;
-	}
+        return resultConf99TypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ResultConf99Type1} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ResultConf99Type1} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ResultConf99Type1ItemProvider resultConf99Type1ItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ResultConf99Type1}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ResultConf99Type1}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createResultConf99Type1Adapter() {
-		if (resultConf99Type1ItemProvider == null) {
-			resultConf99Type1ItemProvider = new ResultConf99Type1ItemProvider(this);
-		}
+        if (resultConf99Type1ItemProvider == null) {
+            resultConf99Type1ItemProvider = new ResultConf99Type1ItemProvider(this);
+        }
 
-		return resultConf99Type1ItemProvider;
-	}
+        return resultConf99Type1ItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ResultGeneralType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ResultGeneralType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ResultGeneralTypeItemProvider resultGeneralTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ResultGeneralType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ResultGeneralType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createResultGeneralTypeAdapter() {
-		if (resultGeneralTypeItemProvider == null) {
-			resultGeneralTypeItemProvider = new ResultGeneralTypeItemProvider(this);
-		}
+        if (resultGeneralTypeItemProvider == null) {
+            resultGeneralTypeItemProvider = new ResultGeneralTypeItemProvider(this);
+        }
 
-		return resultGeneralTypeItemProvider;
-	}
+        return resultGeneralTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.RunControlType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.RunControlType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected RunControlTypeItemProvider runControlTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.RunControlType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.RunControlType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createRunControlTypeAdapter() {
-		if (runControlTypeItemProvider == null) {
-			runControlTypeItemProvider = new RunControlTypeItemProvider(this);
-		}
+        if (runControlTypeItemProvider == null) {
+            runControlTypeItemProvider = new RunControlTypeItemProvider(this);
+        }
 
-		return runControlTypeItemProvider;
-	}
+        return runControlTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.ServiceType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.ServiceType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected ServiceTypeItemProvider serviceTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.ServiceType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.ServiceType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createServiceTypeAdapter() {
-		if (serviceTypeItemProvider == null) {
-			serviceTypeItemProvider = new ServiceTypeItemProvider(this);
-		}
+        if (serviceTypeItemProvider == null) {
+            serviceTypeItemProvider = new ServiceTypeItemProvider(this);
+        }
 
-		return serviceTypeItemProvider;
-	}
+        return serviceTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.SingleActivityListType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.SingleActivityListType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SingleActivityListTypeItemProvider singleActivityListTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.SingleActivityListType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.SingleActivityListType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createSingleActivityListTypeAdapter() {
-		if (singleActivityListTypeItemProvider == null) {
-			singleActivityListTypeItemProvider = new SingleActivityListTypeItemProvider(this);
-		}
+        if (singleActivityListTypeItemProvider == null) {
+            singleActivityListTypeItemProvider = new SingleActivityListTypeItemProvider(this);
+        }
 
-		return singleActivityListTypeItemProvider;
-	}
+        return singleActivityListTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.SlotType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.SlotType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SlotTypeItemProvider slotTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.SlotType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.SlotType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createSlotTypeAdapter() {
-		if (slotTypeItemProvider == null) {
-			slotTypeItemProvider = new SlotTypeItemProvider(this);
-		}
+        if (slotTypeItemProvider == null) {
+            slotTypeItemProvider = new SlotTypeItemProvider(this);
+        }
 
-		return slotTypeItemProvider;
-	}
+        return slotTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.SolverParamsType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.SolverParamsType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SolverParamsTypeItemProvider solverParamsTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.SolverParamsType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.SolverParamsType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createSolverParamsTypeAdapter() {
-		if (solverParamsTypeItemProvider == null) {
-			solverParamsTypeItemProvider = new SolverParamsTypeItemProvider(this);
-		}
+        if (solverParamsTypeItemProvider == null) {
+            solverParamsTypeItemProvider = new SolverParamsTypeItemProvider(this);
+        }
 
-		return solverParamsTypeItemProvider;
-	}
+        return solverParamsTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.SynchCallType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.SynchCallType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected SynchCallTypeItemProvider synchCallTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.SynchCallType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.SynchCallType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createSynchCallTypeAdapter() {
-		if (synchCallTypeItemProvider == null) {
-			synchCallTypeItemProvider = new SynchCallTypeItemProvider(this);
-		}
+        if (synchCallTypeItemProvider == null) {
+            synchCallTypeItemProvider = new SynchCallTypeItemProvider(this);
+        }
 
-		return synchCallTypeItemProvider;
-	}
+        return synchCallTypeItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.TaskActivityGraph} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.TaskActivityGraph} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected TaskActivityGraphItemProvider taskActivityGraphItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.TaskActivityGraph}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.TaskActivityGraph}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createTaskActivityGraphAdapter() {
-		if (taskActivityGraphItemProvider == null) {
-			taskActivityGraphItemProvider = new TaskActivityGraphItemProvider(this);
-		}
+        if (taskActivityGraphItemProvider == null) {
+            taskActivityGraphItemProvider = new TaskActivityGraphItemProvider(this);
+        }
 
-		return taskActivityGraphItemProvider;
-	}
+        return taskActivityGraphItemProvider;
+    }
 
 	/**
-	 * This keeps track of the one adapter used for all {@link LqnCore.TaskType} instances.
-	 * <!-- begin-user-doc -->
+     * This keeps track of the one adapter used for all {@link LqnCore.TaskType} instances.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected TaskTypeItemProvider taskTypeItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link LqnCore.TaskType}.
-	 * <!-- begin-user-doc -->
+     * This creates an adapter for a {@link LqnCore.TaskType}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter createTaskTypeAdapter() {
-		if (taskTypeItemProvider == null) {
-			taskTypeItemProvider = new TaskTypeItemProvider(this);
-		}
+        if (taskTypeItemProvider == null) {
+            taskTypeItemProvider = new TaskTypeItemProvider(this);
+        }
 
-		return taskTypeItemProvider;
-	}
+        return taskTypeItemProvider;
+    }
 
 	/**
-	 * This returns the root adapter factory that contains this factory.
-	 * <!-- begin-user-doc -->
+     * This returns the root adapter factory that contains this factory.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ComposeableAdapterFactory getRootAdapterFactory() {
-		return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
-	}
+        return parentAdapterFactory == null ? this : parentAdapterFactory.getRootAdapterFactory();
+    }
 
 	/**
-	 * This sets the composed adapter factory that contains this factory.
-	 * <!-- begin-user-doc -->
+     * This sets the composed adapter factory that contains this factory.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setParentAdapterFactory(ComposedAdapterFactory parentAdapterFactory) {
-		this.parentAdapterFactory = parentAdapterFactory;
-	}
+        this.parentAdapterFactory = parentAdapterFactory;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean isFactoryForType(Object type) {
-		return supportedTypes.contains(type) || super.isFactoryForType(type);
-	}
+        return supportedTypes.contains(type) || super.isFactoryForType(type);
+    }
 
 	/**
-	 * This implementation substitutes the factory itself as the key for the adapter.
-	 * <!-- begin-user-doc -->
+     * This implementation substitutes the factory itself as the key for the adapter.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Adapter adapt(Notifier notifier, Object type) {
-		return super.adapt(notifier, this);
-	}
+        return super.adapt(notifier, this);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object adapt(Object object, Object type) {
-		if (isFactoryForType(type)) {
-			Object adapter = super.adapt(object, type);
-			if (!(type instanceof Class) || (((Class<?>)type).isInstance(adapter))) {
-				return adapter;
-			}
-		}
+        if (isFactoryForType(type)) {
+            Object adapter = super.adapt(object, type);
+            if (!(type instanceof Class<?>) || (((Class<?>)type).isInstance(adapter))) {
+                return adapter;
+            }
+        }
 
-		return null;
-	}
+        return null;
+    }
 
 	/**
-	 * This adds a listener.
-	 * <!-- begin-user-doc -->
+     * This adds a listener.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void addListener(INotifyChangedListener notifyChangedListener) {
-		changeNotifier.addListener(notifyChangedListener);
-	}
+        changeNotifier.addListener(notifyChangedListener);
+    }
 
 	/**
-	 * This removes a listener.
-	 * <!-- begin-user-doc -->
+     * This removes a listener.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void removeListener(INotifyChangedListener notifyChangedListener) {
-		changeNotifier.removeListener(notifyChangedListener);
-	}
+        changeNotifier.removeListener(notifyChangedListener);
+    }
 
 	/**
-	 * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
-	 * <!-- begin-user-doc -->
+     * This delegates to {@link #changeNotifier} and to {@link #parentAdapterFactory}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void fireNotifyChanged(Notification notification) {
-		changeNotifier.fireNotifyChanged(notification);
+        changeNotifier.fireNotifyChanged(notification);
 
-		if (parentAdapterFactory != null) {
-			parentAdapterFactory.fireNotifyChanged(notification);
-		}
-	}
+        if (parentAdapterFactory != null) {
+            parentAdapterFactory.fireNotifyChanged(notification);
+        }
+    }
 
 	/**
-	 * This disposes all of the item providers created by this factory. 
-	 * <!-- begin-user-doc -->
+     * This disposes all of the item providers created by this factory. 
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void dispose() {
-		if (activityDefBaseItemProvider != null) activityDefBaseItemProvider.dispose();
-		if (activityDefTypeItemProvider != null) activityDefTypeItemProvider.dispose();
-		if (activityGraphBaseItemProvider != null) activityGraphBaseItemProvider.dispose();
-		if (activityListTypeItemProvider != null) activityListTypeItemProvider.dispose();
-		if (activityLoopListTypeItemProvider != null) activityLoopListTypeItemProvider.dispose();
-		if (activityLoopTypeItemProvider != null) activityLoopTypeItemProvider.dispose();
-		if (activityMakingCallTypeItemProvider != null) activityMakingCallTypeItemProvider.dispose();
-		if (activityOrTypeItemProvider != null) activityOrTypeItemProvider.dispose();
-		if (activityPhasesTypeItemProvider != null) activityPhasesTypeItemProvider.dispose();
-		if (activityTypeItemProvider != null) activityTypeItemProvider.dispose();
-		if (andJoinListTypeItemProvider != null) andJoinListTypeItemProvider.dispose();
-		if (asynchCallTypeItemProvider != null) asynchCallTypeItemProvider.dispose();
-		if (bindTypeItemProvider != null) bindTypeItemProvider.dispose();
-		if (callListTypeItemProvider != null) callListTypeItemProvider.dispose();
-		if (documentRootItemProvider != null) documentRootItemProvider.dispose();
-		if (entryActivityDefTypeItemProvider != null) entryActivityDefTypeItemProvider.dispose();
-		if (entryActivityGraphItemProvider != null) entryActivityGraphItemProvider.dispose();
-		if (entryMakingCallTypeItemProvider != null) entryMakingCallTypeItemProvider.dispose();
-		if (entryTypeItemProvider != null) entryTypeItemProvider.dispose();
-		if (firstPlotTypeItemProvider != null) firstPlotTypeItemProvider.dispose();
-		if (histogramBinTypeItemProvider != null) histogramBinTypeItemProvider.dispose();
-		if (inPortTypeItemProvider != null) inPortTypeItemProvider.dispose();
-		if (interfaceTypeItemProvider != null) interfaceTypeItemProvider.dispose();
-		if (lqnCoreTypeItemProvider != null) lqnCoreTypeItemProvider.dispose();
-		if (lqnModelTypeItemProvider != null) lqnModelTypeItemProvider.dispose();
-		if (makingCallTypeItemProvider != null) makingCallTypeItemProvider.dispose();
-		if (orListTypeItemProvider != null) orListTypeItemProvider.dispose();
-		if (outPortTypeItemProvider != null) outPortTypeItemProvider.dispose();
-		if (outputDistributionTypeItemProvider != null) outputDistributionTypeItemProvider.dispose();
-		if (outputEntryDistributionTypeItemProvider != null) outputEntryDistributionTypeItemProvider.dispose();
-		if (outputResultForwardingANDJoinDelayItemProvider != null) outputResultForwardingANDJoinDelayItemProvider.dispose();
-		if (outputResultTypeItemProvider != null) outputResultTypeItemProvider.dispose();
-		if (parameterTypeItemProvider != null) parameterTypeItemProvider.dispose();
-		if (paraTypeItemProvider != null) paraTypeItemProvider.dispose();
-		if (phaseActivitiesItemProvider != null) phaseActivitiesItemProvider.dispose();
-		if (plotControlTypeItemProvider != null) plotControlTypeItemProvider.dispose();
-		if (plotTypeItemProvider != null) plotTypeItemProvider.dispose();
-		if (portBindingTypeItemProvider != null) portBindingTypeItemProvider.dispose();
-		if (pragmaTypeItemProvider != null) pragmaTypeItemProvider.dispose();
-		if (precedenceTypeItemProvider != null) precedenceTypeItemProvider.dispose();
-		if (processorBindingTypeItemProvider != null) processorBindingTypeItemProvider.dispose();
-		if (processorTypeItemProvider != null) processorTypeItemProvider.dispose();
-		if (replyActivityTypeItemProvider != null) replyActivityTypeItemProvider.dispose();
-		if (replyEntryTypeItemProvider != null) replyEntryTypeItemProvider.dispose();
-		if (resultConf95TypeItemProvider != null) resultConf95TypeItemProvider.dispose();
-		if (resultConf95Type1ItemProvider != null) resultConf95Type1ItemProvider.dispose();
-		if (resultConf99TypeItemProvider != null) resultConf99TypeItemProvider.dispose();
-		if (resultConf99Type1ItemProvider != null) resultConf99Type1ItemProvider.dispose();
-		if (resultGeneralTypeItemProvider != null) resultGeneralTypeItemProvider.dispose();
-		if (runControlTypeItemProvider != null) runControlTypeItemProvider.dispose();
-		if (serviceTypeItemProvider != null) serviceTypeItemProvider.dispose();
-		if (singleActivityListTypeItemProvider != null) singleActivityListTypeItemProvider.dispose();
-		if (slotTypeItemProvider != null) slotTypeItemProvider.dispose();
-		if (solverParamsTypeItemProvider != null) solverParamsTypeItemProvider.dispose();
-		if (synchCallTypeItemProvider != null) synchCallTypeItemProvider.dispose();
-		if (taskActivityGraphItemProvider != null) taskActivityGraphItemProvider.dispose();
-		if (taskTypeItemProvider != null) taskTypeItemProvider.dispose();
-	}
+        if (activityDefBaseItemProvider != null) activityDefBaseItemProvider.dispose();
+        if (activityDefTypeItemProvider != null) activityDefTypeItemProvider.dispose();
+        if (activityGraphBaseItemProvider != null) activityGraphBaseItemProvider.dispose();
+        if (activityListTypeItemProvider != null) activityListTypeItemProvider.dispose();
+        if (activityLoopListTypeItemProvider != null) activityLoopListTypeItemProvider.dispose();
+        if (activityLoopTypeItemProvider != null) activityLoopTypeItemProvider.dispose();
+        if (activityMakingCallTypeItemProvider != null) activityMakingCallTypeItemProvider.dispose();
+        if (activityOrTypeItemProvider != null) activityOrTypeItemProvider.dispose();
+        if (activityPhasesTypeItemProvider != null) activityPhasesTypeItemProvider.dispose();
+        if (activityTypeItemProvider != null) activityTypeItemProvider.dispose();
+        if (andJoinListTypeItemProvider != null) andJoinListTypeItemProvider.dispose();
+        if (asynchCallTypeItemProvider != null) asynchCallTypeItemProvider.dispose();
+        if (bindTypeItemProvider != null) bindTypeItemProvider.dispose();
+        if (callListTypeItemProvider != null) callListTypeItemProvider.dispose();
+        if (documentRootItemProvider != null) documentRootItemProvider.dispose();
+        if (entryActivityDefTypeItemProvider != null) entryActivityDefTypeItemProvider.dispose();
+        if (entryActivityGraphItemProvider != null) entryActivityGraphItemProvider.dispose();
+        if (entryMakingCallTypeItemProvider != null) entryMakingCallTypeItemProvider.dispose();
+        if (entryTypeItemProvider != null) entryTypeItemProvider.dispose();
+        if (firstPlotTypeItemProvider != null) firstPlotTypeItemProvider.dispose();
+        if (histogramBinTypeItemProvider != null) histogramBinTypeItemProvider.dispose();
+        if (inPortTypeItemProvider != null) inPortTypeItemProvider.dispose();
+        if (interfaceTypeItemProvider != null) interfaceTypeItemProvider.dispose();
+        if (lqnCoreTypeItemProvider != null) lqnCoreTypeItemProvider.dispose();
+        if (lqnModelTypeItemProvider != null) lqnModelTypeItemProvider.dispose();
+        if (makingCallTypeItemProvider != null) makingCallTypeItemProvider.dispose();
+        if (orListTypeItemProvider != null) orListTypeItemProvider.dispose();
+        if (outPortTypeItemProvider != null) outPortTypeItemProvider.dispose();
+        if (outputDistributionTypeItemProvider != null) outputDistributionTypeItemProvider.dispose();
+        if (outputEntryDistributionTypeItemProvider != null) outputEntryDistributionTypeItemProvider.dispose();
+        if (outputResultForwardingANDJoinDelayItemProvider != null) outputResultForwardingANDJoinDelayItemProvider.dispose();
+        if (outputResultTypeItemProvider != null) outputResultTypeItemProvider.dispose();
+        if (parameterTypeItemProvider != null) parameterTypeItemProvider.dispose();
+        if (paraTypeItemProvider != null) paraTypeItemProvider.dispose();
+        if (phaseActivitiesItemProvider != null) phaseActivitiesItemProvider.dispose();
+        if (plotControlTypeItemProvider != null) plotControlTypeItemProvider.dispose();
+        if (plotTypeItemProvider != null) plotTypeItemProvider.dispose();
+        if (portBindingTypeItemProvider != null) portBindingTypeItemProvider.dispose();
+        if (pragmaTypeItemProvider != null) pragmaTypeItemProvider.dispose();
+        if (precedenceTypeItemProvider != null) precedenceTypeItemProvider.dispose();
+        if (processorBindingTypeItemProvider != null) processorBindingTypeItemProvider.dispose();
+        if (processorTypeItemProvider != null) processorTypeItemProvider.dispose();
+        if (replyActivityTypeItemProvider != null) replyActivityTypeItemProvider.dispose();
+        if (replyEntryTypeItemProvider != null) replyEntryTypeItemProvider.dispose();
+        if (resultConf95TypeItemProvider != null) resultConf95TypeItemProvider.dispose();
+        if (resultConf95Type1ItemProvider != null) resultConf95Type1ItemProvider.dispose();
+        if (resultConf99TypeItemProvider != null) resultConf99TypeItemProvider.dispose();
+        if (resultConf99Type1ItemProvider != null) resultConf99Type1ItemProvider.dispose();
+        if (resultGeneralTypeItemProvider != null) resultGeneralTypeItemProvider.dispose();
+        if (runControlTypeItemProvider != null) runControlTypeItemProvider.dispose();
+        if (serviceTypeItemProvider != null) serviceTypeItemProvider.dispose();
+        if (singleActivityListTypeItemProvider != null) singleActivityListTypeItemProvider.dispose();
+        if (slotTypeItemProvider != null) slotTypeItemProvider.dispose();
+        if (solverParamsTypeItemProvider != null) solverParamsTypeItemProvider.dispose();
+        if (synchCallTypeItemProvider != null) synchCallTypeItemProvider.dispose();
+        if (taskActivityGraphItemProvider != null) taskActivityGraphItemProvider.dispose();
+        if (taskTypeItemProvider != null) taskTypeItemProvider.dispose();
+    }
 
 }

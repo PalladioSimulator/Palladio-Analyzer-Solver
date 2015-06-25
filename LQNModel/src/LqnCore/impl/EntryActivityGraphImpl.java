@@ -28,127 +28,127 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.EntryActivityGraphImpl#getReplyActivity <em>Reply Activity</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements EntryActivityGraph {
 	/**
-	 * The cached value of the '{@link #getReplyActivity() <em>Reply Activity</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getReplyActivity() <em>Reply Activity</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReplyActivity()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getReplyActivity()
+     * @generated
+     * @ordered
+     */
 	protected EList<ReplyActivityType> replyActivity;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EntryActivityGraphImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.ENTRY_ACTIVITY_GRAPH;
-	}
+        return LqnCorePackage.Literals.ENTRY_ACTIVITY_GRAPH;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ReplyActivityType> getReplyActivity() {
-		if (replyActivity == null) {
-			replyActivity = new EObjectContainmentEList<ReplyActivityType>(ReplyActivityType.class, this, LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY);
-		}
-		return replyActivity;
-	}
+        if (replyActivity == null) {
+            replyActivity = new EObjectContainmentEList<ReplyActivityType>(ReplyActivityType.class, this, LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY);
+        }
+        return replyActivity;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
-				return ((InternalEList<?>)getReplyActivity()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
+                return ((InternalEList<?>)getReplyActivity()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
-				return getReplyActivity();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
+                return getReplyActivity();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
-				getReplyActivity().clear();
-				getReplyActivity().addAll((Collection<? extends ReplyActivityType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
+                getReplyActivity().clear();
+                getReplyActivity().addAll((Collection<? extends ReplyActivityType>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
-				getReplyActivity().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
+                getReplyActivity().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
-				return replyActivity != null && !replyActivity.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
+                return replyActivity != null && !replyActivity.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //EntryActivityGraphImpl

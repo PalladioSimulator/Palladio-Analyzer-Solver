@@ -31,163 +31,163 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.InterfaceTypeImpl#getInPort <em>In Port</em>}</li>
  *   <li>{@link LqnCore.impl.InterfaceTypeImpl#getOutPort <em>Out Port</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
 	/**
-	 * The cached value of the '{@link #getInPort() <em>In Port</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getInPort() <em>In Port</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInPort()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getInPort()
+     * @generated
+     * @ordered
+     */
 	protected EList<InPortType> inPort;
 
 	/**
-	 * The cached value of the '{@link #getOutPort() <em>Out Port</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getOutPort() <em>Out Port</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getOutPort()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getOutPort()
+     * @generated
+     * @ordered
+     */
 	protected EList<OutPortType> outPort;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected InterfaceTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.INTERFACE_TYPE;
-	}
+        return LqnCorePackage.Literals.INTERFACE_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<InPortType> getInPort() {
-		if (inPort == null) {
-			inPort = new EObjectContainmentEList<InPortType>(InPortType.class, this, LqnCorePackage.INTERFACE_TYPE__IN_PORT);
-		}
-		return inPort;
-	}
+        if (inPort == null) {
+            inPort = new EObjectContainmentEList<InPortType>(InPortType.class, this, LqnCorePackage.INTERFACE_TYPE__IN_PORT);
+        }
+        return inPort;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<OutPortType> getOutPort() {
-		if (outPort == null) {
-			outPort = new EObjectContainmentEList<OutPortType>(OutPortType.class, this, LqnCorePackage.INTERFACE_TYPE__OUT_PORT);
-		}
-		return outPort;
-	}
+        if (outPort == null) {
+            outPort = new EObjectContainmentEList<OutPortType>(OutPortType.class, this, LqnCorePackage.INTERFACE_TYPE__OUT_PORT);
+        }
+        return outPort;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
-				return ((InternalEList<?>)getInPort()).basicRemove(otherEnd, msgs);
-			case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
-				return ((InternalEList<?>)getOutPort()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
+                return ((InternalEList<?>)getInPort()).basicRemove(otherEnd, msgs);
+            case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
+                return ((InternalEList<?>)getOutPort()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
-				return getInPort();
-			case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
-				return getOutPort();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
+                return getInPort();
+            case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
+                return getOutPort();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
-				getInPort().clear();
-				getInPort().addAll((Collection<? extends InPortType>)newValue);
-				return;
-			case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
-				getOutPort().clear();
-				getOutPort().addAll((Collection<? extends OutPortType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
+                getInPort().clear();
+                getInPort().addAll((Collection<? extends InPortType>)newValue);
+                return;
+            case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
+                getOutPort().clear();
+                getOutPort().addAll((Collection<? extends OutPortType>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
-				getInPort().clear();
-				return;
-			case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
-				getOutPort().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
+                getInPort().clear();
+                return;
+            case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
+                getOutPort().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
-				return inPort != null && !inPort.isEmpty();
-			case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
-				return outPort != null && !outPort.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.INTERFACE_TYPE__IN_PORT:
+                return inPort != null && !inPort.isEmpty();
+            case LqnCorePackage.INTERFACE_TYPE__OUT_PORT:
+                return outPort != null && !outPort.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //InterfaceTypeImpl

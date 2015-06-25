@@ -31,163 +31,163 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.CallListTypeImpl#getSynchCall <em>Synch Call</em>}</li>
  *   <li>{@link LqnCore.impl.CallListTypeImpl#getAsynchCall <em>Asynch Call</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class CallListTypeImpl extends EObjectImpl implements CallListType {
 	/**
-	 * The cached value of the '{@link #getSynchCall() <em>Synch Call</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getSynchCall() <em>Synch Call</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSynchCall()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getSynchCall()
+     * @generated
+     * @ordered
+     */
 	protected EList<SynchCallType> synchCall;
 
 	/**
-	 * The cached value of the '{@link #getAsynchCall() <em>Asynch Call</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getAsynchCall() <em>Asynch Call</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAsynchCall()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getAsynchCall()
+     * @generated
+     * @ordered
+     */
 	protected EList<AsynchCallType> asynchCall;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected CallListTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.CALL_LIST_TYPE;
-	}
+        return LqnCorePackage.Literals.CALL_LIST_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<SynchCallType> getSynchCall() {
-		if (synchCall == null) {
-			synchCall = new EObjectContainmentEList<SynchCallType>(SynchCallType.class, this, LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL);
-		}
-		return synchCall;
-	}
+        if (synchCall == null) {
+            synchCall = new EObjectContainmentEList<SynchCallType>(SynchCallType.class, this, LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL);
+        }
+        return synchCall;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<AsynchCallType> getAsynchCall() {
-		if (asynchCall == null) {
-			asynchCall = new EObjectContainmentEList<AsynchCallType>(AsynchCallType.class, this, LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL);
-		}
-		return asynchCall;
-	}
+        if (asynchCall == null) {
+            asynchCall = new EObjectContainmentEList<AsynchCallType>(AsynchCallType.class, this, LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL);
+        }
+        return asynchCall;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
-				return ((InternalEList<?>)getSynchCall()).basicRemove(otherEnd, msgs);
-			case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
-				return ((InternalEList<?>)getAsynchCall()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
+                return ((InternalEList<?>)getSynchCall()).basicRemove(otherEnd, msgs);
+            case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
+                return ((InternalEList<?>)getAsynchCall()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
-				return getSynchCall();
-			case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
-				return getAsynchCall();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
+                return getSynchCall();
+            case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
+                return getAsynchCall();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
-				getSynchCall().clear();
-				getSynchCall().addAll((Collection<? extends SynchCallType>)newValue);
-				return;
-			case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
-				getAsynchCall().clear();
-				getAsynchCall().addAll((Collection<? extends AsynchCallType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
+                getSynchCall().clear();
+                getSynchCall().addAll((Collection<? extends SynchCallType>)newValue);
+                return;
+            case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
+                getAsynchCall().clear();
+                getAsynchCall().addAll((Collection<? extends AsynchCallType>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
-				getSynchCall().clear();
-				return;
-			case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
-				getAsynchCall().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
+                getSynchCall().clear();
+                return;
+            case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
+                getAsynchCall().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
-				return synchCall != null && !synchCall.isEmpty();
-			case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
-				return asynchCall != null && !asynchCall.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.CALL_LIST_TYPE__SYNCH_CALL:
+                return synchCall != null && !synchCall.isEmpty();
+            case LqnCorePackage.CALL_LIST_TYPE__ASYNCH_CALL:
+                return asynchCall != null && !asynchCall.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //CallListTypeImpl

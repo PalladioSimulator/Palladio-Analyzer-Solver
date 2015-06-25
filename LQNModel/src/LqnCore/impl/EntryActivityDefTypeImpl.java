@@ -34,6 +34,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.EntryActivityDefTypeImpl#getCallList <em>Call List</em>}</li>
  *   <li>{@link LqnCore.impl.EntryActivityDefTypeImpl#getGroup <em>Group</em>}</li>
@@ -41,272 +42,271 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link LqnCore.impl.EntryActivityDefTypeImpl#getAsynchCall <em>Asynch Call</em>}</li>
  *   <li>{@link LqnCore.impl.EntryActivityDefTypeImpl#getFirstActivity <em>First Activity</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements EntryActivityDefType {
 	/**
-	 * The cached value of the '{@link #getCallList() <em>Call List</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getCallList() <em>Call List</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCallList()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getCallList()
+     * @generated
+     * @ordered
+     */
 	protected EList<CallListType> callList;
 
 	/**
-	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getGroup()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getGroup()
+     * @generated
+     * @ordered
+     */
 	protected FeatureMap group;
 
 	/**
-	 * The default value of the '{@link #getFirstActivity() <em>First Activity</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getFirstActivity() <em>First Activity</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFirstActivity()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getFirstActivity()
+     * @generated
+     * @ordered
+     */
 	protected static final String FIRST_ACTIVITY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getFirstActivity() <em>First Activity</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getFirstActivity() <em>First Activity</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getFirstActivity()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getFirstActivity()
+     * @generated
+     * @ordered
+     */
 	protected String firstActivity = FIRST_ACTIVITY_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected EntryActivityDefTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.ENTRY_ACTIVITY_DEF_TYPE;
-	}
+        return LqnCorePackage.Literals.ENTRY_ACTIVITY_DEF_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<CallListType> getCallList() {
-		if (callList == null) {
-			callList = new EObjectContainmentEList<CallListType>(CallListType.class, this, LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST);
-		}
-		return callList;
-	}
+        if (callList == null) {
+            callList = new EObjectContainmentEList<CallListType>(CallListType.class, this, LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST);
+        }
+        return callList;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public FeatureMap getGroup() {
-		if (group == null) {
-			group = new BasicFeatureMap(this, LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP);
-		}
-		return group;
-	}
+        if (group == null) {
+            group = new BasicFeatureMap(this, LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP);
+        }
+        return group;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ActivityMakingCallType> getSynchCall() {
-		return getGroup().list(LqnCorePackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL);
-	}
+        return getGroup().list(LqnCorePackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ActivityMakingCallType> getAsynchCall() {
-		return getGroup().list(LqnCorePackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL);
-	}
+        return getGroup().list(LqnCorePackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getFirstActivity() {
-		return firstActivity;
-	}
+        return firstActivity;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setFirstActivity(String newFirstActivity) {
-		String oldFirstActivity = firstActivity;
-		firstActivity = newFirstActivity;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY, oldFirstActivity, firstActivity));
-	}
+        String oldFirstActivity = firstActivity;
+        firstActivity = newFirstActivity;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY, oldFirstActivity, firstActivity));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
-				return ((InternalEList<?>)getCallList()).basicRemove(otherEnd, msgs);
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
-				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
-				return ((InternalEList<?>)getSynchCall()).basicRemove(otherEnd, msgs);
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
-				return ((InternalEList<?>)getAsynchCall()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
+                return ((InternalEList<?>)getCallList()).basicRemove(otherEnd, msgs);
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
+                return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
+                return ((InternalEList<?>)getSynchCall()).basicRemove(otherEnd, msgs);
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
+                return ((InternalEList<?>)getAsynchCall()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
-				return getCallList();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
-				if (coreType) return getGroup();
-				return ((FeatureMap.Internal)getGroup()).getWrapper();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
-				return getSynchCall();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
-				return getAsynchCall();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
-				return getFirstActivity();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
+                return getCallList();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
+                if (coreType) return getGroup();
+                return ((FeatureMap.Internal)getGroup()).getWrapper();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
+                return getSynchCall();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
+                return getAsynchCall();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
+                return getFirstActivity();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
-				getCallList().clear();
-				getCallList().addAll((Collection<? extends CallListType>)newValue);
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
-				((FeatureMap.Internal)getGroup()).set(newValue);
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
-				getSynchCall().clear();
-				getSynchCall().addAll((Collection<? extends ActivityMakingCallType>)newValue);
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
-				getAsynchCall().clear();
-				getAsynchCall().addAll((Collection<? extends ActivityMakingCallType>)newValue);
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
-				setFirstActivity((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
+                getCallList().clear();
+                getCallList().addAll((Collection<? extends CallListType>)newValue);
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
+                ((FeatureMap.Internal)getGroup()).set(newValue);
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
+                getSynchCall().clear();
+                getSynchCall().addAll((Collection<? extends ActivityMakingCallType>)newValue);
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
+                getAsynchCall().clear();
+                getAsynchCall().addAll((Collection<? extends ActivityMakingCallType>)newValue);
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
+                setFirstActivity((String)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
-				getCallList().clear();
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
-				getGroup().clear();
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
-				getSynchCall().clear();
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
-				getAsynchCall().clear();
-				return;
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
-				setFirstActivity(FIRST_ACTIVITY_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
+                getCallList().clear();
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
+                getGroup().clear();
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
+                getSynchCall().clear();
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
+                getAsynchCall().clear();
+                return;
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
+                setFirstActivity(FIRST_ACTIVITY_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
-				return callList != null && !callList.isEmpty();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
-				return group != null && !group.isEmpty();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
-				return !getSynchCall().isEmpty();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
-				return !getAsynchCall().isEmpty();
-			case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
-				return FIRST_ACTIVITY_EDEFAULT == null ? firstActivity != null : !FIRST_ACTIVITY_EDEFAULT.equals(firstActivity);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
+                return callList != null && !callList.isEmpty();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
+                return group != null && !group.isEmpty();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
+                return !getSynchCall().isEmpty();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
+                return !getAsynchCall().isEmpty();
+            case LqnCorePackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
+                return FIRST_ACTIVITY_EDEFAULT == null ? firstActivity != null : !FIRST_ACTIVITY_EDEFAULT.equals(firstActivity);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (group: ");
-		result.append(group);
-		result.append(", firstActivity: ");
-		result.append(firstActivity);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (group: ");
+        result.append(group);
+        result.append(", firstActivity: ");
+        result.append(firstActivity);
+        result.append(')');
+        return result.toString();
+    }
 
 } //EntryActivityDefTypeImpl

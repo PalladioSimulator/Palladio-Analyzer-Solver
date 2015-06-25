@@ -22,200 +22,200 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.PragmaTypeImpl#getParam <em>Param</em>}</li>
  *   <li>{@link LqnCore.impl.PragmaTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class PragmaTypeImpl extends EObjectImpl implements PragmaType {
 	/**
-	 * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getParam()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getParam()
+     * @generated
+     * @ordered
+     */
 	protected static final String PARAM_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getParam()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getParam()
+     * @generated
+     * @ordered
+     */
 	protected String param = PARAM_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getValue()
+     * @generated
+     * @ordered
+     */
 	protected static final String VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getValue()
+     * @generated
+     * @ordered
+     */
 	protected String value = VALUE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PragmaTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.PRAGMA_TYPE;
-	}
+        return LqnCorePackage.Literals.PRAGMA_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getParam() {
-		return param;
-	}
+        return param;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setParam(String newParam) {
-		String oldParam = param;
-		param = newParam;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRAGMA_TYPE__PARAM, oldParam, param));
-	}
+        String oldParam = param;
+        param = newParam;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRAGMA_TYPE__PARAM, oldParam, param));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public String getValue() {
-		return value;
-	}
+        return value;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setValue(String newValue) {
-		String oldValue = value;
-		value = newValue;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRAGMA_TYPE__VALUE, oldValue, value));
-	}
+        String oldValue = value;
+        value = newValue;
+        if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRAGMA_TYPE__VALUE, oldValue, value));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.PRAGMA_TYPE__PARAM:
-				return getParam();
-			case LqnCorePackage.PRAGMA_TYPE__VALUE:
-				return getValue();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRAGMA_TYPE__PARAM:
+                return getParam();
+            case LqnCorePackage.PRAGMA_TYPE__VALUE:
+                return getValue();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.PRAGMA_TYPE__PARAM:
-				setParam((String)newValue);
-				return;
-			case LqnCorePackage.PRAGMA_TYPE__VALUE:
-				setValue((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRAGMA_TYPE__PARAM:
+                setParam((String)newValue);
+                return;
+            case LqnCorePackage.PRAGMA_TYPE__VALUE:
+                setValue((String)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.PRAGMA_TYPE__PARAM:
-				setParam(PARAM_EDEFAULT);
-				return;
-			case LqnCorePackage.PRAGMA_TYPE__VALUE:
-				setValue(VALUE_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRAGMA_TYPE__PARAM:
+                setParam(PARAM_EDEFAULT);
+                return;
+            case LqnCorePackage.PRAGMA_TYPE__VALUE:
+                setValue(VALUE_EDEFAULT);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.PRAGMA_TYPE__PARAM:
-				return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
-			case LqnCorePackage.PRAGMA_TYPE__VALUE:
-				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRAGMA_TYPE__PARAM:
+                return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
+            case LqnCorePackage.PRAGMA_TYPE__VALUE:
+                return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+        }
+        return super.eIsSet(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String toString() {
-		if (eIsProxy()) return super.toString();
+        if (eIsProxy()) return super.toString();
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (param: ");
-		result.append(param);
-		result.append(", value: ");
-		result.append(value);
-		result.append(')');
-		return result.toString();
-	}
+        StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (param: ");
+        result.append(param);
+        result.append(", value: ");
+        result.append(value);
+        result.append(')');
+        return result.toString();
+    }
 
 } //PragmaTypeImpl

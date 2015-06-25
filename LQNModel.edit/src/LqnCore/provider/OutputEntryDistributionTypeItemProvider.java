@@ -35,151 +35,134 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
  * @generated
  */
 public class OutputEntryDistributionTypeItemProvider
-	extends OutputDistributionTypeItemProvider
-	implements	
-		IEditingDomainItemProvider,	
-		IStructuredItemContentProvider,	
-		ITreeItemContentProvider,	
-		IItemLabelProvider,	
-		IItemPropertySource {
+	extends OutputDistributionTypeItemProvider {
 	/**
-	 * This constructs an instance from a factory and a notifier.
-	 * <!-- begin-user-doc -->
+     * This constructs an instance from a factory and a notifier.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public OutputEntryDistributionTypeItemProvider(AdapterFactory adapterFactory) {
-		super(adapterFactory);
-	}
+        super(adapterFactory);
+    }
 
 	/**
-	 * This returns the property descriptors for the adapted class.
-	 * <!-- begin-user-doc -->
+     * This returns the property descriptors for the adapted class.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object) {
-		if (itemPropertyDescriptors == null) {
-			super.getPropertyDescriptors(object);
+        if (itemPropertyDescriptors == null) {
+            super.getPropertyDescriptors(object);
 
-			addPhasePropertyDescriptor(object);
-		}
-		return itemPropertyDescriptors;
-	}
+            addPhasePropertyDescriptor(object);
+        }
+        return itemPropertyDescriptors;
+    }
 
 	/**
-	 * This adds a property descriptor for the Phase feature.
-	 * <!-- begin-user-doc -->
+     * This adds a property descriptor for the Phase feature.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected void addPhasePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_OutputEntryDistributionType_phase_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_OutputEntryDistributionType_phase_feature", "_UI_OutputEntryDistributionType_type"),
-				 LqnCorePackage.Literals.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
+        itemPropertyDescriptors.add
+            (createItemPropertyDescriptor
+                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+                 getResourceLocator(),
+                 getString("_UI_OutputEntryDistributionType_phase_feature"),
+                 getString("_UI_PropertyDescriptor_description", "_UI_OutputEntryDistributionType_phase_feature", "_UI_OutputEntryDistributionType_type"),
+                 LqnCorePackage.Literals.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
+                 true,
+                 false,
+                 false,
+                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                 null,
+                 null));
+    }
 
 	/**
-	 * This returns OutputEntryDistributionType.gif.
-	 * <!-- begin-user-doc -->
+     * This returns OutputEntryDistributionType.gif.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/OutputEntryDistributionType"));
-	}
+        return overlayImage(object, getResourceLocator().getImage("full/obj16/OutputEntryDistributionType"));
+    }
 
 	/**
-	 * This returns the label text for the adapted class.
-	 * <!-- begin-user-doc -->
+     * This returns the label text for the adapted class.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String getText(Object object) {
-		Object labelValue = ((OutputEntryDistributionType)object).getBinSize();
-		String label = labelValue == null ? null : labelValue.toString();
-		return label == null || label.length() == 0 ?
-			getString("_UI_OutputEntryDistributionType_type") :
-			getString("_UI_OutputEntryDistributionType_type") + " " + label;
-	}
+        Object labelValue = ((OutputEntryDistributionType)object).getBinSize();
+        String label = labelValue == null ? null : labelValue.toString();
+        return label == null || label.length() == 0 ?
+            getString("_UI_OutputEntryDistributionType_type") :
+            getString("_UI_OutputEntryDistributionType_type") + " " + label;
+    }
 
 	/**
-	 * This handles model notifications by calling {@link #updateChildren} to update any cached
-	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-	 * <!-- begin-user-doc -->
+     * This handles model notifications by calling {@link #updateChildren} to update any cached
+     * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void notifyChanged(Notification notification) {
-		updateChildren(notification);
+        updateChildren(notification);
 
-		switch (notification.getFeatureID(OutputEntryDistributionType.class)) {
-			case LqnCorePackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
-		}
-		super.notifyChanged(notification);
-	}
+        switch (notification.getFeatureID(OutputEntryDistributionType.class)) {
+            case LqnCorePackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
+                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+                return;
+        }
+        super.notifyChanged(notification);
+    }
 
 	/**
-	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
-	 * that can be created under this object.
-	 * <!-- begin-user-doc -->
+     * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+     * that can be created under this object.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
-		super.collectNewChildDescriptors(newChildDescriptors, object);
-	}
+        super.collectNewChildDescriptors(newChildDescriptors, object);
+    }
 
 	/**
-	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-	 * <!-- begin-user-doc -->
+     * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-		Object childFeature = feature;
-		Object childObject = child;
+        Object childFeature = feature;
+        Object childObject = child;
 
-		boolean qualify =
-			childFeature == LqnCorePackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN ||
-			childFeature == LqnCorePackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN ||
-			childFeature == LqnCorePackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
+        boolean qualify =
+            childFeature == LqnCorePackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN ||
+            childFeature == LqnCorePackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN ||
+            childFeature == LqnCorePackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
 
-		if (qualify) {
-			return getString
-				("_UI_CreateChild_text2",
-				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-		}
-		return super.getCreateChildText(owner, feature, child, selection);
-	}
-
-	/**
-	 * Return the resource locator for this item provider's resources.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResourceLocator getResourceLocator() {
-		return LqnEditPlugin.INSTANCE;
-	}
+        if (qualify) {
+            return getString
+                ("_UI_CreateChild_text2",
+                 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+        }
+        return super.getCreateChildText(owner, feature, child, selection);
+    }
 
 }

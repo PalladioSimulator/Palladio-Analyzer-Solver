@@ -30,127 +30,127 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.RunControlTypeImpl#getPara <em>Para</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class RunControlTypeImpl extends EObjectImpl implements RunControlType {
 	/**
-	 * The cached value of the '{@link #getPara() <em>Para</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPara() <em>Para</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPara()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPara()
+     * @generated
+     * @ordered
+     */
 	protected EList<ParaType> para;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected RunControlTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.RUN_CONTROL_TYPE;
-	}
+        return LqnCorePackage.Literals.RUN_CONTROL_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ParaType> getPara() {
-		if (para == null) {
-			para = new EObjectContainmentEList<ParaType>(ParaType.class, this, LqnCorePackage.RUN_CONTROL_TYPE__PARA);
-		}
-		return para;
-	}
+        if (para == null) {
+            para = new EObjectContainmentEList<ParaType>(ParaType.class, this, LqnCorePackage.RUN_CONTROL_TYPE__PARA);
+        }
+        return para;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
-				return ((InternalEList<?>)getPara()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
+                return ((InternalEList<?>)getPara()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
-				return getPara();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
+                return getPara();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
-				getPara().clear();
-				getPara().addAll((Collection<? extends ParaType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
+                getPara().clear();
+                getPara().addAll((Collection<? extends ParaType>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
-				getPara().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
+                getPara().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
-				return para != null && !para.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.RUN_CONTROL_TYPE__PARA:
+                return para != null && !para.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //RunControlTypeImpl

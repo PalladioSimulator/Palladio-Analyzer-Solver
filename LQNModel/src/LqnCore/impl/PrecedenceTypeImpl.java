@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.PrecedenceTypeImpl#getPre <em>Pre</em>}</li>
  *   <li>{@link LqnCore.impl.PrecedenceTypeImpl#getPreOR <em>Pre OR</em>}</li>
@@ -38,543 +39,542 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link LqnCore.impl.PrecedenceTypeImpl#getPostAND <em>Post AND</em>}</li>
  *   <li>{@link LqnCore.impl.PrecedenceTypeImpl#getPostLOOP <em>Post LOOP</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
 	/**
-	 * The cached value of the '{@link #getPre() <em>Pre</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPre() <em>Pre</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPre()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPre()
+     * @generated
+     * @ordered
+     */
 	protected SingleActivityListType pre;
 
 	/**
-	 * The cached value of the '{@link #getPreOR() <em>Pre OR</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPreOR() <em>Pre OR</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPreOR()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPreOR()
+     * @generated
+     * @ordered
+     */
 	protected ActivityListType preOR;
 
 	/**
-	 * The cached value of the '{@link #getPreAND() <em>Pre AND</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPreAND() <em>Pre AND</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPreAND()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPreAND()
+     * @generated
+     * @ordered
+     */
 	protected AndJoinListType preAND;
 
 	/**
-	 * The cached value of the '{@link #getPost() <em>Post</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPost() <em>Post</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPost()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPost()
+     * @generated
+     * @ordered
+     */
 	protected SingleActivityListType post;
 
 	/**
-	 * The cached value of the '{@link #getPostOR() <em>Post OR</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPostOR() <em>Post OR</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPostOR()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPostOR()
+     * @generated
+     * @ordered
+     */
 	protected OrListType postOR;
 
 	/**
-	 * The cached value of the '{@link #getPostAND() <em>Post AND</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPostAND() <em>Post AND</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPostAND()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPostAND()
+     * @generated
+     * @ordered
+     */
 	protected ActivityListType postAND;
 
 	/**
-	 * The cached value of the '{@link #getPostLOOP() <em>Post LOOP</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getPostLOOP() <em>Post LOOP</em>}' containment reference.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPostLOOP()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getPostLOOP()
+     * @generated
+     * @ordered
+     */
 	protected ActivityLoopListType postLOOP;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected PrecedenceTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.PRECEDENCE_TYPE;
-	}
+        return LqnCorePackage.Literals.PRECEDENCE_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SingleActivityListType getPre() {
-		return pre;
-	}
+        return pre;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetPre(SingleActivityListType newPre, NotificationChain msgs) {
-		SingleActivityListType oldPre = pre;
-		pre = newPre;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE, oldPre, newPre);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        SingleActivityListType oldPre = pre;
+        pre = newPre;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE, oldPre, newPre);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPre(SingleActivityListType newPre) {
-		if (newPre != pre) {
-			NotificationChain msgs = null;
-			if (pre != null)
-				msgs = ((InternalEObject)pre).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE, null, msgs);
-			if (newPre != null)
-				msgs = ((InternalEObject)newPre).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE, null, msgs);
-			msgs = basicSetPre(newPre, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE, newPre, newPre));
-	}
+        if (newPre != pre) {
+            NotificationChain msgs = null;
+            if (pre != null)
+                msgs = ((InternalEObject)pre).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE, null, msgs);
+            if (newPre != null)
+                msgs = ((InternalEObject)newPre).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE, null, msgs);
+            msgs = basicSetPre(newPre, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE, newPre, newPre));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ActivityListType getPreOR() {
-		return preOR;
-	}
+        return preOR;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetPreOR(ActivityListType newPreOR, NotificationChain msgs) {
-		ActivityListType oldPreOR = preOR;
-		preOR = newPreOR;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, oldPreOR, newPreOR);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        ActivityListType oldPreOR = preOR;
+        preOR = newPreOR;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, oldPreOR, newPreOR);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPreOR(ActivityListType newPreOR) {
-		if (newPreOR != preOR) {
-			NotificationChain msgs = null;
-			if (preOR != null)
-				msgs = ((InternalEObject)preOR).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
-			if (newPreOR != null)
-				msgs = ((InternalEObject)newPreOR).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
-			msgs = basicSetPreOR(newPreOR, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, newPreOR, newPreOR));
-	}
+        if (newPreOR != preOR) {
+            NotificationChain msgs = null;
+            if (preOR != null)
+                msgs = ((InternalEObject)preOR).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
+            if (newPreOR != null)
+                msgs = ((InternalEObject)newPreOR).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
+            msgs = basicSetPreOR(newPreOR, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_OR, newPreOR, newPreOR));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public AndJoinListType getPreAND() {
-		return preAND;
-	}
+        return preAND;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetPreAND(AndJoinListType newPreAND, NotificationChain msgs) {
-		AndJoinListType oldPreAND = preAND;
-		preAND = newPreAND;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, oldPreAND, newPreAND);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        AndJoinListType oldPreAND = preAND;
+        preAND = newPreAND;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, oldPreAND, newPreAND);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPreAND(AndJoinListType newPreAND) {
-		if (newPreAND != preAND) {
-			NotificationChain msgs = null;
-			if (preAND != null)
-				msgs = ((InternalEObject)preAND).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
-			if (newPreAND != null)
-				msgs = ((InternalEObject)newPreAND).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
-			msgs = basicSetPreAND(newPreAND, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, newPreAND, newPreAND));
-	}
+        if (newPreAND != preAND) {
+            NotificationChain msgs = null;
+            if (preAND != null)
+                msgs = ((InternalEObject)preAND).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
+            if (newPreAND != null)
+                msgs = ((InternalEObject)newPreAND).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
+            msgs = basicSetPreAND(newPreAND, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__PRE_AND, newPreAND, newPreAND));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public SingleActivityListType getPost() {
-		return post;
-	}
+        return post;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetPost(SingleActivityListType newPost, NotificationChain msgs) {
-		SingleActivityListType oldPost = post;
-		post = newPost;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST, oldPost, newPost);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        SingleActivityListType oldPost = post;
+        post = newPost;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST, oldPost, newPost);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPost(SingleActivityListType newPost) {
-		if (newPost != post) {
-			NotificationChain msgs = null;
-			if (post != null)
-				msgs = ((InternalEObject)post).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST, null, msgs);
-			if (newPost != null)
-				msgs = ((InternalEObject)newPost).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST, null, msgs);
-			msgs = basicSetPost(newPost, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST, newPost, newPost));
-	}
+        if (newPost != post) {
+            NotificationChain msgs = null;
+            if (post != null)
+                msgs = ((InternalEObject)post).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST, null, msgs);
+            if (newPost != null)
+                msgs = ((InternalEObject)newPost).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST, null, msgs);
+            msgs = basicSetPost(newPost, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST, newPost, newPost));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public OrListType getPostOR() {
-		return postOR;
-	}
+        return postOR;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetPostOR(OrListType newPostOR, NotificationChain msgs) {
-		OrListType oldPostOR = postOR;
-		postOR = newPostOR;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_OR, oldPostOR, newPostOR);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        OrListType oldPostOR = postOR;
+        postOR = newPostOR;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_OR, oldPostOR, newPostOR);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPostOR(OrListType newPostOR) {
-		if (newPostOR != postOR) {
-			NotificationChain msgs = null;
-			if (postOR != null)
-				msgs = ((InternalEObject)postOR).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
-			if (newPostOR != null)
-				msgs = ((InternalEObject)newPostOR).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
-			msgs = basicSetPostOR(newPostOR, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_OR, newPostOR, newPostOR));
-	}
+        if (newPostOR != postOR) {
+            NotificationChain msgs = null;
+            if (postOR != null)
+                msgs = ((InternalEObject)postOR).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
+            if (newPostOR != null)
+                msgs = ((InternalEObject)newPostOR).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
+            msgs = basicSetPostOR(newPostOR, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_OR, newPostOR, newPostOR));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ActivityListType getPostAND() {
-		return postAND;
-	}
+        return postAND;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetPostAND(ActivityListType newPostAND, NotificationChain msgs) {
-		ActivityListType oldPostAND = postAND;
-		postAND = newPostAND;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_AND, oldPostAND, newPostAND);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        ActivityListType oldPostAND = postAND;
+        postAND = newPostAND;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_AND, oldPostAND, newPostAND);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPostAND(ActivityListType newPostAND) {
-		if (newPostAND != postAND) {
-			NotificationChain msgs = null;
-			if (postAND != null)
-				msgs = ((InternalEObject)postAND).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
-			if (newPostAND != null)
-				msgs = ((InternalEObject)newPostAND).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
-			msgs = basicSetPostAND(newPostAND, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_AND, newPostAND, newPostAND));
-	}
+        if (newPostAND != postAND) {
+            NotificationChain msgs = null;
+            if (postAND != null)
+                msgs = ((InternalEObject)postAND).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
+            if (newPostAND != null)
+                msgs = ((InternalEObject)newPostAND).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
+            msgs = basicSetPostAND(newPostAND, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_AND, newPostAND, newPostAND));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public ActivityLoopListType getPostLOOP() {
-		return postLOOP;
-	}
+        return postLOOP;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public NotificationChain basicSetPostLOOP(ActivityLoopListType newPostLOOP, NotificationChain msgs) {
-		ActivityLoopListType oldPostLOOP = postLOOP;
-		postLOOP = newPostLOOP;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, oldPostLOOP, newPostLOOP);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
+        ActivityLoopListType oldPostLOOP = postLOOP;
+        postLOOP = newPostLOOP;
+        if (eNotificationRequired()) {
+            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, oldPostLOOP, newPostLOOP);
+            if (msgs == null) msgs = notification; else msgs.add(notification);
+        }
+        return msgs;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public void setPostLOOP(ActivityLoopListType newPostLOOP) {
-		if (newPostLOOP != postLOOP) {
-			NotificationChain msgs = null;
-			if (postLOOP != null)
-				msgs = ((InternalEObject)postLOOP).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
-			if (newPostLOOP != null)
-				msgs = ((InternalEObject)newPostLOOP).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
-			msgs = basicSetPostLOOP(newPostLOOP, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, newPostLOOP, newPostLOOP));
-	}
+        if (newPostLOOP != postLOOP) {
+            NotificationChain msgs = null;
+            if (postLOOP != null)
+                msgs = ((InternalEObject)postLOOP).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
+            if (newPostLOOP != null)
+                msgs = ((InternalEObject)newPostLOOP).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
+            msgs = basicSetPostLOOP(newPostLOOP, msgs);
+            if (msgs != null) msgs.dispatch();
+        }
+        else if (eNotificationRequired())
+            eNotify(new ENotificationImpl(this, Notification.SET, LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP, newPostLOOP, newPostLOOP));
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE:
-				return basicSetPre(null, msgs);
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
-				return basicSetPreOR(null, msgs);
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
-				return basicSetPreAND(null, msgs);
-			case LqnCorePackage.PRECEDENCE_TYPE__POST:
-				return basicSetPost(null, msgs);
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
-				return basicSetPostOR(null, msgs);
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
-				return basicSetPostAND(null, msgs);
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
-				return basicSetPostLOOP(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE:
+                return basicSetPre(null, msgs);
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
+                return basicSetPreOR(null, msgs);
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
+                return basicSetPreAND(null, msgs);
+            case LqnCorePackage.PRECEDENCE_TYPE__POST:
+                return basicSetPost(null, msgs);
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
+                return basicSetPostOR(null, msgs);
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
+                return basicSetPostAND(null, msgs);
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
+                return basicSetPostLOOP(null, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE:
-				return getPre();
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
-				return getPreOR();
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
-				return getPreAND();
-			case LqnCorePackage.PRECEDENCE_TYPE__POST:
-				return getPost();
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
-				return getPostOR();
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
-				return getPostAND();
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
-				return getPostLOOP();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE:
+                return getPre();
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
+                return getPreOR();
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
+                return getPreAND();
+            case LqnCorePackage.PRECEDENCE_TYPE__POST:
+                return getPost();
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
+                return getPostOR();
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
+                return getPostAND();
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
+                return getPostLOOP();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE:
-				setPre((SingleActivityListType)newValue);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
-				setPreOR((ActivityListType)newValue);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
-				setPreAND((AndJoinListType)newValue);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST:
-				setPost((SingleActivityListType)newValue);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
-				setPostOR((OrListType)newValue);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
-				setPostAND((ActivityListType)newValue);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
-				setPostLOOP((ActivityLoopListType)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE:
+                setPre((SingleActivityListType)newValue);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
+                setPreOR((ActivityListType)newValue);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
+                setPreAND((AndJoinListType)newValue);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST:
+                setPost((SingleActivityListType)newValue);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
+                setPostOR((OrListType)newValue);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
+                setPostAND((ActivityListType)newValue);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
+                setPostLOOP((ActivityLoopListType)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE:
-				setPre((SingleActivityListType)null);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
-				setPreOR((ActivityListType)null);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
-				setPreAND((AndJoinListType)null);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST:
-				setPost((SingleActivityListType)null);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
-				setPostOR((OrListType)null);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
-				setPostAND((ActivityListType)null);
-				return;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
-				setPostLOOP((ActivityLoopListType)null);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE:
+                setPre((SingleActivityListType)null);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
+                setPreOR((ActivityListType)null);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
+                setPreAND((AndJoinListType)null);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST:
+                setPost((SingleActivityListType)null);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
+                setPostOR((OrListType)null);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
+                setPostAND((ActivityListType)null);
+                return;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
+                setPostLOOP((ActivityLoopListType)null);
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE:
-				return pre != null;
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
-				return preOR != null;
-			case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
-				return preAND != null;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST:
-				return post != null;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
-				return postOR != null;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
-				return postAND != null;
-			case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
-				return postLOOP != null;
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE:
+                return pre != null;
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_OR:
+                return preOR != null;
+            case LqnCorePackage.PRECEDENCE_TYPE__PRE_AND:
+                return preAND != null;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST:
+                return post != null;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_OR:
+                return postOR != null;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_AND:
+                return postAND != null;
+            case LqnCorePackage.PRECEDENCE_TYPE__POST_LOOP:
+                return postLOOP != null;
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //PrecedenceTypeImpl

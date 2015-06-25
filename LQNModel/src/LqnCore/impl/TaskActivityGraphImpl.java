@@ -28,127 +28,127 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.TaskActivityGraphImpl#getReplyEntry <em>Reply Entry</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements TaskActivityGraph {
 	/**
-	 * The cached value of the '{@link #getReplyEntry() <em>Reply Entry</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getReplyEntry() <em>Reply Entry</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getReplyEntry()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getReplyEntry()
+     * @generated
+     * @ordered
+     */
 	protected EList<ReplyEntryType> replyEntry;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected TaskActivityGraphImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.TASK_ACTIVITY_GRAPH;
-	}
+        return LqnCorePackage.Literals.TASK_ACTIVITY_GRAPH;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ReplyEntryType> getReplyEntry() {
-		if (replyEntry == null) {
-			replyEntry = new EObjectContainmentEList<ReplyEntryType>(ReplyEntryType.class, this, LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY);
-		}
-		return replyEntry;
-	}
+        if (replyEntry == null) {
+            replyEntry = new EObjectContainmentEList<ReplyEntryType>(ReplyEntryType.class, this, LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY);
+        }
+        return replyEntry;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
-				return ((InternalEList<?>)getReplyEntry()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
+                return ((InternalEList<?>)getReplyEntry()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
-				return getReplyEntry();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
+                return getReplyEntry();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
-				getReplyEntry().clear();
-				getReplyEntry().addAll((Collection<? extends ReplyEntryType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
+                getReplyEntry().clear();
+                getReplyEntry().addAll((Collection<? extends ReplyEntryType>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
-				getReplyEntry().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
+                getReplyEntry().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
-				return replyEntry != null && !replyEntry.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
+                return replyEntry != null && !replyEntry.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //TaskActivityGraphImpl

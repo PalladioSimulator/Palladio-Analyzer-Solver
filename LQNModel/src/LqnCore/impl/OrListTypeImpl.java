@@ -30,127 +30,127 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link LqnCore.impl.OrListTypeImpl#getActivity <em>Activity</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class OrListTypeImpl extends EObjectImpl implements OrListType {
 	/**
-	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
+     * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getActivity()
-	 * @generated
-	 * @ordered
-	 */
+     * @see #getActivity()
+     * @generated
+     * @ordered
+     */
 	protected EList<ActivityOrType> activity;
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	protected OrListTypeImpl() {
-		super();
-	}
+        super();
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	protected EClass eStaticClass() {
-		return LqnCorePackage.Literals.OR_LIST_TYPE;
-	}
+        return LqnCorePackage.Literals.OR_LIST_TYPE;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public EList<ActivityOrType> getActivity() {
-		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityOrType>(ActivityOrType.class, this, LqnCorePackage.OR_LIST_TYPE__ACTIVITY);
-		}
-		return activity;
-	}
+        if (activity == null) {
+            activity = new EObjectContainmentEList<ActivityOrType>(ActivityOrType.class, this, LqnCorePackage.OR_LIST_TYPE__ACTIVITY);
+        }
+        return activity;
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
-				return ((InternalEList<?>)getActivity()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
+        switch (featureID) {
+            case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
+                return ((InternalEList<?>)getActivity()).basicRemove(otherEnd, msgs);
+        }
+        return super.eInverseRemove(otherEnd, featureID, msgs);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
-				return getActivity();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+        switch (featureID) {
+            case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
+                return getActivity();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
-				getActivity().clear();
-				getActivity().addAll((Collection<? extends ActivityOrType>)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+        switch (featureID) {
+            case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
+                getActivity().clear();
+                getActivity().addAll((Collection<? extends ActivityOrType>)newValue);
+                return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
-				getActivity().clear();
-				return;
-		}
-		super.eUnset(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
+                getActivity().clear();
+                return;
+        }
+        super.eUnset(featureID);
+    }
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
 	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
-				return activity != null && !activity.isEmpty();
-		}
-		return super.eIsSet(featureID);
-	}
+        switch (featureID) {
+            case LqnCorePackage.OR_LIST_TYPE__ACTIVITY:
+                return activity != null && !activity.isEmpty();
+        }
+        return super.eIsSet(featureID);
+    }
 
 } //OrListTypeImpl
