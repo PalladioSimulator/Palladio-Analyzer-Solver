@@ -31,7 +31,6 @@ import org.palladiosimulator.solver.context.computed_usage.Output;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.ComputedUsageContextImpl#getBranchProbabilities_ComputedUsageContext
@@ -55,6 +54,7 @@ import org.palladiosimulator.solver.context.computed_usage.Output;
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.ComputedUsageContextImpl#getOutput_ComputedUsageContext
  * <em>Output Computed Usage Context</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -170,7 +170,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public EList<BranchProbability> getBranchProbabilities_ComputedUsageContext() {
-        if (this.branchProbabilities_ComputedUsageContext == null) {
+        if (this.branchProbabilities_ComputedUsageContext == null)
+        {
             this.branchProbabilities_ComputedUsageContext = new EObjectContainmentEList<BranchProbability>(
                     BranchProbability.class, this,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT);
@@ -185,9 +186,11 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public EList<LoopIteration> getLoopiterations_ComputedUsageContext() {
-        if (this.loopiterations_ComputedUsageContext == null) {
+        if (this.loopiterations_ComputedUsageContext == null)
+        {
             this.loopiterations_ComputedUsageContext = new EObjectContainmentEList<LoopIteration>(LoopIteration.class,
-                    this, ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT);
+                    this,
+                    ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT);
         }
         return this.loopiterations_ComputedUsageContext;
     }
@@ -200,11 +203,13 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
     @Override
     public AssemblyContext getAssemblyContext_ComputedUsageContext() {
         if (this.assemblyContext_ComputedUsageContext != null
-                && ((EObject) this.assemblyContext_ComputedUsageContext).eIsProxy()) {
+                && ((EObject) this.assemblyContext_ComputedUsageContext).eIsProxy())
+        {
             final InternalEObject oldAssemblyContext_ComputedUsageContext = (InternalEObject) this.assemblyContext_ComputedUsageContext;
             this.assemblyContext_ComputedUsageContext = (AssemblyContext) this
                     .eResolveProxy(oldAssemblyContext_ComputedUsageContext);
-            if (this.assemblyContext_ComputedUsageContext != oldAssemblyContext_ComputedUsageContext) {
+            if (this.assemblyContext_ComputedUsageContext != oldAssemblyContext_ComputedUsageContext)
+            {
                 if (this.eNotificationRequired()) {
                     this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
                             ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__ASSEMBLY_CONTEXT_COMPUTED_USAGE_CONTEXT,
@@ -259,7 +264,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
             NotificationChain msgs) {
         final Input oldInput_ComputedUsageContext = this.input_ComputedUsageContext;
         this.input_ComputedUsageContext = newInput_ComputedUsageContext;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT,
                     oldInput_ComputedUsageContext, newInput_ComputedUsageContext);
@@ -279,25 +285,23 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public void setInput_ComputedUsageContext(final Input newInput_ComputedUsageContext) {
-        if (newInput_ComputedUsageContext != this.input_ComputedUsageContext) {
+        if (newInput_ComputedUsageContext != this.input_ComputedUsageContext)
+        {
             NotificationChain msgs = null;
             if (this.input_ComputedUsageContext != null) {
-                msgs = ((InternalEObject) this.input_ComputedUsageContext).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE
-                                - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT,
-                        null, msgs);
+                msgs = ((InternalEObject) this.input_ComputedUsageContext).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT, null, msgs);
             }
             if (newInput_ComputedUsageContext != null) {
-                msgs = ((InternalEObject) newInput_ComputedUsageContext).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE
-                                - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT,
-                        null, msgs);
+                msgs = ((InternalEObject) newInput_ComputedUsageContext).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT, null, msgs);
             }
             msgs = this.basicSetInput_ComputedUsageContext(newInput_ComputedUsageContext, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT,
                     newInput_ComputedUsageContext, newInput_ComputedUsageContext));
@@ -311,7 +315,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public EList<ExternalCallOutput> getExternalCallOutput_ComputedUsageContext() {
-        if (this.externalCallOutput_ComputedUsageContext == null) {
+        if (this.externalCallOutput_ComputedUsageContext == null)
+        {
             this.externalCallOutput_ComputedUsageContext = new EObjectContainmentEList<ExternalCallOutput>(
                     ExternalCallOutput.class, this,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_OUTPUT_COMPUTED_USAGE_CONTEXT);
@@ -326,7 +331,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public EList<ExternalCallInput> getExternalCallInput_ComputedUsageContext() {
-        if (this.externalCallInput_ComputedUsageContext == null) {
+        if (this.externalCallInput_ComputedUsageContext == null)
+        {
             this.externalCallInput_ComputedUsageContext = new EObjectContainmentWithInverseEList<ExternalCallInput>(
                     ExternalCallInput.class, this,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT,
@@ -354,7 +360,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
             NotificationChain msgs) {
         final Output oldOutput_ComputedUsageContext = this.output_ComputedUsageContext;
         this.output_ComputedUsageContext = newOutput_ComputedUsageContext;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT,
                     oldOutput_ComputedUsageContext, newOutput_ComputedUsageContext);
@@ -374,25 +381,23 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public void setOutput_ComputedUsageContext(final Output newOutput_ComputedUsageContext) {
-        if (newOutput_ComputedUsageContext != this.output_ComputedUsageContext) {
+        if (newOutput_ComputedUsageContext != this.output_ComputedUsageContext)
+        {
             NotificationChain msgs = null;
             if (this.output_ComputedUsageContext != null) {
-                msgs = ((InternalEObject) this.output_ComputedUsageContext).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE
-                                - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT,
-                        null, msgs);
+                msgs = ((InternalEObject) this.output_ComputedUsageContext).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT, null, msgs);
             }
             if (newOutput_ComputedUsageContext != null) {
-                msgs = ((InternalEObject) newOutput_ComputedUsageContext).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE
-                                - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT,
-                        null, msgs);
+                msgs = ((InternalEObject) newOutput_ComputedUsageContext).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT, null, msgs);
             }
             msgs = this.basicSetOutput_ComputedUsageContext(newOutput_ComputedUsageContext, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT,
                     newOutput_ComputedUsageContext, newOutput_ComputedUsageContext));
@@ -408,10 +413,12 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
     @Override
     public NotificationChain eInverseAdd(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT:
             return ((InternalEList<InternalEObject>) (InternalEList<?>) this
-                    .getExternalCallInput_ComputedUsageContext()).basicAdd(otherEnd, msgs);
+                    .getExternalCallInput_ComputedUsageContext())
+                    .basicAdd(otherEnd, msgs);
         }
         return super.eInverseAdd(otherEnd, featureID, msgs);
     }
@@ -424,7 +431,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT:
             return ((InternalEList<?>) this.getBranchProbabilities_ComputedUsageContext()).basicRemove(otherEnd, msgs);
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT:
@@ -448,7 +456,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT:
             return this.getBranchProbabilities_ComputedUsageContext();
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT:
@@ -478,11 +487,12 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT:
             this.getBranchProbabilities_ComputedUsageContext().clear();
-            this.getBranchProbabilities_ComputedUsageContext()
-                    .addAll((Collection<? extends BranchProbability>) newValue);
+            this.getBranchProbabilities_ComputedUsageContext().addAll(
+                    (Collection<? extends BranchProbability>) newValue);
             return;
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT:
             this.getLoopiterations_ComputedUsageContext().clear();
@@ -496,8 +506,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
             return;
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_OUTPUT_COMPUTED_USAGE_CONTEXT:
             this.getExternalCallOutput_ComputedUsageContext().clear();
-            this.getExternalCallOutput_ComputedUsageContext()
-                    .addAll((Collection<? extends ExternalCallOutput>) newValue);
+            this.getExternalCallOutput_ComputedUsageContext().addAll(
+                    (Collection<? extends ExternalCallOutput>) newValue);
             return;
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT:
             this.getExternalCallInput_ComputedUsageContext().clear();
@@ -517,7 +527,8 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT:
             this.getBranchProbabilities_ComputedUsageContext().clear();
             return;
@@ -550,10 +561,11 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT:
             return this.branchProbabilities_ComputedUsageContext != null
-                    && !this.branchProbabilities_ComputedUsageContext.isEmpty();
+            && !this.branchProbabilities_ComputedUsageContext.isEmpty();
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT:
             return this.loopiterations_ComputedUsageContext != null
                     && !this.loopiterations_ComputedUsageContext.isEmpty();
@@ -563,7 +575,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
             return this.input_ComputedUsageContext != null;
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_OUTPUT_COMPUTED_USAGE_CONTEXT:
             return this.externalCallOutput_ComputedUsageContext != null
-                    && !this.externalCallOutput_ComputedUsageContext.isEmpty();
+            && !this.externalCallOutput_ComputedUsageContext.isEmpty();
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT:
             return this.externalCallInput_ComputedUsageContext != null
                     && !this.externalCallInput_ComputedUsageContext.isEmpty();

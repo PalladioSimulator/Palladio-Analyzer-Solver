@@ -22,12 +22,12 @@ import org.palladiosimulator.solver.lqn.ReplyEntryType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl#getReplyActivity
- * <em>Reply Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl#getReplyActivity <em>Reply
+ * Activity</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -89,7 +89,8 @@ public class ReplyEntryTypeImpl extends EObjectImpl implements ReplyEntryType {
      */
     @Override
     public EList<ReplyActivityType> getReplyActivity() {
-        if (this.replyActivity == null) {
+        if (this.replyActivity == null)
+        {
             this.replyActivity = new EObjectContainmentEList<ReplyActivityType>(ReplyActivityType.class, this,
                     LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY);
         }
@@ -129,7 +130,8 @@ public class ReplyEntryTypeImpl extends EObjectImpl implements ReplyEntryType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
             return ((InternalEList<?>) this.getReplyActivity()).basicRemove(otherEnd, msgs);
         }
@@ -143,7 +145,8 @@ public class ReplyEntryTypeImpl extends EObjectImpl implements ReplyEntryType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
             return this.getReplyActivity();
         case LqnPackage.REPLY_ENTRY_TYPE__NAME:
@@ -160,7 +163,8 @@ public class ReplyEntryTypeImpl extends EObjectImpl implements ReplyEntryType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
             this.getReplyActivity().clear();
             this.getReplyActivity().addAll((Collection<? extends ReplyActivityType>) newValue);
@@ -179,7 +183,8 @@ public class ReplyEntryTypeImpl extends EObjectImpl implements ReplyEntryType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
             this.getReplyActivity().clear();
             return;
@@ -197,7 +202,8 @@ public class ReplyEntryTypeImpl extends EObjectImpl implements ReplyEntryType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
             return this.replyActivity != null && !this.replyActivity.isEmpty();
         case LqnPackage.REPLY_ENTRY_TYPE__NAME:

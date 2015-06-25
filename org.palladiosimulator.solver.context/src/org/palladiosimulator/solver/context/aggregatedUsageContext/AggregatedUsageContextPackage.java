@@ -66,8 +66,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl
      * <em>Service Execution Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
-     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
-     *      ServiceExecutionContextImpl
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getServiceExecutionContext()
      * @generated
      */
@@ -152,8 +151,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedResourceDemandImpl
      * <em>Aggregated Resource Demand</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
-     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
-     *      AggregatedResourceDemandImpl
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedResourceDemandImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getAggregatedResourceDemand()
      * @generated
      */
@@ -191,8 +189,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl
      * <em>Aggregated Communication</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
-     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
-     *      AggregatedCommunicationImpl
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getAggregatedCommunication()
      * @generated
      */
@@ -249,8 +246,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ComputedAggregatedUsageImpl
      * <em>Computed Aggregated Usage</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
-     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
-     *      ComputedAggregatedUsageImpl
+     * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ComputedAggregatedUsageImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getComputedAggregatedUsage()
      * @generated
      */
@@ -532,8 +528,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl
          * <em>Service Execution Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
-         * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
-         *      ServiceExecutionContextImpl
+         * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getServiceExecutionContext()
          * @generated
          */
@@ -642,8 +637,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl
          * <em>Aggregated Communication</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
-         * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
-         *      AggregatedCommunicationImpl
+         * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getAggregatedCommunication()
          * @generated
          */
@@ -691,8 +685,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ComputedAggregatedUsageImpl
          * <em>Computed Aggregated Usage</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
-         * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
-         *      ComputedAggregatedUsageImpl
+         * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ComputedAggregatedUsageImpl
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getComputedAggregatedUsage()
          * @generated
          */

@@ -24,18 +24,17 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getXMLNSPrefixMap
- * <em>XMLNS Prefix Map</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getXSISchemaLocation
- * <em>XSI Schema Location</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getLqnCore <em>Lqn Core</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS
+ * Prefix Map</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI
+ * Schema Location</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getLqnCore <em>Lqn Core</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getLqnModel <em>Lqn Model</em>}
  * </li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -97,7 +96,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     @Override
     public FeatureMap getMixed() {
-        if (this.mixed == null) {
+        if (this.mixed == null)
+        {
             this.mixed = new BasicFeatureMap(this, LqnPackage.DOCUMENT_ROOT__MIXED);
         }
         return this.mixed;
@@ -110,7 +110,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     @Override
     public EMap<String, String> getXMLNSPrefixMap() {
-        if (this.xMLNSPrefixMap == null) {
+        if (this.xMLNSPrefixMap == null)
+        {
             this.xMLNSPrefixMap = new EcoreEMap<String, String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY,
                     EStringToStringMapEntryImpl.class, this, LqnPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
         }
@@ -124,7 +125,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     @Override
     public EMap<String, String> getXSISchemaLocation() {
-        if (this.xSISchemaLocation == null) {
+        if (this.xSISchemaLocation == null)
+        {
             this.xSISchemaLocation = new EcoreEMap<String, String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY,
                     EStringToStringMapEntryImpl.class, this, LqnPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
         }
@@ -147,7 +149,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      * @generated
      */
     public NotificationChain basicSetLqnCore(final LqnCoreType newLqnCore, final NotificationChain msgs) {
-        return ((FeatureMap.Internal) this.getMixed()).basicAdd(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE, newLqnCore,
+        return ((FeatureMap.Internal) this.getMixed()).basicAdd(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE,
+                newLqnCore,
                 msgs);
     }
 
@@ -178,7 +181,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     public NotificationChain basicSetLqnModel(final LqnModelType newLqnModel, final NotificationChain msgs) {
         return ((FeatureMap.Internal) this.getMixed()).basicAdd(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
-                newLqnModel, msgs);
+                newLqnModel,
+                msgs);
     }
 
     /**
@@ -199,7 +203,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.DOCUMENT_ROOT__MIXED:
             return ((InternalEList<?>) this.getMixed()).basicRemove(otherEnd, msgs);
         case LqnPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
@@ -221,7 +226,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.DOCUMENT_ROOT__MIXED:
             if (coreType) {
                 return this.getMixed();
@@ -254,7 +260,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.DOCUMENT_ROOT__MIXED:
             ((FeatureMap.Internal) this.getMixed()).set(newValue);
             return;
@@ -281,7 +288,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.DOCUMENT_ROOT__MIXED:
             this.getMixed().clear();
             return;
@@ -308,7 +316,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.DOCUMENT_ROOT__MIXED:
             return this.mixed != null && !this.mixed.isEmpty();
         case LqnPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:

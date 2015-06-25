@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.CallListType#getSynchCall <em>Synch Call</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.CallListType#getAsynchCall <em>Asynch Call</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getCallListType()
  * @model extendedMetaData="name='call-list_._type' kind='elementOnly'"

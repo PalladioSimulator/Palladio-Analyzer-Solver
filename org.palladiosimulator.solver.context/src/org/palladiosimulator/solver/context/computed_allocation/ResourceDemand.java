@@ -13,7 +13,6 @@ import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getParametricResourceDemand_ResourceDemand
@@ -22,6 +21,7 @@ import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
  * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getSpecification_ResourceDemand
  * <em>Specification Resource Demand</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getResourceDemand()
  * @model

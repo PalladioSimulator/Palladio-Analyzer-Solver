@@ -20,7 +20,6 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecut
  * <em><b>Aggregated Communication</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl#getAverageMessageSize
@@ -35,6 +34,7 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecut
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl#getUsedCommunicationLinkResourceSpecification_AggregatedCommunication
  * <em>Used Communication Link Resource Specification Aggregated Communication</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -150,8 +150,8 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
         this.averageMessageSize = newAverageMessageSize;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE, oldAverageMessageSize,
-                    this.averageMessageSize));
+                    AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE,
+                    oldAverageMessageSize, this.averageMessageSize));
         }
     }
 
@@ -188,11 +188,13 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      */
     @Override
     public ServiceExecutionContext getReceiver_AggregatedCommunication() {
-        if (this.receiver_AggregatedCommunication != null && this.receiver_AggregatedCommunication.eIsProxy()) {
+        if (this.receiver_AggregatedCommunication != null && this.receiver_AggregatedCommunication.eIsProxy())
+        {
             final InternalEObject oldReceiver_AggregatedCommunication = (InternalEObject) this.receiver_AggregatedCommunication;
             this.receiver_AggregatedCommunication = (ServiceExecutionContext) this
                     .eResolveProxy(oldReceiver_AggregatedCommunication);
-            if (this.receiver_AggregatedCommunication != oldReceiver_AggregatedCommunication) {
+            if (this.receiver_AggregatedCommunication != oldReceiver_AggregatedCommunication)
+            {
                 if (this.eNotificationRequired()) {
                     this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
                             AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION,
@@ -221,7 +223,8 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
             final ServiceExecutionContext newReceiver_AggregatedCommunication, NotificationChain msgs) {
         final ServiceExecutionContext oldReceiver_AggregatedCommunication = this.receiver_AggregatedCommunication;
         this.receiver_AggregatedCommunication = newReceiver_AggregatedCommunication;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION,
                     oldReceiver_AggregatedCommunication, newReceiver_AggregatedCommunication);
@@ -241,23 +244,29 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      */
     @Override
     public void setReceiver_AggregatedCommunication(final ServiceExecutionContext newReceiver_AggregatedCommunication) {
-        if (newReceiver_AggregatedCommunication != this.receiver_AggregatedCommunication) {
+        if (newReceiver_AggregatedCommunication != this.receiver_AggregatedCommunication)
+        {
             NotificationChain msgs = null;
             if (this.receiver_AggregatedCommunication != null) {
-                msgs = ((InternalEObject) this.receiver_AggregatedCommunication).eInverseRemove(this,
-                        AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
-                        ServiceExecutionContext.class, msgs);
+                msgs = ((InternalEObject) this.receiver_AggregatedCommunication)
+                        .eInverseRemove(
+                                this,
+                                AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
+                                ServiceExecutionContext.class, msgs);
             }
             if (newReceiver_AggregatedCommunication != null) {
-                msgs = ((InternalEObject) newReceiver_AggregatedCommunication).eInverseAdd(this,
-                        AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
-                        ServiceExecutionContext.class, msgs);
+                msgs = ((InternalEObject) newReceiver_AggregatedCommunication)
+                        .eInverseAdd(
+                                this,
+                                AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
+                                ServiceExecutionContext.class, msgs);
             }
             msgs = this.basicSetReceiver_AggregatedCommunication(newReceiver_AggregatedCommunication, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
                     AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION,
                     newReceiver_AggregatedCommunication, newReceiver_AggregatedCommunication));
@@ -272,13 +281,17 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
     @Override
     public CommunicationLinkResourceSpecification getUsedCommunicationLinkResourceSpecification_AggregatedCommunication() {
         if (this.usedCommunicationLinkResourceSpecification_AggregatedCommunication != null
-                && ((EObject) this.usedCommunicationLinkResourceSpecification_AggregatedCommunication).eIsProxy()) {
+                && ((EObject) this.usedCommunicationLinkResourceSpecification_AggregatedCommunication).eIsProxy())
+        {
             final InternalEObject oldUsedCommunicationLinkResourceSpecification_AggregatedCommunication = (InternalEObject) this.usedCommunicationLinkResourceSpecification_AggregatedCommunication;
             this.usedCommunicationLinkResourceSpecification_AggregatedCommunication = (CommunicationLinkResourceSpecification) this
                     .eResolveProxy(oldUsedCommunicationLinkResourceSpecification_AggregatedCommunication);
-            if (this.usedCommunicationLinkResourceSpecification_AggregatedCommunication != oldUsedCommunicationLinkResourceSpecification_AggregatedCommunication) {
+            if (this.usedCommunicationLinkResourceSpecification_AggregatedCommunication != oldUsedCommunicationLinkResourceSpecification_AggregatedCommunication)
+            {
                 if (this.eNotificationRequired()) {
-                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+                    this.eNotify(new ENotificationImpl(
+                            this,
+                            Notification.RESOLVE,
                             AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__USED_COMMUNICATION_LINK_RESOURCE_SPECIFICATION_AGGREGATED_COMMUNICATION,
                             oldUsedCommunicationLinkResourceSpecification_AggregatedCommunication,
                             this.usedCommunicationLinkResourceSpecification_AggregatedCommunication));
@@ -308,7 +321,9 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
         final CommunicationLinkResourceSpecification oldUsedCommunicationLinkResourceSpecification_AggregatedCommunication = this.usedCommunicationLinkResourceSpecification_AggregatedCommunication;
         this.usedCommunicationLinkResourceSpecification_AggregatedCommunication = newUsedCommunicationLinkResourceSpecification_AggregatedCommunication;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET,
+            this.eNotify(new ENotificationImpl(
+                    this,
+                    Notification.SET,
                     AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__USED_COMMUNICATION_LINK_RESOURCE_SPECIFICATION_AGGREGATED_COMMUNICATION,
                     oldUsedCommunicationLinkResourceSpecification_AggregatedCommunication,
                     this.usedCommunicationLinkResourceSpecification_AggregatedCommunication));
@@ -322,12 +337,15 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      */
     @Override
     public NotificationChain eInverseAdd(final InternalEObject otherEnd, final int featureID, NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION:
             if (this.receiver_AggregatedCommunication != null) {
-                msgs = ((InternalEObject) this.receiver_AggregatedCommunication).eInverseRemove(this,
-                        AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
-                        ServiceExecutionContext.class, msgs);
+                msgs = ((InternalEObject) this.receiver_AggregatedCommunication)
+                        .eInverseRemove(
+                                this,
+                                AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
+                                ServiceExecutionContext.class, msgs);
             }
             return this.basicSetReceiver_AggregatedCommunication((ServiceExecutionContext) otherEnd, msgs);
         }
@@ -342,7 +360,8 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION:
             return this.basicSetReceiver_AggregatedCommunication(null, msgs);
         }
@@ -356,7 +375,8 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE:
             return this.getAverageMessageSize();
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_FREQUENCY:
@@ -382,7 +402,8 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE:
             this.setAverageMessageSize((Double) newValue);
             return;
@@ -393,8 +414,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
             this.setReceiver_AggregatedCommunication((ServiceExecutionContext) newValue);
             return;
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__USED_COMMUNICATION_LINK_RESOURCE_SPECIFICATION_AGGREGATED_COMMUNICATION:
-            this.setUsedCommunicationLinkResourceSpecification_AggregatedCommunication(
-                    (CommunicationLinkResourceSpecification) newValue);
+            this.setUsedCommunicationLinkResourceSpecification_AggregatedCommunication((CommunicationLinkResourceSpecification) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -407,7 +427,8 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE:
             this.setAverageMessageSize(AVERAGE_MESSAGE_SIZE_EDEFAULT);
             return;
@@ -418,8 +439,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
             this.setReceiver_AggregatedCommunication((ServiceExecutionContext) null);
             return;
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__USED_COMMUNICATION_LINK_RESOURCE_SPECIFICATION_AGGREGATED_COMMUNICATION:
-            this.setUsedCommunicationLinkResourceSpecification_AggregatedCommunication(
-                    (CommunicationLinkResourceSpecification) null);
+            this.setUsedCommunicationLinkResourceSpecification_AggregatedCommunication((CommunicationLinkResourceSpecification) null);
             return;
         }
         super.eUnset(featureID);
@@ -432,7 +452,8 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE:
             return this.averageMessageSize != AVERAGE_MESSAGE_SIZE_EDEFAULT;
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_FREQUENCY:

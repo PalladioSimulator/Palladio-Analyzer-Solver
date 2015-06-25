@@ -24,35 +24,33 @@ import org.palladiosimulator.solver.lqn.OutputDistributionType;
  * <em><b>Output Distribution Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getUnderflowBin
- * <em>Underflow Bin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getHistogramBin
- * <em>Histogram Bin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getOverflowBin
- * <em>Overflow Bin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getBinSize
- * <em>Bin Size</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getKurtosis
- * <em>Kurtosis</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMax <em>Max</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMean <em>Mean</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMidPoint
- * <em>Mid Point</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMin <em>Min</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getNumberBins
- * <em>Number Bins</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getSkew <em>Skew</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getStdDev
- * <em>Std Dev</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getXSamples
- * <em>XSamples</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getUnderflowBin <em>
+ * Underflow Bin</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getHistogramBin <em>
+ * Histogram Bin</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getOverflowBin <em>
+ * Overflow Bin</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getBinSize <em>Bin
+ * Size</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getKurtosis <em>
+ * Kurtosis</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMax <em>Max</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMean <em>Mean
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMidPoint <em>Mid
+ * Point</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getMin <em>Min</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getNumberBins <em>
+ * Number Bins</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getSkew <em>Skew
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getStdDev <em>Std Dev
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getXSamples <em>
+ * XSamples</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -343,7 +341,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
     public NotificationChain basicSetUnderflowBin(final HistogramBinType newUnderflowBin, NotificationChain msgs) {
         final HistogramBinType oldUnderflowBin = this.underflowBin;
         this.underflowBin = newUnderflowBin;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, oldUnderflowBin, newUnderflowBin);
             if (msgs == null) {
@@ -362,23 +361,26 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
      */
     @Override
     public void setUnderflowBin(final HistogramBinType newUnderflowBin) {
-        if (newUnderflowBin != this.underflowBin) {
+        if (newUnderflowBin != this.underflowBin)
+        {
             NotificationChain msgs = null;
             if (this.underflowBin != null) {
-                msgs = ((InternalEObject) this.underflowBin).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, null, msgs);
+                msgs = ((InternalEObject) this.underflowBin).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, null, msgs);
             }
             if (newUnderflowBin != null) {
-                msgs = ((InternalEObject) newUnderflowBin).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, null, msgs);
+                msgs = ((InternalEObject) newUnderflowBin).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, null, msgs);
             }
             msgs = this.basicSetUnderflowBin(newUnderflowBin, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, newUnderflowBin, newUnderflowBin));
+                    LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
+                    newUnderflowBin, newUnderflowBin));
         }
     }
 
@@ -389,7 +391,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
      */
     @Override
     public EList<HistogramBinType> getHistogramBin() {
-        if (this.histogramBin == null) {
+        if (this.histogramBin == null)
+        {
             this.histogramBin = new EObjectContainmentEList<HistogramBinType>(HistogramBinType.class, this,
                     LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN);
         }
@@ -414,7 +417,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
     public NotificationChain basicSetOverflowBin(final HistogramBinType newOverflowBin, NotificationChain msgs) {
         final HistogramBinType oldOverflowBin = this.overflowBin;
         this.overflowBin = newOverflowBin;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, oldOverflowBin, newOverflowBin);
             if (msgs == null) {
@@ -433,23 +437,26 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
      */
     @Override
     public void setOverflowBin(final HistogramBinType newOverflowBin) {
-        if (newOverflowBin != this.overflowBin) {
+        if (newOverflowBin != this.overflowBin)
+        {
             NotificationChain msgs = null;
             if (this.overflowBin != null) {
-                msgs = ((InternalEObject) this.overflowBin).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, null, msgs);
+                msgs = ((InternalEObject) this.overflowBin).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, null, msgs);
             }
             if (newOverflowBin != null) {
-                msgs = ((InternalEObject) newOverflowBin).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, null, msgs);
+                msgs = ((InternalEObject) newOverflowBin).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, null, msgs);
             }
             msgs = this.basicSetOverflowBin(newOverflowBin, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, newOverflowBin, newOverflowBin));
+                    LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
+                    newOverflowBin, newOverflowBin));
         }
     }
 
@@ -523,8 +530,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
         final Object oldMax = this.max;
         this.max = newMax;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MAX, oldMax,
-                    this.max));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MAX,
+                    oldMax, this.max));
         }
     }
 
@@ -549,7 +556,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
         this.mean = newMean;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MEAN,
-                    oldMean, this.mean));
+                    oldMean,
+                    this.mean));
         }
     }
 
@@ -598,8 +606,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
         final Object oldMin = this.min;
         this.min = newMin;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MIN, oldMin,
-                    this.min));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MIN,
+                    oldMin, this.min));
         }
     }
 
@@ -625,7 +633,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
         final boolean oldNumberBinsESet = this.numberBinsESet;
         this.numberBinsESet = true;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
                     oldNumberBins, this.numberBins, !oldNumberBinsESet));
         }
     }
@@ -642,9 +651,9 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
         this.numberBins = NUMBER_BINS_EDEFAULT;
         this.numberBinsESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
-                            oldNumberBins, NUMBER_BINS_EDEFAULT, oldNumberBinsESet));
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET,
+                    LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
+                    oldNumberBins, NUMBER_BINS_EDEFAULT, oldNumberBinsESet));
         }
     }
 
@@ -679,7 +688,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
         this.skew = newSkew;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__SKEW,
-                    oldSkew, this.skew));
+                    oldSkew,
+                    this.skew));
         }
     }
 
@@ -770,7 +780,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN:
             return this.basicSetUnderflowBin(null, msgs);
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN:
@@ -788,7 +799,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN:
             return this.getUnderflowBin();
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN:
@@ -827,7 +839,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN:
             this.setUnderflowBin((HistogramBinType) newValue);
             return;
@@ -879,7 +892,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN:
             this.setUnderflowBin((HistogramBinType) null);
             return;
@@ -930,7 +944,8 @@ public class OutputDistributionTypeImpl extends EObjectImpl implements OutputDis
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN:
             return this.underflowBin != null;
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN:

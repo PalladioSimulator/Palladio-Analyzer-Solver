@@ -18,16 +18,14 @@ import org.palladiosimulator.solver.lqn.ParaType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getStartValue <em>Start Value</em>}
  * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getEndValue <em>End Value</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getStepValue <em>Step Value</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getEndValue <em>End Value</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getStepValue <em>Step Value</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -171,7 +169,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
         final boolean oldStartValueESet = this.startValueESet;
         this.startValueESet = true;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PARA_TYPE__START_VALUE, oldStartValue,
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PARA_TYPE__START_VALUE,
+                    oldStartValue,
                     this.startValue, !oldStartValueESet));
         }
     }
@@ -189,7 +188,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
         this.startValueESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PARA_TYPE__START_VALUE,
-                    oldStartValue, START_VALUE_EDEFAULT, oldStartValueESet));
+                    oldStartValue,
+                    START_VALUE_EDEFAULT, oldStartValueESet));
         }
     }
 
@@ -296,7 +296,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
         this.stepValue = STEP_VALUE_EDEFAULT;
         this.stepValueESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PARA_TYPE__STEP_VALUE, oldStepValue,
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PARA_TYPE__STEP_VALUE,
+                    oldStepValue,
                     STEP_VALUE_EDEFAULT, oldStepValueESet));
         }
     }
@@ -318,7 +319,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
      */
     @Override
     public EList<Integer> getValue() {
-        if (this.value == null) {
+        if (this.value == null)
+        {
             this.value = new EDataTypeEList<Integer>(Integer.class, this, LqnPackage.PARA_TYPE__VALUE);
         }
         return this.value;
@@ -331,7 +333,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARA_TYPE__START_VALUE:
             return this.getStartValue();
         case LqnPackage.PARA_TYPE__END_VALUE:
@@ -352,7 +355,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARA_TYPE__START_VALUE:
             this.setStartValue((Integer) newValue);
             return;
@@ -377,7 +381,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARA_TYPE__START_VALUE:
             this.unsetStartValue();
             return;
@@ -401,7 +406,8 @@ public class ParaTypeImpl extends EObjectImpl implements ParaType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARA_TYPE__START_VALUE:
             return this.isSetStartValue();
         case LqnPackage.PARA_TYPE__END_VALUE:

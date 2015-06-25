@@ -19,7 +19,6 @@ import org.palladiosimulator.pcm.usagemodel.UsageScenario;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getGlobalExecutionFrequency
@@ -43,6 +42,7 @@ import org.palladiosimulator.pcm.usagemodel.UsageScenario;
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getReceivedAggregatedCommunication_AggregatedCommunication
  * <em>Received Aggregated Communication Aggregated Communication</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext()
  * @model

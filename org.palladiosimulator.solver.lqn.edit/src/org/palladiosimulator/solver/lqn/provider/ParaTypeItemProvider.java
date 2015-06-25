@@ -48,7 +48,8 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addStartValuePropertyDescriptor(object);
@@ -66,13 +67,20 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
      * @generated
      */
     protected void addStartValuePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ParaType_startValue_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_startValue_feature",
-                        "_UI_ParaType_type"),
-                LqnPackage.Literals.PARA_TYPE__START_VALUE, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ParaType_startValue_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_startValue_feature",
+                                "_UI_ParaType_type"),
+                                LqnPackage.Literals.PARA_TYPE__START_VALUE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -82,13 +90,20 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
      * @generated
      */
     protected void addEndValuePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ParaType_endValue_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_endValue_feature",
-                        "_UI_ParaType_type"),
-                LqnPackage.Literals.PARA_TYPE__END_VALUE, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ParaType_endValue_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_endValue_feature",
+                                "_UI_ParaType_type"),
+                                LqnPackage.Literals.PARA_TYPE__END_VALUE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -98,13 +113,20 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
      * @generated
      */
     protected void addStepValuePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ParaType_stepValue_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_stepValue_feature",
-                        "_UI_ParaType_type"),
-                LqnPackage.Literals.PARA_TYPE__STEP_VALUE, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ParaType_stepValue_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_stepValue_feature",
+                                "_UI_ParaType_type"),
+                                LqnPackage.Literals.PARA_TYPE__STEP_VALUE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -114,13 +136,20 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
      * @generated
      */
     protected void addValuePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this
-                .createItemPropertyDescriptor(((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(), this.getString("_UI_ParaType_value_feature"),
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ParaType_value_feature"),
                         this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_value_feature",
                                 "_UI_ParaType_type"),
-                        LqnPackage.Literals.PARA_TYPE__VALUE, true, false, false,
-                        ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+                                LqnPackage.Literals.PARA_TYPE__VALUE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -156,7 +185,8 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ParaType.class)) {
+        switch (notification.getFeatureID(ParaType.class))
+        {
         case LqnPackage.PARA_TYPE__START_VALUE:
         case LqnPackage.PARA_TYPE__END_VALUE:
         case LqnPackage.PARA_TYPE__STEP_VALUE:

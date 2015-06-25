@@ -48,7 +48,8 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addParamPropertyDescriptor(object);
@@ -64,13 +65,20 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
      * @generated
      */
     protected void addParamPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_PragmaType_param_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_PragmaType_param_feature",
-                        "_UI_PragmaType_type"),
-                LqnPackage.Literals.PRAGMA_TYPE__PARAM, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_PragmaType_param_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_PragmaType_param_feature",
+                                "_UI_PragmaType_type"),
+                                LqnPackage.Literals.PRAGMA_TYPE__PARAM,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -80,13 +88,20 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
      * @generated
      */
     protected void addValuePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_PragmaType_value_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_PragmaType_value_feature",
-                        "_UI_PragmaType_type"),
-                LqnPackage.Literals.PRAGMA_TYPE__VALUE, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_PragmaType_value_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_PragmaType_value_feature",
+                                "_UI_PragmaType_type"),
+                                LqnPackage.Literals.PRAGMA_TYPE__VALUE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -108,8 +123,9 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
     @Override
     public String getText(final Object object) {
         final String label = ((PragmaType) object).getParam();
-        return label == null || label.length() == 0 ? this.getString("_UI_PragmaType_type")
-                : this.getString("_UI_PragmaType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_PragmaType_type") :
+                this.getString("_UI_PragmaType_type") + " " + label;
     }
 
     /**
@@ -123,7 +139,8 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(PragmaType.class)) {
+        switch (notification.getFeatureID(PragmaType.class))
+        {
         case LqnPackage.PRAGMA_TYPE__PARAM:
         case LqnPackage.PRAGMA_TYPE__VALUE:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));

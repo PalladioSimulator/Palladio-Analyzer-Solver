@@ -50,7 +50,8 @@ public class ComputedUsageAdapterFactory extends AdapterFactoryImpl {
      * @generated
      */
     public ComputedUsageAdapterFactory() {
-        if (modelPackage == null) {
+        if (modelPackage == null)
+        {
             modelPackage = ComputedUsagePackage.eINSTANCE;
         }
     }
@@ -65,10 +66,12 @@ public class ComputedUsageAdapterFactory extends AdapterFactoryImpl {
      */
     @Override
     public boolean isFactoryForType(final Object object) {
-        if (object == modelPackage) {
+        if (object == modelPackage)
+        {
             return true;
         }
-        if (object instanceof EObject) {
+        if (object instanceof EObject)
+        {
             return ((EObject) object).eClass().getEPackage() == modelPackage;
         }
         return false;
@@ -80,254 +83,266 @@ public class ComputedUsageAdapterFactory extends AdapterFactoryImpl {
      *
      * @generated
      */
-    protected ComputedUsageSwitch<Adapter> modelSwitch = new ComputedUsageSwitch<Adapter>() {
-
+    protected ComputedUsageSwitch<Adapter> modelSwitch = new ComputedUsageSwitch<Adapter>()
+            {
         @Override
-        public Adapter caseComputedUsageContext(final ComputedUsageContext object) {
+        public Adapter caseComputedUsageContext(final ComputedUsageContext object)
+        {
             return ComputedUsageAdapterFactory.this.createComputedUsageContextAdapter();
         }
 
         @Override
-        public Adapter caseBranchProbability(final BranchProbability object) {
+        public Adapter caseBranchProbability(final BranchProbability object)
+        {
             return ComputedUsageAdapterFactory.this.createBranchProbabilityAdapter();
         }
 
         @Override
-        public Adapter caseLoopIteration(final LoopIteration object) {
+        public Adapter caseLoopIteration(final LoopIteration object)
+        {
             return ComputedUsageAdapterFactory.this.createLoopIterationAdapter();
         }
 
         @Override
-        public Adapter caseInput(final Input object) {
+        public Adapter caseInput(final Input object)
+        {
             return ComputedUsageAdapterFactory.this.createInputAdapter();
         }
 
         @Override
-        public Adapter caseExternalCallOutput(final ExternalCallOutput object) {
+        public Adapter caseExternalCallOutput(final ExternalCallOutput object)
+        {
             return ComputedUsageAdapterFactory.this.createExternalCallOutputAdapter();
         }
 
         @Override
-        public Adapter caseExternalCallInput(final ExternalCallInput object) {
+        public Adapter caseExternalCallInput(final ExternalCallInput object)
+        {
             return ComputedUsageAdapterFactory.this.createExternalCallInputAdapter();
         }
 
         @Override
-        public Adapter caseOutput(final Output object) {
+        public Adapter caseOutput(final Output object)
+        {
             return ComputedUsageAdapterFactory.this.createOutputAdapter();
         }
 
         @Override
-        public Adapter caseComputedUsage(final ComputedUsage object) {
+        public Adapter caseComputedUsage(final ComputedUsage object)
+        {
             return ComputedUsageAdapterFactory.this.createComputedUsageAdapter();
         }
 
         @Override
-        public Adapter caseIdentifier(final Identifier object) {
+        public Adapter caseIdentifier(final Identifier object)
+        {
             return ComputedUsageAdapterFactory.this.createIdentifierAdapter();
         }
 
         @Override
-        public Adapter caseNamedElement(final NamedElement object) {
+        public Adapter caseNamedElement(final NamedElement object)
+        {
             return ComputedUsageAdapterFactory.this.createNamedElementAdapter();
         }
 
         @Override
-        public Adapter caseEntity(final Entity object) {
+        public Adapter caseEntity(final Entity object)
+        {
             return ComputedUsageAdapterFactory.this.createEntityAdapter();
         }
 
         @Override
-        public Adapter defaultCase(final EObject object) {
+        public Adapter defaultCase(final EObject object)
+        {
             return ComputedUsageAdapterFactory.this.createEObjectAdapter();
         }
-    };
+            };
 
-    /**
-     * Creates an adapter for the <code>target</code>. <!-- begin-user-doc --> <!-- end-user-doc -->
+            /**
+             * Creates an adapter for the <code>target</code>. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param target
      *            the object to adapt.
      * @return the adapter for the <code>target</code>.
-     * @generated
-     */
-    @Override
-    public Adapter createAdapter(final Notifier target) {
-        return this.modelSwitch.doSwitch((EObject) target);
-    }
+             * @generated
+             */
+            @Override
+            public Adapter createAdapter(final Notifier target) {
+                return this.modelSwitch.doSwitch((EObject) target);
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
+            /**
+             * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext
      * <em>Context</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
      * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
      * cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext
-     * @generated
-     */
-    public Adapter createComputedUsageContextAdapter() {
-        return null;
-    }
+             * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext
+             * @generated
+             */
+            public Adapter createComputedUsageContextAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
+            /**
+             * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.solver.context.computed_usage.BranchProbability
      * <em>Branch Probability</em>}'. <!-- begin-user-doc --> This default implementation returns
      * null so that we can easily ignore cases; it's useful to ignore a case when inheritance will
      * catch all the cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.BranchProbability
-     * @generated
-     */
-    public Adapter createBranchProbabilityAdapter() {
-        return null;
-    }
+             * @see org.palladiosimulator.solver.context.computed_usage.BranchProbability
+             * @generated
+             */
+            public Adapter createBranchProbabilityAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
+            /**
+             * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.solver.context.computed_usage.LoopIteration
      * <em>Loop Iteration</em>}'. <!-- begin-user-doc --> This default implementation returns null
      * so that we can easily ignore cases; it's useful to ignore a case when inheritance will catch
      * all the cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.LoopIteration
-     * @generated
-     */
-    public Adapter createLoopIterationAdapter() {
-        return null;
-    }
+             * @see org.palladiosimulator.solver.context.computed_usage.LoopIteration
+             * @generated
+             */
+            public Adapter createLoopIterationAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
-     * {@link org.palladiosimulator.solver.context.computed_usage.Input <em>Input</em>}'. <!--
-     * begin-user-doc --> This default implementation returns null so that we can easily ignore
-     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-     * end-user-doc -->
-     *
-     * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.Input
-     * @generated
-     */
-    public Adapter createInputAdapter() {
-        return null;
-    }
+            /**
+             * Creates a new adapter for an object of class '
+             * {@link org.palladiosimulator.solver.context.computed_usage.Input <em>Input</em>}'. <!--
+             * begin-user-doc --> This default implementation returns null so that we can easily ignore
+             * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+             * end-user-doc -->
+             *
+             * @return the new adapter.
+             * @see org.palladiosimulator.solver.context.computed_usage.Input
+             * @generated
+             */
+            public Adapter createInputAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
+            /**
+             * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput
      * <em>External Call Output</em>}'. <!-- begin-user-doc --> This default implementation returns
      * null so that we can easily ignore cases; it's useful to ignore a case when inheritance will
      * catch all the cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput
-     * @generated
-     */
-    public Adapter createExternalCallOutputAdapter() {
-        return null;
-    }
+             * @see org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput
+             * @generated
+             */
+            public Adapter createExternalCallOutputAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
+            /**
+             * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.solver.context.computed_usage.ExternalCallInput
      * <em>External Call Input</em>}'. <!-- begin-user-doc --> This default implementation returns
      * null so that we can easily ignore cases; it's useful to ignore a case when inheritance will
      * catch all the cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.ExternalCallInput
-     * @generated
-     */
-    public Adapter createExternalCallInputAdapter() {
-        return null;
-    }
+             * @see org.palladiosimulator.solver.context.computed_usage.ExternalCallInput
+             * @generated
+             */
+            public Adapter createExternalCallInputAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
-     * {@link org.palladiosimulator.solver.context.computed_usage.Output <em>Output</em>}'. <!--
-     * begin-user-doc --> This default implementation returns null so that we can easily ignore
-     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-     * end-user-doc -->
-     *
-     * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.Output
-     * @generated
-     */
-    public Adapter createOutputAdapter() {
-        return null;
-    }
+            /**
+             * Creates a new adapter for an object of class '
+             * {@link org.palladiosimulator.solver.context.computed_usage.Output <em>Output</em>}'. <!--
+             * begin-user-doc --> This default implementation returns null so that we can easily ignore
+             * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+             * end-user-doc -->
+             *
+             * @return the new adapter.
+             * @see org.palladiosimulator.solver.context.computed_usage.Output
+             * @generated
+             */
+            public Adapter createOutputAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
+            /**
+             * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsage
      * <em>Computed Usage</em>}'. <!-- begin-user-doc --> This default implementation returns null
      * so that we can easily ignore cases; it's useful to ignore a case when inheritance will catch
      * all the cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsage
-     * @generated
-     */
-    public Adapter createComputedUsageAdapter() {
-        return null;
-    }
+             * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsage
+             * @generated
+             */
+            public Adapter createComputedUsageAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '{@link de.uka.ipd.sdq.identifier.Identifier
+            /**
+             * Creates a new adapter for an object of class '{@link de.uka.ipd.sdq.identifier.Identifier
      * <em>Identifier</em>}'. <!-- begin-user-doc --> This default implementation returns null so
      * that we can easily ignore cases; it's useful to ignore a case when inheritance will catch all
      * the cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see de.uka.ipd.sdq.identifier.Identifier
-     * @generated
-     */
-    public Adapter createIdentifierAdapter() {
-        return null;
-    }
+             * @see de.uka.ipd.sdq.identifier.Identifier
+             * @generated
+             */
+            public Adapter createIdentifierAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
-     * {@link org.palladiosimulator.pcm.core.entity.NamedElement <em>Named Element</em>}'. <!--
-     * begin-user-doc --> This default implementation returns null so that we can easily ignore
-     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-     * end-user-doc -->
-     *
-     * @return the new adapter.
-     * @see org.palladiosimulator.pcm.core.entity.NamedElement
-     * @generated
-     */
-    public Adapter createNamedElementAdapter() {
-        return null;
-    }
+            /**
+             * Creates a new adapter for an object of class '
+             * {@link org.palladiosimulator.pcm.core.entity.NamedElement <em>Named Element</em>}'. <!--
+             * begin-user-doc --> This default implementation returns null so that we can easily ignore
+             * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+             * end-user-doc -->
+             *
+             * @return the new adapter.
+             * @see org.palladiosimulator.pcm.core.entity.NamedElement
+             * @generated
+             */
+            public Adapter createNamedElementAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for an object of class '
+            /**
+             * Creates a new adapter for an object of class '
      * {@link org.palladiosimulator.pcm.core.entity.Entity <em>Entity</em>}'. <!-- begin-user-doc
      * --> This default implementation returns null so that we can easily ignore cases; it's useful
      * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @see org.palladiosimulator.pcm.core.entity.Entity
-     * @generated
-     */
-    public Adapter createEntityAdapter() {
-        return null;
-    }
+             * @see org.palladiosimulator.pcm.core.entity.Entity
+             * @generated
+             */
+            public Adapter createEntityAdapter() {
+                return null;
+            }
 
-    /**
-     * Creates a new adapter for the default case. <!-- begin-user-doc --> This default
+            /**
+             * Creates a new adapter for the default case. <!-- begin-user-doc --> This default
      * implementation returns null. <!-- end-user-doc -->
      *
      * @return the new adapter.
-     * @generated
-     */
-    public Adapter createEObjectAdapter() {
-        return null;
-    }
+             * @generated
+             */
+            public Adapter createEObjectAdapter() {
+                return null;
+            }
 
 } // ComputedUsageAdapterFactory

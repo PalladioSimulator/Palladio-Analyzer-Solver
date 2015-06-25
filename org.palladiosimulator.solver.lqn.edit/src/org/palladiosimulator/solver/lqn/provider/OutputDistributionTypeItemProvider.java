@@ -51,7 +51,8 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addBinSizePropertyDescriptor(object);
@@ -75,13 +76,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addBinSizePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_binSize_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_binSize_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_binSize_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_binSize_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -91,13 +100,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addKurtosisPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_kurtosis_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_kurtosis_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_kurtosis_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_kurtosis_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -107,13 +124,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addMaxPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_max_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_max_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MAX, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_max_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_max_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MAX,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -123,13 +148,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addMeanPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_mean_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_mean_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MEAN, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_mean_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_mean_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MEAN,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -139,13 +172,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addMidPointPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_midPoint_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_midPoint_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MID_POINT, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_midPoint_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_midPoint_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MID_POINT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -155,13 +196,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addMinPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_min_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_min_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MIN, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_min_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_min_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MIN,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -171,13 +220,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addNumberBinsPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_numberBins_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_numberBins_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_numberBins_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_numberBins_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -187,13 +244,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addSkewPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_skew_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_skew_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__SKEW, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_skew_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_skew_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__SKEW,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -203,13 +268,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addStdDevPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_stdDev_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_stdDev_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__STD_DEV, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_stdDev_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_stdDev_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__STD_DEV,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -219,13 +292,21 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      * @generated
      */
     protected void addXSamplesPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputDistributionType_xSamples_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_xSamples_feature",
-                        "_UI_OutputDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__XSAMPLES, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputDistributionType_xSamples_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputDistributionType_xSamples_feature",
+                                "_UI_OutputDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__XSAMPLES,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -239,7 +320,8 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN);
             this.childrenFeatures.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN);
@@ -281,8 +363,9 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
     public String getText(final Object object) {
         final Object labelValue = ((OutputDistributionType) object).getBinSize();
         final String label = labelValue == null ? null : labelValue.toString();
-        return label == null || label.length() == 0 ? this.getString("_UI_OutputDistributionType_type")
-                : this.getString("_UI_OutputDistributionType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_OutputDistributionType_type") :
+                this.getString("_UI_OutputDistributionType_type") + " " + label;
     }
 
     /**
@@ -296,7 +379,8 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(OutputDistributionType.class)) {
+        switch (notification.getFeatureID(OutputDistributionType.class))
+        {
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE:
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS:
         case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MAX:
@@ -328,14 +412,20 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
-                LqnFactory.eINSTANCE.createHistogramBinType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
+                        LqnFactory.eINSTANCE.createHistogramBinType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN,
-                LqnFactory.eINSTANCE.createHistogramBinType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN,
+                        LqnFactory.eINSTANCE.createHistogramBinType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
-                LqnFactory.eINSTANCE.createHistogramBinType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
+                        LqnFactory.eINSTANCE.createHistogramBinType()));
     }
 
     /**
@@ -350,13 +440,17 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
         final Object childFeature = feature;
         final Object childObject = child;
 
-        final boolean qualify = childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN
-                || childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN
-                || childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
+        final boolean qualify =
+                childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN ||
+                        childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN ||
+                        childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
 
-        if (qualify) {
-            return this.getString("_UI_CreateChild_text2", new Object[] { this.getTypeText(childObject),
-                    this.getFeatureText(childFeature), this.getTypeText(owner) });
+        if (qualify)
+        {
+            return this.getString(
+                    "_UI_CreateChild_text2",
+                    new Object[] { this.getTypeText(childObject), this.getFeatureText(childFeature),
+                            this.getTypeText(owner) });
         }
         return super.getCreateChildText(owner, feature, child, selection);
     }

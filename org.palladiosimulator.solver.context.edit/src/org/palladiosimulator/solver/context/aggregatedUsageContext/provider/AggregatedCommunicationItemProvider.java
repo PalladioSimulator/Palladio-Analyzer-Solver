@@ -58,7 +58,8 @@ public class AggregatedCommunicationItemProvider extends ItemProviderAdapter imp
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addAverageMessageSizePropertyDescriptor(object);
@@ -76,13 +77,21 @@ public class AggregatedCommunicationItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addAverageMessageSizePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_AggregatedCommunication_averageMessageSize_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_AggregatedCommunication_averageMessageSize_feature", "_UI_AggregatedCommunication_type"),
-                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE, true, false,
-                false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_AggregatedCommunication_averageMessageSize_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_AggregatedCommunication_averageMessageSize_feature",
+                                "_UI_AggregatedCommunication_type"),
+                                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -92,14 +101,22 @@ public class AggregatedCommunicationItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addAverageMessageFrequencyPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_AggregatedCommunication_averageMessageFrequency_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_AggregatedCommunication_averageMessageFrequency_feature",
-                        "_UI_AggregatedCommunication_type"),
-                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_FREQUENCY, true, false,
-                false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_AggregatedCommunication_averageMessageFrequency_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_AggregatedCommunication_averageMessageFrequency_feature",
+                                "_UI_AggregatedCommunication_type"),
+                                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_FREQUENCY,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -109,14 +126,22 @@ public class AggregatedCommunicationItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addReceiver_AggregatedCommunicationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_AggregatedCommunication_receiver_AggregatedCommunication_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_AggregatedCommunication_receiver_AggregatedCommunication_feature",
-                        "_UI_AggregatedCommunication_type"),
-                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_AggregatedCommunication_receiver_AggregatedCommunication_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_AggregatedCommunication_receiver_AggregatedCommunication_feature",
+                                "_UI_AggregatedCommunication_type"),
+                                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -127,15 +152,23 @@ public class AggregatedCommunicationItemProvider extends ItemProviderAdapter imp
      */
     protected void addUsedCommunicationLinkResourceSpecification_AggregatedCommunicationPropertyDescriptor(
             final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString(
-                        "_UI_AggregatedCommunication_usedCommunicationLinkResourceSpecification_AggregatedCommunication_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_AggregatedCommunication_usedCommunicationLinkResourceSpecification_AggregatedCommunication_feature",
-                        "_UI_AggregatedCommunication_type"),
-                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__USED_COMMUNICATION_LINK_RESOURCE_SPECIFICATION_AGGREGATED_COMMUNICATION,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_AggregatedCommunication_usedCommunicationLinkResourceSpecification_AggregatedCommunication_feature"),
+                        this.getString(
+                                "_UI_PropertyDescriptor_description",
+                                "_UI_AggregatedCommunication_usedCommunicationLinkResourceSpecification_AggregatedCommunication_feature",
+                                "_UI_AggregatedCommunication_type"),
+                                AggregatedUsageContextPackage.Literals.AGGREGATED_COMMUNICATION__USED_COMMUNICATION_LINK_RESOURCE_SPECIFICATION_AGGREGATED_COMMUNICATION,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -158,7 +191,7 @@ public class AggregatedCommunicationItemProvider extends ItemProviderAdapter imp
     public String getText(final Object object) {
         final AggregatedCommunication aggregatedCommunication = (AggregatedCommunication) object;
         return this.getString("_UI_AggregatedCommunication_type") + " "
-                + aggregatedCommunication.getAverageMessageSize();
+        + aggregatedCommunication.getAverageMessageSize();
     }
 
     /**
@@ -172,7 +205,8 @@ public class AggregatedCommunicationItemProvider extends ItemProviderAdapter imp
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(AggregatedCommunication.class)) {
+        switch (notification.getFeatureID(AggregatedCommunication.class))
+        {
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE:
         case AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_FREQUENCY:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));

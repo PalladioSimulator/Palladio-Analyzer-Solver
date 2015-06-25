@@ -45,7 +45,8 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addPhasePropertyDescriptor(object);
@@ -60,13 +61,21 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
      * @generated
      */
     protected void addPhasePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ActivityPhasesType_phase_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityPhasesType_phase_feature",
-                        "_UI_ActivityPhasesType_type"),
-                LqnPackage.Literals.ACTIVITY_PHASES_TYPE__PHASE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ActivityPhasesType_phase_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ActivityPhasesType_phase_feature",
+                                "_UI_ActivityPhasesType_type"),
+                                LqnPackage.Literals.ACTIVITY_PHASES_TYPE__PHASE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -80,7 +89,8 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__CALL_LIST);
             this.childrenFeatures.add(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP);
@@ -120,8 +130,9 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
     @Override
     public String getText(final Object object) {
         final String label = ((ActivityPhasesType) object).getName();
-        return label == null || label.length() == 0 ? this.getString("_UI_ActivityPhasesType_type")
-                : this.getString("_UI_ActivityPhasesType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ActivityPhasesType_type") :
+                this.getString("_UI_ActivityPhasesType_type") + " " + label;
     }
 
     /**
@@ -135,7 +146,8 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityPhasesType.class)) {
+        switch (notification.getFeatureID(ActivityPhasesType.class))
+        {
         case LqnPackage.ACTIVITY_PHASES_TYPE__PHASE:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;
@@ -157,16 +169,24 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__CALL_LIST,
-                LqnFactory.eINSTANCE.createCallListType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__CALL_LIST,
+                        LqnFactory.eINSTANCE.createCallListType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
-                FeatureMapUtil.createEntry(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL,
-                        LqnFactory.eINSTANCE.createActivityMakingCallType())));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
+                        FeatureMapUtil.createEntry
+                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL,
+                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
-                FeatureMapUtil.createEntry(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL,
-                        LqnFactory.eINSTANCE.createActivityMakingCallType())));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
+                        FeatureMapUtil.createEntry
+                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL,
+                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
     }
 
     /**
@@ -182,20 +202,25 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
         Object childObject = child;
 
         if (childFeature instanceof EStructuralFeature
-                && FeatureMapUtil.isFeatureMap((EStructuralFeature) childFeature)) {
+                && FeatureMapUtil.isFeatureMap((EStructuralFeature) childFeature))
+        {
             final FeatureMap.Entry entry = (FeatureMap.Entry) childObject;
             childFeature = entry.getEStructuralFeature();
             childObject = entry.getValue();
         }
 
-        final boolean qualify = childFeature == LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY
-                || childFeature == LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_FORWARDING
-                || childFeature == LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL
-                || childFeature == LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL;
+        final boolean qualify =
+                childFeature == LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY ||
+                        childFeature == LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_FORWARDING ||
+                        childFeature == LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL ||
+                        childFeature == LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL;
 
-        if (qualify) {
-            return this.getString("_UI_CreateChild_text2", new Object[] { this.getTypeText(childObject),
-                    this.getFeatureText(childFeature), this.getTypeText(owner) });
+        if (qualify)
+        {
+            return this.getString(
+                    "_UI_CreateChild_text2",
+                    new Object[] { this.getTypeText(childObject), this.getFeatureText(childFeature),
+                            this.getTypeText(owner) });
         }
         return super.getCreateChildText(owner, feature, child, selection);
     }

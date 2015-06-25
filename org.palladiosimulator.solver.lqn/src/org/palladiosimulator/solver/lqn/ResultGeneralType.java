@@ -10,23 +10,22 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getConvVal <em>Conv Val</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getElapsedTime
- * <em>Elapsed Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getIterations <em>Iterations</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getPlatformInfo
- * <em>Platform Info</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getElapsedTime <em>Elapsed Time
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getIterations <em>Iterations</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getPlatformInfo <em>Platform Info
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getSolverInfo <em>Solver Info</em>}
  * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getSystemCpuTime
- * <em>System Cpu Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getUserCpuTime
- * <em>User Cpu Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getSystemCpuTime <em>System Cpu
+ * Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getUserCpuTime <em>User Cpu Time
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getValid <em>Valid</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType()
  * @model extendedMetaData="name='result-general_._type' kind='empty'"
@@ -73,8 +72,8 @@ public interface ResultGeneralType extends EObject {
      * @return the value of the '<em>Elapsed Time</em>' attribute.
      * @see #setElapsedTime(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType_ElapsedTime()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='elapsed-time' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='elapsed-time' namespace='##targetNamespace'"
      * @generated
      */
     String getElapsedTime();
@@ -102,8 +101,8 @@ public interface ResultGeneralType extends EObject {
      * @return the value of the '<em>Iterations</em>' attribute.
      * @see #setIterations(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType_Iterations()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='iterations' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='iterations' namespace='##targetNamespace'"
      * @generated
      */
     Object getIterations();
@@ -131,8 +130,8 @@ public interface ResultGeneralType extends EObject {
      * @return the value of the '<em>Platform Info</em>' attribute.
      * @see #setPlatformInfo(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType_PlatformInfo()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='platform-info' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='platform-info' namespace='##targetNamespace'"
      * @generated
      */
     String getPlatformInfo();
@@ -160,8 +159,8 @@ public interface ResultGeneralType extends EObject {
      * @return the value of the '<em>Solver Info</em>' attribute.
      * @see #setSolverInfo(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType_SolverInfo()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='solver-info' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='solver-info' namespace='##targetNamespace'"
      * @generated
      */
     String getSolverInfo();
@@ -189,8 +188,8 @@ public interface ResultGeneralType extends EObject {
      * @return the value of the '<em>System Cpu Time</em>' attribute.
      * @see #setSystemCpuTime(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType_SystemCpuTime()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='system-cpu-time' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='system-cpu-time' namespace='##targetNamespace'"
      * @generated
      */
     String getSystemCpuTime();
@@ -218,8 +217,8 @@ public interface ResultGeneralType extends EObject {
      * @return the value of the '<em>User Cpu Time</em>' attribute.
      * @see #setUserCpuTime(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType_UserCpuTime()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='user-cpu-time' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='user-cpu-time' namespace='##targetNamespace'"
      * @generated
      */
     String getUserCpuTime();
@@ -252,8 +251,8 @@ public interface ResultGeneralType extends EObject {
      * @see #unsetValid()
      * @see #setValid(ValidType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType_Valid()
-     * @model default="YES" unsettable="true" required="true" extendedMetaData=
-     *        "kind='attribute' name='valid' namespace='##targetNamespace'"
+     * @model default="YES" unsettable="true" required="true"
+     *        extendedMetaData="kind='attribute' name='valid' namespace='##targetNamespace'"
      * @generated
      */
     ValidType getValid();

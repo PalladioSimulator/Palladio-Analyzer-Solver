@@ -48,7 +48,8 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addConnectFromPropertyDescriptor(object);
@@ -65,13 +66,21 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
      * @generated
      */
     protected void addConnectFromPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_InPortType_connectFrom_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_InPortType_connectFrom_feature",
-                        "_UI_InPortType_type"),
-                LqnPackage.Literals.IN_PORT_TYPE__CONNECT_FROM, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_InPortType_connectFrom_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_InPortType_connectFrom_feature",
+                                "_UI_InPortType_type"),
+                                LqnPackage.Literals.IN_PORT_TYPE__CONNECT_FROM,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -81,13 +90,21 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
      * @generated
      */
     protected void addDescriptionPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_InPortType_description_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_InPortType_description_feature",
-                        "_UI_InPortType_type"),
-                LqnPackage.Literals.IN_PORT_TYPE__DESCRIPTION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_InPortType_description_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_InPortType_description_feature",
+                                "_UI_InPortType_type"),
+                                LqnPackage.Literals.IN_PORT_TYPE__DESCRIPTION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -97,13 +114,20 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
      * @generated
      */
     protected void addNamePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_InPortType_name_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_InPortType_name_feature",
-                        "_UI_InPortType_type"),
-                LqnPackage.Literals.IN_PORT_TYPE__NAME, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_InPortType_name_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_InPortType_name_feature",
+                                "_UI_InPortType_type"),
+                                LqnPackage.Literals.IN_PORT_TYPE__NAME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -125,8 +149,9 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
     @Override
     public String getText(final Object object) {
         final String label = ((InPortType) object).getName();
-        return label == null || label.length() == 0 ? this.getString("_UI_InPortType_type")
-                : this.getString("_UI_InPortType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_InPortType_type") :
+                this.getString("_UI_InPortType_type") + " " + label;
     }
 
     /**
@@ -140,7 +165,8 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(InPortType.class)) {
+        switch (notification.getFeatureID(InPortType.class))
+        {
         case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
         case LqnPackage.IN_PORT_TYPE__DESCRIPTION:
         case LqnPackage.IN_PORT_TYPE__NAME:

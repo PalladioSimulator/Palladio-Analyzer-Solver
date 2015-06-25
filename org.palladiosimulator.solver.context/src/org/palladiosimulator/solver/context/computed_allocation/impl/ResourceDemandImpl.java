@@ -20,7 +20,6 @@ import org.palladiosimulator.solver.context.computed_allocation.ResourceDemand;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ResourceDemandImpl#getParametricResourceDemand_ResourceDemand
@@ -29,6 +28,7 @@ import org.palladiosimulator.solver.context.computed_allocation.ResourceDemand;
  * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ResourceDemandImpl#getSpecification_ResourceDemand
  * <em>Specification Resource Demand</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -90,11 +90,13 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
     @Override
     public ParametricResourceDemand getParametricResourceDemand_ResourceDemand() {
         if (this.parametricResourceDemand_ResourceDemand != null
-                && ((EObject) this.parametricResourceDemand_ResourceDemand).eIsProxy()) {
+                && ((EObject) this.parametricResourceDemand_ResourceDemand).eIsProxy())
+        {
             final InternalEObject oldParametricResourceDemand_ResourceDemand = (InternalEObject) this.parametricResourceDemand_ResourceDemand;
             this.parametricResourceDemand_ResourceDemand = (ParametricResourceDemand) this
                     .eResolveProxy(oldParametricResourceDemand_ResourceDemand);
-            if (this.parametricResourceDemand_ResourceDemand != oldParametricResourceDemand_ResourceDemand) {
+            if (this.parametricResourceDemand_ResourceDemand != oldParametricResourceDemand_ResourceDemand)
+            {
                 if (this.eNotificationRequired()) {
                     this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
                             ComputedAllocationPackage.RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND,
@@ -150,7 +152,8 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
             final PCMRandomVariable newSpecification_ResourceDemand, NotificationChain msgs) {
         final PCMRandomVariable oldSpecification_ResourceDemand = this.specification_ResourceDemand;
         this.specification_ResourceDemand = newSpecification_ResourceDemand;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND,
                     oldSpecification_ResourceDemand, newSpecification_ResourceDemand);
@@ -170,27 +173,24 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
      */
     @Override
     public void setSpecification_ResourceDemand(final PCMRandomVariable newSpecification_ResourceDemand) {
-        if (newSpecification_ResourceDemand != this.specification_ResourceDemand) {
+        if (newSpecification_ResourceDemand != this.specification_ResourceDemand)
+        {
             NotificationChain msgs = null;
             if (this.specification_ResourceDemand != null) {
-                msgs = ((InternalEObject) this.specification_ResourceDemand)
-                        .eInverseRemove(this,
-                                EOPPOSITE_FEATURE_BASE
-                                        - ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND,
-                                null, msgs);
+                msgs = ((InternalEObject) this.specification_ResourceDemand).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE
+                                - ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND, null, msgs);
             }
             if (newSpecification_ResourceDemand != null) {
-                msgs = ((InternalEObject) newSpecification_ResourceDemand)
-                        .eInverseAdd(this,
-                                EOPPOSITE_FEATURE_BASE
-                                        - ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND,
-                                null, msgs);
+                msgs = ((InternalEObject) newSpecification_ResourceDemand).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND, null, msgs);
             }
             msgs = this.basicSetSpecification_ResourceDemand(newSpecification_ResourceDemand, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
                     ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND,
                     newSpecification_ResourceDemand, newSpecification_ResourceDemand));
@@ -205,7 +205,8 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND:
             return this.basicSetSpecification_ResourceDemand(null, msgs);
         }
@@ -219,7 +220,8 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND:
             if (resolve) {
                 return this.getParametricResourceDemand_ResourceDemand();
@@ -238,7 +240,8 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND:
             this.setParametricResourceDemand_ResourceDemand((ParametricResourceDemand) newValue);
             return;
@@ -256,7 +259,8 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND:
             this.setParametricResourceDemand_ResourceDemand((ParametricResourceDemand) null);
             return;
@@ -274,7 +278,8 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND:
             return this.parametricResourceDemand_ResourceDemand != null;
         case ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND:

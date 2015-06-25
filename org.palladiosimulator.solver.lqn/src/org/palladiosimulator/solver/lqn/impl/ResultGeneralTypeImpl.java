@@ -15,25 +15,24 @@ import org.palladiosimulator.solver.lqn.ValidType;
  * <em><b>Result General Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getConvVal
- * <em>Conv Val</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getElapsedTime
- * <em>Elapsed Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getIterations
- * <em>Iterations</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getPlatformInfo
- * <em>Platform Info</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getSolverInfo
- * <em>Solver Info</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getSystemCpuTime
- * <em>System Cpu Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getUserCpuTime
- * <em>User Cpu Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getValid <em>Valid</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getConvVal <em>Conv Val
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getElapsedTime <em>Elapsed
+ * Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getIterations <em>
+ * Iterations</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getPlatformInfo <em>
+ * Platform Info</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getSolverInfo <em>Solver
+ * Info</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getSystemCpuTime <em>
+ * System Cpu Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getUserCpuTime <em>User
+ * Cpu Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getValid <em>Valid</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -248,7 +247,8 @@ public class ResultGeneralTypeImpl extends EObjectImpl implements ResultGeneralT
         this.convVal = newConvVal;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL,
-                    oldConvVal, this.convVal));
+                    oldConvVal,
+                    this.convVal));
         }
     }
 
@@ -442,7 +442,8 @@ public class ResultGeneralTypeImpl extends EObjectImpl implements ResultGeneralT
         this.validESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.RESULT_GENERAL_TYPE__VALID,
-                    oldValid, VALID_EDEFAULT, oldValidESet));
+                    oldValid,
+                    VALID_EDEFAULT, oldValidESet));
         }
     }
 
@@ -463,7 +464,8 @@ public class ResultGeneralTypeImpl extends EObjectImpl implements ResultGeneralT
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL:
             return this.getConvVal();
         case LqnPackage.RESULT_GENERAL_TYPE__ELAPSED_TIME:
@@ -491,7 +493,8 @@ public class ResultGeneralTypeImpl extends EObjectImpl implements ResultGeneralT
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL:
             this.setConvVal(newValue);
             return;
@@ -527,7 +530,8 @@ public class ResultGeneralTypeImpl extends EObjectImpl implements ResultGeneralT
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL:
             this.setConvVal(CONV_VAL_EDEFAULT);
             return;
@@ -563,26 +567,27 @@ public class ResultGeneralTypeImpl extends EObjectImpl implements ResultGeneralT
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL:
             return CONV_VAL_EDEFAULT == null ? this.convVal != null : !CONV_VAL_EDEFAULT.equals(this.convVal);
         case LqnPackage.RESULT_GENERAL_TYPE__ELAPSED_TIME:
-            return ELAPSED_TIME_EDEFAULT == null ? this.elapsedTime != null
-                    : !ELAPSED_TIME_EDEFAULT.equals(this.elapsedTime);
+            return ELAPSED_TIME_EDEFAULT == null ? this.elapsedTime != null : !ELAPSED_TIME_EDEFAULT
+                    .equals(this.elapsedTime);
         case LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS:
             return ITERATIONS_EDEFAULT == null ? this.iterations != null : !ITERATIONS_EDEFAULT.equals(this.iterations);
         case LqnPackage.RESULT_GENERAL_TYPE__PLATFORM_INFO:
-            return PLATFORM_INFO_EDEFAULT == null ? this.platformInfo != null
-                    : !PLATFORM_INFO_EDEFAULT.equals(this.platformInfo);
+            return PLATFORM_INFO_EDEFAULT == null ? this.platformInfo != null : !PLATFORM_INFO_EDEFAULT
+                    .equals(this.platformInfo);
         case LqnPackage.RESULT_GENERAL_TYPE__SOLVER_INFO:
-            return SOLVER_INFO_EDEFAULT == null ? this.solverInfo != null
-                    : !SOLVER_INFO_EDEFAULT.equals(this.solverInfo);
+            return SOLVER_INFO_EDEFAULT == null ? this.solverInfo != null : !SOLVER_INFO_EDEFAULT
+                    .equals(this.solverInfo);
         case LqnPackage.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME:
-            return SYSTEM_CPU_TIME_EDEFAULT == null ? this.systemCpuTime != null
-                    : !SYSTEM_CPU_TIME_EDEFAULT.equals(this.systemCpuTime);
+            return SYSTEM_CPU_TIME_EDEFAULT == null ? this.systemCpuTime != null : !SYSTEM_CPU_TIME_EDEFAULT
+            .equals(this.systemCpuTime);
         case LqnPackage.RESULT_GENERAL_TYPE__USER_CPU_TIME:
-            return USER_CPU_TIME_EDEFAULT == null ? this.userCpuTime != null
-                    : !USER_CPU_TIME_EDEFAULT.equals(this.userCpuTime);
+            return USER_CPU_TIME_EDEFAULT == null ? this.userCpuTime != null : !USER_CPU_TIME_EDEFAULT
+                    .equals(this.userCpuTime);
         case LqnPackage.RESULT_GENERAL_TYPE__VALID:
             return this.isSetValid();
         }

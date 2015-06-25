@@ -20,7 +20,6 @@ import org.palladiosimulator.solver.context.computed_usage.LoopIteration;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.LoopIterationImpl#getLoopaction_LoopIteration
@@ -29,6 +28,7 @@ import org.palladiosimulator.solver.context.computed_usage.LoopIteration;
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.LoopIterationImpl#getSpecification_LoopIteration
  * <em>Specification Loop Iteration</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -88,14 +88,16 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      */
     @Override
     public AbstractLoopAction getLoopaction_LoopIteration() {
-        if (this.loopaction_LoopIteration != null && ((EObject) this.loopaction_LoopIteration).eIsProxy()) {
+        if (this.loopaction_LoopIteration != null && ((EObject) this.loopaction_LoopIteration).eIsProxy())
+        {
             final InternalEObject oldLoopaction_LoopIteration = (InternalEObject) this.loopaction_LoopIteration;
             this.loopaction_LoopIteration = (AbstractLoopAction) this.eResolveProxy(oldLoopaction_LoopIteration);
-            if (this.loopaction_LoopIteration != oldLoopaction_LoopIteration) {
+            if (this.loopaction_LoopIteration != oldLoopaction_LoopIteration)
+            {
                 if (this.eNotificationRequired()) {
                     this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
-                            ComputedUsagePackage.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION, oldLoopaction_LoopIteration,
-                            this.loopaction_LoopIteration));
+                            ComputedUsagePackage.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION,
+                            oldLoopaction_LoopIteration, this.loopaction_LoopIteration));
                 }
             }
         }
@@ -142,11 +144,13 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      *
      * @generated
      */
-    public NotificationChain basicSetSpecification_LoopIteration(final PCMRandomVariable newSpecification_LoopIteration,
+    public NotificationChain basicSetSpecification_LoopIteration(
+            final PCMRandomVariable newSpecification_LoopIteration,
             NotificationChain msgs) {
         final PCMRandomVariable oldSpecification_LoopIteration = this.specification_LoopIteration;
         this.specification_LoopIteration = newSpecification_LoopIteration;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION, oldSpecification_LoopIteration,
                     newSpecification_LoopIteration);
@@ -166,23 +170,23 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      */
     @Override
     public void setSpecification_LoopIteration(final PCMRandomVariable newSpecification_LoopIteration) {
-        if (newSpecification_LoopIteration != this.specification_LoopIteration) {
+        if (newSpecification_LoopIteration != this.specification_LoopIteration)
+        {
             NotificationChain msgs = null;
             if (this.specification_LoopIteration != null) {
-                msgs = ((InternalEObject) this.specification_LoopIteration).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION,
-                        null, msgs);
+                msgs = ((InternalEObject) this.specification_LoopIteration).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION, null, msgs);
             }
             if (newSpecification_LoopIteration != null) {
-                msgs = ((InternalEObject) newSpecification_LoopIteration).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION,
-                        null, msgs);
+                msgs = ((InternalEObject) newSpecification_LoopIteration).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION, null, msgs);
             }
             msgs = this.basicSetSpecification_LoopIteration(newSpecification_LoopIteration, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
                     ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION, newSpecification_LoopIteration,
                     newSpecification_LoopIteration));
@@ -197,7 +201,8 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION:
             return this.basicSetSpecification_LoopIteration(null, msgs);
         }
@@ -211,7 +216,8 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION:
             if (resolve) {
                 return this.getLoopaction_LoopIteration();
@@ -230,7 +236,8 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION:
             this.setLoopaction_LoopIteration((AbstractLoopAction) newValue);
             return;
@@ -248,7 +255,8 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION:
             this.setLoopaction_LoopIteration((AbstractLoopAction) null);
             return;
@@ -266,7 +274,8 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION:
             return this.loopaction_LoopIteration != null;
         case ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION:

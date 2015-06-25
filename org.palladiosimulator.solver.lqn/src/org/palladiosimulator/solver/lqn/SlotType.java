@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.SlotType#getInterface <em>Interface</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SlotType#getBinding <em>Binding</em>}</li>
@@ -19,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * <li>{@link org.palladiosimulator.solver.lqn.SlotType#getId <em>Id</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SlotType#getReplicNum <em>Replic Num</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getSlotType()
  * @model extendedMetaData="name='SlotType' kind='elementOnly'"
@@ -67,8 +67,8 @@ public interface SlotType extends EObject {
      *
      * @return the value of the '<em>Binding</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSlotType_Binding()
-     * @model containment="true" required="true" extendedMetaData=
-     *        "kind='element' name='binding' namespace='##targetNamespace'"
+     * @model containment="true" required="true"
+     *        extendedMetaData="kind='element' name='binding' namespace='##targetNamespace'"
      * @generated
      */
     EList<BindType> getBinding();
@@ -84,8 +84,8 @@ public interface SlotType extends EObject {
      * @return the value of the '<em>Bind Target</em>' attribute.
      * @see #setBindTarget(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSlotType_BindTarget()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='bind-target' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='bind-target' namespace='##targetNamespace'"
      * @generated
      */
     String getBindTarget();
@@ -112,8 +112,8 @@ public interface SlotType extends EObject {
      * @return the value of the '<em>Id</em>' attribute.
      * @see #setId(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSlotType_Id()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='id' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='id' namespace='##targetNamespace'"
      * @generated
      */
     String getId();
@@ -142,8 +142,8 @@ public interface SlotType extends EObject {
      * @see #unsetReplicNum()
      * @see #setReplicNum(int)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSlotType_ReplicNum()
-     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='attribute' name='replic_num' namespace='##targetNamespace'"
+     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='attribute' name='replic_num' namespace='##targetNamespace'"
      * @generated
      */
     int getReplicNum();

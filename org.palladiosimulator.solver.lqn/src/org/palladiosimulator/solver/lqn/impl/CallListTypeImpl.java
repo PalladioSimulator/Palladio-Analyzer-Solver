@@ -21,13 +21,13 @@ import org.palladiosimulator.solver.lqn.SynchCallType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.CallListTypeImpl#getSynchCall
- * <em>Synch Call</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.CallListTypeImpl#getAsynchCall
- * <em>Asynch Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.CallListTypeImpl#getSynchCall <em>Synch Call
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.CallListTypeImpl#getAsynchCall <em>Asynch Call
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -79,7 +79,8 @@ public class CallListTypeImpl extends EObjectImpl implements CallListType {
      */
     @Override
     public EList<SynchCallType> getSynchCall() {
-        if (this.synchCall == null) {
+        if (this.synchCall == null)
+        {
             this.synchCall = new EObjectContainmentEList<SynchCallType>(SynchCallType.class, this,
                     LqnPackage.CALL_LIST_TYPE__SYNCH_CALL);
         }
@@ -93,7 +94,8 @@ public class CallListTypeImpl extends EObjectImpl implements CallListType {
      */
     @Override
     public EList<AsynchCallType> getAsynchCall() {
-        if (this.asynchCall == null) {
+        if (this.asynchCall == null)
+        {
             this.asynchCall = new EObjectContainmentEList<AsynchCallType>(AsynchCallType.class, this,
                     LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL);
         }
@@ -108,7 +110,8 @@ public class CallListTypeImpl extends EObjectImpl implements CallListType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
             return ((InternalEList<?>) this.getSynchCall()).basicRemove(otherEnd, msgs);
         case LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL:
@@ -124,7 +127,8 @@ public class CallListTypeImpl extends EObjectImpl implements CallListType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
             return this.getSynchCall();
         case LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL:
@@ -141,7 +145,8 @@ public class CallListTypeImpl extends EObjectImpl implements CallListType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
             this.getSynchCall().clear();
             this.getSynchCall().addAll((Collection<? extends SynchCallType>) newValue);
@@ -161,7 +166,8 @@ public class CallListTypeImpl extends EObjectImpl implements CallListType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
             this.getSynchCall().clear();
             return;
@@ -179,7 +185,8 @@ public class CallListTypeImpl extends EObjectImpl implements CallListType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
             return this.synchCall != null && !this.synchCall.isEmpty();
         case LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL:

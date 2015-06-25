@@ -11,12 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityGraphBase#getActivity <em>Activity</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityGraphBase#getPrecedence <em>Precedence</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityGraphBase#getPrecedence <em>Precedence</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityGraphBase()
  * @model extendedMetaData="name='ActivityGraphBase' kind='elementOnly'"

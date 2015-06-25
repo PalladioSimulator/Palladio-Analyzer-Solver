@@ -13,17 +13,15 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getCallList <em>Call List</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getCallList <em>Call List</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getGroup <em>Group</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getSynchCall <em>Synch Call</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getAsynchCall <em>Asynch Call</em>
- * }</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getSynchCall <em>Synch Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getAsynchCall <em>Asynch Call
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getPhase <em>Phase</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityPhasesType()
  * @model extendedMetaData="name='ActivityPhasesType' kind='elementOnly'"

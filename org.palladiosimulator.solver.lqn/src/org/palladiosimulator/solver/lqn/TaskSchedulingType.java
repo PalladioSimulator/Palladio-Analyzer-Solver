@@ -216,8 +216,17 @@ public enum TaskSchedulingType implements Enumerator {
      *
      * @generated
      */
-    private static final TaskSchedulingType[] VALUES_ARRAY = new TaskSchedulingType[] { REF, FCFS, PRI, HOL, BURST,
-            POLL, INF, SEMAPHORE, };
+    private static final TaskSchedulingType[] VALUES_ARRAY = new TaskSchedulingType[]
+            {
+        REF,
+        FCFS,
+        PRI,
+        HOL,
+        BURST,
+        POLL,
+        INF,
+        SEMAPHORE,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Task Scheduling Type</b></em>' enumerators. <!--
@@ -231,14 +240,12 @@ public enum TaskSchedulingType implements Enumerator {
      * Returns the '<em><b>Task Scheduling Type</b></em>' literal with the specified literal value.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
-     * @param literal
-     *            the literal.
-     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
     public static TaskSchedulingType get(final String literal) {
         for (final TaskSchedulingType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -256,7 +263,8 @@ public enum TaskSchedulingType implements Enumerator {
      */
     public static TaskSchedulingType getByName(final String name) {
         for (final TaskSchedulingType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -267,13 +275,11 @@ public enum TaskSchedulingType implements Enumerator {
      * Returns the '<em><b>Task Scheduling Type</b></em>' literal with the specified integer value.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
-     * @param value
-     *            the integer value.
-     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
     public static TaskSchedulingType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case REF_VALUE:
             return REF;
         case FCFS_VALUE:

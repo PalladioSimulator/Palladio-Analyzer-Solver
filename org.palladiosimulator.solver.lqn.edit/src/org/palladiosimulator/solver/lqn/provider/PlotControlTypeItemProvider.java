@@ -48,7 +48,8 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT);
             this.childrenFeatures.add(LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT);
@@ -119,7 +121,8 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(PlotControlType.class)) {
+        switch (notification.getFeatureID(PlotControlType.class))
+        {
         case LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT:
         case LqnPackage.PLOT_CONTROL_TYPE__PLOT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -138,11 +141,15 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT,
-                LqnFactory.eINSTANCE.createFirstPlotType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT,
+                        LqnFactory.eINSTANCE.createFirstPlotType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT,
-                LqnFactory.eINSTANCE.createPlotType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT,
+                        LqnFactory.eINSTANCE.createPlotType()));
     }
 
     /**

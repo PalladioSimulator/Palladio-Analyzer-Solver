@@ -48,7 +48,8 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY);
         }
@@ -118,7 +120,8 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityListType.class)) {
+        switch (notification.getFeatureID(ActivityListType.class))
+        {
         case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -136,14 +139,20 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityLoopType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityLoopType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityOrType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityOrType()));
     }
 
     /**

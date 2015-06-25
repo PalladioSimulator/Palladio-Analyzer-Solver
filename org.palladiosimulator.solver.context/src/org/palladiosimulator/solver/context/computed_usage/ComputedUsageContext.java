@@ -14,7 +14,6 @@ import org.palladiosimulator.pcm.core.entity.Entity;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext#getBranchProbabilities_ComputedUsageContext
@@ -38,6 +37,7 @@ import org.palladiosimulator.pcm.core.entity.Entity;
  * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext#getOutput_ComputedUsageContext
  * <em>Output Computed Usage Context</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext()
  * @model

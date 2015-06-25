@@ -48,7 +48,8 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addDestPropertyDescriptor(object);
@@ -65,13 +66,20 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addDestPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SynchCallType_dest_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SynchCallType_dest_feature",
-                        "_UI_SynchCallType_type"),
-                LqnPackage.Literals.SYNCH_CALL_TYPE__DEST, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SynchCallType_dest_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_SynchCallType_dest_feature",
+                                "_UI_SynchCallType_type"),
+                                LqnPackage.Literals.SYNCH_CALL_TYPE__DEST,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -81,13 +89,20 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addFaninPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SynchCallType_fanin_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SynchCallType_fanin_feature",
-                        "_UI_SynchCallType_type"),
-                LqnPackage.Literals.SYNCH_CALL_TYPE__FANIN, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SynchCallType_fanin_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_SynchCallType_fanin_feature",
+                                "_UI_SynchCallType_type"),
+                                LqnPackage.Literals.SYNCH_CALL_TYPE__FANIN,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -97,13 +112,21 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addFanoutPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SynchCallType_fanout_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SynchCallType_fanout_feature",
-                        "_UI_SynchCallType_type"),
-                LqnPackage.Literals.SYNCH_CALL_TYPE__FANOUT, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SynchCallType_fanout_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_SynchCallType_fanout_feature",
+                                "_UI_SynchCallType_type"),
+                                LqnPackage.Literals.SYNCH_CALL_TYPE__FANOUT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -125,8 +148,9 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
     @Override
     public String getText(final Object object) {
         final String label = ((SynchCallType) object).getDest();
-        return label == null || label.length() == 0 ? this.getString("_UI_SynchCallType_type")
-                : this.getString("_UI_SynchCallType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_SynchCallType_type") :
+                this.getString("_UI_SynchCallType_type") + " " + label;
     }
 
     /**
@@ -140,7 +164,8 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(SynchCallType.class)) {
+        switch (notification.getFeatureID(SynchCallType.class))
+        {
         case LqnPackage.SYNCH_CALL_TYPE__DEST:
         case LqnPackage.SYNCH_CALL_TYPE__FANIN:
         case LqnPackage.SYNCH_CALL_TYPE__FANOUT:

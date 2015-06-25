@@ -29,29 +29,27 @@ import org.palladiosimulator.solver.lqn.TaskType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getResultTask <em>Result Task</em>}
  * </li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getEntry <em>Entry</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getService <em>Service</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getTaskActivities
- * <em>Task Activities</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getActivityGraph
- * <em>Activity Graph</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getMultiplicity
- * <em>Multiplicity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getTaskActivities <em>Task
+ * Activities</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getActivityGraph <em>Activity Graph
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getMultiplicity <em>Multiplicity
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getName <em>Name</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getPriority <em>Priority</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getQueueLength
- * <em>Queue Length</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getReplication <em>Replication</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getScheduling <em>Scheduling</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getThinkTime <em>Think Time</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getQueueLength <em>Queue Length
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getReplication <em>Replication
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getScheduling <em>Scheduling</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getThinkTime <em>Think Time</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -299,8 +297,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      * @generated
      * @ordered
      */
-    protected static final Object THINK_TIME_EDEFAULT = LqnFactory.eINSTANCE
-            .createFromString(LqnPackage.eINSTANCE.getSrvnFloat(), "0");
+    protected static final Object THINK_TIME_EDEFAULT = LqnFactory.eINSTANCE.createFromString(
+            LqnPackage.eINSTANCE.getSrvnFloat(), "0");
 
     /**
      * The cached value of the '{@link #getThinkTime() <em>Think Time</em>}' attribute. <!--
@@ -347,7 +345,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      */
     @Override
     public EList<OutputResultType> getResultTask() {
-        if (this.resultTask == null) {
+        if (this.resultTask == null)
+        {
             this.resultTask = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
                     LqnPackage.TASK_TYPE__RESULT_TASK);
         }
@@ -361,7 +360,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      */
     @Override
     public EList<EntryType> getEntry() {
-        if (this.entry == null) {
+        if (this.entry == null)
+        {
             this.entry = new EObjectContainmentEList<EntryType>(EntryType.class, this, LqnPackage.TASK_TYPE__ENTRY);
         }
         return this.entry;
@@ -374,7 +374,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      */
     @Override
     public EList<ServiceType> getService() {
-        if (this.service == null) {
+        if (this.service == null)
+        {
             this.service = new EObjectContainmentEList<ServiceType>(ServiceType.class, this,
                     LqnPackage.TASK_TYPE__SERVICE);
         }
@@ -399,7 +400,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
     public NotificationChain basicSetTaskActivities(final TaskActivityGraph newTaskActivities, NotificationChain msgs) {
         final TaskActivityGraph oldTaskActivities = this.taskActivities;
         this.taskActivities = newTaskActivities;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.TASK_TYPE__TASK_ACTIVITIES, oldTaskActivities, newTaskActivities);
             if (msgs == null) {
@@ -418,21 +420,23 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      */
     @Override
     public void setTaskActivities(final TaskActivityGraph newTaskActivities) {
-        if (newTaskActivities != this.taskActivities) {
+        if (newTaskActivities != this.taskActivities)
+        {
             NotificationChain msgs = null;
             if (this.taskActivities != null) {
-                msgs = ((InternalEObject) this.taskActivities).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null, msgs);
+                msgs = ((InternalEObject) this.taskActivities).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null, msgs);
             }
             if (newTaskActivities != null) {
-                msgs = ((InternalEObject) newTaskActivities).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null, msgs);
+                msgs = ((InternalEObject) newTaskActivities).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null, msgs);
             }
             msgs = this.basicSetTaskActivities(newTaskActivities, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__TASK_ACTIVITIES,
                     newTaskActivities, newTaskActivities));
         }
@@ -515,7 +519,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
         this.multiplicityESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__MULTIPLICITY,
-                    oldMultiplicity, this.multiplicity, !oldMultiplicityESet));
+                    oldMultiplicity,
+                    this.multiplicity, !oldMultiplicityESet));
         }
     }
 
@@ -647,7 +652,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
         this.queueLengthESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__QUEUE_LENGTH,
-                    oldQueueLength, this.queueLength, !oldQueueLengthESet));
+                    oldQueueLength,
+                    this.queueLength, !oldQueueLengthESet));
         }
     }
 
@@ -664,7 +670,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
         this.queueLengthESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__QUEUE_LENGTH,
-                    oldQueueLength, QUEUE_LENGTH_EDEFAULT, oldQueueLengthESet));
+                    oldQueueLength,
+                    QUEUE_LENGTH_EDEFAULT, oldQueueLengthESet));
         }
     }
 
@@ -701,7 +708,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
         this.replicationESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__REPLICATION,
-                    oldReplication, this.replication, !oldReplicationESet));
+                    oldReplication,
+                    this.replication, !oldReplicationESet));
         }
     }
 
@@ -718,7 +726,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
         this.replicationESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__REPLICATION,
-                    oldReplication, REPLICATION_EDEFAULT, oldReplicationESet));
+                    oldReplication,
+                    REPLICATION_EDEFAULT, oldReplicationESet));
         }
     }
 
@@ -772,7 +781,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
         this.schedulingESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__SCHEDULING,
-                    oldScheduling, SCHEDULING_EDEFAULT, oldSchedulingESet));
+                    oldScheduling,
+                    SCHEDULING_EDEFAULT, oldSchedulingESet));
         }
     }
 
@@ -825,7 +835,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
         this.thinkTime = THINK_TIME_EDEFAULT;
         this.thinkTimeESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__THINK_TIME, oldThinkTime,
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__THINK_TIME,
+                    oldThinkTime,
                     THINK_TIME_EDEFAULT, oldThinkTimeESet));
         }
     }
@@ -848,7 +859,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_TYPE__RESULT_TASK:
             return ((InternalEList<?>) this.getResultTask()).basicRemove(otherEnd, msgs);
         case LqnPackage.TASK_TYPE__ENTRY:
@@ -868,7 +880,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_TYPE__RESULT_TASK:
             return this.getResultTask();
         case LqnPackage.TASK_TYPE__ENTRY:
@@ -905,7 +918,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_TYPE__RESULT_TASK:
             this.getResultTask().clear();
             this.getResultTask().addAll((Collection<? extends OutputResultType>) newValue);
@@ -956,7 +970,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_TYPE__RESULT_TASK:
             this.getResultTask().clear();
             return;
@@ -1004,7 +1019,8 @@ public class TaskTypeImpl extends EObjectImpl implements TaskType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_TYPE__RESULT_TASK:
             return this.resultTask != null && !this.resultTask.isEmpty();
         case LqnPackage.TASK_TYPE__ENTRY:

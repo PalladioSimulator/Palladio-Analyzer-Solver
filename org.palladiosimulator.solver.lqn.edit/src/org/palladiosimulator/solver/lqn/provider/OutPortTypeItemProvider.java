@@ -48,7 +48,8 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addConnectToPropertyDescriptor(object);
@@ -65,13 +66,21 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
      * @generated
      */
     protected void addConnectToPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutPortType_connectTo_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutPortType_connectTo_feature",
-                        "_UI_OutPortType_type"),
-                LqnPackage.Literals.OUT_PORT_TYPE__CONNECT_TO, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutPortType_connectTo_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutPortType_connectTo_feature",
+                                "_UI_OutPortType_type"),
+                                LqnPackage.Literals.OUT_PORT_TYPE__CONNECT_TO,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -81,13 +90,21 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
      * @generated
      */
     protected void addDescriptionPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutPortType_description_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutPortType_description_feature",
-                        "_UI_OutPortType_type"),
-                LqnPackage.Literals.OUT_PORT_TYPE__DESCRIPTION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutPortType_description_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutPortType_description_feature",
+                                "_UI_OutPortType_type"),
+                                LqnPackage.Literals.OUT_PORT_TYPE__DESCRIPTION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -97,13 +114,20 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
      * @generated
      */
     protected void addNamePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutPortType_name_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutPortType_name_feature",
-                        "_UI_OutPortType_type"),
-                LqnPackage.Literals.OUT_PORT_TYPE__NAME, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutPortType_name_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_OutPortType_name_feature",
+                                "_UI_OutPortType_type"),
+                                LqnPackage.Literals.OUT_PORT_TYPE__NAME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -125,8 +149,9 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
     @Override
     public String getText(final Object object) {
         final String label = ((OutPortType) object).getName();
-        return label == null || label.length() == 0 ? this.getString("_UI_OutPortType_type")
-                : this.getString("_UI_OutPortType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_OutPortType_type") :
+                this.getString("_UI_OutPortType_type") + " " + label;
     }
 
     /**
@@ -140,7 +165,8 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(OutPortType.class)) {
+        switch (notification.getFeatureID(OutPortType.class))
+        {
         case LqnPackage.OUT_PORT_TYPE__CONNECT_TO:
         case LqnPackage.OUT_PORT_TYPE__DESCRIPTION:
         case LqnPackage.OUT_PORT_TYPE__NAME:

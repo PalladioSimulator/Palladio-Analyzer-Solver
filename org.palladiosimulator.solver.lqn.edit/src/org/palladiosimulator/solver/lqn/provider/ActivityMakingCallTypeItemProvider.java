@@ -41,7 +41,8 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addCallsMeanPropertyDescriptor(object);
@@ -56,13 +57,21 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
      * @generated
      */
     protected void addCallsMeanPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ActivityMakingCallType_callsMean_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityMakingCallType_callsMean_feature",
-                        "_UI_ActivityMakingCallType_type"),
-                LqnPackage.Literals.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ActivityMakingCallType_callsMean_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ActivityMakingCallType_callsMean_feature",
+                                "_UI_ActivityMakingCallType_type"),
+                                LqnPackage.Literals.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -84,8 +93,9 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
     @Override
     public String getText(final Object object) {
         final String label = ((ActivityMakingCallType) object).getDest();
-        return label == null || label.length() == 0 ? this.getString("_UI_ActivityMakingCallType_type")
-                : this.getString("_UI_ActivityMakingCallType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ActivityMakingCallType_type") :
+                this.getString("_UI_ActivityMakingCallType_type") + " " + label;
     }
 
     /**
@@ -99,7 +109,8 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityMakingCallType.class)) {
+        switch (notification.getFeatureID(ActivityMakingCallType.class))
+        {
         case LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;

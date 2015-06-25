@@ -34,7 +34,9 @@ public final class LqnEditorPlugin extends EMFPlugin {
      * @generated
      */
     public LqnEditorPlugin() {
-        super(new ResourceLocator[] {});
+        super(new ResourceLocator[]
+                {
+                });
     }
 
     /**

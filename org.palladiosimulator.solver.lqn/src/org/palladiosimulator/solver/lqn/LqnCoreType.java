@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.LqnCoreType#getProcessor <em>Processor</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.LqnCoreType#getSlot <em>Slot</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnCoreType()
  * @model extendedMetaData="name='Lqn-CoreType' kind='elementOnly'"
@@ -52,8 +52,8 @@ public interface LqnCoreType extends EObject {
      *
      * @return the value of the '<em>Slot</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnCoreType_Slot()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='slot' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='slot' namespace='##targetNamespace'"
      * @generated
      */
     EList<SlotType> getSlot();

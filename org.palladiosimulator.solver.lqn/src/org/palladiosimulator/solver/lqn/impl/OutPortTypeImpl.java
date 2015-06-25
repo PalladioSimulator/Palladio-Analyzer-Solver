@@ -16,14 +16,14 @@ import org.palladiosimulator.solver.lqn.OutPortType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getConnectTo <em>Connect To</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getDescription
- * <em>Description</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getConnectTo <em>Connect To
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getDescription <em>Description
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -129,7 +129,8 @@ public class OutPortTypeImpl extends EObjectImpl implements OutPortType {
         this.connectTo = newConnectTo;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUT_PORT_TYPE__CONNECT_TO,
-                    oldConnectTo, this.connectTo));
+                    oldConnectTo,
+                    this.connectTo));
         }
     }
 
@@ -178,8 +179,8 @@ public class OutPortTypeImpl extends EObjectImpl implements OutPortType {
         final String oldName = this.name;
         this.name = newName;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.OUT_PORT_TYPE__NAME, oldName, this.name));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUT_PORT_TYPE__NAME, oldName,
+                    this.name));
         }
     }
 
@@ -190,7 +191,8 @@ public class OutPortTypeImpl extends EObjectImpl implements OutPortType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUT_PORT_TYPE__CONNECT_TO:
             return this.getConnectTo();
         case LqnPackage.OUT_PORT_TYPE__DESCRIPTION:
@@ -209,7 +211,8 @@ public class OutPortTypeImpl extends EObjectImpl implements OutPortType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUT_PORT_TYPE__CONNECT_TO:
             this.setConnectTo((List<String>) newValue);
             return;
@@ -230,7 +233,8 @@ public class OutPortTypeImpl extends EObjectImpl implements OutPortType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUT_PORT_TYPE__CONNECT_TO:
             this.setConnectTo(CONNECT_TO_EDEFAULT);
             return;
@@ -251,12 +255,13 @@ public class OutPortTypeImpl extends EObjectImpl implements OutPortType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUT_PORT_TYPE__CONNECT_TO:
             return CONNECT_TO_EDEFAULT == null ? this.connectTo != null : !CONNECT_TO_EDEFAULT.equals(this.connectTo);
         case LqnPackage.OUT_PORT_TYPE__DESCRIPTION:
-            return DESCRIPTION_EDEFAULT == null ? this.description != null
-                    : !DESCRIPTION_EDEFAULT.equals(this.description);
+            return DESCRIPTION_EDEFAULT == null ? this.description != null : !DESCRIPTION_EDEFAULT
+                    .equals(this.description);
         case LqnPackage.OUT_PORT_TYPE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         }

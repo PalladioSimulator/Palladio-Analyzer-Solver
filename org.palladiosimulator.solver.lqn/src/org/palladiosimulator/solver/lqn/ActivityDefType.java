@@ -11,17 +11,15 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getCallList <em>Call List</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getGroup <em>Group</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getSynchCall <em>Synch Call</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getAsynchCall <em>Asynch Call</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getBoundToEntry
- * <em>Bound To Entry</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getSynchCall <em>Synch Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getAsynchCall <em>Asynch Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefType#getBoundToEntry <em>Bound To Entry
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefType()
  * @model extendedMetaData="name='ActivityDefType' kind='elementOnly'"
@@ -111,8 +109,8 @@ public interface ActivityDefType extends ActivityDefBase {
      * @return the value of the '<em>Bound To Entry</em>' attribute.
      * @see #setBoundToEntry(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefType_BoundToEntry()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='bound-to-entry' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='bound-to-entry' namespace='##targetNamespace'"
      * @generated
      */
     String getBoundToEntry();

@@ -22,15 +22,14 @@ import org.palladiosimulator.solver.lqn.OutputResultType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getResultCall
- * <em>Result Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getResultCall <em>Result Call
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getDest <em>Dest</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getFanin <em>Fanin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getFanout <em>Fanout</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getFanout <em>Fanout</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -150,7 +149,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
      */
     @Override
     public EList<OutputResultType> getResultCall() {
-        if (this.resultCall == null) {
+        if (this.resultCall == null)
+        {
             this.resultCall = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
                     LqnPackage.MAKING_CALL_TYPE__RESULT_CALL);
         }
@@ -205,7 +205,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
         this.faninESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MAKING_CALL_TYPE__FANIN, oldFanin,
-                    this.fanin, !oldFaninESet));
+                    this.fanin,
+                    !oldFaninESet));
         }
     }
 
@@ -275,7 +276,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
         this.fanout = FANOUT_EDEFAULT;
         this.fanoutESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.MAKING_CALL_TYPE__FANOUT, oldFanout,
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.MAKING_CALL_TYPE__FANOUT,
+                    oldFanout,
                     FANOUT_EDEFAULT, oldFanoutESet));
         }
     }
@@ -298,7 +300,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
             return ((InternalEList<?>) this.getResultCall()).basicRemove(otherEnd, msgs);
         }
@@ -312,7 +315,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
             return this.getResultCall();
         case LqnPackage.MAKING_CALL_TYPE__DEST:
@@ -333,7 +337,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
             this.getResultCall().clear();
             this.getResultCall().addAll((Collection<? extends OutputResultType>) newValue);
@@ -358,7 +363,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
             this.getResultCall().clear();
             return;
@@ -382,7 +388,8 @@ public class MakingCallTypeImpl extends EObjectImpl implements MakingCallType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
             return this.resultCall != null && !this.resultCall.isEmpty();
         case LqnPackage.MAKING_CALL_TYPE__DEST:

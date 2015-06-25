@@ -57,7 +57,8 @@ public class InputItemProvider extends ItemProviderAdapter implements IEditingDo
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -75,7 +76,8 @@ public class InputItemProvider extends ItemProviderAdapter implements IEditingDo
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(ComputedUsagePackage.Literals.INPUT__PARAMETER_CHACTERISATIONS_INPUT);
         }
@@ -127,7 +129,8 @@ public class InputItemProvider extends ItemProviderAdapter implements IEditingDo
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(Input.class)) {
+        switch (notification.getFeatureID(Input.class))
+        {
         case ComputedUsagePackage.INPUT__PARAMETER_CHACTERISATIONS_INPUT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -145,8 +148,9 @@ public class InputItemProvider extends ItemProviderAdapter implements IEditingDo
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors
-                .add(this.createChildParameter(ComputedUsagePackage.Literals.INPUT__PARAMETER_CHACTERISATIONS_INPUT,
+        newChildDescriptors.add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.INPUT__PARAMETER_CHACTERISATIONS_INPUT,
                         ParameterFactory.eINSTANCE.createVariableUsage()));
     }
 

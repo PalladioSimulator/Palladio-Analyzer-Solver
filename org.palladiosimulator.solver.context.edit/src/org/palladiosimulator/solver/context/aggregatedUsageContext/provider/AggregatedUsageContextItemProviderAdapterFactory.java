@@ -96,7 +96,8 @@ public class AggregatedUsageContextItemProviderAdapterFactory extends Aggregated
      */
     @Override
     public Adapter createServiceExecutionContextAdapter() {
-        if (this.serviceExecutionContextItemProvider == null) {
+        if (this.serviceExecutionContextItemProvider == null)
+        {
             this.serviceExecutionContextItemProvider = new ServiceExecutionContextItemProvider(this);
         }
 
@@ -121,7 +122,8 @@ public class AggregatedUsageContextItemProviderAdapterFactory extends Aggregated
      */
     @Override
     public Adapter createAggregatedResourceDemandAdapter() {
-        if (this.aggregatedResourceDemandItemProvider == null) {
+        if (this.aggregatedResourceDemandItemProvider == null)
+        {
             this.aggregatedResourceDemandItemProvider = new AggregatedResourceDemandItemProvider(this);
         }
 
@@ -146,7 +148,8 @@ public class AggregatedUsageContextItemProviderAdapterFactory extends Aggregated
      */
     @Override
     public Adapter createAggregatedCommunicationAdapter() {
-        if (this.aggregatedCommunicationItemProvider == null) {
+        if (this.aggregatedCommunicationItemProvider == null)
+        {
             this.aggregatedCommunicationItemProvider = new AggregatedCommunicationItemProvider(this);
         }
 
@@ -171,7 +174,8 @@ public class AggregatedUsageContextItemProviderAdapterFactory extends Aggregated
      */
     @Override
     public Adapter createComputedAggregatedUsageAdapter() {
-        if (this.computedAggregatedUsageItemProvider == null) {
+        if (this.computedAggregatedUsageItemProvider == null)
+        {
             this.computedAggregatedUsageItemProvider = new ComputedAggregatedUsageItemProvider(this);
         }
 
@@ -228,9 +232,11 @@ public class AggregatedUsageContextItemProviderAdapterFactory extends Aggregated
      */
     @Override
     public Object adapt(final Object object, final Object type) {
-        if (this.isFactoryForType(type)) {
+        if (this.isFactoryForType(type))
+        {
             final Object adapter = super.adapt(object, type);
-            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter))) {
+            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter)))
+            {
                 return adapter;
             }
         }
@@ -268,7 +274,8 @@ public class AggregatedUsageContextItemProviderAdapterFactory extends Aggregated
     public void fireNotifyChanged(final Notification notification) {
         this.changeNotifier.fireNotifyChanged(notification);
 
-        if (this.parentAdapterFactory != null) {
+        if (this.parentAdapterFactory != null)
+        {
             this.parentAdapterFactory.fireNotifyChanged(notification);
         }
     }

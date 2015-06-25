@@ -51,7 +51,8 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addEndPropertyDescriptor(object);
@@ -66,13 +67,21 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
      * @generated
      */
     protected void addEndPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ActivityLoopListType_end_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityLoopListType_end_feature",
-                        "_UI_ActivityLoopListType_type"),
-                LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__END, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ActivityLoopListType_end_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ActivityLoopListType_end_feature",
+                                "_UI_ActivityLoopListType_type"),
+                                LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__END,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -86,7 +95,8 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY);
         }
@@ -125,8 +135,9 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
     @Override
     public String getText(final Object object) {
         final String label = ((ActivityLoopListType) object).getEnd();
-        return label == null || label.length() == 0 ? this.getString("_UI_ActivityLoopListType_type")
-                : this.getString("_UI_ActivityLoopListType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ActivityLoopListType_type") :
+                this.getString("_UI_ActivityLoopListType_type") + " " + label;
     }
 
     /**
@@ -140,7 +151,8 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityLoopListType.class)) {
+        switch (notification.getFeatureID(ActivityLoopListType.class))
+        {
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;
@@ -161,8 +173,10 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityLoopType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityLoopType()));
     }
 
     /**

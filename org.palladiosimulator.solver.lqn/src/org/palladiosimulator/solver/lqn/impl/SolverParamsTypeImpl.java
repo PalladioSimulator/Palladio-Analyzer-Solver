@@ -24,23 +24,22 @@ import org.palladiosimulator.solver.lqn.SolverParamsType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getResultGeneral
- * <em>Result General</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getPragma <em>Pragma</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getComment <em>Comment</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getConvVal
- * <em>Conv Val</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getItLimit
- * <em>It Limit</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getPrintInt
- * <em>Print Int</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getUnderrelaxCoeff
- * <em>Underrelax Coeff</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getResultGeneral <em>Result
+ * General</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getPragma <em>Pragma</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getComment <em>Comment
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getConvVal <em>Conv Val
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getItLimit <em>It Limit
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getPrintInt <em>Print Int
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getUnderrelaxCoeff <em>
+ * Underrelax Coeff</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -103,8 +102,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
      * @generated
      * @ordered
      */
-    protected static final Object CONV_VAL_EDEFAULT = LqnFactory.eINSTANCE
-            .createFromString(LqnPackage.eINSTANCE.getSrvnFloat(), "1");
+    protected static final Object CONV_VAL_EDEFAULT = LqnFactory.eINSTANCE.createFromString(
+            LqnPackage.eINSTANCE.getSrvnFloat(), "1");
 
     /**
      * The cached value of the '{@link #getConvVal() <em>Conv Val</em>}' attribute. <!--
@@ -191,8 +190,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
      * @generated
      * @ordered
      */
-    protected static final Object UNDERRELAX_COEFF_EDEFAULT = LqnFactory.eINSTANCE
-            .createFromString(LqnPackage.eINSTANCE.getSrvnFloat(), "1");
+    protected static final Object UNDERRELAX_COEFF_EDEFAULT = LqnFactory.eINSTANCE.createFromString(
+            LqnPackage.eINSTANCE.getSrvnFloat(), "1");
 
     /**
      * The cached value of the '{@link #getUnderrelaxCoeff() <em>Underrelax Coeff</em>}' attribute.
@@ -250,7 +249,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
     public NotificationChain basicSetResultGeneral(final ResultGeneralType newResultGeneral, NotificationChain msgs) {
         final ResultGeneralType oldResultGeneral = this.resultGeneral;
         this.resultGeneral = newResultGeneral;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, oldResultGeneral, newResultGeneral);
             if (msgs == null) {
@@ -269,21 +269,23 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
      */
     @Override
     public void setResultGeneral(final ResultGeneralType newResultGeneral) {
-        if (newResultGeneral != this.resultGeneral) {
+        if (newResultGeneral != this.resultGeneral)
+        {
             NotificationChain msgs = null;
             if (this.resultGeneral != null) {
-                msgs = ((InternalEObject) this.resultGeneral).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
+                msgs = ((InternalEObject) this.resultGeneral).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
             }
             if (newResultGeneral != null) {
-                msgs = ((InternalEObject) newResultGeneral).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
+                msgs = ((InternalEObject) newResultGeneral).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
             }
             msgs = this.basicSetResultGeneral(newResultGeneral, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
                     newResultGeneral, newResultGeneral));
         }
@@ -296,7 +298,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
      */
     @Override
     public EList<PragmaType> getPragma() {
-        if (this.pragma == null) {
+        if (this.pragma == null)
+        {
             this.pragma = new EObjectContainmentEList<PragmaType>(PragmaType.class, this,
                     LqnPackage.SOLVER_PARAMS_TYPE__PRAGMA);
         }
@@ -326,7 +329,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
         this.commentESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__COMMENT,
-                    oldComment, this.comment, !oldCommentESet));
+                    oldComment,
+                    this.comment, !oldCommentESet));
         }
     }
 
@@ -343,7 +347,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
         this.commentESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SOLVER_PARAMS_TYPE__COMMENT,
-                    oldComment, COMMENT_EDEFAULT, oldCommentESet));
+                    oldComment,
+                    COMMENT_EDEFAULT, oldCommentESet));
         }
     }
 
@@ -380,7 +385,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
         this.convValESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__CONV_VAL,
-                    oldConvVal, this.convVal, !oldConvValESet));
+                    oldConvVal,
+                    this.convVal, !oldConvValESet));
         }
     }
 
@@ -434,7 +440,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
         this.itLimitESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__IT_LIMIT,
-                    oldItLimit, this.itLimit, !oldItLimitESet));
+                    oldItLimit,
+                    this.itLimit, !oldItLimitESet));
         }
     }
 
@@ -558,9 +565,9 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
         this.underrelaxCoeff = UNDERRELAX_COEFF_EDEFAULT;
         this.underrelaxCoeffESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.UNSET, LqnPackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF,
-                            oldUnderrelaxCoeff, UNDERRELAX_COEFF_EDEFAULT, oldUnderrelaxCoeffESet));
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET,
+                    LqnPackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF,
+                    oldUnderrelaxCoeff, UNDERRELAX_COEFF_EDEFAULT, oldUnderrelaxCoeffESet));
         }
     }
 
@@ -582,7 +589,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
             return this.basicSetResultGeneral(null, msgs);
         case LqnPackage.SOLVER_PARAMS_TYPE__PRAGMA:
@@ -598,7 +606,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
             return this.getResultGeneral();
         case LqnPackage.SOLVER_PARAMS_TYPE__PRAGMA:
@@ -625,7 +634,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
             this.setResultGeneral((ResultGeneralType) newValue);
             return;
@@ -659,7 +669,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
             this.setResultGeneral((ResultGeneralType) null);
             return;
@@ -692,7 +703,8 @@ public class SolverParamsTypeImpl extends EObjectImpl implements SolverParamsTyp
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
             return this.resultGeneral != null;
         case LqnPackage.SOLVER_PARAMS_TYPE__PRAGMA:

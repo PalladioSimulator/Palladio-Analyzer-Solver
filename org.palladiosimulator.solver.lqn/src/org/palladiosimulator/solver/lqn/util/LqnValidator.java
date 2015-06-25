@@ -163,7 +163,8 @@ public class LqnValidator extends EObjectValidator {
     @Override
     protected boolean validate(final int classifierID, final Object value, final DiagnosticChain diagnostics,
             final Map<Object, Object> context) {
-        switch (classifierID) {
+        switch (classifierID)
+        {
         case LqnPackage.ACTIVITY_DEF_BASE:
             return this.validateActivityDefBase((ActivityDefBase) value, diagnostics, context);
         case LqnPackage.ACTIVITY_DEF_TYPE:
@@ -226,7 +227,8 @@ public class LqnValidator extends EObjectValidator {
             return this.validateOutputEntryDistributionType((OutputEntryDistributionType) value, diagnostics, context);
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY:
             return this.validateOutputResultForwardingANDJoinDelay((OutputResultForwardingANDJoinDelay) value,
-                    diagnostics, context);
+                    diagnostics,
+                    context);
         case LqnPackage.OUTPUT_RESULT_TYPE:
             return this.validateOutputResultType((OutputResultType) value, diagnostics, context);
         case LqnPackage.PARAMETER_TYPE:
@@ -356,7 +358,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateActivityGraphBase(final ActivityGraphBase activityGraphBase,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(activityGraphBase, diagnostics, context);
     }
 
@@ -376,7 +379,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateActivityLoopListType(final ActivityLoopListType activityLoopListType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(activityLoopListType, diagnostics, context);
     }
 
@@ -416,7 +420,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateActivityPhasesType(final ActivityPhasesType activityPhasesType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(activityPhasesType, diagnostics, context);
     }
 
@@ -486,7 +491,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateEntryActivityDefType(final EntryActivityDefType entryActivityDefType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(entryActivityDefType, diagnostics, context);
     }
 
@@ -496,7 +502,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateEntryActivityGraph(final EntryActivityGraph entryActivityGraph,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(entryActivityGraph, diagnostics, context);
     }
 
@@ -506,7 +513,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateEntryMakingCallType(final EntryMakingCallType entryMakingCallType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(entryMakingCallType, diagnostics, context);
     }
 
@@ -637,7 +645,8 @@ public class LqnValidator extends EObjectValidator {
      */
     public boolean validateOutputResultForwardingANDJoinDelay(
             final OutputResultForwardingANDJoinDelay outputResultForwardingANDJoinDelay,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(outputResultForwardingANDJoinDelay, diagnostics, context);
     }
 
@@ -737,7 +746,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateProcessorBindingType(final ProcessorBindingType processorBindingType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(processorBindingType, diagnostics, context);
     }
 
@@ -757,7 +767,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateReplyActivityType(final ReplyActivityType replyActivityType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(replyActivityType, diagnostics, context);
     }
 
@@ -787,7 +798,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateResultConf95Type1(final ResultConf95Type1 resultConf95Type1,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(resultConf95Type1, diagnostics, context);
     }
 
@@ -807,7 +819,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateResultConf99Type1(final ResultConf99Type1 resultConf99Type1,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(resultConf99Type1, diagnostics, context);
     }
 
@@ -817,7 +830,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateResultGeneralType(final ResultGeneralType resultGeneralType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(resultGeneralType, diagnostics, context);
     }
 
@@ -887,7 +901,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateTaskActivityGraph(final TaskActivityGraph taskActivityGraph,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return this.validate_EveryDefaultConstraint(taskActivityGraph, diagnostics, context);
     }
 
@@ -957,7 +972,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateTaskSchedulingType(final TaskSchedulingType taskSchedulingType,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return true;
     }
 
@@ -1007,7 +1023,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateCallOrderTypeObject(final CallOrderType callOrderTypeObject,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return true;
     }
 
@@ -1031,11 +1048,15 @@ public class LqnValidator extends EObjectValidator {
     public boolean validateConnectFromType_ItemType(final List<?> connectFromType, final DiagnosticChain diagnostics,
             final Map<Object, Object> context) {
         boolean result = true;
-        for (final Iterator<?> i = connectFromType.iterator(); i.hasNext() && (result || diagnostics != null);) {
+        for (final Iterator<?> i = connectFromType.iterator(); i.hasNext() && (result || diagnostics != null);)
+        {
             final Object item = i.next();
-            if (XMLTypePackage.Literals.STRING.isInstance(item)) {
+            if (XMLTypePackage.Literals.STRING.isInstance(item))
+            {
                 result &= this.xmlTypeValidator.validateString((String) item, diagnostics, context);
-            } else {
+            }
+            else
+            {
                 result = false;
                 this.reportDataValueTypeViolation(XMLTypePackage.Literals.STRING, item, diagnostics, context);
             }
@@ -1063,11 +1084,15 @@ public class LqnValidator extends EObjectValidator {
     public boolean validateConnectToType_ItemType(final List<?> connectToType, final DiagnosticChain diagnostics,
             final Map<Object, Object> context) {
         boolean result = true;
-        for (final Iterator<?> i = connectToType.iterator(); i.hasNext() && (result || diagnostics != null);) {
+        for (final Iterator<?> i = connectToType.iterator(); i.hasNext() && (result || diagnostics != null);)
+        {
             final Object item = i.next();
-            if (XMLTypePackage.Literals.STRING.isInstance(item)) {
+            if (XMLTypePackage.Literals.STRING.isInstance(item))
+            {
                 result &= this.xmlTypeValidator.validateString((String) item, diagnostics, context);
-            } else {
+            }
+            else
+            {
                 result = false;
                 this.reportDataValueTypeViolation(XMLTypePackage.Literals.STRING, item, diagnostics, context);
             }
@@ -1108,7 +1133,8 @@ public class LqnValidator extends EObjectValidator {
         final boolean result = phaseType.compareTo(PHASE_TYPE__MIN__VALUE) >= 0;
         if (!result && diagnostics != null) {
             this.reportMinViolation(LqnPackage.Literals.PHASE_TYPE, phaseType, PHASE_TYPE__MIN__VALUE, true,
-                    diagnostics, context);
+                    diagnostics,
+                    context);
         }
         return result;
     }
@@ -1132,7 +1158,8 @@ public class LqnValidator extends EObjectValidator {
         final boolean result = phaseType.compareTo(PHASE_TYPE__MAX__VALUE) <= 0;
         if (!result && diagnostics != null) {
             this.reportMaxViolation(LqnPackage.Literals.PHASE_TYPE, phaseType, PHASE_TYPE__MAX__VALUE, true,
-                    diagnostics, context);
+                    diagnostics,
+                    context);
         }
         return result;
     }
@@ -1143,7 +1170,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateSchedulingTypeObject(final SchedulingType schedulingTypeObject,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return true;
     }
 
@@ -1164,9 +1192,13 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      * @see #validateSciNotation_Pattern
      */
-    public static final PatternMatcher[][] SCI_NOTATION__PATTERN__VALUES = new PatternMatcher[][] {
-            new PatternMatcher[] {
-                    XMLTypeUtil.createPatternMatcher("[\\+|\\-]?\\d+((\\.\\d+)?[e|E][\\+|\\-]\\d+)?") } };
+    public static final PatternMatcher[][] SCI_NOTATION__PATTERN__VALUES = new PatternMatcher[][]
+            {
+        new PatternMatcher[]
+                {
+                XMLTypeUtil.createPatternMatcher("[\\+|\\-]?\\d+((\\.\\d+)?[e|E][\\+|\\-]\\d+)?")
+                }
+            };
 
     /**
      * Validates the Pattern constraint of '<em>Sci Notation</em>'. <!-- begin-user-doc --> <!--
@@ -1186,7 +1218,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateSemaphoreTypeObject(final SemaphoreType semaphoreTypeObject,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return true;
     }
 
@@ -1209,28 +1242,36 @@ public class LqnValidator extends EObjectValidator {
      */
     public boolean validateSrvnFloat_MemberTypes(final Object srvnFloat, final DiagnosticChain diagnostics,
             final Map<Object, Object> context) {
-        if (diagnostics != null) {
+        if (diagnostics != null)
+        {
             final BasicDiagnostic tempDiagnostics = new BasicDiagnostic();
-            if (LqnPackage.Literals.SCI_NOTATION.isInstance(srvnFloat)) {
+            if (LqnPackage.Literals.SCI_NOTATION.isInstance(srvnFloat))
+            {
                 if (this.validateSciNotation((String) srvnFloat, tempDiagnostics, context)) {
                     return true;
                 }
             }
-            if (XMLTypePackage.Literals.DECIMAL.isInstance(srvnFloat)) {
+            if (XMLTypePackage.Literals.DECIMAL.isInstance(srvnFloat))
+            {
                 if (this.xmlTypeValidator.validateDecimal((BigDecimal) srvnFloat, tempDiagnostics, context)) {
                     return true;
                 }
             }
-            for (final Diagnostic diagnostic : tempDiagnostics.getChildren()) {
+            for (final Diagnostic diagnostic : tempDiagnostics.getChildren())
+            {
                 diagnostics.add(diagnostic);
             }
-        } else {
-            if (LqnPackage.Literals.SCI_NOTATION.isInstance(srvnFloat)) {
+        }
+        else
+        {
+            if (LqnPackage.Literals.SCI_NOTATION.isInstance(srvnFloat))
+            {
                 if (this.validateSciNotation((String) srvnFloat, null, context)) {
                     return true;
                 }
             }
-            if (XMLTypePackage.Literals.DECIMAL.isInstance(srvnFloat)) {
+            if (XMLTypePackage.Literals.DECIMAL.isInstance(srvnFloat))
+            {
                 if (this.xmlTypeValidator.validateDecimal((BigDecimal) srvnFloat, null, context)) {
                     return true;
                 }
@@ -1245,7 +1286,8 @@ public class LqnValidator extends EObjectValidator {
      * @generated
      */
     public boolean validateTaskOptionTypeObject(final TaskOptionType taskOptionTypeObject,
-            final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+            final DiagnosticChain diagnostics,
+            final Map<Object, Object> context) {
         return true;
     }
 

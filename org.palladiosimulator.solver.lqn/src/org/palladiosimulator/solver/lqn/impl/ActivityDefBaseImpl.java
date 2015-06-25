@@ -25,28 +25,28 @@ import org.palladiosimulator.solver.lqn.OutputResultType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getResultJoinDelay
- * <em>Result Join Delay</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getResultForwarding
- * <em>Result Forwarding</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getResultJoinDelay <em>
+ * Result Join Delay</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getResultForwarding <em>
+ * Result Forwarding</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getServiceTimeDistribution
  * <em>Service Time Distribution</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getResultActivity
- * <em>Result Activity</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getCallOrder
- * <em>Call Order</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getHostDemandCvsq
- * <em>Host Demand Cvsq</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getHostDemandMean
- * <em>Host Demand Mean</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getMaxServiceTime
- * <em>Max Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getResultActivity <em>Result
+ * Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getCallOrder <em>Call Order
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getHostDemandCvsq <em>Host
+ * Demand Cvsq</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getHostDemandMean <em>Host
+ * Demand Mean</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getMaxServiceTime <em>Max
+ * Service Time</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getName <em>Name</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getThinkTime
- * <em>Think Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getThinkTime <em>Think Time
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -248,7 +248,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
      */
     @Override
     public EList<OutputResultForwardingANDJoinDelay> getResultJoinDelay() {
-        if (this.resultJoinDelay == null) {
+        if (this.resultJoinDelay == null)
+        {
             this.resultJoinDelay = new EObjectContainmentEList<OutputResultForwardingANDJoinDelay>(
                     OutputResultForwardingANDJoinDelay.class, this, LqnPackage.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY);
         }
@@ -262,7 +263,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
      */
     @Override
     public EList<OutputResultForwardingANDJoinDelay> getResultForwarding() {
-        if (this.resultForwarding == null) {
+        if (this.resultForwarding == null)
+        {
             this.resultForwarding = new EObjectContainmentEList<OutputResultForwardingANDJoinDelay>(
                     OutputResultForwardingANDJoinDelay.class, this, LqnPackage.ACTIVITY_DEF_BASE__RESULT_FORWARDING);
         }
@@ -276,9 +278,11 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
      */
     @Override
     public EList<OutputDistributionType> getServiceTimeDistribution() {
-        if (this.serviceTimeDistribution == null) {
+        if (this.serviceTimeDistribution == null)
+        {
             this.serviceTimeDistribution = new EObjectContainmentEList<OutputDistributionType>(
-                    OutputDistributionType.class, this, LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION);
+                    OutputDistributionType.class,
+                    this, LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION);
         }
         return this.serviceTimeDistribution;
     }
@@ -290,7 +294,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
      */
     @Override
     public EList<OutputResultType> getResultActivity() {
-        if (this.resultActivity == null) {
+        if (this.resultActivity == null)
+        {
             this.resultActivity = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
                     LqnPackage.ACTIVITY_DEF_BASE__RESULT_ACTIVITY);
         }
@@ -484,7 +489,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY:
             return ((InternalEList<?>) this.getResultJoinDelay()).basicRemove(otherEnd, msgs);
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_FORWARDING:
@@ -504,7 +510,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY:
             return this.getResultJoinDelay();
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_FORWARDING:
@@ -537,7 +544,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY:
             this.getResultJoinDelay().clear();
             this.getResultJoinDelay().addAll((Collection<? extends OutputResultForwardingANDJoinDelay>) newValue);
@@ -583,7 +591,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY:
             this.getResultJoinDelay().clear();
             return;
@@ -625,7 +634,8 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_JOIN_DELAY:
             return this.resultJoinDelay != null && !this.resultJoinDelay.isEmpty();
         case LqnPackage.ACTIVITY_DEF_BASE__RESULT_FORWARDING:
@@ -637,14 +647,14 @@ public class ActivityDefBaseImpl extends EObjectImpl implements ActivityDefBase 
         case LqnPackage.ACTIVITY_DEF_BASE__CALL_ORDER:
             return this.isSetCallOrder();
         case LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ:
-            return HOST_DEMAND_CVSQ_EDEFAULT == null ? this.hostDemandCvsq != null
-                    : !HOST_DEMAND_CVSQ_EDEFAULT.equals(this.hostDemandCvsq);
+            return HOST_DEMAND_CVSQ_EDEFAULT == null ? this.hostDemandCvsq != null : !HOST_DEMAND_CVSQ_EDEFAULT
+            .equals(this.hostDemandCvsq);
         case LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN:
-            return HOST_DEMAND_MEAN_EDEFAULT == null ? this.hostDemandMean != null
-                    : !HOST_DEMAND_MEAN_EDEFAULT.equals(this.hostDemandMean);
+            return HOST_DEMAND_MEAN_EDEFAULT == null ? this.hostDemandMean != null : !HOST_DEMAND_MEAN_EDEFAULT
+            .equals(this.hostDemandMean);
         case LqnPackage.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME:
-            return MAX_SERVICE_TIME_EDEFAULT == null ? this.maxServiceTime != null
-                    : !MAX_SERVICE_TIME_EDEFAULT.equals(this.maxServiceTime);
+            return MAX_SERVICE_TIME_EDEFAULT == null ? this.maxServiceTime != null : !MAX_SERVICE_TIME_EDEFAULT
+            .equals(this.maxServiceTime);
         case LqnPackage.ACTIVITY_DEF_BASE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         case LqnPackage.ACTIVITY_DEF_BASE__THINK_TIME:

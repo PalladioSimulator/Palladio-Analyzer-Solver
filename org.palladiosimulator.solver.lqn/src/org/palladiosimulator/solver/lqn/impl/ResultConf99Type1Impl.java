@@ -14,61 +14,61 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type1;
  * <em><b>Result Conf99 Type1</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getOpenWaitTime
- * <em>Open Wait Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase1ProcWaiting
- * <em>Phase1 Proc Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase1ServiceTime
- * <em>Phase1 Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getOpenWaitTime <em>Open
+ * Wait Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase1ProcWaiting <em>
+ * Phase1 Proc Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase1ServiceTime <em>
+ * Phase1 Service Time</em>}</li>
  * <li>
  * {@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase1ServiceTimeVariance
  * <em>Phase1 Service Time Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase1Utilization
- * <em>Phase1 Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase2ProcWaiting
- * <em>Phase2 Proc Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase2ServiceTime
- * <em>Phase2 Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase1Utilization <em>
+ * Phase1 Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase2ProcWaiting <em>
+ * Phase2 Proc Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase2ServiceTime <em>
+ * Phase2 Service Time</em>}</li>
  * <li>
  * {@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase2ServiceTimeVariance
  * <em>Phase2 Service Time Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase2Utilization
- * <em>Phase2 Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase3ProcWaiting
- * <em>Phase3 Proc Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase3ServiceTime
- * <em>Phase3 Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase2Utilization <em>
+ * Phase2 Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase3ProcWaiting <em>
+ * Phase3 Proc Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase3ServiceTime <em>
+ * Phase3 Service Time</em>}</li>
  * <li>
  * {@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase3ServiceTimeVariance
  * <em>Phase3 Service Time Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase3Utilization
- * <em>Phase3 Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getPhase3Utilization <em>
+ * Phase3 Utilization</em>}</li>
  * <li>
  * {@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getProbExceedMaxServiceTime
  * <em>Prob Exceed Max Service Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getProcUtilization
- * <em>Proc Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getProcWaiting
- * <em>Proc Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getServiceTime
- * <em>Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getProcUtilization <em>
+ * Proc Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getProcWaiting <em>Proc
+ * Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getServiceTime <em>Service
+ * Time</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getServiceTimeVariance
  * <em>Service Time Variance</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getSquaredCoeffVariation
  * <em>Squared Coeff Variation</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getThroughput
- * <em>Throughput</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getThroughputBound
- * <em>Throughput Bound</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getUtilization
- * <em>Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getWaiting
- * <em>Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getWaitingVariance
- * <em>Waiting Variance</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getThroughput <em>
+ * Throughput</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getThroughputBound <em>
+ * Throughput Bound</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getUtilization <em>
+ * Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getWaiting <em>Waiting
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl#getWaitingVariance <em>
+ * Waiting Variance</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -443,8 +443,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
     protected Object serviceTimeVariance = SERVICE_TIME_VARIANCE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getSquaredCoeffVariation() <em>Squared Coeff Variation</em>
-     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The default value of the '{@link #getSquaredCoeffVariation()
+     * <em>Squared Coeff Variation</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see #getSquaredCoeffVariation()
      * @generated
@@ -627,7 +627,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase1ProcWaiting = newPhase1ProcWaiting;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING, oldPhase1ProcWaiting, this.phase1ProcWaiting));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING,
+                    oldPhase1ProcWaiting, this.phase1ProcWaiting));
         }
     }
 
@@ -652,7 +653,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase1ServiceTime = newPhase1ServiceTime;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME, oldPhase1ServiceTime, this.phase1ServiceTime));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME,
+                    oldPhase1ServiceTime, this.phase1ServiceTime));
         }
     }
 
@@ -703,7 +705,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase1Utilization = newPhase1Utilization;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE1_UTILIZATION, oldPhase1Utilization, this.phase1Utilization));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE1_UTILIZATION,
+                    oldPhase1Utilization, this.phase1Utilization));
         }
     }
 
@@ -728,7 +731,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase2ProcWaiting = newPhase2ProcWaiting;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING, oldPhase2ProcWaiting, this.phase2ProcWaiting));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING,
+                    oldPhase2ProcWaiting, this.phase2ProcWaiting));
         }
     }
 
@@ -753,7 +757,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase2ServiceTime = newPhase2ServiceTime;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME, oldPhase2ServiceTime, this.phase2ServiceTime));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME,
+                    oldPhase2ServiceTime, this.phase2ServiceTime));
         }
     }
 
@@ -804,7 +809,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase2Utilization = newPhase2Utilization;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE2_UTILIZATION, oldPhase2Utilization, this.phase2Utilization));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE2_UTILIZATION,
+                    oldPhase2Utilization, this.phase2Utilization));
         }
     }
 
@@ -829,7 +835,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase3ProcWaiting = newPhase3ProcWaiting;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING, oldPhase3ProcWaiting, this.phase3ProcWaiting));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING,
+                    oldPhase3ProcWaiting, this.phase3ProcWaiting));
         }
     }
 
@@ -854,7 +861,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase3ServiceTime = newPhase3ServiceTime;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME, oldPhase3ServiceTime, this.phase3ServiceTime));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME,
+                    oldPhase3ServiceTime, this.phase3ServiceTime));
         }
     }
 
@@ -905,7 +913,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.phase3Utilization = newPhase3Utilization;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.RESULT_CONF99_TYPE1__PHASE3_UTILIZATION, oldPhase3Utilization, this.phase3Utilization));
+                    LqnPackage.RESULT_CONF99_TYPE1__PHASE3_UTILIZATION,
+                    oldPhase3Utilization, this.phase3Utilization));
         }
     }
 
@@ -955,7 +964,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         final Object oldProcUtilization = this.procUtilization;
         this.procUtilization = newProcUtilization;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF99_TYPE1__PROC_UTILIZATION,
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.RESULT_CONF99_TYPE1__PROC_UTILIZATION,
                     oldProcUtilization, this.procUtilization));
         }
     }
@@ -1030,9 +1040,9 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         final Object oldServiceTimeVariance = this.serviceTimeVariance;
         this.serviceTimeVariance = newServiceTimeVariance;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE,
-                            oldServiceTimeVariance, this.serviceTimeVariance));
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE, oldServiceTimeVariance,
+                    this.serviceTimeVariance));
         }
     }
 
@@ -1107,7 +1117,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         final Object oldThroughputBound = this.throughputBound;
         this.throughputBound = newThroughputBound;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF99_TYPE1__THROUGHPUT_BOUND,
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.RESULT_CONF99_TYPE1__THROUGHPUT_BOUND,
                     oldThroughputBound, this.throughputBound));
         }
     }
@@ -1158,7 +1169,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         this.waiting = newWaiting;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF99_TYPE1__WAITING,
-                    oldWaiting, this.waiting));
+                    oldWaiting,
+                    this.waiting));
         }
     }
 
@@ -1182,7 +1194,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
         final Object oldWaitingVariance = this.waitingVariance;
         this.waitingVariance = newWaitingVariance;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF99_TYPE1__WAITING_VARIANCE,
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.RESULT_CONF99_TYPE1__WAITING_VARIANCE,
                     oldWaitingVariance, this.waitingVariance));
         }
     }
@@ -1194,7 +1207,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF99_TYPE1__OPEN_WAIT_TIME:
             return this.getOpenWaitTime();
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING:
@@ -1254,7 +1268,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF99_TYPE1__OPEN_WAIT_TIME:
             this.setOpenWaitTime(newValue);
             return;
@@ -1338,7 +1353,8 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF99_TYPE1__OPEN_WAIT_TIME:
             this.setOpenWaitTime(OPEN_WAIT_TIME_EDEFAULT);
             return;
@@ -1422,77 +1438,84 @@ public class ResultConf99Type1Impl extends EObjectImpl implements ResultConf99Ty
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF99_TYPE1__OPEN_WAIT_TIME:
-            return OPEN_WAIT_TIME_EDEFAULT == null ? this.openWaitTime != null
-                    : !OPEN_WAIT_TIME_EDEFAULT.equals(this.openWaitTime);
+            return OPEN_WAIT_TIME_EDEFAULT == null ? this.openWaitTime != null : !OPEN_WAIT_TIME_EDEFAULT
+            .equals(this.openWaitTime);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING:
             return PHASE1_PROC_WAITING_EDEFAULT == null ? this.phase1ProcWaiting != null
-                    : !PHASE1_PROC_WAITING_EDEFAULT.equals(this.phase1ProcWaiting);
+                    : !PHASE1_PROC_WAITING_EDEFAULT
+                            .equals(this.phase1ProcWaiting);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME:
             return PHASE1_SERVICE_TIME_EDEFAULT == null ? this.phase1ServiceTime != null
-                    : !PHASE1_SERVICE_TIME_EDEFAULT.equals(this.phase1ServiceTime);
+                    : !PHASE1_SERVICE_TIME_EDEFAULT
+                            .equals(this.phase1ServiceTime);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME_VARIANCE:
             return PHASE1_SERVICE_TIME_VARIANCE_EDEFAULT == null ? this.phase1ServiceTimeVariance != null
-                    : !PHASE1_SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.phase1ServiceTimeVariance);
+            : !PHASE1_SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.phase1ServiceTimeVariance);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE1_UTILIZATION:
-            return PHASE1_UTILIZATION_EDEFAULT == null ? this.phase1Utilization != null
-                    : !PHASE1_UTILIZATION_EDEFAULT.equals(this.phase1Utilization);
+            return PHASE1_UTILIZATION_EDEFAULT == null ? this.phase1Utilization != null : !PHASE1_UTILIZATION_EDEFAULT
+            .equals(this.phase1Utilization);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING:
             return PHASE2_PROC_WAITING_EDEFAULT == null ? this.phase2ProcWaiting != null
-                    : !PHASE2_PROC_WAITING_EDEFAULT.equals(this.phase2ProcWaiting);
+                    : !PHASE2_PROC_WAITING_EDEFAULT
+                            .equals(this.phase2ProcWaiting);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME:
             return PHASE2_SERVICE_TIME_EDEFAULT == null ? this.phase2ServiceTime != null
-                    : !PHASE2_SERVICE_TIME_EDEFAULT.equals(this.phase2ServiceTime);
+                    : !PHASE2_SERVICE_TIME_EDEFAULT
+                            .equals(this.phase2ServiceTime);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME_VARIANCE:
             return PHASE2_SERVICE_TIME_VARIANCE_EDEFAULT == null ? this.phase2ServiceTimeVariance != null
-                    : !PHASE2_SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.phase2ServiceTimeVariance);
+            : !PHASE2_SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.phase2ServiceTimeVariance);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE2_UTILIZATION:
-            return PHASE2_UTILIZATION_EDEFAULT == null ? this.phase2Utilization != null
-                    : !PHASE2_UTILIZATION_EDEFAULT.equals(this.phase2Utilization);
+            return PHASE2_UTILIZATION_EDEFAULT == null ? this.phase2Utilization != null : !PHASE2_UTILIZATION_EDEFAULT
+            .equals(this.phase2Utilization);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING:
             return PHASE3_PROC_WAITING_EDEFAULT == null ? this.phase3ProcWaiting != null
-                    : !PHASE3_PROC_WAITING_EDEFAULT.equals(this.phase3ProcWaiting);
+                    : !PHASE3_PROC_WAITING_EDEFAULT
+                            .equals(this.phase3ProcWaiting);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME:
             return PHASE3_SERVICE_TIME_EDEFAULT == null ? this.phase3ServiceTime != null
-                    : !PHASE3_SERVICE_TIME_EDEFAULT.equals(this.phase3ServiceTime);
+                    : !PHASE3_SERVICE_TIME_EDEFAULT
+                            .equals(this.phase3ServiceTime);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME_VARIANCE:
             return PHASE3_SERVICE_TIME_VARIANCE_EDEFAULT == null ? this.phase3ServiceTimeVariance != null
-                    : !PHASE3_SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.phase3ServiceTimeVariance);
+            : !PHASE3_SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.phase3ServiceTimeVariance);
         case LqnPackage.RESULT_CONF99_TYPE1__PHASE3_UTILIZATION:
-            return PHASE3_UTILIZATION_EDEFAULT == null ? this.phase3Utilization != null
-                    : !PHASE3_UTILIZATION_EDEFAULT.equals(this.phase3Utilization);
+            return PHASE3_UTILIZATION_EDEFAULT == null ? this.phase3Utilization != null : !PHASE3_UTILIZATION_EDEFAULT
+            .equals(this.phase3Utilization);
         case LqnPackage.RESULT_CONF99_TYPE1__PROB_EXCEED_MAX_SERVICE_TIME:
             return PROB_EXCEED_MAX_SERVICE_TIME_EDEFAULT == null ? this.probExceedMaxServiceTime != null
-                    : !PROB_EXCEED_MAX_SERVICE_TIME_EDEFAULT.equals(this.probExceedMaxServiceTime);
+            : !PROB_EXCEED_MAX_SERVICE_TIME_EDEFAULT.equals(this.probExceedMaxServiceTime);
         case LqnPackage.RESULT_CONF99_TYPE1__PROC_UTILIZATION:
-            return PROC_UTILIZATION_EDEFAULT == null ? this.procUtilization != null
-                    : !PROC_UTILIZATION_EDEFAULT.equals(this.procUtilization);
+            return PROC_UTILIZATION_EDEFAULT == null ? this.procUtilization != null : !PROC_UTILIZATION_EDEFAULT
+            .equals(this.procUtilization);
         case LqnPackage.RESULT_CONF99_TYPE1__PROC_WAITING:
-            return PROC_WAITING_EDEFAULT == null ? this.procWaiting != null
-                    : !PROC_WAITING_EDEFAULT.equals(this.procWaiting);
+            return PROC_WAITING_EDEFAULT == null ? this.procWaiting != null : !PROC_WAITING_EDEFAULT
+                    .equals(this.procWaiting);
         case LqnPackage.RESULT_CONF99_TYPE1__SERVICE_TIME:
-            return SERVICE_TIME_EDEFAULT == null ? this.serviceTime != null
-                    : !SERVICE_TIME_EDEFAULT.equals(this.serviceTime);
+            return SERVICE_TIME_EDEFAULT == null ? this.serviceTime != null : !SERVICE_TIME_EDEFAULT
+                    .equals(this.serviceTime);
         case LqnPackage.RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE:
             return SERVICE_TIME_VARIANCE_EDEFAULT == null ? this.serviceTimeVariance != null
-                    : !SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.serviceTimeVariance);
+            : !SERVICE_TIME_VARIANCE_EDEFAULT.equals(this.serviceTimeVariance);
         case LqnPackage.RESULT_CONF99_TYPE1__SQUARED_COEFF_VARIATION:
             return SQUARED_COEFF_VARIATION_EDEFAULT == null ? this.squaredCoeffVariation != null
-                    : !SQUARED_COEFF_VARIATION_EDEFAULT.equals(this.squaredCoeffVariation);
+            : !SQUARED_COEFF_VARIATION_EDEFAULT.equals(this.squaredCoeffVariation);
         case LqnPackage.RESULT_CONF99_TYPE1__THROUGHPUT:
             return THROUGHPUT_EDEFAULT == null ? this.throughput != null : !THROUGHPUT_EDEFAULT.equals(this.throughput);
         case LqnPackage.RESULT_CONF99_TYPE1__THROUGHPUT_BOUND:
-            return THROUGHPUT_BOUND_EDEFAULT == null ? this.throughputBound != null
-                    : !THROUGHPUT_BOUND_EDEFAULT.equals(this.throughputBound);
+            return THROUGHPUT_BOUND_EDEFAULT == null ? this.throughputBound != null : !THROUGHPUT_BOUND_EDEFAULT
+            .equals(this.throughputBound);
         case LqnPackage.RESULT_CONF99_TYPE1__UTILIZATION:
-            return UTILIZATION_EDEFAULT == null ? this.utilization != null
-                    : !UTILIZATION_EDEFAULT.equals(this.utilization);
+            return UTILIZATION_EDEFAULT == null ? this.utilization != null : !UTILIZATION_EDEFAULT
+                    .equals(this.utilization);
         case LqnPackage.RESULT_CONF99_TYPE1__WAITING:
             return WAITING_EDEFAULT == null ? this.waiting != null : !WAITING_EDEFAULT.equals(this.waiting);
         case LqnPackage.RESULT_CONF99_TYPE1__WAITING_VARIANCE:
-            return WAITING_VARIANCE_EDEFAULT == null ? this.waitingVariance != null
-                    : !WAITING_VARIANCE_EDEFAULT.equals(this.waitingVariance);
+            return WAITING_VARIANCE_EDEFAULT == null ? this.waitingVariance != null : !WAITING_VARIANCE_EDEFAULT
+            .equals(this.waitingVariance);
         }
         return super.eIsSet(featureID);
     }

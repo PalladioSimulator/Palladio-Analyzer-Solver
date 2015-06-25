@@ -89,7 +89,8 @@ public class LqnSwitch<T> extends Switch<T> {
      * @generated
      */
     public LqnSwitch() {
-        if (modelPackage == null) {
+        if (modelPackage == null)
+        {
             modelPackage = LqnPackage.eINSTANCE;
         }
     }
@@ -98,8 +99,7 @@ public class LqnSwitch<T> extends Switch<T> {
      * Checks whether this is a switch for the given package. <!-- begin-user-doc --> <!--
      * end-user-doc -->
      *
-     * @param ePackage
-     *            the package in question.
+     * @parameter ePackage the package in question.
      * @return whether this is a switch for the given package.
      * @generated
      */
@@ -117,7 +117,8 @@ public class LqnSwitch<T> extends Switch<T> {
      */
     @Override
     protected T doSwitch(final int classifierID, final EObject theEObject) {
-        switch (classifierID) {
+        switch (classifierID)
+        {
         case LqnPackage.ACTIVITY_DEF_BASE: {
             final ActivityDefBase activityDefBase = (ActivityDefBase) theEObject;
             T result = this.caseActivityDefBase(activityDefBase);

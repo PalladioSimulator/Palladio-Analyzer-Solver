@@ -9,8 +9,7 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 /**
  * <!-- begin-user-doc --> The <b>Resource </b> associated with the package. <!-- end-user-doc -->
  *
- * @see org.palladiosimulator.solver.context.aggregatedUsageContext.util.
- *      AggregatedUsageContextResourceFactoryImpl
+ * @see org.palladiosimulator.solver.context.aggregatedUsageContext.util.AggregatedUsageContextResourceFactoryImpl
  * @generated
  */
 public class AggregatedUsageContextResourceImpl extends XMLResourceImpl {

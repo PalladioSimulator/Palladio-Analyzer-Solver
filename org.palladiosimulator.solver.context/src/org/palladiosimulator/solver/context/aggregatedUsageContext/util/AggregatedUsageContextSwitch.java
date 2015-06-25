@@ -44,7 +44,8 @@ public class AggregatedUsageContextSwitch<T> extends Switch<T> {
      * @generated
      */
     public AggregatedUsageContextSwitch() {
-        if (modelPackage == null) {
+        if (modelPackage == null)
+        {
             modelPackage = AggregatedUsageContextPackage.eINSTANCE;
         }
     }
@@ -53,8 +54,7 @@ public class AggregatedUsageContextSwitch<T> extends Switch<T> {
      * Checks whether this is a switch for the given package. <!-- begin-user-doc --> <!--
      * end-user-doc -->
      *
-     * @param ePackage
-     *            the package in question.
+     * @parameter ePackage the package in question.
      * @return whether this is a switch for the given package.
      * @generated
      */
@@ -72,7 +72,8 @@ public class AggregatedUsageContextSwitch<T> extends Switch<T> {
      */
     @Override
     protected T doSwitch(final int classifierID, final EObject theEObject) {
-        switch (classifierID) {
+        switch (classifierID)
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT: {
             final ServiceExecutionContext serviceExecutionContext = (ServiceExecutionContext) theEObject;
             T result = this.caseServiceExecutionContext(serviceExecutionContext);

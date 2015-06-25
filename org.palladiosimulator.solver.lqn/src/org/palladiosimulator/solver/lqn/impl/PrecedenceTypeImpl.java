@@ -21,21 +21,18 @@ import org.palladiosimulator.solver.lqn.SingleActivityListType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPre <em>Pre</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPreOR <em>Pre OR</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPreAND <em>Pre AND</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPreOR <em>Pre OR</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPreAND <em>Pre AND</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPost <em>Post</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPostOR <em>Post OR</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPostOR <em>Post OR</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPostAND <em>Post AND</em>}
  * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPostLOOP
- * <em>Post LOOP</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPostLOOP <em>Post LOOP
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -148,7 +145,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     public NotificationChain basicSetPre(final SingleActivityListType newPre, NotificationChain msgs) {
         final SingleActivityListType oldPre = this.pre;
         this.pre = newPre;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.PRECEDENCE_TYPE__PRE, oldPre, newPre);
             if (msgs == null) {
@@ -167,23 +165,24 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void setPre(final SingleActivityListType newPre) {
-        if (newPre != this.pre) {
+        if (newPre != this.pre)
+        {
             NotificationChain msgs = null;
             if (this.pre != null) {
-                msgs = ((InternalEObject) this.pre).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
+                msgs = ((InternalEObject) this.pre).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
             }
             if (newPre != null) {
-                msgs = ((InternalEObject) newPre).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
+                msgs = ((InternalEObject) newPre).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
             }
             msgs = this.basicSetPre(newPre, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE, newPre, newPre));
+        }
+        else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE, newPre, newPre));
         }
     }
 
@@ -205,7 +204,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     public NotificationChain basicSetPreOR(final ActivityListType newPreOR, NotificationChain msgs) {
         final ActivityListType oldPreOR = this.preOR;
         this.preOR = newPreOR;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.PRECEDENCE_TYPE__PRE_OR, oldPreOR, newPreOR);
             if (msgs == null) {
@@ -224,21 +224,23 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void setPreOR(final ActivityListType newPreOR) {
-        if (newPreOR != this.preOR) {
+        if (newPreOR != this.preOR)
+        {
             NotificationChain msgs = null;
             if (this.preOR != null) {
-                msgs = ((InternalEObject) this.preOR).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
+                msgs = ((InternalEObject) this.preOR).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
             }
             if (newPreOR != null) {
-                msgs = ((InternalEObject) newPreOR).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
+                msgs = ((InternalEObject) newPreOR).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
             }
             msgs = this.basicSetPreOR(newPreOR, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE_OR, newPreOR,
                     newPreOR));
         }
@@ -262,7 +264,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     public NotificationChain basicSetPreAND(final AndJoinListType newPreAND, NotificationChain msgs) {
         final AndJoinListType oldPreAND = this.preAND;
         this.preAND = newPreAND;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.PRECEDENCE_TYPE__PRE_AND, oldPreAND, newPreAND);
             if (msgs == null) {
@@ -281,21 +284,23 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void setPreAND(final AndJoinListType newPreAND) {
-        if (newPreAND != this.preAND) {
+        if (newPreAND != this.preAND)
+        {
             NotificationChain msgs = null;
             if (this.preAND != null) {
-                msgs = ((InternalEObject) this.preAND).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
+                msgs = ((InternalEObject) this.preAND).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
             }
             if (newPreAND != null) {
-                msgs = ((InternalEObject) newPreAND).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
+                msgs = ((InternalEObject) newPreAND).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
             }
             msgs = this.basicSetPreAND(newPreAND, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE_AND, newPreAND,
                     newPreAND));
         }
@@ -319,7 +324,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     public NotificationChain basicSetPost(final SingleActivityListType newPost, NotificationChain msgs) {
         final SingleActivityListType oldPost = this.post;
         this.post = newPost;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.PRECEDENCE_TYPE__POST, oldPost, newPost);
             if (msgs == null) {
@@ -338,23 +344,25 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void setPost(final SingleActivityListType newPost) {
-        if (newPost != this.post) {
+        if (newPost != this.post)
+        {
             NotificationChain msgs = null;
             if (this.post != null) {
-                msgs = ((InternalEObject) this.post).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
+                msgs = ((InternalEObject) this.post).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
             }
             if (newPost != null) {
-                msgs = ((InternalEObject) newPost).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
+                msgs = ((InternalEObject) newPost).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
             }
             msgs = this.basicSetPost(newPost, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST, newPost, newPost));
+        }
+        else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST, newPost,
+                    newPost));
         }
     }
 
@@ -376,7 +384,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     public NotificationChain basicSetPostOR(final OrListType newPostOR, NotificationChain msgs) {
         final OrListType oldPostOR = this.postOR;
         this.postOR = newPostOR;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.PRECEDENCE_TYPE__POST_OR, oldPostOR, newPostOR);
             if (msgs == null) {
@@ -395,21 +404,23 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void setPostOR(final OrListType newPostOR) {
-        if (newPostOR != this.postOR) {
+        if (newPostOR != this.postOR)
+        {
             NotificationChain msgs = null;
             if (this.postOR != null) {
-                msgs = ((InternalEObject) this.postOR).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
+                msgs = ((InternalEObject) this.postOR).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
             }
             if (newPostOR != null) {
-                msgs = ((InternalEObject) newPostOR).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
+                msgs = ((InternalEObject) newPostOR).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
             }
             msgs = this.basicSetPostOR(newPostOR, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_OR, newPostOR,
                     newPostOR));
         }
@@ -433,7 +444,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     public NotificationChain basicSetPostAND(final ActivityListType newPostAND, NotificationChain msgs) {
         final ActivityListType oldPostAND = this.postAND;
         this.postAND = newPostAND;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.PRECEDENCE_TYPE__POST_AND, oldPostAND, newPostAND);
             if (msgs == null) {
@@ -452,22 +464,25 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void setPostAND(final ActivityListType newPostAND) {
-        if (newPostAND != this.postAND) {
+        if (newPostAND != this.postAND)
+        {
             NotificationChain msgs = null;
             if (this.postAND != null) {
-                msgs = ((InternalEObject) this.postAND).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
+                msgs = ((InternalEObject) this.postAND).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
             }
             if (newPostAND != null) {
-                msgs = ((InternalEObject) newPostAND).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
+                msgs = ((InternalEObject) newPostAND).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
             }
             msgs = this.basicSetPostAND(newPostAND, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_AND, newPostAND,
+        }
+        else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_AND,
+                    newPostAND,
                     newPostAND));
         }
     }
@@ -490,7 +505,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     public NotificationChain basicSetPostLOOP(final ActivityLoopListType newPostLOOP, NotificationChain msgs) {
         final ActivityLoopListType oldPostLOOP = this.postLOOP;
         this.postLOOP = newPostLOOP;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.PRECEDENCE_TYPE__POST_LOOP, oldPostLOOP, newPostLOOP);
             if (msgs == null) {
@@ -509,23 +525,26 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void setPostLOOP(final ActivityLoopListType newPostLOOP) {
-        if (newPostLOOP != this.postLOOP) {
+        if (newPostLOOP != this.postLOOP)
+        {
             NotificationChain msgs = null;
             if (this.postLOOP != null) {
-                msgs = ((InternalEObject) this.postLOOP).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
+                msgs = ((InternalEObject) this.postLOOP).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
             }
             if (newPostLOOP != null) {
-                msgs = ((InternalEObject) newPostLOOP).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
+                msgs = ((InternalEObject) newPostLOOP).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
             }
             msgs = this.basicSetPostLOOP(newPostLOOP, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_LOOP,
-                    newPostLOOP, newPostLOOP));
+                    newPostLOOP,
+                    newPostLOOP));
         }
     }
 
@@ -537,7 +556,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRECEDENCE_TYPE__PRE:
             return this.basicSetPre(null, msgs);
         case LqnPackage.PRECEDENCE_TYPE__PRE_OR:
@@ -563,7 +583,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRECEDENCE_TYPE__PRE:
             return this.getPre();
         case LqnPackage.PRECEDENCE_TYPE__PRE_OR:
@@ -589,7 +610,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRECEDENCE_TYPE__PRE:
             this.setPre((SingleActivityListType) newValue);
             return;
@@ -622,7 +644,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRECEDENCE_TYPE__PRE:
             this.setPre((SingleActivityListType) null);
             return;
@@ -655,7 +678,8 @@ public class PrecedenceTypeImpl extends EObjectImpl implements PrecedenceType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRECEDENCE_TYPE__PRE:
             return this.pre != null;
         case LqnPackage.PRECEDENCE_TYPE__PRE_OR:

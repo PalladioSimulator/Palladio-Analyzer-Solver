@@ -35,13 +35,16 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
      * @generated
      */
     public static AggregatedUsageContextFactory init() {
-        try {
+        try
+        {
             final AggregatedUsageContextFactory theAggregatedUsageContextFactory = (AggregatedUsageContextFactory) EPackage.Registry.INSTANCE
                     .getEFactory(AggregatedUsageContextPackage.eNS_URI);
-            if (theAggregatedUsageContextFactory != null) {
+            if (theAggregatedUsageContextFactory != null)
+            {
                 return theAggregatedUsageContextFactory;
             }
-        } catch (final Exception exception) {
+        } catch (final Exception exception)
+        {
             EcorePlugin.INSTANCE.log(exception);
         }
         return new AggregatedUsageContextFactoryImpl();
@@ -63,7 +66,8 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
      */
     @Override
     public EObject create(final EClass eClass) {
-        switch (eClass.getClassifierID()) {
+        switch (eClass.getClassifierID())
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT:
             return this.createServiceExecutionContext();
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND:

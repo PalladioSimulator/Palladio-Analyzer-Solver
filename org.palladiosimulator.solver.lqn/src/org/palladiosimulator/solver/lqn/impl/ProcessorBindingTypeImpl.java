@@ -14,13 +14,13 @@ import org.palladiosimulator.solver.lqn.ProcessorBindingType;
  * <em><b>Processor Binding Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getSource
- * <em>Source</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getTarget
- * <em>Target</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getSource <em>Source
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getTarget <em>Target
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -106,7 +106,8 @@ public class ProcessorBindingTypeImpl extends EObjectImpl implements ProcessorBi
         this.source = newSource;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE,
-                    oldSource, this.source));
+                    oldSource,
+                    this.source));
         }
     }
 
@@ -131,7 +132,8 @@ public class ProcessorBindingTypeImpl extends EObjectImpl implements ProcessorBi
         this.target = newTarget;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__TARGET,
-                    oldTarget, this.target));
+                    oldTarget,
+                    this.target));
         }
     }
 
@@ -142,7 +144,8 @@ public class ProcessorBindingTypeImpl extends EObjectImpl implements ProcessorBi
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
             return this.getSource();
         case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
@@ -158,7 +161,8 @@ public class ProcessorBindingTypeImpl extends EObjectImpl implements ProcessorBi
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
             this.setSource((String) newValue);
             return;
@@ -176,7 +180,8 @@ public class ProcessorBindingTypeImpl extends EObjectImpl implements ProcessorBi
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
             this.setSource(SOURCE_EDEFAULT);
             return;
@@ -194,7 +199,8 @@ public class ProcessorBindingTypeImpl extends EObjectImpl implements ProcessorBi
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
             return SOURCE_EDEFAULT == null ? this.source != null : !SOURCE_EDEFAULT.equals(this.source);
         case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:

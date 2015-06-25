@@ -19,11 +19,11 @@ import org.palladiosimulator.solver.lqn.TaskActivityGraph;
  * <em><b>Task Activity Graph</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskActivityGraphImpl#getReplyEntry
- * <em>Reply Entry</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.TaskActivityGraphImpl#getReplyEntry <em>Reply
+ * Entry</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -65,7 +65,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
      */
     @Override
     public EList<ReplyEntryType> getReplyEntry() {
-        if (this.replyEntry == null) {
+        if (this.replyEntry == null)
+        {
             this.replyEntry = new EObjectContainmentEList<ReplyEntryType>(ReplyEntryType.class, this,
                     LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY);
         }
@@ -80,7 +81,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
             return ((InternalEList<?>) this.getReplyEntry()).basicRemove(otherEnd, msgs);
         }
@@ -94,7 +96,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
             return this.getReplyEntry();
         }
@@ -109,7 +112,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
             this.getReplyEntry().clear();
             this.getReplyEntry().addAll((Collection<? extends ReplyEntryType>) newValue);
@@ -125,7 +129,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
             this.getReplyEntry().clear();
             return;
@@ -140,7 +145,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
             return this.replyEntry != null && !this.replyEntry.isEmpty();
         }

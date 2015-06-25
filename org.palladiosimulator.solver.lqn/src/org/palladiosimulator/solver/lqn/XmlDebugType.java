@@ -71,7 +71,11 @@ public enum XmlDebugType implements Enumerator {
      *
      * @generated
      */
-    private static final XmlDebugType[] VALUES_ARRAY = new XmlDebugType[] { TRUE, FALSE, };
+    private static final XmlDebugType[] VALUES_ARRAY = new XmlDebugType[]
+            {
+        TRUE,
+        FALSE,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Xml Debug Type</b></em>' enumerators. <!--
@@ -92,7 +96,8 @@ public enum XmlDebugType implements Enumerator {
      */
     public static XmlDebugType get(final String literal) {
         for (final XmlDebugType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -110,7 +115,8 @@ public enum XmlDebugType implements Enumerator {
      */
     public static XmlDebugType getByName(final String name) {
         for (final XmlDebugType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -127,7 +133,8 @@ public enum XmlDebugType implements Enumerator {
      * @generated
      */
     public static XmlDebugType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case TRUE_VALUE:
             return TRUE;
         case FALSE_VALUE:

@@ -17,11 +17,11 @@ import org.palladiosimulator.solver.lqn.SingleActivityListType;
  * <em><b>Single Activity List Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SingleActivityListTypeImpl#getActivity
- * <em>Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SingleActivityListTypeImpl#getActivity <em>
+ * Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -74,7 +74,8 @@ public class SingleActivityListTypeImpl extends EObjectImpl implements SingleAct
     public NotificationChain basicSetActivity(final ActivityType newActivity, NotificationChain msgs) {
         final ActivityType oldActivity = this.activity;
         this.activity = newActivity;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, oldActivity, newActivity);
             if (msgs == null) {
@@ -93,21 +94,23 @@ public class SingleActivityListTypeImpl extends EObjectImpl implements SingleAct
      */
     @Override
     public void setActivity(final ActivityType newActivity) {
-        if (newActivity != this.activity) {
+        if (newActivity != this.activity)
+        {
             NotificationChain msgs = null;
             if (this.activity != null) {
-                msgs = ((InternalEObject) this.activity).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, null, msgs);
+                msgs = ((InternalEObject) this.activity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, null, msgs);
             }
             if (newActivity != null) {
-                msgs = ((InternalEObject) newActivity).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, null, msgs);
+                msgs = ((InternalEObject) newActivity).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, null, msgs);
             }
             msgs = this.basicSetActivity(newActivity, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
                     newActivity, newActivity));
         }
@@ -121,7 +124,8 @@ public class SingleActivityListTypeImpl extends EObjectImpl implements SingleAct
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY:
             return this.basicSetActivity(null, msgs);
         }
@@ -135,7 +139,8 @@ public class SingleActivityListTypeImpl extends EObjectImpl implements SingleAct
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY:
             return this.getActivity();
         }
@@ -149,7 +154,8 @@ public class SingleActivityListTypeImpl extends EObjectImpl implements SingleAct
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY:
             this.setActivity((ActivityType) newValue);
             return;
@@ -164,7 +170,8 @@ public class SingleActivityListTypeImpl extends EObjectImpl implements SingleAct
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY:
             this.setActivity((ActivityType) null);
             return;
@@ -179,7 +186,8 @@ public class SingleActivityListTypeImpl extends EObjectImpl implements SingleAct
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY:
             return this.activity != null;
         }

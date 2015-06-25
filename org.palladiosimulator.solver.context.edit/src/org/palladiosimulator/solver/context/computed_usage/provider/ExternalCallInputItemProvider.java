@@ -58,7 +58,8 @@ public class ExternalCallInputItemProvider extends ItemProviderAdapter implement
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addExternalCallAction_ExternalCallInputPropertyDescriptor(object);
@@ -73,14 +74,22 @@ public class ExternalCallInputItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addExternalCallAction_ExternalCallInputPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ExternalCallInput_externalCallAction_ExternalCallInput_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ExternalCallInput_externalCallAction_ExternalCallInput_feature",
-                        "_UI_ExternalCallInput_type"),
-                ComputedUsagePackage.Literals.EXTERNAL_CALL_INPUT__EXTERNAL_CALL_ACTION_EXTERNAL_CALL_INPUT, true,
-                false, true, null, null, null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ExternalCallInput_externalCallAction_ExternalCallInput_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ExternalCallInput_externalCallAction_ExternalCallInput_feature",
+                                "_UI_ExternalCallInput_type"),
+                                ComputedUsagePackage.Literals.EXTERNAL_CALL_INPUT__EXTERNAL_CALL_ACTION_EXTERNAL_CALL_INPUT,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -94,10 +103,11 @@ public class ExternalCallInputItemProvider extends ItemProviderAdapter implement
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
-            this.childrenFeatures.add(
-                    ComputedUsagePackage.Literals.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT);
+            this.childrenFeatures
+                    .add(ComputedUsagePackage.Literals.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT);
         }
         return this.childrenFeatures;
     }
@@ -147,7 +157,8 @@ public class ExternalCallInputItemProvider extends ItemProviderAdapter implement
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ExternalCallInput.class)) {
+        switch (notification.getFeatureID(ExternalCallInput.class))
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -165,9 +176,11 @@ public class ExternalCallInputItemProvider extends ItemProviderAdapter implement
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedUsagePackage.Literals.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT,
-                ParameterFactory.eINSTANCE.createVariableUsage()));
+        newChildDescriptors
+        .add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT,
+                        ParameterFactory.eINSTANCE.createVariableUsage()));
     }
 
     /**

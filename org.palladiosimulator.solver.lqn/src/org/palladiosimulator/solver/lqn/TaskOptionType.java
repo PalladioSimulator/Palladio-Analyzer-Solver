@@ -72,7 +72,11 @@ public enum TaskOptionType implements Enumerator {
      *
      * @generated
      */
-    private static final TaskOptionType[] VALUES_ARRAY = new TaskOptionType[] { YES, NO, };
+    private static final TaskOptionType[] VALUES_ARRAY = new TaskOptionType[]
+            {
+        YES,
+        NO,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Task Option Type</b></em>' enumerators. <!--
@@ -93,7 +97,8 @@ public enum TaskOptionType implements Enumerator {
      */
     public static TaskOptionType get(final String literal) {
         for (final TaskOptionType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -111,7 +116,8 @@ public enum TaskOptionType implements Enumerator {
      */
     public static TaskOptionType getByName(final String name) {
         for (final TaskOptionType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -128,7 +134,8 @@ public enum TaskOptionType implements Enumerator {
      * @generated
      */
     public static TaskOptionType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case YES_VALUE:
             return YES;
         case NO_VALUE:

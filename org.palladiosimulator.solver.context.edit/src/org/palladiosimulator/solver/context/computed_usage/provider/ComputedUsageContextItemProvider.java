@@ -52,7 +52,8 @@ public class ComputedUsageContextItemProvider extends EntityItemProvider {
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addAssemblyContext_ComputedUsageContextPropertyDescriptor(object);
@@ -67,14 +68,22 @@ public class ComputedUsageContextItemProvider extends EntityItemProvider {
      * @generated
      */
     protected void addAssemblyContext_ComputedUsageContextPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ComputedUsageContext_assemblyContext_ComputedUsageContext_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ComputedUsageContext_assemblyContext_ComputedUsageContext_feature",
-                        "_UI_ComputedUsageContext_type"),
-                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__ASSEMBLY_CONTEXT_COMPUTED_USAGE_CONTEXT, true,
-                false, true, null, null, null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ComputedUsageContext_assemblyContext_ComputedUsageContext_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ComputedUsageContext_assemblyContext_ComputedUsageContext_feature",
+                                "_UI_ComputedUsageContext_type"),
+                                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__ASSEMBLY_CONTEXT_COMPUTED_USAGE_CONTEXT,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -88,20 +97,21 @@ public class ComputedUsageContextItemProvider extends EntityItemProvider {
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
-            this.childrenFeatures.add(
-                    ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT);
+            this.childrenFeatures
+                    .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT);
             this.childrenFeatures
                     .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT);
             this.childrenFeatures
-                    .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT);
-            this.childrenFeatures.add(
-                    ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_OUTPUT_COMPUTED_USAGE_CONTEXT);
-            this.childrenFeatures.add(
-                    ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT);
+            .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT);
             this.childrenFeatures
-                    .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT);
+                    .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_OUTPUT_COMPUTED_USAGE_CONTEXT);
+            this.childrenFeatures
+                    .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT);
+            this.childrenFeatures
+            .add(ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT);
         }
         return this.childrenFeatures;
     }
@@ -138,8 +148,9 @@ public class ComputedUsageContextItemProvider extends EntityItemProvider {
     @Override
     public String getText(final Object object) {
         final String label = ((ComputedUsageContext) object).getId();
-        return label == null || label.length() == 0 ? this.getString("_UI_ComputedUsageContext_type")
-                : this.getString("_UI_ComputedUsageContext_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ComputedUsageContext_type") :
+                this.getString("_UI_ComputedUsageContext_type") + " " + label;
     }
 
     /**
@@ -153,7 +164,8 @@ public class ComputedUsageContextItemProvider extends EntityItemProvider {
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ComputedUsageContext.class)) {
+        switch (notification.getFeatureID(ComputedUsageContext.class))
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT:
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT:
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT:
@@ -176,29 +188,38 @@ public class ComputedUsageContextItemProvider extends EntityItemProvider {
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT,
-                ComputedUsageFactory.eINSTANCE.createBranchProbability()));
+        newChildDescriptors
+        .add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__BRANCH_PROBABILITIES_COMPUTED_USAGE_CONTEXT,
+                        ComputedUsageFactory.eINSTANCE.createBranchProbability()));
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT,
-                ComputedUsageFactory.eINSTANCE.createLoopIteration()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__LOOPITERATIONS_COMPUTED_USAGE_CONTEXT,
+                        ComputedUsageFactory.eINSTANCE.createLoopIteration()));
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT,
-                ComputedUsageFactory.eINSTANCE.createInput()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__INPUT_COMPUTED_USAGE_CONTEXT,
+                        ComputedUsageFactory.eINSTANCE.createInput()));
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_OUTPUT_COMPUTED_USAGE_CONTEXT,
-                ComputedUsageFactory.eINSTANCE.createExternalCallOutput()));
+        newChildDescriptors
+        .add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_OUTPUT_COMPUTED_USAGE_CONTEXT,
+                        ComputedUsageFactory.eINSTANCE.createExternalCallOutput()));
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT,
-                ComputedUsageFactory.eINSTANCE.createExternalCallInput()));
+        newChildDescriptors
+        .add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT,
+                        ComputedUsageFactory.eINSTANCE.createExternalCallInput()));
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT,
-                ComputedUsageFactory.eINSTANCE.createOutput()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.COMPUTED_USAGE_CONTEXT__OUTPUT_COMPUTED_USAGE_CONTEXT,
+                        ComputedUsageFactory.eINSTANCE.createOutput()));
     }
 
     /**

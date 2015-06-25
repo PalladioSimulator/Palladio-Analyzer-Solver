@@ -14,15 +14,15 @@ import org.palladiosimulator.solver.lqn.ResultConf95Type;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl#getJoinVariance
- * <em>Join Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl#getJoinWaiting
- * <em>Join Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl#getWaiting <em>Waiting</em>
- * }</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl#getJoinVariance <em>Join
+ * Variance</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl#getJoinWaiting <em>Join
+ * Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl#getWaiting <em>Waiting
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -178,7 +178,8 @@ public class ResultConf95TypeImpl extends EObjectImpl implements ResultConf95Typ
         this.waiting = newWaiting;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF95_TYPE__WAITING,
-                    oldWaiting, this.waiting));
+                    oldWaiting,
+                    this.waiting));
         }
     }
 
@@ -189,7 +190,8 @@ public class ResultConf95TypeImpl extends EObjectImpl implements ResultConf95Typ
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF95_TYPE__JOIN_VARIANCE:
             return this.getJoinVariance();
         case LqnPackage.RESULT_CONF95_TYPE__JOIN_WAITING:
@@ -207,7 +209,8 @@ public class ResultConf95TypeImpl extends EObjectImpl implements ResultConf95Typ
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF95_TYPE__JOIN_VARIANCE:
             this.setJoinVariance(newValue);
             return;
@@ -228,7 +231,8 @@ public class ResultConf95TypeImpl extends EObjectImpl implements ResultConf95Typ
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF95_TYPE__JOIN_VARIANCE:
             this.setJoinVariance(JOIN_VARIANCE_EDEFAULT);
             return;
@@ -249,13 +253,14 @@ public class ResultConf95TypeImpl extends EObjectImpl implements ResultConf95Typ
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RESULT_CONF95_TYPE__JOIN_VARIANCE:
-            return JOIN_VARIANCE_EDEFAULT == null ? this.joinVariance != null
-                    : !JOIN_VARIANCE_EDEFAULT.equals(this.joinVariance);
+            return JOIN_VARIANCE_EDEFAULT == null ? this.joinVariance != null : !JOIN_VARIANCE_EDEFAULT
+                    .equals(this.joinVariance);
         case LqnPackage.RESULT_CONF95_TYPE__JOIN_WAITING:
-            return JOIN_WAITING_EDEFAULT == null ? this.joinWaiting != null
-                    : !JOIN_WAITING_EDEFAULT.equals(this.joinWaiting);
+            return JOIN_WAITING_EDEFAULT == null ? this.joinWaiting != null : !JOIN_WAITING_EDEFAULT
+                    .equals(this.joinWaiting);
         case LqnPackage.RESULT_CONF95_TYPE__WAITING:
             return WAITING_EDEFAULT == null ? this.waiting != null : !WAITING_EDEFAULT.equals(this.waiting);
         }

@@ -20,11 +20,11 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityListTypeImpl#getActivity
- * <em>Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityListTypeImpl#getActivity <em>Activity
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -66,7 +66,8 @@ public class ActivityListTypeImpl extends EObjectImpl implements ActivityListTyp
      */
     @Override
     public EList<ActivityType> getActivity() {
-        if (this.activity == null) {
+        if (this.activity == null)
+        {
             this.activity = new EObjectContainmentEList<ActivityType>(ActivityType.class, this,
                     LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY);
         }
@@ -81,7 +82,8 @@ public class ActivityListTypeImpl extends EObjectImpl implements ActivityListTyp
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
             return ((InternalEList<?>) this.getActivity()).basicRemove(otherEnd, msgs);
         }
@@ -95,7 +97,8 @@ public class ActivityListTypeImpl extends EObjectImpl implements ActivityListTyp
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
             return this.getActivity();
         }
@@ -110,7 +113,8 @@ public class ActivityListTypeImpl extends EObjectImpl implements ActivityListTyp
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             this.getActivity().addAll((Collection<? extends ActivityType>) newValue);
@@ -126,7 +130,8 @@ public class ActivityListTypeImpl extends EObjectImpl implements ActivityListTyp
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             return;
@@ -141,7 +146,8 @@ public class ActivityListTypeImpl extends EObjectImpl implements ActivityListTyp
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
             return this.activity != null && !this.activity.isEmpty();
         }

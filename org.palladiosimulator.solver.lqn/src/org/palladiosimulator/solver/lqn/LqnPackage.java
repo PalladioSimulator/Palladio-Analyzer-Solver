@@ -356,7 +356,8 @@ public interface LqnPackage extends EPackage {
     int ACTIVITY_GRAPH_BASE_FEATURE_COUNT = 2;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityListTypeImpl
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.lqn.impl.ActivityListTypeImpl
      * <em>Activity List Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see org.palladiosimulator.solver.lqn.impl.ActivityListTypeImpl
@@ -450,7 +451,8 @@ public interface LqnPackage extends EPackage {
     int ACTIVITY_TYPE_FEATURE_COUNT = 1;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopTypeImpl
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.lqn.impl.ActivityLoopTypeImpl
      * <em>Activity Loop Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see org.palladiosimulator.solver.lqn.impl.ActivityLoopTypeImpl
@@ -1433,7 +1435,8 @@ public interface LqnPackage extends EPackage {
     int FIRST_PLOT_TYPE_FEATURE_COUNT = 1;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl
      * <em>Histogram Bin Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl
@@ -2159,7 +2162,8 @@ public interface LqnPackage extends EPackage {
     int OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY_FEATURE_COUNT = 6;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl
      * <em>Output Result Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl
@@ -2948,7 +2952,8 @@ public interface LqnPackage extends EPackage {
     int REPLY_ENTRY_TYPE_FEATURE_COUNT = 2;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl
      * <em>Result Conf95 Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see org.palladiosimulator.solver.lqn.impl.ResultConf95TypeImpl
@@ -3230,7 +3235,8 @@ public interface LqnPackage extends EPackage {
     int RESULT_CONF95_TYPE1_FEATURE_COUNT = 24;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.ResultConf99TypeImpl
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.lqn.impl.ResultConf99TypeImpl
      * <em>Result Conf99 Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see org.palladiosimulator.solver.lqn.impl.ResultConf99TypeImpl
@@ -3753,7 +3759,8 @@ public interface LqnPackage extends EPackage {
     int SLOT_TYPE_FEATURE_COUNT = 5;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl
      * <em>Solver Params Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl
@@ -4543,8 +4550,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for class '
-     * {@link org.palladiosimulator.solver.lqn.ActivityLoopListType <em>Activity Loop List Type</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.ActivityLoopListType
+     * <em>Activity Loop List Type</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for class '<em>Activity Loop List Type</em>'.
      * @see org.palladiosimulator.solver.lqn.ActivityLoopListType
@@ -4644,8 +4651,9 @@ public interface LqnPackage extends EPackage {
     EAttribute getActivityOrType_Prob();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.lqn.ActivityPhasesType
-     * <em>Activity Phases Type</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.lqn.ActivityPhasesType <em>Activity Phases Type</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for class '<em>Activity Phases Type</em>'.
      * @see org.palladiosimulator.solver.lqn.ActivityPhasesType
@@ -4691,8 +4699,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference list '
-     * {@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getAsynchCall <em>Asynch Call</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.ActivityPhasesType#getAsynchCall
+     * <em>Asynch Call</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the containment reference list '<em>Asynch Call</em>'.
      * @see org.palladiosimulator.solver.lqn.ActivityPhasesType#getAsynchCall()
@@ -4967,8 +4975,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for class '
-     * {@link org.palladiosimulator.solver.lqn.EntryActivityDefType <em>Entry Activity Def Type</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.EntryActivityDefType
+     * <em>Entry Activity Def Type</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for class '<em>Entry Activity Def Type</em>'.
      * @see org.palladiosimulator.solver.lqn.EntryActivityDefType
@@ -5002,8 +5010,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference list '
-     * {@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getSynchCall <em>Synch Call</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getSynchCall
+     * <em>Synch Call</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the containment reference list '<em>Synch Call</em>'.
      * @see org.palladiosimulator.solver.lqn.EntryActivityDefType#getSynchCall()
@@ -5037,8 +5045,9 @@ public interface LqnPackage extends EPackage {
     EAttribute getEntryActivityDefType_FirstActivity();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.lqn.EntryActivityGraph
-     * <em>Entry Activity Graph</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.lqn.EntryActivityGraph <em>Entry Activity Graph</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for class '<em>Entry Activity Graph</em>'.
      * @see org.palladiosimulator.solver.lqn.EntryActivityGraph
@@ -5771,8 +5780,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMidPoint <em>Mid Point</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMidPoint
+     * <em>Mid Point</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the attribute '<em>Mid Point</em>'.
      * @see org.palladiosimulator.solver.lqn.OutputDistributionType#getMidPoint()
@@ -6164,8 +6173,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getProcWaiting <em>Proc Waiting</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getProcWaiting
+     * <em>Proc Waiting</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the attribute '<em>Proc Waiting</em>'.
      * @see org.palladiosimulator.solver.lqn.OutputResultType#getProcWaiting()
@@ -6176,8 +6185,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTime <em>Service Time</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTime
+     * <em>Service Time</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the attribute '<em>Service Time</em>'.
      * @see org.palladiosimulator.solver.lqn.OutputResultType#getServiceTime()
@@ -6823,8 +6832,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting <em>Join Waiting</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting
+     * <em>Join Waiting</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the attribute '<em>Join Waiting</em>'.
      * @see org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting()
@@ -7109,8 +7118,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.lqn.ResultConf95Type1#getUtilization <em>Utilization</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.ResultConf95Type1#getUtilization
+     * <em>Utilization</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the attribute '<em>Utilization</em>'.
      * @see org.palladiosimulator.solver.lqn.ResultConf95Type1#getUtilization()
@@ -7167,8 +7176,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.lqn.ResultConf99Type#getJoinWaiting <em>Join Waiting</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.ResultConf99Type#getJoinWaiting
+     * <em>Join Waiting</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the attribute '<em>Join Waiting</em>'.
      * @see org.palladiosimulator.solver.lqn.ResultConf99Type#getJoinWaiting()
@@ -7453,8 +7462,8 @@ public interface LqnPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.lqn.ResultConf99Type1#getUtilization <em>Utilization</em>
-     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.ResultConf99Type1#getUtilization
+     * <em>Utilization</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for the attribute '<em>Utilization</em>'.
      * @see org.palladiosimulator.solver.lqn.ResultConf99Type1#getUtilization()
@@ -8142,8 +8151,8 @@ public interface LqnPackage extends EPackage {
      *
      * @return the meta object for data type '<em>Axis Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.AxisType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.AxisType" extendedMetaData=
-     *        "name='AxisType:Object' baseType='AxisType'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.AxisType"
+     *        extendedMetaData="name='AxisType:Object' baseType='AxisType'"
      * @generated
      */
     EDataType getAxisTypeObject();
@@ -8154,8 +8163,8 @@ public interface LqnPackage extends EPackage {
      *
      * @return the meta object for data type '<em>Call Order Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.CallOrderType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.CallOrderType" extendedMetaData=
-     *        "name='CallOrderType:Object' baseType='CallOrderType'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.CallOrderType"
+     *        extendedMetaData="name='CallOrderType:Object' baseType='CallOrderType'"
      * @generated
      */
     EDataType getCallOrderTypeObject();
@@ -8197,13 +8206,14 @@ public interface LqnPackage extends EPackage {
     EDataType getPhaseType();
 
     /**
-     * Returns the meta object for data type '{@link org.palladiosimulator.solver.lqn.SchedulingType
-     * <em>Scheduling Type Object</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for data type '
+     * {@link org.palladiosimulator.solver.lqn.SchedulingType <em>Scheduling Type Object</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for data type '<em>Scheduling Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.SchedulingType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.SchedulingType" extendedMetaData=
-     *        "name='SchedulingType:Object' baseType='SchedulingType'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.SchedulingType"
+     *        extendedMetaData="name='SchedulingType:Object' baseType='SchedulingType'"
      * @generated
      */
     EDataType getSchedulingTypeObject();
@@ -8226,8 +8236,8 @@ public interface LqnPackage extends EPackage {
      *
      * @return the meta object for data type '<em>Semaphore Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.SemaphoreType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.SemaphoreType" extendedMetaData=
-     *        "name='SemaphoreType:Object' baseType='SemaphoreType'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.SemaphoreType"
+     *        extendedMetaData="name='SemaphoreType:Object' baseType='SemaphoreType'"
      * @generated
      */
     EDataType getSemaphoreTypeObject();
@@ -8245,13 +8255,14 @@ public interface LqnPackage extends EPackage {
     EDataType getSrvnFloat();
 
     /**
-     * Returns the meta object for data type '{@link org.palladiosimulator.solver.lqn.TaskOptionType
-     * <em>Task Option Type Object</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for data type '
+     * {@link org.palladiosimulator.solver.lqn.TaskOptionType <em>Task Option Type Object</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @return the meta object for data type '<em>Task Option Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.TaskOptionType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.TaskOptionType" extendedMetaData=
-     *        "name='TaskOptionType:Object' baseType='TaskOptionType'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.TaskOptionType"
+     *        extendedMetaData="name='TaskOptionType:Object' baseType='TaskOptionType'"
      * @generated
      */
     EDataType getTaskOptionTypeObject();
@@ -8263,8 +8274,8 @@ public interface LqnPackage extends EPackage {
      *
      * @return the meta object for data type '<em>Task Scheduling Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.TaskSchedulingType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.TaskSchedulingType" extendedMetaData=
-     *        "name='TaskSchedulingType:Object' baseType='TaskSchedulingType'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.TaskSchedulingType"
+     *        extendedMetaData="name='TaskSchedulingType:Object' baseType='TaskSchedulingType'"
      * @generated
      */
     EDataType getTaskSchedulingTypeObject();
@@ -8275,8 +8286,8 @@ public interface LqnPackage extends EPackage {
      *
      * @return the meta object for data type '<em>Type Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.TypeType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.TypeType" extendedMetaData=
-     *        "name='type_._type:Object' baseType='type_._type'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.TypeType"
+     *        extendedMetaData="name='type_._type:Object' baseType='type_._type'"
      * @generated
      */
     EDataType getTypeTypeObject();
@@ -8287,8 +8298,8 @@ public interface LqnPackage extends EPackage {
      *
      * @return the meta object for data type '<em>Valid Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.ValidType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.ValidType" extendedMetaData=
-     *        "name='valid_._type:Object' baseType='valid_._type'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.ValidType"
+     *        extendedMetaData="name='valid_._type:Object' baseType='valid_._type'"
      * @generated
      */
     EDataType getValidTypeObject();
@@ -8299,8 +8310,8 @@ public interface LqnPackage extends EPackage {
      *
      * @return the meta object for data type '<em>Xml Debug Type Object</em>'.
      * @see org.palladiosimulator.solver.lqn.XmlDebugType
-     * @model instanceClass="org.palladiosimulator.solver.lqn.XmlDebugType" extendedMetaData=
-     *        "name='xml-debug_._type:Object' baseType='xml-debug_._type'"
+     * @model instanceClass="org.palladiosimulator.solver.lqn.XmlDebugType"
+     *        extendedMetaData="name='xml-debug_._type:Object' baseType='xml-debug_._type'"
      * @generated
      */
     EDataType getXmlDebugTypeObject();
@@ -8584,8 +8595,8 @@ public interface LqnPackage extends EPackage {
 
         /**
          * The meta object literal for the '
-         * {@link org.palladiosimulator.solver.lqn.impl.ActivityOrTypeImpl <em>Activity Or Type</em>
-         * }' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * {@link org.palladiosimulator.solver.lqn.impl.ActivityOrTypeImpl
+         * <em>Activity Or Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
          * @see org.palladiosimulator.solver.lqn.impl.ActivityOrTypeImpl
          * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getActivityOrType()
@@ -8700,8 +8711,8 @@ public interface LqnPackage extends EPackage {
 
         /**
          * The meta object literal for the '
-         * {@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl <em>Asynch Call Type</em>
-         * }' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * {@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl
+         * <em>Asynch Call Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
          * @see org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl
          * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getAsynchCallType()
@@ -9278,8 +9289,8 @@ public interface LqnPackage extends EPackage {
 
         /**
          * The meta object literal for the '
-         * {@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl <em>Making Call Type</em>
-         * }' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * {@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl
+         * <em>Making Call Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
          * @see org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl
          * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getMakingCallType()
@@ -10176,8 +10187,8 @@ public interface LqnPackage extends EPackage {
 
         /**
          * The meta object literal for the '
-         * {@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl <em>Reply Entry Type</em>
-         * }' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * {@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl
+         * <em>Reply Entry Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
          * @see org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl
          * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getReplyEntryType()
@@ -10764,8 +10775,8 @@ public interface LqnPackage extends EPackage {
 
         /**
          * The meta object literal for the '
-         * {@link org.palladiosimulator.solver.lqn.impl.RunControlTypeImpl <em>Run Control Type</em>
-         * }' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * {@link org.palladiosimulator.solver.lqn.impl.RunControlTypeImpl
+         * <em>Run Control Type</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
          * @see org.palladiosimulator.solver.lqn.impl.RunControlTypeImpl
          * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getRunControlType()

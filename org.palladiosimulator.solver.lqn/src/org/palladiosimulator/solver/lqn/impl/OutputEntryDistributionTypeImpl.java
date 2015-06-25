@@ -15,11 +15,11 @@ import org.palladiosimulator.solver.lqn.OutputEntryDistributionType;
  * <em><b>Output Entry Distribution Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputEntryDistributionTypeImpl#getPhase
- * <em>Phase</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OutputEntryDistributionTypeImpl#getPhase <em>
+ * Phase</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -84,7 +84,8 @@ public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl 
         final BigInteger oldPhase = this.phase;
         this.phase = newPhase;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
                     oldPhase, this.phase));
         }
     }
@@ -96,7 +97,8 @@ public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl 
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
             return this.getPhase();
         }
@@ -110,7 +112,8 @@ public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl 
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
             this.setPhase((BigInteger) newValue);
             return;
@@ -125,7 +128,8 @@ public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl 
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
             this.setPhase(PHASE_EDEFAULT);
             return;
@@ -140,7 +144,8 @@ public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl 
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
             return PHASE_EDEFAULT == null ? this.phase != null : !PHASE_EDEFAULT.equals(this.phase);
         }

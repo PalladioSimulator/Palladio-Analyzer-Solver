@@ -10,12 +10,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.SynchCallType#getDest <em>Dest</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SynchCallType#getFanin <em>Fanin</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SynchCallType#getFanout <em>Fanout</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getSynchCallType()
  * @model extendedMetaData="name='synch-call_._type' kind='empty'"
@@ -34,8 +34,8 @@ public interface SynchCallType extends EObject {
      * @return the value of the '<em>Dest</em>' attribute.
      * @see #setDest(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSynchCallType_Dest()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='dest' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='dest' namespace='##targetNamespace'"
      * @generated
      */
     String getDest();
@@ -64,8 +64,8 @@ public interface SynchCallType extends EObject {
      * @see #unsetFanin()
      * @see #setFanin(int)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSynchCallType_Fanin()
-     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='attribute' name='fanin' namespace='##targetNamespace'"
+     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='attribute' name='fanin' namespace='##targetNamespace'"
      * @generated
      */
     int getFanin();
@@ -120,8 +120,8 @@ public interface SynchCallType extends EObject {
      * @see #unsetFanout()
      * @see #setFanout(int)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSynchCallType_Fanout()
-     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='attribute' name='fanout' namespace='##targetNamespace'"
+     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='attribute' name='fanout' namespace='##targetNamespace'"
      * @generated
      */
     int getFanout();

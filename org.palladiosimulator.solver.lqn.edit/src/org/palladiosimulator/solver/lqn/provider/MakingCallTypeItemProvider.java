@@ -50,7 +50,8 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addDestPropertyDescriptor(object);
@@ -67,13 +68,20 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
      * @generated
      */
     protected void addDestPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_MakingCallType_dest_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_MakingCallType_dest_feature",
-                        "_UI_MakingCallType_type"),
-                LqnPackage.Literals.MAKING_CALL_TYPE__DEST, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_MakingCallType_dest_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_MakingCallType_dest_feature",
+                                "_UI_MakingCallType_type"),
+                                LqnPackage.Literals.MAKING_CALL_TYPE__DEST,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -83,13 +91,21 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
      * @generated
      */
     protected void addFaninPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_MakingCallType_fanin_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_MakingCallType_fanin_feature",
-                        "_UI_MakingCallType_type"),
-                LqnPackage.Literals.MAKING_CALL_TYPE__FANIN, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_MakingCallType_fanin_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_MakingCallType_fanin_feature",
+                                "_UI_MakingCallType_type"),
+                                LqnPackage.Literals.MAKING_CALL_TYPE__FANIN,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -99,13 +115,21 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
      * @generated
      */
     protected void addFanoutPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_MakingCallType_fanout_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_MakingCallType_fanout_feature",
-                        "_UI_MakingCallType_type"),
-                LqnPackage.Literals.MAKING_CALL_TYPE__FANOUT, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_MakingCallType_fanout_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_MakingCallType_fanout_feature",
+                                "_UI_MakingCallType_type"),
+                                LqnPackage.Literals.MAKING_CALL_TYPE__FANOUT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -119,7 +143,8 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.MAKING_CALL_TYPE__RESULT_CALL);
         }
@@ -158,8 +183,9 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
     @Override
     public String getText(final Object object) {
         final String label = ((MakingCallType) object).getDest();
-        return label == null || label.length() == 0 ? this.getString("_UI_MakingCallType_type")
-                : this.getString("_UI_MakingCallType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_MakingCallType_type") :
+                this.getString("_UI_MakingCallType_type") + " " + label;
     }
 
     /**
@@ -173,7 +199,8 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(MakingCallType.class)) {
+        switch (notification.getFeatureID(MakingCallType.class))
+        {
         case LqnPackage.MAKING_CALL_TYPE__DEST:
         case LqnPackage.MAKING_CALL_TYPE__FANIN:
         case LqnPackage.MAKING_CALL_TYPE__FANOUT:
@@ -196,8 +223,10 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.MAKING_CALL_TYPE__RESULT_CALL,
-                LqnFactory.eINSTANCE.createOutputResultType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.MAKING_CALL_TYPE__RESULT_CALL,
+                        LqnFactory.eINSTANCE.createOutputResultType()));
     }
 
     /**

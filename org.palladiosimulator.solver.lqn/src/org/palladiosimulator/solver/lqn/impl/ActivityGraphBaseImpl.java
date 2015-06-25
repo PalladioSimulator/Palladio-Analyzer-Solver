@@ -21,13 +21,13 @@ import org.palladiosimulator.solver.lqn.PrecedenceType;
  * <em><b>Activity Graph Base</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityGraphBaseImpl#getActivity
- * <em>Activity</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityGraphBaseImpl#getPrecedence
- * <em>Precedence</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityGraphBaseImpl#getActivity <em>Activity
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityGraphBaseImpl#getPrecedence <em>
+ * Precedence</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -79,7 +79,8 @@ public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphB
      */
     @Override
     public EList<ActivityDefType> getActivity() {
-        if (this.activity == null) {
+        if (this.activity == null)
+        {
             this.activity = new EObjectContainmentEList<ActivityDefType>(ActivityDefType.class, this,
                     LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY);
         }
@@ -93,7 +94,8 @@ public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphB
      */
     @Override
     public EList<PrecedenceType> getPrecedence() {
-        if (this.precedence == null) {
+        if (this.precedence == null)
+        {
             this.precedence = new EObjectContainmentEList<PrecedenceType>(PrecedenceType.class, this,
                     LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE);
         }
@@ -108,7 +110,8 @@ public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphB
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
             return ((InternalEList<?>) this.getActivity()).basicRemove(otherEnd, msgs);
         case LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
@@ -124,7 +127,8 @@ public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphB
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
             return this.getActivity();
         case LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
@@ -141,7 +145,8 @@ public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphB
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
             this.getActivity().clear();
             this.getActivity().addAll((Collection<? extends ActivityDefType>) newValue);
@@ -161,7 +166,8 @@ public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphB
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
             this.getActivity().clear();
             return;
@@ -179,7 +185,8 @@ public class ActivityGraphBaseImpl extends EObjectImpl implements ActivityGraphB
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
             return this.activity != null && !this.activity.isEmpty();
         case LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:

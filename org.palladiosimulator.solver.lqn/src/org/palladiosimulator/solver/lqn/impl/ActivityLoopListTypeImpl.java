@@ -22,13 +22,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Activity Loop List Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopListTypeImpl#getActivity
- * <em>Activity</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopListTypeImpl#getEnd <em>End</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopListTypeImpl#getActivity <em>
+ * Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopListTypeImpl#getEnd <em>End</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -90,7 +89,8 @@ public class ActivityLoopListTypeImpl extends EObjectImpl implements ActivityLoo
      */
     @Override
     public EList<ActivityLoopType> getActivity() {
-        if (this.activity == null) {
+        if (this.activity == null)
+        {
             this.activity = new EObjectContainmentEList<ActivityLoopType>(ActivityLoopType.class, this,
                     LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY);
         }
@@ -130,7 +130,8 @@ public class ActivityLoopListTypeImpl extends EObjectImpl implements ActivityLoo
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
             return ((InternalEList<?>) this.getActivity()).basicRemove(otherEnd, msgs);
         }
@@ -144,7 +145,8 @@ public class ActivityLoopListTypeImpl extends EObjectImpl implements ActivityLoo
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
             return this.getActivity();
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END:
@@ -161,7 +163,8 @@ public class ActivityLoopListTypeImpl extends EObjectImpl implements ActivityLoo
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             this.getActivity().addAll((Collection<? extends ActivityLoopType>) newValue);
@@ -180,7 +183,8 @@ public class ActivityLoopListTypeImpl extends EObjectImpl implements ActivityLoo
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             return;
@@ -198,7 +202,8 @@ public class ActivityLoopListTypeImpl extends EObjectImpl implements ActivityLoo
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
             return this.activity != null && !this.activity.isEmpty();
         case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END:

@@ -41,7 +41,8 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addPhasePropertyDescriptor(object);
@@ -56,13 +57,22 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
      * @generated
      */
     protected void addPhasePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputEntryDistributionType_phase_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputEntryDistributionType_phase_feature",
-                        "_UI_OutputEntryDistributionType_type"),
-                LqnPackage.Literals.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputEntryDistributionType_phase_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputEntryDistributionType_phase_feature",
+                                "_UI_OutputEntryDistributionType_type"),
+                                LqnPackage.Literals.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -85,8 +95,9 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
     public String getText(final Object object) {
         final Object labelValue = ((OutputEntryDistributionType) object).getBinSize();
         final String label = labelValue == null ? null : labelValue.toString();
-        return label == null || label.length() == 0 ? this.getString("_UI_OutputEntryDistributionType_type")
-                : this.getString("_UI_OutputEntryDistributionType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_OutputEntryDistributionType_type") :
+                this.getString("_UI_OutputEntryDistributionType_type") + " " + label;
     }
 
     /**
@@ -100,7 +111,8 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(OutputEntryDistributionType.class)) {
+        switch (notification.getFeatureID(OutputEntryDistributionType.class))
+        {
         case LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;
@@ -131,13 +143,17 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
         final Object childFeature = feature;
         final Object childObject = child;
 
-        final boolean qualify = childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN
-                || childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN
-                || childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
+        final boolean qualify =
+                childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN ||
+                        childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN ||
+                        childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
 
-        if (qualify) {
-            return this.getString("_UI_CreateChild_text2", new Object[] { this.getTypeText(childObject),
-                    this.getFeatureText(childFeature), this.getTypeText(owner) });
+        if (qualify)
+        {
+            return this.getString(
+                    "_UI_CreateChild_text2",
+                    new Object[] { this.getTypeText(childObject), this.getFeatureText(childFeature),
+                            this.getTypeText(owner) });
         }
         return super.getCreateChildText(owner, feature, child, selection);
     }

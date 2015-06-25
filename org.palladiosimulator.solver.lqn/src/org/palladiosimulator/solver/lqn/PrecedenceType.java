@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPre <em>Pre</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPreOR <em>Pre OR</em>}</li>
@@ -20,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPostAND <em>Post AND</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPostLOOP <em>Post LOOP</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPrecedenceType()
  * @model extendedMetaData="name='PrecedenceType' kind='elementOnly'"
@@ -38,8 +38,8 @@ public interface PrecedenceType extends EObject {
      * @return the value of the '<em>Pre</em>' containment reference.
      * @see #setPre(SingleActivityListType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPrecedenceType_Pre()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='pre' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='pre' namespace='##targetNamespace'"
      * @generated
      */
     SingleActivityListType getPre();
@@ -67,8 +67,8 @@ public interface PrecedenceType extends EObject {
      * @return the value of the '<em>Pre OR</em>' containment reference.
      * @see #setPreOR(ActivityListType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPrecedenceType_PreOR()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='pre-OR' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='pre-OR' namespace='##targetNamespace'"
      * @generated
      */
     ActivityListType getPreOR();
@@ -96,8 +96,8 @@ public interface PrecedenceType extends EObject {
      * @return the value of the '<em>Pre AND</em>' containment reference.
      * @see #setPreAND(AndJoinListType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPrecedenceType_PreAND()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='pre-AND' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='pre-AND' namespace='##targetNamespace'"
      * @generated
      */
     AndJoinListType getPreAND();
@@ -125,8 +125,8 @@ public interface PrecedenceType extends EObject {
      * @return the value of the '<em>Post</em>' containment reference.
      * @see #setPost(SingleActivityListType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPrecedenceType_Post()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='post' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='post' namespace='##targetNamespace'"
      * @generated
      */
     SingleActivityListType getPost();
@@ -154,8 +154,8 @@ public interface PrecedenceType extends EObject {
      * @return the value of the '<em>Post OR</em>' containment reference.
      * @see #setPostOR(OrListType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPrecedenceType_PostOR()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='post-OR' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='post-OR' namespace='##targetNamespace'"
      * @generated
      */
     OrListType getPostOR();

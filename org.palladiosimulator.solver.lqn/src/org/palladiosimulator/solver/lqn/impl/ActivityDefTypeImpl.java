@@ -24,19 +24,18 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getCallList
- * <em>Call List</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getGroup <em>Group</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getSynchCall
- * <em>Synch Call</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getAsynchCall
- * <em>Asynch Call</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getBoundToEntry
- * <em>Bound To Entry</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getCallList <em>Call List
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getGroup <em>Group</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getSynchCall <em>Synch Call
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getAsynchCall <em>Asynch
+ * Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getBoundToEntry <em>Bound To
+ * Entry</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -108,7 +107,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
      */
     @Override
     public EList<CallListType> getCallList() {
-        if (this.callList == null) {
+        if (this.callList == null)
+        {
             this.callList = new EObjectContainmentEList<CallListType>(CallListType.class, this,
                     LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST);
         }
@@ -122,7 +122,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
      */
     @Override
     public FeatureMap getGroup() {
-        if (this.group == null) {
+        if (this.group == null)
+        {
             this.group = new BasicFeatureMap(this, LqnPackage.ACTIVITY_DEF_TYPE__GROUP);
         }
         return this.group;
@@ -181,7 +182,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST:
             return ((InternalEList<?>) this.getCallList()).basicRemove(otherEnd, msgs);
         case LqnPackage.ACTIVITY_DEF_TYPE__GROUP:
@@ -201,7 +203,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST:
             return this.getCallList();
         case LqnPackage.ACTIVITY_DEF_TYPE__GROUP:
@@ -227,7 +230,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST:
             this.getCallList().clear();
             this.getCallList().addAll((Collection<? extends CallListType>) newValue);
@@ -257,7 +261,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST:
             this.getCallList().clear();
             return;
@@ -284,7 +289,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST:
             return this.callList != null && !this.callList.isEmpty();
         case LqnPackage.ACTIVITY_DEF_TYPE__GROUP:
@@ -294,8 +300,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
         case LqnPackage.ACTIVITY_DEF_TYPE__ASYNCH_CALL:
             return !this.getAsynchCall().isEmpty();
         case LqnPackage.ACTIVITY_DEF_TYPE__BOUND_TO_ENTRY:
-            return BOUND_TO_ENTRY_EDEFAULT == null ? this.boundToEntry != null
-                    : !BOUND_TO_ENTRY_EDEFAULT.equals(this.boundToEntry);
+            return BOUND_TO_ENTRY_EDEFAULT == null ? this.boundToEntry != null : !BOUND_TO_ENTRY_EDEFAULT
+            .equals(this.boundToEntry);
         }
         return super.eIsSet(featureID);
     }

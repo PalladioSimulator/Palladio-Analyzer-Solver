@@ -26,7 +26,6 @@ import org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl#getResourceDemands_ComputedAllocationContext
@@ -38,6 +37,7 @@ import org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext;
  * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl#getAllocationContext_ComputedAllocationContext
  * <em>Allocation Context Computed Allocation Context</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -109,7 +109,8 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
      */
     @Override
     public EList<ResourceDemand> getResourceDemands_ComputedAllocationContext() {
-        if (this.resourceDemands_ComputedAllocationContext == null) {
+        if (this.resourceDemands_ComputedAllocationContext == null)
+        {
             this.resourceDemands_ComputedAllocationContext = new EObjectContainmentEList<ResourceDemand>(
                     ResourceDemand.class, this,
                     ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT);
@@ -125,13 +126,17 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
     @Override
     public ComputedUsageContext getUsageContext_ComputedAllocationContext() {
         if (this.usageContext_ComputedAllocationContext != null
-                && this.usageContext_ComputedAllocationContext.eIsProxy()) {
+                && this.usageContext_ComputedAllocationContext.eIsProxy())
+        {
             final InternalEObject oldUsageContext_ComputedAllocationContext = (InternalEObject) this.usageContext_ComputedAllocationContext;
             this.usageContext_ComputedAllocationContext = (ComputedUsageContext) this
                     .eResolveProxy(oldUsageContext_ComputedAllocationContext);
-            if (this.usageContext_ComputedAllocationContext != oldUsageContext_ComputedAllocationContext) {
+            if (this.usageContext_ComputedAllocationContext != oldUsageContext_ComputedAllocationContext)
+            {
                 if (this.eNotificationRequired()) {
-                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+                    this.eNotify(new ENotificationImpl(
+                            this,
+                            Notification.RESOLVE,
                             ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__USAGE_CONTEXT_COMPUTED_ALLOCATION_CONTEXT,
                             oldUsageContext_ComputedAllocationContext, this.usageContext_ComputedAllocationContext));
                 }
@@ -174,13 +179,17 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
     @Override
     public AllocationContext getAllocationContext_ComputedAllocationContext() {
         if (this.allocationContext_ComputedAllocationContext != null
-                && ((EObject) this.allocationContext_ComputedAllocationContext).eIsProxy()) {
+                && ((EObject) this.allocationContext_ComputedAllocationContext).eIsProxy())
+        {
             final InternalEObject oldAllocationContext_ComputedAllocationContext = (InternalEObject) this.allocationContext_ComputedAllocationContext;
             this.allocationContext_ComputedAllocationContext = (AllocationContext) this
                     .eResolveProxy(oldAllocationContext_ComputedAllocationContext);
-            if (this.allocationContext_ComputedAllocationContext != oldAllocationContext_ComputedAllocationContext) {
+            if (this.allocationContext_ComputedAllocationContext != oldAllocationContext_ComputedAllocationContext)
+            {
                 if (this.eNotificationRequired()) {
-                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+                    this.eNotify(new ENotificationImpl(
+                            this,
+                            Notification.RESOLVE,
                             ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT,
                             oldAllocationContext_ComputedAllocationContext,
                             this.allocationContext_ComputedAllocationContext));
@@ -210,7 +219,9 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
         final AllocationContext oldAllocationContext_ComputedAllocationContext = this.allocationContext_ComputedAllocationContext;
         this.allocationContext_ComputedAllocationContext = newAllocationContext_ComputedAllocationContext;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET,
+            this.eNotify(new ENotificationImpl(
+                    this,
+                    Notification.SET,
                     ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT,
                     oldAllocationContext_ComputedAllocationContext, this.allocationContext_ComputedAllocationContext));
         }
@@ -224,7 +235,8 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT:
             return ((InternalEList<?>) this.getResourceDemands_ComputedAllocationContext()).basicRemove(otherEnd, msgs);
         }
@@ -238,7 +250,8 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT:
             return this.getResourceDemands_ComputedAllocationContext();
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__USAGE_CONTEXT_COMPUTED_ALLOCATION_CONTEXT:
@@ -263,7 +276,8 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT:
             this.getResourceDemands_ComputedAllocationContext().clear();
             this.getResourceDemands_ComputedAllocationContext().addAll((Collection<? extends ResourceDemand>) newValue);
@@ -285,7 +299,8 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT:
             this.getResourceDemands_ComputedAllocationContext().clear();
             return;
@@ -306,10 +321,11 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT:
             return this.resourceDemands_ComputedAllocationContext != null
-                    && !this.resourceDemands_ComputedAllocationContext.isEmpty();
+            && !this.resourceDemands_ComputedAllocationContext.isEmpty();
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__USAGE_CONTEXT_COMPUTED_ALLOCATION_CONTEXT:
             return this.usageContext_ComputedAllocationContext != null;
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT:

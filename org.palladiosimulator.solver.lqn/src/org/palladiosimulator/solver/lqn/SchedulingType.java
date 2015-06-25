@@ -200,8 +200,16 @@ public enum SchedulingType implements Enumerator {
      *
      * @generated
      */
-    private static final SchedulingType[] VALUES_ARRAY = new SchedulingType[] { FCFS, PS, PP, RAND, HOL, PS_HOL,
-            PS_PP, };
+    private static final SchedulingType[] VALUES_ARRAY = new SchedulingType[]
+            {
+        FCFS,
+        PS,
+        PP,
+        RAND,
+        HOL,
+        PS_HOL,
+        PS_PP,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Scheduling Type</b></em>' enumerators. <!--
@@ -222,7 +230,8 @@ public enum SchedulingType implements Enumerator {
      */
     public static SchedulingType get(final String literal) {
         for (final SchedulingType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -240,7 +249,8 @@ public enum SchedulingType implements Enumerator {
      */
     public static SchedulingType getByName(final String name) {
         for (final SchedulingType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -257,7 +267,8 @@ public enum SchedulingType implements Enumerator {
      * @generated
      */
     public static SchedulingType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case FCFS_VALUE:
             return FCFS;
         case PS_VALUE:

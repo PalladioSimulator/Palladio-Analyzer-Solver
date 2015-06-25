@@ -53,7 +53,8 @@ public class ComputedAllocationContextItemProvider extends EntityItemProvider {
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addUsageContext_ComputedAllocationContextPropertyDescriptor(object);
@@ -69,14 +70,22 @@ public class ComputedAllocationContextItemProvider extends EntityItemProvider {
      * @generated
      */
     protected void addUsageContext_ComputedAllocationContextPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ComputedAllocationContext_usageContext_ComputedAllocationContext_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ComputedAllocationContext_usageContext_ComputedAllocationContext_feature",
-                        "_UI_ComputedAllocationContext_type"),
-                ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__USAGE_CONTEXT_COMPUTED_ALLOCATION_CONTEXT,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ComputedAllocationContext_usageContext_ComputedAllocationContext_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ComputedAllocationContext_usageContext_ComputedAllocationContext_feature",
+                                "_UI_ComputedAllocationContext_type"),
+                                ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__USAGE_CONTEXT_COMPUTED_ALLOCATION_CONTEXT,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -86,14 +95,23 @@ public class ComputedAllocationContextItemProvider extends EntityItemProvider {
      * @generated
      */
     protected void addAllocationContext_ComputedAllocationContextPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ComputedAllocationContext_allocationContext_ComputedAllocationContext_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ComputedAllocationContext_allocationContext_ComputedAllocationContext_feature",
-                        "_UI_ComputedAllocationContext_type"),
-                ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ComputedAllocationContext_allocationContext_ComputedAllocationContext_feature"),
+                        this.getString(
+                                "_UI_PropertyDescriptor_description",
+                                "_UI_ComputedAllocationContext_allocationContext_ComputedAllocationContext_feature",
+                                "_UI_ComputedAllocationContext_type"),
+                                ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -107,10 +125,11 @@ public class ComputedAllocationContextItemProvider extends EntityItemProvider {
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
-            this.childrenFeatures.add(
-                    ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT);
+            this.childrenFeatures
+                    .add(ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT);
         }
         return this.childrenFeatures;
     }
@@ -147,8 +166,9 @@ public class ComputedAllocationContextItemProvider extends EntityItemProvider {
     @Override
     public String getText(final Object object) {
         final String label = ((ComputedAllocationContext) object).getId();
-        return label == null || label.length() == 0 ? this.getString("_UI_ComputedAllocationContext_type")
-                : this.getString("_UI_ComputedAllocationContext_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ComputedAllocationContext_type") :
+                this.getString("_UI_ComputedAllocationContext_type") + " " + label;
     }
 
     /**
@@ -162,7 +182,8 @@ public class ComputedAllocationContextItemProvider extends EntityItemProvider {
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ComputedAllocationContext.class)) {
+        switch (notification.getFeatureID(ComputedAllocationContext.class))
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -180,9 +201,11 @@ public class ComputedAllocationContextItemProvider extends EntityItemProvider {
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT,
-                ComputedAllocationFactory.eINSTANCE.createResourceDemand()));
+        newChildDescriptors
+                .add
+                (this.createChildParameter
+                (ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT,
+                        ComputedAllocationFactory.eINSTANCE.createResourceDemand()));
     }
 
     /**

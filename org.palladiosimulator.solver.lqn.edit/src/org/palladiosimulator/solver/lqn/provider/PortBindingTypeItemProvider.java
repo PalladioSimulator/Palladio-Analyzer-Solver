@@ -48,7 +48,8 @@ public class PortBindingTypeItemProvider extends ItemProviderAdapter implements 
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addSourcePropertyDescriptor(object);
@@ -64,13 +65,21 @@ public class PortBindingTypeItemProvider extends ItemProviderAdapter implements 
      * @generated
      */
     protected void addSourcePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_PortBindingType_source_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_PortBindingType_source_feature",
-                        "_UI_PortBindingType_type"),
-                LqnPackage.Literals.PORT_BINDING_TYPE__SOURCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_PortBindingType_source_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_PortBindingType_source_feature",
+                                "_UI_PortBindingType_type"),
+                                LqnPackage.Literals.PORT_BINDING_TYPE__SOURCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -80,13 +89,21 @@ public class PortBindingTypeItemProvider extends ItemProviderAdapter implements 
      * @generated
      */
     protected void addTargetPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_PortBindingType_target_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_PortBindingType_target_feature",
-                        "_UI_PortBindingType_type"),
-                LqnPackage.Literals.PORT_BINDING_TYPE__TARGET, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_PortBindingType_target_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_PortBindingType_target_feature",
+                                "_UI_PortBindingType_type"),
+                                LqnPackage.Literals.PORT_BINDING_TYPE__TARGET,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -108,8 +125,9 @@ public class PortBindingTypeItemProvider extends ItemProviderAdapter implements 
     @Override
     public String getText(final Object object) {
         final String label = ((PortBindingType) object).getSource();
-        return label == null || label.length() == 0 ? this.getString("_UI_PortBindingType_type")
-                : this.getString("_UI_PortBindingType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_PortBindingType_type") :
+                this.getString("_UI_PortBindingType_type") + " " + label;
     }
 
     /**
@@ -123,7 +141,8 @@ public class PortBindingTypeItemProvider extends ItemProviderAdapter implements 
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(PortBindingType.class)) {
+        switch (notification.getFeatureID(PortBindingType.class))
+        {
         case LqnPackage.PORT_BINDING_TYPE__SOURCE:
         case LqnPackage.PORT_BINDING_TYPE__TARGET:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));

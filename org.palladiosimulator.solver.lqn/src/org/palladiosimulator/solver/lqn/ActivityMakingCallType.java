@@ -8,11 +8,11 @@ package org.palladiosimulator.solver.lqn;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityMakingCallType#getCallsMean
- * <em>Calls Mean</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityMakingCallType#getCallsMean <em>Calls Mean
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityMakingCallType()
  * @model extendedMetaData="name='ActivityMakingCallType' kind='elementOnly'"

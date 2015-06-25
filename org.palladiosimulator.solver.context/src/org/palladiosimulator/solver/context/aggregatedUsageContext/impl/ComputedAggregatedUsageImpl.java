@@ -21,12 +21,12 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecut
  * <em><b>Computed Aggregated Usage</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ComputedAggregatedUsageImpl#getServiceExecutionContexts_ComputedAggregatedUsage
  * <em>Service Execution Contexts Computed Aggregated Usage</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -76,9 +76,11 @@ public class ComputedAggregatedUsageImpl extends EObjectImpl implements Computed
      */
     @Override
     public EList<ServiceExecutionContext> getServiceExecutionContexts_ComputedAggregatedUsage() {
-        if (this.serviceExecutionContexts_ComputedAggregatedUsage == null) {
+        if (this.serviceExecutionContexts_ComputedAggregatedUsage == null)
+        {
             this.serviceExecutionContexts_ComputedAggregatedUsage = new EObjectContainmentEList<ServiceExecutionContext>(
-                    ServiceExecutionContext.class, this,
+                    ServiceExecutionContext.class,
+                    this,
                     AggregatedUsageContextPackage.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE);
         }
         return this.serviceExecutionContexts_ComputedAggregatedUsage;
@@ -92,9 +94,11 @@ public class ComputedAggregatedUsageImpl extends EObjectImpl implements Computed
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE:
-            return ((InternalEList<?>) this.getServiceExecutionContexts_ComputedAggregatedUsage()).basicRemove(otherEnd,
+            return ((InternalEList<?>) this.getServiceExecutionContexts_ComputedAggregatedUsage()).basicRemove(
+                    otherEnd,
                     msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -107,7 +111,8 @@ public class ComputedAggregatedUsageImpl extends EObjectImpl implements Computed
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE:
             return this.getServiceExecutionContexts_ComputedAggregatedUsage();
         }
@@ -122,11 +127,12 @@ public class ComputedAggregatedUsageImpl extends EObjectImpl implements Computed
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE:
             this.getServiceExecutionContexts_ComputedAggregatedUsage().clear();
-            this.getServiceExecutionContexts_ComputedAggregatedUsage()
-                    .addAll((Collection<? extends ServiceExecutionContext>) newValue);
+            this.getServiceExecutionContexts_ComputedAggregatedUsage().addAll(
+                    (Collection<? extends ServiceExecutionContext>) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -139,7 +145,8 @@ public class ComputedAggregatedUsageImpl extends EObjectImpl implements Computed
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE:
             this.getServiceExecutionContexts_ComputedAggregatedUsage().clear();
             return;
@@ -154,10 +161,11 @@ public class ComputedAggregatedUsageImpl extends EObjectImpl implements Computed
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE:
             return this.serviceExecutionContexts_ComputedAggregatedUsage != null
-                    && !this.serviceExecutionContexts_ComputedAggregatedUsage.isEmpty();
+            && !this.serviceExecutionContexts_ComputedAggregatedUsage.isEmpty();
         }
         return super.eIsSet(featureID);
     }

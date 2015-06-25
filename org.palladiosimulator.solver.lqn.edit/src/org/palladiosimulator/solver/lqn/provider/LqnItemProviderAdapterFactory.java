@@ -87,7 +87,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityDefBaseAdapter() {
-        if (this.activityDefBaseItemProvider == null) {
+        if (this.activityDefBaseItemProvider == null)
+        {
             this.activityDefBaseItemProvider = new ActivityDefBaseItemProvider(this);
         }
 
@@ -111,7 +112,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityDefTypeAdapter() {
-        if (this.activityDefTypeItemProvider == null) {
+        if (this.activityDefTypeItemProvider == null)
+        {
             this.activityDefTypeItemProvider = new ActivityDefTypeItemProvider(this);
         }
 
@@ -135,7 +137,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityGraphBaseAdapter() {
-        if (this.activityGraphBaseItemProvider == null) {
+        if (this.activityGraphBaseItemProvider == null)
+        {
             this.activityGraphBaseItemProvider = new ActivityGraphBaseItemProvider(this);
         }
 
@@ -159,7 +162,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityListTypeAdapter() {
-        if (this.activityListTypeItemProvider == null) {
+        if (this.activityListTypeItemProvider == null)
+        {
             this.activityListTypeItemProvider = new ActivityListTypeItemProvider(this);
         }
 
@@ -183,7 +187,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityLoopListTypeAdapter() {
-        if (this.activityLoopListTypeItemProvider == null) {
+        if (this.activityLoopListTypeItemProvider == null)
+        {
             this.activityLoopListTypeItemProvider = new ActivityLoopListTypeItemProvider(this);
         }
 
@@ -207,7 +212,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityLoopTypeAdapter() {
-        if (this.activityLoopTypeItemProvider == null) {
+        if (this.activityLoopTypeItemProvider == null)
+        {
             this.activityLoopTypeItemProvider = new ActivityLoopTypeItemProvider(this);
         }
 
@@ -231,7 +237,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityMakingCallTypeAdapter() {
-        if (this.activityMakingCallTypeItemProvider == null) {
+        if (this.activityMakingCallTypeItemProvider == null)
+        {
             this.activityMakingCallTypeItemProvider = new ActivityMakingCallTypeItemProvider(this);
         }
 
@@ -255,7 +262,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityOrTypeAdapter() {
-        if (this.activityOrTypeItemProvider == null) {
+        if (this.activityOrTypeItemProvider == null)
+        {
             this.activityOrTypeItemProvider = new ActivityOrTypeItemProvider(this);
         }
 
@@ -279,7 +287,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityPhasesTypeAdapter() {
-        if (this.activityPhasesTypeItemProvider == null) {
+        if (this.activityPhasesTypeItemProvider == null)
+        {
             this.activityPhasesTypeItemProvider = new ActivityPhasesTypeItemProvider(this);
         }
 
@@ -303,7 +312,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createActivityTypeAdapter() {
-        if (this.activityTypeItemProvider == null) {
+        if (this.activityTypeItemProvider == null)
+        {
             this.activityTypeItemProvider = new ActivityTypeItemProvider(this);
         }
 
@@ -327,7 +337,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createAndJoinListTypeAdapter() {
-        if (this.andJoinListTypeItemProvider == null) {
+        if (this.andJoinListTypeItemProvider == null)
+        {
             this.andJoinListTypeItemProvider = new AndJoinListTypeItemProvider(this);
         }
 
@@ -351,7 +362,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createAsynchCallTypeAdapter() {
-        if (this.asynchCallTypeItemProvider == null) {
+        if (this.asynchCallTypeItemProvider == null)
+        {
             this.asynchCallTypeItemProvider = new AsynchCallTypeItemProvider(this);
         }
 
@@ -375,7 +387,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createBindTypeAdapter() {
-        if (this.bindTypeItemProvider == null) {
+        if (this.bindTypeItemProvider == null)
+        {
             this.bindTypeItemProvider = new BindTypeItemProvider(this);
         }
 
@@ -399,7 +412,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createCallListTypeAdapter() {
-        if (this.callListTypeItemProvider == null) {
+        if (this.callListTypeItemProvider == null)
+        {
             this.callListTypeItemProvider = new CallListTypeItemProvider(this);
         }
 
@@ -423,7 +437,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createDocumentRootAdapter() {
-        if (this.documentRootItemProvider == null) {
+        if (this.documentRootItemProvider == null)
+        {
             this.documentRootItemProvider = new DocumentRootItemProvider(this);
         }
 
@@ -447,7 +462,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createEntryActivityDefTypeAdapter() {
-        if (this.entryActivityDefTypeItemProvider == null) {
+        if (this.entryActivityDefTypeItemProvider == null)
+        {
             this.entryActivityDefTypeItemProvider = new EntryActivityDefTypeItemProvider(this);
         }
 
@@ -471,7 +487,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createEntryActivityGraphAdapter() {
-        if (this.entryActivityGraphItemProvider == null) {
+        if (this.entryActivityGraphItemProvider == null)
+        {
             this.entryActivityGraphItemProvider = new EntryActivityGraphItemProvider(this);
         }
 
@@ -495,7 +512,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createEntryMakingCallTypeAdapter() {
-        if (this.entryMakingCallTypeItemProvider == null) {
+        if (this.entryMakingCallTypeItemProvider == null)
+        {
             this.entryMakingCallTypeItemProvider = new EntryMakingCallTypeItemProvider(this);
         }
 
@@ -519,7 +537,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createEntryTypeAdapter() {
-        if (this.entryTypeItemProvider == null) {
+        if (this.entryTypeItemProvider == null)
+        {
             this.entryTypeItemProvider = new EntryTypeItemProvider(this);
         }
 
@@ -543,7 +562,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createFirstPlotTypeAdapter() {
-        if (this.firstPlotTypeItemProvider == null) {
+        if (this.firstPlotTypeItemProvider == null)
+        {
             this.firstPlotTypeItemProvider = new FirstPlotTypeItemProvider(this);
         }
 
@@ -567,7 +587,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createHistogramBinTypeAdapter() {
-        if (this.histogramBinTypeItemProvider == null) {
+        if (this.histogramBinTypeItemProvider == null)
+        {
             this.histogramBinTypeItemProvider = new HistogramBinTypeItemProvider(this);
         }
 
@@ -591,7 +612,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createInPortTypeAdapter() {
-        if (this.inPortTypeItemProvider == null) {
+        if (this.inPortTypeItemProvider == null)
+        {
             this.inPortTypeItemProvider = new InPortTypeItemProvider(this);
         }
 
@@ -615,7 +637,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createInterfaceTypeAdapter() {
-        if (this.interfaceTypeItemProvider == null) {
+        if (this.interfaceTypeItemProvider == null)
+        {
             this.interfaceTypeItemProvider = new InterfaceTypeItemProvider(this);
         }
 
@@ -639,7 +662,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createLqnCoreTypeAdapter() {
-        if (this.lqnCoreTypeItemProvider == null) {
+        if (this.lqnCoreTypeItemProvider == null)
+        {
             this.lqnCoreTypeItemProvider = new LqnCoreTypeItemProvider(this);
         }
 
@@ -663,7 +687,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createLqnModelTypeAdapter() {
-        if (this.lqnModelTypeItemProvider == null) {
+        if (this.lqnModelTypeItemProvider == null)
+        {
             this.lqnModelTypeItemProvider = new LqnModelTypeItemProvider(this);
         }
 
@@ -687,7 +712,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createMakingCallTypeAdapter() {
-        if (this.makingCallTypeItemProvider == null) {
+        if (this.makingCallTypeItemProvider == null)
+        {
             this.makingCallTypeItemProvider = new MakingCallTypeItemProvider(this);
         }
 
@@ -711,7 +737,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createOrListTypeAdapter() {
-        if (this.orListTypeItemProvider == null) {
+        if (this.orListTypeItemProvider == null)
+        {
             this.orListTypeItemProvider = new OrListTypeItemProvider(this);
         }
 
@@ -735,7 +762,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createOutPortTypeAdapter() {
-        if (this.outPortTypeItemProvider == null) {
+        if (this.outPortTypeItemProvider == null)
+        {
             this.outPortTypeItemProvider = new OutPortTypeItemProvider(this);
         }
 
@@ -759,7 +787,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createOutputDistributionTypeAdapter() {
-        if (this.outputDistributionTypeItemProvider == null) {
+        if (this.outputDistributionTypeItemProvider == null)
+        {
             this.outputDistributionTypeItemProvider = new OutputDistributionTypeItemProvider(this);
         }
 
@@ -784,7 +813,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createOutputEntryDistributionTypeAdapter() {
-        if (this.outputEntryDistributionTypeItemProvider == null) {
+        if (this.outputEntryDistributionTypeItemProvider == null)
+        {
             this.outputEntryDistributionTypeItemProvider = new OutputEntryDistributionTypeItemProvider(this);
         }
 
@@ -809,7 +839,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createOutputResultForwardingANDJoinDelayAdapter() {
-        if (this.outputResultForwardingANDJoinDelayItemProvider == null) {
+        if (this.outputResultForwardingANDJoinDelayItemProvider == null)
+        {
             this.outputResultForwardingANDJoinDelayItemProvider = new OutputResultForwardingANDJoinDelayItemProvider(
                     this);
         }
@@ -834,7 +865,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createOutputResultTypeAdapter() {
-        if (this.outputResultTypeItemProvider == null) {
+        if (this.outputResultTypeItemProvider == null)
+        {
             this.outputResultTypeItemProvider = new OutputResultTypeItemProvider(this);
         }
 
@@ -858,7 +890,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createParameterTypeAdapter() {
-        if (this.parameterTypeItemProvider == null) {
+        if (this.parameterTypeItemProvider == null)
+        {
             this.parameterTypeItemProvider = new ParameterTypeItemProvider(this);
         }
 
@@ -882,7 +915,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createParaTypeAdapter() {
-        if (this.paraTypeItemProvider == null) {
+        if (this.paraTypeItemProvider == null)
+        {
             this.paraTypeItemProvider = new ParaTypeItemProvider(this);
         }
 
@@ -906,7 +940,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createPhaseActivitiesAdapter() {
-        if (this.phaseActivitiesItemProvider == null) {
+        if (this.phaseActivitiesItemProvider == null)
+        {
             this.phaseActivitiesItemProvider = new PhaseActivitiesItemProvider(this);
         }
 
@@ -930,7 +965,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createPlotControlTypeAdapter() {
-        if (this.plotControlTypeItemProvider == null) {
+        if (this.plotControlTypeItemProvider == null)
+        {
             this.plotControlTypeItemProvider = new PlotControlTypeItemProvider(this);
         }
 
@@ -954,7 +990,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createPlotTypeAdapter() {
-        if (this.plotTypeItemProvider == null) {
+        if (this.plotTypeItemProvider == null)
+        {
             this.plotTypeItemProvider = new PlotTypeItemProvider(this);
         }
 
@@ -978,7 +1015,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createPortBindingTypeAdapter() {
-        if (this.portBindingTypeItemProvider == null) {
+        if (this.portBindingTypeItemProvider == null)
+        {
             this.portBindingTypeItemProvider = new PortBindingTypeItemProvider(this);
         }
 
@@ -1002,7 +1040,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createPragmaTypeAdapter() {
-        if (this.pragmaTypeItemProvider == null) {
+        if (this.pragmaTypeItemProvider == null)
+        {
             this.pragmaTypeItemProvider = new PragmaTypeItemProvider(this);
         }
 
@@ -1026,7 +1065,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createPrecedenceTypeAdapter() {
-        if (this.precedenceTypeItemProvider == null) {
+        if (this.precedenceTypeItemProvider == null)
+        {
             this.precedenceTypeItemProvider = new PrecedenceTypeItemProvider(this);
         }
 
@@ -1050,7 +1090,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createProcessorBindingTypeAdapter() {
-        if (this.processorBindingTypeItemProvider == null) {
+        if (this.processorBindingTypeItemProvider == null)
+        {
             this.processorBindingTypeItemProvider = new ProcessorBindingTypeItemProvider(this);
         }
 
@@ -1074,7 +1115,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createProcessorTypeAdapter() {
-        if (this.processorTypeItemProvider == null) {
+        if (this.processorTypeItemProvider == null)
+        {
             this.processorTypeItemProvider = new ProcessorTypeItemProvider(this);
         }
 
@@ -1098,7 +1140,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createReplyActivityTypeAdapter() {
-        if (this.replyActivityTypeItemProvider == null) {
+        if (this.replyActivityTypeItemProvider == null)
+        {
             this.replyActivityTypeItemProvider = new ReplyActivityTypeItemProvider(this);
         }
 
@@ -1122,7 +1165,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createReplyEntryTypeAdapter() {
-        if (this.replyEntryTypeItemProvider == null) {
+        if (this.replyEntryTypeItemProvider == null)
+        {
             this.replyEntryTypeItemProvider = new ReplyEntryTypeItemProvider(this);
         }
 
@@ -1146,7 +1190,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createResultConf95TypeAdapter() {
-        if (this.resultConf95TypeItemProvider == null) {
+        if (this.resultConf95TypeItemProvider == null)
+        {
             this.resultConf95TypeItemProvider = new ResultConf95TypeItemProvider(this);
         }
 
@@ -1170,7 +1215,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createResultConf95Type1Adapter() {
-        if (this.resultConf95Type1ItemProvider == null) {
+        if (this.resultConf95Type1ItemProvider == null)
+        {
             this.resultConf95Type1ItemProvider = new ResultConf95Type1ItemProvider(this);
         }
 
@@ -1194,7 +1240,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createResultConf99TypeAdapter() {
-        if (this.resultConf99TypeItemProvider == null) {
+        if (this.resultConf99TypeItemProvider == null)
+        {
             this.resultConf99TypeItemProvider = new ResultConf99TypeItemProvider(this);
         }
 
@@ -1218,7 +1265,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createResultConf99Type1Adapter() {
-        if (this.resultConf99Type1ItemProvider == null) {
+        if (this.resultConf99Type1ItemProvider == null)
+        {
             this.resultConf99Type1ItemProvider = new ResultConf99Type1ItemProvider(this);
         }
 
@@ -1242,7 +1290,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createResultGeneralTypeAdapter() {
-        if (this.resultGeneralTypeItemProvider == null) {
+        if (this.resultGeneralTypeItemProvider == null)
+        {
             this.resultGeneralTypeItemProvider = new ResultGeneralTypeItemProvider(this);
         }
 
@@ -1266,7 +1315,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createRunControlTypeAdapter() {
-        if (this.runControlTypeItemProvider == null) {
+        if (this.runControlTypeItemProvider == null)
+        {
             this.runControlTypeItemProvider = new RunControlTypeItemProvider(this);
         }
 
@@ -1290,7 +1340,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createServiceTypeAdapter() {
-        if (this.serviceTypeItemProvider == null) {
+        if (this.serviceTypeItemProvider == null)
+        {
             this.serviceTypeItemProvider = new ServiceTypeItemProvider(this);
         }
 
@@ -1314,7 +1365,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createSingleActivityListTypeAdapter() {
-        if (this.singleActivityListTypeItemProvider == null) {
+        if (this.singleActivityListTypeItemProvider == null)
+        {
             this.singleActivityListTypeItemProvider = new SingleActivityListTypeItemProvider(this);
         }
 
@@ -1338,7 +1390,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createSlotTypeAdapter() {
-        if (this.slotTypeItemProvider == null) {
+        if (this.slotTypeItemProvider == null)
+        {
             this.slotTypeItemProvider = new SlotTypeItemProvider(this);
         }
 
@@ -1362,7 +1415,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createSolverParamsTypeAdapter() {
-        if (this.solverParamsTypeItemProvider == null) {
+        if (this.solverParamsTypeItemProvider == null)
+        {
             this.solverParamsTypeItemProvider = new SolverParamsTypeItemProvider(this);
         }
 
@@ -1386,7 +1440,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createSynchCallTypeAdapter() {
-        if (this.synchCallTypeItemProvider == null) {
+        if (this.synchCallTypeItemProvider == null)
+        {
             this.synchCallTypeItemProvider = new SynchCallTypeItemProvider(this);
         }
 
@@ -1410,7 +1465,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createTaskActivityGraphAdapter() {
-        if (this.taskActivityGraphItemProvider == null) {
+        if (this.taskActivityGraphItemProvider == null)
+        {
             this.taskActivityGraphItemProvider = new TaskActivityGraphItemProvider(this);
         }
 
@@ -1434,7 +1490,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Adapter createTaskTypeAdapter() {
-        if (this.taskTypeItemProvider == null) {
+        if (this.taskTypeItemProvider == null)
+        {
             this.taskTypeItemProvider = new TaskTypeItemProvider(this);
         }
 
@@ -1491,9 +1548,11 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
      */
     @Override
     public Object adapt(final Object object, final Object type) {
-        if (this.isFactoryForType(type)) {
+        if (this.isFactoryForType(type))
+        {
             final Object adapter = super.adapt(object, type);
-            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter))) {
+            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter)))
+            {
                 return adapter;
             }
         }
@@ -1531,7 +1590,8 @@ public class LqnItemProviderAdapterFactory extends LqnAdapterFactory
     public void fireNotifyChanged(final Notification notification) {
         this.changeNotifier.fireNotifyChanged(notification);
 
-        if (this.parentAdapterFactory != null) {
+        if (this.parentAdapterFactory != null)
+        {
             this.parentAdapterFactory.fireNotifyChanged(notification);
         }
     }

@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsage#getUsageContexts_ComputedUsage
  * <em>Usage Contexts Computed Usage</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsage()
  * @model

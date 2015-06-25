@@ -18,7 +18,6 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsa
  * <em><b>Aggregated Resource Demand</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedResourceDemandImpl#getAggregatedResourceDemand
@@ -27,6 +26,7 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsa
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedResourceDemandImpl#getResourceType_AggregatedResourceDemand
  * <em>Resource Type Aggregated Resource Demand</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -125,13 +125,17 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
     @Override
     public ResourceType getResourceType_AggregatedResourceDemand() {
         if (this.resourceType_AggregatedResourceDemand != null
-                && ((EObject) this.resourceType_AggregatedResourceDemand).eIsProxy()) {
+                && ((EObject) this.resourceType_AggregatedResourceDemand).eIsProxy())
+        {
             final InternalEObject oldResourceType_AggregatedResourceDemand = (InternalEObject) this.resourceType_AggregatedResourceDemand;
             this.resourceType_AggregatedResourceDemand = (ResourceType) this
                     .eResolveProxy(oldResourceType_AggregatedResourceDemand);
-            if (this.resourceType_AggregatedResourceDemand != oldResourceType_AggregatedResourceDemand) {
+            if (this.resourceType_AggregatedResourceDemand != oldResourceType_AggregatedResourceDemand)
+            {
                 if (this.eNotificationRequired()) {
-                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+                    this.eNotify(new ENotificationImpl(
+                            this,
+                            Notification.RESOLVE,
                             AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__RESOURCE_TYPE_AGGREGATED_RESOURCE_DEMAND,
                             oldResourceType_AggregatedResourceDemand, this.resourceType_AggregatedResourceDemand));
                 }
@@ -172,7 +176,8 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND:
             return this.getAggregatedResourceDemand();
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__RESOURCE_TYPE_AGGREGATED_RESOURCE_DEMAND:
@@ -191,7 +196,8 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND:
             this.setAggregatedResourceDemand((Double) newValue);
             return;
@@ -209,7 +215,8 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND:
             this.setAggregatedResourceDemand(AGGREGATED_RESOURCE_DEMAND_EDEFAULT);
             return;
@@ -227,7 +234,8 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND:
             return this.aggregatedResourceDemand != AGGREGATED_RESOURCE_DEMAND_EDEFAULT;
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__RESOURCE_TYPE_AGGREGATED_RESOURCE_DEMAND:

@@ -11,23 +11,23 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getResultEntry <em>Result Entry</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getServiceTimeDistribution
- * <em>Service Time Distribution</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getServiceTimeDistribution <em>Service Time
+ * Distribution</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getForwarding <em>Forwarding</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getEntryActivityGraph
- * <em>Entry Activity Graph</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getEntryPhaseActivities
- * <em>Entry Phase Activities</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getEntryActivityGraph <em>Entry Activity
+ * Graph</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getEntryPhaseActivities <em>Entry Phase
+ * Activities</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getName <em>Name</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getOpenArrivalRate
- * <em>Open Arrival Rate</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getOpenArrivalRate <em>Open Arrival Rate
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getPriority <em>Priority</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getSemaphore <em>Semaphore</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.EntryType#getType <em>Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryType()
  * @model extendedMetaData="name='EntryType' kind='elementOnly'"
@@ -162,8 +162,8 @@ public interface EntryType extends EObject {
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryType_Name()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='name' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
      * @generated
      */
     String getName();
@@ -191,8 +191,8 @@ public interface EntryType extends EObject {
      * @return the value of the '<em>Open Arrival Rate</em>' attribute.
      * @see #setOpenArrivalRate(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryType_OpenArrivalRate()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='open-arrival-rate' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='open-arrival-rate' namespace='##targetNamespace'"
      * @generated
      */
     Object getOpenArrivalRate();
@@ -221,8 +221,8 @@ public interface EntryType extends EObject {
      * @see #unsetPriority()
      * @see #setPriority(int)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryType_Priority()
-     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='attribute' name='priority' namespace='##targetNamespace'"
+     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='attribute' name='priority' namespace='##targetNamespace'"
      * @generated
      */
     int getPriority();
@@ -280,8 +280,8 @@ public interface EntryType extends EObject {
      * @see #unsetSemaphore()
      * @see #setSemaphore(SemaphoreType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryType_Semaphore()
-     * @model default="signal" unsettable="true" extendedMetaData=
-     *        "kind='attribute' name='semaphore' namespace='##targetNamespace'"
+     * @model default="signal" unsettable="true"
+     *        extendedMetaData="kind='attribute' name='semaphore' namespace='##targetNamespace'"
      * @generated
      */
     SemaphoreType getSemaphore();
@@ -340,8 +340,8 @@ public interface EntryType extends EObject {
      * @see #unsetType()
      * @see #setType(TypeType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryType_Type()
-     * @model default="PH1PH2" unsettable="true" required="true" extendedMetaData=
-     *        "kind='attribute' name='type' namespace='##targetNamespace'"
+     * @model default="PH1PH2" unsettable="true" required="true"
+     *        extendedMetaData="kind='attribute' name='type' namespace='##targetNamespace'"
      * @generated
      */
     TypeType getType();

@@ -155,13 +155,13 @@ public class ComputedUsagePackageImpl extends EPackageImpl implements ComputedUs
 
         // Obtain or create and register interdependencies
         final ComputedAllocationPackageImpl theComputedAllocationPackage = (ComputedAllocationPackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(ComputedAllocationPackage.eNS_URI) instanceof ComputedAllocationPackageImpl
-                        ? EPackage.Registry.INSTANCE.getEPackage(ComputedAllocationPackage.eNS_URI)
-                        : ComputedAllocationPackage.eINSTANCE);
+                .getEPackage(ComputedAllocationPackage.eNS_URI) instanceof ComputedAllocationPackageImpl ? EPackage.Registry.INSTANCE
+                        .getEPackage(ComputedAllocationPackage.eNS_URI)
+                : ComputedAllocationPackage.eINSTANCE);
         final AggregatedUsageContextPackageImpl theAggregatedUsageContextPackage = (AggregatedUsageContextPackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(AggregatedUsageContextPackage.eNS_URI) instanceof AggregatedUsageContextPackageImpl
-                        ? EPackage.Registry.INSTANCE.getEPackage(AggregatedUsageContextPackage.eNS_URI)
-                        : AggregatedUsageContextPackage.eINSTANCE);
+                .getEPackage(AggregatedUsageContextPackage.eNS_URI) instanceof AggregatedUsageContextPackageImpl ? EPackage.Registry.INSTANCE
+                        .getEPackage(AggregatedUsageContextPackage.eNS_URI)
+                : AggregatedUsageContextPackage.eINSTANCE);
 
         // Create package meta-data objects
         theComputedUsagePackage.createPackageContents();
@@ -570,13 +570,16 @@ public class ComputedUsagePackageImpl extends EPackageImpl implements ComputedUs
 
         // Initialize classes and features; add operations and parameters
         this.initEClass(this.computedUsageContextEClass, ComputedUsageContext.class, "ComputedUsageContext",
-                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getComputedUsageContext_BranchProbabilities_ComputedUsageContext(),
-                this.getBranchProbability(), null, "branchProbabilities_ComputedUsageContext", null, 0, -1,
-                ComputedUsageContext.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-        this.initEReference(this.getComputedUsageContext_Loopiterations_ComputedUsageContext(), this.getLoopIteration(),
-                null, "loopiterations_ComputedUsageContext", null, 0, -1, ComputedUsageContext.class, !IS_TRANSIENT,
+                this.getBranchProbability(),
+                null, "branchProbabilities_ComputedUsageContext", null, 0, -1, ComputedUsageContext.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+        this.initEReference(this.getComputedUsageContext_Loopiterations_ComputedUsageContext(),
+                this.getLoopIteration(), null,
+                "loopiterations_ComputedUsageContext", null, 0, -1, ComputedUsageContext.class, !IS_TRANSIENT,
                 !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
                 !IS_ORDERED);
         this.initEReference(this.getComputedUsageContext_AssemblyContext_ComputedUsageContext(),
@@ -587,11 +590,13 @@ public class ComputedUsagePackageImpl extends EPackageImpl implements ComputedUs
                 "input_ComputedUsageContext", null, 1, 1, ComputedUsageContext.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getComputedUsageContext_ExternalCallOutput_ComputedUsageContext(),
-                this.getExternalCallOutput(), null, "externalCallOutput_ComputedUsageContext", null, 0, -1,
-                ComputedUsageContext.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+                this.getExternalCallOutput(),
+                null, "externalCallOutput_ComputedUsageContext", null, 0, -1, ComputedUsageContext.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getComputedUsageContext_ExternalCallInput_ComputedUsageContext(),
-                this.getExternalCallInput(), this.getExternalCallInput_ComputedUsageContext_ExternalCallInput(),
+                this.getExternalCallInput(),
+                this.getExternalCallInput_ComputedUsageContext_ExternalCallInput(),
                 "externalCallInput_ComputedUsageContext", null, 0, -1, ComputedUsageContext.class, !IS_TRANSIENT,
                 !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
                 !IS_ORDERED);
@@ -600,10 +605,12 @@ public class ComputedUsagePackageImpl extends EPackageImpl implements ComputedUs
                 IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
         this.initEClass(this.branchProbabilityEClass, BranchProbability.class, "BranchProbability", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getBranchProbability_Probability(), this.ecorePackage.getEDouble(), "probability",
-                null, 1, 1, BranchProbability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+                null, 1, 1,
+                BranchProbability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getBranchProbability_Branchtransition_BranchProbability(),
                 theSeffPackage.getAbstractBranchTransition(), null, "branchtransition_BranchProbability", null, 1, 1,
                 BranchProbability.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
@@ -612,17 +619,20 @@ public class ComputedUsagePackageImpl extends EPackageImpl implements ComputedUs
         this.initEClass(this.loopIterationEClass, LoopIteration.class, "LoopIteration", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getLoopIteration_Loopaction_LoopIteration(), theSeffPackage.getAbstractLoopAction(),
-                null, "loopaction_LoopIteration", null, 1, 1, LoopIteration.class, !IS_TRANSIENT, !IS_VOLATILE,
+                null,
+                "loopaction_LoopIteration", null, 1, 1, LoopIteration.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getLoopIteration_Specification_LoopIteration(), theCorePackage.getPCMRandomVariable(),
-                null, "specification_LoopIteration", null, 1, 1, LoopIteration.class, !IS_TRANSIENT, !IS_VOLATILE,
+                null,
+                "specification_LoopIteration", null, 1, 1, LoopIteration.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
         this.initEClass(this.inputEClass, Input.class, "Input", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getInput_ParameterChacterisations_Input(), theParameterPackage.getVariableUsage(),
-                null, "parameterChacterisations_Input", null, 0, -1, Input.class, !IS_TRANSIENT, !IS_VOLATILE,
-                IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+                null,
+                "parameterChacterisations_Input", null, 0, -1, Input.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
         this.initEClass(this.externalCallOutputEClass, ExternalCallOutput.class, "ExternalCallOutput", !IS_ABSTRACT,
                 !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -632,11 +642,12 @@ public class ComputedUsagePackageImpl extends EPackageImpl implements ComputedUs
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getExternalCallOutput_ExternalCallAction_ExternalCallOutput(),
                 theSeffPackage.getExternalCallAction(), null, "externalCallAction_ExternalCallOutput", null, 1, 1,
-                ExternalCallOutput.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+                ExternalCallOutput.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+                IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
         this.initEClass(this.externalCallInputEClass, ExternalCallInput.class, "ExternalCallInput", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getExternalCallInput_ParameterCharacterisations_ExternalCallInput(),
                 theParameterPackage.getVariableUsage(), null, "parameterCharacterisations_ExternalCallInput", null, 0,
                 -1, ExternalCallInput.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
@@ -646,15 +657,17 @@ public class ComputedUsagePackageImpl extends EPackageImpl implements ComputedUs
                 ExternalCallInput.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getExternalCallInput_ComputedUsageContext_ExternalCallInput(),
-                this.getComputedUsageContext(), this.getComputedUsageContext_ExternalCallInput_ComputedUsageContext(),
+                this.getComputedUsageContext(),
+                this.getComputedUsageContext_ExternalCallInput_ComputedUsageContext(),
                 "computedUsageContext_ExternalCallInput", null, 1, 1, ExternalCallInput.class, !IS_TRANSIENT,
-                !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
-                !IS_ORDERED);
+                !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
+                !IS_DERIVED, !IS_ORDERED);
 
         this.initEClass(this.outputEClass, Output.class, "Output", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getOutput_ParameterCharacterisations_Output(), theParameterPackage.getVariableUsage(),
-                null, "parameterCharacterisations_Output", null, 0, -1, Output.class, !IS_TRANSIENT, !IS_VOLATILE,
+                null,
+                "parameterCharacterisations_Output", null, 0, -1, Output.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
         this.initEClass(this.computedUsageEClass, ComputedUsage.class, "ComputedUsage", !IS_ABSTRACT, !IS_INTERFACE,

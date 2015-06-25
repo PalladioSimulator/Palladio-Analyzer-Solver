@@ -28,27 +28,25 @@ import org.palladiosimulator.solver.lqn.TypeType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getResultEntry
- * <em>Result Entry</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getServiceTimeDistribution
- * <em>Service Time Distribution</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getResultEntry <em>Result Entry
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getServiceTimeDistribution <em>
+ * Service Time Distribution</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getForwarding <em>Forwarding</em>}
  * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getEntryActivityGraph
- * <em>Entry Activity Graph</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getEntryPhaseActivities
- * <em>Entry Phase Activities</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getEntryActivityGraph <em>Entry
+ * Activity Graph</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getEntryPhaseActivities <em>Entry
+ * Phase Activities</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getName <em>Name</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getOpenArrivalRate
- * <em>Open Arrival Rate</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getPriority <em>Priority</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getSemaphore <em>Semaphore</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getOpenArrivalRate <em>Open
+ * Arrival Rate</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getPriority <em>Priority</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getSemaphore <em>Semaphore</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getType <em>Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -258,7 +256,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public EList<OutputResultType> getResultEntry() {
-        if (this.resultEntry == null) {
+        if (this.resultEntry == null)
+        {
             this.resultEntry = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
                     LqnPackage.ENTRY_TYPE__RESULT_ENTRY);
         }
@@ -272,7 +271,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public EList<OutputEntryDistributionType> getServiceTimeDistribution() {
-        if (this.serviceTimeDistribution == null) {
+        if (this.serviceTimeDistribution == null)
+        {
             this.serviceTimeDistribution = new EObjectContainmentEList<OutputEntryDistributionType>(
                     OutputEntryDistributionType.class, this, LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION);
         }
@@ -286,7 +286,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public EList<EntryMakingCallType> getForwarding() {
-        if (this.forwarding == null) {
+        if (this.forwarding == null)
+        {
             this.forwarding = new EObjectContainmentEList<EntryMakingCallType>(EntryMakingCallType.class, this,
                     LqnPackage.ENTRY_TYPE__FORWARDING);
         }
@@ -312,7 +313,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
             NotificationChain msgs) {
         final EntryActivityGraph oldEntryActivityGraph = this.entryActivityGraph;
         this.entryActivityGraph = newEntryActivityGraph;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, oldEntryActivityGraph, newEntryActivityGraph);
             if (msgs == null) {
@@ -331,21 +333,23 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public void setEntryActivityGraph(final EntryActivityGraph newEntryActivityGraph) {
-        if (newEntryActivityGraph != this.entryActivityGraph) {
+        if (newEntryActivityGraph != this.entryActivityGraph)
+        {
             NotificationChain msgs = null;
             if (this.entryActivityGraph != null) {
-                msgs = ((InternalEObject) this.entryActivityGraph).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, null, msgs);
+                msgs = ((InternalEObject) this.entryActivityGraph).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, null, msgs);
             }
             if (newEntryActivityGraph != null) {
-                msgs = ((InternalEObject) newEntryActivityGraph).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, null, msgs);
+                msgs = ((InternalEObject) newEntryActivityGraph).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, null, msgs);
             }
             msgs = this.basicSetEntryActivityGraph(newEntryActivityGraph, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
                     newEntryActivityGraph, newEntryActivityGraph));
         }
@@ -370,7 +374,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
             NotificationChain msgs) {
         final PhaseActivities oldEntryPhaseActivities = this.entryPhaseActivities;
         this.entryPhaseActivities = newEntryPhaseActivities;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, oldEntryPhaseActivities, newEntryPhaseActivities);
             if (msgs == null) {
@@ -389,21 +394,23 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public void setEntryPhaseActivities(final PhaseActivities newEntryPhaseActivities) {
-        if (newEntryPhaseActivities != this.entryPhaseActivities) {
+        if (newEntryPhaseActivities != this.entryPhaseActivities)
+        {
             NotificationChain msgs = null;
             if (this.entryPhaseActivities != null) {
-                msgs = ((InternalEObject) this.entryPhaseActivities).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, null, msgs);
+                msgs = ((InternalEObject) this.entryPhaseActivities).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, null, msgs);
             }
             if (newEntryPhaseActivities != null) {
-                msgs = ((InternalEObject) newEntryPhaseActivities).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, null, msgs);
+                msgs = ((InternalEObject) newEntryPhaseActivities).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, null, msgs);
             }
             msgs = this.basicSetEntryPhaseActivities(newEntryPhaseActivities, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
                     newEntryPhaseActivities, newEntryPhaseActivities));
         }
@@ -429,8 +436,7 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
         final String oldName = this.name;
         this.name = newName;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__NAME, oldName, this.name));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__NAME, oldName, this.name));
         }
     }
 
@@ -552,7 +558,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
         this.semaphore = SEMAPHORE_EDEFAULT;
         this.semaphoreESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ENTRY_TYPE__SEMAPHORE, oldSemaphore,
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ENTRY_TYPE__SEMAPHORE,
+                    oldSemaphore,
                     SEMAPHORE_EDEFAULT, oldSemaphoreESet));
         }
     }
@@ -629,7 +636,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
             return ((InternalEList<?>) this.getResultEntry()).basicRemove(otherEnd, msgs);
         case LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION:
@@ -651,7 +659,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
             return this.getResultEntry();
         case LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION:
@@ -684,7 +693,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
             this.getResultEntry().clear();
             this.getResultEntry().addAll((Collection<? extends OutputResultType>) newValue);
@@ -729,7 +739,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
             this.getResultEntry().clear();
             return;
@@ -771,7 +782,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
             return this.resultEntry != null && !this.resultEntry.isEmpty();
         case LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION:
@@ -785,8 +797,8 @@ public class EntryTypeImpl extends EObjectImpl implements EntryType {
         case LqnPackage.ENTRY_TYPE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         case LqnPackage.ENTRY_TYPE__OPEN_ARRIVAL_RATE:
-            return OPEN_ARRIVAL_RATE_EDEFAULT == null ? this.openArrivalRate != null
-                    : !OPEN_ARRIVAL_RATE_EDEFAULT.equals(this.openArrivalRate);
+            return OPEN_ARRIVAL_RATE_EDEFAULT == null ? this.openArrivalRate != null : !OPEN_ARRIVAL_RATE_EDEFAULT
+            .equals(this.openArrivalRate);
         case LqnPackage.ENTRY_TYPE__PRIORITY:
             return this.isSetPriority();
         case LqnPackage.ENTRY_TYPE__SEMAPHORE:

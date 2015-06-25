@@ -13,12 +13,12 @@ import org.palladiosimulator.pcm.parameter.VariableUsage;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.Input#getParameterChacterisations_Input
  * <em>Parameter Chacterisations Input</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getInput()
  * @model

@@ -57,7 +57,8 @@ public class OutputItemProvider extends ItemProviderAdapter implements IEditingD
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -75,7 +76,8 @@ public class OutputItemProvider extends ItemProviderAdapter implements IEditingD
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(ComputedUsagePackage.Literals.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT);
         }
@@ -127,7 +129,8 @@ public class OutputItemProvider extends ItemProviderAdapter implements IEditingD
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(Output.class)) {
+        switch (notification.getFeatureID(Output.class))
+        {
         case ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -145,8 +148,9 @@ public class OutputItemProvider extends ItemProviderAdapter implements IEditingD
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors
-                .add(this.createChildParameter(ComputedUsagePackage.Literals.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT,
+        newChildDescriptors.add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT,
                         ParameterFactory.eINSTANCE.createVariableUsage()));
     }
 

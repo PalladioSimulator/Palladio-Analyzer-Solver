@@ -10,10 +10,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.PlotType#getVariable <em>Variable</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPlotType()
  * @model extendedMetaData="name='plot_._type' kind='empty'"
@@ -32,8 +32,8 @@ public interface PlotType extends EObject {
      * @return the value of the '<em>Variable</em>' attribute.
      * @see #setVariable(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPlotType_Variable()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='variable' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='variable' namespace='##targetNamespace'"
      * @generated
      */
     String getVariable();

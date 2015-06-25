@@ -49,7 +49,8 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -67,7 +68,8 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY);
             this.childrenFeatures.add(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE);
@@ -120,7 +122,8 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityGraphBase.class)) {
+        switch (notification.getFeatureID(ActivityGraphBase.class))
+        {
         case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
         case LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -139,11 +142,15 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityDefType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityDefType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE,
-                LqnFactory.eINSTANCE.createPrecedenceType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE,
+                        LqnFactory.eINSTANCE.createPrecedenceType()));
     }
 
     /**

@@ -15,21 +15,18 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getResultProcessor
- * <em>Result Processor</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getResultProcessor <em>Result Processor
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getTask <em>Task</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getMultiplicity <em>Multiplicity</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getMultiplicity <em>Multiplicity</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getName <em>Name</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getQuantum <em>Quantum</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getReplication <em>Replication</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getReplication <em>Replication</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getScheduling <em>Scheduling</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getSpeedFactor <em>Speed Factor</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getSpeedFactor <em>Speed Factor</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorType()
  * @model extendedMetaData="name='ProcessorType' kind='elementOnly'"
@@ -66,8 +63,8 @@ public interface ProcessorType extends EObject {
      *
      * @return the value of the '<em>Task</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorType_Task()
-     * @model containment="true" required="true" extendedMetaData=
-     *        "kind='element' name='task' namespace='##targetNamespace'"
+     * @model containment="true" required="true"
+     *        extendedMetaData="kind='element' name='task' namespace='##targetNamespace'"
      * @generated
      */
     EList<TaskType> getTask();
@@ -87,8 +84,8 @@ public interface ProcessorType extends EObject {
      * @see #setMultiplicity(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorType_Multiplicity()
      * @model default="1" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='multiplicity' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='multiplicity' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getMultiplicity();
@@ -142,8 +139,8 @@ public interface ProcessorType extends EObject {
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorType_Name()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='name' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
      * @generated
      */
     String getName();
@@ -231,8 +228,8 @@ public interface ProcessorType extends EObject {
      * @see #setReplication(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorType_Replication()
      * @model default="1" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='replication' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='replication' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getReplication();
@@ -251,8 +248,9 @@ public interface ProcessorType extends EObject {
     void setReplication(BigInteger value);
 
     /**
-     * Unsets the value of the '{@link org.palladiosimulator.solver.lqn.ProcessorType#getReplication
-     * <em>Replication</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Unsets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.ProcessorType#getReplication <em>Replication</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see #isSetReplication()
      * @see #getReplication()
@@ -290,8 +288,8 @@ public interface ProcessorType extends EObject {
      * @see #unsetScheduling()
      * @see #setScheduling(SchedulingType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorType_Scheduling()
-     * @model default="fcfs" unsettable="true" extendedMetaData=
-     *        "kind='attribute' name='scheduling' namespace='##targetNamespace'"
+     * @model default="fcfs" unsettable="true"
+     *        extendedMetaData="kind='attribute' name='scheduling' namespace='##targetNamespace'"
      * @generated
      */
     SchedulingType getScheduling();
@@ -368,8 +366,9 @@ public interface ProcessorType extends EObject {
     void setSpeedFactor(Object value);
 
     /**
-     * Unsets the value of the '{@link org.palladiosimulator.solver.lqn.ProcessorType#getSpeedFactor
-     * <em>Speed Factor</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Unsets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.ProcessorType#getSpeedFactor <em>Speed Factor</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see #isSetSpeedFactor()
      * @see #getSpeedFactor()

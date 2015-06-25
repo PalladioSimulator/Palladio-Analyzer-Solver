@@ -48,7 +48,8 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE);
             this.childrenFeatures.add(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL);
@@ -119,7 +121,8 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(DocumentRoot.class)) {
+        switch (notification.getFeatureID(DocumentRoot.class))
+        {
         case LqnPackage.DOCUMENT_ROOT__LQN_CORE:
         case LqnPackage.DOCUMENT_ROOT__LQN_MODEL:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -138,11 +141,15 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE,
-                LqnFactory.eINSTANCE.createLqnCoreType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE,
+                        LqnFactory.eINSTANCE.createLqnCoreType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
-                LqnFactory.eINSTANCE.createLqnModelType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
+                        LqnFactory.eINSTANCE.createLqnModelType()));
     }
 
     /**

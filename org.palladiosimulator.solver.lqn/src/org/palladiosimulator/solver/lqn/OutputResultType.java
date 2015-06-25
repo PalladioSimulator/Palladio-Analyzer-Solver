@@ -11,60 +11,59 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getResultConf95
- * <em>Result Conf95</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getResultConf99
- * <em>Result Conf99</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getOpenWaitTime
- * <em>Open Wait Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1ProcWaiting
- * <em>Phase1 Proc Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1ServiceTime
- * <em>Phase1 Service Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1ServiceTimeVariance
- * <em>Phase1 Service Time Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1Utilization
- * <em>Phase1 Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2ProcWaiting
- * <em>Phase2 Proc Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2ServiceTime
- * <em>Phase2 Service Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2ServiceTimeVariance
- * <em>Phase2 Service Time Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2Utilization
- * <em>Phase2 Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3ProcWaiting
- * <em>Phase3 Proc Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3ServiceTime
- * <em>Phase3 Service Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3ServiceTimeVariance
- * <em>Phase3 Service Time Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3Utilization
- * <em>Phase3 Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getProbExceedMaxServiceTime
- * <em>Prob Exceed Max Service Time</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getProcUtilization
- * <em>Proc Utilization</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getProcWaiting <em>Proc Waiting</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTime <em>Service Time</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTimeVariance
- * <em>Service Time Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getSquaredCoeffVariation
- * <em>Squared Coeff Variation</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getThroughput <em>Throughput</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getThroughputBound
- * <em>Throughput Bound</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getResultConf95 <em>Result Conf95
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getResultConf99 <em>Result Conf99
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getOpenWaitTime <em>Open Wait Time
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1ProcWaiting <em>Phase1 Proc
+ * Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1ServiceTime <em>Phase1
+ * Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1ServiceTimeVariance <em>
+ * Phase1 Service Time Variance</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase1Utilization <em>Phase1
+ * Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2ProcWaiting <em>Phase2 Proc
+ * Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2ServiceTime <em>Phase2
+ * Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2ServiceTimeVariance <em>
+ * Phase2 Service Time Variance</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase2Utilization <em>Phase2
+ * Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3ProcWaiting <em>Phase3 Proc
+ * Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3ServiceTime <em>Phase3
+ * Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3ServiceTimeVariance <em>
+ * Phase3 Service Time Variance</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getPhase3Utilization <em>Phase3
+ * Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getProbExceedMaxServiceTime <em>Prob
+ * Exceed Max Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getProcUtilization <em>Proc
+ * Utilization</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getProcWaiting <em>Proc Waiting
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTime <em>Service Time
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTimeVariance <em>Service
+ * Time Variance</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getSquaredCoeffVariation <em>Squared
+ * Coeff Variation</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getThroughput <em>Throughput</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getThroughputBound <em>Throughput
+ * Bound</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getUtilization <em>Utilization</em>}
  * </li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getWaiting <em>Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getWaitingVariance
- * <em>Waiting Variance</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getWaitingVariance <em>Waiting
+ * Variance</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType()
  * @model extendedMetaData="name='OutputResultType' kind='elementOnly'"
@@ -119,8 +118,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Open Wait Time</em>' attribute.
      * @see #setOpenWaitTime(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_OpenWaitTime()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='open-wait-time' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='open-wait-time' namespace='##targetNamespace'"
      * @generated
      */
     Object getOpenWaitTime();
@@ -240,8 +239,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Phase1 Utilization</em>' attribute.
      * @see #setPhase1Utilization(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_Phase1Utilization()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='phase1-utilization' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='phase1-utilization' namespace='##targetNamespace'"
      * @generated
      */
     Object getPhase1Utilization();
@@ -361,8 +360,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Phase2 Utilization</em>' attribute.
      * @see #setPhase2Utilization(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_Phase2Utilization()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='phase2-utilization' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='phase2-utilization' namespace='##targetNamespace'"
      * @generated
      */
     Object getPhase2Utilization();
@@ -482,8 +481,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Phase3 Utilization</em>' attribute.
      * @see #setPhase3Utilization(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_Phase3Utilization()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='phase3-utilization' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='phase3-utilization' namespace='##targetNamespace'"
      * @generated
      */
     Object getPhase3Utilization();
@@ -543,8 +542,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Proc Utilization</em>' attribute.
      * @see #setProcUtilization(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_ProcUtilization()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='proc-utilization' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='proc-utilization' namespace='##targetNamespace'"
      * @generated
      */
     Object getProcUtilization();
@@ -572,16 +571,16 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Proc Waiting</em>' attribute.
      * @see #setProcWaiting(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_ProcWaiting()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='proc-waiting' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='proc-waiting' namespace='##targetNamespace'"
      * @generated
      */
     Object getProcWaiting();
 
     /**
      * Sets the value of the '
-     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getProcWaiting <em>Proc Waiting</em>
-     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getProcWaiting
+     * <em>Proc Waiting</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Proc Waiting</em>' attribute.
@@ -601,16 +600,16 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Service Time</em>' attribute.
      * @see #setServiceTime(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_ServiceTime()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='service-time' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='service-time' namespace='##targetNamespace'"
      * @generated
      */
     Object getServiceTime();
 
     /**
      * Sets the value of the '
-     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTime <em>Service Time</em>
-     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getServiceTime
+     * <em>Service Time</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Service Time</em>' attribute.
@@ -690,15 +689,16 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Throughput</em>' attribute.
      * @see #setThroughput(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_Throughput()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='throughput' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='throughput' namespace='##targetNamespace'"
      * @generated
      */
     Object getThroughput();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.OutputResultType#getThroughput
-     * <em>Throughput</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.OutputResultType#getThroughput <em>Throughput</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Throughput</em>' attribute.
@@ -719,8 +719,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Throughput Bound</em>' attribute.
      * @see #setThroughputBound(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_ThroughputBound()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='throughput-bound' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='throughput-bound' namespace='##targetNamespace'"
      * @generated
      */
     Object getThroughputBound();
@@ -748,8 +748,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Utilization</em>' attribute.
      * @see #setUtilization(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_Utilization()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='utilization' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='utilization' namespace='##targetNamespace'"
      * @generated
      */
     Object getUtilization();
@@ -777,8 +777,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Waiting</em>' attribute.
      * @see #setWaiting(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_Waiting()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='waiting' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='waiting' namespace='##targetNamespace'"
      * @generated
      */
     Object getWaiting();
@@ -806,8 +806,8 @@ public interface OutputResultType extends EObject {
      * @return the value of the '<em>Waiting Variance</em>' attribute.
      * @see #setWaitingVariance(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_WaitingVariance()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='waiting-variance' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='waiting-variance' namespace='##targetNamespace'"
      * @generated
      */
     Object getWaitingVariance();

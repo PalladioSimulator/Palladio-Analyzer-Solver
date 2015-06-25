@@ -11,13 +11,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.ParaType#getStartValue <em>Start Value</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ParaType#getEndValue <em>End Value</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ParaType#getStepValue <em>Step Value</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ParaType#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getParaType()
  * @model extendedMetaData="name='para_._type' kind='elementOnly'"
@@ -38,8 +38,8 @@ public interface ParaType extends EObject {
      * @see #unsetStartValue()
      * @see #setStartValue(int)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getParaType_StartValue()
-     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='element' name='start-value' namespace='##targetNamespace'"
+     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='element' name='start-value' namespace='##targetNamespace'"
      * @generated
      */
     int getStartValue();
@@ -94,8 +94,8 @@ public interface ParaType extends EObject {
      * @see #unsetEndValue()
      * @see #setEndValue(int)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getParaType_EndValue()
-     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='element' name='end-value' namespace='##targetNamespace'"
+     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='element' name='end-value' namespace='##targetNamespace'"
      * @generated
      */
     int getEndValue();
@@ -150,8 +150,8 @@ public interface ParaType extends EObject {
      * @see #unsetStepValue()
      * @see #setStepValue(int)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getParaType_StepValue()
-     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='element' name='step-value' namespace='##targetNamespace'"
+     * @model unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='element' name='step-value' namespace='##targetNamespace'"
      * @generated
      */
     int getStepValue();
@@ -204,8 +204,8 @@ public interface ParaType extends EObject {
      *
      * @return the value of the '<em>Value</em>' attribute list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getParaType_Value()
-     * @model unique="false" dataType="org.eclipse.emf.ecore.xml.type.Int" extendedMetaData=
-     *        "kind='element' name='value' namespace='##targetNamespace'"
+     * @model unique="false" dataType="org.eclipse.emf.ecore.xml.type.Int"
+     *        extendedMetaData="kind='element' name='value' namespace='##targetNamespace'"
      * @generated
      */
     EList<Integer> getValue();

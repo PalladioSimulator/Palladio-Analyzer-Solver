@@ -10,11 +10,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskActivityGraph#getReplyEntry <em>Reply Entry</em>}
  * </li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskActivityGraph()
  * @model extendedMetaData="name='TaskActivityGraph' kind='elementOnly'"

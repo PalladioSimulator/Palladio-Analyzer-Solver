@@ -40,7 +40,8 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addCountPropertyDescriptor(object);
@@ -55,13 +56,21 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
      * @generated
      */
     protected void addCountPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ActivityLoopType_count_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityLoopType_count_feature",
-                        "_UI_ActivityLoopType_type"),
-                LqnPackage.Literals.ACTIVITY_LOOP_TYPE__COUNT, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ActivityLoopType_count_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ActivityLoopType_count_feature",
+                                "_UI_ActivityLoopType_type"),
+                                LqnPackage.Literals.ACTIVITY_LOOP_TYPE__COUNT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -83,8 +92,9 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
     @Override
     public String getText(final Object object) {
         final String label = ((ActivityLoopType) object).getName();
-        return label == null || label.length() == 0 ? this.getString("_UI_ActivityLoopType_type")
-                : this.getString("_UI_ActivityLoopType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ActivityLoopType_type") :
+                this.getString("_UI_ActivityLoopType_type") + " " + label;
     }
 
     /**
@@ -98,7 +108,8 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityLoopType.class)) {
+        switch (notification.getFeatureID(ActivityLoopType.class))
+        {
         case LqnPackage.ACTIVITY_LOOP_TYPE__COUNT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;

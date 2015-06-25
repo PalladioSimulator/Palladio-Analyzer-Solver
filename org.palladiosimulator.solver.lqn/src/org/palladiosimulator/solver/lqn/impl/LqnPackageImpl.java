@@ -696,9 +696,9 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         }
 
         // Obtain or create and register package
-        final LqnPackageImpl theLqnPackage = (LqnPackageImpl) (EPackage.Registry.INSTANCE
-                .get(eNS_URI) instanceof LqnPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
-                        : new LqnPackageImpl());
+        final LqnPackageImpl theLqnPackage = (LqnPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof LqnPackageImpl ? EPackage.Registry.INSTANCE
+                .get(eNS_URI)
+                : new LqnPackageImpl());
 
         isInited = true;
 
@@ -712,10 +712,13 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         theLqnPackage.initializePackageContents();
 
         // Register package validator
-        EValidator.Registry.INSTANCE.put(theLqnPackage, new EValidator.Descriptor() {
-
+        EValidator.Registry.INSTANCE.put
+        (theLqnPackage,
+                new EValidator.Descriptor()
+        {
             @Override
-            public EValidator getEValidator() {
+            public EValidator getEValidator()
+            {
                 return LqnValidator.INSTANCE;
             }
         });
@@ -4667,29 +4670,37 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
 
         // Initialize classes and features; add operations and parameters
         this.initEClass(this.activityDefBaseEClass, ActivityDefBase.class, "ActivityDefBase", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getActivityDefBase_ResultJoinDelay(), this.getOutputResultForwardingANDJoinDelay(),
-                null, "resultJoinDelay", null, 0, -1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+                null,
+                "resultJoinDelay", null, 0, -1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
                 IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getActivityDefBase_ResultForwarding(), this.getOutputResultForwardingANDJoinDelay(),
-                null, "resultForwarding", null, 0, -1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE,
-                IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null,
+                "resultForwarding", null, 0, -1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getActivityDefBase_ServiceTimeDistribution(), this.getOutputDistributionType(), null,
                 "serviceTimeDistribution", null, 0, -1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getActivityDefBase_ResultActivity(), this.getOutputResultType(), null,
-                "resultActivity", null, 0, -1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "resultActivity", null,
+                0, -1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getActivityDefBase_CallOrder(), this.getCallOrderType(), "callOrder", "STOCHASTIC", 0,
-                1, ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                1,
+                ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getActivityDefBase_HostDemandCvsq(), this.getSrvnFloat(), "hostDemandCvsq", null, 0, 1,
+        this.initEAttribute(this.getActivityDefBase_HostDemandCvsq(), this.getSrvnFloat(), "hostDemandCvsq", null, 0,
+                1,
                 ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getActivityDefBase_HostDemandMean(), this.getSrvnFloat(), "hostDemandMean", null, 1, 1,
+        this.initEAttribute(this.getActivityDefBase_HostDemandMean(), this.getSrvnFloat(), "hostDemandMean", null, 1,
+                1,
                 ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getActivityDefBase_MaxServiceTime(), this.getSrvnFloat(), "maxServiceTime", null, 0, 1,
+        this.initEAttribute(this.getActivityDefBase_MaxServiceTime(), this.getSrvnFloat(), "maxServiceTime", null, 0,
+                1,
                 ActivityDefBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getActivityDefBase_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
@@ -4700,55 +4711,68 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.activityDefTypeEClass, ActivityDefType.class, "ActivityDefType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getActivityDefType_CallList(), this.getCallListType(), null, "callList", null, 0, -1,
                 ActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getActivityDefType_Group(), this.ecorePackage.getEFeatureMapEntry(), "group", null, 0,
-                -1, ActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                -1,
+                ActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getActivityDefType_SynchCall(), this.getActivityMakingCallType(), null, "synchCall",
-                null, 0, -1, ActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+                null, 0,
+                -1, ActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getActivityDefType_AsynchCall(), this.getActivityMakingCallType(), null, "asynchCall",
-                null, 0, -1, ActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getActivityDefType_BoundToEntry(), theXMLTypePackage.getString(), "boundToEntry", null,
-                0, 1, ActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0,
+                -1, ActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getActivityDefType_BoundToEntry(), theXMLTypePackage.getString(), "boundToEntry",
+                null, 0, 1,
+                ActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.activityGraphBaseEClass, ActivityGraphBase.class, "ActivityGraphBase", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getActivityGraphBase_Activity(), this.getActivityDefType(), null, "activity", null, 1,
-                -1, ActivityGraphBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                -1,
+                ActivityGraphBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getActivityGraphBase_Precedence(), this.getPrecedenceType(), null, "precedence", null,
-                0, -1, ActivityGraphBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, -1,
+                ActivityGraphBase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.activityListTypeEClass, ActivityListType.class, "ActivityListType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getActivityListType_Activity(), this.getActivityType(), null, "activity", null, 1, -1,
                 ActivityListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.activityLoopListTypeEClass, ActivityLoopListType.class, "ActivityLoopListType",
-                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        this.initEReference(this.getActivityLoopListType_Activity(), this.getActivityLoopType(), null, "activity", null,
-                1, -1, ActivityLoopListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        this.initEReference(this.getActivityLoopListType_Activity(), this.getActivityLoopType(), null, "activity",
+                null, 1, -1,
+                ActivityLoopListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getActivityLoopListType_End(), theXMLTypePackage.getString(), "end", null, 0, 1,
                 ActivityLoopListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.activityLoopTypeEClass, ActivityLoopType.class, "ActivityLoopType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getActivityLoopType_Count(), this.getSrvnFloat(), "count", null, 1, 1,
-                ActivityLoopType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ActivityLoopType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.activityMakingCallTypeEClass, ActivityMakingCallType.class, "ActivityMakingCallType",
-                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getActivityMakingCallType_CallsMean(), this.getSrvnFloat(), "callsMean", null, 1, 1,
                 ActivityMakingCallType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4762,35 +4786,41 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.activityPhasesTypeEClass, ActivityPhasesType.class, "ActivityPhasesType", !IS_ABSTRACT,
                 !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getActivityPhasesType_CallList(), this.getCallListType(), null, "callList", null, 0,
-                -1, ActivityPhasesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                -1,
+                ActivityPhasesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getActivityPhasesType_Group(), this.ecorePackage.getEFeatureMapEntry(), "group", null,
-                0, -1, ActivityPhasesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                0, -1,
+                ActivityPhasesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEReference(this.getActivityPhasesType_SynchCall(), this.getActivityMakingCallType(), null, "synchCall",
-                null, 0, -1, ActivityPhasesType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+        this.initEReference(this.getActivityPhasesType_SynchCall(), this.getActivityMakingCallType(), null,
+                "synchCall", null, 0,
+                -1, ActivityPhasesType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getActivityPhasesType_AsynchCall(), this.getActivityMakingCallType(), null,
-                "asynchCall", null, 0, -1, ActivityPhasesType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+                "asynchCall", null,
+                0, -1, ActivityPhasesType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getActivityPhasesType_Phase(), this.getPhaseType(), "phase", null, 1, 1,
-                ActivityPhasesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ActivityPhasesType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.activityTypeEClass, ActivityType.class, "ActivityType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getActivityType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
-                ActivityType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ActivityType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.andJoinListTypeEClass, AndJoinListType.class, "AndJoinListType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getAndJoinListType_Activity(), this.getActivityType(), null, "activity", null, 1, -1,
                 AndJoinListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getAndJoinListType_Quorum(), theXMLTypePackage.getNonNegativeInteger(), "quorum", "0",
-                0, 1, AndJoinListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                AndJoinListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.asynchCallTypeEClass, AsynchCallType.class, "AsynchCallType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -4810,9 +4840,11 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 BindType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getBindType_ProcessorBinding(), this.getProcessorBindingType(), null,
-                "processorBinding", null, 0, -1, BindType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEReference(this.getBindType_PortBinding(), this.getPortBindingType(), null, "portBinding", null, 0, -1,
+                "processorBinding", null,
+                0, -1, BindType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEReference(this.getBindType_PortBinding(), this.getPortBindingType(), null, "portBinding", null, 0,
+                -1,
                 BindType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -4822,50 +4854,61 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 CallListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getCallListType_AsynchCall(), this.getAsynchCallType(), null, "asynchCall", null, 0,
-                -1, CallListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                -1,
+                CallListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.documentRootEClass, DocumentRoot.class, "DocumentRoot", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
-        this.initEAttribute(this.getDocumentRoot_Mixed(), this.ecorePackage.getEFeatureMapEntry(), "mixed", null, 0, -1,
-                null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED,
-                IS_ORDERED);
-        this.initEReference(this.getDocumentRoot_XMLNSPrefixMap(), this.ecorePackage.getEStringToStringMapEntry(), null,
+        this.initEAttribute(this.getDocumentRoot_Mixed(), this.ecorePackage.getEFeatureMapEntry(), "mixed", null, 0,
+                -1, null,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEReference(this.getDocumentRoot_XMLNSPrefixMap(), this.ecorePackage.getEStringToStringMapEntry(),
+                null,
                 "xMLNSPrefixMap", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getDocumentRoot_XSISchemaLocation(), this.ecorePackage.getEStringToStringMapEntry(),
-                null, "xSISchemaLocation", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                null,
+                "xSISchemaLocation", null, 0, -1, null, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getDocumentRoot_LqnCore(), this.getLqnCoreType(), null, "lqnCore", null, 0, -2, null,
                 IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
                 IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getDocumentRoot_LqnModel(), this.getLqnModelType(), null, "lqnModel", null, 0, -2,
-                null, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-                IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+                null,
+                IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
+                IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.entryActivityDefTypeEClass, EntryActivityDefType.class, "EntryActivityDefType",
-                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getEntryActivityDefType_CallList(), this.getCallListType(), null, "callList", null, 0,
-                -1, EntryActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                -1,
+                EntryActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getEntryActivityDefType_Group(), this.ecorePackage.getEFeatureMapEntry(), "group",
-                null, 0, -1, EntryActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
-                !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, -1,
+                EntryActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getEntryActivityDefType_SynchCall(), this.getActivityMakingCallType(), null,
-                "synchCall", null, 0, -1, EntryActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+                "synchCall", null,
+                0, -1, EntryActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getEntryActivityDefType_AsynchCall(), this.getActivityMakingCallType(), null,
-                "asynchCall", null, 0, -1, EntryActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+                "asynchCall",
+                null, 0, -1, EntryActivityDefType.class, IS_TRANSIENT, IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getEntryActivityDefType_FirstActivity(), theXMLTypePackage.getString(),
-                "firstActivity", null, 0, 1, EntryActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "firstActivity", null,
+                0, 1, EntryActivityDefType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.entryActivityGraphEClass, EntryActivityGraph.class, "EntryActivityGraph", !IS_ABSTRACT,
                 !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getEntryActivityGraph_ReplyActivity(), this.getReplyActivityType(), null,
-                "replyActivity", null, 1, -1, EntryActivityGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "replyActivity", null,
+                1, -1, EntryActivityGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.entryMakingCallTypeEClass, EntryMakingCallType.class, "EntryMakingCallType", !IS_ABSTRACT,
                 !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -4876,34 +4919,39 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.entryTypeEClass, EntryType.class, "EntryType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getEntryType_ResultEntry(), this.getOutputResultType(), null, "resultEntry", null, 0,
-                -1, EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                -1,
+                EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getEntryType_ServiceTimeDistribution(), this.getOutputEntryDistributionType(), null,
                 "serviceTimeDistribution", null, 0, -1, EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
                 IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getEntryType_Forwarding(), this.getEntryMakingCallType(), null, "forwarding", null, 0,
-                -1, EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                -1,
+                EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getEntryType_EntryActivityGraph(), this.getEntryActivityGraph(), null,
-                "entryActivityGraph", null, 0, 1, EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "entryActivityGraph",
+                null, 0, 1, EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getEntryType_EntryPhaseActivities(), this.getPhaseActivities(), null,
-                "entryPhaseActivities", null, 0, 1, EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "entryPhaseActivities",
+                null, 0, 1, EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getEntryType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
-                EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                EntryType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getEntryType_OpenArrivalRate(), this.getSrvnFloat(), "openArrivalRate", null, 0, 1,
                 EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getEntryType_Priority(), theXMLTypePackage.getInt(), "priority", null, 0, 1,
-                EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getEntryType_Semaphore(), this.getSemaphoreType(), "semaphore", "signal", 0, 1,
-                EntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getEntryType_Type(), this.getTypeType(), "type", "PH1PH2", 1, 1, EntryType.class,
+                EntryType.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getEntryType_Semaphore(), this.getSemaphoreType(), "semaphore", "signal", 0, 1,
+                EntryType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getEntryType_Type(), this.getTypeType(), "type", "PH1PH2", 1, 1, EntryType.class,
+                !IS_TRANSIENT,
+                !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.firstPlotTypeEClass, FirstPlotType.class, "FirstPlotType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -4912,22 +4960,23 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.histogramBinTypeEClass, HistogramBinType.class, "HistogramBinType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getHistogramBinType_Begin(), this.getSrvnFloat(), "begin", null, 1, 1,
-                HistogramBinType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                HistogramBinType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getHistogramBinType_Conf95(), this.getSrvnFloat(), "conf95", null, 0, 1,
-                HistogramBinType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                HistogramBinType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getHistogramBinType_Conf99(), this.getSrvnFloat(), "conf99", null, 0, 1,
-                HistogramBinType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                HistogramBinType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getHistogramBinType_End(), this.getSrvnFloat(), "end", null, 0, 1,
-                HistogramBinType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                HistogramBinType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getHistogramBinType_Prob(), this.getSrvnFloat(), "prob", null, 1, 1,
-                HistogramBinType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                HistogramBinType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.inPortTypeEClass, InPortType.class, "InPortType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -4938,8 +4987,8 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 InPortType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getInPortType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
-                InPortType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                InPortType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.interfaceTypeEClass, InterfaceType.class, "InterfaceType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -4956,38 +5005,46 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 LqnCoreType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getLqnCoreType_Slot(), this.getSlotType(), null, "slot", null, 0, -1,
-                LqnCoreType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                LqnCoreType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.lqnModelTypeEClass, LqnModelType.class, "LqnModelType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
-        this.initEReference(this.getLqnModelType_RunControl(), this.getRunControlType(), null, "runControl", null, 0, 1,
+        this.initEReference(this.getLqnModelType_RunControl(), this.getRunControlType(), null, "runControl", null, 0,
+                1,
                 LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEReference(this.getLqnModelType_PlotControl(), this.getPlotControlType(), null, "plotControl", null, 0,
-                1, LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+        this.initEReference(this.getLqnModelType_PlotControl(), this.getPlotControlType(), null, "plotControl", null,
+                0, 1,
+                LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEReference(this.getLqnModelType_SolverParams(), this.getSolverParamsType(), null, "solverParams", null,
-                1, 1, LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+        this.initEReference(this.getLqnModelType_SolverParams(), this.getSolverParamsType(), null, "solverParams",
+                null, 1, 1,
+                LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getLqnModelType_Processor(), this.getProcessorType(), null, "processor", null, 1, -1,
                 LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getLqnModelType_Slot(), this.getSlotType(), null, "slot", null, 0, -1,
-                LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getLqnModelType_Description(), theXMLTypePackage.getString(), "description", null, 0,
-                1, LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getLqnModelType_LqncoreSchemaVersion(), theXMLTypePackage.getDecimal(),
-                "lqncoreSchemaVersion", "1.0", 0, 1, LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getLqnModelType_LqnSchemaVersion(), theXMLTypePackage.getDecimal(), "lqnSchemaVersion",
-                "1.0", 0, 1, LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID,
+                LqnModelType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getLqnModelType_Name(), theXMLTypePackage.getString(), "name", null, 0, 1,
+        this.initEAttribute(this.getLqnModelType_Description(), theXMLTypePackage.getString(), "description", null, 0,
+                1,
                 LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getLqnModelType_LqncoreSchemaVersion(), theXMLTypePackage.getDecimal(),
+                "lqncoreSchemaVersion",
+                "1.0", 0, 1, LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getLqnModelType_LqnSchemaVersion(), theXMLTypePackage.getDecimal(),
+                "lqnSchemaVersion", "1.0",
+                0, 1, LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getLqnModelType_Name(), theXMLTypePackage.getString(), "name", null, 0, 1,
+                LqnModelType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getLqnModelType_XmlDebug(), this.getXmlDebugType(), "xmlDebug", "true", 0, 1,
                 LqnModelType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -4995,8 +5052,9 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.makingCallTypeEClass, MakingCallType.class, "MakingCallType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getMakingCallType_ResultCall(), this.getOutputResultType(), null, "resultCall", null,
-                0, -1, MakingCallType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, -1,
+                MakingCallType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getMakingCallType_Dest(), theXMLTypePackage.getString(), "dest", null, 1, 1,
                 MakingCallType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5016,26 +5074,31 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.outPortTypeEClass, OutPortType.class, "OutPortType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getOutPortType_ConnectTo(), this.getConnectToType(), "connectTo", null, 0, 1,
-                OutPortType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getOutPortType_Description(), theXMLTypePackage.getString(), "description", null, 0, 1,
+                OutPortType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getOutPortType_Description(), theXMLTypePackage.getString(), "description", null, 0,
+                1,
                 OutPortType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutPortType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
-                OutPortType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                OutPortType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.outputDistributionTypeEClass, OutputDistributionType.class, "OutputDistributionType",
-                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getOutputDistributionType_UnderflowBin(), this.getHistogramBinType(), null,
-                "underflowBin", null, 0, 1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "underflowBin",
+                null, 0, 1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getOutputDistributionType_HistogramBin(), this.getHistogramBinType(), null,
-                "histogramBin", null, 0, -1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "histogramBin",
+                null, 0, -1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getOutputDistributionType_OverflowBin(), this.getHistogramBinType(), null,
-                "overflowBin", null, 0, 1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "overflowBin", null,
+                0, 1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputDistributionType_BinSize(), this.getSrvnFloat(), "binSize", null, 0, 1,
                 OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5055,8 +5118,9 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputDistributionType_NumberBins(), theXMLTypePackage.getNonNegativeInteger(),
-                "numberBins", "20", 0, 1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "numberBins",
+                "20", 0, 1, OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE,
+                !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputDistributionType_Skew(), this.getSrvnFloat(), "skew", null, 0, 1,
                 OutputDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5068,85 +5132,107 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.outputEntryDistributionTypeEClass, OutputEntryDistributionType.class,
-                "OutputEntryDistributionType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                "OutputEntryDistributionType",
+                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getOutputEntryDistributionType_Phase(), theXMLTypePackage.getNonNegativeInteger(),
-                "phase", null, 1, 1, OutputEntryDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+                "phase",
+                null, 1, 1, OutputEntryDistributionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
                 !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.outputResultForwardingANDJoinDelayEClass, OutputResultForwardingANDJoinDelay.class,
                 "OutputResultForwardingANDJoinDelay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        this.initEReference(this.getOutputResultForwardingANDJoinDelay_ResultConf95(), this.getResultConf95Type(), null,
+        this.initEReference(this.getOutputResultForwardingANDJoinDelay_ResultConf95(), this.getResultConf95Type(),
+                null,
                 "resultConf95", null, 0, -1, OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEReference(this.getOutputResultForwardingANDJoinDelay_ResultConf99(), this.getResultConf99Type(), null,
+        this.initEReference(this.getOutputResultForwardingANDJoinDelay_ResultConf99(), this.getResultConf99Type(),
+                null,
                 "resultConf99", null, 0, -1, OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultForwardingANDJoinDelay_Dest(), theXMLTypePackage.getString(), "dest",
-                null, 1, 1, OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 1, 1,
+                OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+                !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultForwardingANDJoinDelay_JoinVariance(), this.getSrvnFloat(),
-                "joinVariance", null, 0, 1, OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE,
-                IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getOutputResultForwardingANDJoinDelay_JoinWaiting(), this.getSrvnFloat(),
-                "joinWaiting", null, 0, 1, OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE,
-                IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getOutputResultForwardingANDJoinDelay_Waiting(), this.getSrvnFloat(), "waiting", null,
+                "joinVariance", null,
                 0, 1, OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
                 !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getOutputResultForwardingANDJoinDelay_JoinWaiting(), this.getSrvnFloat(),
+                "joinWaiting", null,
+                0, 1, OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+                !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getOutputResultForwardingANDJoinDelay_Waiting(), this.getSrvnFloat(), "waiting", null,
+                0, 1,
+                OutputResultForwardingANDJoinDelay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+                !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.outputResultTypeEClass, OutputResultType.class, "OutputResultType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getOutputResultType_ResultConf95(), this.getResultConf95Type1(), null, "resultConf95",
-                null, 0, -1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                null, 0,
+                -1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getOutputResultType_ResultConf99(), this.getResultConf99Type1(), null, "resultConf99",
-                null, 0, -1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                null, 0,
+                -1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_OpenWaitTime(), this.getSrvnFloat(), "openWaitTime", null, 0, 1,
                 OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase1ProcWaiting(), this.getSrvnFloat(), "phase1ProcWaiting",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase1ServiceTime(), this.getSrvnFloat(), "phase1ServiceTime",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase1ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase1ServiceTimeVariance", null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase1Utilization(), this.getSrvnFloat(), "phase1Utilization",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase2ProcWaiting(), this.getSrvnFloat(), "phase2ProcWaiting",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase2ServiceTime(), this.getSrvnFloat(), "phase2ServiceTime",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase2ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase2ServiceTimeVariance", null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase2Utilization(), this.getSrvnFloat(), "phase2Utilization",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase3ProcWaiting(), this.getSrvnFloat(), "phase3ProcWaiting",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase3ServiceTime(), this.getSrvnFloat(), "phase3ServiceTime",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase3ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase3ServiceTimeVariance", null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Phase3Utilization(), this.getSrvnFloat(), "phase3Utilization",
+                null, 0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getOutputResultType_ProbExceedMaxServiceTime(), this.getSrvnFloat(),
+                "probExceedMaxServiceTime",
                 null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getOutputResultType_ProbExceedMaxServiceTime(), this.getSrvnFloat(),
-                "probExceedMaxServiceTime", null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE,
-                IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getOutputResultType_ProcUtilization(), this.getSrvnFloat(), "procUtilization", null, 0,
-                1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getOutputResultType_ProcUtilization(), this.getSrvnFloat(), "procUtilization", null,
+                0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_ProcWaiting(), this.getSrvnFloat(), "procWaiting", null, 0, 1,
                 OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5154,32 +5240,36 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_ServiceTimeVariance(), this.getSrvnFloat(), "serviceTimeVariance",
-                null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                null, 0,
+                1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_SquaredCoeffVariation(), this.getSrvnFloat(),
-                "squaredCoeffVariation", null, 0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "squaredCoeffVariation", null,
+                0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Throughput(), this.getSrvnFloat(), "throughput", null, 0, 1,
                 OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getOutputResultType_ThroughputBound(), this.getSrvnFloat(), "throughputBound", null, 0,
-                1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getOutputResultType_ThroughputBound(), this.getSrvnFloat(), "throughputBound", null,
+                0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Utilization(), this.getSrvnFloat(), "utilization", null, 0, 1,
                 OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getOutputResultType_Waiting(), this.getSrvnFloat(), "waiting", null, 0, 1,
                 OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getOutputResultType_WaitingVariance(), this.getSrvnFloat(), "waitingVariance", null, 0,
-                1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getOutputResultType_WaitingVariance(), this.getSrvnFloat(), "waitingVariance", null,
+                0, 1,
+                OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.parameterTypeEClass, ParameterType.class, "ParameterType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getParameterType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
-                ParameterType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ParameterType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getParameterType_Value(), theXMLTypePackage.getString(), "value", null, 1, 1,
                 ParameterType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5187,41 +5277,46 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.paraTypeEClass, ParaType.class, "ParaType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getParaType_StartValue(), theXMLTypePackage.getInt(), "startValue", null, 0, 1,
-                ParaType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ParaType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getParaType_EndValue(), theXMLTypePackage.getInt(), "endValue", null, 0, 1,
-                ParaType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ParaType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getParaType_StepValue(), theXMLTypePackage.getInt(), "stepValue", null, 0, 1,
-                ParaType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ParaType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getParaType_Value(), theXMLTypePackage.getInt(), "value", null, 0, -1, ParaType.class,
-                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED,
-                IS_ORDERED);
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.phaseActivitiesEClass, PhaseActivities.class, "PhaseActivities", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        this.initEReference(this.getPhaseActivities_Activity(), this.getActivityPhasesType(), null, "activity", null, 1,
-                3, PhaseActivities.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
+        this.initEReference(this.getPhaseActivities_Activity(), this.getActivityPhasesType(), null, "activity", null,
+                1, 3,
+                PhaseActivities.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.plotControlTypeEClass, PlotControlType.class, "PlotControlType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        this.initEReference(this.getPlotControlType_FirstPlot(), this.getFirstPlotType(), null, "firstPlot", null, 1, 1,
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
+        this.initEReference(this.getPlotControlType_FirstPlot(), this.getFirstPlotType(), null, "firstPlot", null, 1,
+                1,
                 PlotControlType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getPlotControlType_Plot(), this.getPlotType(), null, "plot", null, 1, -1,
-                PlotControlType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                PlotControlType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.plotTypeEClass, PlotType.class, "PlotType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getPlotType_Variable(), theXMLTypePackage.getString(), "variable", null, 0, 1,
-                PlotType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                PlotType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.portBindingTypeEClass, PortBindingType.class, "PortBindingType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getPortBindingType_Source(), theXMLTypePackage.getString(), "source", null, 1, 1,
                 PortBindingType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5232,11 +5327,11 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.pragmaTypeEClass, PragmaType.class, "PragmaType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getPragmaType_Param(), theXMLTypePackage.getString(), "param", null, 1, 1,
-                PragmaType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                PragmaType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getPragmaType_Value(), theXMLTypePackage.getString(), "value", null, 1, 1,
-                PragmaType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                PragmaType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.precedenceTypeEClass, PrecedenceType.class, "PrecedenceType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -5259,11 +5354,13 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 PrecedenceType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getPrecedenceType_PostLOOP(), this.getActivityLoopListType(), null, "postLOOP", null,
-                0, 1, PrecedenceType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                PrecedenceType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.processorBindingTypeEClass, ProcessorBindingType.class, "ProcessorBindingType",
-                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getProcessorBindingType_Source(), theXMLTypePackage.getString(), "source", null, 1, 1,
                 ProcessorBindingType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5274,23 +5371,27 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.processorTypeEClass, ProcessorType.class, "ProcessorType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getProcessorType_ResultProcessor(), this.getOutputResultType(), null,
-                "resultProcessor", null, 0, -1, ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "resultProcessor", null,
+                0, -1, ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getProcessorType_Task(), this.getTaskType(), null, "task", null, 1, -1,
-                ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                ProcessorType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getProcessorType_Multiplicity(), theXMLTypePackage.getNonNegativeInteger(),
-                "multiplicity", "1", 0, 1, ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "multiplicity", "1",
+                0, 1, ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getProcessorType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
-                ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ProcessorType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getProcessorType_Quantum(), this.getSrvnFloat(), "quantum", "0", 0, 1,
-                ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ProcessorType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getProcessorType_Replication(), theXMLTypePackage.getNonNegativeInteger(),
-                "replication", "1", 0, 1, ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "replication", "1",
+                0, 1, ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getProcessorType_Scheduling(), this.getSchedulingType(), "scheduling", "fcfs", 0, 1,
                 ProcessorType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5299,7 +5400,8 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.replyActivityTypeEClass, ReplyActivityType.class, "ReplyActivityType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getReplyActivityType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
                 ReplyActivityType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5307,14 +5409,16 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.replyEntryTypeEClass, ReplyEntryType.class, "ReplyEntryType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getReplyEntryType_ReplyActivity(), this.getReplyActivityType(), null, "replyActivity",
-                null, 1, -1, ReplyEntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                null, 1,
+                -1, ReplyEntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getReplyEntryType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
                 ReplyEntryType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.resultConf95TypeEClass, ResultConf95Type.class, "ResultConf95Type", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getResultConf95Type_JoinVariance(), this.getSrvnFloat(), "joinVariance", null, 0, 1,
                 ResultConf95Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5326,70 +5430,84 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.resultConf95Type1EClass, ResultConf95Type1.class, "ResultConf95Type1", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getResultConf95Type1_OpenWaitTime(), this.getSrvnFloat(), "openWaitTime", null, 0, 1,
                 ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase1ProcWaiting(), this.getSrvnFloat(), "phase1ProcWaiting",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase1ServiceTime(), this.getSrvnFloat(), "phase1ServiceTime",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase1ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase1ServiceTimeVariance", null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase1Utilization(), this.getSrvnFloat(), "phase1Utilization",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase2ProcWaiting(), this.getSrvnFloat(), "phase2ProcWaiting",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase2ServiceTime(), this.getSrvnFloat(), "phase2ServiceTime",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase2ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase2ServiceTimeVariance", null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase2Utilization(), this.getSrvnFloat(), "phase2Utilization",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase3ProcWaiting(), this.getSrvnFloat(), "phase3ProcWaiting",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase3ServiceTime(), this.getSrvnFloat(), "phase3ServiceTime",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase3ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase3ServiceTimeVariance", null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Phase3Utilization(), this.getSrvnFloat(), "phase3Utilization",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_ProbExceedMaxServiceTime(), this.getSrvnFloat(),
                 "probExceedMaxServiceTime", null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_ProcUtilization(), this.getSrvnFloat(), "procUtilization", null,
-                0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_ProcWaiting(), this.getSrvnFloat(), "procWaiting", null, 0, 1,
                 ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_ServiceTime(), this.getSrvnFloat(), "serviceTime", null, 0, 1,
                 ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getResultConf95Type1_ServiceTimeVariance(), this.getSrvnFloat(), "serviceTimeVariance",
-                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+        this.initEAttribute(this.getResultConf95Type1_ServiceTimeVariance(), this.getSrvnFloat(),
+                "serviceTimeVariance", null, 0,
+                1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_SquaredCoeffVariation(), this.getSrvnFloat(),
-                "squaredCoeffVariation", null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
-                IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "squaredCoeffVariation",
+                null, 0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+                !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Throughput(), this.getSrvnFloat(), "throughput", null, 0, 1,
                 ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_ThroughputBound(), this.getSrvnFloat(), "throughputBound", null,
-                0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_Utilization(), this.getSrvnFloat(), "utilization", null, 0, 1,
                 ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5397,11 +5515,13 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf95Type1_WaitingVariance(), this.getSrvnFloat(), "waitingVariance", null,
-                0, 1, ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                ResultConf95Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.resultConf99TypeEClass, ResultConf99Type.class, "ResultConf99Type", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getResultConf99Type_JoinVariance(), this.getSrvnFloat(), "joinVariance", null, 0, 1,
                 ResultConf99Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5413,70 +5533,84 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.resultConf99Type1EClass, ResultConf99Type1.class, "ResultConf99Type1", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getResultConf99Type1_OpenWaitTime(), this.getSrvnFloat(), "openWaitTime", null, 0, 1,
                 ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase1ProcWaiting(), this.getSrvnFloat(), "phase1ProcWaiting",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase1ServiceTime(), this.getSrvnFloat(), "phase1ServiceTime",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase1ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase1ServiceTimeVariance", null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase1Utilization(), this.getSrvnFloat(), "phase1Utilization",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase2ProcWaiting(), this.getSrvnFloat(), "phase2ProcWaiting",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase2ServiceTime(), this.getSrvnFloat(), "phase2ServiceTime",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase2ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase2ServiceTimeVariance", null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase2Utilization(), this.getSrvnFloat(), "phase2Utilization",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase3ProcWaiting(), this.getSrvnFloat(), "phase3ProcWaiting",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase3ServiceTime(), this.getSrvnFloat(), "phase3ServiceTime",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase3ServiceTimeVariance(), this.getSrvnFloat(),
                 "phase3ServiceTimeVariance", null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Phase3Utilization(), this.getSrvnFloat(), "phase3Utilization",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_ProbExceedMaxServiceTime(), this.getSrvnFloat(),
                 "probExceedMaxServiceTime", null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_ProcUtilization(), this.getSrvnFloat(), "procUtilization", null,
-                0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_ProcWaiting(), this.getSrvnFloat(), "procWaiting", null, 0, 1,
                 ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_ServiceTime(), this.getSrvnFloat(), "serviceTime", null, 0, 1,
                 ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getResultConf99Type1_ServiceTimeVariance(), this.getSrvnFloat(), "serviceTimeVariance",
-                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+        this.initEAttribute(this.getResultConf99Type1_ServiceTimeVariance(), this.getSrvnFloat(),
+                "serviceTimeVariance", null, 0,
+                1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_SquaredCoeffVariation(), this.getSrvnFloat(),
-                "squaredCoeffVariation", null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE,
-                IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "squaredCoeffVariation",
+                null, 0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE,
+                !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Throughput(), this.getSrvnFloat(), "throughput", null, 0, 1,
                 ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_ThroughputBound(), this.getSrvnFloat(), "throughputBound", null,
-                0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_Utilization(), this.getSrvnFloat(), "utilization", null, 0, 1,
                 ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5484,32 +5618,39 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultConf99Type1_WaitingVariance(), this.getSrvnFloat(), "waitingVariance", null,
-                0, 1, ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                ResultConf99Type1.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.resultGeneralTypeEClass, ResultGeneralType.class, "ResultGeneralType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getResultGeneralType_ConvVal(), this.getSrvnFloat(), "convVal", null, 1, 1,
                 ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getResultGeneralType_ElapsedTime(), theXMLTypePackage.getString(), "elapsedTime", null,
-                0, 1, ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getResultGeneralType_ElapsedTime(), theXMLTypePackage.getString(), "elapsedTime",
+                null, 0, 1,
+                ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultGeneralType_Iterations(), this.getSrvnFloat(), "iterations", null, 0, 1,
                 ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultGeneralType_PlatformInfo(), theXMLTypePackage.getString(), "platformInfo",
-                null, 0, 1, ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                null, 0, 1,
+                ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultGeneralType_SolverInfo(), theXMLTypePackage.getString(), "solverInfo", null,
-                0, 1, ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, 1,
+                ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultGeneralType_SystemCpuTime(), theXMLTypePackage.getString(), "systemCpuTime",
-                null, 0, 1, ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                null, 0,
+                1, ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEAttribute(this.getResultGeneralType_UserCpuTime(), theXMLTypePackage.getString(), "userCpuTime", null,
-                0, 1, ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
-                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getResultGeneralType_UserCpuTime(), theXMLTypePackage.getString(), "userCpuTime",
+                null, 0, 1,
+                ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getResultGeneralType_Valid(), this.getValidType(), "valid", "YES", 1, 1,
                 ResultGeneralType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
@@ -5517,43 +5658,50 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEClass(this.runControlTypeEClass, RunControlType.class, "RunControlType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getRunControlType_Para(), this.getParaType(), null, "para", null, 0, -1,
-                RunControlType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                RunControlType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.serviceTypeEClass, ServiceType.class, "ServiceType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getServiceType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1,
-                ServiceType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                ServiceType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.singleActivityListTypeEClass, SingleActivityListType.class, "SingleActivityListType",
-                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getSingleActivityListType_Activity(), this.getActivityType(), null, "activity", null,
-                1, 1, SingleActivityListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                1, 1,
+                SingleActivityListType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.slotTypeEClass, SlotType.class, "SlotType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getSlotType_Interface(), this.getInterfaceType(), null, "interface", null, 1, 1,
-                SlotType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                SlotType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getSlotType_Binding(), this.getBindType(), null, "binding", null, 1, -1,
-                SlotType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                SlotType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getSlotType_BindTarget(), theXMLTypePackage.getString(), "bindTarget", null, 1, 1,
                 SlotType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getSlotType_Id(), theXMLTypePackage.getString(), "id", null, 1, 1, SlotType.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getSlotType_ReplicNum(), theXMLTypePackage.getInt(), "replicNum", null, 0, 1,
-                SlotType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                SlotType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.solverParamsTypeEClass, SolverParamsType.class, "SolverParamsType", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getSolverParamsType_ResultGeneral(), this.getResultGeneralType(), null,
-                "resultGeneral", null, 0, 1, SolverParamsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                "resultGeneral", null,
+                0, 1, SolverParamsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getSolverParamsType_Pragma(), this.getPragmaType(), null, "pragma", null, 0, -1,
                 SolverParamsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5570,26 +5718,29 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 SolverParamsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getSolverParamsType_UnderrelaxCoeff(), this.getSrvnFloat(), "underrelaxCoeff", "1", 0,
-                1, SolverParamsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                1,
+                SolverParamsType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.synchCallTypeEClass, SynchCallType.class, "SynchCallType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEAttribute(this.getSynchCallType_Dest(), theXMLTypePackage.getString(), "dest", null, 1, 1,
-                SynchCallType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                SynchCallType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getSynchCallType_Fanin(), theXMLTypePackage.getInt(), "fanin", null, 0, 1,
-                SynchCallType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-                !IS_DERIVED, IS_ORDERED);
+                SynchCallType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getSynchCallType_Fanout(), theXMLTypePackage.getInt(), "fanout", null, 0, 1,
                 SynchCallType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.taskActivityGraphEClass, TaskActivityGraph.class, "TaskActivityGraph", !IS_ABSTRACT,
-                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getTaskActivityGraph_ReplyEntry(), this.getReplyEntryType(), null, "replyEntry", null,
-                0, -1, TaskActivityGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+                0, -1,
+                TaskActivityGraph.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         this.initEClass(this.taskTypeEClass, TaskType.class, "TaskType", !IS_ABSTRACT, !IS_INTERFACE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -5600,27 +5751,33 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
                 IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEReference(this.getTaskType_Service(), this.getServiceType(), null, "service", null, 0, -1,
+                TaskType.class,
+                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEReference(this.getTaskType_TaskActivities(), this.getTaskActivityGraph(), null, "taskActivities",
+                null, 0, 1,
                 TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
                 !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        this.initEReference(this.getTaskType_TaskActivities(), this.getTaskActivityGraph(), null, "taskActivities",
-                null, 0, 1, TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getTaskType_ActivityGraph(), this.getTaskOptionType(), "activityGraph", "YES", 0, 1,
                 TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getTaskType_Multiplicity(), theXMLTypePackage.getNonNegativeInteger(), "multiplicity",
-                "1", 0, 1, TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                "1", 0,
+                1, TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getTaskType_Name(), theXMLTypePackage.getString(), "name", null, 1, 1, TaskType.class,
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getTaskType_Priority(), theXMLTypePackage.getNonNegativeInteger(), "priority", "0", 0,
-                1, TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                1,
+                TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getTaskType_QueueLength(), theXMLTypePackage.getNonNegativeInteger(), "queueLength",
-                "0", 0, 1, TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                "0", 0, 1,
+                TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getTaskType_Replication(), theXMLTypePackage.getNonNegativeInteger(), "replication",
-                "1", 0, 1, TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+                "1", 0, 1,
+                TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
         this.initEAttribute(this.getTaskType_Scheduling(), this.getTaskSchedulingType(), "scheduling", "fcfs", 0, 1,
                 TaskType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
@@ -5682,7 +5839,8 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEDataType(this.axisTypeObjectEDataType, AxisType.class, "AxisTypeObject", IS_SERIALIZABLE,
                 IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.callOrderTypeObjectEDataType, CallOrderType.class, "CallOrderTypeObject",
-                IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
+                IS_SERIALIZABLE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.connectFromTypeEDataType, List.class, "ConnectFromType", IS_SERIALIZABLE,
                 !IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.connectToTypeEDataType, List.class, "ConnectToType", IS_SERIALIZABLE,
@@ -5690,16 +5848,20 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.initEDataType(this.phaseTypeEDataType, BigInteger.class, "PhaseType", IS_SERIALIZABLE,
                 !IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.schedulingTypeObjectEDataType, SchedulingType.class, "SchedulingTypeObject",
-                IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
+                IS_SERIALIZABLE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.sciNotationEDataType, String.class, "SciNotation", IS_SERIALIZABLE,
                 !IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.semaphoreTypeObjectEDataType, SemaphoreType.class, "SemaphoreTypeObject",
-                IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
+                IS_SERIALIZABLE,
+                IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.srvnFloatEDataType, Object.class, "SrvnFloat", IS_SERIALIZABLE,
                 !IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.taskOptionTypeObjectEDataType, TaskOptionType.class, "TaskOptionTypeObject",
-                IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
-        this.initEDataType(this.taskSchedulingTypeObjectEDataType, TaskSchedulingType.class, "TaskSchedulingTypeObject",
+                IS_SERIALIZABLE,
+                IS_GENERATED_INSTANCE_CLASS);
+        this.initEDataType(this.taskSchedulingTypeObjectEDataType, TaskSchedulingType.class,
+                "TaskSchedulingTypeObject",
                 IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
         this.initEDataType(this.typeTypeObjectEDataType, TypeType.class, "TypeTypeObject", IS_SERIALIZABLE,
                 IS_GENERATED_INSTANCE_CLASS);
@@ -5724,678 +5886,2686 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
      */
     protected void createExtendedMetaDataAnnotations() {
         final String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
-        this.addAnnotation(this, source, new String[] { "qualified", "false" });
-        this.addAnnotation(this.activityDefBaseEClass, source,
-                new String[] { "name", "ActivityDefBase", "kind", "elementOnly" });
-        this.addAnnotation(this.getActivityDefBase_ResultJoinDelay(), source,
-                new String[] { "kind", "element", "name", "result-join-delay", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_ResultForwarding(), source,
-                new String[] { "kind", "element", "name", "result-forwarding", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_ServiceTimeDistribution(), source, new String[] { "kind", "element",
-                "name", "service-time-distribution", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_ResultActivity(), source,
-                new String[] { "kind", "element", "name", "result-activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_CallOrder(), source,
-                new String[] { "kind", "attribute", "name", "call-order", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_HostDemandCvsq(), source,
-                new String[] { "kind", "attribute", "name", "host-demand-cvsq", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_HostDemandMean(), source,
-                new String[] { "kind", "attribute", "name", "host-demand-mean", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_MaxServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "max-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefBase_ThinkTime(), source,
-                new String[] { "kind", "attribute", "name", "think-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityDefTypeEClass, source,
-                new String[] { "name", "ActivityDefType", "kind", "elementOnly" });
-        this.addAnnotation(this.getActivityDefType_CallList(), source,
-                new String[] { "kind", "element", "name", "call-list", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityDefType_Group(), source,
-                new String[] { "kind", "group", "name", "group:11" });
-        this.addAnnotation(this.getActivityDefType_SynchCall(), source, new String[] { "kind", "element", "name",
-                "synch-call", "namespace", "##targetNamespace", "group", "group:11" });
-        this.addAnnotation(this.getActivityDefType_AsynchCall(), source, new String[] { "kind", "element", "name",
-                "asynch-call", "namespace", "##targetNamespace", "group", "group:11" });
-        this.addAnnotation(this.getActivityDefType_BoundToEntry(), source,
-                new String[] { "kind", "attribute", "name", "bound-to-entry", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityGraphBaseEClass, source,
-                new String[] { "name", "ActivityGraphBase", "kind", "elementOnly" });
-        this.addAnnotation(this.getActivityGraphBase_Activity(), source,
-                new String[] { "kind", "element", "name", "activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityGraphBase_Precedence(), source,
-                new String[] { "kind", "element", "name", "precedence", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityListTypeEClass, source,
-                new String[] { "name", "ActivityListType", "kind", "elementOnly" });
-        this.addAnnotation(this.getActivityListType_Activity(), source,
-                new String[] { "kind", "element", "name", "activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityLoopListTypeEClass, source,
-                new String[] { "name", "ActivityLoopListType", "kind", "elementOnly" });
-        this.addAnnotation(this.getActivityLoopListType_Activity(), source,
-                new String[] { "kind", "element", "name", "activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityLoopListType_End(), source,
-                new String[] { "kind", "attribute", "name", "end", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityLoopTypeEClass, source,
-                new String[] { "name", "ActivityLoopType", "kind", "empty" });
-        this.addAnnotation(this.getActivityLoopType_Count(), source,
-                new String[] { "kind", "attribute", "name", "count", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityMakingCallTypeEClass, source,
-                new String[] { "name", "ActivityMakingCallType", "kind", "elementOnly" });
-        this.addAnnotation(this.getActivityMakingCallType_CallsMean(), source,
-                new String[] { "kind", "attribute", "name", "calls-mean", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityOrTypeEClass, source,
-                new String[] { "name", "ActivityOrType", "kind", "empty" });
-        this.addAnnotation(this.getActivityOrType_Prob(), source,
-                new String[] { "kind", "attribute", "name", "prob", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityPhasesTypeEClass, source,
-                new String[] { "name", "ActivityPhasesType", "kind", "elementOnly" });
-        this.addAnnotation(this.getActivityPhasesType_CallList(), source,
-                new String[] { "kind", "element", "name", "call-list", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getActivityPhasesType_Group(), source,
-                new String[] { "kind", "group", "name", "group:11" });
-        this.addAnnotation(this.getActivityPhasesType_SynchCall(), source, new String[] { "kind", "element", "name",
-                "synch-call", "namespace", "##targetNamespace", "group", "group:11" });
-        this.addAnnotation(this.getActivityPhasesType_AsynchCall(), source, new String[] { "kind", "element", "name",
-                "asynch-call", "namespace", "##targetNamespace", "group", "group:11" });
-        this.addAnnotation(this.getActivityPhasesType_Phase(), source,
-                new String[] { "kind", "attribute", "name", "phase", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.activityTypeEClass, source, new String[] { "name", "ActivityType", "kind", "empty" });
-        this.addAnnotation(this.getActivityType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.andJoinListTypeEClass, source,
-                new String[] { "name", "AndJoinListType", "kind", "elementOnly" });
-        this.addAnnotation(this.getAndJoinListType_Activity(), source,
-                new String[] { "kind", "element", "name", "activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getAndJoinListType_Quorum(), source,
-                new String[] { "kind", "attribute", "name", "quorum", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.asynchCallTypeEClass, source,
-                new String[] { "name", "asynch-call_._type", "kind", "empty" });
-        this.addAnnotation(this.getAsynchCallType_Dest(), source,
-                new String[] { "kind", "attribute", "name", "dest", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getAsynchCallType_Fanin(), source,
-                new String[] { "kind", "attribute", "name", "fanin", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getAsynchCallType_Fanout(), source,
-                new String[] { "kind", "attribute", "name", "fanout", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.axisTypeEEnum, source, new String[] { "name", "AxisType" });
-        this.addAnnotation(this.axisTypeObjectEDataType, source,
-                new String[] { "name", "AxisType:Object", "baseType", "AxisType" });
-        this.addAnnotation(this.bindTypeEClass, source, new String[] { "name", "BindType", "kind", "elementOnly" });
-        this.addAnnotation(this.getBindType_Parameter(), source,
-                new String[] { "kind", "element", "name", "parameter", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getBindType_ProcessorBinding(), source,
-                new String[] { "kind", "element", "name", "processor-binding", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getBindType_PortBinding(), source,
-                new String[] { "kind", "element", "name", "port-binding", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.callListTypeEClass, source,
-                new String[] { "name", "call-list_._type", "kind", "elementOnly" });
-        this.addAnnotation(this.getCallListType_SynchCall(), source,
-                new String[] { "kind", "element", "name", "synch-call", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getCallListType_AsynchCall(), source,
-                new String[] { "kind", "element", "name", "asynch-call", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.callOrderTypeEEnum, source, new String[] { "name", "CallOrderType" });
-        this.addAnnotation(this.callOrderTypeObjectEDataType, source,
-                new String[] { "name", "CallOrderType:Object", "baseType", "CallOrderType" });
-        this.addAnnotation(this.connectFromTypeEDataType, source, new String[] { "name", "connect-from_._type",
-                "itemType", "http://www.eclipse.org/emf/2003/XMLType#string" });
-        this.addAnnotation(this.connectToTypeEDataType, source, new String[] { "name", "connect-to_._type", "itemType",
-                "http://www.eclipse.org/emf/2003/XMLType#string" });
-        this.addAnnotation(this.documentRootEClass, source, new String[] { "name", "", "kind", "mixed" });
-        this.addAnnotation(this.getDocumentRoot_Mixed(), source,
-                new String[] { "kind", "elementWildcard", "name", ":mixed" });
-        this.addAnnotation(this.getDocumentRoot_XMLNSPrefixMap(), source,
-                new String[] { "kind", "attribute", "name", "xmlns:prefix" });
-        this.addAnnotation(this.getDocumentRoot_XSISchemaLocation(), source,
-                new String[] { "kind", "attribute", "name", "xsi:schemaLocation" });
-        this.addAnnotation(this.getDocumentRoot_LqnCore(), source,
-                new String[] { "kind", "element", "name", "lqn-core", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getDocumentRoot_LqnModel(), source,
-                new String[] { "kind", "element", "name", "lqn-model", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.entryActivityDefTypeEClass, source,
-                new String[] { "name", "EntryActivityDefType", "kind", "elementOnly" });
-        this.addAnnotation(this.getEntryActivityDefType_CallList(), source,
-                new String[] { "kind", "element", "name", "call-list", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryActivityDefType_Group(), source,
-                new String[] { "kind", "group", "name", "group:11" });
-        this.addAnnotation(this.getEntryActivityDefType_SynchCall(), source, new String[] { "kind", "element", "name",
-                "synch-call", "namespace", "##targetNamespace", "group", "group:11" });
-        this.addAnnotation(this.getEntryActivityDefType_AsynchCall(), source, new String[] { "kind", "element", "name",
-                "asynch-call", "namespace", "##targetNamespace", "group", "group:11" });
-        this.addAnnotation(this.getEntryActivityDefType_FirstActivity(), source,
-                new String[] { "kind", "attribute", "name", "first-activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.entryActivityGraphEClass, source,
-                new String[] { "name", "EntryActivityGraph", "kind", "elementOnly" });
-        this.addAnnotation(this.getEntryActivityGraph_ReplyActivity(), source,
-                new String[] { "kind", "element", "name", "reply-activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.entryMakingCallTypeEClass, source,
-                new String[] { "name", "EntryMakingCallType", "kind", "elementOnly" });
-        this.addAnnotation(this.getEntryMakingCallType_Prob(), source,
-                new String[] { "kind", "attribute", "name", "prob", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.entryTypeEClass, source, new String[] { "name", "EntryType", "kind", "elementOnly" });
-        this.addAnnotation(this.getEntryType_ResultEntry(), source,
-                new String[] { "kind", "element", "name", "result-entry", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_ServiceTimeDistribution(), source, new String[] { "kind", "element",
-                "name", "service-time-distribution", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_Forwarding(), source,
-                new String[] { "kind", "element", "name", "forwarding", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_EntryActivityGraph(), source,
-                new String[] { "kind", "element", "name", "entry-activity-graph", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_EntryPhaseActivities(), source,
-                new String[] { "kind", "element", "name", "entry-phase-activities", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_OpenArrivalRate(), source,
-                new String[] { "kind", "attribute", "name", "open-arrival-rate", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_Priority(), source,
-                new String[] { "kind", "attribute", "name", "priority", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_Semaphore(), source,
-                new String[] { "kind", "attribute", "name", "semaphore", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getEntryType_Type(), source,
-                new String[] { "kind", "attribute", "name", "type", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.firstPlotTypeEClass, source,
-                new String[] { "name", "first-plot_._type", "kind", "empty" });
-        this.addAnnotation(this.getFirstPlotType_Variable(), source,
-                new String[] { "kind", "attribute", "name", "variable", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.histogramBinTypeEClass, source,
-                new String[] { "name", "HistogramBinType", "kind", "empty" });
-        this.addAnnotation(this.getHistogramBinType_Begin(), source,
-                new String[] { "kind", "attribute", "name", "begin", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getHistogramBinType_Conf95(), source,
-                new String[] { "kind", "attribute", "name", "conf-95", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getHistogramBinType_Conf99(), source,
-                new String[] { "kind", "attribute", "name", "conf-99", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getHistogramBinType_End(), source,
-                new String[] { "kind", "attribute", "name", "end", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getHistogramBinType_Prob(), source,
-                new String[] { "kind", "attribute", "name", "prob", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.inPortTypeEClass, source, new String[] { "name", "in-port_._type", "kind", "empty" });
-        this.addAnnotation(this.getInPortType_ConnectFrom(), source,
-                new String[] { "kind", "attribute", "name", "connect-from", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getInPortType_Description(), source,
-                new String[] { "kind", "attribute", "name", "description", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getInPortType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.interfaceTypeEClass, source,
-                new String[] { "name", "Interface_._type", "kind", "elementOnly" });
-        this.addAnnotation(this.getInterfaceType_InPort(), source,
-                new String[] { "kind", "element", "name", "in-port", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getInterfaceType_OutPort(), source,
-                new String[] { "kind", "element", "name", "out-port", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.lqnCoreTypeEClass, source,
-                new String[] { "name", "Lqn-CoreType", "kind", "elementOnly" });
-        this.addAnnotation(this.getLqnCoreType_Processor(), source,
-                new String[] { "kind", "element", "name", "processor", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnCoreType_Slot(), source,
-                new String[] { "kind", "element", "name", "slot", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.lqnModelTypeEClass, source,
-                new String[] { "name", "LqnModelType", "kind", "elementOnly" });
-        this.addAnnotation(this.getLqnModelType_RunControl(), source,
-                new String[] { "kind", "element", "name", "run-control", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_PlotControl(), source,
-                new String[] { "kind", "element", "name", "plot-control", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_SolverParams(), source,
-                new String[] { "kind", "element", "name", "solver-params", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_Processor(), source,
-                new String[] { "kind", "element", "name", "processor", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_Slot(), source,
-                new String[] { "kind", "element", "name", "slot", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_Description(), source,
-                new String[] { "kind", "attribute", "name", "description", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_LqncoreSchemaVersion(), source, new String[] { "kind", "attribute",
-                "name", "lqncore-schema-version", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_LqnSchemaVersion(), source,
-                new String[] { "kind", "attribute", "name", "lqn-schema-version", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getLqnModelType_XmlDebug(), source,
-                new String[] { "kind", "attribute", "name", "xml-debug", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.makingCallTypeEClass, source,
-                new String[] { "name", "MakingCallType", "kind", "elementOnly" });
-        this.addAnnotation(this.getMakingCallType_ResultCall(), source,
-                new String[] { "kind", "element", "name", "result-call", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getMakingCallType_Dest(), source,
-                new String[] { "kind", "attribute", "name", "dest", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getMakingCallType_Fanin(), source,
-                new String[] { "kind", "attribute", "name", "fanin", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getMakingCallType_Fanout(), source,
-                new String[] { "kind", "attribute", "name", "fanout", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.orListTypeEClass, source, new String[] { "name", "OrListType", "kind", "elementOnly" });
-        this.addAnnotation(this.getOrListType_Activity(), source,
-                new String[] { "kind", "element", "name", "activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.outPortTypeEClass, source, new String[] { "name", "out-port_._type", "kind", "empty" });
-        this.addAnnotation(this.getOutPortType_ConnectTo(), source,
-                new String[] { "kind", "attribute", "name", "connect-to", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutPortType_Description(), source,
-                new String[] { "kind", "attribute", "name", "description", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutPortType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.outputDistributionTypeEClass, source,
-                new String[] { "name", "OutputDistributionType", "kind", "elementOnly" });
-        this.addAnnotation(this.getOutputDistributionType_UnderflowBin(), source,
-                new String[] { "kind", "element", "name", "underflow-bin", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_HistogramBin(), source,
-                new String[] { "kind", "element", "name", "histogram-bin", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_OverflowBin(), source,
-                new String[] { "kind", "element", "name", "overflow-bin", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_BinSize(), source,
-                new String[] { "kind", "attribute", "name", "bin-size", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_Kurtosis(), source,
-                new String[] { "kind", "attribute", "name", "kurtosis", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_Max(), source,
-                new String[] { "kind", "attribute", "name", "max", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_Mean(), source,
-                new String[] { "kind", "attribute", "name", "mean", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_MidPoint(), source,
-                new String[] { "kind", "attribute", "name", "mid-point", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_Min(), source,
-                new String[] { "kind", "attribute", "name", "min", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_NumberBins(), source,
-                new String[] { "kind", "attribute", "name", "number-bins", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_Skew(), source,
-                new String[] { "kind", "attribute", "name", "skew", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_StdDev(), source,
-                new String[] { "kind", "attribute", "name", "std-dev", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputDistributionType_XSamples(), source,
-                new String[] { "kind", "attribute", "name", "x-samples", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.outputEntryDistributionTypeEClass, source,
-                new String[] { "name", "OutputEntryDistributionType", "kind", "elementOnly" });
-        this.addAnnotation(this.getOutputEntryDistributionType_Phase(), source,
-                new String[] { "kind", "attribute", "name", "phase", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.outputResultForwardingANDJoinDelayEClass, source,
-                new String[] { "name", "OutputResultForwardingANDJoinDelay", "kind", "elementOnly" });
-        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_ResultConf95(), source,
-                new String[] { "kind", "element", "name", "result-conf-95", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_ResultConf99(), source,
-                new String[] { "kind", "element", "name", "result-conf-99", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_Dest(), source,
-                new String[] { "kind", "attribute", "name", "dest", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_JoinVariance(), source,
-                new String[] { "kind", "attribute", "name", "join-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_JoinWaiting(), source,
-                new String[] { "kind", "attribute", "name", "join-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_Waiting(), source,
-                new String[] { "kind", "attribute", "name", "waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.outputResultTypeEClass, source,
-                new String[] { "name", "OutputResultType", "kind", "elementOnly" });
-        this.addAnnotation(this.getOutputResultType_ResultConf95(), source,
-                new String[] { "kind", "element", "name", "result-conf-95", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_ResultConf99(), source,
-                new String[] { "kind", "element", "name", "result-conf-99", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_OpenWaitTime(), source,
-                new String[] { "kind", "attribute", "name", "open-wait-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase1ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase1-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase1ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase1-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase1ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase1-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase1Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase1-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase2ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase2-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase2ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase2-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase2ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase2-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase2Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase2-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase3ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase3-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase3ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase3-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase3ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase3-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Phase3Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase3-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_ProbExceedMaxServiceTime(), source, new String[] { "kind",
-                "attribute", "name", "prob-exceed-max-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_ProcUtilization(), source,
-                new String[] { "kind", "attribute", "name", "proc-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_ServiceTimeVariance(), source, new String[] { "kind", "attribute",
-                "name", "service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_SquaredCoeffVariation(), source, new String[] { "kind", "attribute",
-                "name", "squared-coeff-variation", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Throughput(), source,
-                new String[] { "kind", "attribute", "name", "throughput", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_ThroughputBound(), source,
-                new String[] { "kind", "attribute", "name", "throughput-bound", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Utilization(), source,
-                new String[] { "kind", "attribute", "name", "utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_Waiting(), source,
-                new String[] { "kind", "attribute", "name", "waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getOutputResultType_WaitingVariance(), source,
-                new String[] { "kind", "attribute", "name", "waiting-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.parameterTypeEClass, source,
-                new String[] { "name", "parameter_._type", "kind", "empty" });
-        this.addAnnotation(this.getParameterType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getParameterType_Value(), source,
-                new String[] { "kind", "attribute", "name", "value", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.paraTypeEClass, source, new String[] { "name", "para_._type", "kind", "elementOnly" });
-        this.addAnnotation(this.getParaType_StartValue(), source,
-                new String[] { "kind", "element", "name", "start-value", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getParaType_EndValue(), source,
-                new String[] { "kind", "element", "name", "end-value", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getParaType_StepValue(), source,
-                new String[] { "kind", "element", "name", "step-value", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getParaType_Value(), source,
-                new String[] { "kind", "element", "name", "value", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.phaseActivitiesEClass, source,
-                new String[] { "name", "PhaseActivities", "kind", "elementOnly" });
-        this.addAnnotation(this.getPhaseActivities_Activity(), source,
-                new String[] { "kind", "element", "name", "activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.phaseTypeEDataType, source,
-                new String[] { "name", "phase_._type", "baseType",
-                        "http://www.eclipse.org/emf/2003/XMLType#positiveInteger", "minInclusive", "1", "maxInclusive",
-                        "3" });
-        this.addAnnotation(this.plotControlTypeEClass, source,
-                new String[] { "name", "plot-control_._type", "kind", "elementOnly" });
-        this.addAnnotation(this.getPlotControlType_FirstPlot(), source,
-                new String[] { "kind", "element", "name", "first-plot", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPlotControlType_Plot(), source,
-                new String[] { "kind", "element", "name", "plot", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.plotTypeEClass, source, new String[] { "name", "plot_._type", "kind", "empty" });
-        this.addAnnotation(this.getPlotType_Variable(), source,
-                new String[] { "kind", "attribute", "name", "variable", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.portBindingTypeEClass, source,
-                new String[] { "name", "port-binding_._type", "kind", "empty" });
-        this.addAnnotation(this.getPortBindingType_Source(), source,
-                new String[] { "kind", "attribute", "name", "source", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPortBindingType_Target(), source,
-                new String[] { "kind", "attribute", "name", "target", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.pragmaTypeEClass, source, new String[] { "name", "pragma_._type", "kind", "empty" });
-        this.addAnnotation(this.getPragmaType_Param(), source,
-                new String[] { "kind", "attribute", "name", "param", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPragmaType_Value(), source,
-                new String[] { "kind", "attribute", "name", "value", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.precedenceTypeEClass, source,
-                new String[] { "name", "PrecedenceType", "kind", "elementOnly" });
-        this.addAnnotation(this.getPrecedenceType_Pre(), source,
-                new String[] { "kind", "element", "name", "pre", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPrecedenceType_PreOR(), source,
-                new String[] { "kind", "element", "name", "pre-OR", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPrecedenceType_PreAND(), source,
-                new String[] { "kind", "element", "name", "pre-AND", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPrecedenceType_Post(), source,
-                new String[] { "kind", "element", "name", "post", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPrecedenceType_PostOR(), source,
-                new String[] { "kind", "element", "name", "post-OR", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPrecedenceType_PostAND(), source,
-                new String[] { "kind", "element", "name", "post-AND", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getPrecedenceType_PostLOOP(), source,
-                new String[] { "kind", "element", "name", "post-LOOP", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.processorBindingTypeEClass, source,
-                new String[] { "name", "processor-binding_._type", "kind", "empty" });
-        this.addAnnotation(this.getProcessorBindingType_Source(), source,
-                new String[] { "kind", "attribute", "name", "source", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorBindingType_Target(), source,
-                new String[] { "kind", "attribute", "name", "target", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.processorTypeEClass, source,
-                new String[] { "name", "ProcessorType", "kind", "elementOnly" });
-        this.addAnnotation(this.getProcessorType_ResultProcessor(), source,
-                new String[] { "kind", "element", "name", "result-processor", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorType_Task(), source,
-                new String[] { "kind", "element", "name", "task", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorType_Multiplicity(), source,
-                new String[] { "kind", "attribute", "name", "multiplicity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorType_Quantum(), source,
-                new String[] { "kind", "attribute", "name", "quantum", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorType_Replication(), source,
-                new String[] { "kind", "attribute", "name", "replication", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorType_Scheduling(), source,
-                new String[] { "kind", "attribute", "name", "scheduling", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getProcessorType_SpeedFactor(), source,
-                new String[] { "kind", "attribute", "name", "speed-factor", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.replyActivityTypeEClass, source,
-                new String[] { "name", "reply-activity_._type", "kind", "empty" });
-        this.addAnnotation(this.getReplyActivityType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.replyEntryTypeEClass, source,
-                new String[] { "name", "reply-entry_._type", "kind", "elementOnly" });
-        this.addAnnotation(this.getReplyEntryType_ReplyActivity(), source,
-                new String[] { "kind", "element", "name", "reply-activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getReplyEntryType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.resultConf95TypeEClass, source,
-                new String[] { "name", "result-conf-95_._type", "kind", "empty" });
-        this.addAnnotation(this.getResultConf95Type_JoinVariance(), source,
-                new String[] { "kind", "attribute", "name", "join-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type_JoinWaiting(), source,
-                new String[] { "kind", "attribute", "name", "join-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type_Waiting(), source,
-                new String[] { "kind", "attribute", "name", "waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.resultConf95Type1EClass, source,
-                new String[] { "name", "result-conf-95_._1_._type", "kind", "empty" });
-        this.addAnnotation(this.getResultConf95Type1_OpenWaitTime(), source,
-                new String[] { "kind", "attribute", "name", "open-wait-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase1ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase1-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase1ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase1-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase1ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase1-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase1Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase1-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase2ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase2-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase2ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase2-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase2ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase2-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase2Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase2-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase3ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase3-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase3ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase3-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase3ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase3-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Phase3Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase3-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_ProbExceedMaxServiceTime(), source, new String[] { "kind",
-                "attribute", "name", "prob-exceed-max-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_ProcUtilization(), source,
-                new String[] { "kind", "attribute", "name", "proc-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_ServiceTimeVariance(), source, new String[] { "kind", "attribute",
-                "name", "service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_SquaredCoeffVariation(), source, new String[] { "kind",
-                "attribute", "name", "squared-coeff-variation", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Throughput(), source,
-                new String[] { "kind", "attribute", "name", "throughput", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_ThroughputBound(), source,
-                new String[] { "kind", "attribute", "name", "throughput-bound", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Utilization(), source,
-                new String[] { "kind", "attribute", "name", "utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_Waiting(), source,
-                new String[] { "kind", "attribute", "name", "waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf95Type1_WaitingVariance(), source,
-                new String[] { "kind", "attribute", "name", "waiting-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.resultConf99TypeEClass, source,
-                new String[] { "name", "result-conf-99_._type", "kind", "empty" });
-        this.addAnnotation(this.getResultConf99Type_JoinVariance(), source,
-                new String[] { "kind", "attribute", "name", "join-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type_JoinWaiting(), source,
-                new String[] { "kind", "attribute", "name", "join-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type_Waiting(), source,
-                new String[] { "kind", "attribute", "name", "waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.resultConf99Type1EClass, source,
-                new String[] { "name", "result-conf-99_._1_._type", "kind", "empty" });
-        this.addAnnotation(this.getResultConf99Type1_OpenWaitTime(), source,
-                new String[] { "kind", "attribute", "name", "open-wait-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase1ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase1-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase1ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase1-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase1ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase1-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase1Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase1-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase2ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase2-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase2ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase2-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase2ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase2-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase2Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase2-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase3ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "phase3-proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase3ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "phase3-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase3ServiceTimeVariance(), source, new String[] { "kind",
-                "attribute", "name", "phase3-service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Phase3Utilization(), source,
-                new String[] { "kind", "attribute", "name", "phase3-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_ProbExceedMaxServiceTime(), source, new String[] { "kind",
-                "attribute", "name", "prob-exceed-max-service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_ProcUtilization(), source,
-                new String[] { "kind", "attribute", "name", "proc-utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_ProcWaiting(), source,
-                new String[] { "kind", "attribute", "name", "proc-waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_ServiceTime(), source,
-                new String[] { "kind", "attribute", "name", "service-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_ServiceTimeVariance(), source, new String[] { "kind", "attribute",
-                "name", "service-time-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_SquaredCoeffVariation(), source, new String[] { "kind",
-                "attribute", "name", "squared-coeff-variation", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Throughput(), source,
-                new String[] { "kind", "attribute", "name", "throughput", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_ThroughputBound(), source,
-                new String[] { "kind", "attribute", "name", "throughput-bound", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Utilization(), source,
-                new String[] { "kind", "attribute", "name", "utilization", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_Waiting(), source,
-                new String[] { "kind", "attribute", "name", "waiting", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultConf99Type1_WaitingVariance(), source,
-                new String[] { "kind", "attribute", "name", "waiting-variance", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.resultGeneralTypeEClass, source,
-                new String[] { "name", "result-general_._type", "kind", "empty" });
-        this.addAnnotation(this.getResultGeneralType_ConvVal(), source,
-                new String[] { "kind", "attribute", "name", "conv-val", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultGeneralType_ElapsedTime(), source,
-                new String[] { "kind", "attribute", "name", "elapsed-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultGeneralType_Iterations(), source,
-                new String[] { "kind", "attribute", "name", "iterations", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultGeneralType_PlatformInfo(), source,
-                new String[] { "kind", "attribute", "name", "platform-info", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultGeneralType_SolverInfo(), source,
-                new String[] { "kind", "attribute", "name", "solver-info", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultGeneralType_SystemCpuTime(), source,
-                new String[] { "kind", "attribute", "name", "system-cpu-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultGeneralType_UserCpuTime(), source,
-                new String[] { "kind", "attribute", "name", "user-cpu-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getResultGeneralType_Valid(), source,
-                new String[] { "kind", "attribute", "name", "valid", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.runControlTypeEClass, source,
-                new String[] { "name", "run-control_._type", "kind", "elementOnly" });
-        this.addAnnotation(this.getRunControlType_Para(), source,
-                new String[] { "kind", "element", "name", "para", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.schedulingTypeEEnum, source, new String[] { "name", "SchedulingType" });
-        this.addAnnotation(this.schedulingTypeObjectEDataType, source,
-                new String[] { "name", "SchedulingType:Object", "baseType", "SchedulingType" });
-        this.addAnnotation(this.sciNotationEDataType, source,
-                new String[] { "name", "SciNotation", "baseType", "http://www.eclipse.org/emf/2003/XMLType#string",
-                        "pattern", "[\\+|\\-]?\\d+((\\.\\d+)?[e|E][\\+|\\-]\\d+)?" });
-        this.addAnnotation(this.semaphoreTypeEEnum, source, new String[] { "name", "SemaphoreType" });
-        this.addAnnotation(this.semaphoreTypeObjectEDataType, source,
-                new String[] { "name", "SemaphoreType:Object", "baseType", "SemaphoreType" });
-        this.addAnnotation(this.serviceTypeEClass, source, new String[] { "name", "ServiceType", "kind", "empty" });
-        this.addAnnotation(this.getServiceType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.singleActivityListTypeEClass, source,
-                new String[] { "name", "SingleActivityListType", "kind", "elementOnly" });
-        this.addAnnotation(this.getSingleActivityListType_Activity(), source,
-                new String[] { "kind", "element", "name", "activity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.slotTypeEClass, source, new String[] { "name", "SlotType", "kind", "elementOnly" });
-        this.addAnnotation(this.getSlotType_Interface(), source,
-                new String[] { "kind", "element", "name", "Interface", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSlotType_Binding(), source,
-                new String[] { "kind", "element", "name", "binding", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSlotType_BindTarget(), source,
-                new String[] { "kind", "attribute", "name", "bind-target", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSlotType_Id(), source,
-                new String[] { "kind", "attribute", "name", "id", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSlotType_ReplicNum(), source,
-                new String[] { "kind", "attribute", "name", "replic_num", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.solverParamsTypeEClass, source,
-                new String[] { "name", "solver-params_._type", "kind", "elementOnly" });
-        this.addAnnotation(this.getSolverParamsType_ResultGeneral(), source,
-                new String[] { "kind", "element", "name", "result-general", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSolverParamsType_Pragma(), source,
-                new String[] { "kind", "element", "name", "pragma", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSolverParamsType_Comment(), source,
-                new String[] { "kind", "attribute", "name", "comment", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSolverParamsType_ConvVal(), source,
-                new String[] { "kind", "attribute", "name", "conv_val", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSolverParamsType_ItLimit(), source,
-                new String[] { "kind", "attribute", "name", "it_limit", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSolverParamsType_PrintInt(), source,
-                new String[] { "kind", "attribute", "name", "print_int", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSolverParamsType_UnderrelaxCoeff(), source,
-                new String[] { "kind", "attribute", "name", "underrelax_coeff", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.srvnFloatEDataType, source, new String[] { "name", "SrvnFloat", "memberTypes",
-                "SciNotation http://www.eclipse.org/emf/2003/XMLType#decimal" });
-        this.addAnnotation(this.synchCallTypeEClass, source,
-                new String[] { "name", "synch-call_._type", "kind", "empty" });
-        this.addAnnotation(this.getSynchCallType_Dest(), source,
-                new String[] { "kind", "attribute", "name", "dest", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSynchCallType_Fanin(), source,
-                new String[] { "kind", "attribute", "name", "fanin", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getSynchCallType_Fanout(), source,
-                new String[] { "kind", "attribute", "name", "fanout", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.taskActivityGraphEClass, source,
-                new String[] { "name", "TaskActivityGraph", "kind", "elementOnly" });
-        this.addAnnotation(this.getTaskActivityGraph_ReplyEntry(), source,
-                new String[] { "kind", "element", "name", "reply-entry", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.taskOptionTypeEEnum, source, new String[] { "name", "TaskOptionType" });
-        this.addAnnotation(this.taskOptionTypeObjectEDataType, source,
-                new String[] { "name", "TaskOptionType:Object", "baseType", "TaskOptionType" });
-        this.addAnnotation(this.taskSchedulingTypeEEnum, source, new String[] { "name", "TaskSchedulingType" });
-        this.addAnnotation(this.taskSchedulingTypeObjectEDataType, source,
-                new String[] { "name", "TaskSchedulingType:Object", "baseType", "TaskSchedulingType" });
-        this.addAnnotation(this.taskTypeEClass, source, new String[] { "name", "TaskType", "kind", "elementOnly" });
-        this.addAnnotation(this.getTaskType_ResultTask(), source,
-                new String[] { "kind", "element", "name", "result-task", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_Entry(), source,
-                new String[] { "kind", "element", "name", "entry", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_Service(), source,
-                new String[] { "kind", "element", "name", "service", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_TaskActivities(), source,
-                new String[] { "kind", "element", "name", "task-activities", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_ActivityGraph(), source,
-                new String[] { "kind", "attribute", "name", "activity-graph", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_Multiplicity(), source,
-                new String[] { "kind", "attribute", "name", "multiplicity", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_Name(), source,
-                new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_Priority(), source,
-                new String[] { "kind", "attribute", "name", "priority", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_QueueLength(), source,
-                new String[] { "kind", "attribute", "name", "queue-length", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_Replication(), source,
-                new String[] { "kind", "attribute", "name", "replication", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_Scheduling(), source,
-                new String[] { "kind", "attribute", "name", "scheduling", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.getTaskType_ThinkTime(), source,
-                new String[] { "kind", "attribute", "name", "think-time", "namespace", "##targetNamespace" });
-        this.addAnnotation(this.typeTypeEEnum, source, new String[] { "name", "type_._type" });
-        this.addAnnotation(this.typeTypeObjectEDataType, source,
-                new String[] { "name", "type_._type:Object", "baseType", "type_._type" });
-        this.addAnnotation(this.validTypeEEnum, source, new String[] { "name", "valid_._type" });
-        this.addAnnotation(this.validTypeObjectEDataType, source,
-                new String[] { "name", "valid_._type:Object", "baseType", "valid_._type" });
-        this.addAnnotation(this.xmlDebugTypeEEnum, source, new String[] { "name", "xml-debug_._type" });
-        this.addAnnotation(this.xmlDebugTypeObjectEDataType, source,
-                new String[] { "name", "xml-debug_._type:Object", "baseType", "xml-debug_._type" });
+        this.addAnnotation(this,
+                source,
+                new String[]
+                        {
+                "qualified", "false"
+                        });
+        this.addAnnotation(this.activityDefBaseEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityDefBase",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getActivityDefBase_ResultJoinDelay(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-join-delay",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_ResultForwarding(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-forwarding",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_ServiceTimeDistribution(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "service-time-distribution",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_ResultActivity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_CallOrder(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "call-order",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_HostDemandCvsq(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "host-demand-cvsq",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_HostDemandMean(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "host-demand-mean",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_MaxServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "max-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefBase_ThinkTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "think-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityDefTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityDefType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getActivityDefType_CallList(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "call-list",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityDefType_Group(),
+                source,
+                new String[]
+                        {
+            "kind", "group",
+            "name", "group:11"
+                        });
+        this.addAnnotation(this.getActivityDefType_SynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "synch-call",
+            "namespace", "##targetNamespace",
+            "group", "group:11"
+                        });
+        this.addAnnotation(this.getActivityDefType_AsynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "asynch-call",
+            "namespace", "##targetNamespace",
+            "group", "group:11"
+                        });
+        this.addAnnotation(this.getActivityDefType_BoundToEntry(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "bound-to-entry",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityGraphBaseEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityGraphBase",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getActivityGraphBase_Activity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityGraphBase_Precedence(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "precedence",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityListTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityListType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getActivityListType_Activity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityLoopListTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityLoopListType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getActivityLoopListType_Activity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityLoopListType_End(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "end",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityLoopTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityLoopType",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getActivityLoopType_Count(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "count",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityMakingCallTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityMakingCallType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getActivityMakingCallType_CallsMean(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "calls-mean",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityOrTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityOrType",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getActivityOrType_Prob(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "prob",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityPhasesTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityPhasesType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getActivityPhasesType_CallList(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "call-list",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getActivityPhasesType_Group(),
+                source,
+                new String[]
+                        {
+            "kind", "group",
+            "name", "group:11"
+                        });
+        this.addAnnotation(this.getActivityPhasesType_SynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "synch-call",
+            "namespace", "##targetNamespace",
+            "group", "group:11"
+                        });
+        this.addAnnotation(this.getActivityPhasesType_AsynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "asynch-call",
+            "namespace", "##targetNamespace",
+            "group", "group:11"
+                        });
+        this.addAnnotation(this.getActivityPhasesType_Phase(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.activityTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ActivityType",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getActivityType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.andJoinListTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "AndJoinListType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getAndJoinListType_Activity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getAndJoinListType_Quorum(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "quorum",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.asynchCallTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "asynch-call_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getAsynchCallType_Dest(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "dest",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getAsynchCallType_Fanin(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "fanin",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getAsynchCallType_Fanout(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "fanout",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.axisTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "AxisType"
+                        });
+        this.addAnnotation(this.axisTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "AxisType:Object",
+                "baseType", "AxisType"
+                        });
+        this.addAnnotation(this.bindTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "BindType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getBindType_Parameter(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "parameter",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getBindType_ProcessorBinding(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "processor-binding",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getBindType_PortBinding(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "port-binding",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.callListTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "call-list_._type",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getCallListType_SynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "synch-call",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getCallListType_AsynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "asynch-call",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.callOrderTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "CallOrderType"
+                        });
+        this.addAnnotation(this.callOrderTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "CallOrderType:Object",
+                "baseType", "CallOrderType"
+                        });
+        this.addAnnotation(this.connectFromTypeEDataType,
+                source,
+                new String[]
+                        {
+                "name", "connect-from_._type",
+                "itemType", "http://www.eclipse.org/emf/2003/XMLType#string"
+                        });
+        this.addAnnotation(this.connectToTypeEDataType,
+                source,
+                new String[]
+                        {
+                "name", "connect-to_._type",
+                "itemType", "http://www.eclipse.org/emf/2003/XMLType#string"
+                        });
+        this.addAnnotation(this.documentRootEClass,
+                source,
+                new String[]
+                        {
+                "name", "",
+                "kind", "mixed"
+                        });
+        this.addAnnotation(this.getDocumentRoot_Mixed(),
+                source,
+                new String[]
+                        {
+            "kind", "elementWildcard",
+            "name", ":mixed"
+                        });
+        this.addAnnotation(this.getDocumentRoot_XMLNSPrefixMap(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "xmlns:prefix"
+                        });
+        this.addAnnotation(this.getDocumentRoot_XSISchemaLocation(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "xsi:schemaLocation"
+                        });
+        this.addAnnotation(this.getDocumentRoot_LqnCore(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "lqn-core",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getDocumentRoot_LqnModel(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "lqn-model",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.entryActivityDefTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "EntryActivityDefType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getEntryActivityDefType_CallList(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "call-list",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryActivityDefType_Group(),
+                source,
+                new String[]
+                        {
+            "kind", "group",
+            "name", "group:11"
+                        });
+        this.addAnnotation(this.getEntryActivityDefType_SynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "synch-call",
+            "namespace", "##targetNamespace",
+            "group", "group:11"
+                        });
+        this.addAnnotation(this.getEntryActivityDefType_AsynchCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "asynch-call",
+            "namespace", "##targetNamespace",
+            "group", "group:11"
+                        });
+        this.addAnnotation(this.getEntryActivityDefType_FirstActivity(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "first-activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.entryActivityGraphEClass,
+                source,
+                new String[]
+                        {
+                "name", "EntryActivityGraph",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getEntryActivityGraph_ReplyActivity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "reply-activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.entryMakingCallTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "EntryMakingCallType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getEntryMakingCallType_Prob(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "prob",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.entryTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "EntryType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getEntryType_ResultEntry(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-entry",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_ServiceTimeDistribution(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "service-time-distribution",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_Forwarding(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "forwarding",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_EntryActivityGraph(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "entry-activity-graph",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_EntryPhaseActivities(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "entry-phase-activities",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_OpenArrivalRate(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "open-arrival-rate",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_Priority(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "priority",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_Semaphore(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "semaphore",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getEntryType_Type(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "type",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.firstPlotTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "first-plot_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getFirstPlotType_Variable(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "variable",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.histogramBinTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "HistogramBinType",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getHistogramBinType_Begin(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "begin",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getHistogramBinType_Conf95(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "conf-95",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getHistogramBinType_Conf99(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "conf-99",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getHistogramBinType_End(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "end",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getHistogramBinType_Prob(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "prob",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.inPortTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "in-port_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getInPortType_ConnectFrom(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "connect-from",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getInPortType_Description(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "description",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getInPortType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.interfaceTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "Interface_._type",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getInterfaceType_InPort(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "in-port",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getInterfaceType_OutPort(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "out-port",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.lqnCoreTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "Lqn-CoreType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getLqnCoreType_Processor(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "processor",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnCoreType_Slot(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "slot",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.lqnModelTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "LqnModelType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getLqnModelType_RunControl(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "run-control",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_PlotControl(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "plot-control",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_SolverParams(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "solver-params",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_Processor(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "processor",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_Slot(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "slot",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_Description(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "description",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_LqncoreSchemaVersion(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "lqncore-schema-version",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_LqnSchemaVersion(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "lqn-schema-version",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getLqnModelType_XmlDebug(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "xml-debug",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.makingCallTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "MakingCallType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getMakingCallType_ResultCall(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-call",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getMakingCallType_Dest(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "dest",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getMakingCallType_Fanin(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "fanin",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getMakingCallType_Fanout(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "fanout",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.orListTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "OrListType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getOrListType_Activity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.outPortTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "out-port_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getOutPortType_ConnectTo(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "connect-to",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutPortType_Description(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "description",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutPortType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.outputDistributionTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "OutputDistributionType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_UnderflowBin(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "underflow-bin",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_HistogramBin(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "histogram-bin",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_OverflowBin(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "overflow-bin",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_BinSize(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "bin-size",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_Kurtosis(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "kurtosis",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_Max(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "max",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_Mean(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "mean",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_MidPoint(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "mid-point",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_Min(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "min",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_NumberBins(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "number-bins",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_Skew(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "skew",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_StdDev(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "std-dev",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputDistributionType_XSamples(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "x-samples",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.outputEntryDistributionTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "OutputEntryDistributionType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getOutputEntryDistributionType_Phase(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.outputResultForwardingANDJoinDelayEClass,
+                source,
+                new String[]
+                        {
+                "name", "OutputResultForwardingANDJoinDelay",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_ResultConf95(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-conf-95",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_ResultConf99(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-conf-99",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_Dest(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "dest",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_JoinVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "join-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_JoinWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "join-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultForwardingANDJoinDelay_Waiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.outputResultTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "OutputResultType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getOutputResultType_ResultConf95(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-conf-95",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_ResultConf99(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-conf-99",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_OpenWaitTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "open-wait-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase1ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase1ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase1ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase1Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase2ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase2ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase2ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase2Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase3ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase3ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase3ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Phase3Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_ProbExceedMaxServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "prob-exceed-max-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_ProcUtilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "proc-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_SquaredCoeffVariation(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "squared-coeff-variation",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Throughput(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "throughput",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_ThroughputBound(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "throughput-bound",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_Waiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getOutputResultType_WaitingVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.parameterTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "parameter_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getParameterType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getParameterType_Value(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "value",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.paraTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "para_._type",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getParaType_StartValue(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "start-value",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getParaType_EndValue(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "end-value",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getParaType_StepValue(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "step-value",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getParaType_Value(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "value",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.phaseActivitiesEClass,
+                source,
+                new String[]
+                        {
+                "name", "PhaseActivities",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getPhaseActivities_Activity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.phaseTypeEDataType,
+                source,
+                new String[]
+                        {
+                "name", "phase_._type",
+                "baseType", "http://www.eclipse.org/emf/2003/XMLType#positiveInteger",
+                "minInclusive", "1",
+                "maxInclusive", "3"
+                        });
+        this.addAnnotation(this.plotControlTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "plot-control_._type",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getPlotControlType_FirstPlot(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "first-plot",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPlotControlType_Plot(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "plot",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.plotTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "plot_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getPlotType_Variable(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "variable",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.portBindingTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "port-binding_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getPortBindingType_Source(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "source",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPortBindingType_Target(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "target",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.pragmaTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "pragma_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getPragmaType_Param(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "param",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPragmaType_Value(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "value",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.precedenceTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "PrecedenceType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getPrecedenceType_Pre(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "pre",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPrecedenceType_PreOR(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "pre-OR",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPrecedenceType_PreAND(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "pre-AND",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPrecedenceType_Post(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "post",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPrecedenceType_PostOR(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "post-OR",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPrecedenceType_PostAND(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "post-AND",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getPrecedenceType_PostLOOP(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "post-LOOP",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.processorBindingTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "processor-binding_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getProcessorBindingType_Source(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "source",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorBindingType_Target(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "target",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.processorTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ProcessorType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getProcessorType_ResultProcessor(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-processor",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorType_Task(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "task",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorType_Multiplicity(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "multiplicity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorType_Quantum(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "quantum",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorType_Replication(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "replication",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorType_Scheduling(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "scheduling",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getProcessorType_SpeedFactor(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "speed-factor",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.replyActivityTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "reply-activity_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getReplyActivityType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.replyEntryTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "reply-entry_._type",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getReplyEntryType_ReplyActivity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "reply-activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getReplyEntryType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.resultConf95TypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "result-conf-95_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getResultConf95Type_JoinVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "join-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type_JoinWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "join-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type_Waiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.resultConf95Type1EClass,
+                source,
+                new String[]
+                        {
+                "name", "result-conf-95_._1_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_OpenWaitTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "open-wait-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase1ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase1ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase1ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase1Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase2ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase2ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase2ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase2Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase3ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase3ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase3ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Phase3Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_ProbExceedMaxServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "prob-exceed-max-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_ProcUtilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "proc-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_SquaredCoeffVariation(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "squared-coeff-variation",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Throughput(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "throughput",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_ThroughputBound(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "throughput-bound",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_Waiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf95Type1_WaitingVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.resultConf99TypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "result-conf-99_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getResultConf99Type_JoinVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "join-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type_JoinWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "join-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type_Waiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.resultConf99Type1EClass,
+                source,
+                new String[]
+                        {
+                "name", "result-conf-99_._1_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_OpenWaitTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "open-wait-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase1ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase1ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase1ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase1Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase1-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase2ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase2ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase2ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase2Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase2-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase3ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase3ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase3ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Phase3Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "phase3-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_ProbExceedMaxServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "prob-exceed-max-service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_ProcUtilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "proc-utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_ProcWaiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "proc-waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_ServiceTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "service-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_ServiceTimeVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "service-time-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_SquaredCoeffVariation(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "squared-coeff-variation",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Throughput(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "throughput",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_ThroughputBound(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "throughput-bound",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Utilization(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "utilization",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_Waiting(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultConf99Type1_WaitingVariance(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "waiting-variance",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.resultGeneralTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "result-general_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getResultGeneralType_ConvVal(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "conv-val",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultGeneralType_ElapsedTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "elapsed-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultGeneralType_Iterations(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "iterations",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultGeneralType_PlatformInfo(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "platform-info",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultGeneralType_SolverInfo(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "solver-info",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultGeneralType_SystemCpuTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "system-cpu-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultGeneralType_UserCpuTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "user-cpu-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getResultGeneralType_Valid(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "valid",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.runControlTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "run-control_._type",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getRunControlType_Para(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "para",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.schedulingTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "SchedulingType"
+                        });
+        this.addAnnotation(this.schedulingTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "SchedulingType:Object",
+                "baseType", "SchedulingType"
+                        });
+        this.addAnnotation(this.sciNotationEDataType,
+                source,
+                new String[]
+                        {
+                "name", "SciNotation",
+                "baseType", "http://www.eclipse.org/emf/2003/XMLType#string",
+                "pattern", "[\\+|\\-]?\\d+((\\.\\d+)?[e|E][\\+|\\-]\\d+)?"
+                        });
+        this.addAnnotation(this.semaphoreTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "SemaphoreType"
+                        });
+        this.addAnnotation(this.semaphoreTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "SemaphoreType:Object",
+                "baseType", "SemaphoreType"
+                        });
+        this.addAnnotation(this.serviceTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "ServiceType",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getServiceType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.singleActivityListTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "SingleActivityListType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getSingleActivityListType_Activity(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "activity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.slotTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "SlotType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getSlotType_Interface(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "Interface",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSlotType_Binding(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "binding",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSlotType_BindTarget(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "bind-target",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSlotType_Id(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "id",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSlotType_ReplicNum(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "replic_num",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.solverParamsTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "solver-params_._type",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getSolverParamsType_ResultGeneral(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-general",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSolverParamsType_Pragma(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "pragma",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSolverParamsType_Comment(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "comment",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSolverParamsType_ConvVal(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "conv_val",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSolverParamsType_ItLimit(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "it_limit",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSolverParamsType_PrintInt(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "print_int",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSolverParamsType_UnderrelaxCoeff(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "underrelax_coeff",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.srvnFloatEDataType,
+                source,
+                new String[]
+                        {
+                "name", "SrvnFloat",
+                "memberTypes", "SciNotation http://www.eclipse.org/emf/2003/XMLType#decimal"
+                        });
+        this.addAnnotation(this.synchCallTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "synch-call_._type",
+                "kind", "empty"
+                        });
+        this.addAnnotation(this.getSynchCallType_Dest(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "dest",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSynchCallType_Fanin(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "fanin",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getSynchCallType_Fanout(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "fanout",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.taskActivityGraphEClass,
+                source,
+                new String[]
+                        {
+                "name", "TaskActivityGraph",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getTaskActivityGraph_ReplyEntry(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "reply-entry",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.taskOptionTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "TaskOptionType"
+                        });
+        this.addAnnotation(this.taskOptionTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "TaskOptionType:Object",
+                "baseType", "TaskOptionType"
+                        });
+        this.addAnnotation(this.taskSchedulingTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "TaskSchedulingType"
+                        });
+        this.addAnnotation(this.taskSchedulingTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "TaskSchedulingType:Object",
+                "baseType", "TaskSchedulingType"
+                        });
+        this.addAnnotation(this.taskTypeEClass,
+                source,
+                new String[]
+                        {
+                "name", "TaskType",
+                "kind", "elementOnly"
+                        });
+        this.addAnnotation(this.getTaskType_ResultTask(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "result-task",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_Entry(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "entry",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_Service(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "service",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_TaskActivities(),
+                source,
+                new String[]
+                        {
+            "kind", "element",
+            "name", "task-activities",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_ActivityGraph(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "activity-graph",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_Multiplicity(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "multiplicity",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_Name(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "name",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_Priority(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "priority",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_QueueLength(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "queue-length",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_Replication(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "replication",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_Scheduling(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "scheduling",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.getTaskType_ThinkTime(),
+                source,
+                new String[]
+                        {
+            "kind", "attribute",
+            "name", "think-time",
+            "namespace", "##targetNamespace"
+                        });
+        this.addAnnotation(this.typeTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "type_._type"
+                        });
+        this.addAnnotation(this.typeTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "type_._type:Object",
+                "baseType", "type_._type"
+                        });
+        this.addAnnotation(this.validTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "valid_._type"
+                        });
+        this.addAnnotation(this.validTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "valid_._type:Object",
+                "baseType", "valid_._type"
+                        });
+        this.addAnnotation(this.xmlDebugTypeEEnum,
+                source,
+                new String[]
+                        {
+                "name", "xml-debug_._type"
+                        });
+        this.addAnnotation(this.xmlDebugTypeObjectEDataType,
+                source,
+                new String[]
+                        {
+                "name", "xml-debug_._type:Object",
+                "baseType", "xml-debug_._type"
+                        });
     }
 
 } // LqnPackageImpl

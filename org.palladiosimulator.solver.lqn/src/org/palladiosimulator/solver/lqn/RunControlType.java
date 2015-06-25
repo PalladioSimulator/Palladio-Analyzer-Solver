@@ -11,10 +11,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.RunControlType#getPara <em>Para</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getRunControlType()
  * @model extendedMetaData="name='run-control_._type' kind='elementOnly'"
@@ -33,8 +33,8 @@ public interface RunControlType extends EObject {
      *
      * @return the value of the '<em>Para</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getRunControlType_Para()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='para' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='para' namespace='##targetNamespace'"
      * @generated
      */
     EList<ParaType> getPara();

@@ -20,11 +20,10 @@ import org.palladiosimulator.solver.lqn.OrListType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.OrListTypeImpl#getActivity <em>Activity</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.OrListTypeImpl#getActivity <em>Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -66,7 +65,8 @@ public class OrListTypeImpl extends EObjectImpl implements OrListType {
      */
     @Override
     public EList<ActivityOrType> getActivity() {
-        if (this.activity == null) {
+        if (this.activity == null)
+        {
             this.activity = new EObjectContainmentEList<ActivityOrType>(ActivityOrType.class, this,
                     LqnPackage.OR_LIST_TYPE__ACTIVITY);
         }
@@ -81,7 +81,8 @@ public class OrListTypeImpl extends EObjectImpl implements OrListType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OR_LIST_TYPE__ACTIVITY:
             return ((InternalEList<?>) this.getActivity()).basicRemove(otherEnd, msgs);
         }
@@ -95,7 +96,8 @@ public class OrListTypeImpl extends EObjectImpl implements OrListType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OR_LIST_TYPE__ACTIVITY:
             return this.getActivity();
         }
@@ -110,7 +112,8 @@ public class OrListTypeImpl extends EObjectImpl implements OrListType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OR_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             this.getActivity().addAll((Collection<? extends ActivityOrType>) newValue);
@@ -126,7 +129,8 @@ public class OrListTypeImpl extends EObjectImpl implements OrListType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OR_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             return;
@@ -141,7 +145,8 @@ public class OrListTypeImpl extends EObjectImpl implements OrListType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OR_LIST_TYPE__ACTIVITY:
             return this.activity != null && !this.activity.isEmpty();
         }

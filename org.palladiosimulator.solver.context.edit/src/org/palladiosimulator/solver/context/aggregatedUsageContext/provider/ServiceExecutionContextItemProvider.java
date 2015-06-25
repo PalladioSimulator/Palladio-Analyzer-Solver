@@ -60,7 +60,8 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addGlobalExecutionFrequencyPropertyDescriptor(object);
@@ -79,14 +80,22 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addGlobalExecutionFrequencyPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ServiceExecutionContext_globalExecutionFrequency_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ServiceExecutionContext_globalExecutionFrequency_feature",
-                        "_UI_ServiceExecutionContext_type"),
-                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY, true,
-                false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ServiceExecutionContext_globalExecutionFrequency_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ServiceExecutionContext_globalExecutionFrequency_feature",
+                                "_UI_ServiceExecutionContext_type"),
+                                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -96,14 +105,23 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addAllocationContext_ServiceExecutionContextPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ServiceExecutionContext_allocationContext_ServiceExecutionContext_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ServiceExecutionContext_allocationContext_ServiceExecutionContext_feature",
-                        "_UI_ServiceExecutionContext_type"),
-                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ServiceExecutionContext_allocationContext_ServiceExecutionContext_feature"),
+                        this.getString(
+                                "_UI_PropertyDescriptor_description",
+                                "_UI_ServiceExecutionContext_allocationContext_ServiceExecutionContext_feature",
+                                "_UI_ServiceExecutionContext_type"),
+                                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -113,14 +131,22 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addDescribedSEFF_ServiceExecutionContextPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ServiceExecutionContext_describedSEFF_ServiceExecutionContext_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ServiceExecutionContext_describedSEFF_ServiceExecutionContext_feature",
-                        "_UI_ServiceExecutionContext_type"),
-                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__DESCRIBED_SEFF_SERVICE_EXECUTION_CONTEXT,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ServiceExecutionContext_describedSEFF_ServiceExecutionContext_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ServiceExecutionContext_describedSEFF_ServiceExecutionContext_feature",
+                                "_UI_ServiceExecutionContext_type"),
+                                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__DESCRIBED_SEFF_SERVICE_EXECUTION_CONTEXT,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -130,14 +156,22 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addUsageScenario_ServiceExecutionContextPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ServiceExecutionContext_usageScenario_ServiceExecutionContext_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ServiceExecutionContext_usageScenario_ServiceExecutionContext_feature",
-                        "_UI_ServiceExecutionContext_type"),
-                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__USAGE_SCENARIO_SERVICE_EXECUTION_CONTEXT,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ServiceExecutionContext_usageScenario_ServiceExecutionContext_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ServiceExecutionContext_usageScenario_ServiceExecutionContext_feature",
+                                "_UI_ServiceExecutionContext_type"),
+                                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__USAGE_SCENARIO_SERVICE_EXECUTION_CONTEXT,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -147,15 +181,23 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
      * @generated
      */
     protected void addReceivedAggregatedCommunication_AggregatedCommunicationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString(
-                        "_UI_ServiceExecutionContext_receivedAggregatedCommunication_AggregatedCommunication_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ServiceExecutionContext_receivedAggregatedCommunication_AggregatedCommunication_feature",
-                        "_UI_ServiceExecutionContext_type"),
-                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ServiceExecutionContext_receivedAggregatedCommunication_AggregatedCommunication_feature"),
+                        this.getString(
+                                "_UI_PropertyDescriptor_description",
+                                "_UI_ServiceExecutionContext_receivedAggregatedCommunication_AggregatedCommunication_feature",
+                                "_UI_ServiceExecutionContext_type"),
+                                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -169,12 +211,13 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
-            this.childrenFeatures.add(
-                    AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT);
-            this.childrenFeatures.add(
-                    AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT);
+            this.childrenFeatures
+                    .add(AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT);
+            this.childrenFeatures
+                    .add(AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT);
         }
         return this.childrenFeatures;
     }
@@ -226,7 +269,8 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ServiceExecutionContext.class)) {
+        switch (notification.getFeatureID(ServiceExecutionContext.class))
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;
@@ -248,13 +292,17 @@ public class ServiceExecutionContextItemProvider extends ItemProviderAdapter imp
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(
-                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT,
-                AggregatedUsageContextFactory.eINSTANCE.createAggregatedResourceDemand()));
+        newChildDescriptors
+                .add
+                (this.createChildParameter
+                (AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT,
+                        AggregatedUsageContextFactory.eINSTANCE.createAggregatedResourceDemand()));
 
-        newChildDescriptors.add(this.createChildParameter(
-                AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT,
-                AggregatedUsageContextFactory.eINSTANCE.createAggregatedCommunication()));
+        newChildDescriptors
+                .add
+                (this.createChildParameter
+                (AggregatedUsageContextPackage.Literals.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT,
+                        AggregatedUsageContextFactory.eINSTANCE.createAggregatedCommunication()));
     }
 
     /**

@@ -34,13 +34,16 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
      * @generated
      */
     public static ComputedAllocationFactory init() {
-        try {
+        try
+        {
             final ComputedAllocationFactory theComputedAllocationFactory = (ComputedAllocationFactory) EPackage.Registry.INSTANCE
                     .getEFactory(ComputedAllocationPackage.eNS_URI);
-            if (theComputedAllocationFactory != null) {
+            if (theComputedAllocationFactory != null)
+            {
                 return theComputedAllocationFactory;
             }
-        } catch (final Exception exception) {
+        } catch (final Exception exception)
+        {
             EcorePlugin.INSTANCE.log(exception);
         }
         return new ComputedAllocationFactoryImpl();
@@ -62,7 +65,8 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
      */
     @Override
     public EObject create(final EClass eClass) {
-        switch (eClass.getClassifierID()) {
+        switch (eClass.getClassifierID())
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION_CONTEXT:
             return this.createComputedAllocationContext();
         case ComputedAllocationPackage.RESOURCE_DEMAND:

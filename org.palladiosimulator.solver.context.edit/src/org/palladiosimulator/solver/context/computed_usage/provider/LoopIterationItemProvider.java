@@ -58,7 +58,8 @@ public class LoopIterationItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addLoopaction_LoopIterationPropertyDescriptor(object);
@@ -73,13 +74,21 @@ public class LoopIterationItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addLoopaction_LoopIterationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_LoopIteration_loopaction_LoopIteration_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_LoopIteration_loopaction_LoopIteration_feature", "_UI_LoopIteration_type"),
-                ComputedUsagePackage.Literals.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION, true, false, true, null, null,
-                null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_LoopIteration_loopaction_LoopIteration_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_LoopIteration_loopaction_LoopIteration_feature", "_UI_LoopIteration_type"),
+                                ComputedUsagePackage.Literals.LOOP_ITERATION__LOOPACTION_LOOP_ITERATION,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -93,7 +102,8 @@ public class LoopIterationItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(ComputedUsagePackage.Literals.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION);
         }
@@ -145,7 +155,8 @@ public class LoopIterationItemProvider extends ItemProviderAdapter implements IE
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(LoopIteration.class)) {
+        switch (notification.getFeatureID(LoopIteration.class))
+        {
         case ComputedUsagePackage.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -163,8 +174,9 @@ public class LoopIterationItemProvider extends ItemProviderAdapter implements IE
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(
-                this.createChildParameter(ComputedUsagePackage.Literals.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION,
+        newChildDescriptors.add
+                (this.createChildParameter
+                (ComputedUsagePackage.Literals.LOOP_ITERATION__SPECIFICATION_LOOP_ITERATION,
                         CoreFactory.eINSTANCE.createPCMRandomVariable()));
     }
 

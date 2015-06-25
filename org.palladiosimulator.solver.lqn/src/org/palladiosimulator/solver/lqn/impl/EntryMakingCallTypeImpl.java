@@ -13,11 +13,10 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Entry Making Call Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryMakingCallTypeImpl#getProb <em>Prob</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryMakingCallTypeImpl#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -82,7 +81,8 @@ public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements Entry
         final Object oldProb = this.prob;
         this.prob = newProb;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB, oldProb,
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB,
+                    oldProb,
                     this.prob));
         }
     }
@@ -94,7 +94,8 @@ public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements Entry
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB:
             return this.getProb();
         }
@@ -108,7 +109,8 @@ public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements Entry
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB:
             this.setProb(newValue);
             return;
@@ -123,7 +125,8 @@ public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements Entry
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB:
             this.setProb(PROB_EDEFAULT);
             return;
@@ -138,7 +141,8 @@ public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements Entry
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB:
             return PROB_EDEFAULT == null ? this.prob != null : !PROB_EDEFAULT.equals(this.prob);
         }

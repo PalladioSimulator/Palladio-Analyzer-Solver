@@ -14,13 +14,11 @@ import org.palladiosimulator.solver.lqn.PortBindingType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.PortBindingTypeImpl#getSource <em>Source</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.PortBindingTypeImpl#getTarget <em>Target</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.PortBindingTypeImpl#getSource <em>Source</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.PortBindingTypeImpl#getTarget <em>Target</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -142,7 +140,8 @@ public class PortBindingTypeImpl extends EObjectImpl implements PortBindingType 
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PORT_BINDING_TYPE__SOURCE:
             return this.getSource();
         case LqnPackage.PORT_BINDING_TYPE__TARGET:
@@ -158,7 +157,8 @@ public class PortBindingTypeImpl extends EObjectImpl implements PortBindingType 
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PORT_BINDING_TYPE__SOURCE:
             this.setSource((String) newValue);
             return;
@@ -176,7 +176,8 @@ public class PortBindingTypeImpl extends EObjectImpl implements PortBindingType 
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PORT_BINDING_TYPE__SOURCE:
             this.setSource(SOURCE_EDEFAULT);
             return;
@@ -194,7 +195,8 @@ public class PortBindingTypeImpl extends EObjectImpl implements PortBindingType 
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PORT_BINDING_TYPE__SOURCE:
             return SOURCE_EDEFAULT == null ? this.source != null : !SOURCE_EDEFAULT.equals(this.source);
         case LqnPackage.PORT_BINDING_TYPE__TARGET:

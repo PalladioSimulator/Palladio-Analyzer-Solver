@@ -13,11 +13,10 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopTypeImpl#getCount <em>Count</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopTypeImpl#getCount <em>Count</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -94,7 +93,8 @@ public class ActivityLoopTypeImpl extends ActivityTypeImpl implements ActivityLo
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_TYPE__COUNT:
             return this.getCount();
         }
@@ -108,7 +108,8 @@ public class ActivityLoopTypeImpl extends ActivityTypeImpl implements ActivityLo
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_TYPE__COUNT:
             this.setCount(newValue);
             return;
@@ -123,7 +124,8 @@ public class ActivityLoopTypeImpl extends ActivityTypeImpl implements ActivityLo
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_TYPE__COUNT:
             this.setCount(COUNT_EDEFAULT);
             return;
@@ -138,7 +140,8 @@ public class ActivityLoopTypeImpl extends ActivityTypeImpl implements ActivityLo
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_LOOP_TYPE__COUNT:
             return COUNT_EDEFAULT == null ? this.count != null : !COUNT_EDEFAULT.equals(this.count);
         }

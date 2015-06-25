@@ -50,7 +50,8 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addMultiplicityPropertyDescriptor(object);
@@ -70,13 +71,21 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addMultiplicityPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorType_multiplicity_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_multiplicity_feature",
-                        "_UI_ProcessorType_type"),
-                LqnPackage.Literals.PROCESSOR_TYPE__MULTIPLICITY, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorType_multiplicity_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ProcessorType_multiplicity_feature",
+                                "_UI_ProcessorType_type"),
+                                LqnPackage.Literals.PROCESSOR_TYPE__MULTIPLICITY,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -86,13 +95,20 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addNamePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorType_name_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_name_feature",
-                        "_UI_ProcessorType_type"),
-                LqnPackage.Literals.PROCESSOR_TYPE__NAME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorType_name_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_name_feature",
+                                "_UI_ProcessorType_type"),
+                                LqnPackage.Literals.PROCESSOR_TYPE__NAME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -102,13 +118,21 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addQuantumPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorType_quantum_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_quantum_feature",
-                        "_UI_ProcessorType_type"),
-                LqnPackage.Literals.PROCESSOR_TYPE__QUANTUM, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorType_quantum_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ProcessorType_quantum_feature",
+                                "_UI_ProcessorType_type"),
+                                LqnPackage.Literals.PROCESSOR_TYPE__QUANTUM,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -118,13 +142,21 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addReplicationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorType_replication_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_replication_feature",
-                        "_UI_ProcessorType_type"),
-                LqnPackage.Literals.PROCESSOR_TYPE__REPLICATION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorType_replication_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ProcessorType_replication_feature",
+                                "_UI_ProcessorType_type"),
+                                LqnPackage.Literals.PROCESSOR_TYPE__REPLICATION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -134,13 +166,21 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addSchedulingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorType_scheduling_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_scheduling_feature",
-                        "_UI_ProcessorType_type"),
-                LqnPackage.Literals.PROCESSOR_TYPE__SCHEDULING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorType_scheduling_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ProcessorType_scheduling_feature",
+                                "_UI_ProcessorType_type"),
+                                LqnPackage.Literals.PROCESSOR_TYPE__SCHEDULING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -150,13 +190,21 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addSpeedFactorPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorType_speedFactor_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_speedFactor_feature",
-                        "_UI_ProcessorType_type"),
-                LqnPackage.Literals.PROCESSOR_TYPE__SPEED_FACTOR, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorType_speedFactor_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ProcessorType_speedFactor_feature",
+                                "_UI_ProcessorType_type"),
+                                LqnPackage.Literals.PROCESSOR_TYPE__SPEED_FACTOR,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -170,7 +218,8 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR);
             this.childrenFeatures.add(LqnPackage.Literals.PROCESSOR_TYPE__TASK);
@@ -210,8 +259,9 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
     @Override
     public String getText(final Object object) {
         final String label = ((ProcessorType) object).getName();
-        return label == null || label.length() == 0 ? this.getString("_UI_ProcessorType_type")
-                : this.getString("_UI_ProcessorType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ProcessorType_type") :
+                this.getString("_UI_ProcessorType_type") + " " + label;
     }
 
     /**
@@ -225,7 +275,8 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ProcessorType.class)) {
+        switch (notification.getFeatureID(ProcessorType.class))
+        {
         case LqnPackage.PROCESSOR_TYPE__MULTIPLICITY:
         case LqnPackage.PROCESSOR_TYPE__NAME:
         case LqnPackage.PROCESSOR_TYPE__QUANTUM:
@@ -252,11 +303,15 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR,
-                LqnFactory.eINSTANCE.createOutputResultType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR,
+                        LqnFactory.eINSTANCE.createOutputResultType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.PROCESSOR_TYPE__TASK,
-                LqnFactory.eINSTANCE.createTaskType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.PROCESSOR_TYPE__TASK,
+                        LqnFactory.eINSTANCE.createTaskType()));
     }
 
     /**

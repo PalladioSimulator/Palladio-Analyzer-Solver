@@ -25,19 +25,17 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Activity Phases Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getCallList
- * <em>Call List</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getGroup <em>Group</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getSynchCall
- * <em>Synch Call</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getAsynchCall
- * <em>Asynch Call</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getPhase <em>Phase</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getCallList <em>Call List
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getGroup <em>Group</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getSynchCall <em>Synch
+ * Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getAsynchCall <em>Asynch
+ * Call</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getPhase <em>Phase</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -109,7 +107,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
      */
     @Override
     public EList<CallListType> getCallList() {
-        if (this.callList == null) {
+        if (this.callList == null)
+        {
             this.callList = new EObjectContainmentEList<CallListType>(CallListType.class, this,
                     LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST);
         }
@@ -123,7 +122,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
      */
     @Override
     public FeatureMap getGroup() {
-        if (this.group == null) {
+        if (this.group == null)
+        {
             this.group = new BasicFeatureMap(this, LqnPackage.ACTIVITY_PHASES_TYPE__GROUP);
         }
         return this.group;
@@ -169,7 +169,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
         final BigInteger oldPhase = this.phase;
         this.phase = newPhase;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_PHASES_TYPE__PHASE, oldPhase,
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_PHASES_TYPE__PHASE,
+                    oldPhase,
                     this.phase));
         }
     }
@@ -182,7 +183,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST:
             return ((InternalEList<?>) this.getCallList()).basicRemove(otherEnd, msgs);
         case LqnPackage.ACTIVITY_PHASES_TYPE__GROUP:
@@ -202,7 +204,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST:
             return this.getCallList();
         case LqnPackage.ACTIVITY_PHASES_TYPE__GROUP:
@@ -228,7 +231,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST:
             this.getCallList().clear();
             this.getCallList().addAll((Collection<? extends CallListType>) newValue);
@@ -258,7 +262,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST:
             this.getCallList().clear();
             return;
@@ -285,7 +290,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST:
             return this.callList != null && !this.callList.isEmpty();
         case LqnPackage.ACTIVITY_PHASES_TYPE__GROUP:

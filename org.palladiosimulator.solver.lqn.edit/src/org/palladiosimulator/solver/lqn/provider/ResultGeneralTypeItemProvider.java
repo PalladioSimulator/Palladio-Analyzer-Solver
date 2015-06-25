@@ -49,7 +49,8 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addConvValPropertyDescriptor(object);
@@ -71,13 +72,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addConvValPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_convVal_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_convVal_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__CONV_VAL, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_convVal_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_convVal_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__CONV_VAL,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -87,13 +96,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addElapsedTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_elapsedTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_elapsedTime_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__ELAPSED_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_elapsedTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_elapsedTime_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__ELAPSED_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -103,13 +120,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addIterationsPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_iterations_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_iterations_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__ITERATIONS, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_iterations_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_iterations_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__ITERATIONS,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -119,13 +144,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addPlatformInfoPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_platformInfo_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_platformInfo_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__PLATFORM_INFO, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_platformInfo_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_platformInfo_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__PLATFORM_INFO,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -135,13 +168,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addSolverInfoPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_solverInfo_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_solverInfo_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__SOLVER_INFO, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_solverInfo_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_solverInfo_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__SOLVER_INFO,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -151,13 +192,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addSystemCpuTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_systemCpuTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_systemCpuTime_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_systemCpuTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_systemCpuTime_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -167,13 +216,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addUserCpuTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_userCpuTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_userCpuTime_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__USER_CPU_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_userCpuTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_userCpuTime_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__USER_CPU_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -183,13 +240,21 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addValidPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultGeneralType_valid_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_valid_feature",
-                        "_UI_ResultGeneralType_type"),
-                LqnPackage.Literals.RESULT_GENERAL_TYPE__VALID, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultGeneralType_valid_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultGeneralType_valid_feature",
+                                "_UI_ResultGeneralType_type"),
+                                LqnPackage.Literals.RESULT_GENERAL_TYPE__VALID,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -212,8 +277,9 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
     public String getText(final Object object) {
         final Object labelValue = ((ResultGeneralType) object).getConvVal();
         final String label = labelValue == null ? null : labelValue.toString();
-        return label == null || label.length() == 0 ? this.getString("_UI_ResultGeneralType_type")
-                : this.getString("_UI_ResultGeneralType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ResultGeneralType_type") :
+                this.getString("_UI_ResultGeneralType_type") + " " + label;
     }
 
     /**
@@ -227,7 +293,8 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ResultGeneralType.class)) {
+        switch (notification.getFeatureID(ResultGeneralType.class))
+        {
         case LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL:
         case LqnPackage.RESULT_GENERAL_TYPE__ELAPSED_TIME:
         case LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS:

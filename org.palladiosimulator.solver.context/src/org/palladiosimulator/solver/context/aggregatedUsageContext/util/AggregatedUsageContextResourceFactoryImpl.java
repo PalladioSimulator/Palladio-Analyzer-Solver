@@ -12,8 +12,7 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * <!-- begin-user-doc --> The <b>Resource Factory</b> associated with the package. <!--
  * end-user-doc -->
  *
- * @see org.palladiosimulator.solver.context.aggregatedUsageContext.util.
- *      AggregatedUsageContextResourceImpl
+ * @see org.palladiosimulator.solver.context.aggregatedUsageContext.util.AggregatedUsageContextResourceImpl
  * @generated
  */
 public class AggregatedUsageContextResourceFactoryImpl extends ResourceFactoryImpl {

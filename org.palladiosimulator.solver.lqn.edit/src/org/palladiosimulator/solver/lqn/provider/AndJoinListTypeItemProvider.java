@@ -51,7 +51,8 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addQuorumPropertyDescriptor(object);
@@ -66,13 +67,21 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
      * @generated
      */
     protected void addQuorumPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_AndJoinListType_quorum_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_AndJoinListType_quorum_feature",
-                        "_UI_AndJoinListType_type"),
-                LqnPackage.Literals.AND_JOIN_LIST_TYPE__QUORUM, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_AndJoinListType_quorum_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_AndJoinListType_quorum_feature",
+                                "_UI_AndJoinListType_type"),
+                                LqnPackage.Literals.AND_JOIN_LIST_TYPE__QUORUM,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -86,7 +95,8 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY);
         }
@@ -126,8 +136,9 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
     public String getText(final Object object) {
         final BigInteger labelValue = ((AndJoinListType) object).getQuorum();
         final String label = labelValue == null ? null : labelValue.toString();
-        return label == null || label.length() == 0 ? this.getString("_UI_AndJoinListType_type")
-                : this.getString("_UI_AndJoinListType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_AndJoinListType_type") :
+                this.getString("_UI_AndJoinListType_type") + " " + label;
     }
 
     /**
@@ -141,7 +152,8 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(AndJoinListType.class)) {
+        switch (notification.getFeatureID(AndJoinListType.class))
+        {
         case LqnPackage.AND_JOIN_LIST_TYPE__QUORUM:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;
@@ -162,14 +174,20 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityLoopType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityLoopType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityOrType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityOrType()));
     }
 
     /**

@@ -20,7 +20,6 @@ import org.palladiosimulator.pcm.resourceenvironment.CommunicationLinkResourceSp
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getAverageMessageSize
@@ -35,6 +34,7 @@ import org.palladiosimulator.pcm.resourceenvironment.CommunicationLinkResourceSp
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getUsedCommunicationLinkResourceSpecification_AggregatedCommunication
  * <em>Used Communication Link Resource Specification Aggregated Communication</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getAggregatedCommunication()
  * @model

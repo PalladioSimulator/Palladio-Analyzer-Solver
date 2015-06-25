@@ -10,11 +10,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.PragmaType#getParam <em>Param</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.PragmaType#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPragmaType()
  * @model extendedMetaData="name='pragma_._type' kind='empty'"
@@ -33,8 +33,8 @@ public interface PragmaType extends EObject {
      * @return the value of the '<em>Param</em>' attribute.
      * @see #setParam(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPragmaType_Param()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='param' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='param' namespace='##targetNamespace'"
      * @generated
      */
     String getParam();
@@ -61,8 +61,8 @@ public interface PragmaType extends EObject {
      * @return the value of the '<em>Value</em>' attribute.
      * @see #setValue(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPragmaType_Value()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='value' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='value' namespace='##targetNamespace'"
      * @generated
      */
     String getValue();

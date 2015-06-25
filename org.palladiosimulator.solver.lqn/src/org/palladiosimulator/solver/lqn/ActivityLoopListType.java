@@ -11,12 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityLoopListType#getActivity <em>Activity</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityLoopListType#getActivity <em>Activity</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityLoopListType#getEnd <em>End</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityLoopListType()
  * @model extendedMetaData="name='ActivityLoopListType' kind='elementOnly'"
@@ -53,8 +52,8 @@ public interface ActivityLoopListType extends EObject {
      * @return the value of the '<em>End</em>' attribute.
      * @see #setEnd(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityLoopListType_End()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='end' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='end' namespace='##targetNamespace'"
      * @generated
      */
     String getEnd();

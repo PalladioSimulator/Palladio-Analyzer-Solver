@@ -23,17 +23,15 @@ import org.palladiosimulator.solver.lqn.SlotType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getInterface <em>Interface</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getInterface <em>Interface</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getBinding <em>Binding</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getBindTarget <em>Bind Target</em>}
  * </li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getId <em>Id</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getReplicNum <em>Replic Num</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getReplicNum <em>Replic Num</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -165,7 +163,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
     public NotificationChain basicSetInterface(final InterfaceType newInterface, NotificationChain msgs) {
         final InterfaceType oldInterface = this.interface_;
         this.interface_ = newInterface;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.SLOT_TYPE__INTERFACE, oldInterface, newInterface);
             if (msgs == null) {
@@ -184,21 +183,23 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
      */
     @Override
     public void setInterface(final InterfaceType newInterface) {
-        if (newInterface != this.interface_) {
+        if (newInterface != this.interface_)
+        {
             NotificationChain msgs = null;
             if (this.interface_ != null) {
-                msgs = ((InternalEObject) this.interface_).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
+                msgs = ((InternalEObject) this.interface_).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
             }
             if (newInterface != null) {
-                msgs = ((InternalEObject) newInterface).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
+                msgs = ((InternalEObject) newInterface).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
             }
             msgs = this.basicSetInterface(newInterface, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SLOT_TYPE__INTERFACE, newInterface,
                     newInterface));
         }
@@ -211,7 +212,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
      */
     @Override
     public EList<BindType> getBinding() {
-        if (this.binding == null) {
+        if (this.binding == null)
+        {
             this.binding = new EObjectContainmentEList<BindType>(BindType.class, this, LqnPackage.SLOT_TYPE__BINDING);
         }
         return this.binding;
@@ -237,7 +239,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
         final String oldBindTarget = this.bindTarget;
         this.bindTarget = newBindTarget;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SLOT_TYPE__BIND_TARGET, oldBindTarget,
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SLOT_TYPE__BIND_TARGET,
+                    oldBindTarget,
                     this.bindTarget));
         }
     }
@@ -305,7 +308,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
         this.replicNum = REPLIC_NUM_EDEFAULT;
         this.replicNumESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SLOT_TYPE__REPLIC_NUM, oldReplicNum,
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SLOT_TYPE__REPLIC_NUM,
+                    oldReplicNum,
                     REPLIC_NUM_EDEFAULT, oldReplicNumESet));
         }
     }
@@ -328,7 +332,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SLOT_TYPE__INTERFACE:
             return this.basicSetInterface(null, msgs);
         case LqnPackage.SLOT_TYPE__BINDING:
@@ -344,7 +349,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SLOT_TYPE__INTERFACE:
             return this.getInterface();
         case LqnPackage.SLOT_TYPE__BINDING:
@@ -367,7 +373,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SLOT_TYPE__INTERFACE:
             this.setInterface((InterfaceType) newValue);
             return;
@@ -395,7 +402,8 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SLOT_TYPE__INTERFACE:
             this.setInterface((InterfaceType) null);
             return;
@@ -422,14 +430,15 @@ public class SlotTypeImpl extends EObjectImpl implements SlotType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SLOT_TYPE__INTERFACE:
             return this.interface_ != null;
         case LqnPackage.SLOT_TYPE__BINDING:
             return this.binding != null && !this.binding.isEmpty();
         case LqnPackage.SLOT_TYPE__BIND_TARGET:
-            return BIND_TARGET_EDEFAULT == null ? this.bindTarget != null
-                    : !BIND_TARGET_EDEFAULT.equals(this.bindTarget);
+            return BIND_TARGET_EDEFAULT == null ? this.bindTarget != null : !BIND_TARGET_EDEFAULT
+                    .equals(this.bindTarget);
         case LqnPackage.SLOT_TYPE__ID:
             return ID_EDEFAULT == null ? this.id != null : !ID_EDEFAULT.equals(this.id);
         case LqnPackage.SLOT_TYPE__REPLIC_NUM:

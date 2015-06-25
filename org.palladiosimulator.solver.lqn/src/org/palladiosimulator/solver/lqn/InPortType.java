@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.InPortType#getConnectFrom <em>Connect From</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.InPortType#getDescription <em>Description</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.InPortType#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getInPortType()
  * @model extendedMetaData="name='in-port_._type' kind='empty'"
@@ -64,8 +64,8 @@ public interface InPortType extends EObject {
      * @return the value of the '<em>Description</em>' attribute.
      * @see #setDescription(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getInPortType_Description()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='description' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='description' namespace='##targetNamespace'"
      * @generated
      */
     String getDescription();
@@ -92,8 +92,8 @@ public interface InPortType extends EObject {
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getInPortType_Name()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='name' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
      * @generated
      */
     String getName();

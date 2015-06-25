@@ -11,12 +11,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ReplyEntryType#getReplyActivity
- * <em>Reply Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ReplyEntryType#getReplyActivity <em>Reply Activity
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ReplyEntryType#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getReplyEntryType()
  * @model extendedMetaData="name='reply-entry_._type' kind='elementOnly'"
@@ -53,8 +53,8 @@ public interface ReplyEntryType extends EObject {
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getReplyEntryType_Name()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='name' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
      * @generated
      */
     String getName();

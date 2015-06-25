@@ -50,7 +50,8 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addBindTargetPropertyDescriptor(object);
@@ -67,13 +68,20 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
      * @generated
      */
     protected void addBindTargetPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SlotType_bindTarget_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_bindTarget_feature",
-                        "_UI_SlotType_type"),
-                LqnPackage.Literals.SLOT_TYPE__BIND_TARGET, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SlotType_bindTarget_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_bindTarget_feature",
+                                "_UI_SlotType_type"),
+                                LqnPackage.Literals.SLOT_TYPE__BIND_TARGET,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -83,13 +91,21 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
      * @generated
      */
     protected void addIdPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this
-                .createItemPropertyDescriptor(((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(), this.getString("_UI_SlotType_id_feature"),
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SlotType_id_feature"),
                         this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_id_feature",
                                 "_UI_SlotType_type"),
-                        LqnPackage.Literals.SLOT_TYPE__ID, true, false, false,
-                        ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+                                LqnPackage.Literals.SLOT_TYPE__ID,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -99,13 +115,20 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
      * @generated
      */
     protected void addReplicNumPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SlotType_replicNum_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_replicNum_feature",
-                        "_UI_SlotType_type"),
-                LqnPackage.Literals.SLOT_TYPE__REPLIC_NUM, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SlotType_replicNum_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_replicNum_feature",
+                                "_UI_SlotType_type"),
+                                LqnPackage.Literals.SLOT_TYPE__REPLIC_NUM,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -119,7 +142,8 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.SLOT_TYPE__INTERFACE);
             this.childrenFeatures.add(LqnPackage.Literals.SLOT_TYPE__BINDING);
@@ -159,8 +183,9 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
     @Override
     public String getText(final Object object) {
         final String label = ((SlotType) object).getId();
-        return label == null || label.length() == 0 ? this.getString("_UI_SlotType_type")
-                : this.getString("_UI_SlotType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_SlotType_type") :
+                this.getString("_UI_SlotType_type") + " " + label;
     }
 
     /**
@@ -174,7 +199,8 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(SlotType.class)) {
+        switch (notification.getFeatureID(SlotType.class))
+        {
         case LqnPackage.SLOT_TYPE__BIND_TARGET:
         case LqnPackage.SLOT_TYPE__ID:
         case LqnPackage.SLOT_TYPE__REPLIC_NUM:
@@ -198,11 +224,15 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.SLOT_TYPE__INTERFACE,
-                LqnFactory.eINSTANCE.createInterfaceType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.SLOT_TYPE__INTERFACE,
+                        LqnFactory.eINSTANCE.createInterfaceType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.SLOT_TYPE__BINDING,
-                LqnFactory.eINSTANCE.createBindType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.SLOT_TYPE__BINDING,
+                        LqnFactory.eINSTANCE.createBindType()));
     }
 
     /**

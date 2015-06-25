@@ -19,11 +19,11 @@ import org.palladiosimulator.solver.lqn.ReplyActivityType;
  * <em><b>Entry Activity Graph</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryActivityGraphImpl#getReplyActivity
- * <em>Reply Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.EntryActivityGraphImpl#getReplyActivity <em>
+ * Reply Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -65,7 +65,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
      */
     @Override
     public EList<ReplyActivityType> getReplyActivity() {
-        if (this.replyActivity == null) {
+        if (this.replyActivity == null)
+        {
             this.replyActivity = new EObjectContainmentEList<ReplyActivityType>(ReplyActivityType.class, this,
                     LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY);
         }
@@ -80,7 +81,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
             return ((InternalEList<?>) this.getReplyActivity()).basicRemove(otherEnd, msgs);
         }
@@ -94,7 +96,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
             return this.getReplyActivity();
         }
@@ -109,7 +112,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
             this.getReplyActivity().clear();
             this.getReplyActivity().addAll((Collection<? extends ReplyActivityType>) newValue);
@@ -125,7 +129,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
             this.getReplyActivity().clear();
             return;
@@ -140,7 +145,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
             return this.replyActivity != null && !this.replyActivity.isEmpty();
         }

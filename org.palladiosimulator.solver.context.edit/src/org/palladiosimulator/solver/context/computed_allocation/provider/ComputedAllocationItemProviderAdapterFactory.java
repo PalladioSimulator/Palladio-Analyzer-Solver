@@ -96,7 +96,8 @@ public class ComputedAllocationItemProviderAdapterFactory extends ComputedAlloca
      */
     @Override
     public Adapter createComputedAllocationContextAdapter() {
-        if (this.computedAllocationContextItemProvider == null) {
+        if (this.computedAllocationContextItemProvider == null)
+        {
             this.computedAllocationContextItemProvider = new ComputedAllocationContextItemProvider(this);
         }
 
@@ -121,7 +122,8 @@ public class ComputedAllocationItemProviderAdapterFactory extends ComputedAlloca
      */
     @Override
     public Adapter createResourceDemandAdapter() {
-        if (this.resourceDemandItemProvider == null) {
+        if (this.resourceDemandItemProvider == null)
+        {
             this.resourceDemandItemProvider = new ResourceDemandItemProvider(this);
         }
 
@@ -146,7 +148,8 @@ public class ComputedAllocationItemProviderAdapterFactory extends ComputedAlloca
      */
     @Override
     public Adapter createComputedAllocationAdapter() {
-        if (this.computedAllocationItemProvider == null) {
+        if (this.computedAllocationItemProvider == null)
+        {
             this.computedAllocationItemProvider = new ComputedAllocationItemProvider(this);
         }
 
@@ -203,9 +206,11 @@ public class ComputedAllocationItemProviderAdapterFactory extends ComputedAlloca
      */
     @Override
     public Object adapt(final Object object, final Object type) {
-        if (this.isFactoryForType(type)) {
+        if (this.isFactoryForType(type))
+        {
             final Object adapter = super.adapt(object, type);
-            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter))) {
+            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter)))
+            {
                 return adapter;
             }
         }
@@ -243,7 +248,8 @@ public class ComputedAllocationItemProviderAdapterFactory extends ComputedAlloca
     public void fireNotifyChanged(final Notification notification) {
         this.changeNotifier.fireNotifyChanged(notification);
 
-        if (this.parentAdapterFactory != null) {
+        if (this.parentAdapterFactory != null)
+        {
             this.parentAdapterFactory.fireNotifyChanged(notification);
         }
     }

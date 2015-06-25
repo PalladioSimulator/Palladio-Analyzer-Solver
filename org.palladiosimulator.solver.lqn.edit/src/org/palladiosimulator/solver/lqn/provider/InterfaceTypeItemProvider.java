@@ -48,7 +48,8 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.INTERFACE_TYPE__IN_PORT);
             this.childrenFeatures.add(LqnPackage.Literals.INTERFACE_TYPE__OUT_PORT);
@@ -119,7 +121,8 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(InterfaceType.class)) {
+        switch (notification.getFeatureID(InterfaceType.class))
+        {
         case LqnPackage.INTERFACE_TYPE__IN_PORT:
         case LqnPackage.INTERFACE_TYPE__OUT_PORT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -138,11 +141,15 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.INTERFACE_TYPE__IN_PORT,
-                LqnFactory.eINSTANCE.createInPortType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.INTERFACE_TYPE__IN_PORT,
+                        LqnFactory.eINSTANCE.createInPortType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.INTERFACE_TYPE__OUT_PORT,
-                LqnFactory.eINSTANCE.createOutPortType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.INTERFACE_TYPE__OUT_PORT,
+                        LqnFactory.eINSTANCE.createOutPortType()));
     }
 
     /**

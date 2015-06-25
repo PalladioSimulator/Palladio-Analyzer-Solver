@@ -58,7 +58,8 @@ public class ComputedAllocationItemProvider extends ItemProviderAdapter implemen
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -76,10 +77,11 @@ public class ComputedAllocationItemProvider extends ItemProviderAdapter implemen
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
-            this.childrenFeatures.add(
-                    ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION);
+            this.childrenFeatures
+                    .add(ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION);
         }
         return this.childrenFeatures;
     }
@@ -129,7 +131,8 @@ public class ComputedAllocationItemProvider extends ItemProviderAdapter implemen
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ComputedAllocation.class)) {
+        switch (notification.getFeatureID(ComputedAllocation.class))
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -147,9 +150,11 @@ public class ComputedAllocationItemProvider extends ItemProviderAdapter implemen
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION,
-                ComputedAllocationFactory.eINSTANCE.createComputedAllocationContext()));
+        newChildDescriptors
+                .add
+                (this.createChildParameter
+                (ComputedAllocationPackage.Literals.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION,
+                        ComputedAllocationFactory.eINSTANCE.createComputedAllocationContext()));
     }
 
     /**

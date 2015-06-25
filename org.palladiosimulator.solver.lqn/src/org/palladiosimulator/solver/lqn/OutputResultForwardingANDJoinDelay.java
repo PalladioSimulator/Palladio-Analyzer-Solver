@@ -11,21 +11,21 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getResultConf95
  * <em>Result Conf95</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getResultConf99
  * <em>Result Conf99</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getDest
- * <em>Dest</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getDest <em>Dest
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getJoinVariance
  * <em>Join Variance</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getJoinWaiting
  * <em>Join Waiting</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getWaiting
- * <em>Waiting</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputResultForwardingANDJoinDelay#getWaiting <em>
+ * Waiting</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultForwardingANDJoinDelay()
  * @model extendedMetaData="name='OutputResultForwardingANDJoinDelay' kind='elementOnly'"
@@ -80,8 +80,8 @@ public interface OutputResultForwardingANDJoinDelay extends EObject {
      * @return the value of the '<em>Dest</em>' attribute.
      * @see #setDest(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultForwardingANDJoinDelay_Dest()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='dest' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='dest' namespace='##targetNamespace'"
      * @generated
      */
     String getDest();
@@ -109,8 +109,8 @@ public interface OutputResultForwardingANDJoinDelay extends EObject {
      * @return the value of the '<em>Join Variance</em>' attribute.
      * @see #setJoinVariance(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultForwardingANDJoinDelay_JoinVariance()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='join-variance' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='join-variance' namespace='##targetNamespace'"
      * @generated
      */
     Object getJoinVariance();
@@ -138,8 +138,8 @@ public interface OutputResultForwardingANDJoinDelay extends EObject {
      * @return the value of the '<em>Join Waiting</em>' attribute.
      * @see #setJoinWaiting(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultForwardingANDJoinDelay_JoinWaiting()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='join-waiting' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='join-waiting' namespace='##targetNamespace'"
      * @generated
      */
     Object getJoinWaiting();
@@ -167,8 +167,8 @@ public interface OutputResultForwardingANDJoinDelay extends EObject {
      * @return the value of the '<em>Waiting</em>' attribute.
      * @see #setWaiting(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultForwardingANDJoinDelay_Waiting()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='waiting' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='waiting' namespace='##targetNamespace'"
      * @generated
      */
     Object getWaiting();

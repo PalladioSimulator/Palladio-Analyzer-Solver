@@ -58,7 +58,8 @@ public class AggregatedResourceDemandItemProvider extends ItemProviderAdapter im
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addAggregatedResourceDemandPropertyDescriptor(object);
@@ -74,14 +75,22 @@ public class AggregatedResourceDemandItemProvider extends ItemProviderAdapter im
      * @generated
      */
     protected void addAggregatedResourceDemandPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_AggregatedResourceDemand_aggregatedResourceDemand_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_AggregatedResourceDemand_aggregatedResourceDemand_feature",
-                        "_UI_AggregatedResourceDemand_type"),
-                AggregatedUsageContextPackage.Literals.AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND, true,
-                false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_AggregatedResourceDemand_aggregatedResourceDemand_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_AggregatedResourceDemand_aggregatedResourceDemand_feature",
+                                "_UI_AggregatedResourceDemand_type"),
+                                AggregatedUsageContextPackage.Literals.AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -91,14 +100,22 @@ public class AggregatedResourceDemandItemProvider extends ItemProviderAdapter im
      * @generated
      */
     protected void addResourceType_AggregatedResourceDemandPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_AggregatedResourceDemand_resourceType_AggregatedResourceDemand_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_AggregatedResourceDemand_resourceType_AggregatedResourceDemand_feature",
-                        "_UI_AggregatedResourceDemand_type"),
-                AggregatedUsageContextPackage.Literals.AGGREGATED_RESOURCE_DEMAND__RESOURCE_TYPE_AGGREGATED_RESOURCE_DEMAND,
-                true, false, true, null, null, null));
+        this.itemPropertyDescriptors
+                .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_AggregatedResourceDemand_resourceType_AggregatedResourceDemand_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_AggregatedResourceDemand_resourceType_AggregatedResourceDemand_feature",
+                                "_UI_AggregatedResourceDemand_type"),
+                                AggregatedUsageContextPackage.Literals.AGGREGATED_RESOURCE_DEMAND__RESOURCE_TYPE_AGGREGATED_RESOURCE_DEMAND,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -135,7 +152,8 @@ public class AggregatedResourceDemandItemProvider extends ItemProviderAdapter im
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(AggregatedResourceDemand.class)) {
+        switch (notification.getFeatureID(AggregatedResourceDemand.class))
+        {
         case AggregatedUsageContextPackage.AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;

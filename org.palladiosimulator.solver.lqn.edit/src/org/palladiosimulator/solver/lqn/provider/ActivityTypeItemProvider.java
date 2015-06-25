@@ -48,7 +48,8 @@ public class ActivityTypeItemProvider extends ItemProviderAdapter implements IEd
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addNamePropertyDescriptor(object);
@@ -63,13 +64,20 @@ public class ActivityTypeItemProvider extends ItemProviderAdapter implements IEd
      * @generated
      */
     protected void addNamePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ActivityType_name_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityType_name_feature",
-                        "_UI_ActivityType_type"),
-                LqnPackage.Literals.ACTIVITY_TYPE__NAME, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ActivityType_name_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityType_name_feature",
+                                "_UI_ActivityType_type"),
+                                LqnPackage.Literals.ACTIVITY_TYPE__NAME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -91,8 +99,9 @@ public class ActivityTypeItemProvider extends ItemProviderAdapter implements IEd
     @Override
     public String getText(final Object object) {
         final String label = ((ActivityType) object).getName();
-        return label == null || label.length() == 0 ? this.getString("_UI_ActivityType_type")
-                : this.getString("_UI_ActivityType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ActivityType_type") :
+                this.getString("_UI_ActivityType_type") + " " + label;
     }
 
     /**
@@ -106,7 +115,8 @@ public class ActivityTypeItemProvider extends ItemProviderAdapter implements IEd
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityType.class)) {
+        switch (notification.getFeatureID(ActivityType.class))
+        {
         case LqnPackage.ACTIVITY_TYPE__NAME:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;

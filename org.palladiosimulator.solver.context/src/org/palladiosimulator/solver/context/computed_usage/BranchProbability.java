@@ -12,7 +12,6 @@ import org.palladiosimulator.pcm.seff.AbstractBranchTransition;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.context.computed_usage.BranchProbability#getProbability
  * <em>Probability</em>}</li>
@@ -20,6 +19,7 @@ import org.palladiosimulator.pcm.seff.AbstractBranchTransition;
  * {@link org.palladiosimulator.solver.context.computed_usage.BranchProbability#getBranchtransition_BranchProbability
  * <em>Branchtransition Branch Probability</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getBranchProbability()
  * @model

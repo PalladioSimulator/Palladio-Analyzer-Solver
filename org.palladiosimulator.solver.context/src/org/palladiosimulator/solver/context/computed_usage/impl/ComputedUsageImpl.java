@@ -21,12 +21,12 @@ import org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.ComputedUsageImpl#getUsageContexts_ComputedUsage
  * <em>Usage Contexts Computed Usage</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -76,10 +76,11 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
      */
     @Override
     public EList<ComputedUsageContext> getUsageContexts_ComputedUsage() {
-        if (this.usageContexts_ComputedUsage == null) {
+        if (this.usageContexts_ComputedUsage == null)
+        {
             this.usageContexts_ComputedUsage = new EObjectContainmentEList<ComputedUsageContext>(
-                    ComputedUsageContext.class, this,
-                    ComputedUsagePackage.COMPUTED_USAGE__USAGE_CONTEXTS_COMPUTED_USAGE);
+                    ComputedUsageContext.class,
+                    this, ComputedUsagePackage.COMPUTED_USAGE__USAGE_CONTEXTS_COMPUTED_USAGE);
         }
         return this.usageContexts_ComputedUsage;
     }
@@ -92,7 +93,8 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE__USAGE_CONTEXTS_COMPUTED_USAGE:
             return ((InternalEList<?>) this.getUsageContexts_ComputedUsage()).basicRemove(otherEnd, msgs);
         }
@@ -106,7 +108,8 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE__USAGE_CONTEXTS_COMPUTED_USAGE:
             return this.getUsageContexts_ComputedUsage();
         }
@@ -121,7 +124,8 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE__USAGE_CONTEXTS_COMPUTED_USAGE:
             this.getUsageContexts_ComputedUsage().clear();
             this.getUsageContexts_ComputedUsage().addAll((Collection<? extends ComputedUsageContext>) newValue);
@@ -137,7 +141,8 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE__USAGE_CONTEXTS_COMPUTED_USAGE:
             this.getUsageContexts_ComputedUsage().clear();
             return;
@@ -152,7 +157,8 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.COMPUTED_USAGE__USAGE_CONTEXTS_COMPUTED_USAGE:
             return this.usageContexts_ComputedUsage != null && !this.usageContexts_ComputedUsage.isEmpty();
         }

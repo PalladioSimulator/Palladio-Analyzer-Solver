@@ -14,13 +14,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl#getDest <em>Dest</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl#getFanin <em>Fanin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl#getFanout <em>Fanout</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl#getFanout <em>Fanout</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -171,7 +170,8 @@ public class AsynchCallTypeImpl extends EObjectImpl implements AsynchCallType {
         this.faninESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ASYNCH_CALL_TYPE__FANIN, oldFanin,
-                    this.fanin, !oldFaninESet));
+                    this.fanin,
+                    !oldFaninESet));
         }
     }
 
@@ -241,7 +241,8 @@ public class AsynchCallTypeImpl extends EObjectImpl implements AsynchCallType {
         this.fanout = FANOUT_EDEFAULT;
         this.fanoutESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ASYNCH_CALL_TYPE__FANOUT, oldFanout,
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ASYNCH_CALL_TYPE__FANOUT,
+                    oldFanout,
                     FANOUT_EDEFAULT, oldFanoutESet));
         }
     }
@@ -263,7 +264,8 @@ public class AsynchCallTypeImpl extends EObjectImpl implements AsynchCallType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ASYNCH_CALL_TYPE__DEST:
             return this.getDest();
         case LqnPackage.ASYNCH_CALL_TYPE__FANIN:
@@ -281,7 +283,8 @@ public class AsynchCallTypeImpl extends EObjectImpl implements AsynchCallType {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ASYNCH_CALL_TYPE__DEST:
             this.setDest((String) newValue);
             return;
@@ -302,7 +305,8 @@ public class AsynchCallTypeImpl extends EObjectImpl implements AsynchCallType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ASYNCH_CALL_TYPE__DEST:
             this.setDest(DEST_EDEFAULT);
             return;
@@ -323,7 +327,8 @@ public class AsynchCallTypeImpl extends EObjectImpl implements AsynchCallType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ASYNCH_CALL_TYPE__DEST:
             return DEST_EDEFAULT == null ? this.dest != null : !DEST_EDEFAULT.equals(this.dest);
         case LqnPackage.ASYNCH_CALL_TYPE__FANIN:

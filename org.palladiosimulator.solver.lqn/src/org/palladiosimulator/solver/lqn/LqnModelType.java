@@ -13,24 +13,21 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getRunControl <em>Run Control</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getPlotControl <em>Plot Control</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getSolverParams <em>Solver Params</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getPlotControl <em>Plot Control</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getSolverParams <em>Solver Params</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getProcessor <em>Processor</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getSlot <em>Slot</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getDescription <em>Description</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getLqncoreSchemaVersion
- * <em>Lqncore Schema Version</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getLqnSchemaVersion
- * <em>Lqn Schema Version</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getDescription <em>Description</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getLqncoreSchemaVersion <em>Lqncore
+ * Schema Version</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getLqnSchemaVersion <em>Lqn Schema
+ * Version</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getName <em>Name</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getXmlDebug <em>Xml Debug</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType()
  * @model extendedMetaData="name='LqnModelType' kind='elementOnly'"
@@ -154,8 +151,8 @@ public interface LqnModelType extends EObject {
      *
      * @return the value of the '<em>Slot</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType_Slot()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='slot' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='slot' namespace='##targetNamespace'"
      * @generated
      */
     EList<SlotType> getSlot();
@@ -171,8 +168,8 @@ public interface LqnModelType extends EObject {
      * @return the value of the '<em>Description</em>' attribute.
      * @see #setDescription(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType_Description()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='description' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='description' namespace='##targetNamespace'"
      * @generated
      */
     String getDescription();
@@ -203,8 +200,8 @@ public interface LqnModelType extends EObject {
      * @see #setLqncoreSchemaVersion(BigDecimal)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType_LqncoreSchemaVersion()
      * @model default="1.0" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Decimal"
-     *        extendedMetaData=
-     *        "kind='attribute' name='lqncore-schema-version' namespace='##targetNamespace'"
+     *        extendedMetaData
+     *        ="kind='attribute' name='lqncore-schema-version' namespace='##targetNamespace'"
      * @generated
      */
     BigDecimal getLqncoreSchemaVersion();
@@ -264,8 +261,8 @@ public interface LqnModelType extends EObject {
      * @see #setLqnSchemaVersion(BigDecimal)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType_LqnSchemaVersion()
      * @model default="1.0" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.Decimal"
-     *        extendedMetaData=
-     *        "kind='attribute' name='lqn-schema-version' namespace='##targetNamespace'"
+     *        extendedMetaData
+     *        ="kind='attribute' name='lqn-schema-version' namespace='##targetNamespace'"
      * @generated
      */
     BigDecimal getLqnSchemaVersion();
@@ -320,8 +317,8 @@ public interface LqnModelType extends EObject {
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType_Name()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='name' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
      * @generated
      */
     String getName();
@@ -353,8 +350,8 @@ public interface LqnModelType extends EObject {
      * @see #unsetXmlDebug()
      * @see #setXmlDebug(XmlDebugType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType_XmlDebug()
-     * @model default="true" unsettable="true" extendedMetaData=
-     *        "kind='attribute' name='xml-debug' namespace='##targetNamespace'"
+     * @model default="true" unsettable="true"
+     *        extendedMetaData="kind='attribute' name='xml-debug' namespace='##targetNamespace'"
      * @generated
      */
     XmlDebugType getXmlDebug();

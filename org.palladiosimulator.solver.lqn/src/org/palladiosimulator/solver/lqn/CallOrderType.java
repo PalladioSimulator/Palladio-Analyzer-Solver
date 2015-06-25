@@ -98,7 +98,12 @@ public enum CallOrderType implements Enumerator {
      *
      * @generated
      */
-    private static final CallOrderType[] VALUES_ARRAY = new CallOrderType[] { STOCHASTIC, DETERMINISTIC, LIST, };
+    private static final CallOrderType[] VALUES_ARRAY = new CallOrderType[]
+            {
+        STOCHASTIC,
+        DETERMINISTIC,
+        LIST,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Call Order Type</b></em>' enumerators. <!--
@@ -119,7 +124,8 @@ public enum CallOrderType implements Enumerator {
      */
     public static CallOrderType get(final String literal) {
         for (final CallOrderType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -137,7 +143,8 @@ public enum CallOrderType implements Enumerator {
      */
     public static CallOrderType getByName(final String name) {
         for (final CallOrderType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -154,7 +161,8 @@ public enum CallOrderType implements Enumerator {
      * @generated
      */
     public static CallOrderType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case STOCHASTIC_VALUE:
             return STOCHASTIC;
         case DETERMINISTIC_VALUE:

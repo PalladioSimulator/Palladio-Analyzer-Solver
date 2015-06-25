@@ -20,7 +20,7 @@
             name="%_UI_LqnModelWizard_label"
             class="org.palladiosimulator.solver.lqn.presentation.LqnModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/lqnModelFile.gif">
+            icon="icons/full/obj16/LqnModelFile.gif">
          <description>%_UI_LqnModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
@@ -31,7 +31,7 @@
       <editor
             id="org.palladiosimulator.solver.lqn.presentation.LqnEditorID"
             name="%_UI_LqnEditor_label"
-            icon="icons/full/obj16/lqnModelFile.gif"
+            icon="icons/full/obj16/LqnModelFile.gif"
             extensions="lqn"
             class="org.palladiosimulator.solver.lqn.presentation.LqnEditor"
             contributorClass="org.palladiosimulator.solver.lqn.presentation.LqnActionBarContributor">

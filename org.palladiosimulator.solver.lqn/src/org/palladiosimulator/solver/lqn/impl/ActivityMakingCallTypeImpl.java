@@ -13,11 +13,11 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Activity Making Call Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityMakingCallTypeImpl#getCallsMean
- * <em>Calls Mean</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityMakingCallTypeImpl#getCallsMean <em>
+ * Calls Mean</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -82,7 +82,8 @@ public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements Ac
         final Object oldCallsMean = this.callsMean;
         this.callsMean = newCallsMean;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN,
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN,
                     oldCallsMean, this.callsMean));
         }
     }
@@ -94,7 +95,8 @@ public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements Ac
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN:
             return this.getCallsMean();
         }
@@ -108,7 +110,8 @@ public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements Ac
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN:
             this.setCallsMean(newValue);
             return;
@@ -123,7 +126,8 @@ public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements Ac
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN:
             this.setCallsMean(CALLS_MEAN_EDEFAULT);
             return;
@@ -138,7 +142,8 @@ public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements Ac
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN:
             return CALLS_MEAN_EDEFAULT == null ? this.callsMean != null : !CALLS_MEAN_EDEFAULT.equals(this.callsMean);
         }

@@ -48,7 +48,8 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY);
         }
@@ -118,7 +120,8 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(OrListType.class)) {
+        switch (notification.getFeatureID(OrListType.class))
+        {
         case LqnPackage.OR_LIST_TYPE__ACTIVITY:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -136,8 +139,10 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY,
-                LqnFactory.eINSTANCE.createActivityOrType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY,
+                        LqnFactory.eINSTANCE.createActivityOrType()));
     }
 
     /**

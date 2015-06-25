@@ -11,18 +11,17 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getCallList <em>Call List</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getCallList <em>Call List</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getGroup <em>Group</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getSynchCall <em>Synch Call</em>
- * }</li>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getAsynchCall
- * <em>Asynch Call</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getFirstActivity
- * <em>First Activity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getSynchCall <em>Synch Call
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getAsynchCall <em>Asynch Call
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getFirstActivity <em>First
+ * Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryActivityDefType()
  * @model extendedMetaData="name='EntryActivityDefType' kind='elementOnly'"
@@ -112,8 +111,8 @@ public interface EntryActivityDefType extends ActivityDefBase {
      * @return the value of the '<em>First Activity</em>' attribute.
      * @see #setFirstActivity(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryActivityDefType_FirstActivity()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" extendedMetaData=
-     *        "kind='attribute' name='first-activity' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+     *        extendedMetaData="kind='attribute' name='first-activity' namespace='##targetNamespace'"
      * @generated
      */
     String getFirstActivity();

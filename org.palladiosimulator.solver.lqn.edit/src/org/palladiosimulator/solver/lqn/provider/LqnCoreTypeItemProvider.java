@@ -48,7 +48,8 @@ public class LqnCoreTypeItemProvider extends ItemProviderAdapter implements IEdi
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class LqnCoreTypeItemProvider extends ItemProviderAdapter implements IEdi
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.LQN_CORE_TYPE__PROCESSOR);
             this.childrenFeatures.add(LqnPackage.Literals.LQN_CORE_TYPE__SLOT);
@@ -119,7 +121,8 @@ public class LqnCoreTypeItemProvider extends ItemProviderAdapter implements IEdi
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(LqnCoreType.class)) {
+        switch (notification.getFeatureID(LqnCoreType.class))
+        {
         case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
         case LqnPackage.LQN_CORE_TYPE__SLOT:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -138,11 +141,15 @@ public class LqnCoreTypeItemProvider extends ItemProviderAdapter implements IEdi
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.LQN_CORE_TYPE__PROCESSOR,
-                LqnFactory.eINSTANCE.createProcessorType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.LQN_CORE_TYPE__PROCESSOR,
+                        LqnFactory.eINSTANCE.createProcessorType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.LQN_CORE_TYPE__SLOT,
-                LqnFactory.eINSTANCE.createSlotType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.LQN_CORE_TYPE__SLOT,
+                        LqnFactory.eINSTANCE.createSlotType()));
     }
 
     /**

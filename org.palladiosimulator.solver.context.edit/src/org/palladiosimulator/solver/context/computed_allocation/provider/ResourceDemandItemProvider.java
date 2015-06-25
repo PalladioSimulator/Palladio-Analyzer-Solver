@@ -59,7 +59,8 @@ public class ResourceDemandItemProvider extends ItemProviderAdapter implements I
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addParametricResourceDemand_ResourceDemandPropertyDescriptor(object);
@@ -74,14 +75,22 @@ public class ResourceDemandItemProvider extends ItemProviderAdapter implements I
      * @generated
      */
     protected void addParametricResourceDemand_ResourceDemandPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResourceDemand_parametricResourceDemand_ResourceDemand_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_ResourceDemand_parametricResourceDemand_ResourceDemand_feature",
-                        "_UI_ResourceDemand_type"),
-                ComputedAllocationPackage.Literals.RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND, true,
-                false, true, null, null, null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResourceDemand_parametricResourceDemand_ResourceDemand_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResourceDemand_parametricResourceDemand_ResourceDemand_feature",
+                                "_UI_ResourceDemand_type"),
+                                ComputedAllocationPackage.Literals.RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -95,10 +104,11 @@ public class ResourceDemandItemProvider extends ItemProviderAdapter implements I
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures
-                    .add(ComputedAllocationPackage.Literals.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND);
+            .add(ComputedAllocationPackage.Literals.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND);
         }
         return this.childrenFeatures;
     }
@@ -148,7 +158,8 @@ public class ResourceDemandItemProvider extends ItemProviderAdapter implements I
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ResourceDemand.class)) {
+        switch (notification.getFeatureID(ResourceDemand.class))
+        {
         case ComputedAllocationPackage.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -166,9 +177,10 @@ public class ResourceDemandItemProvider extends ItemProviderAdapter implements I
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(
-                ComputedAllocationPackage.Literals.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND,
-                CoreFactory.eINSTANCE.createPCMRandomVariable()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (ComputedAllocationPackage.Literals.RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND,
+                        CoreFactory.eINSTANCE.createPCMRandomVariable()));
     }
 
     /**

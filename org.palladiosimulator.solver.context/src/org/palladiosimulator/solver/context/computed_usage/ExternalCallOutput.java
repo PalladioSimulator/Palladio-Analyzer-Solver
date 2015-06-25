@@ -14,7 +14,6 @@ import org.palladiosimulator.pcm.seff.ExternalCallAction;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput#getParameterCharacterisations_ExternalCallOutput
@@ -23,6 +22,7 @@ import org.palladiosimulator.pcm.seff.ExternalCallAction;
  * {@link org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput#getExternalCallAction_ExternalCallOutput
  * <em>External Call Action External Call Output</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getExternalCallOutput()
  * @model

@@ -50,7 +50,8 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addCommentPropertyDescriptor(object);
@@ -69,13 +70,21 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addCommentPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SolverParamsType_comment_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_comment_feature",
-                        "_UI_SolverParamsType_type"),
-                LqnPackage.Literals.SOLVER_PARAMS_TYPE__COMMENT, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SolverParamsType_comment_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_SolverParamsType_comment_feature",
+                                "_UI_SolverParamsType_type"),
+                                LqnPackage.Literals.SOLVER_PARAMS_TYPE__COMMENT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -85,13 +94,21 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addConvValPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SolverParamsType_convVal_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_convVal_feature",
-                        "_UI_SolverParamsType_type"),
-                LqnPackage.Literals.SOLVER_PARAMS_TYPE__CONV_VAL, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SolverParamsType_convVal_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_SolverParamsType_convVal_feature",
+                                "_UI_SolverParamsType_type"),
+                                LqnPackage.Literals.SOLVER_PARAMS_TYPE__CONV_VAL,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -101,13 +118,21 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addItLimitPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SolverParamsType_itLimit_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_itLimit_feature",
-                        "_UI_SolverParamsType_type"),
-                LqnPackage.Literals.SOLVER_PARAMS_TYPE__IT_LIMIT, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SolverParamsType_itLimit_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_SolverParamsType_itLimit_feature",
+                                "_UI_SolverParamsType_type"),
+                                LqnPackage.Literals.SOLVER_PARAMS_TYPE__IT_LIMIT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -117,13 +142,21 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPrintIntPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SolverParamsType_printInt_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_printInt_feature",
-                        "_UI_SolverParamsType_type"),
-                LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRINT_INT, true, false, false,
-                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SolverParamsType_printInt_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_SolverParamsType_printInt_feature",
+                                "_UI_SolverParamsType_type"),
+                                LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRINT_INT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -133,13 +166,21 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addUnderrelaxCoeffPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_SolverParamsType_underrelaxCoeff_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_underrelaxCoeff_feature",
-                        "_UI_SolverParamsType_type"),
-                LqnPackage.Literals.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_SolverParamsType_underrelaxCoeff_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_SolverParamsType_underrelaxCoeff_feature",
+                                "_UI_SolverParamsType_type"),
+                                LqnPackage.Literals.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -153,7 +194,8 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.SOLVER_PARAMS_TYPE__RESULT_GENERAL);
             this.childrenFeatures.add(LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRAGMA);
@@ -193,8 +235,9 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
     @Override
     public String getText(final Object object) {
         final String label = ((SolverParamsType) object).getComment();
-        return label == null || label.length() == 0 ? this.getString("_UI_SolverParamsType_type")
-                : this.getString("_UI_SolverParamsType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_SolverParamsType_type") :
+                this.getString("_UI_SolverParamsType_type") + " " + label;
     }
 
     /**
@@ -208,7 +251,8 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(SolverParamsType.class)) {
+        switch (notification.getFeatureID(SolverParamsType.class))
+        {
         case LqnPackage.SOLVER_PARAMS_TYPE__COMMENT:
         case LqnPackage.SOLVER_PARAMS_TYPE__CONV_VAL:
         case LqnPackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
@@ -234,11 +278,15 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
-                LqnFactory.eINSTANCE.createResultGeneralType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
+                        LqnFactory.eINSTANCE.createResultGeneralType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRAGMA,
-                LqnFactory.eINSTANCE.createPragmaType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRAGMA,
+                        LqnFactory.eINSTANCE.createPragmaType()));
     }
 
     /**

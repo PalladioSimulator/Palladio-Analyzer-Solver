@@ -16,14 +16,14 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getConnectFrom
- * <em>Connect From</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getDescription
- * <em>Description</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getConnectFrom <em>Connect From
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getDescription <em>Description
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -154,7 +154,8 @@ public class InPortTypeImpl extends EObjectImpl implements InPortType {
         this.description = newDescription;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.IN_PORT_TYPE__DESCRIPTION,
-                    oldDescription, this.description));
+                    oldDescription,
+                    this.description));
         }
     }
 
@@ -178,8 +179,8 @@ public class InPortTypeImpl extends EObjectImpl implements InPortType {
         final String oldName = this.name;
         this.name = newName;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.IN_PORT_TYPE__NAME, oldName, this.name));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.IN_PORT_TYPE__NAME, oldName,
+                    this.name));
         }
     }
 
@@ -190,7 +191,8 @@ public class InPortTypeImpl extends EObjectImpl implements InPortType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
             return this.getConnectFrom();
         case LqnPackage.IN_PORT_TYPE__DESCRIPTION:
@@ -209,7 +211,8 @@ public class InPortTypeImpl extends EObjectImpl implements InPortType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
             this.setConnectFrom((List<String>) newValue);
             return;
@@ -230,7 +233,8 @@ public class InPortTypeImpl extends EObjectImpl implements InPortType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
             this.setConnectFrom(CONNECT_FROM_EDEFAULT);
             return;
@@ -251,13 +255,14 @@ public class InPortTypeImpl extends EObjectImpl implements InPortType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
-            return CONNECT_FROM_EDEFAULT == null ? this.connectFrom != null
-                    : !CONNECT_FROM_EDEFAULT.equals(this.connectFrom);
+            return CONNECT_FROM_EDEFAULT == null ? this.connectFrom != null : !CONNECT_FROM_EDEFAULT
+                    .equals(this.connectFrom);
         case LqnPackage.IN_PORT_TYPE__DESCRIPTION:
-            return DESCRIPTION_EDEFAULT == null ? this.description != null
-                    : !DESCRIPTION_EDEFAULT.equals(this.description);
+            return DESCRIPTION_EDEFAULT == null ? this.description != null : !DESCRIPTION_EDEFAULT
+                    .equals(this.description);
         case LqnPackage.IN_PORT_TYPE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         }

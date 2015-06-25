@@ -21,12 +21,12 @@ import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocati
  * <em><b>Computed Allocation</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationImpl#getComputedAllocationContexts_ComputedAllocation
  * <em>Computed Allocation Contexts Computed Allocation</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -76,7 +76,8 @@ public class ComputedAllocationImpl extends EObjectImpl implements ComputedAlloc
      */
     @Override
     public EList<ComputedAllocationContext> getComputedAllocationContexts_ComputedAllocation() {
-        if (this.computedAllocationContexts_ComputedAllocation == null) {
+        if (this.computedAllocationContexts_ComputedAllocation == null)
+        {
             this.computedAllocationContexts_ComputedAllocation = new EObjectContainmentEList<ComputedAllocationContext>(
                     ComputedAllocationContext.class, this,
                     ComputedAllocationPackage.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION);
@@ -92,7 +93,8 @@ public class ComputedAllocationImpl extends EObjectImpl implements ComputedAlloc
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION:
             return ((InternalEList<?>) this.getComputedAllocationContexts_ComputedAllocation()).basicRemove(otherEnd,
                     msgs);
@@ -107,7 +109,8 @@ public class ComputedAllocationImpl extends EObjectImpl implements ComputedAlloc
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION:
             return this.getComputedAllocationContexts_ComputedAllocation();
         }
@@ -122,11 +125,12 @@ public class ComputedAllocationImpl extends EObjectImpl implements ComputedAlloc
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION:
             this.getComputedAllocationContexts_ComputedAllocation().clear();
-            this.getComputedAllocationContexts_ComputedAllocation()
-                    .addAll((Collection<? extends ComputedAllocationContext>) newValue);
+            this.getComputedAllocationContexts_ComputedAllocation().addAll(
+                    (Collection<? extends ComputedAllocationContext>) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -139,7 +143,8 @@ public class ComputedAllocationImpl extends EObjectImpl implements ComputedAlloc
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION:
             this.getComputedAllocationContexts_ComputedAllocation().clear();
             return;
@@ -154,10 +159,11 @@ public class ComputedAllocationImpl extends EObjectImpl implements ComputedAlloc
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedAllocationPackage.COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION:
             return this.computedAllocationContexts_ComputedAllocation != null
-                    && !this.computedAllocationContexts_ComputedAllocation.isEmpty();
+            && !this.computedAllocationContexts_ComputedAllocation.isEmpty();
         }
         return super.eIsSet(featureID);
     }

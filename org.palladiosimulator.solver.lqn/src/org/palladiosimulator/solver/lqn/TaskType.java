@@ -13,15 +13,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getResultTask <em>Result Task</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getEntry <em>Entry</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getService <em>Service</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getTaskActivities <em>Task Activities</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getActivityGraph <em>Activity Graph</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getTaskActivities <em>Task Activities</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getActivityGraph <em>Activity Graph</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getMultiplicity <em>Multiplicity</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getName <em>Name</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getPriority <em>Priority</em>}</li>
@@ -30,6 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getScheduling <em>Scheduling</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.TaskType#getThinkTime <em>Think Time</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType()
  * @model extendedMetaData="name='TaskType' kind='elementOnly'"
@@ -67,8 +65,8 @@ public interface TaskType extends EObject {
      *
      * @return the value of the '<em>Entry</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_Entry()
-     * @model containment="true" required="true" extendedMetaData=
-     *        "kind='element' name='entry' namespace='##targetNamespace'"
+     * @model containment="true" required="true"
+     *        extendedMetaData="kind='element' name='entry' namespace='##targetNamespace'"
      * @generated
      */
     EList<EntryType> getEntry();
@@ -137,8 +135,8 @@ public interface TaskType extends EObject {
      * @see #unsetActivityGraph()
      * @see #setActivityGraph(TaskOptionType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_ActivityGraph()
-     * @model default="YES" unsettable="true" extendedMetaData=
-     *        "kind='attribute' name='activity-graph' namespace='##targetNamespace'"
+     * @model default="YES" unsettable="true"
+     *        extendedMetaData="kind='attribute' name='activity-graph' namespace='##targetNamespace'"
      * @generated
      */
     TaskOptionType getActivityGraph();
@@ -196,8 +194,8 @@ public interface TaskType extends EObject {
      * @see #setMultiplicity(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_Multiplicity()
      * @model default="1" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='multiplicity' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='multiplicity' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getMultiplicity();
@@ -250,15 +248,15 @@ public interface TaskType extends EObject {
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_Name()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='name' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
      * @generated
      */
     String getName();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.TaskType#getName <em>Name</em>
-     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.TaskType#getName
+     * <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Name</em>' attribute.
@@ -282,8 +280,8 @@ public interface TaskType extends EObject {
      * @see #setPriority(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_Priority()
      * @model default="0" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='priority' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='priority' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getPriority();
@@ -340,8 +338,8 @@ public interface TaskType extends EObject {
      * @see #setQueueLength(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_QueueLength()
      * @model default="0" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='queue-length' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='queue-length' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getQueueLength();
@@ -398,8 +396,8 @@ public interface TaskType extends EObject {
      * @see #setReplication(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_Replication()
      * @model default="1" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='replication' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='replication' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getReplication();
@@ -457,8 +455,8 @@ public interface TaskType extends EObject {
      * @see #unsetScheduling()
      * @see #setScheduling(TaskSchedulingType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType_Scheduling()
-     * @model default="fcfs" unsettable="true" extendedMetaData=
-     *        "kind='attribute' name='scheduling' namespace='##targetNamespace'"
+     * @model default="fcfs" unsettable="true"
+     *        extendedMetaData="kind='attribute' name='scheduling' namespace='##targetNamespace'"
      * @generated
      */
     TaskSchedulingType getScheduling();

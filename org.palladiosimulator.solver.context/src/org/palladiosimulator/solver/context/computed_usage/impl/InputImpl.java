@@ -21,12 +21,12 @@ import org.palladiosimulator.solver.context.computed_usage.Input;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.InputImpl#getParameterChacterisations_Input
  * <em>Parameter Chacterisations Input</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -76,7 +76,8 @@ public class InputImpl extends EObjectImpl implements Input {
      */
     @Override
     public EList<VariableUsage> getParameterChacterisations_Input() {
-        if (this.parameterChacterisations_Input == null) {
+        if (this.parameterChacterisations_Input == null)
+        {
             this.parameterChacterisations_Input = new EObjectContainmentEList<VariableUsage>(VariableUsage.class, this,
                     ComputedUsagePackage.INPUT__PARAMETER_CHACTERISATIONS_INPUT);
         }
@@ -91,7 +92,8 @@ public class InputImpl extends EObjectImpl implements Input {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.INPUT__PARAMETER_CHACTERISATIONS_INPUT:
             return ((InternalEList<?>) this.getParameterChacterisations_Input()).basicRemove(otherEnd, msgs);
         }
@@ -105,7 +107,8 @@ public class InputImpl extends EObjectImpl implements Input {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.INPUT__PARAMETER_CHACTERISATIONS_INPUT:
             return this.getParameterChacterisations_Input();
         }
@@ -120,7 +123,8 @@ public class InputImpl extends EObjectImpl implements Input {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.INPUT__PARAMETER_CHACTERISATIONS_INPUT:
             this.getParameterChacterisations_Input().clear();
             this.getParameterChacterisations_Input().addAll((Collection<? extends VariableUsage>) newValue);
@@ -136,7 +140,8 @@ public class InputImpl extends EObjectImpl implements Input {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.INPUT__PARAMETER_CHACTERISATIONS_INPUT:
             this.getParameterChacterisations_Input().clear();
             return;
@@ -151,7 +156,8 @@ public class InputImpl extends EObjectImpl implements Input {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.INPUT__PARAMETER_CHACTERISATIONS_INPUT:
             return this.parameterChacterisations_Input != null && !this.parameterChacterisations_Input.isEmpty();
         }

@@ -13,11 +13,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.AndJoinListType#getActivity <em>Activity</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.AndJoinListType#getQuorum <em>Quorum</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getAndJoinListType()
  * @model extendedMetaData="name='AndJoinListType' kind='elementOnly'"
@@ -58,8 +58,8 @@ public interface AndJoinListType extends EObject {
      * @see #setQuorum(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getAndJoinListType_Quorum()
      * @model default="0" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='quorum' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='quorum' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getQuorum();

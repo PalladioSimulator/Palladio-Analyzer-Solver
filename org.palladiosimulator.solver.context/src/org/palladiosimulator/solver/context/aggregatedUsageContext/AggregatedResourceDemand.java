@@ -12,7 +12,6 @@ import org.palladiosimulator.pcm.resourcetype.ResourceType;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getAggregatedResourceDemand
@@ -21,6 +20,7 @@ import org.palladiosimulator.pcm.resourcetype.ResourceType;
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getResourceType_AggregatedResourceDemand
  * <em>Resource Type Aggregated Resource Demand</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getAggregatedResourceDemand()
  * @model

@@ -14,11 +14,11 @@ import org.palladiosimulator.solver.lqn.PragmaType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.PragmaTypeImpl#getParam <em>Param</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.PragmaTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -103,8 +103,8 @@ public class PragmaTypeImpl extends EObjectImpl implements PragmaType {
         final String oldParam = this.param;
         this.param = newParam;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.PRAGMA_TYPE__PARAM, oldParam, this.param));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRAGMA_TYPE__PARAM, oldParam,
+                    this.param));
         }
     }
 
@@ -128,8 +128,8 @@ public class PragmaTypeImpl extends EObjectImpl implements PragmaType {
         final String oldValue = this.value;
         this.value = newValue;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.PRAGMA_TYPE__VALUE, oldValue, this.value));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRAGMA_TYPE__VALUE, oldValue,
+                    this.value));
         }
     }
 
@@ -140,7 +140,8 @@ public class PragmaTypeImpl extends EObjectImpl implements PragmaType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRAGMA_TYPE__PARAM:
             return this.getParam();
         case LqnPackage.PRAGMA_TYPE__VALUE:
@@ -156,7 +157,8 @@ public class PragmaTypeImpl extends EObjectImpl implements PragmaType {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRAGMA_TYPE__PARAM:
             this.setParam((String) newValue);
             return;
@@ -174,7 +176,8 @@ public class PragmaTypeImpl extends EObjectImpl implements PragmaType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRAGMA_TYPE__PARAM:
             this.setParam(PARAM_EDEFAULT);
             return;
@@ -192,7 +195,8 @@ public class PragmaTypeImpl extends EObjectImpl implements PragmaType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PRAGMA_TYPE__PARAM:
             return PARAM_EDEFAULT == null ? this.param != null : !PARAM_EDEFAULT.equals(this.param);
         case LqnPackage.PRAGMA_TYPE__VALUE:

@@ -50,7 +50,8 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addOpenWaitTimePropertyDescriptor(object);
@@ -88,13 +89,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addOpenWaitTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_openWaitTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_openWaitTime_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_openWaitTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_openWaitTime_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -104,13 +113,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase1ProcWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase1ProcWaiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase1ProcWaiting_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase1ProcWaiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase1ProcWaiting_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -120,13 +136,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase1ServiceTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase1ServiceTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase1ServiceTime_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase1ServiceTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase1ServiceTime_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -136,13 +159,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase1ServiceTimeVariancePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase1ServiceTimeVariance_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultType_phase1ServiceTimeVariance_feature", "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME_VARIANCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase1ServiceTimeVariance_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase1ServiceTimeVariance_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME_VARIANCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -152,13 +183,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase1UtilizationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase1Utilization_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase1Utilization_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase1Utilization_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase1Utilization_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -168,13 +206,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase2ProcWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase2ProcWaiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase2ProcWaiting_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase2ProcWaiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase2ProcWaiting_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -184,13 +229,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase2ServiceTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase2ServiceTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase2ServiceTime_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase2ServiceTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase2ServiceTime_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -200,13 +252,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase2ServiceTimeVariancePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase2ServiceTimeVariance_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultType_phase2ServiceTimeVariance_feature", "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME_VARIANCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase2ServiceTimeVariance_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase2ServiceTimeVariance_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME_VARIANCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -216,13 +276,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase2UtilizationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase2Utilization_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase2Utilization_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase2Utilization_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase2Utilization_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -232,13 +299,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase3ProcWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase3ProcWaiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase3ProcWaiting_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase3ProcWaiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase3ProcWaiting_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -248,13 +322,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase3ServiceTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase3ServiceTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase3ServiceTime_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase3ServiceTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase3ServiceTime_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -264,13 +345,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase3ServiceTimeVariancePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase3ServiceTimeVariance_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultType_phase3ServiceTimeVariance_feature", "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME_VARIANCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase3ServiceTimeVariance_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase3ServiceTimeVariance_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME_VARIANCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -280,13 +369,20 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addPhase3UtilizationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_phase3Utilization_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_phase3Utilization_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_phase3Utilization_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_phase3Utilization_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -296,13 +392,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addProbExceedMaxServiceTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_probExceedMaxServiceTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultType_probExceedMaxServiceTime_feature", "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROB_EXCEED_MAX_SERVICE_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_probExceedMaxServiceTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_probExceedMaxServiceTime_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROB_EXCEED_MAX_SERVICE_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -312,13 +416,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addProcUtilizationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_procUtilization_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_procUtilization_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROC_UTILIZATION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_procUtilization_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_procUtilization_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROC_UTILIZATION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -328,13 +440,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addProcWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_procWaiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_procWaiting_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROC_WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_procWaiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_procWaiting_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROC_WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -344,13 +464,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addServiceTimePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_serviceTime_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_serviceTime_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__SERVICE_TIME, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_serviceTime_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_serviceTime_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__SERVICE_TIME,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -360,13 +488,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addServiceTimeVariancePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_serviceTimeVariance_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_serviceTimeVariance_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors
+        .add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_serviceTimeVariance_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_serviceTimeVariance_feature", "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -376,13 +512,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addSquaredCoeffVariationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_squaredCoeffVariation_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultType_squaredCoeffVariation_feature", "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_squaredCoeffVariation_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_squaredCoeffVariation_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -392,13 +536,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addThroughputPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_throughput_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_throughput_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__THROUGHPUT, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_throughput_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_throughput_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__THROUGHPUT,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -408,13 +560,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addThroughputBoundPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_throughputBound_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_throughputBound_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_throughputBound_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_throughputBound_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -424,13 +584,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addUtilizationPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_utilization_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_utilization_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__UTILIZATION, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_utilization_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_utilization_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__UTILIZATION,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -440,13 +608,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_waiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_waiting_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_waiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_waiting_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -456,13 +632,21 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addWaitingVariancePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultType_waitingVariance_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_waitingVariance_feature",
-                        "_UI_OutputResultType_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_TYPE__WAITING_VARIANCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultType_waitingVariance_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultType_waitingVariance_feature",
+                                "_UI_OutputResultType_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_TYPE__WAITING_VARIANCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -476,7 +660,8 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF95);
             this.childrenFeatures.add(LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF99);
@@ -517,8 +702,9 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
     public String getText(final Object object) {
         final Object labelValue = ((OutputResultType) object).getOpenWaitTime();
         final String label = labelValue == null ? null : labelValue.toString();
-        return label == null || label.length() == 0 ? this.getString("_UI_OutputResultType_type")
-                : this.getString("_UI_OutputResultType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_OutputResultType_type") :
+                this.getString("_UI_OutputResultType_type") + " " + label;
     }
 
     /**
@@ -532,7 +718,8 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(OutputResultType.class)) {
+        switch (notification.getFeatureID(OutputResultType.class))
+        {
         case LqnPackage.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME:
         case LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING:
         case LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME:
@@ -577,11 +764,15 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF95,
-                LqnFactory.eINSTANCE.createResultConf95Type1()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF95,
+                        LqnFactory.eINSTANCE.createResultConf95Type1()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF99,
-                LqnFactory.eINSTANCE.createResultConf99Type1()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF99,
+                        LqnFactory.eINSTANCE.createResultConf99Type1()));
     }
 
     /**

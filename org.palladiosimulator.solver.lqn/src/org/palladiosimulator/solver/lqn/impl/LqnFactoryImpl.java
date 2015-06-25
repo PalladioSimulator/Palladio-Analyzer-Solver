@@ -97,12 +97,15 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
      * @generated
      */
     public static LqnFactory init() {
-        try {
+        try
+        {
             final LqnFactory theLqnFactory = (LqnFactory) EPackage.Registry.INSTANCE.getEFactory(LqnPackage.eNS_URI);
-            if (theLqnFactory != null) {
+            if (theLqnFactory != null)
+            {
                 return theLqnFactory;
             }
-        } catch (final Exception exception) {
+        } catch (final Exception exception)
+        {
             EcorePlugin.INSTANCE.log(exception);
         }
         return new LqnFactoryImpl();
@@ -124,7 +127,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
      */
     @Override
     public EObject create(final EClass eClass) {
-        switch (eClass.getClassifierID()) {
+        switch (eClass.getClassifierID())
+        {
         case LqnPackage.ACTIVITY_DEF_BASE:
             return this.createActivityDefBase();
         case LqnPackage.ACTIVITY_DEF_TYPE:
@@ -251,7 +255,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
      */
     @Override
     public Object createFromString(final EDataType eDataType, final String initialValue) {
-        switch (eDataType.getClassifierID()) {
+        switch (eDataType.getClassifierID())
+        {
         case LqnPackage.AXIS_TYPE:
             return this.createAxisTypeFromString(eDataType, initialValue);
         case LqnPackage.CALL_ORDER_TYPE:
@@ -310,7 +315,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
      */
     @Override
     public String convertToString(final EDataType eDataType, final Object instanceValue) {
-        switch (eDataType.getClassifierID()) {
+        switch (eDataType.getClassifierID())
+        {
         case LqnPackage.AXIS_TYPE:
             return this.convertAxisTypeToString(eDataType, instanceValue);
         case LqnPackage.CALL_ORDER_TYPE:
@@ -997,8 +1003,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public AxisType createAxisTypeFromString(final EDataType eDataType, final String initialValue) {
         final AxisType result = AxisType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1020,8 +1026,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public CallOrderType createCallOrderTypeFromString(final EDataType eDataType, final String initialValue) {
         final CallOrderType result = CallOrderType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1043,8 +1049,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public SchedulingType createSchedulingTypeFromString(final EDataType eDataType, final String initialValue) {
         final SchedulingType result = SchedulingType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1066,8 +1072,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public SemaphoreType createSemaphoreTypeFromString(final EDataType eDataType, final String initialValue) {
         final SemaphoreType result = SemaphoreType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1089,8 +1095,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public TaskOptionType createTaskOptionTypeFromString(final EDataType eDataType, final String initialValue) {
         final TaskOptionType result = TaskOptionType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1112,8 +1118,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public TaskSchedulingType createTaskSchedulingTypeFromString(final EDataType eDataType, final String initialValue) {
         final TaskSchedulingType result = TaskSchedulingType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1135,8 +1141,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public TypeType createTypeTypeFromString(final EDataType eDataType, final String initialValue) {
         final TypeType result = TypeType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1158,8 +1164,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public ValidType createValidTypeFromString(final EDataType eDataType, final String initialValue) {
         final ValidType result = ValidType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1181,8 +1187,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
     public XmlDebugType createXmlDebugTypeFromString(final EDataType eDataType, final String initialValue) {
         final XmlDebugType result = XmlDebugType.get(initialValue);
         if (result == null) {
-            throw new IllegalArgumentException(
-                    "The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+            throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
+                    + eDataType.getName() + "'");
         }
         return result;
     }
@@ -1242,7 +1248,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
             return null;
         }
         final List<String> result = new ArrayList<String>();
-        for (final String item : this.split(initialValue)) {
+        for (final String item : this.split(initialValue))
+        {
             result.add((String) XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, item));
         }
         return result;
@@ -1262,7 +1269,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
             return "";
         }
         final StringBuffer result = new StringBuffer();
-        for (final Object item : list) {
+        for (final Object item : list)
+        {
             result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, item));
             result.append(' ');
         }
@@ -1279,7 +1287,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
             return null;
         }
         final List<String> result = new ArrayList<String>();
-        for (final String item : this.split(initialValue)) {
+        for (final String item : this.split(initialValue))
+        {
             result.add((String) XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, item));
         }
         return result;
@@ -1299,7 +1308,8 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
             return "";
         }
         final StringBuffer result = new StringBuffer();
-        for (final Object item : list) {
+        for (final Object item : list)
+        {
             result.append(XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, item));
             result.append(' ');
         }
@@ -1390,20 +1400,26 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
         }
         Object result = null;
         RuntimeException exception = null;
-        try {
+        try
+        {
             result = this.createSciNotationFromString(LqnPackage.Literals.SCI_NOTATION, initialValue);
-            if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
+            if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
+            {
                 return result;
             }
-        } catch (final RuntimeException e) {
+        } catch (final RuntimeException e)
+        {
             exception = e;
         }
-        try {
+        try
+        {
             result = XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DECIMAL, initialValue);
-            if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null)) {
+            if (result != null && Diagnostician.INSTANCE.validate(eDataType, result, null, null))
+            {
                 return result;
             }
-        } catch (final RuntimeException e) {
+        } catch (final RuntimeException e)
+        {
             exception = e;
         }
         if (result != null || exception == null) {
@@ -1422,29 +1438,35 @@ public class LqnFactoryImpl extends EFactoryImpl implements LqnFactory {
         if (instanceValue == null) {
             return null;
         }
-        if (LqnPackage.Literals.SCI_NOTATION.isInstance(instanceValue)) {
-            try {
+        if (LqnPackage.Literals.SCI_NOTATION.isInstance(instanceValue))
+        {
+            try
+            {
                 final String value = this.convertSciNotationToString(LqnPackage.Literals.SCI_NOTATION, instanceValue);
                 if (value != null) {
                     return value;
                 }
-            } catch (final Exception e) {
+            } catch (final Exception e)
+            {
                 // Keep trying other member types until all have failed.
             }
         }
-        if (XMLTypePackage.Literals.DECIMAL.isInstance(instanceValue)) {
-            try {
+        if (XMLTypePackage.Literals.DECIMAL.isInstance(instanceValue))
+        {
+            try
+            {
                 final String value = XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DECIMAL,
                         instanceValue);
                 if (value != null) {
                     return value;
                 }
-            } catch (final Exception e) {
+            } catch (final Exception e)
+            {
                 // Keep trying other member types until all have failed.
             }
         }
-        throw new IllegalArgumentException(
-                "Invalid value: '" + instanceValue + "' for datatype :" + eDataType.getName());
+        throw new IllegalArgumentException("Invalid value: '" + instanceValue + "' for datatype :"
+                + eDataType.getName());
     }
 
     /**

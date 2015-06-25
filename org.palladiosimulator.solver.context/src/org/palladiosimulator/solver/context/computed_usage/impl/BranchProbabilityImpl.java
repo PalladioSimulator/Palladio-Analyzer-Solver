@@ -18,7 +18,6 @@ import org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.BranchProbabilityImpl#getProbability
@@ -27,6 +26,7 @@ import org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage;
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.BranchProbabilityImpl#getBranchtransition_BranchProbability
  * <em>Branchtransition Branch Probability</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -110,7 +110,8 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
         this.probability = newProbability;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    ComputedUsagePackage.BRANCH_PROBABILITY__PROBABILITY, oldProbability, this.probability));
+                    ComputedUsagePackage.BRANCH_PROBABILITY__PROBABILITY,
+                    oldProbability, this.probability));
         }
     }
 
@@ -122,11 +123,13 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
     @Override
     public AbstractBranchTransition getBranchtransition_BranchProbability() {
         if (this.branchtransition_BranchProbability != null
-                && ((EObject) this.branchtransition_BranchProbability).eIsProxy()) {
+                && ((EObject) this.branchtransition_BranchProbability).eIsProxy())
+        {
             final InternalEObject oldBranchtransition_BranchProbability = (InternalEObject) this.branchtransition_BranchProbability;
             this.branchtransition_BranchProbability = (AbstractBranchTransition) this
                     .eResolveProxy(oldBranchtransition_BranchProbability);
-            if (this.branchtransition_BranchProbability != oldBranchtransition_BranchProbability) {
+            if (this.branchtransition_BranchProbability != oldBranchtransition_BranchProbability)
+            {
                 if (this.eNotificationRequired()) {
                     this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
                             ComputedUsagePackage.BRANCH_PROBABILITY__BRANCHTRANSITION_BRANCH_PROBABILITY,
@@ -170,7 +173,8 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.BRANCH_PROBABILITY__PROBABILITY:
             return this.getProbability();
         case ComputedUsagePackage.BRANCH_PROBABILITY__BRANCHTRANSITION_BRANCH_PROBABILITY:
@@ -189,7 +193,8 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.BRANCH_PROBABILITY__PROBABILITY:
             this.setProbability((Double) newValue);
             return;
@@ -207,7 +212,8 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.BRANCH_PROBABILITY__PROBABILITY:
             this.setProbability(PROBABILITY_EDEFAULT);
             return;
@@ -225,7 +231,8 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.BRANCH_PROBABILITY__PROBABILITY:
             return this.probability != PROBABILITY_EDEFAULT;
         case ComputedUsagePackage.BRANCH_PROBABILITY__BRANCHTRANSITION_BRANCH_PROBABILITY:

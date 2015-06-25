@@ -22,15 +22,14 @@ import org.palladiosimulator.solver.lqn.ProcessorBindingType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getParameter <em>Parameter</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getProcessorBinding
- * <em>Processor Binding</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getPortBinding
- * <em>Port Binding</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getParameter <em>Parameter</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getProcessorBinding <em>Processor
+ * Binding</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getPortBinding <em>Port Binding
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -92,7 +91,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
      */
     @Override
     public EList<ParameterType> getParameter() {
-        if (this.parameter == null) {
+        if (this.parameter == null)
+        {
             this.parameter = new EObjectContainmentEList<ParameterType>(ParameterType.class, this,
                     LqnPackage.BIND_TYPE__PARAMETER);
         }
@@ -106,7 +106,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
      */
     @Override
     public EList<ProcessorBindingType> getProcessorBinding() {
-        if (this.processorBinding == null) {
+        if (this.processorBinding == null)
+        {
             this.processorBinding = new EObjectContainmentEList<ProcessorBindingType>(ProcessorBindingType.class, this,
                     LqnPackage.BIND_TYPE__PROCESSOR_BINDING);
         }
@@ -120,7 +121,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
      */
     @Override
     public EList<PortBindingType> getPortBinding() {
-        if (this.portBinding == null) {
+        if (this.portBinding == null)
+        {
             this.portBinding = new EObjectContainmentEList<PortBindingType>(PortBindingType.class, this,
                     LqnPackage.BIND_TYPE__PORT_BINDING);
         }
@@ -135,7 +137,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.BIND_TYPE__PARAMETER:
             return ((InternalEList<?>) this.getParameter()).basicRemove(otherEnd, msgs);
         case LqnPackage.BIND_TYPE__PROCESSOR_BINDING:
@@ -153,7 +156,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.BIND_TYPE__PARAMETER:
             return this.getParameter();
         case LqnPackage.BIND_TYPE__PROCESSOR_BINDING:
@@ -172,7 +176,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.BIND_TYPE__PARAMETER:
             this.getParameter().clear();
             this.getParameter().addAll((Collection<? extends ParameterType>) newValue);
@@ -196,7 +201,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.BIND_TYPE__PARAMETER:
             this.getParameter().clear();
             return;
@@ -217,7 +223,8 @@ public class BindTypeImpl extends EObjectImpl implements BindType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.BIND_TYPE__PARAMETER:
             return this.parameter != null && !this.parameter.isEmpty();
         case LqnPackage.BIND_TYPE__PROCESSOR_BINDING:

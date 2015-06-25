@@ -10,14 +10,14 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinVariance
- * <em>Join Variance</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting <em>Join Waiting</em>
- * }</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinVariance <em>Join Variance
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting <em>Join Waiting
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ResultConf95Type#getWaiting <em>Waiting</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultConf95Type()
  * @model extendedMetaData="name='result-conf-95_._type' kind='empty'"
@@ -36,8 +36,8 @@ public interface ResultConf95Type extends EObject {
      * @return the value of the '<em>Join Variance</em>' attribute.
      * @see #setJoinVariance(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultConf95Type_JoinVariance()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='join-variance' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='join-variance' namespace='##targetNamespace'"
      * @generated
      */
     Object getJoinVariance();
@@ -65,16 +65,16 @@ public interface ResultConf95Type extends EObject {
      * @return the value of the '<em>Join Waiting</em>' attribute.
      * @see #setJoinWaiting(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultConf95Type_JoinWaiting()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='join-waiting' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='join-waiting' namespace='##targetNamespace'"
      * @generated
      */
     Object getJoinWaiting();
 
     /**
      * Sets the value of the '
-     * {@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting <em>Join Waiting</em>
-     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting
+     * <em>Join Waiting</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Join Waiting</em>' attribute.
@@ -94,8 +94,8 @@ public interface ResultConf95Type extends EObject {
      * @return the value of the '<em>Waiting</em>' attribute.
      * @see #setWaiting(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultConf95Type_Waiting()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='waiting' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='waiting' namespace='##targetNamespace'"
      * @generated
      */
     Object getWaiting();

@@ -21,12 +21,12 @@ import org.palladiosimulator.solver.lqn.SlotType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnCoreTypeImpl#getProcessor <em>Processor</em>}
  * </li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnCoreTypeImpl#getSlot <em>Slot</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -78,7 +78,8 @@ public class LqnCoreTypeImpl extends EObjectImpl implements LqnCoreType {
      */
     @Override
     public EList<ProcessorType> getProcessor() {
-        if (this.processor == null) {
+        if (this.processor == null)
+        {
             this.processor = new EObjectContainmentEList<ProcessorType>(ProcessorType.class, this,
                     LqnPackage.LQN_CORE_TYPE__PROCESSOR);
         }
@@ -92,7 +93,8 @@ public class LqnCoreTypeImpl extends EObjectImpl implements LqnCoreType {
      */
     @Override
     public EList<SlotType> getSlot() {
-        if (this.slot == null) {
+        if (this.slot == null)
+        {
             this.slot = new EObjectContainmentEList<SlotType>(SlotType.class, this, LqnPackage.LQN_CORE_TYPE__SLOT);
         }
         return this.slot;
@@ -106,7 +108,8 @@ public class LqnCoreTypeImpl extends EObjectImpl implements LqnCoreType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
             return ((InternalEList<?>) this.getProcessor()).basicRemove(otherEnd, msgs);
         case LqnPackage.LQN_CORE_TYPE__SLOT:
@@ -122,7 +125,8 @@ public class LqnCoreTypeImpl extends EObjectImpl implements LqnCoreType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
             return this.getProcessor();
         case LqnPackage.LQN_CORE_TYPE__SLOT:
@@ -139,7 +143,8 @@ public class LqnCoreTypeImpl extends EObjectImpl implements LqnCoreType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
             this.getProcessor().clear();
             this.getProcessor().addAll((Collection<? extends ProcessorType>) newValue);
@@ -159,7 +164,8 @@ public class LqnCoreTypeImpl extends EObjectImpl implements LqnCoreType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
             this.getProcessor().clear();
             return;
@@ -177,7 +183,8 @@ public class LqnCoreTypeImpl extends EObjectImpl implements LqnCoreType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
             return this.processor != null && !this.processor.isEmpty();
         case LqnPackage.LQN_CORE_TYPE__SLOT:

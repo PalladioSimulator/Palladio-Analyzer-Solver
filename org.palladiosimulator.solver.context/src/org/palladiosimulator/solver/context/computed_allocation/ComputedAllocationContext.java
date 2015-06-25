@@ -15,7 +15,6 @@ import org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getResourceDemands_ComputedAllocationContext
@@ -27,6 +26,7 @@ import org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext;
  * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getAllocationContext_ComputedAllocationContext
  * <em>Allocation Context Computed Allocation Context</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getComputedAllocationContext()
  * @model

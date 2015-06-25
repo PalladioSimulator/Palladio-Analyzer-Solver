@@ -10,11 +10,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.ProcessorBindingType#getSource <em>Source</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ProcessorBindingType#getTarget <em>Target</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorBindingType()
  * @model extendedMetaData="name='processor-binding_._type' kind='empty'"
@@ -33,15 +33,16 @@ public interface ProcessorBindingType extends EObject {
      * @return the value of the '<em>Source</em>' attribute.
      * @see #setSource(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorBindingType_Source()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='source' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='source' namespace='##targetNamespace'"
      * @generated
      */
     String getSource();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.ProcessorBindingType#getSource
-     * <em>Source</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.ProcessorBindingType#getSource <em>Source</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Source</em>' attribute.
@@ -61,15 +62,16 @@ public interface ProcessorBindingType extends EObject {
      * @return the value of the '<em>Target</em>' attribute.
      * @see #setTarget(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorBindingType_Target()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='target' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='target' namespace='##targetNamespace'"
      * @generated
      */
     String getTarget();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.ProcessorBindingType#getTarget
-     * <em>Target</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.ProcessorBindingType#getTarget <em>Target</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Target</em>' attribute.

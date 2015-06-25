@@ -28,27 +28,27 @@ import org.palladiosimulator.solver.lqn.XmlDebugType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getRunControl
- * <em>Run Control</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getPlotControl
- * <em>Plot Control</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getSolverParams
- * <em>Solver Params</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getProcessor <em>Processor</em>
- * }</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getRunControl <em>Run Control
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getPlotControl <em>Plot Control
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getSolverParams <em>Solver
+ * Params</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getProcessor <em>Processor
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getSlot <em>Slot</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getDescription
- * <em>Description</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getLqncoreSchemaVersion
- * <em>Lqncore Schema Version</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getLqnSchemaVersion
- * <em>Lqn Schema Version</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getDescription <em>Description
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getLqncoreSchemaVersion <em>
+ * Lqncore Schema Version</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getLqnSchemaVersion <em>Lqn
+ * Schema Version</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getName <em>Name</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.LqnModelTypeImpl#getXmlDebug <em>Xml Debug</em>}
  * </li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -268,7 +268,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
     public NotificationChain basicSetRunControl(final RunControlType newRunControl, NotificationChain msgs) {
         final RunControlType oldRunControl = this.runControl;
         this.runControl = newRunControl;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL, oldRunControl, newRunControl);
             if (msgs == null) {
@@ -287,21 +288,23 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public void setRunControl(final RunControlType newRunControl) {
-        if (newRunControl != this.runControl) {
+        if (newRunControl != this.runControl)
+        {
             NotificationChain msgs = null;
             if (this.runControl != null) {
-                msgs = ((InternalEObject) this.runControl).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL, null, msgs);
+                msgs = ((InternalEObject) this.runControl).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL, null, msgs);
             }
             if (newRunControl != null) {
-                msgs = ((InternalEObject) newRunControl).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL, null, msgs);
+                msgs = ((InternalEObject) newRunControl).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL, null, msgs);
             }
             msgs = this.basicSetRunControl(newRunControl, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL,
                     newRunControl, newRunControl));
         }
@@ -325,7 +328,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
     public NotificationChain basicSetPlotControl(final PlotControlType newPlotControl, NotificationChain msgs) {
         final PlotControlType oldPlotControl = this.plotControl;
         this.plotControl = newPlotControl;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL, oldPlotControl, newPlotControl);
             if (msgs == null) {
@@ -344,21 +348,23 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public void setPlotControl(final PlotControlType newPlotControl) {
-        if (newPlotControl != this.plotControl) {
+        if (newPlotControl != this.plotControl)
+        {
             NotificationChain msgs = null;
             if (this.plotControl != null) {
-                msgs = ((InternalEObject) this.plotControl).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL, null, msgs);
+                msgs = ((InternalEObject) this.plotControl).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL, null, msgs);
             }
             if (newPlotControl != null) {
-                msgs = ((InternalEObject) newPlotControl).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL, null, msgs);
+                msgs = ((InternalEObject) newPlotControl).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL, null, msgs);
             }
             msgs = this.basicSetPlotControl(newPlotControl, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL,
                     newPlotControl, newPlotControl));
         }
@@ -382,7 +388,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
     public NotificationChain basicSetSolverParams(final SolverParamsType newSolverParams, NotificationChain msgs) {
         final SolverParamsType oldSolverParams = this.solverParams;
         this.solverParams = newSolverParams;
-        if (this.eNotificationRequired()) {
+        if (this.eNotificationRequired())
+        {
             final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     LqnPackage.LQN_MODEL_TYPE__SOLVER_PARAMS, oldSolverParams, newSolverParams);
             if (msgs == null) {
@@ -401,21 +408,23 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public void setSolverParams(final SolverParamsType newSolverParams) {
-        if (newSolverParams != this.solverParams) {
+        if (newSolverParams != this.solverParams)
+        {
             NotificationChain msgs = null;
             if (this.solverParams != null) {
-                msgs = ((InternalEObject) this.solverParams).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.LQN_MODEL_TYPE__SOLVER_PARAMS, null, msgs);
+                msgs = ((InternalEObject) this.solverParams).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.LQN_MODEL_TYPE__SOLVER_PARAMS, null, msgs);
             }
             if (newSolverParams != null) {
-                msgs = ((InternalEObject) newSolverParams).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - LqnPackage.LQN_MODEL_TYPE__SOLVER_PARAMS, null, msgs);
+                msgs = ((InternalEObject) newSolverParams).eInverseAdd(this, EOPPOSITE_FEATURE_BASE
+                        - LqnPackage.LQN_MODEL_TYPE__SOLVER_PARAMS, null, msgs);
             }
             msgs = this.basicSetSolverParams(newSolverParams, msgs);
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.LQN_MODEL_TYPE__SOLVER_PARAMS,
                     newSolverParams, newSolverParams));
         }
@@ -428,7 +437,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public EList<ProcessorType> getProcessor() {
-        if (this.processor == null) {
+        if (this.processor == null)
+        {
             this.processor = new EObjectContainmentEList<ProcessorType>(ProcessorType.class, this,
                     LqnPackage.LQN_MODEL_TYPE__PROCESSOR);
         }
@@ -442,7 +452,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public EList<SlotType> getSlot() {
-        if (this.slot == null) {
+        if (this.slot == null)
+        {
             this.slot = new EObjectContainmentEList<SlotType>(SlotType.class, this, LqnPackage.LQN_MODEL_TYPE__SLOT);
         }
         return this.slot;
@@ -495,9 +506,9 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
         final boolean oldLqncoreSchemaVersionESet = this.lqncoreSchemaVersionESet;
         this.lqncoreSchemaVersionESet = true;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION,
-                            oldLqncoreSchemaVersion, this.lqncoreSchemaVersion, !oldLqncoreSchemaVersionESet));
+            this.eNotify(new ENotificationImpl(this, Notification.SET,
+                    LqnPackage.LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION,
+                    oldLqncoreSchemaVersion, this.lqncoreSchemaVersion, !oldLqncoreSchemaVersionESet));
         }
     }
 
@@ -513,9 +524,9 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
         this.lqncoreSchemaVersion = LQNCORE_SCHEMA_VERSION_EDEFAULT;
         this.lqncoreSchemaVersionESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.UNSET, LqnPackage.LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION,
-                            oldLqncoreSchemaVersion, LQNCORE_SCHEMA_VERSION_EDEFAULT, oldLqncoreSchemaVersionESet));
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET,
+                    LqnPackage.LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION,
+                    oldLqncoreSchemaVersion, LQNCORE_SCHEMA_VERSION_EDEFAULT, oldLqncoreSchemaVersionESet));
         }
     }
 
@@ -603,8 +614,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
         final String oldName = this.name;
         this.name = newName;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.LQN_MODEL_TYPE__NAME, oldName, this.name));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.LQN_MODEL_TYPE__NAME, oldName,
+                    this.name));
         }
     }
 
@@ -631,7 +642,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
         this.xmlDebugESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.LQN_MODEL_TYPE__XML_DEBUG,
-                    oldXmlDebug, this.xmlDebug, !oldXmlDebugESet));
+                    oldXmlDebug,
+                    this.xmlDebug, !oldXmlDebugESet));
         }
     }
 
@@ -648,7 +660,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
         this.xmlDebugESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.LQN_MODEL_TYPE__XML_DEBUG,
-                    oldXmlDebug, XML_DEBUG_EDEFAULT, oldXmlDebugESet));
+                    oldXmlDebug,
+                    XML_DEBUG_EDEFAULT, oldXmlDebugESet));
         }
     }
 
@@ -670,7 +683,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL:
             return this.basicSetRunControl(null, msgs);
         case LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL:
@@ -692,7 +706,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL:
             return this.getRunControl();
         case LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL:
@@ -725,7 +740,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL:
             this.setRunControl((RunControlType) newValue);
             return;
@@ -769,7 +785,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL:
             this.setRunControl((RunControlType) null);
             return;
@@ -811,7 +828,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.LQN_MODEL_TYPE__RUN_CONTROL:
             return this.runControl != null;
         case LqnPackage.LQN_MODEL_TYPE__PLOT_CONTROL:
@@ -823,8 +841,8 @@ public class LqnModelTypeImpl extends EObjectImpl implements LqnModelType {
         case LqnPackage.LQN_MODEL_TYPE__SLOT:
             return this.slot != null && !this.slot.isEmpty();
         case LqnPackage.LQN_MODEL_TYPE__DESCRIPTION:
-            return DESCRIPTION_EDEFAULT == null ? this.description != null
-                    : !DESCRIPTION_EDEFAULT.equals(this.description);
+            return DESCRIPTION_EDEFAULT == null ? this.description != null : !DESCRIPTION_EDEFAULT
+                    .equals(this.description);
         case LqnPackage.LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION:
             return this.isSetLqncoreSchemaVersion();
         case LqnPackage.LQN_MODEL_TYPE__LQN_SCHEMA_VERSION:

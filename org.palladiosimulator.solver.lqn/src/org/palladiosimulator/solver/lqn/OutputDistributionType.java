@@ -13,31 +13,29 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getUnderflowBin
- * <em>Underflow Bin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getHistogramBin
- * <em>Histogram Bin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getOverflowBin
- * <em>Overflow Bin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getBinSize <em>Bin Size</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getUnderflowBin <em>Underflow
+ * Bin</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getHistogramBin <em>Histogram
+ * Bin</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getOverflowBin <em>Overflow
+ * Bin</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getBinSize <em>Bin Size</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getKurtosis <em>Kurtosis</em>}
  * </li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMax <em>Max</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMean <em>Mean</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMidPoint <em>Mid Point</em>
- * }</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMidPoint <em>Mid Point
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMin <em>Min</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getNumberBins
- * <em>Number Bins</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getNumberBins <em>Number Bins
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getSkew <em>Skew</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getStdDev <em>Std Dev</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getStdDev <em>Std Dev</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getXSamples <em>XSamples</em>}
  * </li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType()
  * @model extendedMetaData="name='OutputDistributionType' kind='elementOnly'"
@@ -134,8 +132,8 @@ public interface OutputDistributionType extends EObject {
      * @return the value of the '<em>Bin Size</em>' attribute.
      * @see #setBinSize(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_BinSize()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='bin-size' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='bin-size' namespace='##targetNamespace'"
      * @generated
      */
     Object getBinSize();
@@ -163,8 +161,8 @@ public interface OutputDistributionType extends EObject {
      * @return the value of the '<em>Kurtosis</em>' attribute.
      * @see #setKurtosis(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_Kurtosis()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='kurtosis' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='kurtosis' namespace='##targetNamespace'"
      * @generated
      */
     Object getKurtosis();
@@ -220,15 +218,16 @@ public interface OutputDistributionType extends EObject {
      * @return the value of the '<em>Mean</em>' attribute.
      * @see #setMean(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_Mean()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='mean' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='mean' namespace='##targetNamespace'"
      * @generated
      */
     Object getMean();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMean
-     * <em>Mean</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMean <em>Mean</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Mean</em>' attribute.
@@ -248,16 +247,16 @@ public interface OutputDistributionType extends EObject {
      * @return the value of the '<em>Mid Point</em>' attribute.
      * @see #setMidPoint(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_MidPoint()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='mid-point' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='mid-point' namespace='##targetNamespace'"
      * @generated
      */
     Object getMidPoint();
 
     /**
      * Sets the value of the '
-     * {@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMidPoint <em>Mid Point</em>
-     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.lqn.OutputDistributionType#getMidPoint
+     * <em>Mid Point</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Mid Point</em>' attribute.
@@ -309,8 +308,8 @@ public interface OutputDistributionType extends EObject {
      * @see #setNumberBins(BigInteger)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_NumberBins()
      * @model default="20" unsettable="true"
-     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger" extendedMetaData=
-     *        "kind='attribute' name='number-bins' namespace='##targetNamespace'"
+     *        dataType="org.eclipse.emf.ecore.xml.type.NonNegativeInteger"
+     *        extendedMetaData="kind='attribute' name='number-bins' namespace='##targetNamespace'"
      * @generated
      */
     BigInteger getNumberBins();
@@ -365,15 +364,16 @@ public interface OutputDistributionType extends EObject {
      * @return the value of the '<em>Skew</em>' attribute.
      * @see #setSkew(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_Skew()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='skew' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='skew' namespace='##targetNamespace'"
      * @generated
      */
     Object getSkew();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getSkew
-     * <em>Skew</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.OutputDistributionType#getSkew <em>Skew</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @param value
      *            the new value of the '<em>Skew</em>' attribute.
@@ -393,8 +393,8 @@ public interface OutputDistributionType extends EObject {
      * @return the value of the '<em>Std Dev</em>' attribute.
      * @see #setStdDev(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_StdDev()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='std-dev' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='std-dev' namespace='##targetNamespace'"
      * @generated
      */
     Object getStdDev();
@@ -427,8 +427,8 @@ public interface OutputDistributionType extends EObject {
      * @see #unsetXSamples()
      * @see #setXSamples(AxisType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType_XSamples()
-     * @model default="linear" unsettable="true" extendedMetaData=
-     *        "kind='attribute' name='x-samples' namespace='##targetNamespace'"
+     * @model default="linear" unsettable="true"
+     *        extendedMetaData="kind='attribute' name='x-samples' namespace='##targetNamespace'"
      * @generated
      */
     AxisType getXSamples();

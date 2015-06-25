@@ -11,28 +11,26 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getResultJoinDelay
- * <em>Result Join Delay</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getResultForwarding
- * <em>Result Forwarding</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getServiceTimeDistribution
- * <em>Service Time Distribution</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getResultActivity
- * <em>Result Activity</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getCallOrder <em>Call Order</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getHostDemandCvsq
- * <em>Host Demand Cvsq</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getHostDemandMean
- * <em>Host Demand Mean</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getMaxServiceTime
- * <em>Max Service Time</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getResultJoinDelay <em>Result Join
+ * Delay</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getResultForwarding <em>Result
+ * Forwarding</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getServiceTimeDistribution <em>
+ * Service Time Distribution</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getResultActivity <em>Result Activity
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getCallOrder <em>Call Order</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getHostDemandCvsq <em>Host Demand
+ * Cvsq</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getHostDemandMean <em>Host Demand
+ * Mean</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getMaxServiceTime <em>Max Service
+ * Time</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getName <em>Name</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getThinkTime <em>Think Time</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getThinkTime <em>Think Time</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefBase()
  * @model extendedMetaData="name='ActivityDefBase' kind='elementOnly'"
@@ -130,8 +128,8 @@ public interface ActivityDefBase extends EObject {
      * @see #unsetCallOrder()
      * @see #setCallOrder(CallOrderType)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefBase_CallOrder()
-     * @model default="STOCHASTIC" unsettable="true" extendedMetaData=
-     *        "kind='attribute' name='call-order' namespace='##targetNamespace'"
+     * @model default="STOCHASTIC" unsettable="true"
+     *        extendedMetaData="kind='attribute' name='call-order' namespace='##targetNamespace'"
      * @generated
      */
     CallOrderType getCallOrder();
@@ -151,8 +149,9 @@ public interface ActivityDefBase extends EObject {
     void setCallOrder(CallOrderType value);
 
     /**
-     * Unsets the value of the '{@link org.palladiosimulator.solver.lqn.ActivityDefBase#getCallOrder
-     * <em>Call Order</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Unsets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.ActivityDefBase#getCallOrder <em>Call Order</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see #isSetCallOrder()
      * @see #getCallOrder()
@@ -186,8 +185,8 @@ public interface ActivityDefBase extends EObject {
      * @return the value of the '<em>Host Demand Cvsq</em>' attribute.
      * @see #setHostDemandCvsq(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefBase_HostDemandCvsq()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='host-demand-cvsq' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='host-demand-cvsq' namespace='##targetNamespace'"
      * @generated
      */
     Object getHostDemandCvsq();
@@ -247,8 +246,8 @@ public interface ActivityDefBase extends EObject {
      * @return the value of the '<em>Max Service Time</em>' attribute.
      * @see #setMaxServiceTime(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefBase_MaxServiceTime()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='max-service-time' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='max-service-time' namespace='##targetNamespace'"
      * @generated
      */
     Object getMaxServiceTime();
@@ -276,8 +275,8 @@ public interface ActivityDefBase extends EObject {
      * @return the value of the '<em>Name</em>' attribute.
      * @see #setName(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefBase_Name()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='name' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='name' namespace='##targetNamespace'"
      * @generated
      */
     String getName();
@@ -304,8 +303,8 @@ public interface ActivityDefBase extends EObject {
      * @return the value of the '<em>Think Time</em>' attribute.
      * @see #setThinkTime(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityDefBase_ThinkTime()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='think-time' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='think-time' namespace='##targetNamespace'"
      * @generated
      */
     Object getThinkTime();

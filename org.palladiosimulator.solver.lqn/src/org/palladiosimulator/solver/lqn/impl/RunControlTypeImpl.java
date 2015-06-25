@@ -20,10 +20,10 @@ import org.palladiosimulator.solver.lqn.RunControlType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.RunControlTypeImpl#getPara <em>Para</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -65,7 +65,8 @@ public class RunControlTypeImpl extends EObjectImpl implements RunControlType {
      */
     @Override
     public EList<ParaType> getPara() {
-        if (this.para == null) {
+        if (this.para == null)
+        {
             this.para = new EObjectContainmentEList<ParaType>(ParaType.class, this, LqnPackage.RUN_CONTROL_TYPE__PARA);
         }
         return this.para;
@@ -79,7 +80,8 @@ public class RunControlTypeImpl extends EObjectImpl implements RunControlType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RUN_CONTROL_TYPE__PARA:
             return ((InternalEList<?>) this.getPara()).basicRemove(otherEnd, msgs);
         }
@@ -93,7 +95,8 @@ public class RunControlTypeImpl extends EObjectImpl implements RunControlType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RUN_CONTROL_TYPE__PARA:
             return this.getPara();
         }
@@ -108,7 +111,8 @@ public class RunControlTypeImpl extends EObjectImpl implements RunControlType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RUN_CONTROL_TYPE__PARA:
             this.getPara().clear();
             this.getPara().addAll((Collection<? extends ParaType>) newValue);
@@ -124,7 +128,8 @@ public class RunControlTypeImpl extends EObjectImpl implements RunControlType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RUN_CONTROL_TYPE__PARA:
             this.getPara().clear();
             return;
@@ -139,7 +144,8 @@ public class RunControlTypeImpl extends EObjectImpl implements RunControlType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.RUN_CONTROL_TYPE__PARA:
             return this.para != null && !this.para.isEmpty();
         }

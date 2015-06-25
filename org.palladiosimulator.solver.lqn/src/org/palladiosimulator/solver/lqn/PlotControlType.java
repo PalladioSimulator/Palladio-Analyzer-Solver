@@ -11,12 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.PlotControlType#getFirstPlot <em>First Plot</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.PlotControlType#getFirstPlot <em>First Plot</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.PlotControlType#getPlot <em>Plot</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPlotControlType()
  * @model extendedMetaData="name='plot-control_._type' kind='elementOnly'"
@@ -64,8 +63,8 @@ public interface PlotControlType extends EObject {
      *
      * @return the value of the '<em>Plot</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPlotControlType_Plot()
-     * @model containment="true" required="true" extendedMetaData=
-     *        "kind='element' name='plot' namespace='##targetNamespace'"
+     * @model containment="true" required="true"
+     *        extendedMetaData="kind='element' name='plot' namespace='##targetNamespace'"
      * @generated
      */
     EList<PlotType> getPlot();

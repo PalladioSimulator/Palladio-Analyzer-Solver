@@ -29,7 +29,6 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecut
  * <em><b>Service Execution Context</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl#getGlobalExecutionFrequency
@@ -53,6 +52,7 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecut
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl#getReceivedAggregatedCommunication_AggregatedCommunication
  * <em>Received Aggregated Communication Aggregated Communication</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -143,7 +143,8 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
     protected EList<AggregatedCommunication> sentAggregatedCommunications_ServiceExecutionContext;
 
     /**
-     * The cached value of the '{@link #getReceivedAggregatedCommunication_AggregatedCommunication()
+     * The cached value of the '
+     * {@link #getReceivedAggregatedCommunication_AggregatedCommunication()
      * <em>Received Aggregated Communication Aggregated Communication</em>}' reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
@@ -206,13 +207,17 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
     @Override
     public AllocationContext getAllocationContext_ServiceExecutionContext() {
         if (this.allocationContext_ServiceExecutionContext != null
-                && ((EObject) this.allocationContext_ServiceExecutionContext).eIsProxy()) {
+                && ((EObject) this.allocationContext_ServiceExecutionContext).eIsProxy())
+        {
             final InternalEObject oldAllocationContext_ServiceExecutionContext = (InternalEObject) this.allocationContext_ServiceExecutionContext;
             this.allocationContext_ServiceExecutionContext = (AllocationContext) this
                     .eResolveProxy(oldAllocationContext_ServiceExecutionContext);
-            if (this.allocationContext_ServiceExecutionContext != oldAllocationContext_ServiceExecutionContext) {
+            if (this.allocationContext_ServiceExecutionContext != oldAllocationContext_ServiceExecutionContext)
+            {
                 if (this.eNotificationRequired()) {
-                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+                    this.eNotify(new ENotificationImpl(
+                            this,
+                            Notification.RESOLVE,
                             AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT,
                             oldAllocationContext_ServiceExecutionContext,
                             this.allocationContext_ServiceExecutionContext));
@@ -242,7 +247,9 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
         final AllocationContext oldAllocationContext_ServiceExecutionContext = this.allocationContext_ServiceExecutionContext;
         this.allocationContext_ServiceExecutionContext = newAllocationContext_ServiceExecutionContext;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET,
+            this.eNotify(new ENotificationImpl(
+                    this,
+                    Notification.SET,
                     AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT,
                     oldAllocationContext_ServiceExecutionContext, this.allocationContext_ServiceExecutionContext));
         }
@@ -256,13 +263,17 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
     @Override
     public ResourceDemandingSEFF getDescribedSEFF_ServiceExecutionContext() {
         if (this.describedSEFF_ServiceExecutionContext != null
-                && ((EObject) this.describedSEFF_ServiceExecutionContext).eIsProxy()) {
+                && ((EObject) this.describedSEFF_ServiceExecutionContext).eIsProxy())
+        {
             final InternalEObject oldDescribedSEFF_ServiceExecutionContext = (InternalEObject) this.describedSEFF_ServiceExecutionContext;
             this.describedSEFF_ServiceExecutionContext = (ResourceDemandingSEFF) this
                     .eResolveProxy(oldDescribedSEFF_ServiceExecutionContext);
-            if (this.describedSEFF_ServiceExecutionContext != oldDescribedSEFF_ServiceExecutionContext) {
+            if (this.describedSEFF_ServiceExecutionContext != oldDescribedSEFF_ServiceExecutionContext)
+            {
                 if (this.eNotificationRequired()) {
-                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+                    this.eNotify(new ENotificationImpl(
+                            this,
+                            Notification.RESOLVE,
                             AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__DESCRIBED_SEFF_SERVICE_EXECUTION_CONTEXT,
                             oldDescribedSEFF_ServiceExecutionContext, this.describedSEFF_ServiceExecutionContext));
                 }
@@ -304,9 +315,11 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      */
     @Override
     public EList<AggregatedResourceDemand> getAggregatedResourceDemands_ServiceExecutionContext() {
-        if (this.aggregatedResourceDemands_ServiceExecutionContext == null) {
+        if (this.aggregatedResourceDemands_ServiceExecutionContext == null)
+        {
             this.aggregatedResourceDemands_ServiceExecutionContext = new EObjectContainmentEList<AggregatedResourceDemand>(
-                    AggregatedResourceDemand.class, this,
+                    AggregatedResourceDemand.class,
+                    this,
                     AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT);
         }
         return this.aggregatedResourceDemands_ServiceExecutionContext;
@@ -320,13 +333,17 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
     @Override
     public UsageScenario getUsageScenario_ServiceExecutionContext() {
         if (this.usageScenario_ServiceExecutionContext != null
-                && ((EObject) this.usageScenario_ServiceExecutionContext).eIsProxy()) {
+                && ((EObject) this.usageScenario_ServiceExecutionContext).eIsProxy())
+        {
             final InternalEObject oldUsageScenario_ServiceExecutionContext = (InternalEObject) this.usageScenario_ServiceExecutionContext;
             this.usageScenario_ServiceExecutionContext = (UsageScenario) this
                     .eResolveProxy(oldUsageScenario_ServiceExecutionContext);
-            if (this.usageScenario_ServiceExecutionContext != oldUsageScenario_ServiceExecutionContext) {
+            if (this.usageScenario_ServiceExecutionContext != oldUsageScenario_ServiceExecutionContext)
+            {
                 if (this.eNotificationRequired()) {
-                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
+                    this.eNotify(new ENotificationImpl(
+                            this,
+                            Notification.RESOLVE,
                             AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__USAGE_SCENARIO_SERVICE_EXECUTION_CONTEXT,
                             oldUsageScenario_ServiceExecutionContext, this.usageScenario_ServiceExecutionContext));
                 }
@@ -367,9 +384,11 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      */
     @Override
     public EList<AggregatedCommunication> getSentAggregatedCommunications_ServiceExecutionContext() {
-        if (this.sentAggregatedCommunications_ServiceExecutionContext == null) {
+        if (this.sentAggregatedCommunications_ServiceExecutionContext == null)
+        {
             this.sentAggregatedCommunications_ServiceExecutionContext = new EObjectContainmentEList<AggregatedCommunication>(
-                    AggregatedCommunication.class, this,
+                    AggregatedCommunication.class,
+                    this,
                     AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT);
         }
         return this.sentAggregatedCommunications_ServiceExecutionContext;
@@ -382,9 +401,11 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      */
     @Override
     public EList<AggregatedCommunication> getReceivedAggregatedCommunication_AggregatedCommunication() {
-        if (this.receivedAggregatedCommunication_AggregatedCommunication == null) {
+        if (this.receivedAggregatedCommunication_AggregatedCommunication == null)
+        {
             this.receivedAggregatedCommunication_AggregatedCommunication = new EObjectWithInverseResolvingEList<AggregatedCommunication>(
-                    AggregatedCommunication.class, this,
+                    AggregatedCommunication.class,
+                    this,
                     AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION,
                     AggregatedUsageContextPackage.AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION);
         }
@@ -400,10 +421,12 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
     @Override
     public NotificationChain eInverseAdd(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION:
             return ((InternalEList<InternalEObject>) (InternalEList<?>) this
-                    .getReceivedAggregatedCommunication_AggregatedCommunication()).basicAdd(otherEnd, msgs);
+                    .getReceivedAggregatedCommunication_AggregatedCommunication())
+                    .basicAdd(otherEnd, msgs);
         }
         return super.eInverseAdd(otherEnd, featureID, msgs);
     }
@@ -416,16 +439,19 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT:
-            return ((InternalEList<?>) this.getAggregatedResourceDemands_ServiceExecutionContext())
-                    .basicRemove(otherEnd, msgs);
+            return ((InternalEList<?>) this.getAggregatedResourceDemands_ServiceExecutionContext()).basicRemove(
+                    otherEnd,
+                    msgs);
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT:
-            return ((InternalEList<?>) this.getSentAggregatedCommunications_ServiceExecutionContext())
-                    .basicRemove(otherEnd, msgs);
+            return ((InternalEList<?>) this.getSentAggregatedCommunications_ServiceExecutionContext()).basicRemove(
+                    otherEnd,
+                    msgs);
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION:
-            return ((InternalEList<?>) this.getReceivedAggregatedCommunication_AggregatedCommunication())
-                    .basicRemove(otherEnd, msgs);
+            return ((InternalEList<?>) this.getReceivedAggregatedCommunication_AggregatedCommunication()).basicRemove(
+                    otherEnd, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -437,7 +463,8 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY:
             return this.getGlobalExecutionFrequency();
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT:
@@ -473,7 +500,8 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY:
             this.setGlobalExecutionFrequency((Double) newValue);
             return;
@@ -485,21 +513,21 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
             return;
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT:
             this.getAggregatedResourceDemands_ServiceExecutionContext().clear();
-            this.getAggregatedResourceDemands_ServiceExecutionContext()
-                    .addAll((Collection<? extends AggregatedResourceDemand>) newValue);
+            this.getAggregatedResourceDemands_ServiceExecutionContext().addAll(
+                    (Collection<? extends AggregatedResourceDemand>) newValue);
             return;
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__USAGE_SCENARIO_SERVICE_EXECUTION_CONTEXT:
             this.setUsageScenario_ServiceExecutionContext((UsageScenario) newValue);
             return;
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT:
             this.getSentAggregatedCommunications_ServiceExecutionContext().clear();
-            this.getSentAggregatedCommunications_ServiceExecutionContext()
-                    .addAll((Collection<? extends AggregatedCommunication>) newValue);
+            this.getSentAggregatedCommunications_ServiceExecutionContext().addAll(
+                    (Collection<? extends AggregatedCommunication>) newValue);
             return;
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION:
             this.getReceivedAggregatedCommunication_AggregatedCommunication().clear();
-            this.getReceivedAggregatedCommunication_AggregatedCommunication()
-                    .addAll((Collection<? extends AggregatedCommunication>) newValue);
+            this.getReceivedAggregatedCommunication_AggregatedCommunication().addAll(
+                    (Collection<? extends AggregatedCommunication>) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -512,7 +540,8 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY:
             this.setGlobalExecutionFrequency(GLOBAL_EXECUTION_FREQUENCY_EDEFAULT);
             return;
@@ -545,7 +574,8 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY:
             return this.globalExecutionFrequency != GLOBAL_EXECUTION_FREQUENCY_EDEFAULT;
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT:
@@ -554,15 +584,15 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
             return this.describedSEFF_ServiceExecutionContext != null;
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT:
             return this.aggregatedResourceDemands_ServiceExecutionContext != null
-                    && !this.aggregatedResourceDemands_ServiceExecutionContext.isEmpty();
+            && !this.aggregatedResourceDemands_ServiceExecutionContext.isEmpty();
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__USAGE_SCENARIO_SERVICE_EXECUTION_CONTEXT:
             return this.usageScenario_ServiceExecutionContext != null;
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT:
             return this.sentAggregatedCommunications_ServiceExecutionContext != null
-                    && !this.sentAggregatedCommunications_ServiceExecutionContext.isEmpty();
+            && !this.sentAggregatedCommunications_ServiceExecutionContext.isEmpty();
         case AggregatedUsageContextPackage.SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION:
             return this.receivedAggregatedCommunication_AggregatedCommunication != null
-                    && !this.receivedAggregatedCommunication_AggregatedCommunication.isEmpty();
+            && !this.receivedAggregatedCommunication_AggregatedCommunication.isEmpty();
         }
         return super.eIsSet(featureID);
     }

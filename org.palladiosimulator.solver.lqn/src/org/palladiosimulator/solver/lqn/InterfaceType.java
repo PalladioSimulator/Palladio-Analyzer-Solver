@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.InterfaceType#getInPort <em>In Port</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.InterfaceType#getOutPort <em>Out Port</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getInterfaceType()
  * @model extendedMetaData="name='Interface_._type' kind='elementOnly'"
@@ -35,8 +35,8 @@ public interface InterfaceType extends EObject {
      *
      * @return the value of the '<em>In Port</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getInterfaceType_InPort()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='in-port' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='in-port' namespace='##targetNamespace'"
      * @generated
      */
     EList<InPortType> getInPort();

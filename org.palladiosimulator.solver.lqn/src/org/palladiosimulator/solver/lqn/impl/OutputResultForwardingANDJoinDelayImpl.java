@@ -23,7 +23,6 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type;
  * <em><b>Output Result Forwarding AND Join Delay</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.lqn.impl.OutputResultForwardingANDJoinDelayImpl#getResultConf95
@@ -43,6 +42,7 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type;
  * {@link org.palladiosimulator.solver.lqn.impl.OutputResultForwardingANDJoinDelayImpl#getWaiting
  * <em>Waiting</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -174,7 +174,8 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
      */
     @Override
     public EList<ResultConf95Type> getResultConf95() {
-        if (this.resultConf95 == null) {
+        if (this.resultConf95 == null)
+        {
             this.resultConf95 = new EObjectContainmentEList<ResultConf95Type>(ResultConf95Type.class, this,
                     LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95);
         }
@@ -188,7 +189,8 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
      */
     @Override
     public EList<ResultConf99Type> getResultConf99() {
-        if (this.resultConf99 == null) {
+        if (this.resultConf99 == null)
+        {
             this.resultConf99 = new EObjectContainmentEList<ResultConf99Type>(ResultConf99Type.class, this,
                     LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF99);
         }
@@ -267,8 +269,7 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
         this.joinWaiting = newJoinWaiting;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
-                    LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_WAITING, oldJoinWaiting,
-                    this.joinWaiting));
+                    LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_WAITING, oldJoinWaiting, this.joinWaiting));
         }
     }
 
@@ -305,7 +306,8 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95:
             return ((InternalEList<?>) this.getResultConf95()).basicRemove(otherEnd, msgs);
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF99:
@@ -321,7 +323,8 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95:
             return this.getResultConf95();
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF99:
@@ -346,7 +349,8 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95:
             this.getResultConf95().clear();
             this.getResultConf95().addAll((Collection<? extends ResultConf95Type>) newValue);
@@ -378,7 +382,8 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95:
             this.getResultConf95().clear();
             return;
@@ -408,7 +413,8 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95:
             return this.resultConf95 != null && !this.resultConf95.isEmpty();
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF99:
@@ -416,11 +422,11 @@ public class OutputResultForwardingANDJoinDelayImpl extends EObjectImpl implemen
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__DEST:
             return DEST_EDEFAULT == null ? this.dest != null : !DEST_EDEFAULT.equals(this.dest);
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_VARIANCE:
-            return JOIN_VARIANCE_EDEFAULT == null ? this.joinVariance != null
-                    : !JOIN_VARIANCE_EDEFAULT.equals(this.joinVariance);
+            return JOIN_VARIANCE_EDEFAULT == null ? this.joinVariance != null : !JOIN_VARIANCE_EDEFAULT
+                    .equals(this.joinVariance);
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_WAITING:
-            return JOIN_WAITING_EDEFAULT == null ? this.joinWaiting != null
-                    : !JOIN_WAITING_EDEFAULT.equals(this.joinWaiting);
+            return JOIN_WAITING_EDEFAULT == null ? this.joinWaiting != null : !JOIN_WAITING_EDEFAULT
+                    .equals(this.joinWaiting);
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__WAITING:
             return WAITING_EDEFAULT == null ? this.waiting != null : !WAITING_EDEFAULT.equals(this.waiting);
         }

@@ -21,13 +21,11 @@ import org.palladiosimulator.solver.lqn.OutPortType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.InterfaceTypeImpl#getInPort <em>In Port</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.InterfaceTypeImpl#getOutPort <em>Out Port</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.InterfaceTypeImpl#getInPort <em>In Port</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.InterfaceTypeImpl#getOutPort <em>Out Port</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -79,7 +77,8 @@ public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
      */
     @Override
     public EList<InPortType> getInPort() {
-        if (this.inPort == null) {
+        if (this.inPort == null)
+        {
             this.inPort = new EObjectContainmentEList<InPortType>(InPortType.class, this,
                     LqnPackage.INTERFACE_TYPE__IN_PORT);
         }
@@ -93,7 +92,8 @@ public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
      */
     @Override
     public EList<OutPortType> getOutPort() {
-        if (this.outPort == null) {
+        if (this.outPort == null)
+        {
             this.outPort = new EObjectContainmentEList<OutPortType>(OutPortType.class, this,
                     LqnPackage.INTERFACE_TYPE__OUT_PORT);
         }
@@ -108,7 +108,8 @@ public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.INTERFACE_TYPE__IN_PORT:
             return ((InternalEList<?>) this.getInPort()).basicRemove(otherEnd, msgs);
         case LqnPackage.INTERFACE_TYPE__OUT_PORT:
@@ -124,7 +125,8 @@ public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.INTERFACE_TYPE__IN_PORT:
             return this.getInPort();
         case LqnPackage.INTERFACE_TYPE__OUT_PORT:
@@ -141,7 +143,8 @@ public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.INTERFACE_TYPE__IN_PORT:
             this.getInPort().clear();
             this.getInPort().addAll((Collection<? extends InPortType>) newValue);
@@ -161,7 +164,8 @@ public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.INTERFACE_TYPE__IN_PORT:
             this.getInPort().clear();
             return;
@@ -179,7 +183,8 @@ public class InterfaceTypeImpl extends EObjectImpl implements InterfaceType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.INTERFACE_TYPE__IN_PORT:
             return this.inPort != null && !this.inPort.isEmpty();
         case LqnPackage.INTERFACE_TYPE__OUT_PORT:

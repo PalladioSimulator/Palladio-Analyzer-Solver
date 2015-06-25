@@ -13,10 +13,10 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityOrTypeImpl#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -93,7 +93,8 @@ public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrTy
         this.probESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_OR_TYPE__PROB, oldProb,
-                    this.prob, !oldProbESet));
+                    this.prob,
+                    !oldProbESet));
         }
     }
 
@@ -131,7 +132,8 @@ public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrTy
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_OR_TYPE__PROB:
             return this.getProb();
         }
@@ -145,7 +147,8 @@ public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrTy
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_OR_TYPE__PROB:
             this.setProb((String) newValue);
             return;
@@ -160,7 +163,8 @@ public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrTy
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_OR_TYPE__PROB:
             this.unsetProb();
             return;
@@ -175,7 +179,8 @@ public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrTy
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.ACTIVITY_OR_TYPE__PROB:
             return this.isSetProb();
         }

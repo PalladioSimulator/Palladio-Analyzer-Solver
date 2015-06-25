@@ -26,23 +26,22 @@ import org.palladiosimulator.solver.lqn.TaskType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getResultProcessor
- * <em>Result Processor</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getResultProcessor <em>Result
+ * Processor</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getTask <em>Task</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getMultiplicity
- * <em>Multiplicity</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getMultiplicity <em>
+ * Multiplicity</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getName <em>Name</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getQuantum <em>Quantum</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getReplication
- * <em>Replication</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getScheduling
- * <em>Scheduling</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getSpeedFactor
- * <em>Speed Factor</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getQuantum <em>Quantum</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getReplication <em>Replication
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getScheduling <em>Scheduling
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getSpeedFactor <em>Speed
+ * Factor</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -125,8 +124,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
      * @generated
      * @ordered
      */
-    protected static final Object QUANTUM_EDEFAULT = LqnFactory.eINSTANCE
-            .createFromString(LqnPackage.eINSTANCE.getSrvnFloat(), "0");
+    protected static final Object QUANTUM_EDEFAULT = LqnFactory.eINSTANCE.createFromString(
+            LqnPackage.eINSTANCE.getSrvnFloat(), "0");
 
     /**
      * The cached value of the '{@link #getQuantum() <em>Quantum</em>}' attribute. <!--
@@ -213,8 +212,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
      * @generated
      * @ordered
      */
-    protected static final Object SPEED_FACTOR_EDEFAULT = LqnFactory.eINSTANCE
-            .createFromString(LqnPackage.eINSTANCE.getSrvnFloat(), "1");
+    protected static final Object SPEED_FACTOR_EDEFAULT = LqnFactory.eINSTANCE.createFromString(
+            LqnPackage.eINSTANCE.getSrvnFloat(), "1");
 
     /**
      * The cached value of the '{@link #getSpeedFactor() <em>Speed Factor</em>}' attribute. <!--
@@ -261,7 +260,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
      */
     @Override
     public EList<OutputResultType> getResultProcessor() {
-        if (this.resultProcessor == null) {
+        if (this.resultProcessor == null)
+        {
             this.resultProcessor = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
                     LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR);
         }
@@ -275,7 +275,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
      */
     @Override
     public EList<TaskType> getTask() {
-        if (this.task == null) {
+        if (this.task == null)
+        {
             this.task = new EObjectContainmentEList<TaskType>(TaskType.class, this, LqnPackage.PROCESSOR_TYPE__TASK);
         }
         return this.task;
@@ -355,8 +356,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
         final String oldName = this.name;
         this.name = newName;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__NAME, oldName, this.name));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__NAME, oldName,
+                    this.name));
         }
     }
 
@@ -399,7 +400,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
         this.quantum = QUANTUM_EDEFAULT;
         this.quantumESet = false;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PROCESSOR_TYPE__QUANTUM, oldQuantum,
+            this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PROCESSOR_TYPE__QUANTUM,
+                    oldQuantum,
                     QUANTUM_EDEFAULT, oldQuantumESet));
         }
     }
@@ -491,7 +493,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
         this.schedulingESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__SCHEDULING,
-                    oldScheduling, this.scheduling, !oldSchedulingESet));
+                    oldScheduling,
+                    this.scheduling, !oldSchedulingESet));
         }
     }
 
@@ -584,7 +587,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
             return ((InternalEList<?>) this.getResultProcessor()).basicRemove(otherEnd, msgs);
         case LqnPackage.PROCESSOR_TYPE__TASK:
@@ -600,7 +604,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
             return this.getResultProcessor();
         case LqnPackage.PROCESSOR_TYPE__TASK:
@@ -629,7 +634,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
             this.getResultProcessor().clear();
             this.getResultProcessor().addAll((Collection<? extends OutputResultType>) newValue);
@@ -667,7 +673,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
             this.getResultProcessor().clear();
             return;
@@ -703,7 +710,8 @@ public class ProcessorTypeImpl extends EObjectImpl implements ProcessorType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
             return this.resultProcessor != null && !this.resultProcessor.isEmpty();
         case LqnPackage.PROCESSOR_TYPE__TASK:

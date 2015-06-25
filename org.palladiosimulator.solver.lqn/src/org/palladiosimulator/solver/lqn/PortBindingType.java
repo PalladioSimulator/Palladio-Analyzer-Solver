@@ -10,11 +10,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.PortBindingType#getSource <em>Source</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.PortBindingType#getTarget <em>Target</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPortBindingType()
  * @model extendedMetaData="name='port-binding_._type' kind='empty'"
@@ -33,8 +33,8 @@ public interface PortBindingType extends EObject {
      * @return the value of the '<em>Source</em>' attribute.
      * @see #setSource(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPortBindingType_Source()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='source' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='source' namespace='##targetNamespace'"
      * @generated
      */
     String getSource();
@@ -61,8 +61,8 @@ public interface PortBindingType extends EObject {
      * @return the value of the '<em>Target</em>' attribute.
      * @see #setTarget(String)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getPortBindingType_Target()
-     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true" extendedMetaData=
-     *        "kind='attribute' name='target' namespace='##targetNamespace'"
+     * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+     *        extendedMetaData="kind='attribute' name='target' namespace='##targetNamespace'"
      * @generated
      */
     String getTarget();

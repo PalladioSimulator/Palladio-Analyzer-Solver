@@ -48,7 +48,8 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL);
             this.childrenFeatures.add(LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL);
@@ -119,7 +121,8 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(CallListType.class)) {
+        switch (notification.getFeatureID(CallListType.class))
+        {
         case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
         case LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -138,11 +141,15 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL,
-                LqnFactory.eINSTANCE.createSynchCallType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL,
+                        LqnFactory.eINSTANCE.createSynchCallType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL,
-                LqnFactory.eINSTANCE.createAsynchCallType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL,
+                        LqnFactory.eINSTANCE.createAsynchCallType()));
     }
 
     /**

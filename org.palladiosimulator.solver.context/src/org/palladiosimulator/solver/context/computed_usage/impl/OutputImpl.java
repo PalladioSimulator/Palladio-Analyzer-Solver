@@ -21,12 +21,12 @@ import org.palladiosimulator.solver.context.computed_usage.Output;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.OutputImpl#getParameterCharacterisations_Output
  * <em>Parameter Characterisations Output</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -76,9 +76,11 @@ public class OutputImpl extends EObjectImpl implements Output {
      */
     @Override
     public EList<VariableUsage> getParameterCharacterisations_Output() {
-        if (this.parameterCharacterisations_Output == null) {
+        if (this.parameterCharacterisations_Output == null)
+        {
             this.parameterCharacterisations_Output = new EObjectContainmentEList<VariableUsage>(VariableUsage.class,
-                    this, ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT);
+                    this,
+                    ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT);
         }
         return this.parameterCharacterisations_Output;
     }
@@ -91,7 +93,8 @@ public class OutputImpl extends EObjectImpl implements Output {
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT:
             return ((InternalEList<?>) this.getParameterCharacterisations_Output()).basicRemove(otherEnd, msgs);
         }
@@ -105,7 +108,8 @@ public class OutputImpl extends EObjectImpl implements Output {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT:
             return this.getParameterCharacterisations_Output();
         }
@@ -120,7 +124,8 @@ public class OutputImpl extends EObjectImpl implements Output {
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT:
             this.getParameterCharacterisations_Output().clear();
             this.getParameterCharacterisations_Output().addAll((Collection<? extends VariableUsage>) newValue);
@@ -136,7 +141,8 @@ public class OutputImpl extends EObjectImpl implements Output {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT:
             this.getParameterCharacterisations_Output().clear();
             return;
@@ -151,7 +157,8 @@ public class OutputImpl extends EObjectImpl implements Output {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.OUTPUT__PARAMETER_CHARACTERISATIONS_OUTPUT:
             return this.parameterCharacterisations_Output != null && !this.parameterCharacterisations_Output.isEmpty();
         }

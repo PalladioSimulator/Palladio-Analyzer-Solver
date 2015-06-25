@@ -27,7 +27,6 @@ import org.palladiosimulator.solver.context.computed_usage.ExternalCallInput;
  * <em><b>External Call Input</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.ExternalCallInputImpl#getParameterCharacterisations_ExternalCallInput
@@ -39,6 +38,7 @@ import org.palladiosimulator.solver.context.computed_usage.ExternalCallInput;
  * {@link org.palladiosimulator.solver.context.computed_usage.impl.ExternalCallInputImpl#getComputedUsageContext_ExternalCallInput
  * <em>Computed Usage Context External Call Input</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -99,7 +99,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      */
     @Override
     public EList<VariableUsage> getParameterCharacterisations_ExternalCallInput() {
-        if (this.parameterCharacterisations_ExternalCallInput == null) {
+        if (this.parameterCharacterisations_ExternalCallInput == null)
+        {
             this.parameterCharacterisations_ExternalCallInput = new EObjectContainmentEList<VariableUsage>(
                     VariableUsage.class, this,
                     ComputedUsagePackage.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT);
@@ -115,11 +116,13 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
     @Override
     public ExternalCallAction getExternalCallAction_ExternalCallInput() {
         if (this.externalCallAction_ExternalCallInput != null
-                && ((EObject) this.externalCallAction_ExternalCallInput).eIsProxy()) {
+                && ((EObject) this.externalCallAction_ExternalCallInput).eIsProxy())
+        {
             final InternalEObject oldExternalCallAction_ExternalCallInput = (InternalEObject) this.externalCallAction_ExternalCallInput;
             this.externalCallAction_ExternalCallInput = (ExternalCallAction) this
                     .eResolveProxy(oldExternalCallAction_ExternalCallInput);
-            if (this.externalCallAction_ExternalCallInput != oldExternalCallAction_ExternalCallInput) {
+            if (this.externalCallAction_ExternalCallInput != oldExternalCallAction_ExternalCallInput)
+            {
                 if (this.eNotificationRequired()) {
                     this.eNotify(new ENotificationImpl(this, Notification.RESOLVE,
                             ComputedUsagePackage.EXTERNAL_CALL_INPUT__EXTERNAL_CALL_ACTION_EXTERNAL_CALL_INPUT,
@@ -190,8 +193,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
     public void setComputedUsageContext_ExternalCallInput(
             final ComputedUsageContext newComputedUsageContext_ExternalCallInput) {
         if (newComputedUsageContext_ExternalCallInput != this.eInternalContainer()
-                || (this.eContainerFeatureID() != ComputedUsagePackage.EXTERNAL_CALL_INPUT__COMPUTED_USAGE_CONTEXT_EXTERNAL_CALL_INPUT
-                        && newComputedUsageContext_ExternalCallInput != null)) {
+                || (this.eContainerFeatureID() != ComputedUsagePackage.EXTERNAL_CALL_INPUT__COMPUTED_USAGE_CONTEXT_EXTERNAL_CALL_INPUT && newComputedUsageContext_ExternalCallInput != null))
+        {
             if (EcoreUtil.isAncestor(this, newComputedUsageContext_ExternalCallInput)) {
                 throw new IllegalArgumentException("Recursive containment not allowed for " + this.toString());
             }
@@ -208,7 +211,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
             if (msgs != null) {
                 msgs.dispatch();
             }
-        } else if (this.eNotificationRequired()) {
+        }
+        else if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET,
                     ComputedUsagePackage.EXTERNAL_CALL_INPUT__COMPUTED_USAGE_CONTEXT_EXTERNAL_CALL_INPUT,
                     newComputedUsageContext_ExternalCallInput, newComputedUsageContext_ExternalCallInput));
@@ -222,7 +226,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      */
     @Override
     public NotificationChain eInverseAdd(final InternalEObject otherEnd, final int featureID, NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__COMPUTED_USAGE_CONTEXT_EXTERNAL_CALL_INPUT:
             if (this.eInternalContainer() != null) {
                 msgs = this.eBasicRemoveFromContainer(msgs);
@@ -240,7 +245,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT:
             return ((InternalEList<?>) this.getParameterCharacterisations_ExternalCallInput()).basicRemove(otherEnd,
                     msgs);
@@ -257,7 +263,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      */
     @Override
     public NotificationChain eBasicRemoveFromContainerFeature(final NotificationChain msgs) {
-        switch (this.eContainerFeatureID()) {
+        switch (this.eContainerFeatureID())
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__COMPUTED_USAGE_CONTEXT_EXTERNAL_CALL_INPUT:
             return this.eInternalContainer().eInverseRemove(this,
                     ComputedUsagePackage.COMPUTED_USAGE_CONTEXT__EXTERNAL_CALL_INPUT_COMPUTED_USAGE_CONTEXT,
@@ -273,7 +280,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT:
             return this.getParameterCharacterisations_ExternalCallInput();
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__EXTERNAL_CALL_ACTION_EXTERNAL_CALL_INPUT:
@@ -295,11 +303,12 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT:
             this.getParameterCharacterisations_ExternalCallInput().clear();
-            this.getParameterCharacterisations_ExternalCallInput()
-                    .addAll((Collection<? extends VariableUsage>) newValue);
+            this.getParameterCharacterisations_ExternalCallInput().addAll(
+                    (Collection<? extends VariableUsage>) newValue);
             return;
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__EXTERNAL_CALL_ACTION_EXTERNAL_CALL_INPUT:
             this.setExternalCallAction_ExternalCallInput((ExternalCallAction) newValue);
@@ -318,7 +327,8 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT:
             this.getParameterCharacterisations_ExternalCallInput().clear();
             return;
@@ -339,10 +349,11 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__PARAMETER_CHARACTERISATIONS_EXTERNAL_CALL_INPUT:
             return this.parameterCharacterisations_ExternalCallInput != null
-                    && !this.parameterCharacterisations_ExternalCallInput.isEmpty();
+            && !this.parameterCharacterisations_ExternalCallInput.isEmpty();
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__EXTERNAL_CALL_ACTION_EXTERNAL_CALL_INPUT:
             return this.externalCallAction_ExternalCallInput != null;
         case ComputedUsagePackage.EXTERNAL_CALL_INPUT__COMPUTED_USAGE_CONTEXT_EXTERNAL_CALL_INPUT:

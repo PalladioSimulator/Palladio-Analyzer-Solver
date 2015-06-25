@@ -14,11 +14,11 @@ import org.palladiosimulator.solver.lqn.ParameterType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ParameterTypeImpl#getName <em>Name</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.ParameterTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -103,8 +103,8 @@ public class ParameterTypeImpl extends EObjectImpl implements ParameterType {
         final String oldName = this.name;
         this.name = newName;
         if (this.eNotificationRequired()) {
-            this.eNotify(
-                    new ENotificationImpl(this, Notification.SET, LqnPackage.PARAMETER_TYPE__NAME, oldName, this.name));
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PARAMETER_TYPE__NAME, oldName,
+                    this.name));
         }
     }
 
@@ -140,7 +140,8 @@ public class ParameterTypeImpl extends EObjectImpl implements ParameterType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARAMETER_TYPE__NAME:
             return this.getName();
         case LqnPackage.PARAMETER_TYPE__VALUE:
@@ -156,7 +157,8 @@ public class ParameterTypeImpl extends EObjectImpl implements ParameterType {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARAMETER_TYPE__NAME:
             this.setName((String) newValue);
             return;
@@ -174,7 +176,8 @@ public class ParameterTypeImpl extends EObjectImpl implements ParameterType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARAMETER_TYPE__NAME:
             this.setName(NAME_EDEFAULT);
             return;
@@ -192,7 +195,8 @@ public class ParameterTypeImpl extends EObjectImpl implements ParameterType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PARAMETER_TYPE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         case LqnPackage.PARAMETER_TYPE__VALUE:

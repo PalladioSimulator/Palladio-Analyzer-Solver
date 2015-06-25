@@ -8,10 +8,10 @@ package org.palladiosimulator.solver.lqn;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityOrType()
  * @model extendedMetaData="name='ActivityOrType' kind='empty'"

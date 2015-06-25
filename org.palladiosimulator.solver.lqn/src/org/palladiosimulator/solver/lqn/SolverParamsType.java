@@ -11,18 +11,18 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getResultGeneral
- * <em>Result General</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getResultGeneral <em>Result General
+ * </em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getPragma <em>Pragma</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getComment <em>Comment</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getConvVal <em>Conv Val</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getItLimit <em>It Limit</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getPrintInt <em>Print Int</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getUnderrelaxCoeff
- * <em>Underrelax Coeff</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getUnderrelaxCoeff <em>Underrelax
+ * Coeff</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getSolverParamsType()
  * @model extendedMetaData="name='solver-params_._type' kind='elementOnly'"
@@ -73,8 +73,8 @@ public interface SolverParamsType extends EObject {
      *
      * @return the value of the '<em>Pragma</em>' containment reference list.
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSolverParamsType_Pragma()
-     * @model containment="true" extendedMetaData=
-     *        "kind='element' name='pragma' namespace='##targetNamespace'"
+     * @model containment="true"
+     *        extendedMetaData="kind='element' name='pragma' namespace='##targetNamespace'"
      * @generated
      */
     EList<PragmaType> getPragma();
@@ -284,8 +284,9 @@ public interface SolverParamsType extends EObject {
     void setPrintInt(int value);
 
     /**
-     * Unsets the value of the '{@link org.palladiosimulator.solver.lqn.SolverParamsType#getPrintInt
-     * <em>Print Int</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Unsets the value of the '
+     * {@link org.palladiosimulator.solver.lqn.SolverParamsType#getPrintInt <em>Print Int</em>}'
+     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
      * @see #isSetPrintInt()
      * @see #getPrintInt()
@@ -322,8 +323,8 @@ public interface SolverParamsType extends EObject {
      * @see #setUnderrelaxCoeff(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getSolverParamsType_UnderrelaxCoeff()
      * @model default="1" unsettable="true" dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
-     *        extendedMetaData=
-     *        "kind='attribute' name='underrelax_coeff' namespace='##targetNamespace'"
+     *        extendedMetaData
+     *        ="kind='attribute' name='underrelax_coeff' namespace='##targetNamespace'"
      * @generated
      */
     Object getUnderrelaxCoeff();

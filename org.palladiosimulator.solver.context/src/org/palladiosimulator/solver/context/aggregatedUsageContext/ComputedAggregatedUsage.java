@@ -15,12 +15,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage#getServiceExecutionContexts_ComputedAggregatedUsage
  * <em>Service Execution Contexts Computed Aggregated Usage</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getComputedAggregatedUsage()
  * @model

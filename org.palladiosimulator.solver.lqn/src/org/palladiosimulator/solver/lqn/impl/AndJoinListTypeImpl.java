@@ -23,13 +23,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getActivity
- * <em>Activity</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getQuorum <em>Quorum</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getActivity <em>Activity
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getQuorum <em>Quorum</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -100,7 +99,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
      */
     @Override
     public EList<ActivityType> getActivity() {
-        if (this.activity == null) {
+        if (this.activity == null)
+        {
             this.activity = new EObjectContainmentEList<ActivityType>(ActivityType.class, this,
                     LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY);
         }
@@ -129,7 +129,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
         final boolean oldQuorumESet = this.quorumESet;
         this.quorumESet = true;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum,
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.AND_JOIN_LIST_TYPE__QUORUM,
+                    oldQuorum,
                     this.quorum, !oldQuorumESet));
         }
     }
@@ -147,7 +148,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
         this.quorumESet = false;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.AND_JOIN_LIST_TYPE__QUORUM,
-                    oldQuorum, QUORUM_EDEFAULT, oldQuorumESet));
+                    oldQuorum,
+                    QUORUM_EDEFAULT, oldQuorumESet));
         }
     }
 
@@ -169,7 +171,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
     @Override
     public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
             final NotificationChain msgs) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
             return ((InternalEList<?>) this.getActivity()).basicRemove(otherEnd, msgs);
         }
@@ -183,7 +186,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
             return this.getActivity();
         case LqnPackage.AND_JOIN_LIST_TYPE__QUORUM:
@@ -200,7 +204,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             this.getActivity().addAll((Collection<? extends ActivityType>) newValue);
@@ -219,7 +224,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
             this.getActivity().clear();
             return;
@@ -237,7 +243,8 @@ public class AndJoinListTypeImpl extends EObjectImpl implements AndJoinListType 
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
             return this.activity != null && !this.activity.isEmpty();
         case LqnPackage.AND_JOIN_LIST_TYPE__QUORUM:

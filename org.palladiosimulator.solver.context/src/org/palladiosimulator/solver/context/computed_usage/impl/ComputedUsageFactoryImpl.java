@@ -39,13 +39,16 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
      * @generated
      */
     public static ComputedUsageFactory init() {
-        try {
+        try
+        {
             final ComputedUsageFactory theComputedUsageFactory = (ComputedUsageFactory) EPackage.Registry.INSTANCE
                     .getEFactory(ComputedUsagePackage.eNS_URI);
-            if (theComputedUsageFactory != null) {
+            if (theComputedUsageFactory != null)
+            {
                 return theComputedUsageFactory;
             }
-        } catch (final Exception exception) {
+        } catch (final Exception exception)
+        {
             EcorePlugin.INSTANCE.log(exception);
         }
         return new ComputedUsageFactoryImpl();
@@ -67,7 +70,8 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
      */
     @Override
     public EObject create(final EClass eClass) {
-        switch (eClass.getClassifierID()) {
+        switch (eClass.getClassifierID())
+        {
         case ComputedUsagePackage.COMPUTED_USAGE_CONTEXT:
             return this.createComputedUsageContext();
         case ComputedUsagePackage.BRANCH_PROBABILITY:

@@ -48,7 +48,8 @@ public class RunControlTypeItemProvider extends ItemProviderAdapter implements I
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class RunControlTypeItemProvider extends ItemProviderAdapter implements I
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.RUN_CONTROL_TYPE__PARA);
         }
@@ -118,7 +120,8 @@ public class RunControlTypeItemProvider extends ItemProviderAdapter implements I
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(RunControlType.class)) {
+        switch (notification.getFeatureID(RunControlType.class))
+        {
         case LqnPackage.RUN_CONTROL_TYPE__PARA:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -136,8 +139,10 @@ public class RunControlTypeItemProvider extends ItemProviderAdapter implements I
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.RUN_CONTROL_TYPE__PARA,
-                LqnFactory.eINSTANCE.createParaType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.RUN_CONTROL_TYPE__PARA,
+                        LqnFactory.eINSTANCE.createParaType()));
     }
 
     /**

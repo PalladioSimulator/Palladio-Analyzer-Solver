@@ -48,7 +48,8 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addBeginPropertyDescriptor(object);
@@ -67,13 +68,21 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addBeginPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_HistogramBinType_begin_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_HistogramBinType_begin_feature",
-                        "_UI_HistogramBinType_type"),
-                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__BEGIN, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_HistogramBinType_begin_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_HistogramBinType_begin_feature",
+                                "_UI_HistogramBinType_type"),
+                                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__BEGIN,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -83,13 +92,21 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addConf95PropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_HistogramBinType_conf95_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_HistogramBinType_conf95_feature",
-                        "_UI_HistogramBinType_type"),
-                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__CONF95, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_HistogramBinType_conf95_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_HistogramBinType_conf95_feature",
+                                "_UI_HistogramBinType_type"),
+                                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__CONF95,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -99,13 +116,21 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addConf99PropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_HistogramBinType_conf99_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_HistogramBinType_conf99_feature",
-                        "_UI_HistogramBinType_type"),
-                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__CONF99, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_HistogramBinType_conf99_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_HistogramBinType_conf99_feature",
+                                "_UI_HistogramBinType_type"),
+                                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__CONF99,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -115,13 +140,21 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addEndPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_HistogramBinType_end_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_HistogramBinType_end_feature",
-                        "_UI_HistogramBinType_type"),
-                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__END, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_HistogramBinType_end_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_HistogramBinType_end_feature",
+                                "_UI_HistogramBinType_type"),
+                                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__END,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -131,13 +164,21 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addProbPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_HistogramBinType_prob_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_HistogramBinType_prob_feature",
-                        "_UI_HistogramBinType_type"),
-                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__PROB, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_HistogramBinType_prob_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_HistogramBinType_prob_feature",
+                                "_UI_HistogramBinType_type"),
+                                LqnPackage.Literals.HISTOGRAM_BIN_TYPE__PROB,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -160,8 +201,9 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
     public String getText(final Object object) {
         final Object labelValue = ((HistogramBinType) object).getBegin();
         final String label = labelValue == null ? null : labelValue.toString();
-        return label == null || label.length() == 0 ? this.getString("_UI_HistogramBinType_type")
-                : this.getString("_UI_HistogramBinType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_HistogramBinType_type") :
+                this.getString("_UI_HistogramBinType_type") + " " + label;
     }
 
     /**
@@ -175,7 +217,8 @@ public class HistogramBinTypeItemProvider extends ItemProviderAdapter implements
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(HistogramBinType.class)) {
+        switch (notification.getFeatureID(HistogramBinType.class))
+        {
         case LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN:
         case LqnPackage.HISTOGRAM_BIN_TYPE__CONF95:
         case LqnPackage.HISTOGRAM_BIN_TYPE__CONF99:

@@ -71,7 +71,11 @@ public enum SemaphoreType implements Enumerator {
      *
      * @generated
      */
-    private static final SemaphoreType[] VALUES_ARRAY = new SemaphoreType[] { SIGNAL, WAIT, };
+    private static final SemaphoreType[] VALUES_ARRAY = new SemaphoreType[]
+            {
+        SIGNAL,
+        WAIT,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Semaphore Type</b></em>' enumerators. <!--
@@ -92,7 +96,8 @@ public enum SemaphoreType implements Enumerator {
      */
     public static SemaphoreType get(final String literal) {
         for (final SemaphoreType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -110,7 +115,8 @@ public enum SemaphoreType implements Enumerator {
      */
     public static SemaphoreType getByName(final String name) {
         for (final SemaphoreType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -127,7 +133,8 @@ public enum SemaphoreType implements Enumerator {
      * @generated
      */
     public static SemaphoreType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case SIGNAL_VALUE:
             return SIGNAL;
         case WAIT_VALUE:

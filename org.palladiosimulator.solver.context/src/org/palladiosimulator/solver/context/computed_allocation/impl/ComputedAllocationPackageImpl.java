@@ -114,13 +114,13 @@ public class ComputedAllocationPackageImpl extends EPackageImpl implements Compu
 
         // Obtain or create and register interdependencies
         final ComputedUsagePackageImpl theComputedUsagePackage = (ComputedUsagePackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(ComputedUsagePackage.eNS_URI) instanceof ComputedUsagePackageImpl
-                        ? EPackage.Registry.INSTANCE.getEPackage(ComputedUsagePackage.eNS_URI)
-                        : ComputedUsagePackage.eINSTANCE);
+                .getEPackage(ComputedUsagePackage.eNS_URI) instanceof ComputedUsagePackageImpl ? EPackage.Registry.INSTANCE
+                        .getEPackage(ComputedUsagePackage.eNS_URI)
+                : ComputedUsagePackage.eINSTANCE);
         final AggregatedUsageContextPackageImpl theAggregatedUsageContextPackage = (AggregatedUsageContextPackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(AggregatedUsageContextPackage.eNS_URI) instanceof AggregatedUsageContextPackageImpl
-                        ? EPackage.Registry.INSTANCE.getEPackage(AggregatedUsageContextPackage.eNS_URI)
-                        : AggregatedUsageContextPackage.eINSTANCE);
+                .getEPackage(AggregatedUsageContextPackage.eNS_URI) instanceof AggregatedUsageContextPackageImpl ? EPackage.Registry.INSTANCE
+                        .getEPackage(AggregatedUsageContextPackage.eNS_URI)
+                : AggregatedUsageContextPackage.eINSTANCE);
 
         // Create package meta-data objects
         theComputedAllocationPackage.createPackageContents();
@@ -321,14 +321,15 @@ public class ComputedAllocationPackageImpl extends EPackageImpl implements Compu
 
         // Initialize classes and features; add operations and parameters
         this.initEClass(this.computedAllocationContextEClass, ComputedAllocationContext.class,
-                "ComputedAllocationContext", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+                "ComputedAllocationContext",
+                !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getComputedAllocationContext_ResourceDemands_ComputedAllocationContext(),
                 this.getResourceDemand(), null, "resourceDemands_ComputedAllocationContext", null, 0, -1,
                 ComputedAllocationContext.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getComputedAllocationContext_UsageContext_ComputedAllocationContext(),
-                theComputedUsagePackage.getComputedUsageContext(), null, "usageContext_ComputedAllocationContext", null,
-                1, 1, ComputedAllocationContext.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+                theComputedUsagePackage.getComputedUsageContext(), null, "usageContext_ComputedAllocationContext",
+                null, 1, 1, ComputedAllocationContext.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
                 IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getComputedAllocationContext_AllocationContext_ComputedAllocationContext(),
                 theAllocationPackage.getAllocationContext(), null, "allocationContext_ComputedAllocationContext", null,
@@ -343,16 +344,16 @@ public class ComputedAllocationPackageImpl extends EPackageImpl implements Compu
                 !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
                 !IS_ORDERED);
         this.initEReference(this.getResourceDemand_Specification_ResourceDemand(),
-                theCorePackage.getPCMRandomVariable(), null, "specification_ResourceDemand", null, 1, 1,
-                ResourceDemand.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+                theCorePackage.getPCMRandomVariable(), null,
+                "specification_ResourceDemand", null, 1, 1, ResourceDemand.class, !IS_TRANSIENT, !IS_VOLATILE,
+                IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
         this.initEClass(this.computedAllocationEClass, ComputedAllocation.class, "ComputedAllocation", !IS_ABSTRACT,
                 !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         this.initEReference(this.getComputedAllocation_ComputedAllocationContexts_ComputedAllocation(),
-                this.getComputedAllocationContext(), null, "computedAllocationContexts_ComputedAllocation", null, 0, -1,
-                ComputedAllocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+                this.getComputedAllocationContext(), null, "computedAllocationContexts_ComputedAllocation", null, 0,
+                -1, ComputedAllocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+                !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
         // Create resource
         this.createResource(eNS_URI);

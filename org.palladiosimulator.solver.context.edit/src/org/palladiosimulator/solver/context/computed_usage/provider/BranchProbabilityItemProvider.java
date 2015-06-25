@@ -57,7 +57,8 @@ public class BranchProbabilityItemProvider extends ItemProviderAdapter implement
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addProbabilityPropertyDescriptor(object);
@@ -73,13 +74,21 @@ public class BranchProbabilityItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addProbabilityPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_BranchProbability_probability_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_BranchProbability_probability_feature",
-                        "_UI_BranchProbability_type"),
-                ComputedUsagePackage.Literals.BRANCH_PROBABILITY__PROBABILITY, true, false, false,
-                ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_BranchProbability_probability_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_BranchProbability_probability_feature",
+                                "_UI_BranchProbability_type"),
+                                ComputedUsagePackage.Literals.BRANCH_PROBABILITY__PROBABILITY,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -89,14 +98,21 @@ public class BranchProbabilityItemProvider extends ItemProviderAdapter implement
      * @generated
      */
     protected void addBranchtransition_BranchProbabilityPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_BranchProbability_branchtransition_BranchProbability_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_BranchProbability_branchtransition_BranchProbability_feature",
-                        "_UI_BranchProbability_type"),
-                ComputedUsagePackage.Literals.BRANCH_PROBABILITY__BRANCHTRANSITION_BRANCH_PROBABILITY, true, false,
-                true, null, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_BranchProbability_branchtransition_BranchProbability_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_BranchProbability_branchtransition_BranchProbability_feature",
+                                "_UI_BranchProbability_type"),
+                                ComputedUsagePackage.Literals.BRANCH_PROBABILITY__BRANCHTRANSITION_BRANCH_PROBABILITY,
+                                true,
+                                false,
+                                true,
+                                null,
+                                null,
+                                null));
     }
 
     /**
@@ -132,7 +148,8 @@ public class BranchProbabilityItemProvider extends ItemProviderAdapter implement
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(BranchProbability.class)) {
+        switch (notification.getFeatureID(BranchProbability.class))
+        {
         case ComputedUsagePackage.BRANCH_PROBABILITY__PROBABILITY:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;

@@ -43,7 +43,8 @@ public class AggregatedUsageContextXMLProcessor extends XMLProcessor {
      */
     @Override
     protected Map<String, Resource.Factory> getRegistrations() {
-        if (this.registrations == null) {
+        if (this.registrations == null)
+        {
             super.getRegistrations();
             this.registrations.put(XML_EXTENSION, new AggregatedUsageContextResourceFactoryImpl());
             this.registrations.put(STAR_EXTENSION, new AggregatedUsageContextResourceFactoryImpl());

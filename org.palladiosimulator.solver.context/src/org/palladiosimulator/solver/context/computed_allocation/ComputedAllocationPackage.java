@@ -66,8 +66,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl
      * <em>Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      *
-     * @see org.palladiosimulator.solver.context.computed_allocation.impl.
-     *      ComputedAllocationContextImpl
+     * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl
      * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getComputedAllocationContext()
      * @generated
      */
@@ -98,8 +97,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT = EntityPackage.ENTITY_FEATURE_COUNT
-            + 0;
+    int COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT = EntityPackage.ENTITY_FEATURE_COUNT + 0;
 
     /**
      * The feature id for the '<em><b>Usage Context Computed Allocation Context</b></em>' reference.
@@ -117,8 +115,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * @generated
      * @ordered
      */
-    int COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT = EntityPackage.ENTITY_FEATURE_COUNT
-            + 2;
+    int COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT = EntityPackage.ENTITY_FEATURE_COUNT + 2;
 
     /**
      * The number of structural features of the '<em>Context</em>' class. <!-- begin-user-doc -->
@@ -340,8 +337,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl
          * <em>Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          *
-         * @see org.palladiosimulator.solver.context.computed_allocation.impl.
-         *      ComputedAllocationContextImpl
+         * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl
          * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getComputedAllocationContext()
          * @generated
          */

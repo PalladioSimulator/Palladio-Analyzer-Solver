@@ -14,11 +14,10 @@ import org.palladiosimulator.solver.lqn.ReplyActivityType;
  * <em><b>Reply Activity Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyActivityTypeImpl#getName <em>Name</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyActivityTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -95,7 +94,8 @@ public class ReplyActivityTypeImpl extends EObjectImpl implements ReplyActivityT
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ACTIVITY_TYPE__NAME:
             return this.getName();
         }
@@ -109,7 +109,8 @@ public class ReplyActivityTypeImpl extends EObjectImpl implements ReplyActivityT
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ACTIVITY_TYPE__NAME:
             this.setName((String) newValue);
             return;
@@ -124,7 +125,8 @@ public class ReplyActivityTypeImpl extends EObjectImpl implements ReplyActivityT
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ACTIVITY_TYPE__NAME:
             this.setName(NAME_EDEFAULT);
             return;
@@ -139,7 +141,8 @@ public class ReplyActivityTypeImpl extends EObjectImpl implements ReplyActivityT
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.REPLY_ACTIVITY_TYPE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         }

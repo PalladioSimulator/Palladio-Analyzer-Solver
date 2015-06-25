@@ -71,7 +71,11 @@ public enum ValidType implements Enumerator {
      *
      * @generated
      */
-    private static final ValidType[] VALUES_ARRAY = new ValidType[] { YES, NO, };
+    private static final ValidType[] VALUES_ARRAY = new ValidType[]
+            {
+        YES,
+        NO,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Valid Type</b></em>' enumerators. <!--
@@ -92,7 +96,8 @@ public enum ValidType implements Enumerator {
      */
     public static ValidType get(final String literal) {
         for (final ValidType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -103,14 +108,12 @@ public enum ValidType implements Enumerator {
      * Returns the '<em><b>Valid Type</b></em>' literal with the specified name. <!-- begin-user-doc
      * --> <!-- end-user-doc -->
      *
-     * @param name
-     *            the name.
-     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
     public static ValidType getByName(final String name) {
         for (final ValidType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -127,7 +130,8 @@ public enum ValidType implements Enumerator {
      * @generated
      */
     public static ValidType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case YES_VALUE:
             return YES;
         case NO_VALUE:

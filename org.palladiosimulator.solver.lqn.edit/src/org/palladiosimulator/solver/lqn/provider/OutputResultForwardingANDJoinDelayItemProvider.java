@@ -52,7 +52,8 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addDestPropertyDescriptor(object);
@@ -70,14 +71,21 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
      * @generated
      */
     protected void addDestPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultForwardingANDJoinDelay_dest_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultForwardingANDJoinDelay_dest_feature",
-                        "_UI_OutputResultForwardingANDJoinDelay_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__DEST, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultForwardingANDJoinDelay_dest_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultForwardingANDJoinDelay_dest_feature",
+                                "_UI_OutputResultForwardingANDJoinDelay_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__DEST,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -87,14 +95,21 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
      * @generated
      */
     protected void addJoinVariancePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultForwardingANDJoinDelay_joinVariance_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultForwardingANDJoinDelay_joinVariance_feature",
-                        "_UI_OutputResultForwardingANDJoinDelay_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_VARIANCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultForwardingANDJoinDelay_joinVariance_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultForwardingANDJoinDelay_joinVariance_feature",
+                                "_UI_OutputResultForwardingANDJoinDelay_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_VARIANCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -104,14 +119,21 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
      * @generated
      */
     protected void addJoinWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultForwardingANDJoinDelay_joinWaiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultForwardingANDJoinDelay_joinWaiting_feature",
-                        "_UI_OutputResultForwardingANDJoinDelay_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultForwardingANDJoinDelay_joinWaiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultForwardingANDJoinDelay_joinWaiting_feature",
+                                "_UI_OutputResultForwardingANDJoinDelay_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -121,14 +143,21 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
      * @generated
      */
     protected void addWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_OutputResultForwardingANDJoinDelay_waiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description",
-                        "_UI_OutputResultForwardingANDJoinDelay_waiting_feature",
-                        "_UI_OutputResultForwardingANDJoinDelay_type"),
-                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_OutputResultForwardingANDJoinDelay_waiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_OutputResultForwardingANDJoinDelay_waiting_feature",
+                                "_UI_OutputResultForwardingANDJoinDelay_type"),
+                                LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -142,7 +171,8 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95);
             this.childrenFeatures.add(LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF99);
@@ -184,8 +214,9 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
     @Override
     public String getText(final Object object) {
         final String label = ((OutputResultForwardingANDJoinDelay) object).getDest();
-        return label == null || label.length() == 0 ? this.getString("_UI_OutputResultForwardingANDJoinDelay_type")
-                : this.getString("_UI_OutputResultForwardingANDJoinDelay_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_OutputResultForwardingANDJoinDelay_type") :
+                this.getString("_UI_OutputResultForwardingANDJoinDelay_type") + " " + label;
     }
 
     /**
@@ -199,7 +230,8 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(OutputResultForwardingANDJoinDelay.class)) {
+        switch (notification.getFeatureID(OutputResultForwardingANDJoinDelay.class))
+        {
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__DEST:
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_VARIANCE:
         case LqnPackage.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__JOIN_WAITING:
@@ -224,12 +256,14 @@ public class OutputResultForwardingANDJoinDelayItemProvider extends ItemProvider
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(
-                this.createChildParameter(LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95,
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF95,
                         LqnFactory.eINSTANCE.createResultConf95Type()));
 
-        newChildDescriptors.add(
-                this.createChildParameter(LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF99,
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.OUTPUT_RESULT_FORWARDING_AND_JOIN_DELAY__RESULT_CONF99,
                         LqnFactory.eINSTANCE.createResultConf99Type()));
     }
 

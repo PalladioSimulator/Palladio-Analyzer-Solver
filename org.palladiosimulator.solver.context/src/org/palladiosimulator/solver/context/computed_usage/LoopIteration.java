@@ -13,7 +13,6 @@ import org.palladiosimulator.pcm.seff.AbstractLoopAction;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>
  * {@link org.palladiosimulator.solver.context.computed_usage.LoopIteration#getLoopaction_LoopIteration
@@ -22,6 +21,7 @@ import org.palladiosimulator.pcm.seff.AbstractLoopAction;
  * {@link org.palladiosimulator.solver.context.computed_usage.LoopIteration#getSpecification_LoopIteration
  * <em>Specification Loop Iteration</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getLoopIteration()
  * @model

@@ -48,7 +48,8 @@ public class ResultConf99TypeItemProvider extends ItemProviderAdapter implements
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addJoinVariancePropertyDescriptor(object);
@@ -65,13 +66,21 @@ public class ResultConf99TypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addJoinVariancePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultConf99Type_joinVariance_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type_joinVariance_feature",
-                        "_UI_ResultConf99Type_type"),
-                LqnPackage.Literals.RESULT_CONF99_TYPE__JOIN_VARIANCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultConf99Type_joinVariance_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultConf99Type_joinVariance_feature",
+                                "_UI_ResultConf99Type_type"),
+                                LqnPackage.Literals.RESULT_CONF99_TYPE__JOIN_VARIANCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -81,13 +90,21 @@ public class ResultConf99TypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addJoinWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultConf99Type_joinWaiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type_joinWaiting_feature",
-                        "_UI_ResultConf99Type_type"),
-                LqnPackage.Literals.RESULT_CONF99_TYPE__JOIN_WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultConf99Type_joinWaiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultConf99Type_joinWaiting_feature",
+                                "_UI_ResultConf99Type_type"),
+                                LqnPackage.Literals.RESULT_CONF99_TYPE__JOIN_WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -97,13 +114,21 @@ public class ResultConf99TypeItemProvider extends ItemProviderAdapter implements
      * @generated
      */
     protected void addWaitingPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ResultConf99Type_waiting_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type_waiting_feature",
-                        "_UI_ResultConf99Type_type"),
-                LqnPackage.Literals.RESULT_CONF99_TYPE__WAITING, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ResultConf99Type_waiting_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ResultConf99Type_waiting_feature",
+                                "_UI_ResultConf99Type_type"),
+                                LqnPackage.Literals.RESULT_CONF99_TYPE__WAITING,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -126,8 +151,9 @@ public class ResultConf99TypeItemProvider extends ItemProviderAdapter implements
     public String getText(final Object object) {
         final Object labelValue = ((ResultConf99Type) object).getJoinVariance();
         final String label = labelValue == null ? null : labelValue.toString();
-        return label == null || label.length() == 0 ? this.getString("_UI_ResultConf99Type_type")
-                : this.getString("_UI_ResultConf99Type_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ResultConf99Type_type") :
+                this.getString("_UI_ResultConf99Type_type") + " " + label;
     }
 
     /**
@@ -141,7 +167,8 @@ public class ResultConf99TypeItemProvider extends ItemProviderAdapter implements
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ResultConf99Type.class)) {
+        switch (notification.getFeatureID(ResultConf99Type.class))
+        {
         case LqnPackage.RESULT_CONF99_TYPE__JOIN_VARIANCE:
         case LqnPackage.RESULT_CONF99_TYPE__JOIN_WAITING:
         case LqnPackage.RESULT_CONF99_TYPE__WAITING:

@@ -14,13 +14,12 @@ import org.palladiosimulator.solver.lqn.SynchCallType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.SynchCallTypeImpl#getDest <em>Dest</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.SynchCallTypeImpl#getFanin <em>Fanin</em>}</li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.SynchCallTypeImpl#getFanout <em>Fanout</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.SynchCallTypeImpl#getFanout <em>Fanout</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -171,7 +170,8 @@ public class SynchCallTypeImpl extends EObjectImpl implements SynchCallType {
         this.faninESet = true;
         if (this.eNotificationRequired()) {
             this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SYNCH_CALL_TYPE__FANIN, oldFanin,
-                    this.fanin, !oldFaninESet));
+                    this.fanin,
+                    !oldFaninESet));
         }
     }
 
@@ -263,7 +263,8 @@ public class SynchCallTypeImpl extends EObjectImpl implements SynchCallType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SYNCH_CALL_TYPE__DEST:
             return this.getDest();
         case LqnPackage.SYNCH_CALL_TYPE__FANIN:
@@ -281,7 +282,8 @@ public class SynchCallTypeImpl extends EObjectImpl implements SynchCallType {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SYNCH_CALL_TYPE__DEST:
             this.setDest((String) newValue);
             return;
@@ -302,7 +304,8 @@ public class SynchCallTypeImpl extends EObjectImpl implements SynchCallType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SYNCH_CALL_TYPE__DEST:
             this.setDest(DEST_EDEFAULT);
             return;
@@ -323,7 +326,8 @@ public class SynchCallTypeImpl extends EObjectImpl implements SynchCallType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.SYNCH_CALL_TYPE__DEST:
             return DEST_EDEFAULT == null ? this.dest != null : !DEST_EDEFAULT.equals(this.dest);
         case LqnPackage.SYNCH_CALL_TYPE__FANIN:

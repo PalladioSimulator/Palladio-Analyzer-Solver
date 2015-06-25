@@ -48,7 +48,8 @@ public class FirstPlotTypeItemProvider extends ItemProviderAdapter implements IE
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addVariablePropertyDescriptor(object);
@@ -63,13 +64,21 @@ public class FirstPlotTypeItemProvider extends ItemProviderAdapter implements IE
      * @generated
      */
     protected void addVariablePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_FirstPlotType_variable_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_FirstPlotType_variable_feature",
-                        "_UI_FirstPlotType_type"),
-                LqnPackage.Literals.FIRST_PLOT_TYPE__VARIABLE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_FirstPlotType_variable_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_FirstPlotType_variable_feature",
+                                "_UI_FirstPlotType_type"),
+                                LqnPackage.Literals.FIRST_PLOT_TYPE__VARIABLE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -91,8 +100,9 @@ public class FirstPlotTypeItemProvider extends ItemProviderAdapter implements IE
     @Override
     public String getText(final Object object) {
         final String label = ((FirstPlotType) object).getVariable();
-        return label == null || label.length() == 0 ? this.getString("_UI_FirstPlotType_type")
-                : this.getString("_UI_FirstPlotType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_FirstPlotType_type") :
+                this.getString("_UI_FirstPlotType_type") + " " + label;
     }
 
     /**
@@ -106,7 +116,8 @@ public class FirstPlotTypeItemProvider extends ItemProviderAdapter implements IE
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(FirstPlotType.class)) {
+        switch (notification.getFeatureID(FirstPlotType.class))
+        {
         case LqnPackage.FIRST_PLOT_TYPE__VARIABLE:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;

@@ -14,10 +14,10 @@ import org.palladiosimulator.solver.lqn.PlotType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.PlotTypeImpl#getVariable <em>Variable</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -94,7 +94,8 @@ public class PlotTypeImpl extends EObjectImpl implements PlotType {
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PLOT_TYPE__VARIABLE:
             return this.getVariable();
         }
@@ -108,7 +109,8 @@ public class PlotTypeImpl extends EObjectImpl implements PlotType {
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PLOT_TYPE__VARIABLE:
             this.setVariable((String) newValue);
             return;
@@ -123,7 +125,8 @@ public class PlotTypeImpl extends EObjectImpl implements PlotType {
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PLOT_TYPE__VARIABLE:
             this.setVariable(VARIABLE_EDEFAULT);
             return;
@@ -138,7 +141,8 @@ public class PlotTypeImpl extends EObjectImpl implements PlotType {
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.PLOT_TYPE__VARIABLE:
             return VARIABLE_EDEFAULT == null ? this.variable != null : !VARIABLE_EDEFAULT.equals(this.variable);
         }

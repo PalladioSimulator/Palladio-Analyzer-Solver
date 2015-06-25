@@ -124,13 +124,13 @@ public class AggregatedUsageContextPackageImpl extends EPackageImpl implements A
 
         // Obtain or create and register interdependencies
         final ComputedUsagePackageImpl theComputedUsagePackage = (ComputedUsagePackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(ComputedUsagePackage.eNS_URI) instanceof ComputedUsagePackageImpl
-                        ? EPackage.Registry.INSTANCE.getEPackage(ComputedUsagePackage.eNS_URI)
-                        : ComputedUsagePackage.eINSTANCE);
+                .getEPackage(ComputedUsagePackage.eNS_URI) instanceof ComputedUsagePackageImpl ? EPackage.Registry.INSTANCE
+                        .getEPackage(ComputedUsagePackage.eNS_URI)
+                : ComputedUsagePackage.eINSTANCE);
         final ComputedAllocationPackageImpl theComputedAllocationPackage = (ComputedAllocationPackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(ComputedAllocationPackage.eNS_URI) instanceof ComputedAllocationPackageImpl
-                        ? EPackage.Registry.INSTANCE.getEPackage(ComputedAllocationPackage.eNS_URI)
-                        : ComputedAllocationPackage.eINSTANCE);
+                .getEPackage(ComputedAllocationPackage.eNS_URI) instanceof ComputedAllocationPackageImpl ? EPackage.Registry.INSTANCE
+                        .getEPackage(ComputedAllocationPackage.eNS_URI)
+                : ComputedAllocationPackage.eINSTANCE);
 
         // Create package meta-data objects
         theAggregatedUsageContextPackage.createPackageContents();
@@ -361,8 +361,7 @@ public class AggregatedUsageContextPackageImpl extends EPackageImpl implements A
 
         // Create classes and their features
         this.serviceExecutionContextEClass = this.createEClass(SERVICE_EXECUTION_CONTEXT);
-        this.createEAttribute(this.serviceExecutionContextEClass,
-                SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY);
+        this.createEAttribute(this.serviceExecutionContextEClass, SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY);
         this.createEReference(this.serviceExecutionContextEClass,
                 SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT);
         this.createEReference(this.serviceExecutionContextEClass,
@@ -443,8 +442,8 @@ public class AggregatedUsageContextPackageImpl extends EPackageImpl implements A
                 "globalExecutionFrequency", null, 1, 1, ServiceExecutionContext.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getServiceExecutionContext_AllocationContext_ServiceExecutionContext(),
-                theAllocationPackage.getAllocationContext(), null, "allocationContext_ServiceExecutionContext", null, 1,
-                1, ServiceExecutionContext.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+                theAllocationPackage.getAllocationContext(), null, "allocationContext_ServiceExecutionContext", null,
+                1, 1, ServiceExecutionContext.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
                 IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getServiceExecutionContext_DescribedSEFF_ServiceExecutionContext(),
                 theSeffPackage.getResourceDemandingSEFF(), null, "describedSEFF_ServiceExecutionContext", null, 1, 1,
@@ -468,9 +467,11 @@ public class AggregatedUsageContextPackageImpl extends EPackageImpl implements A
                 !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
                 IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-        this.initEClass(this.aggregatedResourceDemandEClass, AggregatedResourceDemand.class, "AggregatedResourceDemand",
+        this.initEClass(this.aggregatedResourceDemandEClass, AggregatedResourceDemand.class,
+                "AggregatedResourceDemand",
                 !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        this.initEAttribute(this.getAggregatedResourceDemand_AggregatedResourceDemand(), this.ecorePackage.getEDouble(),
+        this.initEAttribute(this.getAggregatedResourceDemand_AggregatedResourceDemand(),
+                this.ecorePackage.getEDouble(),
                 "aggregatedResourceDemand", null, 1, 1, AggregatedResourceDemand.class, !IS_TRANSIENT, !IS_VOLATILE,
                 IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
         this.initEReference(this.getAggregatedResourceDemand_ResourceType_AggregatedResourceDemand(),

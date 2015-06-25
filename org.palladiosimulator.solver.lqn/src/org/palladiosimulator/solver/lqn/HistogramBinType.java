@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getBegin <em>Begin</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getConf95 <em>Conf95</em>}</li>
@@ -18,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getEnd <em>End</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getHistogramBinType()
  * @model extendedMetaData="name='HistogramBinType' kind='empty'"
@@ -64,8 +64,8 @@ public interface HistogramBinType extends EObject {
      * @return the value of the '<em>Conf95</em>' attribute.
      * @see #setConf95(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getHistogramBinType_Conf95()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='conf-95' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='conf-95' namespace='##targetNamespace'"
      * @generated
      */
     Object getConf95();
@@ -92,8 +92,8 @@ public interface HistogramBinType extends EObject {
      * @return the value of the '<em>Conf99</em>' attribute.
      * @see #setConf99(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getHistogramBinType_Conf99()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='conf-99' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='conf-99' namespace='##targetNamespace'"
      * @generated
      */
     Object getConf99();
@@ -120,8 +120,8 @@ public interface HistogramBinType extends EObject {
      * @return the value of the '<em>End</em>' attribute.
      * @see #setEnd(Object)
      * @see org.palladiosimulator.solver.lqn.LqnPackage#getHistogramBinType_End()
-     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat" extendedMetaData=
-     *        "kind='attribute' name='end' namespace='##targetNamespace'"
+     * @model dataType="org.palladiosimulator.solver.lqn.SrvnFloat"
+     *        extendedMetaData="kind='attribute' name='end' namespace='##targetNamespace'"
      * @generated
      */
     Object getEnd();

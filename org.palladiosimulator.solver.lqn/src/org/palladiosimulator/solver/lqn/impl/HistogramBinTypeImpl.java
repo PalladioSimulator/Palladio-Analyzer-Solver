@@ -14,17 +14,14 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getBegin <em>Begin</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getConf95 <em>Conf95</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getConf99 <em>Conf99</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getBegin <em>Begin</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getConf95 <em>Conf95</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getConf99 <em>Conf99</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getEnd <em>End</em>}</li>
  * <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
@@ -194,7 +191,8 @@ public class HistogramBinTypeImpl extends EObjectImpl implements HistogramBinTyp
         final Object oldConf95 = this.conf95;
         this.conf95 = newConf95;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF95, oldConf95,
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF95,
+                    oldConf95,
                     this.conf95));
         }
     }
@@ -219,7 +217,8 @@ public class HistogramBinTypeImpl extends EObjectImpl implements HistogramBinTyp
         final Object oldConf99 = this.conf99;
         this.conf99 = newConf99;
         if (this.eNotificationRequired()) {
-            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF99, oldConf99,
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF99,
+                    oldConf99,
                     this.conf99));
         }
     }
@@ -281,7 +280,8 @@ public class HistogramBinTypeImpl extends EObjectImpl implements HistogramBinTyp
      */
     @Override
     public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN:
             return this.getBegin();
         case LqnPackage.HISTOGRAM_BIN_TYPE__CONF95:
@@ -303,7 +303,8 @@ public class HistogramBinTypeImpl extends EObjectImpl implements HistogramBinTyp
      */
     @Override
     public void eSet(final int featureID, final Object newValue) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN:
             this.setBegin(newValue);
             return;
@@ -330,7 +331,8 @@ public class HistogramBinTypeImpl extends EObjectImpl implements HistogramBinTyp
      */
     @Override
     public void eUnset(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN:
             this.setBegin(BEGIN_EDEFAULT);
             return;
@@ -357,7 +359,8 @@ public class HistogramBinTypeImpl extends EObjectImpl implements HistogramBinTyp
      */
     @Override
     public boolean eIsSet(final int featureID) {
-        switch (featureID) {
+        switch (featureID)
+        {
         case LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN:
             return BEGIN_EDEFAULT == null ? this.begin != null : !BEGIN_EDEFAULT.equals(this.begin);
         case LqnPackage.HISTOGRAM_BIN_TYPE__CONF95:

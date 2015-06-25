@@ -96,7 +96,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createComputedUsageContextAdapter() {
-        if (this.computedUsageContextItemProvider == null) {
+        if (this.computedUsageContextItemProvider == null)
+        {
             this.computedUsageContextItemProvider = new ComputedUsageContextItemProvider(this);
         }
 
@@ -121,7 +122,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createBranchProbabilityAdapter() {
-        if (this.branchProbabilityItemProvider == null) {
+        if (this.branchProbabilityItemProvider == null)
+        {
             this.branchProbabilityItemProvider = new BranchProbabilityItemProvider(this);
         }
 
@@ -146,7 +148,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createLoopIterationAdapter() {
-        if (this.loopIterationItemProvider == null) {
+        if (this.loopIterationItemProvider == null)
+        {
             this.loopIterationItemProvider = new LoopIterationItemProvider(this);
         }
 
@@ -171,7 +174,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createInputAdapter() {
-        if (this.inputItemProvider == null) {
+        if (this.inputItemProvider == null)
+        {
             this.inputItemProvider = new InputItemProvider(this);
         }
 
@@ -196,7 +200,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createExternalCallOutputAdapter() {
-        if (this.externalCallOutputItemProvider == null) {
+        if (this.externalCallOutputItemProvider == null)
+        {
             this.externalCallOutputItemProvider = new ExternalCallOutputItemProvider(this);
         }
 
@@ -221,7 +226,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createExternalCallInputAdapter() {
-        if (this.externalCallInputItemProvider == null) {
+        if (this.externalCallInputItemProvider == null)
+        {
             this.externalCallInputItemProvider = new ExternalCallInputItemProvider(this);
         }
 
@@ -246,7 +252,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createOutputAdapter() {
-        if (this.outputItemProvider == null) {
+        if (this.outputItemProvider == null)
+        {
             this.outputItemProvider = new OutputItemProvider(this);
         }
 
@@ -271,7 +278,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Adapter createComputedUsageAdapter() {
-        if (this.computedUsageItemProvider == null) {
+        if (this.computedUsageItemProvider == null)
+        {
             this.computedUsageItemProvider = new ComputedUsageItemProvider(this);
         }
 
@@ -328,9 +336,11 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
      */
     @Override
     public Object adapt(final Object object, final Object type) {
-        if (this.isFactoryForType(type)) {
+        if (this.isFactoryForType(type))
+        {
             final Object adapter = super.adapt(object, type);
-            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter))) {
+            if (!(type instanceof Class<?>) || (((Class<?>) type).isInstance(adapter)))
+            {
                 return adapter;
             }
         }
@@ -368,7 +378,8 @@ public class ComputedUsageItemProviderAdapterFactory extends ComputedUsageAdapte
     public void fireNotifyChanged(final Notification notification) {
         this.changeNotifier.fireNotifyChanged(notification);
 
-        if (this.parentAdapterFactory != null) {
+        if (this.parentAdapterFactory != null)
+        {
             this.parentAdapterFactory.fireNotifyChanged(notification);
         }
     }

@@ -71,7 +71,11 @@ public enum AxisType implements Enumerator {
      *
      * @generated
      */
-    private static final AxisType[] VALUES_ARRAY = new AxisType[] { LINEAR, LOG, };
+    private static final AxisType[] VALUES_ARRAY = new AxisType[]
+            {
+        LINEAR,
+        LOG,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Axis Type</b></em>' enumerators. <!--
@@ -92,7 +96,8 @@ public enum AxisType implements Enumerator {
      */
     public static AxisType get(final String literal) {
         for (final AxisType result : VALUES_ARRAY) {
-            if (result.toString().equals(literal)) {
+            if (result.toString().equals(literal))
+            {
                 return result;
             }
         }
@@ -103,14 +108,12 @@ public enum AxisType implements Enumerator {
      * Returns the '<em><b>Axis Type</b></em>' literal with the specified name. <!-- begin-user-doc
      * --> <!-- end-user-doc -->
      *
-     * @param name
-     *            the name.
-     * @return the matching enumerator or <code>null</code>.
      * @generated
      */
     public static AxisType getByName(final String name) {
         for (final AxisType result : VALUES_ARRAY) {
-            if (result.getName().equals(name)) {
+            if (result.getName().equals(name))
+            {
                 return result;
             }
         }
@@ -127,7 +130,8 @@ public enum AxisType implements Enumerator {
      * @generated
      */
     public static AxisType get(final int value) {
-        switch (value) {
+        switch (value)
+        {
         case LINEAR_VALUE:
             return LINEAR;
         case LOG_VALUE:

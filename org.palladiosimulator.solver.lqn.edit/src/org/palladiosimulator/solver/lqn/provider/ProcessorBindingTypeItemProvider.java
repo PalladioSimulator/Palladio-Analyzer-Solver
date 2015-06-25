@@ -49,7 +49,8 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addSourcePropertyDescriptor(object);
@@ -65,13 +66,21 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
      * @generated
      */
     protected void addSourcePropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorBindingType_source_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorBindingType_source_feature",
-                        "_UI_ProcessorBindingType_type"),
-                LqnPackage.Literals.PROCESSOR_BINDING_TYPE__SOURCE, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorBindingType_source_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ProcessorBindingType_source_feature",
+                                "_UI_ProcessorBindingType_type"),
+                                LqnPackage.Literals.PROCESSOR_BINDING_TYPE__SOURCE,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -81,13 +90,21 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
      * @generated
      */
     protected void addTargetPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ProcessorBindingType_target_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorBindingType_target_feature",
-                        "_UI_ProcessorBindingType_type"),
-                LqnPackage.Literals.PROCESSOR_BINDING_TYPE__TARGET, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ProcessorBindingType_target_feature"),
+                        this.getString("_UI_PropertyDescriptor_description",
+                                "_UI_ProcessorBindingType_target_feature",
+                                "_UI_ProcessorBindingType_type"),
+                                LqnPackage.Literals.PROCESSOR_BINDING_TYPE__TARGET,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -109,8 +126,9 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
     @Override
     public String getText(final Object object) {
         final String label = ((ProcessorBindingType) object).getSource();
-        return label == null || label.length() == 0 ? this.getString("_UI_ProcessorBindingType_type")
-                : this.getString("_UI_ProcessorBindingType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ProcessorBindingType_type") :
+                this.getString("_UI_ProcessorBindingType_type") + " " + label;
     }
 
     /**
@@ -124,7 +142,8 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ProcessorBindingType.class)) {
+        switch (notification.getFeatureID(ProcessorBindingType.class))
+        {
         case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
         case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));

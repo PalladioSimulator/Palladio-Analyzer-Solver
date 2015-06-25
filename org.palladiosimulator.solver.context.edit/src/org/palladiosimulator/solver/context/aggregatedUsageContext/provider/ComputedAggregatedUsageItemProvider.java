@@ -58,7 +58,8 @@ public class ComputedAggregatedUsageItemProvider extends ItemProviderAdapter imp
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -76,10 +77,11 @@ public class ComputedAggregatedUsageItemProvider extends ItemProviderAdapter imp
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
-            this.childrenFeatures.add(
-                    AggregatedUsageContextPackage.Literals.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE);
+            this.childrenFeatures
+                    .add(AggregatedUsageContextPackage.Literals.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE);
         }
         return this.childrenFeatures;
     }
@@ -129,7 +131,8 @@ public class ComputedAggregatedUsageItemProvider extends ItemProviderAdapter imp
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ComputedAggregatedUsage.class)) {
+        switch (notification.getFeatureID(ComputedAggregatedUsage.class))
+        {
         case AggregatedUsageContextPackage.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -147,9 +150,11 @@ public class ComputedAggregatedUsageItemProvider extends ItemProviderAdapter imp
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(
-                AggregatedUsageContextPackage.Literals.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE,
-                AggregatedUsageContextFactory.eINSTANCE.createServiceExecutionContext()));
+        newChildDescriptors
+                .add
+                (this.createChildParameter
+                (AggregatedUsageContextPackage.Literals.COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE,
+                        AggregatedUsageContextFactory.eINSTANCE.createServiceExecutionContext()));
     }
 
     /**

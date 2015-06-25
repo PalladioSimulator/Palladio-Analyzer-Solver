@@ -41,7 +41,8 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -59,7 +60,8 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY);
         }
@@ -111,7 +113,8 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(EntryActivityGraph.class)) {
+        switch (notification.getFeatureID(EntryActivityGraph.class))
+        {
         case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
             return;
@@ -129,8 +132,10 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY,
-                LqnFactory.eINSTANCE.createReplyActivityType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY,
+                        LqnFactory.eINSTANCE.createReplyActivityType()));
     }
 
 }

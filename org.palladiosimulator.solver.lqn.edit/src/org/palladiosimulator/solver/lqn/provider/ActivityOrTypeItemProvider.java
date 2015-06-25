@@ -40,7 +40,8 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
             this.addProbPropertyDescriptor(object);
@@ -55,13 +56,20 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
      * @generated
      */
     protected void addProbPropertyDescriptor(final Object object) {
-        this.itemPropertyDescriptors.add(this.createItemPropertyDescriptor(
-                ((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(), this.getResourceLocator(),
-                this.getString("_UI_ActivityOrType_prob_feature"),
-                this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityOrType_prob_feature",
-                        "_UI_ActivityOrType_type"),
-                LqnPackage.Literals.ACTIVITY_OR_TYPE__PROB, true, false, false,
-                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+        this.itemPropertyDescriptors.add
+                (this.createItemPropertyDescriptor
+                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                        this.getResourceLocator(),
+                        this.getString("_UI_ActivityOrType_prob_feature"),
+                        this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityOrType_prob_feature",
+                                "_UI_ActivityOrType_type"),
+                                LqnPackage.Literals.ACTIVITY_OR_TYPE__PROB,
+                                true,
+                                false,
+                                false,
+                                ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+                                null,
+                                null));
     }
 
     /**
@@ -83,8 +91,9 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
     @Override
     public String getText(final Object object) {
         final String label = ((ActivityOrType) object).getName();
-        return label == null || label.length() == 0 ? this.getString("_UI_ActivityOrType_type")
-                : this.getString("_UI_ActivityOrType_type") + " " + label;
+        return label == null || label.length() == 0 ?
+                this.getString("_UI_ActivityOrType_type") :
+                this.getString("_UI_ActivityOrType_type") + " " + label;
     }
 
     /**
@@ -98,7 +107,8 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(ActivityOrType.class)) {
+        switch (notification.getFeatureID(ActivityOrType.class))
+        {
         case LqnPackage.ACTIVITY_OR_TYPE__PROB:
             this.fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
             return;

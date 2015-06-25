@@ -48,7 +48,8 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
      */
     @Override
     public List<IItemPropertyDescriptor> getPropertyDescriptors(final Object object) {
-        if (this.itemPropertyDescriptors == null) {
+        if (this.itemPropertyDescriptors == null)
+        {
             super.getPropertyDescriptors(object);
 
         }
@@ -66,7 +67,8 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
      */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(final Object object) {
-        if (this.childrenFeatures == null) {
+        if (this.childrenFeatures == null)
+        {
             super.getChildrenFeatures(object);
             this.childrenFeatures.add(LqnPackage.Literals.BIND_TYPE__PARAMETER);
             this.childrenFeatures.add(LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING);
@@ -120,7 +122,8 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
     public void notifyChanged(final Notification notification) {
         this.updateChildren(notification);
 
-        switch (notification.getFeatureID(BindType.class)) {
+        switch (notification.getFeatureID(BindType.class))
+        {
         case LqnPackage.BIND_TYPE__PARAMETER:
         case LqnPackage.BIND_TYPE__PROCESSOR_BINDING:
         case LqnPackage.BIND_TYPE__PORT_BINDING:
@@ -140,14 +143,20 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
     protected void collectNewChildDescriptors(final Collection<Object> newChildDescriptors, final Object object) {
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.BIND_TYPE__PARAMETER,
-                LqnFactory.eINSTANCE.createParameterType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.BIND_TYPE__PARAMETER,
+                        LqnFactory.eINSTANCE.createParameterType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING,
-                LqnFactory.eINSTANCE.createProcessorBindingType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING,
+                        LqnFactory.eINSTANCE.createProcessorBindingType()));
 
-        newChildDescriptors.add(this.createChildParameter(LqnPackage.Literals.BIND_TYPE__PORT_BINDING,
-                LqnFactory.eINSTANCE.createPortBindingType()));
+        newChildDescriptors.add
+                (this.createChildParameter
+                (LqnPackage.Literals.BIND_TYPE__PORT_BINDING,
+                        LqnFactory.eINSTANCE.createPortBindingType()));
     }
 
     /**
