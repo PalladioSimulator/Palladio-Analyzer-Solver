@@ -10,24 +10,11 @@
 
 <plugin>
 
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package 
-       uri = "http://palladiosimulator.org/Solver/LQN/1.0" 
-       class = "LqnCore.LqnCorePackage"
-       genModel = "model/lqn.genmodel" /> 
-  </extension>
-
-  <extension point="org.eclipse.emf.ecore.extension_parser">
-    <parser 
-       type="lqncore" 
-       class="LqnCore.util.LqnCoreResourceFactoryImpl" />
-  </extension>
-
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated lqn -->
       <package
             uri="http://palladiosimulator.org/Solver/LQN/1.0"
-            class="org.palladiosimulator.solver.lqn.lqnPackage"
+            class = "org.palladiosimulator.solver.lqn.lqnPackage"
             genModel="model/lqn.genmodel"/>
    </extension>
 
