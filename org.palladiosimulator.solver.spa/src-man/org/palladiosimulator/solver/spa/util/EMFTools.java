@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.spa.util;
+package org.palladiosimulator.solver.spa.util;
 
 import java.io.File;
 import java.io.IOException;
