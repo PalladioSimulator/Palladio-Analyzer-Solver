@@ -12,7 +12,7 @@
 
   <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
-       uri = "file:/C:/Program%20Files/LQN%20Solvers/lqn-core.xsd" 
+       uri = "http://palladiosimulator.org/Reliability/Sensitivity/1.0" 
        class = "LqnCore.LqnCorePackage"
        genModel = "model/lqn.genmodel" /> 
   </extension>

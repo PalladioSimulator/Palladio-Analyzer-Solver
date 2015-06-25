@@ -122,12 +122,12 @@ public class LqnXmlHandler {
 //			
 //			lqnDir = lqnDir.replaceAll("\\\\", "/");
 //			lqnDir = lqnDir.replaceAll(" ", "%20");
-//			content = content.replaceAll("xmlns=\"file:/C:/Program%20Files/LQN%20Solvers/lqn-core.xsd\"", "xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn.xsd\"");
+//			content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Reliability/Sensitivity/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn.xsd\"");
 //		} else {
-//			content = content.replaceAll("xmlns=\"file:/C:/Program%20Files/LQN%20Solvers/lqn-core.xsd\"", "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
+//			content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Reliability/Sensitivity/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
 //		}
 		
-		content = content.replaceAll("xmlns=\"file:/C:/Program%20Files/LQN%20Solvers/lqn-core.xsd\"", "xsi:noNamespaceSchemaLocation=\"file:/C:/Program Files/LQN Solvers/lqn.xsd\"");
+		content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Reliability/Sensitivity/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:/C:/Program Files/LQN Solvers/lqn.xsd\"");
 		content = content.replaceAll("xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"", "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
 
 		content = content.replaceAll("entryActivityGraph", "entry-activity-graph");
@@ -216,7 +216,7 @@ public class LqnXmlHandler {
 //		} else {
 //			content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"", "xmlns=\"file:///C:/Program%20Files/LQN%20Solvers/lqn-core.xsd\"");
 //		}
-		content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"", "xmlns=\"file:/C:/Program%20Files/LQN%20Solvers/lqn-core.xsd\"");
+		content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"", "xmlns=\"http://palladiosimulator.org/Reliability/Sensitivity/1.0\"");
 		
 		
 		content = content.replaceAll("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"", "xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"");
