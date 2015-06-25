@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="context"
-    nsURI="http://sdq.ipd.uka.de/Context/1.0" nsPrefix="context">
-  <eSubpackages name="computed_usage" nsURI="http://sdq.ipd.uka.de/Context/Usage/1.0"
-      nsPrefix="">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="context" nsURI="http://palladiosimulator.org/Solver/Context/1.0"
+    nsPrefix="org.palladiosimulator.solver">
+  <eSubpackages name="computed_usage" nsURI="http://palladiosimulator.org/Solver/Context/Usage/1.0"
+      nsPrefix="org.palladiosimulator.solver.context">
     <eClassifiers xsi:type="ecore:EClass" name="ComputedUsageContext" eSuperTypes="../../org.palladiosimulator.pcm/model/pcm.ecore#//core/entity/Entity">
       <eStructuralFeatures xsi:type="ecore:EReference" name="branchProbabilities_ComputedUsageContext"
           ordered="false" upperBound="-1" eType="#//computed_usage/BranchProbability"
@@ -72,7 +71,7 @@
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="computed_allocation" nsURI="http://sdq.ipd.uka.de/Context/Allocation/1.0"
-      nsPrefix="">
+      nsPrefix="org.palladiosimulator.solver.context">
     <eClassifiers xsi:type="ecore:EClass" name="ComputedAllocationContext" eSuperTypes="../../org.palladiosimulator.pcm/model/pcm.ecore#//core/entity/Entity">
       <eStructuralFeatures xsi:type="ecore:EReference" name="resourceDemands_ComputedAllocationContext"
           ordered="false" upperBound="-1" eType="#//computed_allocation/ResourceDemand"
@@ -95,8 +94,8 @@
           containment="true"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="aggregatedUsageContext" nsURI="http:///context/aggregatedUsageContext.ecore"
-      nsPrefix="context.aggregatedUsageContext">
+  <eSubpackages name="aggregatedUsageContext" nsURI="http://palladiosimulator.org/Solver/Context/AggregatedUsage/1.0"
+      nsPrefix="org.palladiosimulator.solver.context">
     <eClassifiers xsi:type="ecore:EClass" name="ServiceExecutionContext">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Stores context information for the execution of a service. The information is aggregated on the level of AssembyContexts and aggregates the calls to this service from different other components. "/>

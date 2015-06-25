@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" copyrightText="Copyright 2006, SDQ Group, University Karlsruhe (TH)"
-    modelDirectory="/de.uka.ipd.sdq.context/src" modelPluginID="de.uka.ipd.sdq.context"
-    modelName="Context" importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="6.0"
-    usedGenPackages="../../de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier ../../org.palladiosimulator.pcm/model/pcm.genmodel#//pcm ../../de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../de.uka.ipd.sdq.stoex/model/stoex.genmodel#//stoex ../../de.uka.ipd.sdq.units/model/Units.genmodel#//units">
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    copyrightText="Copyright 2006, SDQ Group, University Karlsruhe (TH)"
+    modelDirectory="/org.palladiosimulator.solver.context/src" editDirectory="/org.palladiosimulator.solver.context.edit/src"
+    editorDirectory="/org.palladiosimulator.solver.context.editor/src" modelPluginID="org.palladiosimulator.solver.context"
+    modelName="Context" editPluginClass="org.palladiosimulator.solver.context.computed_usage.provider.ContextEditPlugin"
+    editorPluginClass="org.palladiosimulator.solver.context.computed_usage.presentation.ContextEditorPlugin"
+    codeFormatting="true" testSuiteClass="org.palladiosimulator.solver.context.computed_usage.tests.ContextAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" editPluginID="org.palladiosimulator.solver.context.edit"
+    editorPluginID="org.palladiosimulator.solver.context.editor" usedGenPackages="../../de.uka.ipd.sdq.identifier/model/identifier.genmodel#//identifier ../../org.palladiosimulator.pcm/model/pcm.genmodel#//pcm ../../de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../de.uka.ipd.sdq.stoex/model/stoex.genmodel#//stoex ../../de.uka.ipd.sdq.units/model/Units.genmodel#//units"
+    cleanup="true">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="DUPLICATE_FEATURES" value="DISCARD"/>
     <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
@@ -23,10 +28,10 @@
     <details key="OPERATION_BODIES" value="IGNORE"/>
     <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
   </genAnnotations>
-  <foreignModel>file:/C:/111/context.uml</foreignModel>
-  <genPackages xsi:type="genmodel:GenPackage" prefix="Context" basePackage="de.uka.ipd.sdq"
+  <foreignModel>context.ecore</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Context" basePackage="org.palladiosimulator.solver"
       disposableProviderFactory="true" ecorePackage="context.ecore#/">
-    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="ComputedUsage" basePackage="de.uka.ipd.sdq.context"
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="ComputedUsage" basePackage="org.palladiosimulator.solver.context"
         disposableProviderFactory="true" ecorePackage="context.ecore#//computed_usage">
       <genClasses xsi:type="genmodel:GenClass" ecoreClass="context.ecore#//computed_usage/ComputedUsageContext">
         <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
@@ -83,7 +88,8 @@
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="ComputedAllocation"
-        basePackage="de.uka.ipd.sdq.context" disposableProviderFactory="true" ecorePackage="context.ecore#//computed_allocation">
+        basePackage="org.palladiosimulator.solver.context" disposableProviderFactory="true"
+        ecorePackage="context.ecore#//computed_allocation">
       <genClasses xsi:type="genmodel:GenClass" ecoreClass="context.ecore#//computed_allocation/ComputedAllocationContext">
         <genFeatures xsi:type="genmodel:GenFeature" property="None" children="true"
             createChild="true" ecoreFeature="ecore:EReference context.ecore#//computed_allocation/ComputedAllocationContext/resourceDemands_ComputedAllocationContext"/>
@@ -104,7 +110,7 @@
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="AggregatedUsageContext"
-        basePackage="de.uka.ipd.sdq.context" resource="XML" disposableProviderFactory="true"
+        basePackage="org.palladiosimulator.solver.context" resource="XML" disposableProviderFactory="true"
         ecorePackage="context.ecore#//aggregatedUsageContext">
       <genClasses xsi:type="genmodel:GenClass" ecoreClass="context.ecore#//aggregatedUsageContext/ServiceExecutionContext">
         <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute context.ecore#//aggregatedUsageContext/ServiceExecutionContext/globalExecutionFrequency"/>
