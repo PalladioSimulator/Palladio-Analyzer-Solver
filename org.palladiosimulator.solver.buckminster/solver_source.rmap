@@ -4,7 +4,7 @@
   <rm:locator pattern="^org\.palladiosimulator\.solver.*" searchPathRef="Solver" failOnError="true"/>
       
   <rm:redirect pattern=".*"
-		href="https://anonymous:anonymous@svnserver.informatik.kit.edu/i43/svn/code/Palladio/Analyzer/Sover/trunk/org.palladiosimulator.solver.buckminster/solver.rmap" />
+		href="https://anonymous:anonymous@svnserver.informatik.kit.edu/i43/svn/code/Palladio/Analyzer/Solver/trunk/org.palladiosimulator.solver.buckminster/solver.rmap" />
 
   <rm:searchPath name="Solver">
     <rm:provider componentTypes="eclipse.feature,osgi.bundle" readerType="svn" source="true">
