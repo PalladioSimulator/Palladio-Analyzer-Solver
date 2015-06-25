@@ -7,9 +7,9 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: LqnCore,
- LqnCore.impl,
- LqnCore.util
+Export-Package: org.palladiosimulator.solver.lqn,
+ org.palladiosimulator.solver.lqn.impl,
+ org.palladiosimulator.solver.lqn.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport

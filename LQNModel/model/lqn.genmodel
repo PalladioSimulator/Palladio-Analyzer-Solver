@@ -9,7 +9,7 @@
     editPluginID="org.palladiosimulator.solver.lqn.edit" editorPluginID="org.palladiosimulator.solver.lqn.editor"
     cleanup="true">
   <foreignModel>LqnCore.ecore</foreignModel>
-  <genPackages prefix="LqnCore" basePackage="org.palladiosimulator.solver.lqn" resource="XML"
+  <genPackages prefix="lqn" basePackage="org.palladiosimulator.solver" resource="XML"
       disposableProviderFactory="true" ecorePackage="LqnCore.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="LqnCore.ecore#//AxisType">
       <genEnumLiterals ecoreEnumLiteral="LqnCore.ecore#//AxisType/linear"/>

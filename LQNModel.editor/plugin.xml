@@ -44,12 +44,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="LqnCore.presentation.LqnCoreModelWizardID"
-            name="%_UI_LqnCoreModelWizard_label"
-            class="LqnCore.presentation.LqnCoreModelWizard"
+            id="org.palladiosimulator.solver.lqn.presentation.lqnModelWizardID"
+            name="%_UI_lqnModelWizard_label"
+            class="org.palladiosimulator.solver.lqn.presentation.lqnModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/LqnCoreModelFile.gif">
-         <description>%_UI_LqnCoreModelWizard_description</description>
+            icon="icons/full/obj16/lqnModelFile.gif">
+         <description>%_UI_lqnModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -57,12 +57,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated lqn -->
       <editor
-            id="LqnCore.presentation.LqnCoreEditorID"
-            name="%_UI_LqnCoreEditor_label"
-            icon="icons/full/obj16/LqnCoreModelFile.gif"
-            extensions="lqncore"
-            class="LqnCore.presentation.LqnCoreEditor"
-            contributorClass="LqnCore.presentation.LqnCoreActionBarContributor">
+            id="org.palladiosimulator.solver.lqn.presentation.lqnEditorID"
+            name="%_UI_lqnEditor_label"
+            icon="icons/full/obj16/lqnModelFile.gif"
+            extensions="lqn"
+            class="org.palladiosimulator.solver.lqn.presentation.lqnEditor"
+            contributorClass="org.palladiosimulator.solver.lqn.presentation.lqnActionBarContributor">
       </editor>
    </extension>
 </plugin>
