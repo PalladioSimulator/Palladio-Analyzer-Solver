@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.palladiosimulator.solver.buckminster"
+      label="Palladio Analytical Solvers Analyzer - Buckminster Feature"
+      version="1.0.0"
+      license-feature="org.palladiosimulator.license"
+      license-feature-version="1.0.0">
+
+   <description url="https://sdqweb.ipd.kit.edu/wiki/Palladio_Solvers_and_Simulation">
+      Contains the contexts and the solver generated when solving usage
+dependencies.
+   </description>
+
+   <includes
+         id="org.palladiosimulator.solver.feature"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.palladiosimulator.solver.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
