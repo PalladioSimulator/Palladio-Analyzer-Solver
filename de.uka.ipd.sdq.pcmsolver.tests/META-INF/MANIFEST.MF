@@ -3,11 +3,11 @@ Bundle-ManifestVersion: 2
 Bundle-Name: PCM Solver Plug-in Tests
 Bundle-SymbolicName: org.palladiosimulator.solver.tests
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: de.uka.ipd.sdq.pcmsolver.tests.Activator
+Bundle-Activator: org.palladiosimulator.solver.tests.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.junit,
  org.palladiosimulator.solver.lqn,
  org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
-Export-Package: de.uka.ipd.sdq.pcmsolver.tests
+Export-Package: org.palladiosimulator.solver.tests
