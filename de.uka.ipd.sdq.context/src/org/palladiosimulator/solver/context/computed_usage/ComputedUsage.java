@@ -27,7 +27,7 @@ public interface ComputedUsage extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -42,7 +42,7 @@ public interface ComputedUsage extends EObject {
      * isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Usage Contexts Computed Usage</em>' containment reference list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsage_UsageContexts_ComputedUsage()
      * @model containment="true" ordered="false"

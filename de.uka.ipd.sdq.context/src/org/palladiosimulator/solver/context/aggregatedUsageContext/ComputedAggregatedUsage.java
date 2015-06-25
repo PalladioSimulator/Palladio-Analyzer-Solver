@@ -30,7 +30,7 @@ public interface ComputedAggregatedUsage extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -46,7 +46,7 @@ public interface ComputedAggregatedUsage extends EObject {
      * containment reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Service Execution Contexts Computed Aggregated Usage</em>'
      *         containment reference list.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getComputedAggregatedUsage_ServiceExecutionContexts_ComputedAggregatedUsage()

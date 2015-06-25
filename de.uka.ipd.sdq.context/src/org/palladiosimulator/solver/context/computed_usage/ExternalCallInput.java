@@ -35,7 +35,7 @@ public interface ExternalCallInput extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -49,7 +49,7 @@ public interface ExternalCallInput extends EObject {
      * reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Parameter Characterisations External Call Input</em>'
      *         containment reference list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getExternalCallInput_ParameterCharacterisations_ExternalCallInput()
@@ -66,7 +66,7 @@ public interface ExternalCallInput extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>External Call Action External Call Input</em>' reference.
      * @see #setExternalCallAction_ExternalCallInput(ExternalCallAction)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getExternalCallInput_ExternalCallAction_ExternalCallInput()
@@ -80,7 +80,7 @@ public interface ExternalCallInput extends EObject {
      * {@link org.palladiosimulator.solver.context.computed_usage.ExternalCallInput#getExternalCallAction_ExternalCallInput
      * <em>External Call Action External Call Input</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>External Call Action External Call Input</em>'
      *            reference.
@@ -99,7 +99,7 @@ public interface ExternalCallInput extends EObject {
      * reference isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Computed Usage Context External Call Input</em>' container
      *         reference.
      * @see #setComputedUsageContext_ExternalCallInput(ComputedUsageContext)
@@ -116,7 +116,7 @@ public interface ExternalCallInput extends EObject {
      * {@link org.palladiosimulator.solver.context.computed_usage.ExternalCallInput#getComputedUsageContext_ExternalCallInput
      * <em>Computed Usage Context External Call Input</em>}' container reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Computed Usage Context External Call Input</em>'
      *            container reference.

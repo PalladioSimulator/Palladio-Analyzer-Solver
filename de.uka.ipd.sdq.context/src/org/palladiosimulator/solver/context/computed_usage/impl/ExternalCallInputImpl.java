@@ -46,7 +46,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -55,7 +55,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      * The cached value of the '{@link #getParameterCharacterisations_ExternalCallInput()
      * <em>Parameter Characterisations External Call Input</em>}' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getParameterCharacterisations_ExternalCallInput()
      * @generated
      * @ordered
@@ -66,7 +66,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
      * The cached value of the '{@link #getExternalCallAction_ExternalCallInput()
      * <em>External Call Action External Call Input</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getExternalCallAction_ExternalCallInput()
      * @generated
      * @ordered
@@ -75,7 +75,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected ExternalCallInputImpl() {
@@ -84,7 +84,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -94,7 +94,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -109,7 +109,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -132,7 +132,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ExternalCallAction basicGetExternalCallAction_ExternalCallInput() {
@@ -141,7 +141,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -158,7 +158,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -171,7 +171,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public NotificationChain basicSetComputedUsageContext_ExternalCallInput(
@@ -183,7 +183,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -217,7 +217,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -234,7 +234,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -252,7 +252,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -268,7 +268,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -289,7 +289,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -313,7 +313,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -334,7 +334,7 @@ public class ExternalCallInputImpl extends EObjectImpl implements ExternalCallIn
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

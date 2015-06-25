@@ -31,7 +31,7 @@ public interface LoopIteration extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -44,7 +44,7 @@ public interface LoopIteration extends EObject {
      * really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Loopaction Loop Iteration</em>' reference.
      * @see #setLoopaction_LoopIteration(AbstractLoopAction)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getLoopIteration_Loopaction_LoopIteration()
@@ -57,7 +57,7 @@ public interface LoopIteration extends EObject {
      * Sets the value of the '
      * {@link org.palladiosimulator.solver.context.computed_usage.LoopIteration#getLoopaction_LoopIteration
      * <em>Loopaction Loop Iteration</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Loopaction Loop Iteration</em>' reference.
      * @see #getLoopaction_LoopIteration()
@@ -73,7 +73,7 @@ public interface LoopIteration extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Specification Loop Iteration</em>' containment reference.
      * @see #setSpecification_LoopIteration(PCMRandomVariable)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getLoopIteration_Specification_LoopIteration()
@@ -87,7 +87,7 @@ public interface LoopIteration extends EObject {
      * {@link org.palladiosimulator.solver.context.computed_usage.LoopIteration#getSpecification_LoopIteration
      * <em>Specification Loop Iteration</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Specification Loop Iteration</em>' containment
      *            reference.

@@ -70,7 +70,7 @@
           containment="true"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="computed_allocation" nsURI="http://sdq.ipd.uka.de/Context/Allocation/1.0"
+  <eSubpackages name="computed_allocation" nsURI="http://palladiosimulator.org/Solver/Context/Allocation/1.0"
       nsPrefix="org.palladiosimulator.solver.context">
     <eClassifiers xsi:type="ecore:EClass" name="ComputedAllocationContext" eSuperTypes="../../org.palladiosimulator.pcm/model/pcm.ecore#//core/entity/Entity">
       <eStructuralFeatures xsi:type="ecore:EReference" name="resourceDemands_ComputedAllocationContext"

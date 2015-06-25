@@ -17,21 +17,21 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecut
 
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!-- end-user-doc -->
- * 
+ *
  * @generated
  */
 public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements AggregatedUsageContextFactory {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * Creates the default factory implementation. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static AggregatedUsageContextFactory init() {
@@ -49,7 +49,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * Creates an instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AggregatedUsageContextFactoryImpl() {
@@ -58,7 +58,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -79,7 +79,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -90,7 +90,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -101,7 +101,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -112,7 +112,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -123,7 +123,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -133,7 +133,7 @@ public class AggregatedUsageContextFactoryImpl extends EFactoryImpl implements A
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @deprecated
      * @generated
      */

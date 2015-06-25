@@ -44,7 +44,7 @@ public interface AggregatedCommunication extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -57,7 +57,7 @@ public interface AggregatedCommunication extends EObject {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Average Message Size</em>' attribute.
      * @see #setAverageMessageSize(double)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getAggregatedCommunication_AverageMessageSize()
@@ -70,7 +70,7 @@ public interface AggregatedCommunication extends EObject {
      * Sets the value of the '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getAverageMessageSize
      * <em>Average Message Size</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Average Message Size</em>' attribute.
      * @see #getAverageMessageSize()
@@ -82,7 +82,7 @@ public interface AggregatedCommunication extends EObject {
      * Returns the value of the '<em><b>Average Message Frequency</b></em>' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> Average message frequency
      * of this communication when executing a UsageScenario. <!-- end-model-doc -->
-     * 
+     *
      * @return the value of the '<em>Average Message Frequency</em>' attribute.
      * @see #setAverageMessageFrequency(double)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getAggregatedCommunication_AverageMessageFrequency()
@@ -95,7 +95,7 @@ public interface AggregatedCommunication extends EObject {
      * Sets the value of the '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getAverageMessageFrequency
      * <em>Average Message Frequency</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Average Message Frequency</em>' attribute.
      * @see #getAverageMessageFrequency()
@@ -110,7 +110,7 @@ public interface AggregatedCommunication extends EObject {
      * <em>Received Aggregated Communication Aggregated Communication</em>}'. <!-- begin-user-doc
      * --> <!-- end-user-doc --> <!-- begin-model-doc --> The receiver of this communication. <!--
      * end-model-doc -->
-     * 
+     *
      * @return the value of the '<em>Receiver Aggregated Communication</em>' reference.
      * @see #setReceiver_AggregatedCommunication(ServiceExecutionContext)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getAggregatedCommunication_Receiver_AggregatedCommunication()
@@ -126,7 +126,7 @@ public interface AggregatedCommunication extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getReceiver_AggregatedCommunication
      * <em>Receiver Aggregated Communication</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Receiver Aggregated Communication</em>' reference.
      * @see #getReceiver_AggregatedCommunication()
@@ -140,7 +140,7 @@ public interface AggregatedCommunication extends EObject {
      * reference. <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> The
      * usedCommunicationLinkResourceSpecification is null if this is a local communication. <!--
      * end-model-doc -->
-     * 
+     *
      * @return the value of the '
      *         <em>Used Communication Link Resource Specification Aggregated Communication</em>'
      *         reference.
@@ -156,7 +156,7 @@ public interface AggregatedCommunication extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getUsedCommunicationLinkResourceSpecification_AggregatedCommunication
      * <em>Used Communication Link Resource Specification Aggregated Communication</em>}' reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '
      *            <em>Used Communication Link Resource Specification Aggregated Communication</em>'

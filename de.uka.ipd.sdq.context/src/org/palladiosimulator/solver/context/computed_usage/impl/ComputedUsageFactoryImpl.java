@@ -21,21 +21,21 @@ import org.palladiosimulator.solver.context.computed_usage.Output;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!-- end-user-doc -->
- * 
+ *
  * @generated
  */
 public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUsageFactory {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * Creates the default factory implementation. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static ComputedUsageFactory init() {
@@ -53,7 +53,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * Creates an instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ComputedUsageFactoryImpl() {
@@ -62,7 +62,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -91,7 +91,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -102,7 +102,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -113,7 +113,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -124,7 +124,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -135,7 +135,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -146,7 +146,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -157,7 +157,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -168,7 +168,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -179,7 +179,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -189,7 +189,7 @@ public class ComputedUsageFactoryImpl extends EFactoryImpl implements ComputedUs
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @deprecated
      * @generated
      */

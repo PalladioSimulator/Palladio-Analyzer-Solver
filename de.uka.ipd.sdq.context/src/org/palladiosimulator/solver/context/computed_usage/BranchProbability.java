@@ -29,7 +29,7 @@ public interface BranchProbability extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -41,7 +41,7 @@ public interface BranchProbability extends EObject {
      * more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Probability</em>' attribute.
      * @see #setProbability(double)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getBranchProbability_Probability()
@@ -54,7 +54,7 @@ public interface BranchProbability extends EObject {
      * Sets the value of the '
      * {@link org.palladiosimulator.solver.context.computed_usage.BranchProbability#getProbability
      * <em>Probability</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Probability</em>' attribute.
      * @see #getProbability()
@@ -70,7 +70,7 @@ public interface BranchProbability extends EObject {
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Branchtransition Branch Probability</em>' reference.
      * @see #setBranchtransition_BranchProbability(AbstractBranchTransition)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getBranchProbability_Branchtransition_BranchProbability()
@@ -84,7 +84,7 @@ public interface BranchProbability extends EObject {
      * {@link org.palladiosimulator.solver.context.computed_usage.BranchProbability#getBranchtransition_BranchProbability
      * <em>Branchtransition Branch Probability</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Branchtransition Branch Probability</em>' reference.
      * @see #getBranchtransition_BranchProbability()

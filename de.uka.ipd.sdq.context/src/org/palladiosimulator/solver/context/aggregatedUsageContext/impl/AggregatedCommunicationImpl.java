@@ -42,7 +42,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -50,7 +50,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
     /**
      * The default value of the '{@link #getAverageMessageSize() <em>Average Message Size</em>}'
      * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getAverageMessageSize()
      * @generated
      * @ordered
@@ -60,7 +60,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
     /**
      * The cached value of the '{@link #getAverageMessageSize() <em>Average Message Size</em>}'
      * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getAverageMessageSize()
      * @generated
      * @ordered
@@ -70,7 +70,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
     /**
      * The default value of the '{@link #getAverageMessageFrequency()
      * <em>Average Message Frequency</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getAverageMessageFrequency()
      * @generated
      * @ordered
@@ -80,7 +80,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
     /**
      * The cached value of the '{@link #getAverageMessageFrequency()
      * <em>Average Message Frequency</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getAverageMessageFrequency()
      * @generated
      * @ordered
@@ -91,7 +91,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      * The cached value of the '{@link #getReceiver_AggregatedCommunication()
      * <em>Receiver Aggregated Communication</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getReceiver_AggregatedCommunication()
      * @generated
      * @ordered
@@ -103,7 +103,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
      * {@link #getUsedCommunicationLinkResourceSpecification_AggregatedCommunication()
      * <em>Used Communication Link Resource Specification Aggregated Communication</em>}' reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getUsedCommunicationLinkResourceSpecification_AggregatedCommunication()
      * @generated
      * @ordered
@@ -112,7 +112,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected AggregatedCommunicationImpl() {
@@ -121,7 +121,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -131,7 +131,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -141,7 +141,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -157,7 +157,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -167,7 +167,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -183,7 +183,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -205,7 +205,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ServiceExecutionContext basicGetReceiver_AggregatedCommunication() {
@@ -214,7 +214,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public NotificationChain basicSetReceiver_AggregatedCommunication(
@@ -236,7 +236,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -266,7 +266,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -290,7 +290,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public CommunicationLinkResourceSpecification basicGetUsedCommunicationLinkResourceSpecification_AggregatedCommunication() {
@@ -299,7 +299,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -317,7 +317,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -336,7 +336,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -351,7 +351,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -377,7 +377,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -402,7 +402,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -427,7 +427,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -447,7 +447,7 @@ public class AggregatedCommunicationImpl extends EObjectImpl implements Aggregat
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

@@ -16,7 +16,7 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecut
 /**
  * <!-- begin-user-doc --> The <b>Adapter Factory</b> for the model. It provides an adapter
  * <code>createXXX</code> method for each class of the model. <!-- end-user-doc -->
- * 
+ *
  * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage
  * @generated
  */
@@ -24,21 +24,21 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * The cached model package. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected static AggregatedUsageContextPackage modelPackage;
 
     /**
      * Creates an instance of the adapter factory. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AggregatedUsageContextAdapterFactory() {
@@ -51,7 +51,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
      * Returns whether this factory is applicable for the type of the object. <!-- begin-user-doc
      * --> This implementation returns <code>true</code> if the object is either the model's package
      * or is an instance object of the model. <!-- end-user-doc -->
-     * 
+     *
      * @return whether this factory is applicable for the type of the object.
      * @generated
      */
@@ -69,7 +69,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
     /**
      * The switch that delegates to the <code>createXXX</code> methods. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected AggregatedUsageContextSwitch<Adapter> modelSwitch = new AggregatedUsageContextSwitch<Adapter>() {
@@ -102,7 +102,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
 
     /**
      * Creates an adapter for the <code>target</code>. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @param target
      *            the object to adapt.
      * @return the adapter for the <code>target</code>.
@@ -119,7 +119,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
      * <em>Service Execution Context</em>}'. <!-- begin-user-doc --> This default implementation
      * returns null so that we can easily ignore cases; it's useful to ignore a case when
      * inheritance will catch all the cases anyway. <!-- end-user-doc -->
-     * 
+     *
      * @return the new adapter.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext
      * @generated
@@ -134,7 +134,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
      * <em>Aggregated Resource Demand</em>}'. <!-- begin-user-doc --> This default implementation
      * returns null so that we can easily ignore cases; it's useful to ignore a case when
      * inheritance will catch all the cases anyway. <!-- end-user-doc -->
-     * 
+     *
      * @return the new adapter.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand
      * @generated
@@ -149,7 +149,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
      * <em>Aggregated Communication</em>}'. <!-- begin-user-doc --> This default implementation
      * returns null so that we can easily ignore cases; it's useful to ignore a case when
      * inheritance will catch all the cases anyway. <!-- end-user-doc -->
-     * 
+     *
      * @return the new adapter.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication
      * @generated
@@ -164,7 +164,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
      * <em>Computed Aggregated Usage</em>}'. <!-- begin-user-doc --> This default implementation
      * returns null so that we can easily ignore cases; it's useful to ignore a case when
      * inheritance will catch all the cases anyway. <!-- end-user-doc -->
-     * 
+     *
      * @return the new adapter.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage
      * @generated
@@ -176,7 +176,7 @@ public class AggregatedUsageContextAdapterFactory extends AdapterFactoryImpl {
     /**
      * Creates a new adapter for the default case. <!-- begin-user-doc --> This default
      * implementation returns null. <!-- end-user-doc -->
-     * 
+     *
      * @return the new adapter.
      * @generated
      */

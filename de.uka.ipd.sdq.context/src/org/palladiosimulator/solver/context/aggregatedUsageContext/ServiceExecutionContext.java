@@ -52,7 +52,7 @@ public interface ServiceExecutionContext extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -61,7 +61,7 @@ public interface ServiceExecutionContext extends EObject {
      * Returns the value of the '<em><b>Global Execution Frequency</b></em>' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> Average frequency of
      * executing this service when executing a UsageScenario. <!-- end-model-doc -->
-     * 
+     *
      * @return the value of the '<em>Global Execution Frequency</em>' attribute.
      * @see #setGlobalExecutionFrequency(double)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext_GlobalExecutionFrequency()
@@ -75,7 +75,7 @@ public interface ServiceExecutionContext extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getGlobalExecutionFrequency
      * <em>Global Execution Frequency</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Global Execution Frequency</em>' attribute.
      * @see #getGlobalExecutionFrequency()
@@ -91,7 +91,7 @@ public interface ServiceExecutionContext extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Allocation Context Service Execution Context</em>' reference.
      * @see #setAllocationContext_ServiceExecutionContext(AllocationContext)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext_AllocationContext_ServiceExecutionContext()
@@ -105,7 +105,7 @@ public interface ServiceExecutionContext extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getAllocationContext_ServiceExecutionContext
      * <em>Allocation Context Service Execution Context</em>}' reference. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Allocation Context Service Execution Context</em>'
      *            reference.
@@ -122,7 +122,7 @@ public interface ServiceExecutionContext extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Described SEFF Service Execution Context</em>' reference.
      * @see #setDescribedSEFF_ServiceExecutionContext(ResourceDemandingSEFF)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext_DescribedSEFF_ServiceExecutionContext()
@@ -136,7 +136,7 @@ public interface ServiceExecutionContext extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getDescribedSEFF_ServiceExecutionContext
      * <em>Described SEFF Service Execution Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Described SEFF Service Execution Context</em>'
      *            reference.
@@ -156,7 +156,7 @@ public interface ServiceExecutionContext extends EObject {
      * containment reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Aggregated Resource Demands Service Execution Context</em>'
      *         containment reference list.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext_AggregatedResourceDemands_ServiceExecutionContext()
@@ -173,7 +173,7 @@ public interface ServiceExecutionContext extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Usage Scenario Service Execution Context</em>' reference.
      * @see #setUsageScenario_ServiceExecutionContext(UsageScenario)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext_UsageScenario_ServiceExecutionContext()
@@ -187,7 +187,7 @@ public interface ServiceExecutionContext extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getUsageScenario_ServiceExecutionContext
      * <em>Usage Scenario Service Execution Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Usage Scenario Service Execution Context</em>'
      *            reference.
@@ -203,7 +203,7 @@ public interface ServiceExecutionContext extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication}.
      * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> The
      * AggregatedCommunication in which this service is the sender. <!-- end-model-doc -->
-     * 
+     *
      * @return the value of the '<em>Sent Aggregated Communications Service Execution Context</em>'
      *         containment reference list.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext_SentAggregatedCommunications_ServiceExecutionContext()
@@ -222,7 +222,7 @@ public interface ServiceExecutionContext extends EObject {
      * <em>Receiver Aggregated Communication</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      * <!-- begin-model-doc --> The AggregatedCommunication in which this service is the receiver.
      * <!-- end-model-doc -->
-     * 
+     *
      * @return the value of the '<em>Received Aggregated Communication Aggregated Communication</em>
      *         ' reference list.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getServiceExecutionContext_ReceivedAggregatedCommunication_AggregatedCommunication()

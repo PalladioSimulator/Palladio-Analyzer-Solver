@@ -34,7 +34,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -43,7 +43,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
      * The default value of the '{@link #getAggregatedResourceDemand()
      * <em>Aggregated Resource Demand</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @see #getAggregatedResourceDemand()
      * @generated
      * @ordered
@@ -54,7 +54,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
      * The cached value of the '{@link #getAggregatedResourceDemand()
      * <em>Aggregated Resource Demand</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @see #getAggregatedResourceDemand()
      * @generated
      * @ordered
@@ -65,7 +65,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
      * The cached value of the '{@link #getResourceType_AggregatedResourceDemand()
      * <em>Resource Type Aggregated Resource Demand</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getResourceType_AggregatedResourceDemand()
      * @generated
      * @ordered
@@ -74,7 +74,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected AggregatedResourceDemandImpl() {
@@ -83,7 +83,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -93,7 +93,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -103,7 +103,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -119,7 +119,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -142,7 +142,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ResourceType basicGetResourceType_AggregatedResourceDemand() {
@@ -151,7 +151,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -167,7 +167,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -186,7 +186,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -204,7 +204,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -222,7 +222,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -238,7 +238,7 @@ public class AggregatedResourceDemandImpl extends EObjectImpl implements Aggrega
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

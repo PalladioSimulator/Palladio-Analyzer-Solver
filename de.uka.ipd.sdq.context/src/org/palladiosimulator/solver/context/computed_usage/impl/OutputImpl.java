@@ -34,7 +34,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -43,7 +43,7 @@ public class OutputImpl extends EObjectImpl implements Output {
      * The cached value of the '{@link #getParameterCharacterisations_Output()
      * <em>Parameter Characterisations Output</em>}' containment reference list. <!-- begin-user-doc
      * --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getParameterCharacterisations_Output()
      * @generated
      * @ordered
@@ -52,7 +52,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected OutputImpl() {
@@ -61,7 +61,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -71,7 +71,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -85,7 +85,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -100,7 +100,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -114,7 +114,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -131,7 +131,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -146,7 +146,7 @@ public class OutputImpl extends EObjectImpl implements Output {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

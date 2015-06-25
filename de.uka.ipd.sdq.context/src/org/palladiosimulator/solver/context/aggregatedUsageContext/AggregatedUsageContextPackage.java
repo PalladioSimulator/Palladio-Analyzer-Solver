@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EReference;
  * <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * 
+ *
  * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextFactory
  * @model kind="package"
  * @generated
@@ -27,35 +27,35 @@ public interface AggregatedUsageContextPackage extends EPackage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * The package name. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String eNAME = "aggregatedUsageContext";
 
     /**
      * The package namespace URI. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String eNS_URI = "http://palladiosimulator.org/Solver/Context/AggregatedUsage/1.0";
 
     /**
      * The package namespace name. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String eNS_PREFIX = "org.palladiosimulator.solver.context";
 
     /**
      * The singleton instance of the package. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     AggregatedUsageContextPackage eINSTANCE = org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl
@@ -65,7 +65,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * The meta object id for the '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl
      * <em>Service Execution Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
      *      ServiceExecutionContextImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getServiceExecutionContext()
@@ -76,7 +76,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Global Execution Frequency</b></em>' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -85,7 +85,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Allocation Context Service Execution Context</b></em>'
      * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -94,7 +94,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Described SEFF Service Execution Context</b></em>' reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -103,7 +103,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Aggregated Resource Demands Service Execution Context</b></em>
      * ' containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -112,7 +112,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Usage Scenario Service Execution Context</b></em>' reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -122,7 +122,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * The feature id for the '
      * <em><b>Sent Aggregated Communications Service Execution Context</b></em>' containment
      * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -132,7 +132,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * The feature id for the '
      * <em><b>Received Aggregated Communication Aggregated Communication</b></em>' reference list.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -141,7 +141,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Service Execution Context</em>' class. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -151,7 +151,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * The meta object id for the '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedResourceDemandImpl
      * <em>Aggregated Resource Demand</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
      *      AggregatedResourceDemandImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getAggregatedResourceDemand()
@@ -162,7 +162,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Aggregated Resource Demand</b></em>' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -171,7 +171,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Resource Type Aggregated Resource Demand</b></em>' reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -180,7 +180,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Aggregated Resource Demand</em>' class. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -190,7 +190,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * The meta object id for the '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl
      * <em>Aggregated Communication</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
      *      AggregatedCommunicationImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getAggregatedCommunication()
@@ -201,7 +201,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Average Message Size</b></em>' attribute. <!-- begin-user-doc
      * --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -210,7 +210,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Average Message Frequency</b></em>' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -219,7 +219,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Receiver Aggregated Communication</b></em>' reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -229,7 +229,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * The feature id for the '
      * <em><b>Used Communication Link Resource Specification Aggregated Communication</b></em>'
      * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -238,7 +238,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Aggregated Communication</em>' class. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -248,7 +248,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * The meta object id for the '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ComputedAggregatedUsageImpl
      * <em>Computed Aggregated Usage</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
      *      ComputedAggregatedUsageImpl
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getComputedAggregatedUsage()
@@ -259,7 +259,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Service Execution Contexts Computed Aggregated Usage</b></em>'
      * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -268,7 +268,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Computed Aggregated Usage</em>' class. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -278,7 +278,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for class '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext
      * <em>Service Execution Context</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for class '<em>Service Execution Context</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext
      * @generated
@@ -289,7 +289,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for the attribute '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getGlobalExecutionFrequency
      * <em>Global Execution Frequency</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the attribute '<em>Global Execution Frequency</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getGlobalExecutionFrequency()
      * @see #getServiceExecutionContext()
@@ -302,7 +302,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getAllocationContext_ServiceExecutionContext
      * <em>Allocation Context Service Execution Context</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '
      *         <em>Allocation Context Service Execution Context</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getAllocationContext_ServiceExecutionContext()
@@ -316,7 +316,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getDescribedSEFF_ServiceExecutionContext
      * <em>Described SEFF Service Execution Context</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '<em>Described SEFF Service Execution Context</em>
      *         '.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getDescribedSEFF_ServiceExecutionContext()
@@ -330,7 +330,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getAggregatedResourceDemands_ServiceExecutionContext
      * <em>Aggregated Resource Demands Service Execution Context</em>}'. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the containment reference list '
      *         <em>Aggregated Resource Demands Service Execution Context</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getAggregatedResourceDemands_ServiceExecutionContext()
@@ -344,7 +344,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getUsageScenario_ServiceExecutionContext
      * <em>Usage Scenario Service Execution Context</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '<em>Usage Scenario Service Execution Context</em>
      *         '.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getUsageScenario_ServiceExecutionContext()
@@ -358,7 +358,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getSentAggregatedCommunications_ServiceExecutionContext
      * <em>Sent Aggregated Communications Service Execution Context</em>}'. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the containment reference list '
      *         <em>Sent Aggregated Communications Service Execution Context</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getSentAggregatedCommunications_ServiceExecutionContext()
@@ -372,7 +372,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getReceivedAggregatedCommunication_AggregatedCommunication
      * <em>Received Aggregated Communication Aggregated Communication</em>}'. <!-- begin-user-doc
      * --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference list '
      *         <em>Received Aggregated Communication Aggregated Communication</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ServiceExecutionContext#getReceivedAggregatedCommunication_AggregatedCommunication()
@@ -385,7 +385,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for class '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand
      * <em>Aggregated Resource Demand</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for class '<em>Aggregated Resource Demand</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand
      * @generated
@@ -396,7 +396,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for the attribute '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getAggregatedResourceDemand
      * <em>Aggregated Resource Demand</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the attribute '<em>Aggregated Resource Demand</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getAggregatedResourceDemand()
      * @see #getAggregatedResourceDemand()
@@ -409,7 +409,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getResourceType_AggregatedResourceDemand
      * <em>Resource Type Aggregated Resource Demand</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '<em>Resource Type Aggregated Resource Demand</em>
      *         '.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getResourceType_AggregatedResourceDemand()
@@ -422,7 +422,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for class '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication
      * <em>Aggregated Communication</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for class '<em>Aggregated Communication</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication
      * @generated
@@ -433,7 +433,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for the attribute '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getAverageMessageSize
      * <em>Average Message Size</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the attribute '<em>Average Message Size</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getAverageMessageSize()
      * @see #getAggregatedCommunication()
@@ -445,7 +445,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for the attribute '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getAverageMessageFrequency
      * <em>Average Message Frequency</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the attribute '<em>Average Message Frequency</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getAverageMessageFrequency()
      * @see #getAggregatedCommunication()
@@ -457,7 +457,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for the reference '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getReceiver_AggregatedCommunication
      * <em>Receiver Aggregated Communication</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '<em>Receiver Aggregated Communication</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getReceiver_AggregatedCommunication()
      * @see #getAggregatedCommunication()
@@ -470,7 +470,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getUsedCommunicationLinkResourceSpecification_AggregatedCommunication
      * <em>Used Communication Link Resource Specification Aggregated Communication</em>}'. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '
      *         <em>Used Communication Link Resource Specification Aggregated Communication</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedCommunication#getUsedCommunicationLinkResourceSpecification_AggregatedCommunication()
@@ -483,7 +483,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * Returns the meta object for class '
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage
      * <em>Computed Aggregated Usage</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for class '<em>Computed Aggregated Usage</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage
      * @generated
@@ -495,7 +495,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage#getServiceExecutionContexts_ComputedAggregatedUsage
      * <em>Service Execution Contexts Computed Aggregated Usage</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the containment reference list '
      *         <em>Service Execution Contexts Computed Aggregated Usage</em>'.
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage#getServiceExecutionContexts_ComputedAggregatedUsage()
@@ -507,7 +507,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
     /**
      * Returns the factory that creates the instances of the model. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the factory that creates the instances of the model.
      * @generated
      */
@@ -522,7 +522,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
      * <li>and each data type</li>
      * </ul>
      * <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     interface Literals {
@@ -531,7 +531,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ServiceExecutionContextImpl
          * <em>Service Execution Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
          *      ServiceExecutionContextImpl
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getServiceExecutionContext()
@@ -542,7 +542,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Global Execution Frequency</b></em>' attribute
          * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute SERVICE_EXECUTION_CONTEXT__GLOBAL_EXECUTION_FREQUENCY = eINSTANCE
@@ -552,7 +552,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Allocation Context Service Execution Context</b></em>' reference feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference SERVICE_EXECUTION_CONTEXT__ALLOCATION_CONTEXT_SERVICE_EXECUTION_CONTEXT = eINSTANCE
@@ -561,7 +561,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Described SEFF Service Execution Context</b></em>
          * ' reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference SERVICE_EXECUTION_CONTEXT__DESCRIBED_SEFF_SERVICE_EXECUTION_CONTEXT = eINSTANCE
@@ -571,7 +571,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Aggregated Resource Demands Service Execution Context</b></em>' containment
          * reference list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference SERVICE_EXECUTION_CONTEXT__AGGREGATED_RESOURCE_DEMANDS_SERVICE_EXECUTION_CONTEXT = eINSTANCE
@@ -580,7 +580,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Usage Scenario Service Execution Context</b></em>
          * ' reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference SERVICE_EXECUTION_CONTEXT__USAGE_SCENARIO_SERVICE_EXECUTION_CONTEXT = eINSTANCE
@@ -590,7 +590,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Sent Aggregated Communications Service Execution Context</b></em>' containment
          * reference list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference SERVICE_EXECUTION_CONTEXT__SENT_AGGREGATED_COMMUNICATIONS_SERVICE_EXECUTION_CONTEXT = eINSTANCE
@@ -600,7 +600,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Received Aggregated Communication Aggregated Communication</b></em>' reference
          * list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference SERVICE_EXECUTION_CONTEXT__RECEIVED_AGGREGATED_COMMUNICATION_AGGREGATED_COMMUNICATION = eINSTANCE
@@ -611,7 +611,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedResourceDemandImpl
          * <em>Aggregated Resource Demand</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc
          * -->
-         * 
+         *
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
          *      AggregatedResourceDemandImpl
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getAggregatedResourceDemand()
@@ -622,7 +622,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Aggregated Resource Demand</b></em>' attribute
          * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute AGGREGATED_RESOURCE_DEMAND__AGGREGATED_RESOURCE_DEMAND = eINSTANCE
@@ -631,7 +631,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Resource Type Aggregated Resource Demand</b></em>
          * ' reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference AGGREGATED_RESOURCE_DEMAND__RESOURCE_TYPE_AGGREGATED_RESOURCE_DEMAND = eINSTANCE
@@ -641,7 +641,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedCommunicationImpl
          * <em>Aggregated Communication</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
          *      AggregatedCommunicationImpl
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getAggregatedCommunication()
@@ -652,7 +652,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Average Message Size</b></em>' attribute feature.
          * <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_SIZE = eINSTANCE
@@ -661,7 +661,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Average Message Frequency</b></em>' attribute
          * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute AGGREGATED_COMMUNICATION__AVERAGE_MESSAGE_FREQUENCY = eINSTANCE
@@ -670,7 +670,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Receiver Aggregated Communication</b></em>'
          * reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference AGGREGATED_COMMUNICATION__RECEIVER_AGGREGATED_COMMUNICATION = eINSTANCE
@@ -680,7 +680,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Used Communication Link Resource Specification Aggregated Communication</b></em>'
          * reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference AGGREGATED_COMMUNICATION__USED_COMMUNICATION_LINK_RESOURCE_SPECIFICATION_AGGREGATED_COMMUNICATION = eINSTANCE
@@ -690,7 +690,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.impl.ComputedAggregatedUsageImpl
          * <em>Computed Aggregated Usage</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.
          *      ComputedAggregatedUsageImpl
          * @see org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextPackageImpl#getComputedAggregatedUsage()
@@ -702,7 +702,7 @@ public interface AggregatedUsageContextPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Service Execution Contexts Computed Aggregated Usage</b></em>' containment
          * reference list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference COMPUTED_AGGREGATED_USAGE__SERVICE_EXECUTION_CONTEXTS_COMPUTED_AGGREGATED_USAGE = eINSTANCE

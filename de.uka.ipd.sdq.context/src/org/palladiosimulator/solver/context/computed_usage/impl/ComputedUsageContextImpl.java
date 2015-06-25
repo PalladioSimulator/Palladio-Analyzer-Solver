@@ -62,7 +62,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -71,7 +71,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      * The cached value of the '{@link #getBranchProbabilities_ComputedUsageContext()
      * <em>Branch Probabilities Computed Usage Context</em>}' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getBranchProbabilities_ComputedUsageContext()
      * @generated
      * @ordered
@@ -82,7 +82,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      * The cached value of the '{@link #getLoopiterations_ComputedUsageContext()
      * <em>Loopiterations Computed Usage Context</em>}' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getLoopiterations_ComputedUsageContext()
      * @generated
      * @ordered
@@ -93,7 +93,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      * The cached value of the '{@link #getAssemblyContext_ComputedUsageContext()
      * <em>Assembly Context Computed Usage Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getAssemblyContext_ComputedUsageContext()
      * @generated
      * @ordered
@@ -104,7 +104,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      * The cached value of the '{@link #getInput_ComputedUsageContext()
      * <em>Input Computed Usage Context</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getInput_ComputedUsageContext()
      * @generated
      * @ordered
@@ -115,7 +115,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      * The cached value of the '{@link #getExternalCallOutput_ComputedUsageContext()
      * <em>External Call Output Computed Usage Context</em>}' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getExternalCallOutput_ComputedUsageContext()
      * @generated
      * @ordered
@@ -126,7 +126,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      * The cached value of the '{@link #getExternalCallInput_ComputedUsageContext()
      * <em>External Call Input Computed Usage Context</em>}' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getExternalCallInput_ComputedUsageContext()
      * @generated
      * @ordered
@@ -137,7 +137,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
      * The cached value of the '{@link #getOutput_ComputedUsageContext()
      * <em>Output Computed Usage Context</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getOutput_ComputedUsageContext()
      * @generated
      * @ordered
@@ -146,7 +146,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected ComputedUsageContextImpl() {
@@ -155,7 +155,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -165,7 +165,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -180,7 +180,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -194,7 +194,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -217,7 +217,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AssemblyContext basicGetAssemblyContext_ComputedUsageContext() {
@@ -226,7 +226,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -242,7 +242,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -252,7 +252,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public NotificationChain basicSetInput_ComputedUsageContext(final Input newInput_ComputedUsageContext,
@@ -274,7 +274,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -306,7 +306,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -321,7 +321,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -337,7 +337,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -347,7 +347,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public NotificationChain basicSetOutput_ComputedUsageContext(final Output newOutput_ComputedUsageContext,
@@ -369,7 +369,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -401,7 +401,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -418,7 +418,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -443,7 +443,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -472,7 +472,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -512,7 +512,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -545,7 +545,7 @@ public class ComputedUsageContextImpl extends EntityImpl implements ComputedUsag
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

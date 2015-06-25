@@ -36,7 +36,7 @@ public interface ComputedAllocationContext extends EObject, Entity {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -51,7 +51,7 @@ public interface ComputedAllocationContext extends EObject, Entity {
      * reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Resource Demands Computed Allocation Context</em>' containment
      *         reference list.
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getComputedAllocationContext_ResourceDemands_ComputedAllocationContext()
@@ -68,7 +68,7 @@ public interface ComputedAllocationContext extends EObject, Entity {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Usage Context Computed Allocation Context</em>' reference.
      * @see #setUsageContext_ComputedAllocationContext(ComputedUsageContext)
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getComputedAllocationContext_UsageContext_ComputedAllocationContext()
@@ -82,7 +82,7 @@ public interface ComputedAllocationContext extends EObject, Entity {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getUsageContext_ComputedAllocationContext
      * <em>Usage Context Computed Allocation Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Usage Context Computed Allocation Context</em>'
      *            reference.
@@ -99,7 +99,7 @@ public interface ComputedAllocationContext extends EObject, Entity {
      * isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Allocation Context Computed Allocation Context</em>' reference.
      * @see #setAllocationContext_ComputedAllocationContext(AllocationContext)
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getComputedAllocationContext_AllocationContext_ComputedAllocationContext()
@@ -113,7 +113,7 @@ public interface ComputedAllocationContext extends EObject, Entity {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getAllocationContext_ComputedAllocationContext
      * <em>Allocation Context Computed Allocation Context</em>}' reference. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Allocation Context Computed Allocation Context</em>'
      *            reference.

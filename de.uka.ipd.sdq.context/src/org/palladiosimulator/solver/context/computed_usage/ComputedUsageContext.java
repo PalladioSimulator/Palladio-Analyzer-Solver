@@ -47,7 +47,7 @@ public interface ComputedUsageContext extends EObject, Entity {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -62,7 +62,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Branch Probabilities Computed Usage Context</em>' containment
      *         reference list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext_BranchProbabilities_ComputedUsageContext()
@@ -81,7 +81,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Loopiterations Computed Usage Context</em>' containment
      *         reference list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext_Loopiterations_ComputedUsageContext()
@@ -98,7 +98,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Assembly Context Computed Usage Context</em>' reference.
      * @see #setAssemblyContext_ComputedUsageContext(AssemblyContext)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext_AssemblyContext_ComputedUsageContext()
@@ -112,7 +112,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext#getAssemblyContext_ComputedUsageContext
      * <em>Assembly Context Computed Usage Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Assembly Context Computed Usage Context</em>' reference.
      * @see #getAssemblyContext_ComputedUsageContext()
@@ -128,7 +128,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Input Computed Usage Context</em>' containment reference.
      * @see #setInput_ComputedUsageContext(Input)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext_Input_ComputedUsageContext()
@@ -142,7 +142,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext#getInput_ComputedUsageContext
      * <em>Input Computed Usage Context</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Input Computed Usage Context</em>' containment
      *            reference.
@@ -161,7 +161,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>External Call Output Computed Usage Context</em>' containment
      *         reference list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext_ExternalCallOutput_ComputedUsageContext()
@@ -182,7 +182,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>External Call Input Computed Usage Context</em>' containment
      *         reference list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext_ExternalCallInput_ComputedUsageContext()
@@ -200,7 +200,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Output Computed Usage Context</em>' containment reference.
      * @see #setOutput_ComputedUsageContext(Output)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getComputedUsageContext_Output_ComputedUsageContext()
@@ -214,7 +214,7 @@ public interface ComputedUsageContext extends EObject, Entity {
      * {@link org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext#getOutput_ComputedUsageContext
      * <em>Output Computed Usage Context</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Output Computed Usage Context</em>' containment
      *            reference.

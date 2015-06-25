@@ -34,7 +34,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -42,7 +42,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
     /**
      * The default value of the '{@link #getProbability() <em>Probability</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getProbability()
      * @generated
      * @ordered
@@ -52,7 +52,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
     /**
      * The cached value of the '{@link #getProbability() <em>Probability</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getProbability()
      * @generated
      * @ordered
@@ -63,7 +63,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
      * The cached value of the '{@link #getBranchtransition_BranchProbability()
      * <em>Branchtransition Branch Probability</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getBranchtransition_BranchProbability()
      * @generated
      * @ordered
@@ -72,7 +72,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected BranchProbabilityImpl() {
@@ -81,7 +81,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -91,7 +91,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -101,7 +101,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -116,7 +116,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -139,7 +139,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AbstractBranchTransition basicGetBranchtransition_BranchProbability() {
@@ -148,7 +148,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -165,7 +165,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -184,7 +184,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -202,7 +202,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -220,7 +220,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -236,7 +236,7 @@ public class BranchProbabilityImpl extends EObjectImpl implements BranchProbabil
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

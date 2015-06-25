@@ -18,7 +18,7 @@ import org.palladiosimulator.pcm.core.entity.EntityPackage;
  * <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * 
+ *
  * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory
  * @model kind="package"
  * @generated
@@ -27,35 +27,35 @@ public interface ComputedAllocationPackage extends EPackage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * The package name. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String eNAME = "computed_allocation";
 
     /**
      * The package namespace URI. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
-    String eNS_URI = "http://sdq.ipd.uka.de/Context/Allocation/1.0";
+    String eNS_URI = "http://palladiosimulator.org/Solver/Context/Allocation/1.0";
 
     /**
      * The package namespace name. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String eNS_PREFIX = "org.palladiosimulator.solver.context";
 
     /**
      * The singleton instance of the package. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     ComputedAllocationPackage eINSTANCE = org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl
@@ -65,7 +65,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * The meta object id for the '
      * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl
      * <em>Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see org.palladiosimulator.solver.context.computed_allocation.impl.
      *      ComputedAllocationContextImpl
      * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getComputedAllocationContext()
@@ -76,7 +76,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Id</b></em>' attribute. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -85,7 +85,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Entity Name</b></em>' attribute. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -94,7 +94,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Resource Demands Computed Allocation Context</b></em>'
      * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -104,7 +104,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Usage Context Computed Allocation Context</b></em>' reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -113,7 +113,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Allocation Context Computed Allocation Context</b></em>'
      * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -123,7 +123,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Context</em>' class. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -133,7 +133,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * The meta object id for the '
      * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ResourceDemandImpl
      * <em>Resource Demand</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see org.palladiosimulator.solver.context.computed_allocation.impl.ResourceDemandImpl
      * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getResourceDemand()
      * @generated
@@ -143,7 +143,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Parametric Resource Demand Resource Demand</b></em>'
      * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -152,7 +152,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Specification Resource Demand</b></em>' containment reference.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -161,7 +161,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Resource Demand</em>' class. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -171,7 +171,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * The meta object id for the '
      * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationImpl
      * <em>Computed Allocation</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationImpl
      * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getComputedAllocation()
      * @generated
@@ -181,7 +181,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Computed Allocation Contexts Computed Allocation</b></em>'
      * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -190,7 +190,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Computed Allocation</em>' class. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -200,7 +200,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * Returns the meta object for class '
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext
      * <em>Context</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for class '<em>Context</em>'.
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext
      * @generated
@@ -212,7 +212,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getResourceDemands_ComputedAllocationContext
      * <em>Resource Demands Computed Allocation Context</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the containment reference list '
      *         <em>Resource Demands Computed Allocation Context</em>'.
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getResourceDemands_ComputedAllocationContext()
@@ -226,7 +226,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getUsageContext_ComputedAllocationContext
      * <em>Usage Context Computed Allocation Context</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '<em>Usage Context Computed Allocation Context</em>
      *         '.
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getUsageContext_ComputedAllocationContext()
@@ -240,7 +240,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getAllocationContext_ComputedAllocationContext
      * <em>Allocation Context Computed Allocation Context</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '
      *         <em>Allocation Context Computed Allocation Context</em>'.
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext#getAllocationContext_ComputedAllocationContext()
@@ -253,7 +253,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * Returns the meta object for class '
      * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand
      * <em>Resource Demand</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for class '<em>Resource Demand</em>'.
      * @see org.palladiosimulator.solver.context.computed_allocation.ResourceDemand
      * @generated
@@ -265,7 +265,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getParametricResourceDemand_ResourceDemand
      * <em>Parametric Resource Demand Resource Demand</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the reference '
      *         <em>Parametric Resource Demand Resource Demand</em>'.
      * @see org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getParametricResourceDemand_ResourceDemand()
@@ -278,7 +278,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * Returns the meta object for the containment reference '
      * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getSpecification_ResourceDemand
      * <em>Specification Resource Demand</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for the containment reference '<em>Specification Resource Demand</em>
      *         '.
      * @see org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getSpecification_ResourceDemand()
@@ -291,7 +291,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * Returns the meta object for class '
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocation
      * <em>Computed Allocation</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the meta object for class '<em>Computed Allocation</em>'.
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocation
      * @generated
@@ -303,7 +303,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ComputedAllocation#getComputedAllocationContexts_ComputedAllocation
      * <em>Computed Allocation Contexts Computed Allocation</em>}'. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the meta object for the containment reference list '
      *         <em>Computed Allocation Contexts Computed Allocation</em>'.
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocation#getComputedAllocationContexts_ComputedAllocation()
@@ -315,7 +315,7 @@ public interface ComputedAllocationPackage extends EPackage {
     /**
      * Returns the factory that creates the instances of the model. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @return the factory that creates the instances of the model.
      * @generated
      */
@@ -330,7 +330,7 @@ public interface ComputedAllocationPackage extends EPackage {
      * <li>and each data type</li>
      * </ul>
      * <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     interface Literals {
@@ -339,7 +339,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationContextImpl
          * <em>Context</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @see org.palladiosimulator.solver.context.computed_allocation.impl.
          *      ComputedAllocationContextImpl
          * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getComputedAllocationContext()
@@ -351,7 +351,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Resource Demands Computed Allocation Context</b></em>' containment reference list
          * feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference COMPUTED_ALLOCATION_CONTEXT__RESOURCE_DEMANDS_COMPUTED_ALLOCATION_CONTEXT = eINSTANCE
@@ -361,7 +361,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Usage Context Computed Allocation Context</b></em>' reference feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference COMPUTED_ALLOCATION_CONTEXT__USAGE_CONTEXT_COMPUTED_ALLOCATION_CONTEXT = eINSTANCE
@@ -371,7 +371,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Allocation Context Computed Allocation Context</b></em>' reference feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference COMPUTED_ALLOCATION_CONTEXT__ALLOCATION_CONTEXT_COMPUTED_ALLOCATION_CONTEXT = eINSTANCE
@@ -381,7 +381,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ResourceDemandImpl
          * <em>Resource Demand</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @see org.palladiosimulator.solver.context.computed_allocation.impl.ResourceDemandImpl
          * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getResourceDemand()
          * @generated
@@ -392,7 +392,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Parametric Resource Demand Resource Demand</b></em>' reference feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference RESOURCE_DEMAND__PARAMETRIC_RESOURCE_DEMAND_RESOURCE_DEMAND = eINSTANCE
@@ -401,7 +401,7 @@ public interface ComputedAllocationPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Specification Resource Demand</b></em>'
          * containment reference feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference RESOURCE_DEMAND__SPECIFICATION_RESOURCE_DEMAND = eINSTANCE
@@ -411,7 +411,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * {@link org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationImpl
          * <em>Computed Allocation</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationImpl
          * @see org.palladiosimulator.solver.context.computed_allocation.impl.ComputedAllocationPackageImpl#getComputedAllocation()
          * @generated
@@ -422,7 +422,7 @@ public interface ComputedAllocationPackage extends EPackage {
          * The meta object literal for the '
          * <em><b>Computed Allocation Contexts Computed Allocation</b></em>' containment reference
          * list feature. <!-- begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference COMPUTED_ALLOCATION__COMPUTED_ALLOCATION_CONTEXTS_COMPUTED_ALLOCATION = eINSTANCE

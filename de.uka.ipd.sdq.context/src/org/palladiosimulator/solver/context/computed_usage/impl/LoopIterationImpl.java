@@ -36,7 +36,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -44,7 +44,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
     /**
      * The cached value of the '{@link #getLoopaction_LoopIteration()
      * <em>Loopaction Loop Iteration</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getLoopaction_LoopIteration()
      * @generated
      * @ordered
@@ -55,7 +55,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
      * The cached value of the '{@link #getSpecification_LoopIteration()
      * <em>Specification Loop Iteration</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getSpecification_LoopIteration()
      * @generated
      * @ordered
@@ -64,7 +64,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected LoopIterationImpl() {
@@ -73,7 +73,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -83,7 +83,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -104,7 +104,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AbstractLoopAction basicGetLoopaction_LoopIteration() {
@@ -113,7 +113,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -129,7 +129,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -139,7 +139,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public NotificationChain basicSetSpecification_LoopIteration(final PCMRandomVariable newSpecification_LoopIteration,
@@ -161,7 +161,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -191,7 +191,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -206,7 +206,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -225,7 +225,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -243,7 +243,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -261,7 +261,7 @@ public class LoopIterationImpl extends EObjectImpl implements LoopIteration {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

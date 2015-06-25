@@ -30,7 +30,7 @@ public interface AggregatedResourceDemand extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -40,7 +40,7 @@ public interface AggregatedResourceDemand extends EObject {
      * begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc --> The aggregated resource
      * demand of this service, where the single resource demands are weighted by their frequency
      * (including the frequency of the service itself) and averaged. <!-- end-model-doc -->
-     * 
+     *
      * @return the value of the '<em>Aggregated Resource Demand</em>' attribute.
      * @see #setAggregatedResourceDemand(double)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getAggregatedResourceDemand_AggregatedResourceDemand()
@@ -54,7 +54,7 @@ public interface AggregatedResourceDemand extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getAggregatedResourceDemand
      * <em>Aggregated Resource Demand</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Aggregated Resource Demand</em>' attribute.
      * @see #getAggregatedResourceDemand()
@@ -70,7 +70,7 @@ public interface AggregatedResourceDemand extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Resource Type Aggregated Resource Demand</em>' reference.
      * @see #setResourceType_AggregatedResourceDemand(ResourceType)
      * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage#getAggregatedResourceDemand_ResourceType_AggregatedResourceDemand()
@@ -84,7 +84,7 @@ public interface AggregatedResourceDemand extends EObject {
      * {@link org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedResourceDemand#getResourceType_AggregatedResourceDemand
      * <em>Resource Type Aggregated Resource Demand</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Resource Type Aggregated Resource Demand</em>'
      *            reference.

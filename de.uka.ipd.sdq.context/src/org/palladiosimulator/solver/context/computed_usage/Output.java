@@ -28,7 +28,7 @@ public interface Output extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -42,7 +42,7 @@ public interface Output extends EObject {
      * list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Parameter Characterisations Output</em>' containment reference
      *         list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getOutput_ParameterCharacterisations_Output()

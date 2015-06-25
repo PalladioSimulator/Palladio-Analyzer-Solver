@@ -34,7 +34,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -43,7 +43,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
      * The cached value of the '{@link #getUsageContexts_ComputedUsage()
      * <em>Usage Contexts Computed Usage</em>}' containment reference list. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @see #getUsageContexts_ComputedUsage()
      * @generated
      * @ordered
@@ -52,7 +52,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected ComputedUsageImpl() {
@@ -61,7 +61,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -71,7 +71,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -86,7 +86,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -101,7 +101,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -115,7 +115,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -132,7 +132,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -147,7 +147,7 @@ public class ComputedUsageImpl extends EObjectImpl implements ComputedUsage {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

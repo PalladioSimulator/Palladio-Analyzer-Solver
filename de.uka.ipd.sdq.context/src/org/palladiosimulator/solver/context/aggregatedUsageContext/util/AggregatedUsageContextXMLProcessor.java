@@ -13,21 +13,21 @@ import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsa
 /**
  * This class contains helper methods to serialize and deserialize XML documents <!-- begin-user-doc
  * --> <!-- end-user-doc -->
- * 
+ *
  * @generated
  */
 public class AggregatedUsageContextXMLProcessor extends XMLProcessor {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * Public constructor to instantiate the helper. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AggregatedUsageContextXMLProcessor() {
@@ -38,7 +38,7 @@ public class AggregatedUsageContextXMLProcessor extends XMLProcessor {
     /**
      * Register for "*" and "xml" file extensions the AggregatedUsageContextResourceFactoryImpl
      * factory. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

@@ -16,21 +16,21 @@ import org.palladiosimulator.solver.context.computed_allocation.ResourceDemand;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!-- end-user-doc -->
- * 
+ *
  * @generated
  */
 public class ComputedAllocationFactoryImpl extends EFactoryImpl implements ComputedAllocationFactory {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * Creates the default factory implementation. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static ComputedAllocationFactory init() {
@@ -48,7 +48,7 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
 
     /**
      * Creates an instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ComputedAllocationFactoryImpl() {
@@ -57,7 +57,7 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -76,7 +76,7 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -87,7 +87,7 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -98,7 +98,7 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -109,7 +109,7 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -119,7 +119,7 @@ public class ComputedAllocationFactoryImpl extends EFactoryImpl implements Compu
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @deprecated
      * @generated
      */

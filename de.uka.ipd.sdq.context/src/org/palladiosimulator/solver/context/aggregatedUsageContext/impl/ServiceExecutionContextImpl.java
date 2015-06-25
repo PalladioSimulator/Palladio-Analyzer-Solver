@@ -60,7 +60,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -69,7 +69,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The default value of the '{@link #getGlobalExecutionFrequency()
      * <em>Global Execution Frequency</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @see #getGlobalExecutionFrequency()
      * @generated
      * @ordered
@@ -80,7 +80,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The cached value of the '{@link #getGlobalExecutionFrequency()
      * <em>Global Execution Frequency</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @see #getGlobalExecutionFrequency()
      * @generated
      * @ordered
@@ -91,7 +91,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The cached value of the '{@link #getAllocationContext_ServiceExecutionContext()
      * <em>Allocation Context Service Execution Context</em>}' reference. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @see #getAllocationContext_ServiceExecutionContext()
      * @generated
      * @ordered
@@ -102,7 +102,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The cached value of the '{@link #getDescribedSEFF_ServiceExecutionContext()
      * <em>Described SEFF Service Execution Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getDescribedSEFF_ServiceExecutionContext()
      * @generated
      * @ordered
@@ -113,7 +113,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The cached value of the '{@link #getAggregatedResourceDemands_ServiceExecutionContext()
      * <em>Aggregated Resource Demands Service Execution Context</em>}' containment reference list.
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getAggregatedResourceDemands_ServiceExecutionContext()
      * @generated
      * @ordered
@@ -124,7 +124,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The cached value of the '{@link #getUsageScenario_ServiceExecutionContext()
      * <em>Usage Scenario Service Execution Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getUsageScenario_ServiceExecutionContext()
      * @generated
      * @ordered
@@ -135,7 +135,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The cached value of the '{@link #getSentAggregatedCommunications_ServiceExecutionContext()
      * <em>Sent Aggregated Communications Service Execution Context</em>}' containment reference
      * list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getSentAggregatedCommunications_ServiceExecutionContext()
      * @generated
      * @ordered
@@ -146,7 +146,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
      * The cached value of the '{@link #getReceivedAggregatedCommunication_AggregatedCommunication()
      * <em>Received Aggregated Communication Aggregated Communication</em>}' reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getReceivedAggregatedCommunication_AggregatedCommunication()
      * @generated
      * @ordered
@@ -155,7 +155,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected ServiceExecutionContextImpl() {
@@ -164,7 +164,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -174,7 +174,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -184,7 +184,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -200,7 +200,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -224,7 +224,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AllocationContext basicGetAllocationContext_ServiceExecutionContext() {
@@ -233,7 +233,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -250,7 +250,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -273,7 +273,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ResourceDemandingSEFF basicGetDescribedSEFF_ServiceExecutionContext() {
@@ -282,7 +282,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -299,7 +299,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -314,7 +314,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -337,7 +337,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public UsageScenario basicGetUsageScenario_ServiceExecutionContext() {
@@ -346,7 +346,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -362,7 +362,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -377,7 +377,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -393,7 +393,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -410,7 +410,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -432,7 +432,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -467,7 +467,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -507,7 +507,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -540,7 +540,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -569,7 +569,7 @@ public class ServiceExecutionContextImpl extends EObjectImpl implements ServiceE
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

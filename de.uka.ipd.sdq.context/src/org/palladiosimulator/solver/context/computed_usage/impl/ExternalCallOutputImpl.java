@@ -41,7 +41,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -50,7 +50,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
      * The cached value of the '{@link #getParameterCharacterisations_ExternalCallOutput()
      * <em>Parameter Characterisations External Call Output</em>}' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getParameterCharacterisations_ExternalCallOutput()
      * @generated
      * @ordered
@@ -61,7 +61,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
      * The cached value of the '{@link #getExternalCallAction_ExternalCallOutput()
      * <em>External Call Action External Call Output</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getExternalCallAction_ExternalCallOutput()
      * @generated
      * @ordered
@@ -70,7 +70,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected ExternalCallOutputImpl() {
@@ -79,7 +79,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -89,7 +89,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -104,7 +104,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -127,7 +127,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ExternalCallAction basicGetExternalCallAction_ExternalCallOutput() {
@@ -136,7 +136,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -153,7 +153,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -169,7 +169,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -188,7 +188,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -209,7 +209,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -227,7 +227,7 @@ public class ExternalCallOutputImpl extends EObjectImpl implements ExternalCallO
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

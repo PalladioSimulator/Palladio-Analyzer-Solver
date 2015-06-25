@@ -45,7 +45,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -54,7 +54,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
      * The cached value of the '{@link #getResourceDemands_ComputedAllocationContext()
      * <em>Resource Demands Computed Allocation Context</em>}' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getResourceDemands_ComputedAllocationContext()
      * @generated
      * @ordered
@@ -65,7 +65,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
      * The cached value of the '{@link #getUsageContext_ComputedAllocationContext()
      * <em>Usage Context Computed Allocation Context</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getUsageContext_ComputedAllocationContext()
      * @generated
      * @ordered
@@ -76,7 +76,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
      * The cached value of the '{@link #getAllocationContext_ComputedAllocationContext()
      * <em>Allocation Context Computed Allocation Context</em>}' reference. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @see #getAllocationContext_ComputedAllocationContext()
      * @generated
      * @ordered
@@ -85,7 +85,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected ComputedAllocationContextImpl() {
@@ -94,7 +94,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -104,7 +104,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -119,7 +119,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -142,7 +142,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ComputedUsageContext basicGetUsageContext_ComputedAllocationContext() {
@@ -151,7 +151,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -168,7 +168,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -192,7 +192,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public AllocationContext basicGetAllocationContext_ComputedAllocationContext() {
@@ -201,7 +201,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -218,7 +218,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -233,7 +233,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -257,7 +257,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @SuppressWarnings("unchecked")
@@ -280,7 +280,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -301,7 +301,7 @@ public class ComputedAllocationContextImpl extends EntityImpl implements Compute
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

@@ -8,7 +8,7 @@ import org.eclipse.emf.ecore.EFactory;
 /**
  * <!-- begin-user-doc --> The <b>Factory</b> for the model. It provides a create method for each
  * non-abstract class of the model. <!-- end-user-doc -->
- * 
+ *
  * @see org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextPackage
  * @generated
  */
@@ -16,14 +16,14 @@ public interface AggregatedUsageContextFactory extends EFactory {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
 
     /**
      * The singleton instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     AggregatedUsageContextFactory eINSTANCE = org.palladiosimulator.solver.context.aggregatedUsageContext.impl.AggregatedUsageContextFactoryImpl
@@ -32,7 +32,7 @@ public interface AggregatedUsageContextFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Service Execution Context</em>'. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @return a new object of class '<em>Service Execution Context</em>'.
      * @generated
      */
@@ -41,7 +41,7 @@ public interface AggregatedUsageContextFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Aggregated Resource Demand</em>'. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @return a new object of class '<em>Aggregated Resource Demand</em>'.
      * @generated
      */
@@ -50,7 +50,7 @@ public interface AggregatedUsageContextFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Aggregated Communication</em>'. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @return a new object of class '<em>Aggregated Communication</em>'.
      * @generated
      */
@@ -59,7 +59,7 @@ public interface AggregatedUsageContextFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Computed Aggregated Usage</em>'. <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * 
+     *
      * @return a new object of class '<em>Computed Aggregated Usage</em>'.
      * @generated
      */
@@ -67,7 +67,7 @@ public interface AggregatedUsageContextFactory extends EFactory {
 
     /**
      * Returns the package supported by this factory. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @return the package supported by this factory.
      * @generated
      */

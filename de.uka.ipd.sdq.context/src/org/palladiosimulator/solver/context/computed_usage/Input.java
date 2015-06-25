@@ -28,7 +28,7 @@ public interface Input extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -42,7 +42,7 @@ public interface Input extends EObject {
      * isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Parameter Chacterisations Input</em>' containment reference
      *         list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getInput_ParameterChacterisations_Input()

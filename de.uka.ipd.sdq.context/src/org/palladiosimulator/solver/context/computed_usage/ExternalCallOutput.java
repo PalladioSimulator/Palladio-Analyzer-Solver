@@ -32,7 +32,7 @@ public interface ExternalCallOutput extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -46,7 +46,7 @@ public interface ExternalCallOutput extends EObject {
      * reference list isn't clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Parameter Characterisations External Call Output</em>'
      *         containment reference list.
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getExternalCallOutput_ParameterCharacterisations_ExternalCallOutput()
@@ -63,7 +63,7 @@ public interface ExternalCallOutput extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>External Call Action External Call Output</em>' reference.
      * @see #setExternalCallAction_ExternalCallOutput(ExternalCallAction)
      * @see org.palladiosimulator.solver.context.computed_usage.ComputedUsagePackage#getExternalCallOutput_ExternalCallAction_ExternalCallOutput()
@@ -77,7 +77,7 @@ public interface ExternalCallOutput extends EObject {
      * {@link org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput#getExternalCallAction_ExternalCallOutput
      * <em>External Call Action External Call Output</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>External Call Action External Call Output</em>'
      *            reference.

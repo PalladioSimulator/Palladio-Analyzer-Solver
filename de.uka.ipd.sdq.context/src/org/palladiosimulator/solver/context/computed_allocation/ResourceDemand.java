@@ -31,7 +31,7 @@ public interface ResourceDemand extends EObject {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -44,7 +44,7 @@ public interface ResourceDemand extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Parametric Resource Demand Resource Demand</em>' reference.
      * @see #setParametricResourceDemand_ResourceDemand(ParametricResourceDemand)
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getResourceDemand_ParametricResourceDemand_ResourceDemand()
@@ -58,7 +58,7 @@ public interface ResourceDemand extends EObject {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getParametricResourceDemand_ResourceDemand
      * <em>Parametric Resource Demand Resource Demand</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Parametric Resource Demand Resource Demand</em>'
      *            reference.
@@ -75,7 +75,7 @@ public interface ResourceDemand extends EObject {
      * clear, there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Specification Resource Demand</em>' containment reference.
      * @see #setSpecification_ResourceDemand(PCMRandomVariable)
      * @see org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationPackage#getResourceDemand_Specification_ResourceDemand()
@@ -89,7 +89,7 @@ public interface ResourceDemand extends EObject {
      * {@link org.palladiosimulator.solver.context.computed_allocation.ResourceDemand#getSpecification_ResourceDemand
      * <em>Specification Resource Demand</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Specification Resource Demand</em>' containment
      *            reference.

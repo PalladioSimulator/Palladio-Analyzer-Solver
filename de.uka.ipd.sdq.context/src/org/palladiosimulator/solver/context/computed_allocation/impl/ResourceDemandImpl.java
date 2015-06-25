@@ -36,7 +36,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public static final String copyright = "Copyright 2006, SDQ Group, University Karlsruhe (TH)";
@@ -45,7 +45,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
      * The cached value of the '{@link #getParametricResourceDemand_ResourceDemand()
      * <em>Parametric Resource Demand Resource Demand</em>}' reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getParametricResourceDemand_ResourceDemand()
      * @generated
      * @ordered
@@ -56,7 +56,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
      * The cached value of the '{@link #getSpecification_ResourceDemand()
      * <em>Specification Resource Demand</em>}' containment reference. <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * 
+     *
      * @see #getSpecification_ResourceDemand()
      * @generated
      * @ordered
@@ -65,7 +65,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected ResourceDemandImpl() {
@@ -74,7 +74,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -84,7 +84,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -107,7 +107,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public ParametricResourceDemand basicGetParametricResourceDemand_ResourceDemand() {
@@ -116,7 +116,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -133,7 +133,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -143,7 +143,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     public NotificationChain basicSetSpecification_ResourceDemand(
@@ -165,7 +165,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -199,7 +199,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -214,7 +214,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -233,7 +233,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -251,7 +251,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -269,7 +269,7 @@ public class ResourceDemandImpl extends EObjectImpl implements ResourceDemand {
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
