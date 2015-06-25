@@ -17,5 +17,5 @@ Export-Package: org.palladiosimulator.solver.spa.basicsolver,
  org.palladiosimulator.solver.spa.basicsolver.visitor,
  org.palladiosimulator.solver.spa.basicsolver.visitor.perfhandler,
  org.palladiosimulator.solver.spa.basicsolver.visitor.perfhandler.exception
-Bundle-Vendor: sdq.ipd.uka.de
+Bundle-Vendor: palladiosimulator.org
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
