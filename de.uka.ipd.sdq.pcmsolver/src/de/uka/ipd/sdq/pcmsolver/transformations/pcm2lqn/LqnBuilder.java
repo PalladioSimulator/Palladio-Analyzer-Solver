@@ -17,6 +17,7 @@ import org.palladiosimulator.solver.lqn.ActivityPhasesType;
 import org.palladiosimulator.solver.lqn.ActivityType;
 import org.palladiosimulator.solver.lqn.AndJoinListType;
 import org.palladiosimulator.solver.lqn.EntryType;
+import org.palladiosimulator.solver.lqn.LqnFactory;
 import org.palladiosimulator.solver.lqn.LqnModelType;
 import org.palladiosimulator.solver.lqn.OrListType;
 import org.palladiosimulator.solver.lqn.OutputEntryDistributionType;

@@ -4,13 +4,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageContext;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
-import de.uka.ipd.sdq.context.computed_usage.ExternalCallOutput;
-import de.uka.ipd.sdq.context.computed_usage.Input;
 import org.palladiosimulator.pcm.core.CoreFactory;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
 import org.palladiosimulator.pcm.parameter.VariableUsage;
@@ -35,6 +28,13 @@ import org.palladiosimulator.pcm.seff.SeffFactory;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 import org.palladiosimulator.pcm.seff.seff_performance.SeffPerformanceFactory;
+
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
+import de.uka.ipd.sdq.context.computed_usage.ComputedUsageContext;
+import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
+import de.uka.ipd.sdq.context.computed_usage.ExternalCallOutput;
+import de.uka.ipd.sdq.context.computed_usage.Input;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 import de.uka.ipd.sdq.pcmsolver.visitors.VariableUsageHelper;

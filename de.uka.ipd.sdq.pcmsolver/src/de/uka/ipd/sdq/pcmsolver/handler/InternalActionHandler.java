@@ -7,9 +7,6 @@ import java.util.Iterator;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_allocation.ResourceDemand;
 import org.palladiosimulator.pcm.allocation.AllocationContext;
 import org.palladiosimulator.pcm.core.CoreFactory;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
@@ -18,6 +15,9 @@ import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
 import org.palladiosimulator.pcm.resourcetype.ProcessingResourceType;
 import org.palladiosimulator.pcm.seff.InternalAction;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
+
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
+import de.uka.ipd.sdq.context.computed_allocation.ResourceDemand;
 import de.uka.ipd.sdq.pcmsolver.visitors.ExpressionHelper;
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 import de.uka.ipd.sdq.stoex.Expression;

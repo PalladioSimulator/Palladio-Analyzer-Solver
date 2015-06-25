@@ -3,14 +3,6 @@ package de.uka.ipd.sdq.pcmsolver.visitors;
 import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
-
-import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedCommunication;
-import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedResourceDemand;
-import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedUsageContextFactory;
-import de.uka.ipd.sdq.context.aggregatedUsageContext.ComputedAggregatedUsage;
-import de.uka.ipd.sdq.context.aggregatedUsageContext.ServiceExecutionContext;
-import de.uka.ipd.sdq.context.computed_usage.BranchProbability;
-import de.uka.ipd.sdq.context.computed_usage.LoopIteration;
 import org.palladiosimulator.pcm.allocation.Allocation;
 import org.palladiosimulator.pcm.allocation.AllocationContext;
 import org.palladiosimulator.pcm.core.composition.AssemblyContext;
@@ -31,6 +23,14 @@ import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 import org.palladiosimulator.pcm.usagemodel.BranchTransition;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+
+import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedCommunication;
+import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedResourceDemand;
+import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedUsageContextFactory;
+import de.uka.ipd.sdq.context.aggregatedUsageContext.ComputedAggregatedUsage;
+import de.uka.ipd.sdq.context.aggregatedUsageContext.ServiceExecutionContext;
+import de.uka.ipd.sdq.context.computed_usage.BranchProbability;
+import de.uka.ipd.sdq.context.computed_usage.LoopIteration;
 import de.uka.ipd.sdq.pcmsolver.handler.AggregatedContextExternalCallActionHandler;
 import de.uka.ipd.sdq.pcmsolver.handler.ExternalCallActionHandler;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;

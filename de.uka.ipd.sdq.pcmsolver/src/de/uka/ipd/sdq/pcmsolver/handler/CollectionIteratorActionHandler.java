@@ -2,12 +2,12 @@ package de.uka.ipd.sdq.pcmsolver.handler;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
 import org.palladiosimulator.pcm.parameter.VariableCharacterisation;
 import org.palladiosimulator.pcm.parameter.VariableCharacterisationType;
 import org.palladiosimulator.pcm.parameter.VariableUsage;
 import org.palladiosimulator.pcm.repository.Parameter;
 import org.palladiosimulator.pcm.seff.CollectionIteratorAction;
+
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 import de.uka.ipd.sdq.stoex.AbstractNamedReference;
 import de.uka.ipd.sdq.stoex.NamespaceReference;

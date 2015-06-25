@@ -1,9 +1,9 @@
 package de.uka.ipd.sdq.pcmsolver.handler;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.palladiosimulator.pcm.parameter.VariableUsage;
 import org.palladiosimulator.pcm.seff.SetVariableAction;
+
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 import de.uka.ipd.sdq.pcmsolver.visitors.VariableUsageHelper;
 

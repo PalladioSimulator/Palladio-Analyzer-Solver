@@ -7,7 +7,6 @@ import org.antlr.runtime.ANTLRStringStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.RecognitionException;
 import org.apache.log4j.Logger;
-
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
 import org.palladiosimulator.pcm.stochasticexpressions.parser.PCMStoExLexer;
 import org.palladiosimulator.pcm.stochasticexpressions.parser.PCMStoExParser;

@@ -3,7 +3,6 @@ package de.uka.ipd.sdq.pcmsolver.transformations.pcm2lqn;
 import java.util.HashMap;
 import java.util.List;
 
-import de.uka.ipd.sdq.identifier.Identifier;
 import org.palladiosimulator.pcm.allocation.AllocationContext;
 import org.palladiosimulator.pcm.core.composition.AssemblyContext;
 import org.palladiosimulator.pcm.core.entity.Entity;
@@ -23,6 +22,8 @@ import org.palladiosimulator.pcm.seff.StartAction;
 import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall;
 import org.palladiosimulator.pcm.usagemodel.Loop;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+
+import de.uka.ipd.sdq.identifier.Identifier;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
 

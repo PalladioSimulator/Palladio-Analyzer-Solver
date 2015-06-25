@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
 import org.palladiosimulator.pcm.seff.AbstractBranchTransition;
 import org.palladiosimulator.pcm.seff.AbstractInternalControlFlowAction;
 import org.palladiosimulator.pcm.seff.BranchAction;
@@ -21,6 +20,7 @@ import org.palladiosimulator.pcm.seff.StartAction;
 import org.palladiosimulator.pcm.seff.StopAction;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 import org.palladiosimulator.pcm.seff.util.SeffSwitch;
+
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
 import de.uka.ipd.sdq.pcmsolver.visitors.ExpressionHelper;

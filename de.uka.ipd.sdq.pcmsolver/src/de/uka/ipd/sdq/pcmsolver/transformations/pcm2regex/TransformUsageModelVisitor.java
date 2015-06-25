@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-
 import org.palladiosimulator.pcm.core.composition.ProvidedDelegationConnector;
 import org.palladiosimulator.pcm.repository.BasicComponent;
 import org.palladiosimulator.pcm.repository.OperationProvidedRole;
@@ -20,6 +19,7 @@ import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour;
 import org.palladiosimulator.pcm.usagemodel.Start;
 import org.palladiosimulator.pcm.usagemodel.Stop;
 import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
+
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;

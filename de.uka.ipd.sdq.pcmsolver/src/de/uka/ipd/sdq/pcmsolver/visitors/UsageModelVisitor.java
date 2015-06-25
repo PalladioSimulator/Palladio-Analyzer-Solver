@@ -4,9 +4,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
 import org.palladiosimulator.pcm.parameter.ParameterFactory;
 import org.palladiosimulator.pcm.seff.ResourceDemandingSEFF;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
@@ -19,6 +16,9 @@ import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour;
 import org.palladiosimulator.pcm.usagemodel.Start;
 import org.palladiosimulator.pcm.usagemodel.Stop;
 import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
+
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
+import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 

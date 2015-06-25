@@ -4,8 +4,8 @@
 package de.uka.ipd.sdq.pcmsolver.handler;
 
 import org.apache.log4j.Logger;
-
 import org.palladiosimulator.pcm.seff.LoopAction;
+
 import de.uka.ipd.sdq.pcmsolver.visitors.ExpressionHelper;
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 

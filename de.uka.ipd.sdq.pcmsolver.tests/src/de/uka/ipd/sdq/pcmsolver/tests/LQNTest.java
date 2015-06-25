@@ -20,6 +20,7 @@ import org.junit.Test;
 import org.palladiosimulator.solver.lqn.ActivityMakingCallType;
 import org.palladiosimulator.solver.lqn.ActivityPhasesType;
 import org.palladiosimulator.solver.lqn.EntryType;
+import org.palladiosimulator.solver.lqn.LqnFactory;
 import org.palladiosimulator.solver.lqn.LqnModelType;
 import org.palladiosimulator.solver.lqn.PhaseActivities;
 import org.palladiosimulator.solver.lqn.ProcessorType;

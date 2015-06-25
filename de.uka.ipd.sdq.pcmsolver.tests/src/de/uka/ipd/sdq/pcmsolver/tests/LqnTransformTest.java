@@ -2,10 +2,10 @@ package de.uka.ipd.sdq.pcmsolver.tests;
 
 import java.util.Properties;
 
-import junit.framework.JUnit4TestAdapter;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import junit.framework.JUnit4TestAdapter;
 
 public class LqnTransformTest {
 

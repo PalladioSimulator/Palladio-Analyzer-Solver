@@ -4,6 +4,7 @@ import org.palladiosimulator.pcm.allocation.AllocationContext;
 import org.palladiosimulator.pcm.core.composition.AssemblyContext;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.AggregatedContextSEFFVisitor;
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;

@@ -23,7 +23,6 @@ import org.eclipse.emf.query.statements.FROM;
 import org.eclipse.emf.query.statements.IQueryResult;
 import org.eclipse.emf.query.statements.SELECT;
 import org.eclipse.emf.query.statements.WHERE;
-
 import org.palladiosimulator.pcm.allocation.AllocationPackage;
 import org.palladiosimulator.pcm.parameter.ParameterPackage;
 import org.palladiosimulator.pcm.repository.RepositoryPackage;

@@ -9,15 +9,6 @@ import java.util.Set;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.emf.ecore.EObject;
-
-import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedUsageContextFactory;
-import de.uka.ipd.sdq.context.aggregatedUsageContext.ComputedAggregatedUsage;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocation;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsage;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
-
 import org.palladiosimulator.analyzer.workflow.ConstantsContainer;
 import org.palladiosimulator.analyzer.workflow.blackboard.PCMResourceSetPartition;
 import org.palladiosimulator.analyzer.workflow.configurations.AbstractPCMWorkflowRunConfiguration;
@@ -27,6 +18,14 @@ import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceEnvironment;
 import org.palladiosimulator.pcm.resourcetype.ResourceRepository;
 import org.palladiosimulator.pcm.usagemodel.UsageModel;
+
+import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedUsageContextFactory;
+import de.uka.ipd.sdq.context.aggregatedUsageContext.ComputedAggregatedUsage;
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocation;
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
+import de.uka.ipd.sdq.context.computed_usage.ComputedUsage;
+import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
 import de.uka.ipd.sdq.pcmsolver.transformations.EMFHelper;
 
 

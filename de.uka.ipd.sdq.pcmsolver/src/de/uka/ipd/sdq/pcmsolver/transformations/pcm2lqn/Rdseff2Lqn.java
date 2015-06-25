@@ -5,17 +5,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
-import org.palladiosimulator.solver.lqn.ActivityDefType;
-import org.palladiosimulator.solver.lqn.ActivityMakingCallType;
-import org.palladiosimulator.solver.lqn.ActivityPhasesType;
-import org.palladiosimulator.solver.lqn.CallOrderType;
-import org.palladiosimulator.solver.lqn.EntryType;
-import org.palladiosimulator.solver.lqn.PhaseActivities;
-import org.palladiosimulator.solver.lqn.PrecedenceType;
-import org.palladiosimulator.solver.lqn.ProcessorType;
-import org.palladiosimulator.solver.lqn.TaskType;
-import org.palladiosimulator.solver.lqn.TypeType;
 import org.palladiosimulator.pcm.allocation.AllocationContext;
 import org.palladiosimulator.pcm.resourceenvironment.CommunicationLinkResourceSpecification;
 import org.palladiosimulator.pcm.resourceenvironment.ProcessingResourceSpecification;
@@ -41,6 +30,17 @@ import org.palladiosimulator.pcm.seff.StopAction;
 import org.palladiosimulator.pcm.seff.SynchronisationPoint;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 import org.palladiosimulator.pcm.seff.util.SeffSwitch;
+import org.palladiosimulator.solver.lqn.ActivityDefType;
+import org.palladiosimulator.solver.lqn.ActivityMakingCallType;
+import org.palladiosimulator.solver.lqn.ActivityPhasesType;
+import org.palladiosimulator.solver.lqn.CallOrderType;
+import org.palladiosimulator.solver.lqn.EntryType;
+import org.palladiosimulator.solver.lqn.PhaseActivities;
+import org.palladiosimulator.solver.lqn.PrecedenceType;
+import org.palladiosimulator.solver.lqn.ProcessorType;
+import org.palladiosimulator.solver.lqn.TaskType;
+import org.palladiosimulator.solver.lqn.TypeType;
+
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
 import de.uka.ipd.sdq.pcmsolver.visitors.ExpressionHelper;

@@ -8,6 +8,7 @@ import java.util.Map;
 import org.palladiosimulator.pcm.allocation.AllocationContext;
 import org.palladiosimulator.pcm.resourceenvironment.CommunicationLinkResourceSpecification;
 import org.palladiosimulator.pcm.seff.ExternalCallAction;
+
 import de.uka.ipd.sdq.pcmsolver.Pair;
 
 /**

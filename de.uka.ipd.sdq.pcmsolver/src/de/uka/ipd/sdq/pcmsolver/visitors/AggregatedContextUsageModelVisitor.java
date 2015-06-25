@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.EObject;
-
 import org.palladiosimulator.pcm.seff.ResourceDemandingSEFF;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.usagemodel.BranchTransition;
@@ -13,6 +12,7 @@ import org.palladiosimulator.pcm.usagemodel.Loop;
 import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour;
 import org.palladiosimulator.pcm.usagemodel.UsageModel;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 

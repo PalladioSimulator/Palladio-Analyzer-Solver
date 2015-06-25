@@ -14,8 +14,8 @@ import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 import org.eclipse.debug.core.ILaunchConfiguration;
-
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.transformations.pcm2regex.ExpressionPrinter;
 import de.uka.ipd.sdq.pcmsolver.transformations.pcm2regex.TransformUsageModelVisitor;

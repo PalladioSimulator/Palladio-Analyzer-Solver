@@ -2,10 +2,11 @@ package de.uka.ipd.sdq.pcmsolver.models;
 
 import java.util.ArrayList;
 
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageContext;
 import org.palladiosimulator.pcm.allocation.Allocation;
 import org.palladiosimulator.pcm.core.composition.AssemblyContext;
+
+import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
+import de.uka.ipd.sdq.context.computed_usage.ComputedUsageContext;
 
 /**
  * @author Koziolek

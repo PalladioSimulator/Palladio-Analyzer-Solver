@@ -14,7 +14,7 @@
       <!-- @generated lqn -->
       <factory
             uri="http://palladiosimulator.org/Solver/LQN/1.0"
-            class="org.palladiosimulator.solver.lqn.provider.lqnItemProviderAdapterFactory"
+            class="org.palladiosimulator.solver.lqn.provider.LqnItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
                org.eclipse.emf.edit.provider.IStructuredItemContentProvider

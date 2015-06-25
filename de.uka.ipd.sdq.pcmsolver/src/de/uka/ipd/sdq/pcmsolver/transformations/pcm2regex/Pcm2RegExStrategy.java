@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.EObject;
-
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+
 import de.uka.ipd.sdq.pcmsolver.exprsolver.ExpressionSolver;
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;

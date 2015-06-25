@@ -2,7 +2,6 @@ package de.uka.ipd.sdq.pcmsolver.visitors;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
 import org.palladiosimulator.pcm.seff.AbstractBranchTransition;
 import org.palladiosimulator.pcm.seff.AbstractInternalControlFlowAction;
 import org.palladiosimulator.pcm.seff.AcquireAction;
@@ -22,6 +21,7 @@ import org.palladiosimulator.pcm.seff.StartAction;
 import org.palladiosimulator.pcm.seff.StopAction;
 import org.palladiosimulator.pcm.seff.seff_reliability.RecoveryAction;
 import org.palladiosimulator.pcm.seff.util.SeffSwitch;
+
 import de.uka.ipd.sdq.pcmsolver.handler.CollectionIteratorActionHandler;
 import de.uka.ipd.sdq.pcmsolver.handler.ExternalCallActionHandler;
 import de.uka.ipd.sdq.pcmsolver.handler.ForkActionHandler;

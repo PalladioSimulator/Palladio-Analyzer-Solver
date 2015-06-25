@@ -14,7 +14,7 @@
       <!-- @generated lqn -->
       <package
             uri="http://palladiosimulator.org/Solver/LQN/1.0"
-            class = "org.palladiosimulator.solver.lqn.lqnPackage"
+            class="org.palladiosimulator.solver.lqn.LqnPackage"
             genModel="model/lqn.genmodel"/>
    </extension>
 
@@ -22,6 +22,6 @@
       <!-- @generated lqn -->
       <parser
             type="lqn"
-            class="org.palladiosimulator.solver.lqn.util.lqnResourceFactoryImpl"/>
+            class="org.palladiosimulator.solver.lqn.util.LqnResourceFactoryImpl"/>
    </extension>
 </plugin>

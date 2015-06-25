@@ -1,11 +1,11 @@
 package de.uka.ipd.sdq.pcmsolver.handler;
 
 import org.apache.log4j.Logger;
+import org.palladiosimulator.pcm.seff.AbstractBranchTransition;
+import org.palladiosimulator.pcm.seff.ResourceDemandingBehaviour;
 
 import de.uka.ipd.sdq.context.computed_usage.BranchProbability;
 import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
-import org.palladiosimulator.pcm.seff.AbstractBranchTransition;
-import org.palladiosimulator.pcm.seff.ResourceDemandingBehaviour;
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 
 public abstract class AbstractBranchTransitionHandler {

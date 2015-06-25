@@ -1,9 +1,9 @@
 package de.uka.ipd.sdq.pcmsolver.tests;
 
-import junit.framework.JUnit4TestAdapter;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import junit.framework.JUnit4TestAdapter;
 
 
 public class ContextWrapperTest {
