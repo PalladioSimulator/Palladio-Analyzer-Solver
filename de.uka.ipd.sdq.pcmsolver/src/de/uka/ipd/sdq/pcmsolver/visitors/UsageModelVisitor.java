@@ -17,8 +17,8 @@ import org.palladiosimulator.pcm.usagemodel.Start;
 import org.palladiosimulator.pcm.usagemodel.Stop;
 import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
 
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
+import org.palladiosimulator.solver.context.computed_usage.ComputedUsageFactory;
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 

@@ -16,8 +16,8 @@ import org.palladiosimulator.pcm.resourcetype.ProcessingResourceType;
 import org.palladiosimulator.pcm.seff.InternalAction;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_allocation.ResourceDemand;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
+import org.palladiosimulator.solver.context.computed_allocation.ResourceDemand;
 import de.uka.ipd.sdq.pcmsolver.visitors.ExpressionHelper;
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 import de.uka.ipd.sdq.stoex.Expression;

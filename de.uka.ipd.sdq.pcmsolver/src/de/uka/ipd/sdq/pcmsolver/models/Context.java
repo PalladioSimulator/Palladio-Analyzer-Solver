@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import org.palladiosimulator.pcm.allocation.Allocation;
 import org.palladiosimulator.pcm.core.composition.AssemblyContext;
 
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageContext;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext;
+import org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext;
 
 /**
  * @author Koziolek

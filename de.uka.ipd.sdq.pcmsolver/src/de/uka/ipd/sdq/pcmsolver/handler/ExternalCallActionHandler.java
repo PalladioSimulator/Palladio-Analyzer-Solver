@@ -29,12 +29,12 @@ import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 import org.palladiosimulator.pcm.seff.seff_performance.SeffPerformanceFactory;
 
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageContext;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
-import de.uka.ipd.sdq.context.computed_usage.ExternalCallOutput;
-import de.uka.ipd.sdq.context.computed_usage.Input;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
+import org.palladiosimulator.solver.context.computed_usage.ComputedUsageContext;
+import org.palladiosimulator.solver.context.computed_usage.ComputedUsageFactory;
+import org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput;
+import org.palladiosimulator.solver.context.computed_usage.Input;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.SeffVisitor;
 import de.uka.ipd.sdq.pcmsolver.visitors.VariableUsageHelper;

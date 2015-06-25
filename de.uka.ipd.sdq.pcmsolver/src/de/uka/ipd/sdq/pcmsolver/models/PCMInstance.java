@@ -19,13 +19,13 @@ import org.palladiosimulator.pcm.resourceenvironment.ResourceEnvironment;
 import org.palladiosimulator.pcm.resourcetype.ResourceRepository;
 import org.palladiosimulator.pcm.usagemodel.UsageModel;
 
-import de.uka.ipd.sdq.context.aggregatedUsageContext.AggregatedUsageContextFactory;
-import de.uka.ipd.sdq.context.aggregatedUsageContext.ComputedAggregatedUsage;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocation;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationContext;
-import de.uka.ipd.sdq.context.computed_allocation.ComputedAllocationFactory;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsage;
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
+import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextFactory;
+import org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocation;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext;
+import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
+import org.palladiosimulator.solver.context.computed_usage.ComputedUsage;
+import org.palladiosimulator.solver.context.computed_usage.ComputedUsageFactory;
 import de.uka.ipd.sdq.pcmsolver.transformations.EMFHelper;
 
 

@@ -13,11 +13,11 @@ import org.palladiosimulator.pcm.parameter.ParameterFactory;
 import org.palladiosimulator.pcm.parameter.VariableCharacterisation;
 import org.palladiosimulator.pcm.parameter.VariableUsage;
 
-import de.uka.ipd.sdq.context.computed_usage.ComputedUsageFactory;
-import de.uka.ipd.sdq.context.computed_usage.ExternalCallInput;
-import de.uka.ipd.sdq.context.computed_usage.ExternalCallOutput;
-import de.uka.ipd.sdq.context.computed_usage.Input;
-import de.uka.ipd.sdq.context.computed_usage.Output;
+import org.palladiosimulator.solver.context.computed_usage.ComputedUsageFactory;
+import org.palladiosimulator.solver.context.computed_usage.ExternalCallInput;
+import org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput;
+import org.palladiosimulator.solver.context.computed_usage.Input;
+import org.palladiosimulator.solver.context.computed_usage.Output;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.stoex.AbstractNamedReference;
 import de.uka.ipd.sdq.stoex.NamespaceReference;
