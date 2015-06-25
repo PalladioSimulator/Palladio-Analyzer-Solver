@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PCM Solver Plug-in
-Bundle-SymbolicName: de.uka.ipd.sdq.pcmsolver;singleton:=true
+Bundle-SymbolicName: org.palladiosimulator.solver;singleton:=true
 Bundle-Version: 3.0.0.qualifier
 Bundle-Activator: de.uka.ipd.sdq.pcmsolver.Activator
 Require-Bundle: org.eclipse.ui,
