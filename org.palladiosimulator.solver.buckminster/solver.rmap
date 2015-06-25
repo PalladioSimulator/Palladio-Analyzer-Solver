@@ -2,6 +2,7 @@
 <rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0" xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
 
   <rm:locator pattern="^org\.palladiosimulator\.solver.*" searchPathRef="Solver" failOnError="true"/>
+  <rm:locator pattern="^org\.palladiosimulator\.reliability.*" searchPathRef="Reliability" failOnError="true"/>
 
   <rm:redirect pattern=".*"
 		href="https://anonymous:anonymous@svnserver.informatik.kit.edu/i43/svn/code/Palladio/Analyzer/Framework/trunk/org.palladiosimulator.analyzer.buckminster/analyzer.rmap" />
