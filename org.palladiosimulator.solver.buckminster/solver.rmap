@@ -8,13 +8,13 @@
 
   <rm:searchPath name="Solver">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
-      <rm:uri format="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyser/solver/nightly/"/>
+      <rm:uri format="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/solver/nightly/"/>
     </rm:provider>
   </rm:searchPath>
   
   <rm:searchPath name="Reliability">
     <rm:provider componentTypes="osgi.bundle,eclipse.feature" readerType="p2" source="false" mutable="false">
-      <rm:uri format="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyser/reliability/nightly/"/>
+      <rm:uri format="https://sdqweb.ipd.kit.edu/eclipse/palladio/analyzer/reliability/nightly/"/>
     </rm:provider>
   </rm:searchPath>
   
