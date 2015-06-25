@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
-import LqnCore.LqnModelType;
+import org.palladiosimulator.solver.lqn.LqnModelType;
 
 public class LqnXmlHandler {
 

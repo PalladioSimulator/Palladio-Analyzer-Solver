@@ -18,11 +18,11 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.PlatformUI;
 
-import LqnCore.ActivityDefType;
-import LqnCore.LqnModelType;
-import LqnCore.OutputResultType;
-import LqnCore.ProcessorType;
-import LqnCore.TaskType;
+import org.palladiosimulator.solver.lqn.ActivityDefType;
+import org.palladiosimulator.solver.lqn.LqnModelType;
+import org.palladiosimulator.solver.lqn.OutputResultType;
+import org.palladiosimulator.solver.lqn.ProcessorType;
+import org.palladiosimulator.solver.lqn.TaskType;
 import de.uka.ipd.sdq.pcmsolver.transformations.pcm2lqn.LqnXmlHandler;
 
 public class LQNHtmlResultGenerator {
