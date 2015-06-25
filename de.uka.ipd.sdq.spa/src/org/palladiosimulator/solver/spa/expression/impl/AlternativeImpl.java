@@ -20,13 +20,13 @@ import org.palladiosimulator.solver.spa.expression.Option;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl#getLeftOption <em>Left Option</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl#getLeftOption
+ * <em>Left Option</em>}</li>
  * <li>{@link org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl#getRightOption
  * <em>Right Option</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -40,7 +40,7 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * @generated
      * @ordered
      */
-    protected Option leftOption = null;
+    protected Option leftOption;
 
     /**
      * The cached value of the '{@link #getRightOption() <em>Right Option</em>}' containment
@@ -50,7 +50,7 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * @generated
      * @ordered
      */
-    protected Option rightOption = null;
+    protected Option rightOption;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -76,8 +76,9 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * 
      * @generated
      */
+    @Override
     public Option getLeftOption() {
-        return leftOption;
+        return this.leftOption;
     }
 
     /**
@@ -85,90 +86,19 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * 
      * @generated
      */
-    public NotificationChain basicSetLeftOption(Option newLeftOption, NotificationChain msgs) {
-        Option oldLeftOption = leftOption;
-        leftOption = newLeftOption;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+    public NotificationChain basicSetLeftOption(final Option newLeftOption, NotificationChain msgs) {
+        final Option oldLeftOption = this.leftOption;
+        this.leftOption = newLeftOption;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ExpressionPackage.ALTERNATIVE__LEFT_OPTION, oldLeftOption, newLeftOption);
-            if (msgs == null)
+            if (msgs == null) {
                 msgs = notification;
-            else
+            } else {
                 msgs.add(notification);
+            }
         }
         return msgs;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setLeftOption(Option newLeftOption) {
-        if (newLeftOption != leftOption) {
-            NotificationChain msgs = null;
-            if (leftOption != null)
-                msgs = ((InternalEObject) leftOption).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__LEFT_OPTION, null, msgs);
-            if (newLeftOption != null)
-                msgs = ((InternalEObject) newLeftOption).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__LEFT_OPTION, null, msgs);
-            msgs = basicSetLeftOption(newLeftOption, msgs);
-            if (msgs != null)
-                msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.ALTERNATIVE__LEFT_OPTION,
-                    newLeftOption, newLeftOption));
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public Option getRightOption() {
-        return rightOption;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public NotificationChain basicSetRightOption(Option newRightOption, NotificationChain msgs) {
-        Option oldRightOption = rightOption;
-        rightOption = newRightOption;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-                    ExpressionPackage.ALTERNATIVE__RIGHT_OPTION, oldRightOption, newRightOption);
-            if (msgs == null)
-                msgs = notification;
-            else
-                msgs.add(notification);
-        }
-        return msgs;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setRightOption(Option newRightOption) {
-        if (newRightOption != rightOption) {
-            NotificationChain msgs = null;
-            if (rightOption != null)
-                msgs = ((InternalEObject) rightOption).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__RIGHT_OPTION, null, msgs);
-            if (newRightOption != null)
-                msgs = ((InternalEObject) newRightOption).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__RIGHT_OPTION, null, msgs);
-            msgs = basicSetRightOption(newRightOption, msgs);
-            if (msgs != null)
-                msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.ALTERNATIVE__RIGHT_OPTION,
-                    newRightOption, newRightOption));
     }
 
     /**
@@ -177,12 +107,97 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public void setLeftOption(final Option newLeftOption) {
+        if (newLeftOption != this.leftOption) {
+            NotificationChain msgs = null;
+            if (this.leftOption != null) {
+                msgs = ((InternalEObject) this.leftOption).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__LEFT_OPTION, null, msgs);
+            }
+            if (newLeftOption != null) {
+                msgs = ((InternalEObject) newLeftOption).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__LEFT_OPTION, null, msgs);
+            }
+            msgs = this.basicSetLeftOption(newLeftOption, msgs);
+            if (msgs != null) {
+                msgs.dispatch();
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.ALTERNATIVE__LEFT_OPTION,
+                    newLeftOption, newLeftOption));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public Option getRightOption() {
+        return this.rightOption;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    public NotificationChain basicSetRightOption(final Option newRightOption, NotificationChain msgs) {
+        final Option oldRightOption = this.rightOption;
+        this.rightOption = newRightOption;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+                    ExpressionPackage.ALTERNATIVE__RIGHT_OPTION, oldRightOption, newRightOption);
+            if (msgs == null) {
+                msgs = notification;
+            } else {
+                msgs.add(notification);
+            }
+        }
+        return msgs;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public void setRightOption(final Option newRightOption) {
+        if (newRightOption != this.rightOption) {
+            NotificationChain msgs = null;
+            if (this.rightOption != null) {
+                msgs = ((InternalEObject) this.rightOption).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__RIGHT_OPTION, null, msgs);
+            }
+            if (newRightOption != null) {
+                msgs = ((InternalEObject) newRightOption).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.ALTERNATIVE__RIGHT_OPTION, null, msgs);
+            }
+            msgs = this.basicSetRightOption(newRightOption, msgs);
+            if (msgs != null) {
+                msgs.dispatch();
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.ALTERNATIVE__RIGHT_OPTION,
+                    newRightOption, newRightOption));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case ExpressionPackage.ALTERNATIVE__LEFT_OPTION:
-            return basicSetLeftOption(null, msgs);
+            return this.basicSetLeftOption(null, msgs);
         case ExpressionPackage.ALTERNATIVE__RIGHT_OPTION:
-            return basicSetRightOption(null, msgs);
+            return this.basicSetRightOption(null, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -193,12 +208,12 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case ExpressionPackage.ALTERNATIVE__LEFT_OPTION:
-            return getLeftOption();
+            return this.getLeftOption();
         case ExpressionPackage.ALTERNATIVE__RIGHT_OPTION:
-            return getRightOption();
+            return this.getRightOption();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -209,13 +224,13 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * @generated
      */
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.ALTERNATIVE__LEFT_OPTION:
-            setLeftOption((Option) newValue);
+            this.setLeftOption((Option) newValue);
             return;
         case ExpressionPackage.ALTERNATIVE__RIGHT_OPTION:
-            setRightOption((Option) newValue);
+            this.setRightOption((Option) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -227,13 +242,13 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.ALTERNATIVE__LEFT_OPTION:
-            setLeftOption((Option) null);
+            this.setLeftOption((Option) null);
             return;
         case ExpressionPackage.ALTERNATIVE__RIGHT_OPTION:
-            setRightOption((Option) null);
+            this.setRightOption((Option) null);
             return;
         }
         super.eUnset(featureID);
@@ -245,12 +260,12 @@ public class AlternativeImpl extends OperationImpl implements Alternative {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.ALTERNATIVE__LEFT_OPTION:
-            return leftOption != null;
+            return this.leftOption != null;
         case ExpressionPackage.ALTERNATIVE__RIGHT_OPTION:
-            return rightOption != null;
+            return this.rightOption != null;
         }
         return super.eIsSet(featureID);
     }

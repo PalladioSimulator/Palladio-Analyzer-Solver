@@ -59,7 +59,7 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
      * @generated
      */
     @Override
-    public boolean isFactoryForType(Object object) {
+    public boolean isFactoryForType(final Object object) {
         if (object == modelPackage) {
             return true;
         }
@@ -70,7 +70,7 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * The switch the delegates to the <code>createXXX</code> methods. <!-- begin-user-doc --> <!--
+     * The switch that delegates to the <code>createXXX</code> methods. <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * 
      * @generated
@@ -78,63 +78,63 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     protected ExpressionSwitch<Adapter> modelSwitch = new ExpressionSwitch<Adapter>() {
 
         @Override
-        public Adapter caseTerminal(Terminal object) {
-            return createTerminalAdapter();
+        public Adapter caseTerminal(final Terminal object) {
+            return ExpressionAdapterFactory.this.createTerminalAdapter();
         }
 
         @Override
-        public Adapter caseExpression(Expression object) {
-            return createExpressionAdapter();
+        public Adapter caseExpression(final Expression object) {
+            return ExpressionAdapterFactory.this.createExpressionAdapter();
         }
 
         @Override
-        public Adapter caseSymbol(Symbol object) {
-            return createSymbolAdapter();
+        public Adapter caseSymbol(final Symbol object) {
+            return ExpressionAdapterFactory.this.createSymbolAdapter();
         }
 
         @Override
-        public Adapter caseSequence(Sequence object) {
-            return createSequenceAdapter();
+        public Adapter caseSequence(final Sequence object) {
+            return ExpressionAdapterFactory.this.createSequenceAdapter();
         }
 
         @Override
-        public Adapter caseOperation(Operation object) {
-            return createOperationAdapter();
+        public Adapter caseOperation(final Operation object) {
+            return ExpressionAdapterFactory.this.createOperationAdapter();
         }
 
         @Override
-        public Adapter caseRelease(Release object) {
-            return createReleaseAdapter();
+        public Adapter caseRelease(final Release object) {
+            return ExpressionAdapterFactory.this.createReleaseAdapter();
         }
 
         @Override
-        public Adapter caseParallel(Parallel object) {
-            return createParallelAdapter();
+        public Adapter caseParallel(final Parallel object) {
+            return ExpressionAdapterFactory.this.createParallelAdapter();
         }
 
         @Override
-        public Adapter caseOption(Option object) {
-            return createOptionAdapter();
+        public Adapter caseOption(final Option object) {
+            return ExpressionAdapterFactory.this.createOptionAdapter();
         }
 
         @Override
-        public Adapter caseLoop(Loop object) {
-            return createLoopAdapter();
+        public Adapter caseLoop(final Loop object) {
+            return ExpressionAdapterFactory.this.createLoopAdapter();
         }
 
         @Override
-        public Adapter caseAlternative(Alternative object) {
-            return createAlternativeAdapter();
+        public Adapter caseAlternative(final Alternative object) {
+            return ExpressionAdapterFactory.this.createAlternativeAdapter();
         }
 
         @Override
-        public Adapter caseAcquire(Acquire object) {
-            return createAcquireAdapter();
+        public Adapter caseAcquire(final Acquire object) {
+            return ExpressionAdapterFactory.this.createAcquireAdapter();
         }
 
         @Override
-        public Adapter defaultCase(EObject object) {
-            return createEObjectAdapter();
+        public Adapter defaultCase(final EObject object) {
+            return ExpressionAdapterFactory.this.createEObjectAdapter();
         }
     };
 
@@ -147,15 +147,16 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
      * @generated
      */
     @Override
-    public Adapter createAdapter(Notifier target) {
-        return modelSwitch.doSwitch((EObject) target);
+    public Adapter createAdapter(final Notifier target) {
+        return this.modelSwitch.doSwitch((EObject) target);
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Terminal
-     * <em>Terminal</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
-     * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Terminal <em>Terminal</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Terminal
@@ -166,10 +167,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Expression
-     * <em>Expression</em>}'. <!-- begin-user-doc --> This default implementation returns null so
-     * that we can easily ignore cases; it's useful to ignore a case when inheritance will catch all
-     * the cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Expression <em>Expression</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Expression
@@ -180,10 +182,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Symbol
-     * <em>Symbol</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
-     * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Symbol <em>Symbol</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Symbol
@@ -194,10 +197,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Sequence
-     * <em>Sequence</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
-     * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Sequence <em>Sequence</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Sequence
@@ -208,10 +212,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Operation
-     * <em>Operation</em>}'. <!-- begin-user-doc --> This default implementation returns null so
-     * that we can easily ignore cases; it's useful to ignore a case when inheritance will catch all
-     * the cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Operation <em>Operation</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Operation
@@ -222,10 +227,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Release
-     * <em>Release</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
-     * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Release <em>Release</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Release
@@ -236,10 +242,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Parallel
-     * <em>Parallel</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
-     * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Parallel <em>Parallel</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Parallel
@@ -250,10 +257,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Option
-     * <em>Option</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
-     * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Option <em>Option</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Option
@@ -264,10 +272,10 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Loop
-     * <em>Loop</em>}'. <!-- begin-user-doc --> This default implementation returns null so that we
-     * can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Loop <em>Loop</em>}'. <!-- begin-user-doc
+     * --> This default implementation returns null so that we can easily ignore cases; it's useful
+     * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Loop
@@ -279,9 +287,10 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
 
     /**
      * Creates a new adapter for an object of class '
-     * {@link org.palladiosimulator.solver.spa.expression.Alternative <em>Alternative</em>}'. <!-- begin-user-doc
-     * --> This default implementation returns null so that we can easily ignore cases; it's useful
-     * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.expression.Alternative <em>Alternative</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Alternative
@@ -292,10 +301,11 @@ public class ExpressionAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.expression.Acquire
-     * <em>Acquire</em>}'. <!-- begin-user-doc --> This default implementation returns null so that
-     * we can easily ignore cases; it's useful to ignore a case when inheritance will catch all the
-     * cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.expression.Acquire <em>Acquire</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.expression.Acquire

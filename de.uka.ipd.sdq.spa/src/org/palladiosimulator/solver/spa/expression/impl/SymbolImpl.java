@@ -19,19 +19,18 @@ import org.eclipse.emf.ecore.util.InternalEList;
 import org.palladiosimulator.solver.spa.expression.ExpressionPackage;
 import org.palladiosimulator.solver.spa.expression.Symbol;
 
-import org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage;
-
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>Symbol</b></em>'. <!--
  * end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.SymbolImpl#getName <em>Name</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.SymbolImpl#getName <em>Name</em>}
+ * </li>
  * <li>{@link org.palladiosimulator.solver.spa.expression.impl.SymbolImpl#getResourceUsages
  * <em>Resource Usages</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -65,7 +64,7 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * @generated
      * @ordered
      */
-    protected EList<ResourceUsage> resourceUsages = null;
+    protected EList<org.palladiosimulator.solver.resourcemodel.ResourceUsage> resourceUsages;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -91,33 +90,9 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * 
      * @generated
      */
+    @Override
     public String getName() {
-        return name;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setName(String newName) {
-        String oldName = name;
-        name = newName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.SYMBOL__NAME, oldName, name));
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public EList<ResourceUsage> getResourceUsages() {
-        if (resourceUsages == null) {
-            resourceUsages = new EObjectContainmentEList<ResourceUsage>(ResourceUsage.class, this,
-                    ExpressionPackage.SYMBOL__RESOURCE_USAGES);
-        }
-        return resourceUsages;
+        return this.name;
     }
 
     /**
@@ -126,10 +101,41 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public void setName(final String newName) {
+        final String oldName = this.name;
+        this.name = newName;
+        if (this.eNotificationRequired()) {
+            this.eNotify(
+                    new ENotificationImpl(this, Notification.SET, ExpressionPackage.SYMBOL__NAME, oldName, this.name));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public EList<org.palladiosimulator.solver.resourcemodel.ResourceUsage> getResourceUsages() {
+        if (this.resourceUsages == null) {
+            this.resourceUsages = new EObjectContainmentEList<org.palladiosimulator.solver.resourcemodel.ResourceUsage>(
+                    org.palladiosimulator.solver.resourcemodel.ResourceUsage.class, this,
+                    ExpressionPackage.SYMBOL__RESOURCE_USAGES);
+        }
+        return this.resourceUsages;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case ExpressionPackage.SYMBOL__RESOURCE_USAGES:
-            return ((InternalEList<?>) getResourceUsages()).basicRemove(otherEnd, msgs);
+            return ((InternalEList<?>) this.getResourceUsages()).basicRemove(otherEnd, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -140,12 +146,12 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case ExpressionPackage.SYMBOL__NAME:
-            return getName();
+            return this.getName();
         case ExpressionPackage.SYMBOL__RESOURCE_USAGES:
-            return getResourceUsages();
+            return this.getResourceUsages();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -157,14 +163,15 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      */
     @SuppressWarnings("unchecked")
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.SYMBOL__NAME:
-            setName((String) newValue);
+            this.setName((String) newValue);
             return;
         case ExpressionPackage.SYMBOL__RESOURCE_USAGES:
-            getResourceUsages().clear();
-            getResourceUsages().addAll((Collection<? extends ResourceUsage>) newValue);
+            this.getResourceUsages().clear();
+            this.getResourceUsages()
+                    .addAll((Collection<? extends org.palladiosimulator.solver.resourcemodel.ResourceUsage>) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -176,13 +183,13 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.SYMBOL__NAME:
-            setName(NAME_EDEFAULT);
+            this.setName(NAME_EDEFAULT);
             return;
         case ExpressionPackage.SYMBOL__RESOURCE_USAGES:
-            getResourceUsages().clear();
+            this.getResourceUsages().clear();
             return;
         }
         super.eUnset(featureID);
@@ -194,12 +201,12 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.SYMBOL__NAME:
-            return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+            return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         case ExpressionPackage.SYMBOL__RESOURCE_USAGES:
-            return resourceUsages != null && !resourceUsages.isEmpty();
+            return this.resourceUsages != null && !this.resourceUsages.isEmpty();
         }
         return super.eIsSet(featureID);
     }
@@ -211,12 +218,13 @@ public class SymbolImpl extends TerminalImpl implements Symbol {
      */
     @Override
     public String toString() {
-        if (eIsProxy())
+        if (this.eIsProxy()) {
             return super.toString();
+        }
 
-        StringBuffer result = new StringBuffer(super.toString());
+        final StringBuffer result = new StringBuffer(super.toString());
         result.append(" (name: ");
-        result.append(name);
+        result.append(this.name);
         result.append(')');
         return result.toString();
     }

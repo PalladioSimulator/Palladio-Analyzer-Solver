@@ -15,12 +15,14 @@ import org.palladiosimulator.solver.spa.expression.Expression;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getNumReplicas <em>Num Replicas</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getName <em>Name</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getBehaviour <em>Behaviour</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getNumReplicas <em>Num Replicas</em>
+ * }</li>
+ * <li>{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getName <em>Name</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getBehaviour <em>Behaviour</em>}
+ * </li>
+ * </ul>
  *
  * @see org.palladiosimulator.solver.spa.SpaPackage#getProcessBehaviour()
  * @model
@@ -45,8 +47,9 @@ public interface ProcessBehaviour extends EObject {
     int getNumReplicas();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getNumReplicas
-     * <em>Num Replicas</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.ProcessBehaviour#getNumReplicas <em>Num Replicas</em>
+     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Num Replicas</em>' attribute.
@@ -73,8 +76,8 @@ public interface ProcessBehaviour extends EObject {
     String getName();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getName <em>Name</em>}'
-     * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getName
+     * <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Name</em>' attribute.
@@ -91,7 +94,7 @@ public interface ProcessBehaviour extends EObject {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Behaviour</em>' containment reference.
      * @see #setBehaviour(Expression)
      * @see org.palladiosimulator.solver.spa.SpaPackage#getProcessBehaviour_Behaviour()

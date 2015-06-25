@@ -21,12 +21,13 @@ import org.palladiosimulator.solver.spa.expression.Option;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl#getProbability <em>Probability</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl#getRegexp <em>Regexp</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl#getProbability
+ * <em>Probability</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl#getRegexp <em>Regexp</em>}
+ * </li>
+ * </ul>
  *
  * @generated
  */
@@ -35,7 +36,7 @@ public class OptionImpl extends EObjectImpl implements Option {
     /**
      * The default value of the '{@link #getProbability() <em>Probability</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getProbability()
      * @generated
      * @ordered
@@ -45,7 +46,7 @@ public class OptionImpl extends EObjectImpl implements Option {
     /**
      * The cached value of the '{@link #getProbability() <em>Probability</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getProbability()
      * @generated
      * @ordered
@@ -55,12 +56,12 @@ public class OptionImpl extends EObjectImpl implements Option {
     /**
      * The cached value of the '{@link #getRegexp() <em>Regexp</em>}' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getRegexp()
      * @generated
      * @ordered
      */
-    protected Expression regexp = null;
+    protected Expression regexp;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -86,8 +87,9 @@ public class OptionImpl extends EObjectImpl implements Option {
      * 
      * @generated
      */
+    @Override
     public double getProbability() {
-        return probability;
+        return this.probability;
     }
 
     /**
@@ -95,12 +97,14 @@ public class OptionImpl extends EObjectImpl implements Option {
      * 
      * @generated
      */
-    public void setProbability(double newProbability) {
-        double oldProbability = probability;
-        probability = newProbability;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.OPTION__PROBABILITY, oldProbability,
-                    probability));
+    @Override
+    public void setProbability(final double newProbability) {
+        final double oldProbability = this.probability;
+        this.probability = newProbability;
+        if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.OPTION__PROBABILITY,
+                    oldProbability, this.probability));
+        }
     }
 
     /**
@@ -108,8 +112,9 @@ public class OptionImpl extends EObjectImpl implements Option {
      * 
      * @generated
      */
+    @Override
     public Expression getRegexp() {
-        return regexp;
+        return this.regexp;
     }
 
     /**
@@ -117,16 +122,17 @@ public class OptionImpl extends EObjectImpl implements Option {
      * 
      * @generated
      */
-    public NotificationChain basicSetRegexp(Expression newRegexp, NotificationChain msgs) {
-        Expression oldRegexp = regexp;
-        regexp = newRegexp;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+    public NotificationChain basicSetRegexp(final Expression newRegexp, NotificationChain msgs) {
+        final Expression oldRegexp = this.regexp;
+        this.regexp = newRegexp;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ExpressionPackage.OPTION__REGEXP, oldRegexp, newRegexp);
-            if (msgs == null)
+            if (msgs == null) {
                 msgs = notification;
-            else
+            } else {
                 msgs.add(notification);
+            }
         }
         return msgs;
     }
@@ -136,21 +142,26 @@ public class OptionImpl extends EObjectImpl implements Option {
      * 
      * @generated
      */
-    public void setRegexp(Expression newRegexp) {
-        if (newRegexp != regexp) {
+    @Override
+    public void setRegexp(final Expression newRegexp) {
+        if (newRegexp != this.regexp) {
             NotificationChain msgs = null;
-            if (regexp != null)
-                msgs = ((InternalEObject) regexp).eInverseRemove(this,
+            if (this.regexp != null) {
+                msgs = ((InternalEObject) this.regexp).eInverseRemove(this,
                         EOPPOSITE_FEATURE_BASE - ExpressionPackage.OPTION__REGEXP, null, msgs);
-            if (newRegexp != null)
+            }
+            if (newRegexp != null) {
                 msgs = ((InternalEObject) newRegexp).eInverseAdd(this,
                         EOPPOSITE_FEATURE_BASE - ExpressionPackage.OPTION__REGEXP, null, msgs);
-            msgs = basicSetRegexp(newRegexp, msgs);
-            if (msgs != null)
+            }
+            msgs = this.basicSetRegexp(newRegexp, msgs);
+            if (msgs != null) {
                 msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.OPTION__REGEXP, newRegexp,
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.OPTION__REGEXP, newRegexp,
                     newRegexp));
+        }
     }
 
     /**
@@ -159,10 +170,11 @@ public class OptionImpl extends EObjectImpl implements Option {
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case ExpressionPackage.OPTION__REGEXP:
-            return basicSetRegexp(null, msgs);
+            return this.basicSetRegexp(null, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -173,12 +185,12 @@ public class OptionImpl extends EObjectImpl implements Option {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case ExpressionPackage.OPTION__PROBABILITY:
-            return new Double(getProbability());
+            return this.getProbability();
         case ExpressionPackage.OPTION__REGEXP:
-            return getRegexp();
+            return this.getRegexp();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -189,13 +201,13 @@ public class OptionImpl extends EObjectImpl implements Option {
      * @generated
      */
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.OPTION__PROBABILITY:
-            setProbability(((Double) newValue).doubleValue());
+            this.setProbability((Double) newValue);
             return;
         case ExpressionPackage.OPTION__REGEXP:
-            setRegexp((Expression) newValue);
+            this.setRegexp((Expression) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -207,13 +219,13 @@ public class OptionImpl extends EObjectImpl implements Option {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.OPTION__PROBABILITY:
-            setProbability(PROBABILITY_EDEFAULT);
+            this.setProbability(PROBABILITY_EDEFAULT);
             return;
         case ExpressionPackage.OPTION__REGEXP:
-            setRegexp((Expression) null);
+            this.setRegexp((Expression) null);
             return;
         }
         super.eUnset(featureID);
@@ -225,12 +237,12 @@ public class OptionImpl extends EObjectImpl implements Option {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.OPTION__PROBABILITY:
-            return probability != PROBABILITY_EDEFAULT;
+            return this.probability != PROBABILITY_EDEFAULT;
         case ExpressionPackage.OPTION__REGEXP:
-            return regexp != null;
+            return this.regexp != null;
         }
         return super.eIsSet(featureID);
     }
@@ -242,12 +254,13 @@ public class OptionImpl extends EObjectImpl implements Option {
      */
     @Override
     public String toString() {
-        if (eIsProxy())
+        if (this.eIsProxy()) {
             return super.toString();
+        }
 
-        StringBuffer result = new StringBuffer(super.toString());
+        final StringBuffer result = new StringBuffer(super.toString());
         result.append(" (probability: ");
-        result.append(probability);
+        result.append(this.probability);
         result.append(')');
         return result.toString();
     }

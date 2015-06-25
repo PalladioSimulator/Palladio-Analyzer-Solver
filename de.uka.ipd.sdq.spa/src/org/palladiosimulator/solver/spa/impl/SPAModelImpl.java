@@ -19,18 +19,18 @@ import org.palladiosimulator.solver.spa.ProcessBehaviour;
 import org.palladiosimulator.solver.spa.SPAModel;
 import org.palladiosimulator.solver.spa.SpaPackage;
 
-import org.palladiosimulator.solver.spa.resourcemodel.Resource;
-
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>SPA Model</b></em>'. <!--
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.impl.SPAModelImpl#getProcesses <em>Processes</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.impl.SPAModelImpl#getResources <em>Resources</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.impl.SPAModelImpl#getProcesses <em>Processes</em>}
+ * </li>
+ * <li>{@link org.palladiosimulator.solver.spa.impl.SPAModelImpl#getResources <em>Resources</em>}
+ * </li>
+ * </ul>
  *
  * @generated
  */
@@ -44,7 +44,7 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      * @ordered
      */
-    protected EList<ProcessBehaviour> processes = null;
+    protected EList<ProcessBehaviour> processes;
 
     /**
      * The cached value of the '{@link #getResources() <em>Resources</em>}' containment reference
@@ -54,7 +54,7 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      * @ordered
      */
-    protected EList<Resource> resources = null;
+    protected EList<org.palladiosimulator.solver.resourcemodel.Resource> resources;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -80,24 +80,13 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * 
      * @generated
      */
+    @Override
     public EList<ProcessBehaviour> getProcesses() {
-        if (processes == null) {
-            processes = new EObjectContainmentEList<ProcessBehaviour>(ProcessBehaviour.class, this,
+        if (this.processes == null) {
+            this.processes = new EObjectContainmentEList<ProcessBehaviour>(ProcessBehaviour.class, this,
                     SpaPackage.SPA_MODEL__PROCESSES);
         }
-        return processes;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public EList<Resource> getResources() {
-        if (resources == null) {
-            resources = new EObjectContainmentEList<Resource>(Resource.class, this, SpaPackage.SPA_MODEL__RESOURCES);
-        }
-        return resources;
+        return this.processes;
     }
 
     /**
@@ -106,12 +95,27 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public EList<org.palladiosimulator.solver.resourcemodel.Resource> getResources() {
+        if (this.resources == null) {
+            this.resources = new EObjectContainmentEList<org.palladiosimulator.solver.resourcemodel.Resource>(
+                    org.palladiosimulator.solver.resourcemodel.Resource.class, this, SpaPackage.SPA_MODEL__RESOURCES);
+        }
+        return this.resources;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case SpaPackage.SPA_MODEL__PROCESSES:
-            return ((InternalEList<?>) getProcesses()).basicRemove(otherEnd, msgs);
+            return ((InternalEList<?>) this.getProcesses()).basicRemove(otherEnd, msgs);
         case SpaPackage.SPA_MODEL__RESOURCES:
-            return ((InternalEList<?>) getResources()).basicRemove(otherEnd, msgs);
+            return ((InternalEList<?>) this.getResources()).basicRemove(otherEnd, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -122,12 +126,12 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case SpaPackage.SPA_MODEL__PROCESSES:
-            return getProcesses();
+            return this.getProcesses();
         case SpaPackage.SPA_MODEL__RESOURCES:
-            return getResources();
+            return this.getResources();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -139,15 +143,16 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      */
     @SuppressWarnings("unchecked")
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case SpaPackage.SPA_MODEL__PROCESSES:
-            getProcesses().clear();
-            getProcesses().addAll((Collection<? extends ProcessBehaviour>) newValue);
+            this.getProcesses().clear();
+            this.getProcesses().addAll((Collection<? extends ProcessBehaviour>) newValue);
             return;
         case SpaPackage.SPA_MODEL__RESOURCES:
-            getResources().clear();
-            getResources().addAll((Collection<? extends Resource>) newValue);
+            this.getResources().clear();
+            this.getResources()
+                    .addAll((Collection<? extends org.palladiosimulator.solver.resourcemodel.Resource>) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -159,13 +164,13 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case SpaPackage.SPA_MODEL__PROCESSES:
-            getProcesses().clear();
+            this.getProcesses().clear();
             return;
         case SpaPackage.SPA_MODEL__RESOURCES:
-            getResources().clear();
+            this.getResources().clear();
             return;
         }
         super.eUnset(featureID);
@@ -177,12 +182,12 @@ public class SPAModelImpl extends EObjectImpl implements SPAModel {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case SpaPackage.SPA_MODEL__PROCESSES:
-            return processes != null && !processes.isEmpty();
+            return this.processes != null && !this.processes.isEmpty();
         case SpaPackage.SPA_MODEL__RESOURCES:
-            return resources != null && !resources.isEmpty();
+            return this.resources != null && !this.resources.isEmpty();
         }
         return super.eIsSet(featureID);
     }

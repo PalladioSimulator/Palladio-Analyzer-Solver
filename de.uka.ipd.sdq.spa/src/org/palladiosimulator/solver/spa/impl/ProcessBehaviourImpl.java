@@ -21,13 +21,14 @@ import org.palladiosimulator.solver.spa.expression.Expression;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl#getNumReplicas <em>Num Replicas</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl#getName <em>Name</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl#getBehaviour <em>Behaviour</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl#getNumReplicas
+ * <em>Num Replicas</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl#getName <em>Name</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl#getBehaviour
+ * <em>Behaviour</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -36,7 +37,7 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
     /**
      * The default value of the '{@link #getNumReplicas() <em>Num Replicas</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getNumReplicas()
      * @generated
      * @ordered
@@ -46,7 +47,7 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
     /**
      * The cached value of the '{@link #getNumReplicas() <em>Num Replicas</em>}' attribute. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getNumReplicas()
      * @generated
      * @ordered
@@ -81,7 +82,7 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * @generated
      * @ordered
      */
-    protected Expression behaviour = null;
+    protected Expression behaviour;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -107,8 +108,9 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * 
      * @generated
      */
+    @Override
     public int getNumReplicas() {
-        return numReplicas;
+        return this.numReplicas;
     }
 
     /**
@@ -116,12 +118,14 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * 
      * @generated
      */
-    public void setNumReplicas(int newNumReplicas) {
-        int oldNumReplicas = numReplicas;
-        numReplicas = newNumReplicas;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, SpaPackage.PROCESS_BEHAVIOUR__NUM_REPLICAS,
-                    oldNumReplicas, numReplicas));
+    @Override
+    public void setNumReplicas(final int newNumReplicas) {
+        final int oldNumReplicas = this.numReplicas;
+        this.numReplicas = newNumReplicas;
+        if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, SpaPackage.PROCESS_BEHAVIOUR__NUM_REPLICAS,
+                    oldNumReplicas, this.numReplicas));
+        }
     }
 
     /**
@@ -129,8 +133,9 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * 
      * @generated
      */
+    @Override
     public String getName() {
-        return name;
+        return this.name;
     }
 
     /**
@@ -138,11 +143,14 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * 
      * @generated
      */
-    public void setName(String newName) {
-        String oldName = name;
-        name = newName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, SpaPackage.PROCESS_BEHAVIOUR__NAME, oldName, name));
+    @Override
+    public void setName(final String newName) {
+        final String oldName = this.name;
+        this.name = newName;
+        if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, SpaPackage.PROCESS_BEHAVIOUR__NAME, oldName,
+                    this.name));
+        }
     }
 
     /**
@@ -150,8 +158,9 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * 
      * @generated
      */
+    @Override
     public Expression getBehaviour() {
-        return behaviour;
+        return this.behaviour;
     }
 
     /**
@@ -159,16 +168,17 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * 
      * @generated
      */
-    public NotificationChain basicSetBehaviour(Expression newBehaviour, NotificationChain msgs) {
-        Expression oldBehaviour = behaviour;
-        behaviour = newBehaviour;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+    public NotificationChain basicSetBehaviour(final Expression newBehaviour, NotificationChain msgs) {
+        final Expression oldBehaviour = this.behaviour;
+        this.behaviour = newBehaviour;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR, oldBehaviour, newBehaviour);
-            if (msgs == null)
+            if (msgs == null) {
                 msgs = notification;
-            else
+            } else {
                 msgs.add(notification);
+            }
         }
         return msgs;
     }
@@ -178,21 +188,26 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * 
      * @generated
      */
-    public void setBehaviour(Expression newBehaviour) {
-        if (newBehaviour != behaviour) {
+    @Override
+    public void setBehaviour(final Expression newBehaviour) {
+        if (newBehaviour != this.behaviour) {
             NotificationChain msgs = null;
-            if (behaviour != null)
-                msgs = ((InternalEObject) behaviour).eInverseRemove(this,
+            if (this.behaviour != null) {
+                msgs = ((InternalEObject) this.behaviour).eInverseRemove(this,
                         EOPPOSITE_FEATURE_BASE - SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR, null, msgs);
-            if (newBehaviour != null)
+            }
+            if (newBehaviour != null) {
                 msgs = ((InternalEObject) newBehaviour).eInverseAdd(this,
                         EOPPOSITE_FEATURE_BASE - SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR, null, msgs);
-            msgs = basicSetBehaviour(newBehaviour, msgs);
-            if (msgs != null)
+            }
+            msgs = this.basicSetBehaviour(newBehaviour, msgs);
+            if (msgs != null) {
                 msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR, newBehaviour,
-                    newBehaviour));
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR,
+                    newBehaviour, newBehaviour));
+        }
     }
 
     /**
@@ -201,10 +216,11 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR:
-            return basicSetBehaviour(null, msgs);
+            return this.basicSetBehaviour(null, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -215,14 +231,14 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case SpaPackage.PROCESS_BEHAVIOUR__NUM_REPLICAS:
-            return new Integer(getNumReplicas());
+            return this.getNumReplicas();
         case SpaPackage.PROCESS_BEHAVIOUR__NAME:
-            return getName();
+            return this.getName();
         case SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR:
-            return getBehaviour();
+            return this.getBehaviour();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -233,16 +249,16 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * @generated
      */
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case SpaPackage.PROCESS_BEHAVIOUR__NUM_REPLICAS:
-            setNumReplicas(((Integer) newValue).intValue());
+            this.setNumReplicas((Integer) newValue);
             return;
         case SpaPackage.PROCESS_BEHAVIOUR__NAME:
-            setName((String) newValue);
+            this.setName((String) newValue);
             return;
         case SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR:
-            setBehaviour((Expression) newValue);
+            this.setBehaviour((Expression) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -254,16 +270,16 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case SpaPackage.PROCESS_BEHAVIOUR__NUM_REPLICAS:
-            setNumReplicas(NUM_REPLICAS_EDEFAULT);
+            this.setNumReplicas(NUM_REPLICAS_EDEFAULT);
             return;
         case SpaPackage.PROCESS_BEHAVIOUR__NAME:
-            setName(NAME_EDEFAULT);
+            this.setName(NAME_EDEFAULT);
             return;
         case SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR:
-            setBehaviour((Expression) null);
+            this.setBehaviour((Expression) null);
             return;
         }
         super.eUnset(featureID);
@@ -275,14 +291,14 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case SpaPackage.PROCESS_BEHAVIOUR__NUM_REPLICAS:
-            return numReplicas != NUM_REPLICAS_EDEFAULT;
+            return this.numReplicas != NUM_REPLICAS_EDEFAULT;
         case SpaPackage.PROCESS_BEHAVIOUR__NAME:
-            return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+            return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         case SpaPackage.PROCESS_BEHAVIOUR__BEHAVIOUR:
-            return behaviour != null;
+            return this.behaviour != null;
         }
         return super.eIsSet(featureID);
     }
@@ -294,14 +310,15 @@ public class ProcessBehaviourImpl extends EObjectImpl implements ProcessBehaviou
      */
     @Override
     public String toString() {
-        if (eIsProxy())
+        if (this.eIsProxy()) {
             return super.toString();
+        }
 
-        StringBuffer result = new StringBuffer(super.toString());
+        final StringBuffer result = new StringBuffer(super.toString());
         result.append(" (numReplicas: ");
-        result.append(numReplicas);
+        result.append(this.numReplicas);
         result.append(", name: ");
-        result.append(name);
+        result.append(this.name);
         result.append(')');
         return result.toString();
     }

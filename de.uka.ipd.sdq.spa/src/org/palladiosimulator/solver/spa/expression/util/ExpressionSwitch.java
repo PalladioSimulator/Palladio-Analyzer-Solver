@@ -6,10 +6,9 @@
  */
 package org.palladiosimulator.solver.spa.expression.util;
 
-import java.util.List;
-
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.util.Switch;
 import org.palladiosimulator.solver.spa.expression.Acquire;
 import org.palladiosimulator.solver.spa.expression.Alternative;
 import org.palladiosimulator.solver.spa.expression.Expression;
@@ -33,7 +32,7 @@ import org.palladiosimulator.solver.spa.expression.Terminal;
  * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage
  * @generated
  */
-public class ExpressionSwitch<T> {
+public class ExpressionSwitch<T> extends Switch<T> {
 
     /**
      * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -54,14 +53,17 @@ public class ExpressionSwitch<T> {
     }
 
     /**
-     * Calls <code>caseXXX</code> for each class of the model until one returns a non null result;
-     * it yields that result. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Checks whether this is a switch for the given package. <!-- begin-user-doc --> <!--
+     * end-user-doc -->
      * 
-     * @return the first non-null result returned by a <code>caseXXX</code> call.
+     * @param ePackage
+     *            the package in question.
+     * @return whether this is a switch for the given package.
      * @generated
      */
-    public T doSwitch(EObject theEObject) {
-        return doSwitch(theEObject.eClass(), theEObject);
+    @Override
+    protected boolean isSwitchFor(final EPackage ePackage) {
+        return ePackage == modelPackage;
     }
 
     /**
@@ -71,135 +73,147 @@ public class ExpressionSwitch<T> {
      * @return the first non-null result returned by a <code>caseXXX</code> call.
      * @generated
      */
-    protected T doSwitch(EClass theEClass, EObject theEObject) {
-        if (theEClass.eContainer() == modelPackage) {
-            return doSwitch(theEClass.getClassifierID(), theEObject);
-        } else {
-            List<EClass> eSuperTypes = theEClass.getESuperTypes();
-            return eSuperTypes.isEmpty() ? defaultCase(theEObject) : doSwitch(eSuperTypes.get(0), theEObject);
-        }
-    }
-
-    /**
-     * Calls <code>caseXXX</code> for each class of the model until one returns a non null result;
-     * it yields that result. <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @return the first non-null result returned by a <code>caseXXX</code> call.
-     * @generated
-     */
-    protected T doSwitch(int classifierID, EObject theEObject) {
+    @Override
+    protected T doSwitch(final int classifierID, final EObject theEObject) {
         switch (classifierID) {
         case ExpressionPackage.TERMINAL: {
-            Terminal terminal = (Terminal) theEObject;
-            T result = caseTerminal(terminal);
-            if (result == null)
-                result = caseExpression(terminal);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Terminal terminal = (Terminal) theEObject;
+            T result = this.caseTerminal(terminal);
+            if (result == null) {
+                result = this.caseExpression(terminal);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.EXPRESSION: {
-            Expression expression = (Expression) theEObject;
-            T result = caseExpression(expression);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Expression expression = (Expression) theEObject;
+            T result = this.caseExpression(expression);
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.SYMBOL: {
-            Symbol symbol = (Symbol) theEObject;
-            T result = caseSymbol(symbol);
-            if (result == null)
-                result = caseTerminal(symbol);
-            if (result == null)
-                result = caseExpression(symbol);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Symbol symbol = (Symbol) theEObject;
+            T result = this.caseSymbol(symbol);
+            if (result == null) {
+                result = this.caseTerminal(symbol);
+            }
+            if (result == null) {
+                result = this.caseExpression(symbol);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.SEQUENCE: {
-            Sequence sequence = (Sequence) theEObject;
-            T result = caseSequence(sequence);
-            if (result == null)
-                result = caseOperation(sequence);
-            if (result == null)
-                result = caseExpression(sequence);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Sequence sequence = (Sequence) theEObject;
+            T result = this.caseSequence(sequence);
+            if (result == null) {
+                result = this.caseOperation(sequence);
+            }
+            if (result == null) {
+                result = this.caseExpression(sequence);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.OPERATION: {
-            Operation operation = (Operation) theEObject;
-            T result = caseOperation(operation);
-            if (result == null)
-                result = caseExpression(operation);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Operation operation = (Operation) theEObject;
+            T result = this.caseOperation(operation);
+            if (result == null) {
+                result = this.caseExpression(operation);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.RELEASE: {
-            Release release = (Release) theEObject;
-            T result = caseRelease(release);
-            if (result == null)
-                result = caseTerminal(release);
-            if (result == null)
-                result = caseExpression(release);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Release release = (Release) theEObject;
+            T result = this.caseRelease(release);
+            if (result == null) {
+                result = this.caseTerminal(release);
+            }
+            if (result == null) {
+                result = this.caseExpression(release);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.PARALLEL: {
-            Parallel parallel = (Parallel) theEObject;
-            T result = caseParallel(parallel);
-            if (result == null)
-                result = caseOperation(parallel);
-            if (result == null)
-                result = caseExpression(parallel);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Parallel parallel = (Parallel) theEObject;
+            T result = this.caseParallel(parallel);
+            if (result == null) {
+                result = this.caseOperation(parallel);
+            }
+            if (result == null) {
+                result = this.caseExpression(parallel);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.OPTION: {
-            Option option = (Option) theEObject;
-            T result = caseOption(option);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Option option = (Option) theEObject;
+            T result = this.caseOption(option);
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.LOOP: {
-            Loop loop = (Loop) theEObject;
-            T result = caseLoop(loop);
-            if (result == null)
-                result = caseOperation(loop);
-            if (result == null)
-                result = caseExpression(loop);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Loop loop = (Loop) theEObject;
+            T result = this.caseLoop(loop);
+            if (result == null) {
+                result = this.caseOperation(loop);
+            }
+            if (result == null) {
+                result = this.caseExpression(loop);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.ALTERNATIVE: {
-            Alternative alternative = (Alternative) theEObject;
-            T result = caseAlternative(alternative);
-            if (result == null)
-                result = caseOperation(alternative);
-            if (result == null)
-                result = caseExpression(alternative);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Alternative alternative = (Alternative) theEObject;
+            T result = this.caseAlternative(alternative);
+            if (result == null) {
+                result = this.caseOperation(alternative);
+            }
+            if (result == null) {
+                result = this.caseExpression(alternative);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         case ExpressionPackage.ACQUIRE: {
-            Acquire acquire = (Acquire) theEObject;
-            T result = caseAcquire(acquire);
-            if (result == null)
-                result = caseTerminal(acquire);
-            if (result == null)
-                result = caseExpression(acquire);
-            if (result == null)
-                result = defaultCase(theEObject);
+            final Acquire acquire = (Acquire) theEObject;
+            T result = this.caseAcquire(acquire);
+            if (result == null) {
+                result = this.caseTerminal(acquire);
+            }
+            if (result == null) {
+                result = this.caseExpression(acquire);
+            }
+            if (result == null) {
+                result = this.defaultCase(theEObject);
+            }
             return result;
         }
         default:
-            return defaultCase(theEObject);
+            return this.defaultCase(theEObject);
         }
     }
 
@@ -207,14 +221,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Terminal</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Terminal</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseTerminal(Terminal object) {
+    public T caseTerminal(final Terminal object) {
         return null;
     }
 
@@ -222,14 +236,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Expression</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Expression</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseExpression(Expression object) {
+    public T caseExpression(final Expression object) {
         return null;
     }
 
@@ -237,14 +251,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Symbol</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Symbol</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseSymbol(Symbol object) {
+    public T caseSymbol(final Symbol object) {
         return null;
     }
 
@@ -252,14 +266,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Sequence</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Sequence</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseSequence(Sequence object) {
+    public T caseSequence(final Sequence object) {
         return null;
     }
 
@@ -267,14 +281,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Operation</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Operation</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseOperation(Operation object) {
+    public T caseOperation(final Operation object) {
         return null;
     }
 
@@ -282,14 +296,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Release</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Release</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseRelease(Release object) {
+    public T caseRelease(final Release object) {
         return null;
     }
 
@@ -297,14 +311,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Parallel</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Parallel</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseParallel(Parallel object) {
+    public T caseParallel(final Parallel object) {
         return null;
     }
 
@@ -312,14 +326,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Option</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Option</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseOption(Option object) {
+    public T caseOption(final Option object) {
         return null;
     }
 
@@ -327,14 +341,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Loop</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Loop</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseLoop(Loop object) {
+    public T caseLoop(final Loop object) {
         return null;
     }
 
@@ -342,14 +356,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Alternative</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Alternative</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseAlternative(Alternative object) {
+    public T caseAlternative(final Alternative object) {
         return null;
     }
 
@@ -357,14 +371,14 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>Acquire</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>Acquire</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
      * @generated
      */
-    public T caseAcquire(Acquire object) {
+    public T caseAcquire(final Acquire object) {
         return null;
     }
 
@@ -372,14 +386,15 @@ public class ExpressionSwitch<T> {
      * Returns the result of interpretting the object as an instance of '<em>EObject</em>'. <!--
      * begin-user-doc --> This implementation returns null; returning a non-null result will
      * terminate the switch, but this is the last case anyway. <!-- end-user-doc -->
-     * 
+     *
      * @param object
      *            the target of the switch.
      * @return the result of interpretting the object as an instance of '<em>EObject</em>'.
      * @see #doSwitch(org.eclipse.emf.ecore.EObject)
      * @generated
      */
-    public T defaultCase(EObject object) {
+    @Override
+    public T defaultCase(final EObject object) {
         return null;
     }
 

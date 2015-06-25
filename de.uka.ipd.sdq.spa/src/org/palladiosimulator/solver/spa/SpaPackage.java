@@ -40,14 +40,14 @@ public interface SpaPackage extends EPackage {
      * 
      * @generated
      */
-    String eNS_URI = "http://sdq.ipd.uka.de/StochasticProcessAlgebra/1.0";
+    String eNS_URI = "http://palladiosimulator.org/Solver/StochasticProcessAlgebra/1.0";
 
     /**
      * The package namespace name. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @generated
      */
-    String eNS_PREFIX = "spa";
+    String eNS_PREFIX = "org.palladiosimulator.solver";
 
     /**
      * The singleton instance of the package. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -96,15 +96,15 @@ public interface SpaPackage extends EPackage {
     /**
      * The number of structural features of the '<em>Process Behaviour</em>' class. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
     int PROCESS_BEHAVIOUR_FEATURE_COUNT = 3;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.impl.SPAModelImpl <em>SPA Model</em>}'
-     * class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '{@link org.palladiosimulator.solver.spa.impl.SPAModelImpl
+     * <em>SPA Model</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.impl.SPAModelImpl
      * @see org.palladiosimulator.solver.spa.impl.SpaPackageImpl#getSPAModel()
@@ -115,7 +115,7 @@ public interface SpaPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Processes</b></em>' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -124,7 +124,7 @@ public interface SpaPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Resources</b></em>' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -151,9 +151,9 @@ public interface SpaPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.spa.ProcessBehaviour#getNumReplicas <em>Num Replicas</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.ProcessBehaviour#getNumReplicas <em>Num Replicas</em>
+     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the attribute '<em>Num Replicas</em>'.
      * @see org.palladiosimulator.solver.spa.ProcessBehaviour#getNumReplicas()
      * @see #getProcessBehaviour()
@@ -162,8 +162,9 @@ public interface SpaPackage extends EPackage {
     EAttribute getProcessBehaviour_NumReplicas();
 
     /**
-     * Returns the meta object for the attribute '{@link org.palladiosimulator.solver.spa.ProcessBehaviour#getName
-     * <em>Name</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for the attribute '
+     * {@link org.palladiosimulator.solver.spa.ProcessBehaviour#getName <em>Name</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the attribute '<em>Name</em>'.
      * @see org.palladiosimulator.solver.spa.ProcessBehaviour#getName()
@@ -174,9 +175,9 @@ public interface SpaPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.ProcessBehaviour#getBehaviour <em>Behaviour</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.ProcessBehaviour#getBehaviour <em>Behaviour</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Behaviour</em>'.
      * @see org.palladiosimulator.solver.spa.ProcessBehaviour#getBehaviour()
      * @see #getProcessBehaviour()
@@ -185,8 +186,8 @@ public interface SpaPackage extends EPackage {
     EReference getProcessBehaviour_Behaviour();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.SPAModel <em>SPA Model</em>}'.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.SPAModel
+     * <em>SPA Model</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>SPA Model</em>'.
      * @see org.palladiosimulator.solver.spa.SPAModel
@@ -196,8 +197,8 @@ public interface SpaPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference list '
-     * {@link org.palladiosimulator.solver.spa.SPAModel#getProcesses <em>Processes</em>}'. <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.SPAModel#getProcesses <em>Processes</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the containment reference list '<em>Processes</em>'.
      * @see org.palladiosimulator.solver.spa.SPAModel#getProcesses()
@@ -208,8 +209,8 @@ public interface SpaPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference list '
-     * {@link org.palladiosimulator.solver.spa.SPAModel#getResources <em>Resources</em>}'. <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.SPAModel#getResources <em>Resources</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the containment reference list '<em>Resources</em>'.
      * @see org.palladiosimulator.solver.spa.SPAModel#getResources()
@@ -242,7 +243,8 @@ public interface SpaPackage extends EPackage {
     interface Literals {
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl
          * <em>Process Behaviour</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.impl.ProcessBehaviourImpl
@@ -254,7 +256,7 @@ public interface SpaPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Num Replicas</b></em>' attribute feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute PROCESS_BEHAVIOUR__NUM_REPLICAS = eINSTANCE.getProcessBehaviour_NumReplicas();
@@ -262,7 +264,7 @@ public interface SpaPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute PROCESS_BEHAVIOUR__NAME = eINSTANCE.getProcessBehaviour_Name();
@@ -276,8 +278,9 @@ public interface SpaPackage extends EPackage {
         EReference PROCESS_BEHAVIOUR__BEHAVIOUR = eINSTANCE.getProcessBehaviour_Behaviour();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.impl.SPAModelImpl
-         * <em>SPA Model</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.impl.SPAModelImpl <em>SPA Model</em>}' class.
+         * <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.impl.SPAModelImpl
          * @see org.palladiosimulator.solver.spa.impl.SpaPackageImpl#getSPAModel()

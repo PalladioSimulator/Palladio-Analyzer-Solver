@@ -27,7 +27,7 @@ public interface ExpressionFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Symbol</em>'. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @return a new object of class '<em>Symbol</em>'.
      * @generated
      */
@@ -36,7 +36,7 @@ public interface ExpressionFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Sequence</em>'. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @return a new object of class '<em>Sequence</em>'.
      * @generated
      */
@@ -45,7 +45,7 @@ public interface ExpressionFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Release</em>'. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @return a new object of class '<em>Release</em>'.
      * @generated
      */
@@ -54,7 +54,7 @@ public interface ExpressionFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Parallel</em>'. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @return a new object of class '<em>Parallel</em>'.
      * @generated
      */
@@ -63,7 +63,7 @@ public interface ExpressionFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Option</em>'. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @return a new object of class '<em>Option</em>'.
      * @generated
      */
@@ -89,7 +89,7 @@ public interface ExpressionFactory extends EFactory {
     /**
      * Returns a new object of class '<em>Acquire</em>'. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @return a new object of class '<em>Acquire</em>'.
      * @generated
      */

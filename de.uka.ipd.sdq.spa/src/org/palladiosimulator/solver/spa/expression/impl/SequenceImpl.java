@@ -20,13 +20,13 @@ import org.palladiosimulator.solver.spa.expression.Sequence;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl#getLeftRegExp <em>Left Reg Exp</em>}
- * </li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl#getRightRegExp <em>Right Reg Exp</em>}
- * </li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl#getLeftRegExp
+ * <em>Left Reg Exp</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl#getRightRegExp
+ * <em>Right Reg Exp</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -40,7 +40,7 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * @generated
      * @ordered
      */
-    protected Expression leftRegExp = null;
+    protected Expression leftRegExp;
 
     /**
      * The cached value of the '{@link #getRightRegExp() <em>Right Reg Exp</em>}' containment
@@ -50,7 +50,7 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * @generated
      * @ordered
      */
-    protected Expression rightRegExp = null;
+    protected Expression rightRegExp;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -76,8 +76,9 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * 
      * @generated
      */
+    @Override
     public Expression getLeftRegExp() {
-        return leftRegExp;
+        return this.leftRegExp;
     }
 
     /**
@@ -85,90 +86,19 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * 
      * @generated
      */
-    public NotificationChain basicSetLeftRegExp(Expression newLeftRegExp, NotificationChain msgs) {
-        Expression oldLeftRegExp = leftRegExp;
-        leftRegExp = newLeftRegExp;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+    public NotificationChain basicSetLeftRegExp(final Expression newLeftRegExp, NotificationChain msgs) {
+        final Expression oldLeftRegExp = this.leftRegExp;
+        this.leftRegExp = newLeftRegExp;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ExpressionPackage.SEQUENCE__LEFT_REG_EXP, oldLeftRegExp, newLeftRegExp);
-            if (msgs == null)
+            if (msgs == null) {
                 msgs = notification;
-            else
+            } else {
                 msgs.add(notification);
+            }
         }
         return msgs;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setLeftRegExp(Expression newLeftRegExp) {
-        if (newLeftRegExp != leftRegExp) {
-            NotificationChain msgs = null;
-            if (leftRegExp != null)
-                msgs = ((InternalEObject) leftRegExp).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__LEFT_REG_EXP, null, msgs);
-            if (newLeftRegExp != null)
-                msgs = ((InternalEObject) newLeftRegExp).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__LEFT_REG_EXP, null, msgs);
-            msgs = basicSetLeftRegExp(newLeftRegExp, msgs);
-            if (msgs != null)
-                msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.SEQUENCE__LEFT_REG_EXP,
-                    newLeftRegExp, newLeftRegExp));
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public Expression getRightRegExp() {
-        return rightRegExp;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public NotificationChain basicSetRightRegExp(Expression newRightRegExp, NotificationChain msgs) {
-        Expression oldRightRegExp = rightRegExp;
-        rightRegExp = newRightRegExp;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-                    ExpressionPackage.SEQUENCE__RIGHT_REG_EXP, oldRightRegExp, newRightRegExp);
-            if (msgs == null)
-                msgs = notification;
-            else
-                msgs.add(notification);
-        }
-        return msgs;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setRightRegExp(Expression newRightRegExp) {
-        if (newRightRegExp != rightRegExp) {
-            NotificationChain msgs = null;
-            if (rightRegExp != null)
-                msgs = ((InternalEObject) rightRegExp).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__RIGHT_REG_EXP, null, msgs);
-            if (newRightRegExp != null)
-                msgs = ((InternalEObject) newRightRegExp).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__RIGHT_REG_EXP, null, msgs);
-            msgs = basicSetRightRegExp(newRightRegExp, msgs);
-            if (msgs != null)
-                msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.SEQUENCE__RIGHT_REG_EXP,
-                    newRightRegExp, newRightRegExp));
     }
 
     /**
@@ -177,12 +107,97 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public void setLeftRegExp(final Expression newLeftRegExp) {
+        if (newLeftRegExp != this.leftRegExp) {
+            NotificationChain msgs = null;
+            if (this.leftRegExp != null) {
+                msgs = ((InternalEObject) this.leftRegExp).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__LEFT_REG_EXP, null, msgs);
+            }
+            if (newLeftRegExp != null) {
+                msgs = ((InternalEObject) newLeftRegExp).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__LEFT_REG_EXP, null, msgs);
+            }
+            msgs = this.basicSetLeftRegExp(newLeftRegExp, msgs);
+            if (msgs != null) {
+                msgs.dispatch();
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.SEQUENCE__LEFT_REG_EXP,
+                    newLeftRegExp, newLeftRegExp));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public Expression getRightRegExp() {
+        return this.rightRegExp;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    public NotificationChain basicSetRightRegExp(final Expression newRightRegExp, NotificationChain msgs) {
+        final Expression oldRightRegExp = this.rightRegExp;
+        this.rightRegExp = newRightRegExp;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+                    ExpressionPackage.SEQUENCE__RIGHT_REG_EXP, oldRightRegExp, newRightRegExp);
+            if (msgs == null) {
+                msgs = notification;
+            } else {
+                msgs.add(notification);
+            }
+        }
+        return msgs;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public void setRightRegExp(final Expression newRightRegExp) {
+        if (newRightRegExp != this.rightRegExp) {
+            NotificationChain msgs = null;
+            if (this.rightRegExp != null) {
+                msgs = ((InternalEObject) this.rightRegExp).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__RIGHT_REG_EXP, null, msgs);
+            }
+            if (newRightRegExp != null) {
+                msgs = ((InternalEObject) newRightRegExp).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.SEQUENCE__RIGHT_REG_EXP, null, msgs);
+            }
+            msgs = this.basicSetRightRegExp(newRightRegExp, msgs);
+            if (msgs != null) {
+                msgs.dispatch();
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.SEQUENCE__RIGHT_REG_EXP,
+                    newRightRegExp, newRightRegExp));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case ExpressionPackage.SEQUENCE__LEFT_REG_EXP:
-            return basicSetLeftRegExp(null, msgs);
+            return this.basicSetLeftRegExp(null, msgs);
         case ExpressionPackage.SEQUENCE__RIGHT_REG_EXP:
-            return basicSetRightRegExp(null, msgs);
+            return this.basicSetRightRegExp(null, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -193,12 +208,12 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case ExpressionPackage.SEQUENCE__LEFT_REG_EXP:
-            return getLeftRegExp();
+            return this.getLeftRegExp();
         case ExpressionPackage.SEQUENCE__RIGHT_REG_EXP:
-            return getRightRegExp();
+            return this.getRightRegExp();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -209,13 +224,13 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * @generated
      */
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.SEQUENCE__LEFT_REG_EXP:
-            setLeftRegExp((Expression) newValue);
+            this.setLeftRegExp((Expression) newValue);
             return;
         case ExpressionPackage.SEQUENCE__RIGHT_REG_EXP:
-            setRightRegExp((Expression) newValue);
+            this.setRightRegExp((Expression) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -227,13 +242,13 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.SEQUENCE__LEFT_REG_EXP:
-            setLeftRegExp((Expression) null);
+            this.setLeftRegExp((Expression) null);
             return;
         case ExpressionPackage.SEQUENCE__RIGHT_REG_EXP:
-            setRightRegExp((Expression) null);
+            this.setRightRegExp((Expression) null);
             return;
         }
         super.eUnset(featureID);
@@ -245,12 +260,12 @@ public class SequenceImpl extends OperationImpl implements Sequence {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.SEQUENCE__LEFT_REG_EXP:
-            return leftRegExp != null;
+            return this.leftRegExp != null;
         case ExpressionPackage.SEQUENCE__RIGHT_REG_EXP:
-            return rightRegExp != null;
+            return this.rightRegExp != null;
         }
         return super.eIsSet(featureID);
     }

@@ -14,13 +14,14 @@ import de.uka.ipd.sdq.probfunction.ProbabilityMassFunction;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  * <li>{@link org.palladiosimulator.solver.spa.expression.Loop#getRegExp <em>Reg Exp</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsPMF <em>Iterations PMF</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsString <em>Iterations String</em>}
- * </li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsPMF
+ * <em>Iterations PMF</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsString
+ * <em>Iterations String</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getLoop()
  * @model
@@ -46,8 +47,8 @@ public interface Loop extends Operation {
     Expression getRegExp();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Loop#getRegExp <em>Reg Exp</em>}'
-     * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Loop#getRegExp
+     * <em>Reg Exp</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Reg Exp</em>' containment reference.
@@ -64,7 +65,7 @@ public interface Loop extends Operation {
      * really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Iterations PMF</em>' containment reference.
      * @see #setIterationsPMF(ProbabilityMassFunction)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getLoop_IterationsPMF()
@@ -74,10 +75,11 @@ public interface Loop extends Operation {
     ProbabilityMassFunction getIterationsPMF();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsPMF
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsPMF
      * <em>Iterations PMF</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @param value
      *            the new value of the '<em>Iterations PMF</em>' containment reference.
      * @see #getIterationsPMF()
@@ -103,7 +105,8 @@ public interface Loop extends Operation {
     String getIterationsString();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsString
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsString
      * <em>Iterations String</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value

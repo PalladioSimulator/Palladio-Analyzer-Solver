@@ -40,14 +40,14 @@ public interface ExpressionPackage extends EPackage {
      * 
      * @generated
      */
-    String eNS_URI = "http://sdq.ipd.uka.de/Analytical/Expression/1.0";
+    String eNS_URI = "http://palladiosimulator.org/Solver/StochasticProcessAlgebra/Expression/1.0";
 
     /**
      * The package namespace name. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @generated
      */
-    String eNS_PREFIX = "spa.expression";
+    String eNS_PREFIX = "org.palladiosimulator.solver.spa";
 
     /**
      * The singleton instance of the package. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -57,8 +57,9 @@ public interface ExpressionPackage extends EPackage {
     ExpressionPackage eINSTANCE = org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl.init();
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.ExpressionImpl
-     * <em>Expression</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.ExpressionImpl <em>Expression</em>}'
+     * class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getExpression()
@@ -76,8 +77,9 @@ public interface ExpressionPackage extends EPackage {
     int EXPRESSION_FEATURE_COUNT = 0;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.TerminalImpl
-     * <em>Terminal</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.TerminalImpl <em>Terminal</em>}'
+     * class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.TerminalImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getTerminal()
@@ -95,8 +97,9 @@ public interface ExpressionPackage extends EPackage {
     int TERMINAL_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.SymbolImpl
-     * <em>Symbol</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.SymbolImpl <em>Symbol</em>}' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.SymbolImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getSymbol()
@@ -116,7 +119,7 @@ public interface ExpressionPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Resource Usages</b></em>' containment reference list. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -132,8 +135,9 @@ public interface ExpressionPackage extends EPackage {
     int SYMBOL_FEATURE_COUNT = TERMINAL_FEATURE_COUNT + 2;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.OperationImpl
-     * <em>Operation</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.OperationImpl <em>Operation</em>}'
+     * class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.OperationImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getOperation()
@@ -151,8 +155,9 @@ public interface ExpressionPackage extends EPackage {
     int OPERATION_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 0;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl
-     * <em>Sequence</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl <em>Sequence</em>}'
+     * class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.SequenceImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getSequence()
@@ -163,7 +168,7 @@ public interface ExpressionPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Left Reg Exp</b></em>' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -172,7 +177,7 @@ public interface ExpressionPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Right Reg Exp</b></em>' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -188,8 +193,9 @@ public interface ExpressionPackage extends EPackage {
     int SEQUENCE_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 2;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl
-     * <em>Release</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl <em>Release</em>}' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getRelease()
@@ -216,8 +222,9 @@ public interface ExpressionPackage extends EPackage {
     int RELEASE_FEATURE_COUNT = TERMINAL_FEATURE_COUNT + 1;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl
-     * <em>Parallel</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl <em>Parallel</em>}'
+     * class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.ParallelImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getParallel()
@@ -237,7 +244,7 @@ public interface ExpressionPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Right Task</b></em>' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -253,8 +260,9 @@ public interface ExpressionPackage extends EPackage {
     int PARALLEL_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 2;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl
-     * <em>Option</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl <em>Option</em>}' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.OptionImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getOption()
@@ -290,8 +298,8 @@ public interface ExpressionPackage extends EPackage {
     int OPTION_FEATURE_COUNT = 2;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl <em>Loop</em>}
-     * ' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl
+     * <em>Loop</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.LoopImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getLoop()
@@ -311,7 +319,7 @@ public interface ExpressionPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Iterations PMF</b></em>' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -336,8 +344,9 @@ public interface ExpressionPackage extends EPackage {
     int LOOP_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 3;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl
-     * <em>Alternative</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl <em>Alternative</em>}
+     * ' class. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getAlternative()
@@ -348,7 +357,7 @@ public interface ExpressionPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Left Option</b></em>' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -357,7 +366,7 @@ public interface ExpressionPackage extends EPackage {
     /**
      * The feature id for the '<em><b>Right Option</b></em>' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      * @ordered
      */
@@ -373,8 +382,9 @@ public interface ExpressionPackage extends EPackage {
     int ALTERNATIVE_FEATURE_COUNT = OPERATION_FEATURE_COUNT + 2;
 
     /**
-     * The meta object id for the '{@link org.palladiosimulator.solver.spa.expression.impl.AcquireImpl
-     * <em>Acquire</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * The meta object id for the '
+     * {@link org.palladiosimulator.solver.spa.expression.impl.AcquireImpl <em>Acquire</em>}' class.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see org.palladiosimulator.solver.spa.expression.impl.AcquireImpl
      * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getAcquire()
@@ -401,8 +411,9 @@ public interface ExpressionPackage extends EPackage {
     int ACQUIRE_FEATURE_COUNT = TERMINAL_FEATURE_COUNT + 1;
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Terminal
-     * <em>Terminal</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.spa.expression.Terminal <em>Terminal</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>Terminal</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Terminal
@@ -411,8 +422,9 @@ public interface ExpressionPackage extends EPackage {
     EClass getTerminal();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Expression
-     * <em>Expression</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.spa.expression.Expression <em>Expression</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>Expression</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Expression
@@ -432,8 +444,8 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.spa.expression.Symbol#getName <em>Name</em>}'. <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.expression.Symbol#getName <em>Name</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the attribute '<em>Name</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Symbol#getName()
@@ -444,8 +456,8 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference list '
-     * {@link org.palladiosimulator.solver.spa.expression.Symbol#getResourceUsages <em>Resource Usages</em>}'.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.expression.Symbol#getResourceUsages
+     * <em>Resource Usages</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the containment reference list '<em>Resource Usages</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Symbol#getResourceUsages()
@@ -455,8 +467,9 @@ public interface ExpressionPackage extends EPackage {
     EReference getSymbol_ResourceUsages();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Sequence
-     * <em>Sequence</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.spa.expression.Sequence <em>Sequence</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>Sequence</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Sequence
@@ -466,9 +479,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Sequence#getLeftRegExp <em>Left Reg Exp</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Sequence#getLeftRegExp
+     * <em>Left Reg Exp</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Left Reg Exp</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Sequence#getLeftRegExp()
      * @see #getSequence()
@@ -478,9 +491,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Sequence#getRightRegExp <em>Right Reg Exp</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Sequence#getRightRegExp
+     * <em>Right Reg Exp</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Right Reg Exp</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Sequence#getRightRegExp()
      * @see #getSequence()
@@ -489,8 +502,9 @@ public interface ExpressionPackage extends EPackage {
     EReference getSequence_RightRegExp();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Operation
-     * <em>Operation</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.spa.expression.Operation <em>Operation</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>Operation</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Operation
@@ -510,9 +524,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Release#getResource <em>Resource</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Release#getResource <em>Resource</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the reference '<em>Resource</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Release#getResource()
      * @see #getRelease()
@@ -521,8 +535,9 @@ public interface ExpressionPackage extends EPackage {
     EReference getRelease_Resource();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Parallel
-     * <em>Parallel</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.spa.expression.Parallel <em>Parallel</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>Parallel</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Parallel
@@ -532,9 +547,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Parallel#getLeftTask <em>Left Task</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Parallel#getLeftTask <em>Left Task</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Left Task</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Parallel#getLeftTask()
      * @see #getParallel()
@@ -544,9 +559,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Parallel#getRightTask <em>Right Task</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Parallel#getRightTask <em>Right Task</em>}
+     * '. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Right Task</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Parallel#getRightTask()
      * @see #getParallel()
@@ -566,9 +581,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.spa.expression.Option#getProbability <em>Probability</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Option#getProbability <em>Probability</em>
+     * }'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the attribute '<em>Probability</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Option#getProbability()
      * @see #getOption()
@@ -578,8 +593,8 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Option#getRegexp <em>Regexp</em>}'. <!-- begin-user-doc
-     * --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.expression.Option#getRegexp <em>Regexp</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the containment reference '<em>Regexp</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Option#getRegexp()
@@ -589,8 +604,8 @@ public interface ExpressionPackage extends EPackage {
     EReference getOption_Regexp();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Loop <em>Loop</em>}'.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Loop
+     * <em>Loop</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>Loop</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Loop
@@ -600,8 +615,8 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Loop#getRegExp <em>Reg Exp</em>}'. <!-- begin-user-doc
-     * --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.expression.Loop#getRegExp <em>Reg Exp</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the containment reference '<em>Reg Exp</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Loop#getRegExp()
@@ -612,9 +627,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsPMF <em>Iterations PMF</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsPMF
+     * <em>Iterations PMF</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Iterations PMF</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Loop#getIterationsPMF()
      * @see #getLoop()
@@ -624,8 +639,8 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the attribute '
-     * {@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsString <em>Iterations String</em>}'.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * {@link org.palladiosimulator.solver.spa.expression.Loop#getIterationsString
+     * <em>Iterations String</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for the attribute '<em>Iterations String</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Loop#getIterationsString()
@@ -635,8 +650,9 @@ public interface ExpressionPackage extends EPackage {
     EAttribute getLoop_IterationsString();
 
     /**
-     * Returns the meta object for class '{@link org.palladiosimulator.solver.spa.expression.Alternative
-     * <em>Alternative</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Returns the meta object for class '
+     * {@link org.palladiosimulator.solver.spa.expression.Alternative <em>Alternative</em>}'. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
      * 
      * @return the meta object for class '<em>Alternative</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Alternative
@@ -646,9 +662,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Alternative#getLeftOption <em>Left Option</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Alternative#getLeftOption
+     * <em>Left Option</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Left Option</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Alternative#getLeftOption()
      * @see #getAlternative()
@@ -658,9 +674,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the containment reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Alternative#getRightOption <em>Right Option</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Alternative#getRightOption
+     * <em>Right Option</em>}'. <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the containment reference '<em>Right Option</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Alternative#getRightOption()
      * @see #getAlternative()
@@ -680,9 +696,9 @@ public interface ExpressionPackage extends EPackage {
 
     /**
      * Returns the meta object for the reference '
-     * {@link org.palladiosimulator.solver.spa.expression.Acquire#getResource <em>Resource</em>}'. <!--
-     * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     * {@link org.palladiosimulator.solver.spa.expression.Acquire#getResource <em>Resource</em>}'.
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
      * @return the meta object for the reference '<em>Resource</em>'.
      * @see org.palladiosimulator.solver.spa.expression.Acquire#getResource()
      * @see #getAcquire()
@@ -714,8 +730,9 @@ public interface ExpressionPackage extends EPackage {
     interface Literals {
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.TerminalImpl
-         * <em>Terminal</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.TerminalImpl <em>Terminal</em>}'
+         * class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.TerminalImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getTerminal()
@@ -724,7 +741,8 @@ public interface ExpressionPackage extends EPackage {
         EClass TERMINAL = eINSTANCE.getTerminal();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.ExpressionImpl
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.ExpressionImpl
          * <em>Expression</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionImpl
@@ -734,8 +752,9 @@ public interface ExpressionPackage extends EPackage {
         EClass EXPRESSION = eINSTANCE.getExpression();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.SymbolImpl
-         * <em>Symbol</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.SymbolImpl <em>Symbol</em>}'
+         * class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.SymbolImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getSymbol()
@@ -746,7 +765,7 @@ public interface ExpressionPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute SYMBOL__NAME = eINSTANCE.getSymbol_Name();
@@ -760,8 +779,9 @@ public interface ExpressionPackage extends EPackage {
         EReference SYMBOL__RESOURCE_USAGES = eINSTANCE.getSymbol_ResourceUsages();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl
-         * <em>Sequence</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.SequenceImpl <em>Sequence</em>}'
+         * class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.SequenceImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getSequence()
@@ -786,8 +806,9 @@ public interface ExpressionPackage extends EPackage {
         EReference SEQUENCE__RIGHT_REG_EXP = eINSTANCE.getSequence_RightRegExp();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.OperationImpl
-         * <em>Operation</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.OperationImpl <em>Operation</em>}
+         * ' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.OperationImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getOperation()
@@ -796,8 +817,9 @@ public interface ExpressionPackage extends EPackage {
         EClass OPERATION = eINSTANCE.getOperation();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl
-         * <em>Release</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl <em>Release</em>}'
+         * class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getRelease()
@@ -808,14 +830,15 @@ public interface ExpressionPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Resource</b></em>' reference feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference RELEASE__RESOURCE = eINSTANCE.getRelease_Resource();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl
-         * <em>Parallel</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl <em>Parallel</em>}'
+         * class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.ParallelImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getParallel()
@@ -840,8 +863,9 @@ public interface ExpressionPackage extends EPackage {
         EReference PARALLEL__RIGHT_TASK = eINSTANCE.getParallel_RightTask();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl
-         * <em>Option</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.OptionImpl <em>Option</em>}'
+         * class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.OptionImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getOption()
@@ -852,7 +876,7 @@ public interface ExpressionPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Probability</b></em>' attribute feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EAttribute OPTION__PROBABILITY = eINSTANCE.getOption_Probability();
@@ -866,8 +890,9 @@ public interface ExpressionPackage extends EPackage {
         EReference OPTION__REGEXP = eINSTANCE.getOption_Regexp();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl
-         * <em>Loop</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl <em>Loop</em>}' class.
+         * <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.LoopImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getLoop()
@@ -901,8 +926,8 @@ public interface ExpressionPackage extends EPackage {
 
         /**
          * The meta object literal for the '
-         * {@link org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl <em>Alternative</em>}' class.
-         * <!-- begin-user-doc --> <!-- end-user-doc -->
+         * {@link org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl
+         * <em>Alternative</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.AlternativeImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getAlternative()
@@ -927,8 +952,9 @@ public interface ExpressionPackage extends EPackage {
         EReference ALTERNATIVE__RIGHT_OPTION = eINSTANCE.getAlternative_RightOption();
 
         /**
-         * The meta object literal for the '{@link org.palladiosimulator.solver.spa.expression.impl.AcquireImpl
-         * <em>Acquire</em>}' class. <!-- begin-user-doc --> <!-- end-user-doc -->
+         * The meta object literal for the '
+         * {@link org.palladiosimulator.solver.spa.expression.impl.AcquireImpl <em>Acquire</em>}'
+         * class. <!-- begin-user-doc --> <!-- end-user-doc -->
          * 
          * @see org.palladiosimulator.solver.spa.expression.impl.AcquireImpl
          * @see org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl#getAcquire()
@@ -939,7 +965,7 @@ public interface ExpressionPackage extends EPackage {
         /**
          * The meta object literal for the '<em><b>Resource</b></em>' reference feature. <!--
          * begin-user-doc --> <!-- end-user-doc -->
-         * 
+         *
          * @generated
          */
         EReference ACQUIRE__RESOURCE = eINSTANCE.getAcquire_Resource();

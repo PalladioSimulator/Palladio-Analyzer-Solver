@@ -36,12 +36,12 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      */
     public static ExpressionFactory init() {
         try {
-            ExpressionFactory theExpressionFactory = (ExpressionFactory) EPackage.Registry.INSTANCE
-                    .getEFactory("http://sdq.ipd.uka.de/Analytical/Expression/1.0");
+            final ExpressionFactory theExpressionFactory = (ExpressionFactory) EPackage.Registry.INSTANCE
+                    .getEFactory(ExpressionPackage.eNS_URI);
             if (theExpressionFactory != null) {
                 return theExpressionFactory;
             }
-        } catch (Exception exception) {
+        } catch (final Exception exception) {
             EcorePlugin.INSTANCE.log(exception);
         }
         return new ExpressionFactoryImpl();
@@ -62,24 +62,24 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * @generated
      */
     @Override
-    public EObject create(EClass eClass) {
+    public EObject create(final EClass eClass) {
         switch (eClass.getClassifierID()) {
         case ExpressionPackage.SYMBOL:
-            return createSymbol();
+            return this.createSymbol();
         case ExpressionPackage.SEQUENCE:
-            return createSequence();
+            return this.createSequence();
         case ExpressionPackage.RELEASE:
-            return createRelease();
+            return this.createRelease();
         case ExpressionPackage.PARALLEL:
-            return createParallel();
+            return this.createParallel();
         case ExpressionPackage.OPTION:
-            return createOption();
+            return this.createOption();
         case ExpressionPackage.LOOP:
-            return createLoop();
+            return this.createLoop();
         case ExpressionPackage.ALTERNATIVE:
-            return createAlternative();
+            return this.createAlternative();
         case ExpressionPackage.ACQUIRE:
-            return createAcquire();
+            return this.createAcquire();
         default:
             throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
         }
@@ -90,8 +90,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Symbol createSymbol() {
-        SymbolImpl symbol = new SymbolImpl();
+        final SymbolImpl symbol = new SymbolImpl();
         return symbol;
     }
 
@@ -100,8 +101,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Sequence createSequence() {
-        SequenceImpl sequence = new SequenceImpl();
+        final SequenceImpl sequence = new SequenceImpl();
         return sequence;
     }
 
@@ -110,8 +112,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Release createRelease() {
-        ReleaseImpl release = new ReleaseImpl();
+        final ReleaseImpl release = new ReleaseImpl();
         return release;
     }
 
@@ -120,8 +123,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Parallel createParallel() {
-        ParallelImpl parallel = new ParallelImpl();
+        final ParallelImpl parallel = new ParallelImpl();
         return parallel;
     }
 
@@ -130,8 +134,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Option createOption() {
-        OptionImpl option = new OptionImpl();
+        final OptionImpl option = new OptionImpl();
         return option;
     }
 
@@ -140,8 +145,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Loop createLoop() {
-        LoopImpl loop = new LoopImpl();
+        final LoopImpl loop = new LoopImpl();
         return loop;
     }
 
@@ -150,8 +156,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Alternative createAlternative() {
-        AlternativeImpl alternative = new AlternativeImpl();
+        final AlternativeImpl alternative = new AlternativeImpl();
         return alternative;
     }
 
@@ -160,8 +167,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public Acquire createAcquire() {
-        AcquireImpl acquire = new AcquireImpl();
+        final AcquireImpl acquire = new AcquireImpl();
         return acquire;
     }
 
@@ -170,8 +178,9 @@ public class ExpressionFactoryImpl extends EFactoryImpl implements ExpressionFac
      * 
      * @generated
      */
+    @Override
     public ExpressionPackage getExpressionPackage() {
-        return (ExpressionPackage) getEPackage();
+        return (ExpressionPackage) this.getEPackage();
     }
 
     /**

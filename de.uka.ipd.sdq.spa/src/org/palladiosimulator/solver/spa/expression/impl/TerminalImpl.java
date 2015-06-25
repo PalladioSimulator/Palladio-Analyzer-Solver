@@ -13,8 +13,6 @@ import org.palladiosimulator.solver.spa.expression.Terminal;
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>Terminal</b></em>'. <!--
  * end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */

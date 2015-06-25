@@ -12,11 +12,13 @@ package org.palladiosimulator.solver.spa.expression;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Parallel#getLeftTask <em>Left Task</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Parallel#getRightTask <em>Right Task</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Parallel#getLeftTask <em>Left Task</em>}
+ * </li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Parallel#getRightTask <em>Right Task</em>}
+ * </li>
+ * </ul>
  *
  * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getParallel()
  * @model
@@ -32,7 +34,7 @@ public interface Parallel extends Operation {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Left Task</em>' containment reference.
      * @see #setLeftTask(Expression)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getParallel_LeftTask()
@@ -42,8 +44,9 @@ public interface Parallel extends Operation {
     Expression getLeftTask();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Parallel#getLeftTask
-     * <em>Left Task</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Parallel#getLeftTask <em>Left Task</em>}'
+     * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Left Task</em>' containment reference.
@@ -60,7 +63,7 @@ public interface Parallel extends Operation {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Right Task</em>' containment reference.
      * @see #setRightTask(Expression)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getParallel_RightTask()
@@ -70,8 +73,9 @@ public interface Parallel extends Operation {
     Expression getRightTask();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Parallel#getRightTask
-     * <em>Right Task</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Parallel#getRightTask <em>Right Task</em>}
+     * ' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Right Task</em>' containment reference.

@@ -12,11 +12,13 @@ package org.palladiosimulator.solver.spa.expression;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Alternative#getLeftOption <em>Left Option</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Alternative#getRightOption <em>Right Option</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Alternative#getLeftOption
+ * <em>Left Option</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Alternative#getRightOption
+ * <em>Right Option</em>}</li>
+ * </ul>
  *
  * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getAlternative()
  * @model
@@ -32,7 +34,7 @@ public interface Alternative extends Operation {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Left Option</em>' containment reference.
      * @see #setLeftOption(Option)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getAlternative_LeftOption()
@@ -42,7 +44,8 @@ public interface Alternative extends Operation {
     Option getLeftOption();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Alternative#getLeftOption
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Alternative#getLeftOption
      * <em>Left Option</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
@@ -60,7 +63,7 @@ public interface Alternative extends Operation {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Right Option</em>' containment reference.
      * @see #setRightOption(Option)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getAlternative_RightOption()
@@ -70,7 +73,8 @@ public interface Alternative extends Operation {
     Option getRightOption();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Alternative#getRightOption
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Alternative#getRightOption
      * <em>Right Option</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value

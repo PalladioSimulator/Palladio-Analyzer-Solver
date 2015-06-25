@@ -22,14 +22,15 @@ import de.uka.ipd.sdq.probfunction.ProbabilityMassFunction;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl#getRegExp <em>Reg Exp</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl#getIterationsPMF <em>Iterations PMF</em>}
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl#getRegExp <em>Reg Exp</em>}
  * </li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl#getIterationsPMF
+ * <em>Iterations PMF</em>}</li>
  * <li>{@link org.palladiosimulator.solver.spa.expression.impl.LoopImpl#getIterationsString
  * <em>Iterations String</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -38,12 +39,12 @@ public class LoopImpl extends OperationImpl implements Loop {
     /**
      * The cached value of the '{@link #getRegExp() <em>Reg Exp</em>}' containment reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getRegExp()
      * @generated
      * @ordered
      */
-    protected Expression regExp = null;
+    protected Expression regExp;
 
     protected ProbabilityMassFunction iterationsPMF;
 
@@ -91,8 +92,9 @@ public class LoopImpl extends OperationImpl implements Loop {
      * 
      * @generated
      */
+    @Override
     public Expression getRegExp() {
-        return regExp;
+        return this.regExp;
     }
 
     /**
@@ -100,16 +102,17 @@ public class LoopImpl extends OperationImpl implements Loop {
      * 
      * @generated
      */
-    public NotificationChain basicSetRegExp(Expression newRegExp, NotificationChain msgs) {
-        Expression oldRegExp = regExp;
-        regExp = newRegExp;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+    public NotificationChain basicSetRegExp(final Expression newRegExp, NotificationChain msgs) {
+        final Expression oldRegExp = this.regExp;
+        this.regExp = newRegExp;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ExpressionPackage.LOOP__REG_EXP, oldRegExp, newRegExp);
-            if (msgs == null)
+            if (msgs == null) {
                 msgs = notification;
-            else
+            } else {
                 msgs.add(notification);
+            }
         }
         return msgs;
     }
@@ -119,21 +122,26 @@ public class LoopImpl extends OperationImpl implements Loop {
      * 
      * @generated
      */
-    public void setRegExp(Expression newRegExp) {
-        if (newRegExp != regExp) {
+    @Override
+    public void setRegExp(final Expression newRegExp) {
+        if (newRegExp != this.regExp) {
             NotificationChain msgs = null;
-            if (regExp != null)
-                msgs = ((InternalEObject) regExp).eInverseRemove(this,
+            if (this.regExp != null) {
+                msgs = ((InternalEObject) this.regExp).eInverseRemove(this,
                         EOPPOSITE_FEATURE_BASE - ExpressionPackage.LOOP__REG_EXP, null, msgs);
-            if (newRegExp != null)
+            }
+            if (newRegExp != null) {
                 msgs = ((InternalEObject) newRegExp).eInverseAdd(this,
                         EOPPOSITE_FEATURE_BASE - ExpressionPackage.LOOP__REG_EXP, null, msgs);
-            msgs = basicSetRegExp(newRegExp, msgs);
-            if (msgs != null)
+            }
+            msgs = this.basicSetRegExp(newRegExp, msgs);
+            if (msgs != null) {
                 msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.LOOP__REG_EXP, newRegExp,
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.LOOP__REG_EXP, newRegExp,
                     newRegExp));
+        }
     }
 
     /**
@@ -141,10 +149,11 @@ public class LoopImpl extends OperationImpl implements Loop {
      * 
      * @generated
      */
+    @Override
     public ProbabilityMassFunction getIterationsPMF() {
         // TODO: implement this method to return the 'Iterations PMF' containment reference
         // Ensure that you remove @generated or mark it @generated NOT
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -152,7 +161,8 @@ public class LoopImpl extends OperationImpl implements Loop {
      * 
      * @generated
      */
-    public NotificationChain basicSetIterationsPMF(ProbabilityMassFunction newIterationsPMF, NotificationChain msgs) {
+    public NotificationChain basicSetIterationsPMF(final ProbabilityMassFunction newIterationsPMF,
+            final NotificationChain msgs) {
         // TODO: implement this method to set the contained 'Iterations PMF' containment reference
         // -> this method is automatically invoked to keep the containment relationship in synch
         // -> do not modify other features
@@ -165,7 +175,8 @@ public class LoopImpl extends OperationImpl implements Loop {
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
      */
-    public void setIterationsPMF(ProbabilityMassFunction newIterationsPMF) {
+    @Override
+    public void setIterationsPMF(final ProbabilityMassFunction newIterationsPMF) {
         // TODO: implement this method to set the 'Iterations PMF' containment reference
         // Ensure that you remove @generated or mark it @generated NOT
     }
@@ -175,21 +186,9 @@ public class LoopImpl extends OperationImpl implements Loop {
      * 
      * @generated
      */
+    @Override
     public String getIterationsString() {
-        return iterationsString;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setIterationsString(String newIterationsString) {
-        String oldIterationsString = iterationsString;
-        iterationsString = newIterationsString;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.LOOP__ITERATIONS_STRING,
-                    oldIterationsString, iterationsString));
+        return this.iterationsString;
     }
 
     /**
@@ -198,12 +197,28 @@ public class LoopImpl extends OperationImpl implements Loop {
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public void setIterationsString(final String newIterationsString) {
+        final String oldIterationsString = this.iterationsString;
+        this.iterationsString = newIterationsString;
+        if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.LOOP__ITERATIONS_STRING,
+                    oldIterationsString, this.iterationsString));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case ExpressionPackage.LOOP__REG_EXP:
-            return basicSetRegExp(null, msgs);
+            return this.basicSetRegExp(null, msgs);
         case ExpressionPackage.LOOP__ITERATIONS_PMF:
-            return basicSetIterationsPMF(null, msgs);
+            return this.basicSetIterationsPMF(null, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -214,14 +229,14 @@ public class LoopImpl extends OperationImpl implements Loop {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case ExpressionPackage.LOOP__REG_EXP:
-            return getRegExp();
+            return this.getRegExp();
         case ExpressionPackage.LOOP__ITERATIONS_PMF:
-            return getIterationsPMF();
+            return this.getIterationsPMF();
         case ExpressionPackage.LOOP__ITERATIONS_STRING:
-            return getIterationsString();
+            return this.getIterationsString();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -232,16 +247,16 @@ public class LoopImpl extends OperationImpl implements Loop {
      * @generated
      */
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.LOOP__REG_EXP:
-            setRegExp((Expression) newValue);
+            this.setRegExp((Expression) newValue);
             return;
         case ExpressionPackage.LOOP__ITERATIONS_PMF:
-            setIterationsPMF((ProbabilityMassFunction) newValue);
+            this.setIterationsPMF((ProbabilityMassFunction) newValue);
             return;
         case ExpressionPackage.LOOP__ITERATIONS_STRING:
-            setIterationsString((String) newValue);
+            this.setIterationsString((String) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -253,16 +268,16 @@ public class LoopImpl extends OperationImpl implements Loop {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.LOOP__REG_EXP:
-            setRegExp((Expression) null);
+            this.setRegExp((Expression) null);
             return;
         case ExpressionPackage.LOOP__ITERATIONS_PMF:
-            setIterationsPMF((ProbabilityMassFunction) null);
+            this.setIterationsPMF((ProbabilityMassFunction) null);
             return;
         case ExpressionPackage.LOOP__ITERATIONS_STRING:
-            setIterationsString(ITERATIONS_STRING_EDEFAULT);
+            this.setIterationsString(ITERATIONS_STRING_EDEFAULT);
             return;
         }
         super.eUnset(featureID);
@@ -274,15 +289,15 @@ public class LoopImpl extends OperationImpl implements Loop {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.LOOP__REG_EXP:
-            return regExp != null;
+            return this.regExp != null;
         case ExpressionPackage.LOOP__ITERATIONS_PMF:
-            return getIterationsPMF() != null;
+            return this.getIterationsPMF() != null;
         case ExpressionPackage.LOOP__ITERATIONS_STRING:
-            return ITERATIONS_STRING_EDEFAULT == null ? iterationsString != null
-                    : !ITERATIONS_STRING_EDEFAULT.equals(iterationsString);
+            return ITERATIONS_STRING_EDEFAULT == null ? this.iterationsString != null
+                    : !ITERATIONS_STRING_EDEFAULT.equals(this.iterationsString);
         }
         return super.eIsSet(featureID);
     }
@@ -294,12 +309,13 @@ public class LoopImpl extends OperationImpl implements Loop {
      */
     @Override
     public String toString() {
-        if (eIsProxy())
+        if (this.eIsProxy()) {
             return super.toString();
+        }
 
-        StringBuffer result = new StringBuffer(super.toString());
+        final StringBuffer result = new StringBuffer(super.toString());
         result.append(" (iterationsString: ");
-        result.append(iterationsString);
+        result.append(this.iterationsString);
         result.append(')');
         return result.toString();
     }

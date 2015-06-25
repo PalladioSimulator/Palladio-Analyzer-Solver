@@ -20,11 +20,13 @@ import org.palladiosimulator.solver.spa.expression.Parallel;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl#getLeftTask <em>Left Task</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl#getRightTask <em>Right Task</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl#getLeftTask
+ * <em>Left Task</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.ParallelImpl#getRightTask
+ * <em>Right Task</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -38,7 +40,7 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * @generated
      * @ordered
      */
-    protected Expression leftTask = null;
+    protected Expression leftTask;
 
     /**
      * The cached value of the '{@link #getRightTask() <em>Right Task</em>}' containment reference.
@@ -48,7 +50,7 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * @generated
      * @ordered
      */
-    protected Expression rightTask = null;
+    protected Expression rightTask;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -74,8 +76,9 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * 
      * @generated
      */
+    @Override
     public Expression getLeftTask() {
-        return leftTask;
+        return this.leftTask;
     }
 
     /**
@@ -83,90 +86,19 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * 
      * @generated
      */
-    public NotificationChain basicSetLeftTask(Expression newLeftTask, NotificationChain msgs) {
-        Expression oldLeftTask = leftTask;
-        leftTask = newLeftTask;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+    public NotificationChain basicSetLeftTask(final Expression newLeftTask, NotificationChain msgs) {
+        final Expression oldLeftTask = this.leftTask;
+        this.leftTask = newLeftTask;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
                     ExpressionPackage.PARALLEL__LEFT_TASK, oldLeftTask, newLeftTask);
-            if (msgs == null)
+            if (msgs == null) {
                 msgs = notification;
-            else
+            } else {
                 msgs.add(notification);
+            }
         }
         return msgs;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setLeftTask(Expression newLeftTask) {
-        if (newLeftTask != leftTask) {
-            NotificationChain msgs = null;
-            if (leftTask != null)
-                msgs = ((InternalEObject) leftTask).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__LEFT_TASK, null, msgs);
-            if (newLeftTask != null)
-                msgs = ((InternalEObject) newLeftTask).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__LEFT_TASK, null, msgs);
-            msgs = basicSetLeftTask(newLeftTask, msgs);
-            if (msgs != null)
-                msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.PARALLEL__LEFT_TASK, newLeftTask,
-                    newLeftTask));
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public Expression getRightTask() {
-        return rightTask;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public NotificationChain basicSetRightTask(Expression newRightTask, NotificationChain msgs) {
-        Expression oldRightTask = rightTask;
-        rightTask = newRightTask;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-                    ExpressionPackage.PARALLEL__RIGHT_TASK, oldRightTask, newRightTask);
-            if (msgs == null)
-                msgs = notification;
-            else
-                msgs.add(notification);
-        }
-        return msgs;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setRightTask(Expression newRightTask) {
-        if (newRightTask != rightTask) {
-            NotificationChain msgs = null;
-            if (rightTask != null)
-                msgs = ((InternalEObject) rightTask).eInverseRemove(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__RIGHT_TASK, null, msgs);
-            if (newRightTask != null)
-                msgs = ((InternalEObject) newRightTask).eInverseAdd(this,
-                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__RIGHT_TASK, null, msgs);
-            msgs = basicSetRightTask(newRightTask, msgs);
-            if (msgs != null)
-                msgs.dispatch();
-        } else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.PARALLEL__RIGHT_TASK, newRightTask,
-                    newRightTask));
     }
 
     /**
@@ -175,12 +107,97 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * @generated
      */
     @Override
-    public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+    public void setLeftTask(final Expression newLeftTask) {
+        if (newLeftTask != this.leftTask) {
+            NotificationChain msgs = null;
+            if (this.leftTask != null) {
+                msgs = ((InternalEObject) this.leftTask).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__LEFT_TASK, null, msgs);
+            }
+            if (newLeftTask != null) {
+                msgs = ((InternalEObject) newLeftTask).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__LEFT_TASK, null, msgs);
+            }
+            msgs = this.basicSetLeftTask(newLeftTask, msgs);
+            if (msgs != null) {
+                msgs.dispatch();
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.PARALLEL__LEFT_TASK,
+                    newLeftTask, newLeftTask));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public Expression getRightTask() {
+        return this.rightTask;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    public NotificationChain basicSetRightTask(final Expression newRightTask, NotificationChain msgs) {
+        final Expression oldRightTask = this.rightTask;
+        this.rightTask = newRightTask;
+        if (this.eNotificationRequired()) {
+            final ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+                    ExpressionPackage.PARALLEL__RIGHT_TASK, oldRightTask, newRightTask);
+            if (msgs == null) {
+                msgs = notification;
+            } else {
+                msgs.add(notification);
+            }
+        }
+        return msgs;
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public void setRightTask(final Expression newRightTask) {
+        if (newRightTask != this.rightTask) {
+            NotificationChain msgs = null;
+            if (this.rightTask != null) {
+                msgs = ((InternalEObject) this.rightTask).eInverseRemove(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__RIGHT_TASK, null, msgs);
+            }
+            if (newRightTask != null) {
+                msgs = ((InternalEObject) newRightTask).eInverseAdd(this,
+                        EOPPOSITE_FEATURE_BASE - ExpressionPackage.PARALLEL__RIGHT_TASK, null, msgs);
+            }
+            msgs = this.basicSetRightTask(newRightTask, msgs);
+            if (msgs != null) {
+                msgs.dispatch();
+            }
+        } else if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.PARALLEL__RIGHT_TASK,
+                    newRightTask, newRightTask));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
+            final NotificationChain msgs) {
         switch (featureID) {
         case ExpressionPackage.PARALLEL__LEFT_TASK:
-            return basicSetLeftTask(null, msgs);
+            return this.basicSetLeftTask(null, msgs);
         case ExpressionPackage.PARALLEL__RIGHT_TASK:
-            return basicSetRightTask(null, msgs);
+            return this.basicSetRightTask(null, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -191,12 +208,12 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case ExpressionPackage.PARALLEL__LEFT_TASK:
-            return getLeftTask();
+            return this.getLeftTask();
         case ExpressionPackage.PARALLEL__RIGHT_TASK:
-            return getRightTask();
+            return this.getRightTask();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -207,13 +224,13 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * @generated
      */
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.PARALLEL__LEFT_TASK:
-            setLeftTask((Expression) newValue);
+            this.setLeftTask((Expression) newValue);
             return;
         case ExpressionPackage.PARALLEL__RIGHT_TASK:
-            setRightTask((Expression) newValue);
+            this.setRightTask((Expression) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -225,13 +242,13 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.PARALLEL__LEFT_TASK:
-            setLeftTask((Expression) null);
+            this.setLeftTask((Expression) null);
             return;
         case ExpressionPackage.PARALLEL__RIGHT_TASK:
-            setRightTask((Expression) null);
+            this.setRightTask((Expression) null);
             return;
         }
         super.eUnset(featureID);
@@ -243,12 +260,12 @@ public class ParallelImpl extends OperationImpl implements Parallel {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.PARALLEL__LEFT_TASK:
-            return leftTask != null;
+            return this.leftTask != null;
         case ExpressionPackage.PARALLEL__RIGHT_TASK:
-            return rightTask != null;
+            return this.rightTask != null;
         }
         return super.eIsSet(featureID);
     }

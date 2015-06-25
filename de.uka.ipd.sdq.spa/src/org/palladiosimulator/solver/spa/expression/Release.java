@@ -6,18 +6,17 @@
  */
 package org.palladiosimulator.solver.spa.expression;
 
-import org.palladiosimulator.solver.spa.resourcemodel.PassiveResource;
-
 /**
  * <!-- begin-user-doc --> A representation of the model object '<em><b>Release</b></em>'. <!--
  * end-user-doc -->
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Release#getResource <em>Resource</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Release#getResource <em>Resource</em>}
+ * </li>
+ * </ul>
  *
  * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getRelease()
  * @model
@@ -34,12 +33,12 @@ public interface Release extends Terminal {
      * <!-- end-user-doc -->
      * 
      * @return the value of the '<em>Resource</em>' reference.
-     * @see #setResource(PassiveResource)
+     * @see #setResource(org.palladiosimulator.solver.resourcemodel.PassiveResource)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getRelease_Resource()
      * @model required="true"
      * @generated
      */
-    PassiveResource getResource();
+    org.palladiosimulator.solver.resourcemodel.PassiveResource getResource();
 
     /**
      * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Release#getResource
@@ -50,6 +49,6 @@ public interface Release extends Terminal {
      * @see #getResource()
      * @generated
      */
-    void setResource(PassiveResource value);
+    void setResource(org.palladiosimulator.solver.resourcemodel.PassiveResource value);
 
 } // Release

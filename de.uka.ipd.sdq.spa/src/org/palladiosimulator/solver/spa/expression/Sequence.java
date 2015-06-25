@@ -12,11 +12,13 @@ package org.palladiosimulator.solver.spa.expression;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Sequence#getLeftRegExp <em>Left Reg Exp</em>}</li>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Sequence#getRightRegExp <em>Right Reg Exp</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Sequence#getLeftRegExp
+ * <em>Left Reg Exp</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Sequence#getRightRegExp
+ * <em>Right Reg Exp</em>}</li>
+ * </ul>
  *
  * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getSequence()
  * @model
@@ -32,7 +34,7 @@ public interface Sequence extends Operation {
      * should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Left Reg Exp</em>' containment reference.
      * @see #setLeftRegExp(Expression)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getSequence_LeftRegExp()
@@ -42,7 +44,8 @@ public interface Sequence extends Operation {
     Expression getLeftRegExp();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Sequence#getLeftRegExp
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Sequence#getLeftRegExp
      * <em>Left Reg Exp</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
@@ -60,7 +63,7 @@ public interface Sequence extends Operation {
      * really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * 
+     *
      * @return the value of the '<em>Right Reg Exp</em>' containment reference.
      * @see #setRightRegExp(Expression)
      * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getSequence_RightRegExp()
@@ -70,7 +73,8 @@ public interface Sequence extends Operation {
     Expression getRightRegExp();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Sequence#getRightRegExp
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Sequence#getRightRegExp
      * <em>Right Reg Exp</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value

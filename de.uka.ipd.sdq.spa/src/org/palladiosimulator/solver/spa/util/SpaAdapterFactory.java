@@ -50,7 +50,7 @@ public class SpaAdapterFactory extends AdapterFactoryImpl {
      * @generated
      */
     @Override
-    public boolean isFactoryForType(Object object) {
+    public boolean isFactoryForType(final Object object) {
         if (object == modelPackage) {
             return true;
         }
@@ -61,7 +61,7 @@ public class SpaAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * The switch the delegates to the <code>createXXX</code> methods. <!-- begin-user-doc --> <!--
+     * The switch that delegates to the <code>createXXX</code> methods. <!-- begin-user-doc --> <!--
      * end-user-doc -->
      * 
      * @generated
@@ -69,18 +69,18 @@ public class SpaAdapterFactory extends AdapterFactoryImpl {
     protected SpaSwitch<Adapter> modelSwitch = new SpaSwitch<Adapter>() {
 
         @Override
-        public Adapter caseProcessBehaviour(ProcessBehaviour object) {
-            return createProcessBehaviourAdapter();
+        public Adapter caseProcessBehaviour(final ProcessBehaviour object) {
+            return SpaAdapterFactory.this.createProcessBehaviourAdapter();
         }
 
         @Override
-        public Adapter caseSPAModel(SPAModel object) {
-            return createSPAModelAdapter();
+        public Adapter caseSPAModel(final SPAModel object) {
+            return SpaAdapterFactory.this.createSPAModelAdapter();
         }
 
         @Override
-        public Adapter defaultCase(EObject object) {
-            return createEObjectAdapter();
+        public Adapter defaultCase(final EObject object) {
+            return SpaAdapterFactory.this.createEObjectAdapter();
         }
     };
 
@@ -93,15 +93,16 @@ public class SpaAdapterFactory extends AdapterFactoryImpl {
      * @generated
      */
     @Override
-    public Adapter createAdapter(Notifier target) {
-        return modelSwitch.doSwitch((EObject) target);
+    public Adapter createAdapter(final Notifier target) {
+        return this.modelSwitch.doSwitch((EObject) target);
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.ProcessBehaviour
-     * <em>Process Behaviour</em>}'. <!-- begin-user-doc --> This default implementation returns
-     * null so that we can easily ignore cases; it's useful to ignore a case when inheritance will
-     * catch all the cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.ProcessBehaviour <em>Process Behaviour</em>}'. <!--
+     * begin-user-doc --> This default implementation returns null so that we can easily ignore
+     * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+     * end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.ProcessBehaviour
@@ -112,10 +113,10 @@ public class SpaAdapterFactory extends AdapterFactoryImpl {
     }
 
     /**
-     * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.spa.SPAModel
-     * <em>SPA Model</em>}'. <!-- begin-user-doc --> This default implementation returns null so
-     * that we can easily ignore cases; it's useful to ignore a case when inheritance will catch all
-     * the cases anyway. <!-- end-user-doc -->
+     * Creates a new adapter for an object of class '
+     * {@link org.palladiosimulator.solver.spa.SPAModel <em>SPA Model</em>}'. <!-- begin-user-doc
+     * --> This default implementation returns null so that we can easily ignore cases; it's useful
+     * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
      * 
      * @return the new adapter.
      * @see org.palladiosimulator.solver.spa.SPAModel

@@ -13,17 +13,16 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.palladiosimulator.solver.spa.expression.ExpressionPackage;
 import org.palladiosimulator.solver.spa.expression.Release;
 
-import org.palladiosimulator.solver.spa.resourcemodel.PassiveResource;
-
 /**
  * <!-- begin-user-doc --> An implementation of the model object '<em><b>Release</b></em>'. <!--
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl#getResource <em>Resource</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.impl.ReleaseImpl#getResource
+ * <em>Resource</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -32,12 +31,12 @@ public class ReleaseImpl extends TerminalImpl implements Release {
     /**
      * The cached value of the '{@link #getResource() <em>Resource</em>}' reference. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @see #getResource()
      * @generated
      * @ordered
      */
-    protected PassiveResource resource = null;
+    protected org.palladiosimulator.solver.resourcemodel.PassiveResource resource;
 
     /**
      * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -63,17 +62,20 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * 
      * @generated
      */
-    public PassiveResource getResource() {
-        if (resource != null && resource.eIsProxy()) {
-            InternalEObject oldResource = (InternalEObject) resource;
-            resource = (PassiveResource) eResolveProxy(oldResource);
-            if (resource != oldResource) {
-                if (eNotificationRequired())
-                    eNotify(new ENotificationImpl(this, Notification.RESOLVE, ExpressionPackage.RELEASE__RESOURCE,
-                            oldResource, resource));
+    @Override
+    public org.palladiosimulator.solver.resourcemodel.PassiveResource getResource() {
+        if (this.resource != null && this.resource.eIsProxy()) {
+            final InternalEObject oldResource = (InternalEObject) this.resource;
+            this.resource = (org.palladiosimulator.solver.resourcemodel.PassiveResource) this
+                    .eResolveProxy(oldResource);
+            if (this.resource != oldResource) {
+                if (this.eNotificationRequired()) {
+                    this.eNotify(new ENotificationImpl(this, Notification.RESOLVE, ExpressionPackage.RELEASE__RESOURCE,
+                            oldResource, this.resource));
+                }
             }
         }
-        return resource;
+        return this.resource;
     }
 
     /**
@@ -81,21 +83,8 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * 
      * @generated
      */
-    public PassiveResource basicGetResource() {
-        return resource;
-    }
-
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * 
-     * @generated
-     */
-    public void setResource(PassiveResource newResource) {
-        PassiveResource oldResource = resource;
-        resource = newResource;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.RELEASE__RESOURCE, oldResource,
-                    resource));
+    public org.palladiosimulator.solver.resourcemodel.PassiveResource basicGetResource() {
+        return this.resource;
     }
 
     /**
@@ -104,12 +93,28 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * @generated
      */
     @Override
-    public Object eGet(int featureID, boolean resolve, boolean coreType) {
+    public void setResource(final org.palladiosimulator.solver.resourcemodel.PassiveResource newResource) {
+        final org.palladiosimulator.solver.resourcemodel.PassiveResource oldResource = this.resource;
+        this.resource = newResource;
+        if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, ExpressionPackage.RELEASE__RESOURCE, oldResource,
+                    this.resource));
+        }
+    }
+
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * 
+     * @generated
+     */
+    @Override
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
         switch (featureID) {
         case ExpressionPackage.RELEASE__RESOURCE:
-            if (resolve)
-                return getResource();
-            return basicGetResource();
+            if (resolve) {
+                return this.getResource();
+            }
+            return this.basicGetResource();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -120,10 +125,10 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * @generated
      */
     @Override
-    public void eSet(int featureID, Object newValue) {
+    public void eSet(final int featureID, final Object newValue) {
         switch (featureID) {
         case ExpressionPackage.RELEASE__RESOURCE:
-            setResource((PassiveResource) newValue);
+            this.setResource((org.palladiosimulator.solver.resourcemodel.PassiveResource) newValue);
             return;
         }
         super.eSet(featureID, newValue);
@@ -135,10 +140,10 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * @generated
      */
     @Override
-    public void eUnset(int featureID) {
+    public void eUnset(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.RELEASE__RESOURCE:
-            setResource((PassiveResource) null);
+            this.setResource((org.palladiosimulator.solver.resourcemodel.PassiveResource) null);
             return;
         }
         super.eUnset(featureID);
@@ -150,10 +155,10 @@ public class ReleaseImpl extends TerminalImpl implements Release {
      * @generated
      */
     @Override
-    public boolean eIsSet(int featureID) {
+    public boolean eIsSet(final int featureID) {
         switch (featureID) {
         case ExpressionPackage.RELEASE__RESOURCE:
-            return resource != null;
+            return this.resource != null;
         }
         return super.eIsSet(featureID);
     }

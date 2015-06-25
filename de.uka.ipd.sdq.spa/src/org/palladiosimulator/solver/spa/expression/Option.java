@@ -14,11 +14,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
- * <li>{@link org.palladiosimulator.solver.spa.expression.Option#getProbability <em>Probability</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.spa.expression.Option#getProbability <em>Probability</em>
+ * }</li>
  * <li>{@link org.palladiosimulator.solver.spa.expression.Option#getRegexp <em>Regexp</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.palladiosimulator.solver.spa.expression.ExpressionPackage#getOption()
  * @model
@@ -43,8 +44,9 @@ public interface Option extends EObject {
     double getProbability();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Option#getProbability
-     * <em>Probability</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '
+     * {@link org.palladiosimulator.solver.spa.expression.Option#getProbability <em>Probability</em>
+     * }' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Probability</em>' attribute.
@@ -71,8 +73,8 @@ public interface Option extends EObject {
     Expression getRegexp();
 
     /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Option#getRegexp <em>Regexp</em>}
-     * ' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+     * Sets the value of the '{@link org.palladiosimulator.solver.spa.expression.Option#getRegexp
+     * <em>Regexp</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @param value
      *            the new value of the '<em>Regexp</em>' containment reference.

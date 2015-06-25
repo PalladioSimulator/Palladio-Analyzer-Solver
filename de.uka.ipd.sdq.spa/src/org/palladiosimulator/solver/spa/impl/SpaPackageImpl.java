@@ -18,9 +18,6 @@ import org.palladiosimulator.solver.spa.SpaPackage;
 import org.palladiosimulator.solver.spa.expression.ExpressionPackage;
 import org.palladiosimulator.solver.spa.expression.impl.ExpressionPackageImpl;
 
-import de.uka.ipd.sdq.probfunction.ProbfunctionPackage;
-import org.palladiosimulator.solver.spa.resourcemodel.ResourceModelPackage;
-
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!-- end-user-doc -->
  * 
@@ -69,17 +66,12 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
 
     /**
      * Creates, registers, and initializes the <b>Package</b> for this model, and for any others
-     * upon which it depends. Simple dependencies are satisfied by calling this method on all
-     * dependent packages before doing anything else. This method drives initialization for
-     * interdependent packages directly, in parallel with this package, itself.
+     * upon which it depends.
+     *
      * <p>
-     * Of this package and its interdependencies, all packages which have not yet been registered by
-     * their URI values are first created and registered. The packages are then initialized in two
-     * steps: meta-model objects for all of the packages are created before any are initialized,
-     * since one package's meta-model objects may refer to those of another.
-     * <p>
-     * Invocation of this method will not affect any packages that have already been initialized.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     * This method is used to initialize {@link SpaPackage#eINSTANCE} when that field is accessed.
+     * Clients should not invoke it directly. Instead, they should simply access that field to
+     * obtain the package. <!-- begin-user-doc --> <!-- end-user-doc -->
      * 
      * @see #eNS_URI
      * @see #createPackageContents()
@@ -87,22 +79,22 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * @generated
      */
     public static SpaPackage init() {
-        if (isInited)
+        if (isInited) {
             return (SpaPackage) EPackage.Registry.INSTANCE.getEPackage(SpaPackage.eNS_URI);
+        }
 
         // Obtain or create and register package
-        SpaPackageImpl theSpaPackage = (SpaPackageImpl) (EPackage.Registry.INSTANCE
-                .getEPackage(eNS_URI) instanceof SpaPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(eNS_URI)
+        final SpaPackageImpl theSpaPackage = (SpaPackageImpl) (EPackage.Registry.INSTANCE
+                .get(eNS_URI) instanceof SpaPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
                         : new SpaPackageImpl());
 
         isInited = true;
 
         // Initialize simple dependencies
-        ProbfunctionPackage.eINSTANCE.eClass();
-        ResourceModelPackage.eINSTANCE.eClass();
+        org.palladiosimulator.solver.resourcemodel.ResourceModelPackage.eINSTANCE.eClass();
 
         // Obtain or create and register interdependencies
-        ExpressionPackageImpl theExpressionPackage = (ExpressionPackageImpl) (EPackage.Registry.INSTANCE
+        final ExpressionPackageImpl theExpressionPackage = (ExpressionPackageImpl) (EPackage.Registry.INSTANCE
                 .getEPackage(ExpressionPackage.eNS_URI) instanceof ExpressionPackageImpl
                         ? EPackage.Registry.INSTANCE.getEPackage(ExpressionPackage.eNS_URI)
                         : ExpressionPackage.eINSTANCE);
@@ -118,6 +110,8 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
         // Mark meta-data to indicate it can't be changed
         theSpaPackage.freeze();
 
+        // Update the registry and return the package
+        EPackage.Registry.INSTANCE.put(SpaPackage.eNS_URI, theSpaPackage);
         return theSpaPackage;
     }
 
@@ -126,8 +120,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public EClass getProcessBehaviour() {
-        return processBehaviourEClass;
+        return this.processBehaviourEClass;
     }
 
     /**
@@ -135,8 +130,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public EAttribute getProcessBehaviour_NumReplicas() {
-        return (EAttribute) processBehaviourEClass.getEStructuralFeatures().get(0);
+        return (EAttribute) this.processBehaviourEClass.getEStructuralFeatures().get(0);
     }
 
     /**
@@ -144,8 +140,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public EAttribute getProcessBehaviour_Name() {
-        return (EAttribute) processBehaviourEClass.getEStructuralFeatures().get(1);
+        return (EAttribute) this.processBehaviourEClass.getEStructuralFeatures().get(1);
     }
 
     /**
@@ -153,8 +150,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public EReference getProcessBehaviour_Behaviour() {
-        return (EReference) processBehaviourEClass.getEStructuralFeatures().get(2);
+        return (EReference) this.processBehaviourEClass.getEStructuralFeatures().get(2);
     }
 
     /**
@@ -162,8 +160,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public EClass getSPAModel() {
-        return spaModelEClass;
+        return this.spaModelEClass;
     }
 
     /**
@@ -171,8 +170,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public EReference getSPAModel_Processes() {
-        return (EReference) spaModelEClass.getEStructuralFeatures().get(0);
+        return (EReference) this.spaModelEClass.getEStructuralFeatures().get(0);
     }
 
     /**
@@ -180,8 +180,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public EReference getSPAModel_Resources() {
-        return (EReference) spaModelEClass.getEStructuralFeatures().get(1);
+        return (EReference) this.spaModelEClass.getEStructuralFeatures().get(1);
     }
 
     /**
@@ -189,8 +190,9 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * 
      * @generated
      */
+    @Override
     public SpaFactory getSpaFactory() {
-        return (SpaFactory) getEFactoryInstance();
+        return (SpaFactory) this.getEFactoryInstance();
     }
 
     /**
@@ -207,19 +209,20 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * @generated
      */
     public void createPackageContents() {
-        if (isCreated)
+        if (this.isCreated) {
             return;
-        isCreated = true;
+        }
+        this.isCreated = true;
 
         // Create classes and their features
-        processBehaviourEClass = createEClass(PROCESS_BEHAVIOUR);
-        createEAttribute(processBehaviourEClass, PROCESS_BEHAVIOUR__NUM_REPLICAS);
-        createEAttribute(processBehaviourEClass, PROCESS_BEHAVIOUR__NAME);
-        createEReference(processBehaviourEClass, PROCESS_BEHAVIOUR__BEHAVIOUR);
+        this.processBehaviourEClass = this.createEClass(PROCESS_BEHAVIOUR);
+        this.createEAttribute(this.processBehaviourEClass, PROCESS_BEHAVIOUR__NUM_REPLICAS);
+        this.createEAttribute(this.processBehaviourEClass, PROCESS_BEHAVIOUR__NAME);
+        this.createEReference(this.processBehaviourEClass, PROCESS_BEHAVIOUR__BEHAVIOUR);
 
-        spaModelEClass = createEClass(SPA_MODEL);
-        createEReference(spaModelEClass, SPA_MODEL__PROCESSES);
-        createEReference(spaModelEClass, SPA_MODEL__RESOURCES);
+        this.spaModelEClass = this.createEClass(SPA_MODEL);
+        this.createEReference(this.spaModelEClass, SPA_MODEL__PROCESSES);
+        this.createEReference(this.spaModelEClass, SPA_MODEL__RESOURCES);
     }
 
     /**
@@ -236,23 +239,24 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
      * @generated
      */
     public void initializePackageContents() {
-        if (isInitialized)
+        if (this.isInitialized) {
             return;
-        isInitialized = true;
+        }
+        this.isInitialized = true;
 
         // Initialize package
-        setName(eNAME);
-        setNsPrefix(eNS_PREFIX);
-        setNsURI(eNS_URI);
+        this.setName(eNAME);
+        this.setNsPrefix(eNS_PREFIX);
+        this.setNsURI(eNS_URI);
 
         // Obtain other dependent packages
-        ExpressionPackage theExpressionPackage = (ExpressionPackage) EPackage.Registry.INSTANCE
+        final ExpressionPackage theExpressionPackage = (ExpressionPackage) EPackage.Registry.INSTANCE
                 .getEPackage(ExpressionPackage.eNS_URI);
-        ResourceModelPackage theResourceModelPackage = (ResourceModelPackage) EPackage.Registry.INSTANCE
-                .getEPackage(ResourceModelPackage.eNS_URI);
+        final org.palladiosimulator.solver.resourcemodel.ResourceModelPackage theResourceModelPackage = (org.palladiosimulator.solver.resourcemodel.ResourceModelPackage) EPackage.Registry.INSTANCE
+                .getEPackage(org.palladiosimulator.solver.resourcemodel.ResourceModelPackage.eNS_URI);
 
         // Add subpackages
-        getESubpackages().add(theExpressionPackage);
+        this.getESubpackages().add(theExpressionPackage);
 
         // Create type parameters
 
@@ -261,28 +265,29 @@ public class SpaPackageImpl extends EPackageImpl implements SpaPackage {
         // Add supertypes to classes
 
         // Initialize classes and features; add operations and parameters
-        initEClass(processBehaviourEClass, ProcessBehaviour.class, "ProcessBehaviour", !IS_ABSTRACT, !IS_INTERFACE,
-                IS_GENERATED_INSTANCE_CLASS);
-        initEAttribute(getProcessBehaviour_NumReplicas(), ecorePackage.getEInt(), "numReplicas", null, 0, 1,
+        this.initEClass(this.processBehaviourEClass, ProcessBehaviour.class, "ProcessBehaviour", !IS_ABSTRACT,
+                !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        this.initEAttribute(this.getProcessBehaviour_NumReplicas(), this.ecorePackage.getEInt(), "numReplicas", null, 0,
+                1, ProcessBehaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+                IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEAttribute(this.getProcessBehaviour_Name(), this.ecorePackage.getEString(), "name", "", 0, 1,
                 ProcessBehaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
                 !IS_DERIVED, IS_ORDERED);
-        initEAttribute(getProcessBehaviour_Name(), ecorePackage.getEString(), "name", "", 0, 1, ProcessBehaviour.class,
-                !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEReference(getProcessBehaviour_Behaviour(), theExpressionPackage.getExpression(), null, "behaviour", null,
-                1, 1, ProcessBehaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+        this.initEReference(this.getProcessBehaviour_Behaviour(), theExpressionPackage.getExpression(), null,
+                "behaviour", null, 1, 1, ProcessBehaviour.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+                IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+        this.initEClass(this.spaModelEClass, SPAModel.class, "SPAModel", !IS_ABSTRACT, !IS_INTERFACE,
+                IS_GENERATED_INSTANCE_CLASS);
+        this.initEReference(this.getSPAModel_Processes(), this.getProcessBehaviour(), null, "processes", null, 0, -1,
+                SPAModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        this.initEReference(this.getSPAModel_Resources(), theResourceModelPackage.getResource(), null, "resources",
+                null, 0, -1, SPAModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
                 !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-        initEClass(spaModelEClass, SPAModel.class, "SPAModel", !IS_ABSTRACT, !IS_INTERFACE,
-                IS_GENERATED_INSTANCE_CLASS);
-        initEReference(getSPAModel_Processes(), this.getProcessBehaviour(), null, "processes", null, 0, -1,
-                SPAModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEReference(getSPAModel_Resources(), theResourceModelPackage.getResource(), null, "resources", null, 0, -1,
-                SPAModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
-                !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
         // Create resource
-        createResource(eNS_URI);
+        this.createResource(eNS_URI);
     }
 
 } // SpaPackageImpl

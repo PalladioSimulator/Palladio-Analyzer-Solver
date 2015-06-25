@@ -30,12 +30,11 @@ public class SpaFactoryImpl extends EFactoryImpl implements SpaFactory {
      */
     public static SpaFactory init() {
         try {
-            SpaFactory theSpaFactory = (SpaFactory) EPackage.Registry.INSTANCE
-                    .getEFactory("http://sdq.ipd.uka.de/StochasticProcessAlgebra/1.0");
+            final SpaFactory theSpaFactory = (SpaFactory) EPackage.Registry.INSTANCE.getEFactory(SpaPackage.eNS_URI);
             if (theSpaFactory != null) {
                 return theSpaFactory;
             }
-        } catch (Exception exception) {
+        } catch (final Exception exception) {
             EcorePlugin.INSTANCE.log(exception);
         }
         return new SpaFactoryImpl();
@@ -56,12 +55,12 @@ public class SpaFactoryImpl extends EFactoryImpl implements SpaFactory {
      * @generated
      */
     @Override
-    public EObject create(EClass eClass) {
+    public EObject create(final EClass eClass) {
         switch (eClass.getClassifierID()) {
         case SpaPackage.PROCESS_BEHAVIOUR:
-            return createProcessBehaviour();
+            return this.createProcessBehaviour();
         case SpaPackage.SPA_MODEL:
-            return createSPAModel();
+            return this.createSPAModel();
         default:
             throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
         }
@@ -72,8 +71,9 @@ public class SpaFactoryImpl extends EFactoryImpl implements SpaFactory {
      * 
      * @generated
      */
+    @Override
     public ProcessBehaviour createProcessBehaviour() {
-        ProcessBehaviourImpl processBehaviour = new ProcessBehaviourImpl();
+        final ProcessBehaviourImpl processBehaviour = new ProcessBehaviourImpl();
         return processBehaviour;
     }
 
@@ -82,8 +82,9 @@ public class SpaFactoryImpl extends EFactoryImpl implements SpaFactory {
      * 
      * @generated
      */
+    @Override
     public SPAModel createSPAModel() {
-        SPAModelImpl spaModel = new SPAModelImpl();
+        final SPAModelImpl spaModel = new SPAModelImpl();
         return spaModel;
     }
 
@@ -92,8 +93,9 @@ public class SpaFactoryImpl extends EFactoryImpl implements SpaFactory {
      * 
      * @generated
      */
+    @Override
     public SpaPackage getSpaPackage() {
-        return (SpaPackage) getEPackage();
+        return (SpaPackage) this.getEPackage();
     }
 
     /**
