@@ -12,14 +12,14 @@
 
   <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
-       uri = "http://sdq.ipd.uka.de/StochasticProcessAlgebra/1.0" 
+       uri = "http://palladiosimulator.org/Solver/StochasticProcessAlgebra/1.0" 
        class = "org.palladiosimulator.solver.spa.SpaPackage"
        genModel = "model/StochasticProcessAlgebra.genmodel" /> 
   </extension>
 
   <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
-       uri = "http://sdq.ipd.uka.de/Analytical/Expression/1.0" 
+       uri = "http://palladiosimulator.org/Solver/StochasticProcessAlgebra/Expression/1.0" 
        class = "org.palladiosimulator.solver.spa.expression.ExpressionPackage"
        genModel = "model/StochasticProcessAlgebra.genmodel" /> 
   </extension>
