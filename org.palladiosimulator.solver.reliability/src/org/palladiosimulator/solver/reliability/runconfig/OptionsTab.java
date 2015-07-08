@@ -39,9 +39,9 @@ import de.uka.ipd.sdq.workflow.launchconfig.ImageRegistryHelper;
 
 /**
  * This tab page shows additional options for the PCM Solver Reliability launch.
- * 
+ *
  * @author brosch
- * 
+ *
  */
 public class OptionsTab extends AbstractLaunchConfigurationTab {
 
@@ -108,7 +108,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
     /**
      * The id of this plug-in.
      */
-    private static final String PLUGIN_ID = "org.palladiosimulator.reliability.solver";
+    private static final String PLUGIN_ID = "org.palladiosimulator.solver.reliability";
 
     /**
      * Default setting for saving results file.
@@ -272,10 +272,11 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.AbstractLaunchConfigurationTab#activated(org.eclipse
      * .debug.core.ILaunchConfigurationWorkingCopy)
      */
+    @Override
     public void activated(final ILaunchConfigurationWorkingCopy workingCopy) {
         // Leave this method empty to prevent unnecessary invocation of
         // initializeFrom() and multiple resulting invocations of
@@ -284,14 +285,16 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.ILaunchConfigurationTab#createControl(org.eclipse
      * .swt.widgets.Composite)
      */
+    @Override
     public void createControl(final Composite parent) {
 
         // Create a listener for GUI events:
         final Listener listener = new Listener() {
+            @Override
             public void handleEvent(final Event event) {
                 setDirty(true);
                 updateLaunchConfigurationDialog();
@@ -301,6 +304,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
         // Create a listener for GUI modification events:
         final ModifyListener modifyListener = new ModifyListener() {
+            @Override
             public void modifyText(final ModifyEvent e) {
                 setDirty(true);
                 updateLaunchConfigurationDialog();
@@ -312,12 +316,12 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
         // The composite will show scroll bars if the size of
         // the dialog decreases below the minimum size of the
         // contained controls:
-        ScrolledComposite container = new ScrolledComposite(parent, SWT.H_SCROLL | SWT.V_SCROLL);
+        final ScrolledComposite container = new ScrolledComposite(parent, SWT.H_SCROLL | SWT.V_SCROLL);
         container.setExpandHorizontal(true);
         container.setExpandVertical(true);
-        Composite contentContainer = new Composite(container, SWT.NONE);
+        final Composite contentContainer = new Composite(container, SWT.NONE);
         container.setContent(contentContainer);
-        GridLayout layout = new GridLayout();
+        final GridLayout layout = new GridLayout();
         contentContainer.setLayout(layout);
 
         // Sets the scrolled composite to be the displayed
@@ -392,7 +396,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
         markovTransformationLayout.numColumns = 4;
 
         // Create the Markov transformation Group
-        Group markovTransformationGroup = new Group(contentContainer, SWT.NONE);
+        final Group markovTransformationGroup = new Group(contentContainer, SWT.NONE);
         markovTransformationGroup.setLayout(markovTransformationLayout);
         markovTransformationGroup.setText("Markov Transformation");
         markovTransformationGroup.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
@@ -430,7 +434,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
         checkStoreMarkovModel.addListener(SWT.Selection, listener);
 
         // Add a label showing where to specify the model file
-        Label labelModelFile = new Label(markovTransformationGroup, SWT.NONE);
+        final Label labelModelFile = new Label(markovTransformationGroup, SWT.NONE);
         labelModelFile.setText("Model file:");
 
         // Create the model file text box
@@ -469,12 +473,12 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
             @Override
             public void widgetSelected(final SelectionEvent e) {
-                IFile file = WorkspaceResourceDialog.openNewFile(getShell(), "Save As", "Select the parent folder:",
+                final IFile file = WorkspaceResourceDialog.openNewFile(getShell(), "Save As", "Select the parent folder:",
                         getRelativeFilePath(textMarkovModelFile.getText().trim()), null);
                 if (file != null) {
                     String newModelFile = file.getLocation().toOSString();
                     if (newModelFile != null) {
-                        String portableString = file.getFullPath().toPortableString();
+                        final String portableString = file.getFullPath().toPortableString();
                         newModelFile = "platform:/resource" + portableString;
                         // did the user select "*.markov" as extension
                         // and
@@ -506,7 +510,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
             @Override
             public void widgetSelected(final SelectionEvent e) {
-                FileDialog fileDiag = new FileDialog(new Shell(), SWT.SAVE);
+                final FileDialog fileDiag = new FileDialog(new Shell(), SWT.SAVE);
                 fileDiag.setFilterPath(getDirectoryName(textMarkovModelFile.getText().trim()));
                 fileDiag.setFilterExtensions(new String[] {
                         "*.markov", "*.*"
@@ -588,7 +592,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
         checkSingleResults.addListener(SWT.Selection, listener);
 
         // Add a label showing where to specify the log file
-        Label labelLogFile = new Label(loggingGroup, SWT.NONE);
+        final Label labelLogFile = new Label(loggingGroup, SWT.NONE);
         labelLogFile.setText("Log file:");
 
         // Create the logging file text box
@@ -627,12 +631,12 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
             @Override
             public void widgetSelected(final SelectionEvent e) {
-                IFile file = WorkspaceResourceDialog.openNewFile(getShell(), "Save As", "Select the parent folder:",
+                final IFile file = WorkspaceResourceDialog.openNewFile(getShell(), "Save As", "Select the parent folder:",
                         getRelativeFilePath(textLogFile.getText().trim()), null);
                 if (file != null) {
                     String newLogFile = file.getLocation().toOSString();
                     if (newLogFile != null) {
-                        String portableString = file.getFullPath().toPortableString();
+                        final String portableString = file.getFullPath().toPortableString();
                         newLogFile = "platform:/resource" + portableString;
                         // did the user select "*.txt" as extension and
                         // not add ".txt" to the file they specified?
@@ -663,7 +667,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
             @Override
             public void widgetSelected(final SelectionEvent e) {
-                FileDialog fileDiag = new FileDialog(new Shell(), SWT.SAVE);
+                final FileDialog fileDiag = new FileDialog(new Shell(), SWT.SAVE);
                 fileDiag.setFilterPath(getDirectoryName(textLogFile.getText().trim()));
                 fileDiag.setFilterExtensions(new String[] {
                         "*.txt", "*.*"
@@ -704,7 +708,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
         checkSaveResultsToFile.addListener(SWT.Selection, listener);
 
         // Add a label showing where to specify the results file
-        Label labelSaveResultsToFile = new Label(markovAnalysisResultsGroup, SWT.NONE);
+        final Label labelSaveResultsToFile = new Label(markovAnalysisResultsGroup, SWT.NONE);
         labelSaveResultsToFile.setText("File:");
 
         // Create the textbox to specify a file for saving the Markov analysis
@@ -744,12 +748,12 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
             @Override
             public void widgetSelected(final SelectionEvent e) {
-                IFile file = WorkspaceResourceDialog.openNewFile(getShell(), "Save As", "Select the parent folder:",
+                final IFile file = WorkspaceResourceDialog.openNewFile(getShell(), "Save As", "Select the parent folder:",
                         getRelativeFilePath(textSaveResultsToFile.getText().trim()), null);
                 if (file != null) {
                     String newSaveToFile = file.getLocation().toOSString();
                     if (newSaveToFile != null) {
-                        String portableString = file.getFullPath().toPortableString();
+                        final String portableString = file.getFullPath().toPortableString();
                         newSaveToFile = "platform:/resource" + portableString;
                         // did the user select "*.markovresult" as
                         // extension and
@@ -757,7 +761,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
                         // specified?
                         if (!newSaveToFile.endsWith(".markovresult")) {
                             newSaveToFile += ".markovresult"; // append
-                                                              // ".markovresult"
+                            // ".markovresult"
                             // extension
                         }
                         textSaveResultsToFile.setText(newSaveToFile);
@@ -783,7 +787,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
             @Override
             public void widgetSelected(final SelectionEvent e) {
-                FileDialog fileDiag = new FileDialog(new Shell(), SWT.SAVE);
+                final FileDialog fileDiag = new FileDialog(new Shell(), SWT.SAVE);
                 fileDiag.setFilterPath(getDirectoryName(textSaveResultsToFile.getText().trim()));
                 fileDiag.setFilterExtensions(new String[] {
                         "*.markovresult", "*.*"
@@ -798,8 +802,8 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
                     // specified?
                     if (fileDiag.getFilterIndex() == 0 && !saveToFile.endsWith(".markovresult")) {
                         saveToFile += ".markovresult"; // append
-                                                       // ".markovresult"
-                                                       // extension
+                        // ".markovresult"
+                        // extension
                     }
                     textSaveResultsToFile.setText(saveToFile);
                     updateLaunchConfigurationDialog();
@@ -818,23 +822,24 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.AbstractLaunchConfigurationTab#deactivated(org.eclipse
      * .debug.core.ILaunchConfigurationWorkingCopy)
      */
+    @Override
     public void deactivated(final ILaunchConfigurationWorkingCopy workingCopy) {
     }
 
     /**
      * Returns the currently selected file path.
-     * 
+     *
      * Only valid and absolute paths are accepted.
-     * 
+     *
      * @return the currently selected file path
      */
     private Path getCurrentFilePath(final String path) {
         if (Path.ROOT.isValidPath(path)) {
-            Path resultPath = new Path(path);
+            final Path resultPath = new Path(path);
             if (resultPath.isAbsolute()) {
                 return resultPath;
             }
@@ -844,11 +849,11 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /**
      * Returns the current file directory as a String.
-     * 
+     *
      * @return the current file directory
      */
     private String getDirectoryName(final String path) {
-        Path filePath = getCurrentFilePath(path);
+        final Path filePath = getCurrentFilePath(path);
         if (filePath == null) {
             return null;
         }
@@ -860,11 +865,11 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /**
      * Returns the current file name as a String.
-     * 
+     *
      * @return the current file name
      */
-    private String getFileName(String path) {
-        Path filePath = getCurrentFilePath(path);
+    private String getFileName(final String path) {
+        final Path filePath = getCurrentFilePath(path);
         if ((filePath == null) || (filePath.toFile().isDirectory())) {
             return null;
         }
@@ -873,32 +878,34 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.AbstractLaunchConfigurationTab#getImage()
      */
+    @Override
     public Image getImage() {
         return ImageRegistryHelper.getTabImage(PLUGIN_ID, FILENAME_TAB_IMAGE_PATH);
     }
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.ILaunchConfigurationTab#getName()
      */
+    @Override
     public String getName() {
         return "Analysis Options";
     }
 
     /**
      * Returns the currently selected file path, relative to the workspace.
-     * 
+     *
      * Returns an empty path if the current file path is not valid or not within the workspace.
-     * 
+     *
      * @return the currently selected file path
      */
     private Path getRelativeFilePath(final String path) {
-        Path logFilePath = getCurrentFilePath(path);
-        Path workspacePath = (Path) ResourcesPlugin.getWorkspace().getRoot().getLocation();
+        final Path logFilePath = getCurrentFilePath(path);
+        final Path workspacePath = (Path) ResourcesPlugin.getWorkspace().getRoot().getLocation();
         Path resultPath = new Path("");
         if ((logFilePath != null) && (workspacePath.isPrefixOf(logFilePath))) {
             resultPath = (Path) logFilePath.makeRelativeTo(workspacePath);
@@ -908,10 +915,11 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.ILaunchConfigurationTab#initializeFrom(org.eclipse
      * .debug.core.ILaunchConfiguration)
      */
+    @Override
     public void initializeFrom(final ILaunchConfiguration configuration) {
         // Try to retrieve the settings from the given configuration:
         try {
@@ -970,14 +978,14 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
             try {
                 evalType = MarkovEvaluationType.valueOf(configuration.getAttribute(
                         MessageStrings.MARKOV_EVALUATION_MODE, MARKOV_EVALUATION_MODE.toString()));
-            } catch (IllegalArgumentException e) {
+            } catch (final IllegalArgumentException e) {
                 evalType = MARKOV_EVALUATION_MODE;
             }
             radioFailureCategories.setSelection(MarkovEvaluationType.CLASSES == evalType);
             radioPointsOfFailure.setSelection(MarkovEvaluationType.POINTSOFFAILURE == evalType);
             radioSingleFailureMode.setSelection(MarkovEvaluationType.SINGLE == evalType);
             radioFailureTypes.setSelection(MarkovEvaluationType.TYPES == evalType);
-        } catch (CoreException e) {
+        } catch (final CoreException e) {
             // Defaults apply:
             checkMarkovStatistics.setSelection(STATISTICSDEFAULT);
             checkSingleResults.setSelection(SINGLERESULTSDEFAULT);
@@ -1018,10 +1026,11 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.AbstractLaunchConfigurationTab#isValid(org.eclipse
      * .debug.core.ILaunchConfiguration)
      */
+    @Override
     public boolean isValid(final ILaunchConfiguration configuration) {
         // single result logging enabled?
         if (checkSingleResults.getSelection()) {
@@ -1069,10 +1078,11 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.ILaunchConfigurationTab#performApply(org.eclipse
      * .debug.core.ILaunchConfigurationWorkingCopy)
      */
+    @Override
     public void performApply(final ILaunchConfigurationWorkingCopy configuration) {
         // Store the settings into the configuration:
         configuration.setAttribute(MessageStrings.MARKOV_STATISTICS, checkMarkovStatistics.getSelection());
@@ -1122,7 +1132,7 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
     /**
      * Resolves a file's path in case it starts with "platform:/" and returns the entire absolute
      * path to the file, including the file's name.
-     * 
+     *
      * @param fileURL
      *            the path to a file, including the file's name (and its extension)
      * @return the absolute path to the file, including the file's name
@@ -1131,9 +1141,9 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
         // if this is a platform URL, first resolve it to an absolute path
         if (fileURL.startsWith("platform:")) {
             try {
-                URL solvedURL = FileLocator.resolve(new URL(fileURL));
+                final URL solvedURL = FileLocator.resolve(new URL(fileURL));
                 fileURL = solvedURL.getPath();
-            } catch (Exception e) {
+            } catch (final Exception e) {
                 e.printStackTrace();
                 return "";
             }
@@ -1146,9 +1156,9 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
         // if this is a platform URL, first resolve it to an absolute path
         if (fileURL.startsWith("platform:")) {
             try {
-                URL solvedURL = FileLocator.resolve(new URL(fileURL));
+                final URL solvedURL = FileLocator.resolve(new URL(fileURL));
                 fileURL = solvedURL.getPath();
-            } catch (Exception e) {
+            } catch (final Exception e) {
                 e.printStackTrace();
                 return "";
             }
@@ -1156,22 +1166,23 @@ public class OptionsTab extends AbstractLaunchConfigurationTab {
 
         // now this should be an absolute path, but it can have either slashes
         // or backslashes
-        int indexBackslash = fileURL.lastIndexOf("\\");
-        int indexSlash = fileURL.lastIndexOf("/");
+        final int indexBackslash = fileURL.lastIndexOf("\\");
+        final int indexSlash = fileURL.lastIndexOf("/");
         // the right directory separator is the one where the above results in
         // the higher index (assuming that linux file systems do not allow
         // backslashes in file names...)
-        int index = indexBackslash > indexSlash ? indexBackslash : indexSlash;
-        String folderPath = fileURL.substring(0, index + 1);
+        final int index = indexBackslash > indexSlash ? indexBackslash : indexSlash;
+        final String folderPath = fileURL.substring(0, index + 1);
         return folderPath;
     }
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.eclipse.debug.ui.ILaunchConfigurationTab#setDefaults(org.eclipse.
      * debug.core.ILaunchConfigurationWorkingCopy)
      */
+    @Override
     public void setDefaults(final ILaunchConfigurationWorkingCopy configuration) {
         // Load default settings into the configuration:
         configuration.setAttribute(MessageStrings.MARKOV_STATISTICS, STATISTICSDEFAULT);
