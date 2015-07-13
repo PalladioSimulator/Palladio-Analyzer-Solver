@@ -3,10 +3,11 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.palladiosimulator.solver.lqn/src" editDirectory="/org.palladiosimulator.solver.lqn.edit/src"
     editorDirectory="/org.palladiosimulator.solver.lqn.editor/src" modelPluginID="org.palladiosimulator.solver.lqn"
     modelName="Lqn" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    testsDirectory="/org.palladiosimulator.solver.lqn.tests/src" importerID="org.eclipse.xsd.ecore.importer"
-    complianceLevel="5.0" copyrightFields="false" editPluginID="org.palladiosimulator.solver.lqn.edit"
-    editorPluginID="org.palladiosimulator.solver.lqn.editor" testsPluginID="org.palladiosimulator.solver.lqn.tests"
-    operationReflection="true" importOrganizing="true">
+    codeFormatting="true" testsDirectory="/org.palladiosimulator.solver.lqn.tests/src"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="7.0" copyrightFields="false"
+    editPluginID="org.palladiosimulator.solver.lqn.edit" editorPluginID="org.palladiosimulator.solver.lqn.editor"
+    testsPluginID="org.palladiosimulator.solver.lqn.tests" language="" operationReflection="true"
+    importOrganizing="true" cleanup="true">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.xsd.ecore.importer">
     <details key="createMap" value="true"/>
   </genAnnotations>

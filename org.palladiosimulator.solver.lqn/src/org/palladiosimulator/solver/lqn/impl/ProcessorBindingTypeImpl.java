@@ -3,215 +3,229 @@
 package org.palladiosimulator.solver.lqn.impl;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.palladiosimulator.solver.lqn.LqnPackage;
 import org.palladiosimulator.solver.lqn.ProcessorBindingType;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Processor Binding Type</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Processor Binding Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
- *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getSource <em>Source</em>}</li>
- *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getTarget <em>Target</em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getSource <em>Source
+ * </em>}</li>
+ * <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getTarget <em>Target
+ * </em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
 public class ProcessorBindingTypeImpl extends MinimalEObjectImpl.Container implements ProcessorBindingType {
-	/**
-	 * The default value of the '{@link #getSource() <em>Source</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSource()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String SOURCE_EDEFAULT = null;
+    /**
+     * The default value of the '{@link #getSource() <em>Source</em>}' attribute. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @see #getSource()
+     * @generated
+     * @ordered
+     */
+    protected static final String SOURCE_EDEFAULT = null;
 
-	/**
-	 * The cached value of the '{@link #getSource() <em>Source</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSource()
-	 * @generated
-	 * @ordered
-	 */
-	protected String source = SOURCE_EDEFAULT;
+    /**
+     * The cached value of the '{@link #getSource() <em>Source</em>}' attribute. <!-- begin-user-doc
+     * --> <!-- end-user-doc -->
+     *
+     * @see #getSource()
+     * @generated
+     * @ordered
+     */
+    protected String source = SOURCE_EDEFAULT;
 
-	/**
-	 * The default value of the '{@link #getTarget() <em>Target</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTarget()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String TARGET_EDEFAULT = null;
+    /**
+     * The default value of the '{@link #getTarget() <em>Target</em>}' attribute. <!--
+     * begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @see #getTarget()
+     * @generated
+     * @ordered
+     */
+    protected static final String TARGET_EDEFAULT = null;
 
-	/**
-	 * The cached value of the '{@link #getTarget() <em>Target</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTarget()
-	 * @generated
-	 * @ordered
-	 */
-	protected String target = TARGET_EDEFAULT;
+    /**
+     * The cached value of the '{@link #getTarget() <em>Target</em>}' attribute. <!-- begin-user-doc
+     * --> <!-- end-user-doc -->
+     *
+     * @see #getTarget()
+     * @generated
+     * @ordered
+     */
+    protected String target = TARGET_EDEFAULT;
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ProcessorBindingTypeImpl() {
-		super();
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    protected ProcessorBindingTypeImpl() {
+        super();
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	protected EClass eStaticClass() {
-		return LqnPackage.Literals.PROCESSOR_BINDING_TYPE;
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    protected EClass eStaticClass() {
+        return LqnPackage.Literals.PROCESSOR_BINDING_TYPE;
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getSource() {
-		return source;
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public String getSource() {
+        return this.source;
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setSource(String newSource) {
-		String oldSource = source;
-		source = newSource;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE, oldSource, source));
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public void setSource(final String newSource) {
+        final String oldSource = this.source;
+        this.source = newSource;
+        if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE,
+                    oldSource,
+                    this.source));
+        }
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getTarget() {
-		return target;
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public String getTarget() {
+        return this.target;
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setTarget(String newTarget) {
-		String oldTarget = target;
-		target = newTarget;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__TARGET, oldTarget, target));
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public void setTarget(final String newTarget) {
+        final String oldTarget = this.target;
+        this.target = newTarget;
+        if (this.eNotificationRequired()) {
+            this.eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__TARGET,
+                    oldTarget,
+                    this.target));
+        }
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
-				return getSource();
-			case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
-				return getTarget();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
+        switch (featureID)
+        {
+        case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
+            return this.getSource();
+        case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
+            return this.getTarget();
+        }
+        return super.eGet(featureID, resolve, coreType);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
-				setSource((String)newValue);
-				return;
-			case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
-				setTarget((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public void eSet(final int featureID, final Object newValue) {
+        switch (featureID)
+        {
+        case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
+            this.setSource((String) newValue);
+            return;
+        case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
+            this.setTarget((String) newValue);
+            return;
+        }
+        super.eSet(featureID, newValue);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
-		switch (featureID) {
-			case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
-				setSource(SOURCE_EDEFAULT);
-				return;
-			case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
-				setTarget(TARGET_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public void eUnset(final int featureID) {
+        switch (featureID)
+        {
+        case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
+            this.setSource(SOURCE_EDEFAULT);
+            return;
+        case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
+            this.setTarget(TARGET_EDEFAULT);
+            return;
+        }
+        super.eUnset(featureID);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
-				return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
-			case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
-				return TARGET_EDEFAULT == null ? target != null : !TARGET_EDEFAULT.equals(target);
-		}
-		return super.eIsSet(featureID);
-	}
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public boolean eIsSet(final int featureID) {
+        switch (featureID)
+        {
+        case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
+            return SOURCE_EDEFAULT == null ? this.source != null : !SOURCE_EDEFAULT.equals(this.source);
+        case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
+            return TARGET_EDEFAULT == null ? this.target != null : !TARGET_EDEFAULT.equals(this.target);
+        }
+        return super.eIsSet(featureID);
+    }
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
+    /**
+     * <!-- begin-user-doc --> <!-- end-user-doc -->
+     *
+     * @generated
+     */
+    @Override
+    public String toString() {
+        if (this.eIsProxy()) {
+            return super.toString();
+        }
 
-		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (source: ");
-		result.append(source);
-		result.append(", target: ");
-		result.append(target);
-		result.append(')');
-		return result.toString();
-	}
+        final StringBuffer result = new StringBuffer(super.toString());
+        result.append(" (source: ");
+        result.append(this.source);
+        result.append(", target: ");
+        result.append(this.target);
+        result.append(')');
+        return result.toString();
+    }
 
-} //ProcessorBindingTypeImpl
+} // ProcessorBindingTypeImpl
