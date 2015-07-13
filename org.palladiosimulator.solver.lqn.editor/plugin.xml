@@ -2,14 +2,10 @@
 <?eclipse version="3.0"?>
 
 <!--
- <copyright>
- </copyright>
-
- $Id$
 -->
 
 <plugin>
-  
+
    <extension point="org.eclipse.ui.newWizards">
       <!-- @generated lqn -->
       <category
@@ -37,4 +33,5 @@
             contributorClass="org.palladiosimulator.solver.lqn.presentation.LqnActionBarContributor">
       </editor>
    </extension>
+
 </plugin>

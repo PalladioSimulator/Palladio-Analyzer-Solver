@@ -101,6 +101,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		Date date = new Date();
 		String timestamp = dateFormat.format(date);
 
+		//TODO delete XML variable as lqn one is not used anymore?
 		filenameInputXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn" + timestamp
 				+ ".xml";
@@ -111,7 +112,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				+ System.getProperty("file.separator") + "pcm2lqn_result"
 				+ timestamp + ".xml";
 		filenameLQN = getOutputFolder() + System.getProperty("file.separator")
-				+ "pcm2lqn" + timestamp + ".lqn";
+				+ "pcm2lqn" + timestamp + ".xml";
 	}
 
 	public String getFilenameResultXML() {
@@ -401,8 +402,8 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		lqnXmlHandler.saveModelToXMI(filenameInputXML);
 
 		Pcm2LqnHelper.clearGuidMap();
-		runLqn2Xml();
-		runLqn2XmlReformat();
+		//runLqn2Xml();
+		//runLqn2XmlReformat();
 
 	}
 

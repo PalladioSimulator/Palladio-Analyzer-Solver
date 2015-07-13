@@ -1,11 +1,17 @@
 package org.palladiosimulator.solver.transformations.pcm2lqn;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.URI;
@@ -50,6 +56,15 @@ public class LqnXmlHandler {
 		}
 
 		fixXMLFile(fileName);
+		try {
+			fixXmlHeader(fileName);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -114,19 +129,20 @@ public class LqnXmlHandler {
 		
 		//TODO: remove hard coded path to xsd file. 
 		String content = new String(b);
-		content = content.replaceAll("LqnModelType", "lqn-model");
+		content = content.replaceAll("lqn:LqnModelType", "lqn-model");
+		content = content.replaceAll("_","-");
 		
-//		String lqnDir = System.getenv("LQNDIR");
-//		if (lqnDir != null && lqnDir !=""){
-//			
-//			lqnDir = lqnDir.replaceAll("\\\\", "/");
-//			lqnDir = lqnDir.replaceAll(" ", "%20");
-//			content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn.xsd\"");
-//		} else {
-//			content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
-//		}
+		String lqnDir = System.getenv("LQNDIR");
+		if (lqnDir != null && lqnDir !=""){
+			
+			lqnDir = lqnDir.replaceAll("\\\\", "/");
+			lqnDir = lqnDir.replaceAll(" ", "%20");
+			content = content.replaceAll("xmlns:lqn=\"file:/C:/Program Files/LQNSolvers/lqn-core.xsd", "xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn.xsd\"");
+		} else {
+			//content = content.replaceAll("LQNSolvers/lqn-core.xsd", "LQN Solvers/lqn.xsd");
+		}
 		
-		content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:/C:/Program Files/LQN Solvers/lqn.xsd\"");
+		content = content.replaceAll("xmlns:lqn", "xsi:noNamespaceSchemaLocation");
 		content = content.replaceAll("xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"", "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
 
 		content = content.replaceAll("entryActivityGraph", "entry-activity-graph");
@@ -291,5 +307,49 @@ public class LqnXmlHandler {
 			e.printStackTrace();
 		}
 	}
+	
+		/**
+		 * Original patch from Gregory Franks, used to fix the xml header of the generated file
+		 * @param inputFile
+		 * @throws FileNotFoundException
+		 * @throws IOException
+		 */
+		private void fixXmlHeader(String inputFile) throws FileNotFoundException,
+				IOException {
+			//Read the XML input file encoding the LQN instance
+			FileReader fr = new FileReader(inputFile);
+			BufferedReader br = new BufferedReader(fr);
+			//Skip the first line (wrong encoding ASCII)
+			br.readLine();
+			//Read the following lines
+			List<String> content = new ArrayList<String>();
+			String line = br.readLine();
+			while (line != null) {
+				content.add(line + "\n");
+				line = br.readLine();
+	 		}
+			//Close the file
+			br.close();
+			fr.close();
+			//Delete the file
+			File f = new File(inputFile);
+			f.delete();
+			//Create a new file with the same name and start writing in it				
+			File recordFile = new File(inputFile);			
+			FileWriter recordFw = new FileWriter(recordFile);
+			BufferedWriter recordBw = new BufferedWriter(recordFw);
+			//Write the correct XML header (encoding us-ascii)
+			recordBw.write("<?xml version=\"1.0\" encoding=\"us-ascii\"?>\n");
+			recordBw.flush();
+			//Write all the following lines
+			for (String s : content) {
+				recordBw.write(s);
+				recordBw.flush();
+			}
+			//Close the file
+			recordBw.close();
+			recordFw.close();
+	 	}
+
 	
 }

@@ -13,7 +13,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated lqn -->
       <package
-            uri="http://palladiosimulator.org/Solver/LQN/1.0"
+            uri="file:/C:/Program Files/LQNSolvers/lqn-core.xsd"
             class="org.palladiosimulator.solver.lqn.LqnPackage"
             genModel="model/lqn.genmodel"/>
    </extension>

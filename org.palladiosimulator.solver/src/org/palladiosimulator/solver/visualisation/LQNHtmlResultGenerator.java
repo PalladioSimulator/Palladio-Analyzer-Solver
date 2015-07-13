@@ -106,8 +106,7 @@ public class LQNHtmlResultGenerator {
 
 				String procName = pt.getName();
 				htmlText.append("<td>"+procName+"</td>");
-				String util = (String)singleResult.getUtilization();
-				double utilDouble = convertStringToDouble(util);
+				double utilDouble = singleResult.getUtilization();
 				htmlText.append("<td>"+format.format(utilDouble)+"</td>");
 
 				String multiplicity = pt.getMultiplicity().toString();
@@ -145,8 +144,7 @@ public class LQNHtmlResultGenerator {
 				double serviceTime = getResponseTimeOfSubActivities(tt);
 				htmlText.append("<td>"+format.format(serviceTime)+"</td>");
 				
-				String throughput = (String)tt.getResultTask().get(0).getThroughput();
-				double tpDouble = convertStringToDouble(throughput);
+				double tpDouble = tt.getResultTask().get(0).getThroughput();
 				htmlText.append("<td>"+format.format(tpDouble)+"</td>");
 				
 				htmlText.append("</tr>");
@@ -217,8 +215,7 @@ public class LQNHtmlResultGenerator {
 			EList<OutputResultType> results = activity.getResultActivity();
 
 			for (OutputResultType outputResultType : results) {
-				double serviceTime = convertStringToDouble((String) outputResultType
-						.getServiceTime());
+				double serviceTime = outputResultType.getServiceTime();
 
 				time += serviceTime;
 			}
