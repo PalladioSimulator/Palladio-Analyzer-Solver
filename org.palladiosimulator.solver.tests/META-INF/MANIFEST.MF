@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PCM Solver Plug-in Tests
 Bundle-SymbolicName: org.palladiosimulator.solver.tests
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 2.0.0.qualifier
 Bundle-Activator: org.palladiosimulator.solver.tests.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.junit,

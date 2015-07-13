@@ -53,10 +53,10 @@ public class LQNTest {
 
         final SolverParamsType spt = fac.createSolverParamsType();
         spt.setComment("Design Comparison Heiko");
-        spt.setConvVal("1e-005");
+        spt.setConvVal(1e-005);
         spt.setItLimit(50);
         spt.setPrintInt(10);
-        spt.setUnderrelaxCoeff("0.5");
+        spt.setUnderrelaxCoeff(0.5);
         lmt.setSolverParams(spt);
 
         getProcessor1(fac, lmt);
