@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class CallListTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -147,14 +147,14 @@ public class CallListTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL,
-                        LqnFactory.eINSTANCE.createSynchCallType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL,
+                                LqnFactory.eINSTANCE.createSynchCallType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL,
-                        LqnFactory.eINSTANCE.createAsynchCallType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL,
+                                LqnFactory.eINSTANCE.createAsynchCallType()));
     }
 
     /**

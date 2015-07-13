@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class LqnCoreTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -147,14 +147,14 @@ public class LqnCoreTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.LQN_CORE_TYPE__PROCESSOR,
-                        LqnFactory.eINSTANCE.createProcessorType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.LQN_CORE_TYPE__PROCESSOR,
+                                LqnFactory.eINSTANCE.createProcessorType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.LQN_CORE_TYPE__SLOT,
-                        LqnFactory.eINSTANCE.createSlotType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.LQN_CORE_TYPE__SLOT,
+                                LqnFactory.eINSTANCE.createSlotType()));
     }
 
     /**

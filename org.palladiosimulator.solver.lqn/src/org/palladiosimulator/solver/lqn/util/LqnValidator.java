@@ -1143,12 +1143,12 @@ public class LqnValidator extends EObjectValidator {
      */
     public static final PatternMatcher[][] EXT_VARIABLE__PATTERN__VALUES =
             new PatternMatcher[][]
+            {
+                    new PatternMatcher[]
                     {
-        new PatternMatcher[]
-                {
-                XMLTypeUtil.createPatternMatcher("$(_|[a-zA-Z])(([a-zA-Z]|[0-9]|_)+)?")
-                }
-                    };
+                            XMLTypeUtil.createPatternMatcher("$(_|[a-zA-Z])(([a-zA-Z]|[0-9]|_)+)?")
+                    }
+            };
 
     /**
      * Validates the Pattern constraint of '<em>Ext Variable</em>'. <!-- begin-user-doc --> <!--

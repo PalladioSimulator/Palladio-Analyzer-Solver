@@ -57,13 +57,13 @@ public class EntryMakingCallTypeItemProvider extends MakingCallTypeItemProvider 
      */
     protected void addProbPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryMakingCallType_prob_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_EntryMakingCallType_prob_feature",
-                                "_UI_EntryMakingCallType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryMakingCallType_prob_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_EntryMakingCallType_prob_feature",
+                                        "_UI_EntryMakingCallType_type"),
                                 LqnPackage.Literals.ENTRY_MAKING_CALL_TYPE__PROB,
                                 true,
                                 false,
@@ -94,7 +94,7 @@ public class EntryMakingCallTypeItemProvider extends MakingCallTypeItemProvider 
         final String label = ((EntryMakingCallType) object).getDest();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_EntryMakingCallType_type") :
-                this.getString("_UI_EntryMakingCallType_type") + " " + label;
+                    this.getString("_UI_EntryMakingCallType_type") + " " + label;
     }
 
     /**

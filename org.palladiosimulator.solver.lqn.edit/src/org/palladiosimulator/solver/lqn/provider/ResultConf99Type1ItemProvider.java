@@ -29,13 +29,13 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type1;
  * @generated
  */
 public class ResultConf99Type1ItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -112,12 +112,12 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addLossProbabilityPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_lossProbability_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_lossProbability_feature", "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_lossProbability_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_lossProbability_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__LOSS_PROBABILITY,
                                 true,
                                 false,
@@ -135,13 +135,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addOpenWaitTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_openWaitTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_openWaitTime_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_openWaitTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_openWaitTime_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__OPEN_WAIT_TIME,
                                 true,
                                 false,
@@ -159,13 +159,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase1ProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase1ProcWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase1ProcWaiting_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase1ProcWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase1ProcWaiting_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING,
                                 true,
                                 false,
@@ -183,13 +183,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase1ServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase1ServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase1ServiceTime_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase1ServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase1ServiceTime_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME,
                                 true,
                                 false,
@@ -207,14 +207,14 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase1ServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -232,13 +232,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase1UtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase1Utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase1Utilization_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase1Utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase1Utilization_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_UTILIZATION,
                                 true,
                                 false,
@@ -256,13 +256,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase1WaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase1Waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase1Waiting_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase1Waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase1Waiting_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_WAITING,
                                 true,
                                 false,
@@ -280,13 +280,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase1WaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase1WaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase1WaitingVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase1WaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase1WaitingVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -304,13 +304,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase2ProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase2ProcWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase2ProcWaiting_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase2ProcWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase2ProcWaiting_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING,
                                 true,
                                 false,
@@ -328,13 +328,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase2ServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase2ServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase2ServiceTime_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase2ServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase2ServiceTime_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME,
                                 true,
                                 false,
@@ -352,14 +352,14 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase2ServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -377,13 +377,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase2UtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase2Utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase2Utilization_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase2Utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase2Utilization_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_UTILIZATION,
                                 true,
                                 false,
@@ -401,13 +401,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase2WaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase2Waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase2Waiting_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase2Waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase2Waiting_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_WAITING,
                                 true,
                                 false,
@@ -425,13 +425,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase2WaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase2WaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase2WaitingVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase2WaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase2WaitingVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -449,13 +449,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase3ProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase3ProcWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase3ProcWaiting_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase3ProcWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase3ProcWaiting_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING,
                                 true,
                                 false,
@@ -473,13 +473,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase3ServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase3ServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase3ServiceTime_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase3ServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase3ServiceTime_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME,
                                 true,
                                 false,
@@ -497,14 +497,14 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase3ServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -522,13 +522,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase3UtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase3Utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase3Utilization_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase3Utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase3Utilization_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_UTILIZATION,
                                 true,
                                 false,
@@ -546,13 +546,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase3WaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase3Waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase3Waiting_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase3Waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase3Waiting_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_WAITING,
                                 true,
                                 false,
@@ -570,13 +570,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addPhase3WaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_phase3WaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_phase3WaitingVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_phase3WaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_phase3WaitingVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -594,14 +594,14 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addProbExceedMaxServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_probExceedMaxServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_probExceedMaxServiceTime_feature",
-                                "_UI_ResultConf99Type1_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_probExceedMaxServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_probExceedMaxServiceTime_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PROB_EXCEED_MAX_SERVICE_TIME,
                                 true,
                                 false,
@@ -619,12 +619,12 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addProcUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_procUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_procUtilization_feature", "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_procUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_procUtilization_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PROC_UTILIZATION,
                                 true,
                                 false,
@@ -642,13 +642,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_procWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_procWaiting_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_procWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_procWaiting_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__PROC_WAITING,
                                 true,
                                 false,
@@ -666,13 +666,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockReaderHoldingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockReaderHolding_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockReaderHolding_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockReaderHolding_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockReaderHolding_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_HOLDING,
                                 true,
                                 false,
@@ -690,13 +690,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockReaderUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockReaderUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockReaderUtilization_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockReaderUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockReaderUtilization_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_UTILIZATION,
                                 true,
                                 false,
@@ -714,13 +714,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockReaderWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockReaderWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockReaderWaiting_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockReaderWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockReaderWaiting_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING,
                                 true,
                                 false,
@@ -738,13 +738,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockReaderWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -762,13 +762,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockWriterHoldingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockWriterHolding_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockWriterHolding_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockWriterHolding_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockWriterHolding_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_HOLDING,
                                 true,
                                 false,
@@ -786,13 +786,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockWriterUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockWriterUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockWriterUtilization_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockWriterUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockWriterUtilization_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_UTILIZATION,
                                 true,
                                 false,
@@ -810,13 +810,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockWriterWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockWriterWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockWriterWaiting_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockWriterWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockWriterWaiting_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING,
                                 true,
                                 false,
@@ -834,13 +834,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addRwlockWriterWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -858,13 +858,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addSemaphoreUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_semaphoreUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_semaphoreUtilization_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_semaphoreUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_semaphoreUtilization_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_UTILIZATION,
                                 true,
                                 false,
@@ -882,13 +882,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addSemaphoreWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_semaphoreWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_semaphoreWaiting_feature", "_UI_ResultConf99Type1_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_semaphoreWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_semaphoreWaiting_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_WAITING,
                                 true,
                                 false,
@@ -906,14 +906,14 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addSemaphoreWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_semaphoreWaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_semaphoreWaitingVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_semaphoreWaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_semaphoreWaitingVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -931,13 +931,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_serviceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_serviceTime_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_serviceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_serviceTime_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__SERVICE_TIME,
                                 true,
                                 false,
@@ -955,13 +955,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_serviceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_serviceTimeVariance_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_serviceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_serviceTimeVariance_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -979,13 +979,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addSquaredCoeffVariationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_squaredCoeffVariation_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_squaredCoeffVariation_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_squaredCoeffVariation_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_squaredCoeffVariation_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__SQUARED_COEFF_VARIATION,
                                 true,
                                 false,
@@ -1003,13 +1003,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addThroughputPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_throughput_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_throughput_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_throughput_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_throughput_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__THROUGHPUT,
                                 true,
                                 false,
@@ -1027,12 +1027,12 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addThroughputBoundPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_throughputBound_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_throughputBound_feature", "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_throughputBound_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_throughputBound_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__THROUGHPUT_BOUND,
                                 true,
                                 false,
@@ -1050,13 +1050,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_utilization_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_utilization_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__UTILIZATION,
                                 true,
                                 false,
@@ -1074,13 +1074,13 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_waiting_feature",
-                                "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_waiting_feature",
+                                        "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__WAITING,
                                 true,
                                 false,
@@ -1098,12 +1098,12 @@ public class ResultConf99Type1ItemProvider
      */
     protected void addWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type1_waitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type1_waitingVariance_feature", "_UI_ResultConf99Type1_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type1_waitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type1_waitingVariance_feature", "_UI_ResultConf99Type1_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE1__WAITING_VARIANCE,
                                 true,
                                 false,

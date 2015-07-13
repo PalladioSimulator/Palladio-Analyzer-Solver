@@ -132,9 +132,9 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY,
-                        LqnFactory.eINSTANCE.createReplyActivityType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY,
+                                LqnFactory.eINSTANCE.createReplyActivityType()));
     }
 
 }

@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.PlotControlType;
  * @generated
  */
 public class PlotControlTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -147,14 +147,14 @@ public class PlotControlTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT,
-                        LqnFactory.eINSTANCE.createFirstPlotType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT,
+                                LqnFactory.eINSTANCE.createFirstPlotType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT,
-                        LqnFactory.eINSTANCE.createPlotType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT,
+                                LqnFactory.eINSTANCE.createPlotType()));
     }
 
     /**

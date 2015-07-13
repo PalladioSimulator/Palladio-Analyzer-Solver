@@ -56,12 +56,12 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
      */
     protected void addProbPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityOrType_prob_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityOrType_prob_feature",
-                                "_UI_ActivityOrType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityOrType_prob_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ActivityOrType_prob_feature",
+                                        "_UI_ActivityOrType_type"),
                                 LqnPackage.Literals.ACTIVITY_OR_TYPE__PROB,
                                 true,
                                 false,
@@ -92,7 +92,7 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
         final String label = ((ActivityOrType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ActivityOrType_type") :
-                this.getString("_UI_ActivityOrType_type") + " " + label;
+                    this.getString("_UI_ActivityOrType_type") + " " + label;
     }
 
     /**

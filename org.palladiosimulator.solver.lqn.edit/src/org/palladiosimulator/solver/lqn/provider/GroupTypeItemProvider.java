@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class GroupTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -74,12 +74,12 @@ public class GroupTypeItemProvider
      */
     protected void addCapPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_GroupType_cap_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_GroupType_cap_feature",
-                                "_UI_GroupType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_GroupType_cap_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_GroupType_cap_feature",
+                                        "_UI_GroupType_type"),
                                 LqnPackage.Literals.GROUP_TYPE__CAP,
                                 true,
                                 false,
@@ -97,12 +97,12 @@ public class GroupTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_GroupType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_GroupType_name_feature",
-                                "_UI_GroupType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_GroupType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_GroupType_name_feature",
+                                        "_UI_GroupType_type"),
                                 LqnPackage.Literals.GROUP_TYPE__NAME,
                                 true,
                                 false,
@@ -120,12 +120,12 @@ public class GroupTypeItemProvider
      */
     protected void addSharePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_GroupType_share_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_GroupType_share_feature",
-                                "_UI_GroupType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_GroupType_share_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_GroupType_share_feature",
+                                        "_UI_GroupType_type"),
                                 LqnPackage.Literals.GROUP_TYPE__SHARE,
                                 true,
                                 false,
@@ -189,7 +189,7 @@ public class GroupTypeItemProvider
         final String label = ((GroupType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_GroupType_type") :
-                this.getString("_UI_GroupType_type") + " " + label;
+                    this.getString("_UI_GroupType_type") + " " + label;
     }
 
     /**
@@ -229,14 +229,14 @@ public class GroupTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.GROUP_TYPE__RESULT_GROUP,
-                        LqnFactory.eINSTANCE.createOutputResultType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.GROUP_TYPE__RESULT_GROUP,
+                                LqnFactory.eINSTANCE.createOutputResultType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.GROUP_TYPE__TASK,
-                        LqnFactory.eINSTANCE.createTaskType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.GROUP_TYPE__TASK,
+                                LqnFactory.eINSTANCE.createTaskType()));
     }
 
     /**

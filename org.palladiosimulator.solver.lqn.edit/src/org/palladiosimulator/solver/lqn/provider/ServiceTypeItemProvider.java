@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.ServiceType;
  * @generated
  */
 public class ServiceTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -70,12 +70,12 @@ public class ServiceTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ServiceType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ServiceType_name_feature",
-                                "_UI_ServiceType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ServiceType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ServiceType_name_feature",
+                                        "_UI_ServiceType_type"),
                                 LqnPackage.Literals.SERVICE_TYPE__NAME,
                                 true,
                                 false,
@@ -106,7 +106,7 @@ public class ServiceTypeItemProvider
         final String label = ((ServiceType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ServiceType_type") :
-                this.getString("_UI_ServiceType_type") + " " + label;
+                    this.getString("_UI_ServiceType_type") + " " + label;
     }
 
     /**

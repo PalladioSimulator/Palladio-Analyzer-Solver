@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class InPortTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -72,13 +72,13 @@ public class InPortTypeItemProvider
      */
     protected void addConnectFromPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_InPortType_connectFrom_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_InPortType_connectFrom_feature",
-                                "_UI_InPortType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_InPortType_connectFrom_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_InPortType_connectFrom_feature",
+                                        "_UI_InPortType_type"),
                                 LqnPackage.Literals.IN_PORT_TYPE__CONNECT_FROM,
                                 true,
                                 false,
@@ -96,13 +96,13 @@ public class InPortTypeItemProvider
      */
     protected void addDescriptionPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_InPortType_description_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_InPortType_description_feature",
-                                "_UI_InPortType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_InPortType_description_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_InPortType_description_feature",
+                                        "_UI_InPortType_type"),
                                 LqnPackage.Literals.IN_PORT_TYPE__DESCRIPTION,
                                 true,
                                 false,
@@ -120,12 +120,12 @@ public class InPortTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_InPortType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_InPortType_name_feature",
-                                "_UI_InPortType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_InPortType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_InPortType_name_feature",
+                                        "_UI_InPortType_type"),
                                 LqnPackage.Literals.IN_PORT_TYPE__NAME,
                                 true,
                                 false,
@@ -156,7 +156,7 @@ public class InPortTypeItemProvider
         final String label = ((InPortType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_InPortType_type") :
-                this.getString("_UI_InPortType_type") + " " + label;
+                    this.getString("_UI_InPortType_type") + " " + label;
     }
 
     /**

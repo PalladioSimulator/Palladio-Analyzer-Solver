@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.ProcessorType;
  * @generated
  */
 public class ProcessorTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -77,13 +77,13 @@ public class ProcessorTypeItemProvider
      */
     protected void addMultiplicityPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorType_multiplicity_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ProcessorType_multiplicity_feature",
-                                "_UI_ProcessorType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorType_multiplicity_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ProcessorType_multiplicity_feature",
+                                        "_UI_ProcessorType_type"),
                                 LqnPackage.Literals.PROCESSOR_TYPE__MULTIPLICITY,
                                 true,
                                 false,
@@ -101,12 +101,12 @@ public class ProcessorTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_name_feature",
-                                "_UI_ProcessorType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_name_feature",
+                                        "_UI_ProcessorType_type"),
                                 LqnPackage.Literals.PROCESSOR_TYPE__NAME,
                                 true,
                                 false,
@@ -124,13 +124,13 @@ public class ProcessorTypeItemProvider
      */
     protected void addQuantumPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorType_quantum_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ProcessorType_quantum_feature",
-                                "_UI_ProcessorType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorType_quantum_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ProcessorType_quantum_feature",
+                                        "_UI_ProcessorType_type"),
                                 LqnPackage.Literals.PROCESSOR_TYPE__QUANTUM,
                                 true,
                                 false,
@@ -148,13 +148,13 @@ public class ProcessorTypeItemProvider
      */
     protected void addReplicationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorType_replication_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ProcessorType_replication_feature",
-                                "_UI_ProcessorType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorType_replication_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ProcessorType_replication_feature",
+                                        "_UI_ProcessorType_type"),
                                 LqnPackage.Literals.PROCESSOR_TYPE__REPLICATION,
                                 true,
                                 false,
@@ -172,13 +172,13 @@ public class ProcessorTypeItemProvider
      */
     protected void addSchedulingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorType_scheduling_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ProcessorType_scheduling_feature",
-                                "_UI_ProcessorType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorType_scheduling_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ProcessorType_scheduling_feature",
+                                        "_UI_ProcessorType_type"),
                                 LqnPackage.Literals.PROCESSOR_TYPE__SCHEDULING,
                                 true,
                                 false,
@@ -196,13 +196,13 @@ public class ProcessorTypeItemProvider
      */
     protected void addSpeedFactorPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorType_speedFactor_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ProcessorType_speedFactor_feature",
-                                "_UI_ProcessorType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorType_speedFactor_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ProcessorType_speedFactor_feature",
+                                        "_UI_ProcessorType_type"),
                                 LqnPackage.Literals.PROCESSOR_TYPE__SPEED_FACTOR,
                                 true,
                                 false,
@@ -267,7 +267,7 @@ public class ProcessorTypeItemProvider
         final String label = ((ProcessorType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ProcessorType_type") :
-                this.getString("_UI_ProcessorType_type") + " " + label;
+                    this.getString("_UI_ProcessorType_type") + " " + label;
     }
 
     /**
@@ -311,19 +311,19 @@ public class ProcessorTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR,
-                        LqnFactory.eINSTANCE.createOutputResultType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR,
+                                LqnFactory.eINSTANCE.createOutputResultType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PROCESSOR_TYPE__GROUP,
-                        LqnFactory.eINSTANCE.createGroupType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PROCESSOR_TYPE__GROUP,
+                                LqnFactory.eINSTANCE.createGroupType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PROCESSOR_TYPE__TASK,
-                        LqnFactory.eINSTANCE.createTaskType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PROCESSOR_TYPE__TASK,
+                                LqnFactory.eINSTANCE.createTaskType()));
     }
 
     /**

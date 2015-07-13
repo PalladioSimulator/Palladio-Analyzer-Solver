@@ -56,13 +56,13 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
      */
     protected void addCountPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityLoopType_count_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityLoopType_count_feature",
-                                "_UI_ActivityLoopType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityLoopType_count_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityLoopType_count_feature",
+                                        "_UI_ActivityLoopType_type"),
                                 LqnPackage.Literals.ACTIVITY_LOOP_TYPE__COUNT,
                                 true,
                                 false,
@@ -93,7 +93,7 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
         final String label = ((ActivityLoopType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ActivityLoopType_type") :
-                this.getString("_UI_ActivityLoopType_type") + " " + label;
+                    this.getString("_UI_ActivityLoopType_type") + " " + label;
     }
 
     /**

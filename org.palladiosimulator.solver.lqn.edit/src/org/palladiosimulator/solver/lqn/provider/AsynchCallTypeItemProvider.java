@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class AsynchCallTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -70,12 +70,12 @@ public class AsynchCallTypeItemProvider
      */
     protected void addDestPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_AsynchCallType_dest_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_AsynchCallType_dest_feature",
-                                "_UI_AsynchCallType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_AsynchCallType_dest_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_AsynchCallType_dest_feature",
+                                        "_UI_AsynchCallType_type"),
                                 LqnPackage.Literals.ASYNCH_CALL_TYPE__DEST,
                                 true,
                                 false,
@@ -106,7 +106,7 @@ public class AsynchCallTypeItemProvider
         final String label = ((AsynchCallType) object).getDest();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_AsynchCallType_type") :
-                this.getString("_UI_AsynchCallType_type") + " " + label;
+                    this.getString("_UI_AsynchCallType_type") + " " + label;
     }
 
     /**

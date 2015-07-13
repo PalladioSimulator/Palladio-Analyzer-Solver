@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type;
  * @generated
  */
 public class ResultConf99TypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -71,13 +71,13 @@ public class ResultConf99TypeItemProvider
      */
     protected void addJoinVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type_joinVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type_joinVariance_feature",
-                                "_UI_ResultConf99Type_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type_joinVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type_joinVariance_feature",
+                                        "_UI_ResultConf99Type_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE__JOIN_VARIANCE,
                                 true,
                                 false,
@@ -95,13 +95,13 @@ public class ResultConf99TypeItemProvider
      */
     protected void addJoinWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultConf99Type_joinWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultConf99Type_joinWaiting_feature",
-                                "_UI_ResultConf99Type_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultConf99Type_joinWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultConf99Type_joinWaiting_feature",
+                                        "_UI_ResultConf99Type_type"),
                                 LqnPackage.Literals.RESULT_CONF99_TYPE__JOIN_WAITING,
                                 true,
                                 false,

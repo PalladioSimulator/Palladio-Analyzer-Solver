@@ -242,17 +242,17 @@ public enum SchedulingType implements Enumerator {
      */
     private static final SchedulingType[] VALUES_ARRAY =
             new SchedulingType[]
-                    {
-        FCFS,
-        PS,
-        PP,
-        INF,
-        RAND,
-        HOL,
-        PS_HOL,
-        PS_PP,
-        CFS,
-                    };
+            {
+                    FCFS,
+                    PS,
+                    PP,
+                    INF,
+                    RAND,
+                    HOL,
+                    PS_HOL,
+                    PS_PP,
+                    CFS,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Scheduling Type</b></em>' enumerators. <!--

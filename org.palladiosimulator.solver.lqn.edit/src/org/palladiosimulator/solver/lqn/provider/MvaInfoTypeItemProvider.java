@@ -29,13 +29,13 @@ import org.palladiosimulator.solver.lqn.MvaInfoType;
  * @generated
  */
 public class MvaInfoTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -77,12 +77,12 @@ public class MvaInfoTypeItemProvider
      */
     protected void addCorePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_MvaInfoType_core_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_core_feature",
-                                "_UI_MvaInfoType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_MvaInfoType_core_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_core_feature",
+                                        "_UI_MvaInfoType_type"),
                                 LqnPackage.Literals.MVA_INFO_TYPE__CORE,
                                 true,
                                 false,
@@ -100,12 +100,12 @@ public class MvaInfoTypeItemProvider
      */
     protected void addFaultsPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_MvaInfoType_faults_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_faults_feature",
-                                "_UI_MvaInfoType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_MvaInfoType_faults_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_faults_feature",
+                                        "_UI_MvaInfoType_type"),
                                 LqnPackage.Literals.MVA_INFO_TYPE__FAULTS,
                                 true,
                                 false,
@@ -123,12 +123,12 @@ public class MvaInfoTypeItemProvider
      */
     protected void addStepPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_MvaInfoType_step_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_step_feature",
-                                "_UI_MvaInfoType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_MvaInfoType_step_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_step_feature",
+                                        "_UI_MvaInfoType_type"),
                                 LqnPackage.Literals.MVA_INFO_TYPE__STEP,
                                 true,
                                 false,
@@ -146,13 +146,13 @@ public class MvaInfoTypeItemProvider
      */
     protected void addStepSquaredPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_MvaInfoType_stepSquared_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_MvaInfoType_stepSquared_feature",
-                                "_UI_MvaInfoType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_MvaInfoType_stepSquared_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_MvaInfoType_stepSquared_feature",
+                                        "_UI_MvaInfoType_type"),
                                 LqnPackage.Literals.MVA_INFO_TYPE__STEP_SQUARED,
                                 true,
                                 false,
@@ -170,13 +170,13 @@ public class MvaInfoTypeItemProvider
      */
     protected void addSubmodelsPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_MvaInfoType_submodels_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_MvaInfoType_submodels_feature",
-                                "_UI_MvaInfoType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_MvaInfoType_submodels_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_MvaInfoType_submodels_feature",
+                                        "_UI_MvaInfoType_type"),
                                 LqnPackage.Literals.MVA_INFO_TYPE__SUBMODELS,
                                 true,
                                 false,
@@ -194,12 +194,12 @@ public class MvaInfoTypeItemProvider
      */
     protected void addWaitPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_MvaInfoType_wait_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_wait_feature",
-                                "_UI_MvaInfoType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_MvaInfoType_wait_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_wait_feature",
+                                        "_UI_MvaInfoType_type"),
                                 LqnPackage.Literals.MVA_INFO_TYPE__WAIT,
                                 true,
                                 false,
@@ -217,13 +217,13 @@ public class MvaInfoTypeItemProvider
      */
     protected void addWaitSquaredPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_MvaInfoType_waitSquared_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_MvaInfoType_waitSquared_feature",
-                                "_UI_MvaInfoType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_MvaInfoType_waitSquared_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_MvaInfoType_waitSquared_feature",
+                                        "_UI_MvaInfoType_type"),
                                 LqnPackage.Literals.MVA_INFO_TYPE__WAIT_SQUARED,
                                 true,
                                 false,
@@ -255,7 +255,7 @@ public class MvaInfoTypeItemProvider
         final String label = labelValue == null ? null : labelValue.toString();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_MvaInfoType_type") :
-                this.getString("_UI_MvaInfoType_type") + " " + label;
+                    this.getString("_UI_MvaInfoType_type") + " " + label;
     }
 
     /**

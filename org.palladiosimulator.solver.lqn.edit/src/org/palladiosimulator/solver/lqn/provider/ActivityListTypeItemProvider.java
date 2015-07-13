@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class ActivityListTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -145,19 +145,19 @@ public class ActivityListTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityLoopType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityLoopType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityOrType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityOrType()));
     }
 
     /**

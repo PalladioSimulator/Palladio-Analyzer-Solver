@@ -31,13 +31,13 @@ import org.palladiosimulator.solver.lqn.OutputResultJoinDelayType;
  * @generated
  */
 public class OutputResultJoinDelayTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -74,13 +74,13 @@ public class OutputResultJoinDelayTypeItemProvider
      */
     protected void addJoinVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultJoinDelayType_joinVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultJoinDelayType_joinVariance_feature",
-                                "_UI_OutputResultJoinDelayType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultJoinDelayType_joinVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultJoinDelayType_joinVariance_feature",
+                                        "_UI_OutputResultJoinDelayType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE,
                                 true,
                                 false,
@@ -98,13 +98,13 @@ public class OutputResultJoinDelayTypeItemProvider
      */
     protected void addJoinWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultJoinDelayType_joinWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultJoinDelayType_joinWaiting_feature",
-                                "_UI_OutputResultJoinDelayType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultJoinDelayType_joinWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultJoinDelayType_joinWaiting_feature",
+                                        "_UI_OutputResultJoinDelayType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING,
                                 true,
                                 false,
@@ -205,14 +205,14 @@ public class OutputResultJoinDelayTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
-                        LqnFactory.eINSTANCE.createResultConf95Type()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
+                                LqnFactory.eINSTANCE.createResultConf95Type()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
-                        LqnFactory.eINSTANCE.createResultConf99Type()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
+                                LqnFactory.eINSTANCE.createResultConf99Type()));
     }
 
     /**

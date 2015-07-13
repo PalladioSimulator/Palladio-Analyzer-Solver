@@ -752,21 +752,21 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
             return this.isSetConvVal();
         case LqnPackage.RESULT_GENERAL_TYPE__ELAPSED_TIME:
             return ELAPSED_TIME_EDEFAULT == null ? this.elapsedTime != null : !ELAPSED_TIME_EDEFAULT
-                    .equals(this.elapsedTime);
+            .equals(this.elapsedTime);
         case LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS:
             return this.isSetIterations();
         case LqnPackage.RESULT_GENERAL_TYPE__PLATFORM_INFO:
             return PLATFORM_INFO_EDEFAULT == null ? this.platformInfo != null : !PLATFORM_INFO_EDEFAULT
-                    .equals(this.platformInfo);
+            .equals(this.platformInfo);
         case LqnPackage.RESULT_GENERAL_TYPE__SOLVER_INFO:
             return SOLVER_INFO_EDEFAULT == null ? this.solverInfo != null : !SOLVER_INFO_EDEFAULT
-                    .equals(this.solverInfo);
+            .equals(this.solverInfo);
         case LqnPackage.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME:
             return SYSTEM_CPU_TIME_EDEFAULT == null ? this.systemCpuTime != null : !SYSTEM_CPU_TIME_EDEFAULT
-            .equals(this.systemCpuTime);
+                    .equals(this.systemCpuTime);
         case LqnPackage.RESULT_GENERAL_TYPE__USER_CPU_TIME:
             return USER_CPU_TIME_EDEFAULT == null ? this.userCpuTime != null : !USER_CPU_TIME_EDEFAULT
-                    .equals(this.userCpuTime);
+            .equals(this.userCpuTime);
         case LqnPackage.RESULT_GENERAL_TYPE__VALID:
             return this.isSetValid();
         }

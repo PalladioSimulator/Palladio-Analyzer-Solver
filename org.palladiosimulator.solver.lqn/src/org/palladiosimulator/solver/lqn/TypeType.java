@@ -97,11 +97,11 @@ public enum TypeType implements Enumerator {
      */
     private static final TypeType[] VALUES_ARRAY =
             new TypeType[]
-                    {
-        PH1PH2,
-        GRAPH,
-        NONE,
-                    };
+            {
+                    PH1PH2,
+                    GRAPH,
+                    NONE,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Type Type</b></em>' enumerators. <!--

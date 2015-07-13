@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class HistogramBinTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -74,13 +74,13 @@ public class HistogramBinTypeItemProvider
      */
     protected void addBeginPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_HistogramBinType_begin_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_HistogramBinType_begin_feature",
-                                "_UI_HistogramBinType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_HistogramBinType_begin_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_HistogramBinType_begin_feature",
+                                        "_UI_HistogramBinType_type"),
                                 LqnPackage.Literals.HISTOGRAM_BIN_TYPE__BEGIN,
                                 true,
                                 false,
@@ -98,13 +98,13 @@ public class HistogramBinTypeItemProvider
      */
     protected void addConf95PropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_HistogramBinType_conf95_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_HistogramBinType_conf95_feature",
-                                "_UI_HistogramBinType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_HistogramBinType_conf95_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_HistogramBinType_conf95_feature",
+                                        "_UI_HistogramBinType_type"),
                                 LqnPackage.Literals.HISTOGRAM_BIN_TYPE__CONF95,
                                 true,
                                 false,
@@ -122,13 +122,13 @@ public class HistogramBinTypeItemProvider
      */
     protected void addConf99PropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_HistogramBinType_conf99_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_HistogramBinType_conf99_feature",
-                                "_UI_HistogramBinType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_HistogramBinType_conf99_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_HistogramBinType_conf99_feature",
+                                        "_UI_HistogramBinType_type"),
                                 LqnPackage.Literals.HISTOGRAM_BIN_TYPE__CONF99,
                                 true,
                                 false,
@@ -146,13 +146,13 @@ public class HistogramBinTypeItemProvider
      */
     protected void addEndPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_HistogramBinType_end_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_HistogramBinType_end_feature",
-                                "_UI_HistogramBinType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_HistogramBinType_end_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_HistogramBinType_end_feature",
+                                        "_UI_HistogramBinType_type"),
                                 LqnPackage.Literals.HISTOGRAM_BIN_TYPE__END,
                                 true,
                                 false,
@@ -170,13 +170,13 @@ public class HistogramBinTypeItemProvider
      */
     protected void addProbPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_HistogramBinType_prob_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_HistogramBinType_prob_feature",
-                                "_UI_HistogramBinType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_HistogramBinType_prob_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_HistogramBinType_prob_feature",
+                                        "_UI_HistogramBinType_type"),
                                 LqnPackage.Literals.HISTOGRAM_BIN_TYPE__PROB,
                                 true,
                                 false,

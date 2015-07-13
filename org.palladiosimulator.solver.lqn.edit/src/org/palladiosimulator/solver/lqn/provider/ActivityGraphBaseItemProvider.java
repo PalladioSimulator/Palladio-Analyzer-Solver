@@ -29,13 +29,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class ActivityGraphBaseItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -148,14 +148,14 @@ public class ActivityGraphBaseItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityDefType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityDefType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE,
-                        LqnFactory.eINSTANCE.createPrecedenceType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE,
+                                LqnFactory.eINSTANCE.createPrecedenceType()));
     }
 
     /**

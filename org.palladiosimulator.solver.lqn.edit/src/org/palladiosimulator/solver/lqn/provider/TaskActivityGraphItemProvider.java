@@ -132,9 +132,9 @@ public class TaskActivityGraphItemProvider extends ActivityGraphBaseItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_ACTIVITY_GRAPH__REPLY_ENTRY,
-                        LqnFactory.eINSTANCE.createReplyEntryType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_ACTIVITY_GRAPH__REPLY_ENTRY,
+                                LqnFactory.eINSTANCE.createReplyEntryType()));
     }
 
 }

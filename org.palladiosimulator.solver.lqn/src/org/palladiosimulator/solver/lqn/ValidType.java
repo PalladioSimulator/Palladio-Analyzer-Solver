@@ -73,10 +73,10 @@ public enum ValidType implements Enumerator {
      */
     private static final ValidType[] VALUES_ARRAY =
             new ValidType[]
-                    {
-        YES,
-        NO,
-                    };
+            {
+                    YES,
+                    NO,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Valid Type</b></em>' enumerators. <!--

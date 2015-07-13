@@ -33,7 +33,7 @@ public final class LqnEditPlugin extends EMFPlugin {
      */
     public LqnEditPlugin() {
         super(new ResourceLocator[]
-        {
+                {
                 });
     }
 

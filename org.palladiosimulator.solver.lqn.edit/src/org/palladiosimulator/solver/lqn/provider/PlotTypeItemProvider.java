@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.PlotType;
  * @generated
  */
 public class PlotTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -70,12 +70,12 @@ public class PlotTypeItemProvider
      */
     protected void addVariablePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_PlotType_variable_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_PlotType_variable_feature",
-                                "_UI_PlotType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_PlotType_variable_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_PlotType_variable_feature",
+                                        "_UI_PlotType_type"),
                                 LqnPackage.Literals.PLOT_TYPE__VARIABLE,
                                 true,
                                 false,
@@ -106,7 +106,7 @@ public class PlotTypeItemProvider
         final String label = ((PlotType) object).getVariable();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_PlotType_type") :
-                this.getString("_UI_PlotType_type") + " " + label;
+                    this.getString("_UI_PlotType_type") + " " + label;
     }
 
     /**

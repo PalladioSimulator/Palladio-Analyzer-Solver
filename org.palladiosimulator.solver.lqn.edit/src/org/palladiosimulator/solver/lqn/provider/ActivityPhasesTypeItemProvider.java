@@ -61,13 +61,13 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
      */
     protected void addPhasePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityPhasesType_phase_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityPhasesType_phase_feature",
-                                "_UI_ActivityPhasesType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityPhasesType_phase_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityPhasesType_phase_feature",
+                                        "_UI_ActivityPhasesType_type"),
                                 LqnPackage.Literals.ACTIVITY_PHASES_TYPE__PHASE,
                                 true,
                                 false,
@@ -131,7 +131,7 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
         final String label = ((ActivityPhasesType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ActivityPhasesType_type") :
-                this.getString("_UI_ActivityPhasesType_type") + " " + label;
+                    this.getString("_UI_ActivityPhasesType_type") + " " + label;
     }
 
     /**
@@ -169,23 +169,23 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__CALL_LIST,
-                        LqnFactory.eINSTANCE.createCallListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__CALL_LIST,
+                                LqnFactory.eINSTANCE.createCallListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
-                        FeatureMapUtil.createEntry
-                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL,
-                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
+                                FeatureMapUtil.createEntry
+                                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL,
+                                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
-                        FeatureMapUtil.createEntry
-                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL,
-                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__GROUP,
+                                FeatureMapUtil.createEntry
+                                        (LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL,
+                                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
     }
 
     /**
@@ -210,7 +210,7 @@ public class ActivityPhasesTypeItemProvider extends ActivityDefBaseItemProvider 
 
         final boolean qualify =
                 childFeature == LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL ||
-                        childFeature == LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL;
+                childFeature == LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL;
 
         if (qualify)
         {

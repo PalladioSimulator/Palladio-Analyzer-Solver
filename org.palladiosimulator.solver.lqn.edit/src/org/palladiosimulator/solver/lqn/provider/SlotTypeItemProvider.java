@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.SlotType;
  * @generated
  */
 public class SlotTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -74,12 +74,12 @@ public class SlotTypeItemProvider
      */
     protected void addBindTargetPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_SlotType_bindTarget_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_bindTarget_feature",
-                                "_UI_SlotType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_SlotType_bindTarget_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_bindTarget_feature",
+                                        "_UI_SlotType_type"),
                                 LqnPackage.Literals.SLOT_TYPE__BIND_TARGET,
                                 true,
                                 false,
@@ -97,13 +97,13 @@ public class SlotTypeItemProvider
      */
     protected void addIdPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_SlotType_id_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_id_feature",
-                                "_UI_SlotType_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_SlotType_id_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_id_feature",
+                                        "_UI_SlotType_type"),
                                 LqnPackage.Literals.SLOT_TYPE__ID,
                                 true,
                                 false,
@@ -121,12 +121,12 @@ public class SlotTypeItemProvider
      */
     protected void addReplicNumPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_SlotType_replicNum_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_replicNum_feature",
-                                "_UI_SlotType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_SlotType_replicNum_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_SlotType_replicNum_feature",
+                                        "_UI_SlotType_type"),
                                 LqnPackage.Literals.SLOT_TYPE__REPLIC_NUM,
                                 true,
                                 false,
@@ -190,7 +190,7 @@ public class SlotTypeItemProvider
         final String label = ((SlotType) object).getId();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_SlotType_type") :
-                this.getString("_UI_SlotType_type") + " " + label;
+                    this.getString("_UI_SlotType_type") + " " + label;
     }
 
     /**
@@ -230,14 +230,14 @@ public class SlotTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.SLOT_TYPE__INTERFACE,
-                        LqnFactory.eINSTANCE.createInterfaceType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.SLOT_TYPE__INTERFACE,
+                                LqnFactory.eINSTANCE.createInterfaceType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.SLOT_TYPE__BINDING,
-                        LqnFactory.eINSTANCE.createBindType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.SLOT_TYPE__BINDING,
+                                LqnFactory.eINSTANCE.createBindType()));
     }
 
     /**

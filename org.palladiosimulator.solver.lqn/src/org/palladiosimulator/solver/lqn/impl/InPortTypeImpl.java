@@ -258,10 +258,10 @@ public class InPortTypeImpl extends MinimalEObjectImpl.Container implements InPo
         {
         case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
             return CONNECT_FROM_EDEFAULT == null ? this.connectFrom != null : !CONNECT_FROM_EDEFAULT
-                    .equals(this.connectFrom);
+            .equals(this.connectFrom);
         case LqnPackage.IN_PORT_TYPE__DESCRIPTION:
             return DESCRIPTION_EDEFAULT == null ? this.description != null : !DESCRIPTION_EDEFAULT
-                    .equals(this.description);
+            .equals(this.description);
         case LqnPackage.IN_PORT_TYPE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         }

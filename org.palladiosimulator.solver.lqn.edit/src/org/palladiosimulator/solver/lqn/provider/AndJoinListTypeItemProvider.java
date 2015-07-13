@@ -31,13 +31,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class AndJoinListTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -73,13 +73,13 @@ public class AndJoinListTypeItemProvider
      */
     protected void addQuorumPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_AndJoinListType_quorum_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_AndJoinListType_quorum_feature",
-                                "_UI_AndJoinListType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_AndJoinListType_quorum_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_AndJoinListType_quorum_feature",
+                                        "_UI_AndJoinListType_type"),
                                 LqnPackage.Literals.AND_JOIN_LIST_TYPE__QUORUM,
                                 true,
                                 false,
@@ -145,7 +145,7 @@ public class AndJoinListTypeItemProvider
         final String label = labelValue == null ? null : labelValue.toString();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_AndJoinListType_type") :
-                this.getString("_UI_AndJoinListType_type") + " " + label;
+                    this.getString("_UI_AndJoinListType_type") + " " + label;
     }
 
     /**
@@ -184,34 +184,34 @@ public class AndJoinListTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY,
-                        LqnFactory.eINSTANCE.createOutputResultJoinDelayType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY,
+                                LqnFactory.eINSTANCE.createOutputResultJoinDelayType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
-                        LqnFactory.eINSTANCE.createOutputDistributionType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
+                                LqnFactory.eINSTANCE.createOutputDistributionType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
-                        LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
+                                LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityLoopType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityLoopType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityOrType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityOrType()));
     }
 
     /**

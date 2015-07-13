@@ -73,10 +73,10 @@ public enum SemaphoreType implements Enumerator {
      */
     private static final SemaphoreType[] VALUES_ARRAY =
             new SemaphoreType[]
-                    {
-        SIGNAL,
-        WAIT,
-                    };
+            {
+                    SIGNAL,
+                    WAIT,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Semaphore Type</b></em>' enumerators. <!--

@@ -566,13 +566,13 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
             return this.isSetCallOrder();
         case LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ:
             return HOST_DEMAND_CVSQ_EDEFAULT == null ? this.hostDemandCvsq != null : !HOST_DEMAND_CVSQ_EDEFAULT
-            .equals(this.hostDemandCvsq);
+                    .equals(this.hostDemandCvsq);
         case LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN:
             return HOST_DEMAND_MEAN_EDEFAULT == null ? this.hostDemandMean != null : !HOST_DEMAND_MEAN_EDEFAULT
-            .equals(this.hostDemandMean);
+                    .equals(this.hostDemandMean);
         case LqnPackage.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME:
             return MAX_SERVICE_TIME_EDEFAULT == null ? this.maxServiceTime != null : !MAX_SERVICE_TIME_EDEFAULT
-            .equals(this.maxServiceTime);
+                    .equals(this.maxServiceTime);
         case LqnPackage.ACTIVITY_DEF_BASE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         case LqnPackage.ACTIVITY_DEF_BASE__THINK_TIME:

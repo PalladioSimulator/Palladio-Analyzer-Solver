@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.PrecedenceType;
  * @generated
  */
 public class PrecedenceTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -157,39 +157,39 @@ public class PrecedenceTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PRECEDENCE_TYPE__PRE,
-                        LqnFactory.eINSTANCE.createSingleActivityListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PRECEDENCE_TYPE__PRE,
+                                LqnFactory.eINSTANCE.createSingleActivityListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PRECEDENCE_TYPE__PRE_OR,
-                        LqnFactory.eINSTANCE.createActivityListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PRECEDENCE_TYPE__PRE_OR,
+                                LqnFactory.eINSTANCE.createActivityListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PRECEDENCE_TYPE__PRE_AND,
-                        LqnFactory.eINSTANCE.createAndJoinListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PRECEDENCE_TYPE__PRE_AND,
+                                LqnFactory.eINSTANCE.createAndJoinListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PRECEDENCE_TYPE__POST,
-                        LqnFactory.eINSTANCE.createSingleActivityListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PRECEDENCE_TYPE__POST,
+                                LqnFactory.eINSTANCE.createSingleActivityListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PRECEDENCE_TYPE__POST_OR,
-                        LqnFactory.eINSTANCE.createOrListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PRECEDENCE_TYPE__POST_OR,
+                                LqnFactory.eINSTANCE.createOrListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND,
-                        LqnFactory.eINSTANCE.createActivityListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND,
+                                LqnFactory.eINSTANCE.createActivityListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.PRECEDENCE_TYPE__POST_LOOP,
-                        LqnFactory.eINSTANCE.createActivityLoopListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.PRECEDENCE_TYPE__POST_LOOP,
+                                LqnFactory.eINSTANCE.createActivityLoopListType()));
     }
 
     /**
@@ -206,9 +206,9 @@ public class PrecedenceTypeItemProvider
 
         final boolean qualify =
                 childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__PRE ||
-                        childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__POST ||
-                        childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__PRE_OR ||
-                        childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND;
+                childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__POST ||
+                childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__PRE_OR ||
+                childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND;
 
         if (qualify)
         {

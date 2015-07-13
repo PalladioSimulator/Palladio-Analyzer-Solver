@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.TaskType;
  * @generated
  */
 public class TaskTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -80,13 +80,13 @@ public class TaskTypeItemProvider
      */
     protected void addActivityGraphPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_activityGraph_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_TaskType_activityGraph_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_activityGraph_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_TaskType_activityGraph_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__ACTIVITY_GRAPH,
                                 true,
                                 false,
@@ -104,12 +104,12 @@ public class TaskTypeItemProvider
      */
     protected void addInitiallyPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_initially_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_initially_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_initially_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_initially_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__INITIALLY,
                                 true,
                                 false,
@@ -127,13 +127,13 @@ public class TaskTypeItemProvider
      */
     protected void addMultiplicityPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_multiplicity_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_TaskType_multiplicity_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_multiplicity_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_TaskType_multiplicity_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__MULTIPLICITY,
                                 true,
                                 false,
@@ -151,12 +151,12 @@ public class TaskTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_name_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_name_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__NAME,
                                 true,
                                 false,
@@ -174,12 +174,12 @@ public class TaskTypeItemProvider
      */
     protected void addPriorityPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_priority_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_priority_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_priority_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_priority_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__PRIORITY,
                                 true,
                                 false,
@@ -197,13 +197,13 @@ public class TaskTypeItemProvider
      */
     protected void addQueueLengthPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_queueLength_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_TaskType_queueLength_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_queueLength_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_TaskType_queueLength_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__QUEUE_LENGTH,
                                 true,
                                 false,
@@ -221,13 +221,13 @@ public class TaskTypeItemProvider
      */
     protected void addReplicationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_replication_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_TaskType_replication_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_replication_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_TaskType_replication_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__REPLICATION,
                                 true,
                                 false,
@@ -245,12 +245,12 @@ public class TaskTypeItemProvider
      */
     protected void addSchedulingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_scheduling_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_scheduling_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_scheduling_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_scheduling_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__SCHEDULING,
                                 true,
                                 false,
@@ -268,12 +268,12 @@ public class TaskTypeItemProvider
      */
     protected void addThinkTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_TaskType_thinkTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_thinkTime_feature",
-                                "_UI_TaskType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_TaskType_thinkTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_TaskType_thinkTime_feature",
+                                        "_UI_TaskType_type"),
                                 LqnPackage.Literals.TASK_TYPE__THINK_TIME,
                                 true,
                                 false,
@@ -342,7 +342,7 @@ public class TaskTypeItemProvider
         final String label = ((TaskType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_TaskType_type") :
-                this.getString("_UI_TaskType_type") + " " + label;
+                    this.getString("_UI_TaskType_type") + " " + label;
     }
 
     /**
@@ -393,44 +393,44 @@ public class TaskTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__RESULT_TASK,
-                        LqnFactory.eINSTANCE.createOutputResultType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__RESULT_TASK,
+                                LqnFactory.eINSTANCE.createOutputResultType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__SERVICE_TIME_DISTRIBUTION,
-                        LqnFactory.eINSTANCE.createOutputDistributionType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__SERVICE_TIME_DISTRIBUTION,
+                                LqnFactory.eINSTANCE.createOutputDistributionType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__SERVICE_TIME_DISTRIBUTION,
-                        LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__SERVICE_TIME_DISTRIBUTION,
+                                LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__FAN_OUT,
-                        LqnFactory.eINSTANCE.createFanOutType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__FAN_OUT,
+                                LqnFactory.eINSTANCE.createFanOutType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__FAN_IN,
-                        LqnFactory.eINSTANCE.createFanInType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__FAN_IN,
+                                LqnFactory.eINSTANCE.createFanInType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__ENTRY,
-                        LqnFactory.eINSTANCE.createEntryType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__ENTRY,
+                                LqnFactory.eINSTANCE.createEntryType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__SERVICE,
-                        LqnFactory.eINSTANCE.createServiceType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__SERVICE,
+                                LqnFactory.eINSTANCE.createServiceType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.TASK_TYPE__TASK_ACTIVITIES,
-                        LqnFactory.eINSTANCE.createTaskActivityGraph()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.TASK_TYPE__TASK_ACTIVITIES,
+                                LqnFactory.eINSTANCE.createTaskActivityGraph()));
     }
 
     /**

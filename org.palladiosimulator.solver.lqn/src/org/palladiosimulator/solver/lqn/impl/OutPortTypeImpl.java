@@ -260,7 +260,7 @@ public class OutPortTypeImpl extends MinimalEObjectImpl.Container implements Out
             return CONNECT_TO_EDEFAULT == null ? this.connectTo != null : !CONNECT_TO_EDEFAULT.equals(this.connectTo);
         case LqnPackage.OUT_PORT_TYPE__DESCRIPTION:
             return DESCRIPTION_EDEFAULT == null ? this.description != null : !DESCRIPTION_EDEFAULT
-                    .equals(this.description);
+            .equals(this.description);
         case LqnPackage.OUT_PORT_TYPE__NAME:
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         }

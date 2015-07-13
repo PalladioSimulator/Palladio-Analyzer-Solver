@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.ParaType;
  * @generated
  */
 public class ParaTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -73,12 +73,12 @@ public class ParaTypeItemProvider
      */
     protected void addStartValuePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ParaType_startValue_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_startValue_feature",
-                                "_UI_ParaType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ParaType_startValue_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_startValue_feature",
+                                        "_UI_ParaType_type"),
                                 LqnPackage.Literals.PARA_TYPE__START_VALUE,
                                 true,
                                 false,
@@ -96,12 +96,12 @@ public class ParaTypeItemProvider
      */
     protected void addEndValuePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ParaType_endValue_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_endValue_feature",
-                                "_UI_ParaType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ParaType_endValue_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_endValue_feature",
+                                        "_UI_ParaType_type"),
                                 LqnPackage.Literals.PARA_TYPE__END_VALUE,
                                 true,
                                 false,
@@ -119,12 +119,12 @@ public class ParaTypeItemProvider
      */
     protected void addStepValuePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ParaType_stepValue_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_stepValue_feature",
-                                "_UI_ParaType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ParaType_stepValue_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_stepValue_feature",
+                                        "_UI_ParaType_type"),
                                 LqnPackage.Literals.PARA_TYPE__STEP_VALUE,
                                 true,
                                 false,
@@ -142,12 +142,12 @@ public class ParaTypeItemProvider
      */
     protected void addValuePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ParaType_value_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_value_feature",
-                                "_UI_ParaType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ParaType_value_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ParaType_value_feature",
+                                        "_UI_ParaType_type"),
                                 LqnPackage.Literals.PARA_TYPE__VALUE,
                                 true,
                                 false,

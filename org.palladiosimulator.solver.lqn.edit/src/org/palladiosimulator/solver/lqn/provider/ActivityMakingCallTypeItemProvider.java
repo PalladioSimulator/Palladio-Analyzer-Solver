@@ -57,13 +57,13 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
      */
     protected void addCallsMeanPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityMakingCallType_callsMean_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityMakingCallType_callsMean_feature",
-                                "_UI_ActivityMakingCallType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityMakingCallType_callsMean_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityMakingCallType_callsMean_feature",
+                                        "_UI_ActivityMakingCallType_type"),
                                 LqnPackage.Literals.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN,
                                 true,
                                 false,
@@ -94,7 +94,7 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
         final String label = ((ActivityMakingCallType) object).getDest();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ActivityMakingCallType_type") :
-                this.getString("_UI_ActivityMakingCallType_type") + " " + label;
+                    this.getString("_UI_ActivityMakingCallType_type") + " " + label;
     }
 
     /**

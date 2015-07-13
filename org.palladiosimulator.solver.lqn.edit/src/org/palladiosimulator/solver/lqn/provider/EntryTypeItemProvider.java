@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class EntryTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -77,12 +77,12 @@ public class EntryTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_name_feature",
-                                "_UI_EntryType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_name_feature",
+                                        "_UI_EntryType_type"),
                                 LqnPackage.Literals.ENTRY_TYPE__NAME,
                                 true,
                                 false,
@@ -100,13 +100,13 @@ public class EntryTypeItemProvider
      */
     protected void addOpenArrivalRatePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryType_openArrivalRate_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_EntryType_openArrivalRate_feature",
-                                "_UI_EntryType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryType_openArrivalRate_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_EntryType_openArrivalRate_feature",
+                                        "_UI_EntryType_type"),
                                 LqnPackage.Literals.ENTRY_TYPE__OPEN_ARRIVAL_RATE,
                                 true,
                                 false,
@@ -124,12 +124,12 @@ public class EntryTypeItemProvider
      */
     protected void addPriorityPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryType_priority_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_priority_feature",
-                                "_UI_EntryType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryType_priority_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_priority_feature",
+                                        "_UI_EntryType_type"),
                                 LqnPackage.Literals.ENTRY_TYPE__PRIORITY,
                                 true,
                                 false,
@@ -147,12 +147,12 @@ public class EntryTypeItemProvider
      */
     protected void addRwlockPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryType_rwlock_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_rwlock_feature",
-                                "_UI_EntryType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryType_rwlock_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_rwlock_feature",
+                                        "_UI_EntryType_type"),
                                 LqnPackage.Literals.ENTRY_TYPE__RWLOCK,
                                 true,
                                 false,
@@ -170,12 +170,12 @@ public class EntryTypeItemProvider
      */
     protected void addSemaphorePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryType_semaphore_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_semaphore_feature",
-                                "_UI_EntryType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryType_semaphore_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_semaphore_feature",
+                                        "_UI_EntryType_type"),
                                 LqnPackage.Literals.ENTRY_TYPE__SEMAPHORE,
                                 true,
                                 false,
@@ -193,12 +193,12 @@ public class EntryTypeItemProvider
      */
     protected void addTypePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryType_type_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_type_feature",
-                                "_UI_EntryType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryType_type_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_EntryType_type_feature",
+                                        "_UI_EntryType_type"),
                                 LqnPackage.Literals.ENTRY_TYPE__TYPE,
                                 true,
                                 false,
@@ -265,7 +265,7 @@ public class EntryTypeItemProvider
         final String label = ((EntryType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_EntryType_type") :
-                this.getString("_UI_EntryType_type") + " " + label;
+                    this.getString("_UI_EntryType_type") + " " + label;
     }
 
     /**
@@ -311,29 +311,29 @@ public class EntryTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_TYPE__RESULT_ENTRY,
-                        LqnFactory.eINSTANCE.createOutputResultType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_TYPE__RESULT_ENTRY,
+                                LqnFactory.eINSTANCE.createOutputResultType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION,
-                        LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION,
+                                LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_TYPE__FORWARDING,
-                        LqnFactory.eINSTANCE.createEntryMakingCallType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_TYPE__FORWARDING,
+                                LqnFactory.eINSTANCE.createEntryMakingCallType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
-                        LqnFactory.eINSTANCE.createEntryActivityGraph()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
+                                LqnFactory.eINSTANCE.createEntryActivityGraph()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
-                        LqnFactory.eINSTANCE.createPhaseActivities()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
+                                LqnFactory.eINSTANCE.createPhaseActivities()));
     }
 
     /**

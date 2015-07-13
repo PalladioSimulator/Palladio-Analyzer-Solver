@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class LqnModelTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -77,12 +77,12 @@ public class LqnModelTypeItemProvider
      */
     protected void addLqxPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_LqnModelType_lqx_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_LqnModelType_lqx_feature",
-                                "_UI_LqnModelType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_LqnModelType_lqx_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_LqnModelType_lqx_feature",
+                                        "_UI_LqnModelType_type"),
                                 LqnPackage.Literals.LQN_MODEL_TYPE__LQX,
                                 true,
                                 false,
@@ -100,13 +100,13 @@ public class LqnModelTypeItemProvider
      */
     protected void addDescriptionPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_LqnModelType_description_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_LqnModelType_description_feature",
-                                "_UI_LqnModelType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_LqnModelType_description_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_LqnModelType_description_feature",
+                                        "_UI_LqnModelType_type"),
                                 LqnPackage.Literals.LQN_MODEL_TYPE__DESCRIPTION,
                                 true,
                                 false,
@@ -124,13 +124,13 @@ public class LqnModelTypeItemProvider
      */
     protected void addLqnSchemaVersionPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_LqnModelType_lqnSchemaVersion_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_LqnModelType_lqnSchemaVersion_feature",
-                                "_UI_LqnModelType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_LqnModelType_lqnSchemaVersion_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_LqnModelType_lqnSchemaVersion_feature",
+                                        "_UI_LqnModelType_type"),
                                 LqnPackage.Literals.LQN_MODEL_TYPE__LQN_SCHEMA_VERSION,
                                 true,
                                 false,
@@ -148,12 +148,12 @@ public class LqnModelTypeItemProvider
      */
     protected void addLqncoreSchemaVersionPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_LqnModelType_lqncoreSchemaVersion_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_LqnModelType_lqncoreSchemaVersion_feature", "_UI_LqnModelType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_LqnModelType_lqncoreSchemaVersion_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_LqnModelType_lqncoreSchemaVersion_feature", "_UI_LqnModelType_type"),
                                 LqnPackage.Literals.LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION,
                                 true,
                                 false,
@@ -171,12 +171,12 @@ public class LqnModelTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_LqnModelType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_LqnModelType_name_feature",
-                                "_UI_LqnModelType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_LqnModelType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_LqnModelType_name_feature",
+                                        "_UI_LqnModelType_type"),
                                 LqnPackage.Literals.LQN_MODEL_TYPE__NAME,
                                 true,
                                 false,
@@ -194,13 +194,13 @@ public class LqnModelTypeItemProvider
      */
     protected void addXmlDebugPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_LqnModelType_xmlDebug_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_LqnModelType_xmlDebug_feature",
-                                "_UI_LqnModelType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_LqnModelType_xmlDebug_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_LqnModelType_xmlDebug_feature",
+                                        "_UI_LqnModelType_type"),
                                 LqnPackage.Literals.LQN_MODEL_TYPE__XML_DEBUG,
                                 true,
                                 false,
@@ -267,7 +267,7 @@ public class LqnModelTypeItemProvider
         final String label = ((LqnModelType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_LqnModelType_type") :
-                this.getString("_UI_LqnModelType_type") + " " + label;
+                    this.getString("_UI_LqnModelType_type") + " " + label;
     }
 
     /**
@@ -313,29 +313,29 @@ public class LqnModelTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.LQN_MODEL_TYPE__RUN_CONTROL,
-                        LqnFactory.eINSTANCE.createRunControlType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.LQN_MODEL_TYPE__RUN_CONTROL,
+                                LqnFactory.eINSTANCE.createRunControlType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.LQN_MODEL_TYPE__PLOT_CONTROL,
-                        LqnFactory.eINSTANCE.createPlotControlType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.LQN_MODEL_TYPE__PLOT_CONTROL,
+                                LqnFactory.eINSTANCE.createPlotControlType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.LQN_MODEL_TYPE__SOLVER_PARAMS,
-                        LqnFactory.eINSTANCE.createSolverParamsType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.LQN_MODEL_TYPE__SOLVER_PARAMS,
+                                LqnFactory.eINSTANCE.createSolverParamsType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.LQN_MODEL_TYPE__PROCESSOR,
-                        LqnFactory.eINSTANCE.createProcessorType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.LQN_MODEL_TYPE__PROCESSOR,
+                                LqnFactory.eINSTANCE.createProcessorType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.LQN_MODEL_TYPE__SLOT,
-                        LqnFactory.eINSTANCE.createSlotType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.LQN_MODEL_TYPE__SLOT,
+                                LqnFactory.eINSTANCE.createSlotType()));
     }
 
     /**

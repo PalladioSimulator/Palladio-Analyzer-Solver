@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class BindTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -149,19 +149,19 @@ public class BindTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.BIND_TYPE__PARAMETER,
-                        LqnFactory.eINSTANCE.createParameterType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.BIND_TYPE__PARAMETER,
+                                LqnFactory.eINSTANCE.createParameterType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING,
-                        LqnFactory.eINSTANCE.createProcessorBindingType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING,
+                                LqnFactory.eINSTANCE.createProcessorBindingType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.BIND_TYPE__PORT_BINDING,
-                        LqnFactory.eINSTANCE.createPortBindingType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.BIND_TYPE__PORT_BINDING,
+                                LqnFactory.eINSTANCE.createPortBindingType()));
     }
 
     /**

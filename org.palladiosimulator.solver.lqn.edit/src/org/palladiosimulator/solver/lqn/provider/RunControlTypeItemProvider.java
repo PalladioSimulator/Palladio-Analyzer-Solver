@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.RunControlType;
  * @generated
  */
 public class RunControlTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -145,9 +145,9 @@ public class RunControlTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.RUN_CONTROL_TYPE__PARA,
-                        LqnFactory.eINSTANCE.createParaType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.RUN_CONTROL_TYPE__PARA,
+                                LqnFactory.eINSTANCE.createParaType()));
     }
 
     /**

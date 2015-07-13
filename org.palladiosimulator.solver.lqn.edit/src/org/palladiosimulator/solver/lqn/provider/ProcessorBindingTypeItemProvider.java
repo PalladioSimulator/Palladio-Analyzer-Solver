@@ -29,13 +29,13 @@ import org.palladiosimulator.solver.lqn.ProcessorBindingType;
  * @generated
  */
 public class ProcessorBindingTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -72,13 +72,13 @@ public class ProcessorBindingTypeItemProvider
      */
     protected void addSourcePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorBindingType_source_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ProcessorBindingType_source_feature",
-                                "_UI_ProcessorBindingType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorBindingType_source_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ProcessorBindingType_source_feature",
+                                        "_UI_ProcessorBindingType_type"),
                                 LqnPackage.Literals.PROCESSOR_BINDING_TYPE__SOURCE,
                                 true,
                                 false,
@@ -96,13 +96,13 @@ public class ProcessorBindingTypeItemProvider
      */
     protected void addTargetPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ProcessorBindingType_target_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ProcessorBindingType_target_feature",
-                                "_UI_ProcessorBindingType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ProcessorBindingType_target_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ProcessorBindingType_target_feature",
+                                        "_UI_ProcessorBindingType_type"),
                                 LqnPackage.Literals.PROCESSOR_BINDING_TYPE__TARGET,
                                 true,
                                 false,
@@ -133,7 +133,7 @@ public class ProcessorBindingTypeItemProvider
         final String label = ((ProcessorBindingType) object).getSource();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ProcessorBindingType_type") :
-                this.getString("_UI_ProcessorBindingType_type") + " " + label;
+                    this.getString("_UI_ProcessorBindingType_type") + " " + label;
     }
 
     /**

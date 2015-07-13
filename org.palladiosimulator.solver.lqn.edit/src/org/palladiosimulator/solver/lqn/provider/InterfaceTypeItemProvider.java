@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class InterfaceTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -147,14 +147,14 @@ public class InterfaceTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.INTERFACE_TYPE__IN_PORT,
-                        LqnFactory.eINSTANCE.createInPortType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.INTERFACE_TYPE__IN_PORT,
+                                LqnFactory.eINSTANCE.createInPortType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.INTERFACE_TYPE__OUT_PORT,
-                        LqnFactory.eINSTANCE.createOutPortType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.INTERFACE_TYPE__OUT_PORT,
+                                LqnFactory.eINSTANCE.createOutPortType()));
     }
 
     /**

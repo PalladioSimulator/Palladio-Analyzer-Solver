@@ -31,13 +31,13 @@ import org.palladiosimulator.solver.lqn.ResultGeneralType;
  * @generated
  */
 public class ResultGeneralTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -80,13 +80,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addConvValPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_convVal_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_convVal_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_convVal_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_convVal_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__CONV_VAL,
                                 true,
                                 false,
@@ -104,13 +104,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addElapsedTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_elapsedTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_elapsedTime_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_elapsedTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_elapsedTime_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__ELAPSED_TIME,
                                 true,
                                 false,
@@ -128,13 +128,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addIterationsPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_iterations_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_iterations_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_iterations_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_iterations_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__ITERATIONS,
                                 true,
                                 false,
@@ -152,13 +152,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addPlatformInfoPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_platformInfo_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_platformInfo_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_platformInfo_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_platformInfo_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__PLATFORM_INFO,
                                 true,
                                 false,
@@ -176,13 +176,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addSolverInfoPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_solverInfo_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_solverInfo_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_solverInfo_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_solverInfo_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__SOLVER_INFO,
                                 true,
                                 false,
@@ -200,13 +200,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addSystemCpuTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_systemCpuTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_systemCpuTime_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_systemCpuTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_systemCpuTime_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME,
                                 true,
                                 false,
@@ -224,13 +224,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addUserCpuTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_userCpuTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_userCpuTime_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_userCpuTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_userCpuTime_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__USER_CPU_TIME,
                                 true,
                                 false,
@@ -248,13 +248,13 @@ public class ResultGeneralTypeItemProvider
      */
     protected void addValidPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ResultGeneralType_valid_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ResultGeneralType_valid_feature",
-                                "_UI_ResultGeneralType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ResultGeneralType_valid_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ResultGeneralType_valid_feature",
+                                        "_UI_ResultGeneralType_type"),
                                 LqnPackage.Literals.RESULT_GENERAL_TYPE__VALID,
                                 true,
                                 false,
@@ -359,9 +359,9 @@ public class ResultGeneralTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.RESULT_GENERAL_TYPE__MVA_INFO,
-                        LqnFactory.eINSTANCE.createMvaInfoType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.RESULT_GENERAL_TYPE__MVA_INFO,
+                                LqnFactory.eINSTANCE.createMvaInfoType()));
     }
 
     /**

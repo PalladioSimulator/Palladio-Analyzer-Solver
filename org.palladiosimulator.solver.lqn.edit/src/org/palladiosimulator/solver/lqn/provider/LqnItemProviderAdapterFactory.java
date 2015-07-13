@@ -31,7 +31,7 @@ import org.palladiosimulator.solver.lqn.util.LqnAdapterFactory;
  * @generated
  */
 public class LqnItemProviderAdapterFactory extends LqnAdapterFactory implements ComposeableAdapterFactory,
-        IChangeNotifier, IDisposable {
+IChangeNotifier, IDisposable {
     /**
      * This keeps track of the root adapter factory that delegates to this adapter factory. <!--
      * begin-user-doc --> <!-- end-user-doc -->

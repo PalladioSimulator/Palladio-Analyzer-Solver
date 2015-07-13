@@ -736,15 +736,15 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
 
         // Register package validator
         EValidator.Registry.INSTANCE.put
-        (theLqnPackage,
-                new EValidator.Descriptor()
-        {
-            @Override
-            public EValidator getEValidator()
-            {
-                return LqnValidator.INSTANCE;
-            }
-        });
+                (theLqnPackage,
+                        new EValidator.Descriptor()
+                        {
+                            @Override
+                            public EValidator getEValidator()
+                            {
+                                return LqnValidator.INSTANCE;
+                            }
+                        });
 
         // Mark meta-data to indicate it can't be changed
         theLqnPackage.freeze();
@@ -6937,3244 +6937,3244 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
         this.addAnnotation(this,
                 source,
                 new String[]
-                        {
-                "qualified", "false"
-                        });
+                {
+                        "qualified", "false"
+                });
         this.addAnnotation(this.activityDefBaseEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityDefBase",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ActivityDefBase",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getActivityDefBase_ServiceTimeDistribution(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "service-time-distribution",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "service-time-distribution",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefBase_ResultActivity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefBase_CallOrder(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "call-order",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "call-order",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefBase_HostDemandCvsq(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "host-demand-cvsq",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "host-demand-cvsq",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefBase_HostDemandMean(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "host-demand-mean",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "host-demand-mean",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefBase_MaxServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "max-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "max-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefBase_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefBase_ThinkTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "think-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "think-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityDefTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityDefType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ActivityDefType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getActivityDefType_CallList(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "call-list",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "call-list",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityDefType_Group(),
                 source,
                 new String[]
-                        {
-            "kind", "group",
-            "name", "group:9"
-                        });
+                {
+                        "kind", "group",
+                        "name", "group:9"
+                });
         this.addAnnotation(this.getActivityDefType_SynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "synch-call",
-            "namespace", "##targetNamespace",
-            "group", "group:9"
-                        });
+                {
+                        "kind", "element",
+                        "name", "synch-call",
+                        "namespace", "##targetNamespace",
+                        "group", "group:9"
+                });
         this.addAnnotation(this.getActivityDefType_AsynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "asynch-call",
-            "namespace", "##targetNamespace",
-            "group", "group:9"
-                        });
+                {
+                        "kind", "element",
+                        "name", "asynch-call",
+                        "namespace", "##targetNamespace",
+                        "group", "group:9"
+                });
         this.addAnnotation(this.getActivityDefType_BoundToEntry(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "bound-to-entry",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "bound-to-entry",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityGraphBaseEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityGraphBase",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ActivityGraphBase",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getActivityGraphBase_Activity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityGraphBase_Precedence(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "precedence",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "precedence",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityListTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityListType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ActivityListType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getActivityListType_Activity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityLoopListTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityLoopListType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ActivityLoopListType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getActivityLoopListType_Activity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityLoopListType_End(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "end",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "end",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityLoopTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityLoopType",
-                "kind", "empty"
-                        });
+                {
+                        "name", "ActivityLoopType",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getActivityLoopType_Count(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "count",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "count",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityMakingCallTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityMakingCallType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ActivityMakingCallType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getActivityMakingCallType_CallsMean(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "calls-mean",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "calls-mean",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityOrTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityOrType",
-                "kind", "empty"
-                        });
+                {
+                        "name", "ActivityOrType",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getActivityOrType_Prob(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "prob",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "prob",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityPhasesTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityPhasesType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ActivityPhasesType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getActivityPhasesType_CallList(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "call-list",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "call-list",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getActivityPhasesType_Group(),
                 source,
                 new String[]
-                        {
-            "kind", "group",
-            "name", "group:9"
-                        });
+                {
+                        "kind", "group",
+                        "name", "group:9"
+                });
         this.addAnnotation(this.getActivityPhasesType_SynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "synch-call",
-            "namespace", "##targetNamespace",
-            "group", "group:9"
-                        });
+                {
+                        "kind", "element",
+                        "name", "synch-call",
+                        "namespace", "##targetNamespace",
+                        "group", "group:9"
+                });
         this.addAnnotation(this.getActivityPhasesType_AsynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "asynch-call",
-            "namespace", "##targetNamespace",
-            "group", "group:9"
-                        });
+                {
+                        "kind", "element",
+                        "name", "asynch-call",
+                        "namespace", "##targetNamespace",
+                        "group", "group:9"
+                });
         this.addAnnotation(this.getActivityPhasesType_Phase(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.activityTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ActivityType",
-                "kind", "empty"
-                        });
+                {
+                        "name", "ActivityType",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getActivityType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.andJoinListTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "AndJoinListType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "AndJoinListType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getAndJoinListType_ResultJoinDelay(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-join-delay",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-join-delay",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getAndJoinListType_ServiceTimeDistribution(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "service-time-distribution",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "service-time-distribution",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getAndJoinListType_Activity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getAndJoinListType_Quorum(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "quorum",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "quorum",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.asynchCallTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "asynch-call_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "asynch-call_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getAsynchCallType_Dest(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "dest",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "dest",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.bindTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "BindType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "BindType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getBindType_Parameter(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "parameter",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "parameter",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getBindType_ProcessorBinding(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "processor-binding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "processor-binding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getBindType_PortBinding(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "port-binding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "port-binding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.callListTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "call-list_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "call-list_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getCallListType_SynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "synch-call",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "synch-call",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getCallListType_AsynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "asynch-call",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "asynch-call",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.callOrderTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "CallOrderType"
-                        });
+                {
+                        "name", "CallOrderType"
+                });
         this.addAnnotation(this.callOrderTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "CallOrderType:Object",
-                "baseType", "CallOrderType"
-                        });
+                {
+                        "name", "CallOrderType:Object",
+                        "baseType", "CallOrderType"
+                });
         this.addAnnotation(this.connectFromTypeEDataType,
                 source,
                 new String[]
-                        {
-                "name", "connect-from_._type",
-                "itemType", "http://www.eclipse.org/emf/2003/XMLType#string"
-                        });
+                {
+                        "name", "connect-from_._type",
+                        "itemType", "http://www.eclipse.org/emf/2003/XMLType#string"
+                });
         this.addAnnotation(this.connectToTypeEDataType,
                 source,
                 new String[]
-                        {
-                "name", "connect-to_._type",
-                "itemType", "http://www.eclipse.org/emf/2003/XMLType#string"
-                        });
+                {
+                        "name", "connect-to_._type",
+                        "itemType", "http://www.eclipse.org/emf/2003/XMLType#string"
+                });
         this.addAnnotation(this.documentRootEClass,
                 source,
                 new String[]
-                        {
-                "name", "",
-                "kind", "mixed"
-                        });
+                {
+                        "name", "",
+                        "kind", "mixed"
+                });
         this.addAnnotation(this.getDocumentRoot_Mixed(),
                 source,
                 new String[]
-                        {
-            "kind", "elementWildcard",
-            "name", ":mixed"
-                        });
+                {
+                        "kind", "elementWildcard",
+                        "name", ":mixed"
+                });
         this.addAnnotation(this.getDocumentRoot_XMLNSPrefixMap(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "xmlns:prefix"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "xmlns:prefix"
+                });
         this.addAnnotation(this.getDocumentRoot_XSISchemaLocation(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "xsi:schemaLocation"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "xsi:schemaLocation"
+                });
         this.addAnnotation(this.getDocumentRoot_LqnCore(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "lqn-core",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "lqn-core",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getDocumentRoot_LqnModel(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "lqn-model",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "lqn-model",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.entryActivityDefTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "EntryActivityDefType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "EntryActivityDefType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getEntryActivityDefType_CallList(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "call-list",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "call-list",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryActivityDefType_Group(),
                 source,
                 new String[]
-                        {
-            "kind", "group",
-            "name", "group:9"
-                        });
+                {
+                        "kind", "group",
+                        "name", "group:9"
+                });
         this.addAnnotation(this.getEntryActivityDefType_SynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "synch-call",
-            "namespace", "##targetNamespace",
-            "group", "group:9"
-                        });
+                {
+                        "kind", "element",
+                        "name", "synch-call",
+                        "namespace", "##targetNamespace",
+                        "group", "group:9"
+                });
         this.addAnnotation(this.getEntryActivityDefType_AsynchCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "asynch-call",
-            "namespace", "##targetNamespace",
-            "group", "group:9"
-                        });
+                {
+                        "kind", "element",
+                        "name", "asynch-call",
+                        "namespace", "##targetNamespace",
+                        "group", "group:9"
+                });
         this.addAnnotation(this.getEntryActivityDefType_FirstActivity(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "first-activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "first-activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.entryActivityGraphEClass,
                 source,
                 new String[]
-                        {
-                "name", "EntryActivityGraph",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "EntryActivityGraph",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getEntryActivityGraph_ReplyActivity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "reply-activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "reply-activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.entryMakingCallTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "EntryMakingCallType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "EntryMakingCallType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getEntryMakingCallType_Prob(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "prob",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "prob",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.entryTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "EntryType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "EntryType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getEntryType_ResultEntry(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-entry",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-entry",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_ServiceTimeDistribution(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "service-time-distribution",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "service-time-distribution",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_Forwarding(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "forwarding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "forwarding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_EntryActivityGraph(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "entry-activity-graph",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "entry-activity-graph",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_EntryPhaseActivities(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "entry-phase-activities",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "entry-phase-activities",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_OpenArrivalRate(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "open-arrival-rate",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "open-arrival-rate",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_Priority(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "priority",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "priority",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_Rwlock(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_Semaphore(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getEntryType_Type(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "type",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "type",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.extVariableEDataType,
                 source,
                 new String[]
-                        {
-                "name", "ExtVariable",
-                "baseType", "http://www.eclipse.org/emf/2003/XMLType#string",
-                "pattern", "$(_|[a-zA-Z])(([a-zA-Z]|[0-9]|_)+)?"
-                        });
+                {
+                        "name", "ExtVariable",
+                        "baseType", "http://www.eclipse.org/emf/2003/XMLType#string",
+                        "pattern", "$(_|[a-zA-Z])(([a-zA-Z]|[0-9]|_)+)?"
+                });
         this.addAnnotation(this.fanInTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "FanInType",
-                "kind", "empty"
-                        });
+                {
+                        "name", "FanInType",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getFanInType_Source(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "source",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "source",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getFanInType_Value(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.fanOutTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "FanOutType",
-                "kind", "empty"
-                        });
+                {
+                        "name", "FanOutType",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getFanOutType_Dest(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "dest",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "dest",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getFanOutType_Value(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.firstPlotTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "first-plot_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "first-plot_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getFirstPlotType_Variable(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "variable",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "variable",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.groupTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "GroupType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "GroupType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getGroupType_ResultGroup(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-group",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-group",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getGroupType_Task(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "task",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "task",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getGroupType_Cap(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "cap",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "cap",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getGroupType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getGroupType_Share(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "share",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "share",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.histogramBinTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "HistogramBinType",
-                "kind", "empty"
-                        });
+                {
+                        "name", "HistogramBinType",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getHistogramBinType_Begin(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "begin",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "begin",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getHistogramBinType_Conf95(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "conf-95",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "conf-95",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getHistogramBinType_Conf99(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "conf-99",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "conf-99",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getHistogramBinType_End(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "end",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "end",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getHistogramBinType_Prob(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "prob",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "prob",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.inPortTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "in-port_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "in-port_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getInPortType_ConnectFrom(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "connect-from",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "connect-from",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getInPortType_Description(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "description",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "description",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getInPortType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.interfaceTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "Interface_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "Interface_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getInterfaceType_InPort(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "in-port",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "in-port",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getInterfaceType_OutPort(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "out-port",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "out-port",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.lqnCoreTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "Lqn-CoreType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "Lqn-CoreType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getLqnCoreType_Processor(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "processor",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "processor",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnCoreType_Slot(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "slot",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "slot",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.lqnModelTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "LqnModelType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "LqnModelType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getLqnModelType_RunControl(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "run-control",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "run-control",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_PlotControl(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "plot-control",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "plot-control",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_SolverParams(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "solver-params",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "solver-params",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_Processor(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "processor",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "processor",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_Slot(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "slot",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "slot",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_Lqx(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "lqx",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "lqx",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_Description(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "description",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "description",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_LqnSchemaVersion(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "lqn-schema-version",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "lqn-schema-version",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_LqncoreSchemaVersion(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "lqncore-schema-version",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "lqncore-schema-version",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getLqnModelType_XmlDebug(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "xml-debug",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "xml-debug",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.makingCallTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "MakingCallType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "MakingCallType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getMakingCallType_ResultCall(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-call",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-call",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getMakingCallType_Dest(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "dest",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "dest",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.mvaInfoTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "mva-info_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "mva-info_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getMvaInfoType_Core(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "core",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "core",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getMvaInfoType_Faults(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "faults",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "faults",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getMvaInfoType_Step(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "step",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "step",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getMvaInfoType_StepSquared(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "step-squared",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "step-squared",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getMvaInfoType_Submodels(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "submodels",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "submodels",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getMvaInfoType_Wait(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "wait",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "wait",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getMvaInfoType_WaitSquared(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "wait-squared",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "wait-squared",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.orListTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "OrListType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "OrListType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getOrListType_Activity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.outPortTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "out-port_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "out-port_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getOutPortType_ConnectTo(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "connect-to",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "connect-to",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutPortType_Description(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "description",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "description",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutPortType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.outputDistributionTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "OutputDistributionType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "OutputDistributionType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getOutputDistributionType_UnderflowBin(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "underflow-bin",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "underflow-bin",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_HistogramBin(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "histogram-bin",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "histogram-bin",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_OverflowBin(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "overflow-bin",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "overflow-bin",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_BinSize(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "bin-size",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "bin-size",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_Kurtosis(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "kurtosis",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "kurtosis",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_Max(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "max",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "max",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_Mean(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "mean",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "mean",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_MidPoint(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "mid-point",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "mid-point",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_Min(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "min",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "min",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_NumberBins(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "number-bins",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "number-bins",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_Skew(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "skew",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "skew",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputDistributionType_StdDev(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "std-dev",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "std-dev",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.outputEntryDistributionTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "OutputEntryDistributionType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "OutputEntryDistributionType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getOutputEntryDistributionType_Phase(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.outputResultJoinDelayTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "OutputResultJoinDelayType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "OutputResultJoinDelayType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getOutputResultJoinDelayType_ResultConf95(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-conf-95",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-conf-95",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultJoinDelayType_ResultConf99(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-conf-99",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-conf-99",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultJoinDelayType_JoinVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "join-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "join-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultJoinDelayType_JoinWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "join-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "join-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.outputResultTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "OutputResultType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "OutputResultType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getOutputResultType_ResultConf95(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-conf-95",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-conf-95",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_ResultConf99(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-conf-99",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-conf-99",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_LossProbability(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "loss-probability",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "loss-probability",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_OpenWaitTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "open-wait-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "open-wait-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase1ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase1ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase1ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase1Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase1Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase1WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase2ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase2ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase2ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase2Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase2Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase2WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase3ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase3ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase3ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase3Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase3Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Phase3WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_ProbExceedMaxServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "prob-exceed-max-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "prob-exceed-max-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_ProcUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "proc-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "proc-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockReaderHolding(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-holding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-holding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockReaderUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockReaderWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockReaderWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockWriterHolding(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-holding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-holding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockWriterUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockWriterWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_RwlockWriterWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_SemaphoreUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_SemaphoreWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_SemaphoreWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_SquaredCoeffVariation(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "squared-coeff-variation",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "squared-coeff-variation",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Throughput(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "throughput",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "throughput",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_ThroughputBound(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "throughput-bound",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "throughput-bound",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getOutputResultType_WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.parameterTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "parameter_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "parameter_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getParameterType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getParameterType_Value(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.paraTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "para_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "para_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getParaType_StartValue(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "start-value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "start-value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getParaType_EndValue(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "end-value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "end-value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getParaType_StepValue(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "step-value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "step-value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getParaType_Value(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.phaseActivitiesEClass,
                 source,
                 new String[]
-                        {
-                "name", "PhaseActivities",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "PhaseActivities",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getPhaseActivities_Activity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.phaseTypeEDataType,
                 source,
                 new String[]
-                        {
-                "name", "phase_._type",
-                "baseType", "http://www.eclipse.org/emf/2003/XMLType#positiveInteger",
-                "minInclusive", "1",
-                "maxInclusive", "3"
-                        });
+                {
+                        "name", "phase_._type",
+                        "baseType", "http://www.eclipse.org/emf/2003/XMLType#positiveInteger",
+                        "minInclusive", "1",
+                        "maxInclusive", "3"
+                });
         this.addAnnotation(this.plotControlTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "plot-control_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "plot-control_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getPlotControlType_FirstPlot(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "first-plot",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "first-plot",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPlotControlType_Plot(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "plot",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "plot",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.plotTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "plot_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "plot_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getPlotType_Variable(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "variable",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "variable",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.portBindingTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "port-binding_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "port-binding_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getPortBindingType_Source(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "source",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "source",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPortBindingType_Target(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "target",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "target",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.pragmaTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "pragma_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "pragma_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getPragmaType_Param(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "param",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "param",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPragmaType_Value(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "value",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "value",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.precedenceTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "PrecedenceType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "PrecedenceType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getPrecedenceType_Pre(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "pre",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "pre",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPrecedenceType_PreOR(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "pre-OR",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "pre-OR",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPrecedenceType_PreAND(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "pre-AND",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "pre-AND",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPrecedenceType_Post(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "post",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "post",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPrecedenceType_PostOR(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "post-OR",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "post-OR",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPrecedenceType_PostAND(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "post-AND",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "post-AND",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getPrecedenceType_PostLOOP(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "post-LOOP",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "post-LOOP",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.processorBindingTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "processor-binding_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "processor-binding_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getProcessorBindingType_Source(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "source",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "source",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorBindingType_Target(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "target",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "target",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.processorTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ProcessorType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "ProcessorType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getProcessorType_ResultProcessor(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-processor",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-processor",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_Group(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "group",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "group",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_Task(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "task",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "task",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_Multiplicity(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "multiplicity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "multiplicity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_Quantum(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "quantum",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "quantum",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_Replication(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "replication",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "replication",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_Scheduling(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "scheduling",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "scheduling",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getProcessorType_SpeedFactor(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "speed-factor",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "speed-factor",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.replyActivityTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "reply-activity_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "reply-activity_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getReplyActivityType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.replyEntryTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "reply-entry_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "reply-entry_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getReplyEntryType_ReplyActivity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "reply-activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "reply-activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getReplyEntryType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.resultConf95TypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "result-conf-95_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "result-conf-95_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getResultConf95Type_JoinVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "join-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "join-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type_JoinWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "join-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "join-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.resultConf95Type1EClass,
                 source,
                 new String[]
-                        {
-                "name", "result-conf-95_._1_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "result-conf-95_._1_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getResultConf95Type1_LossProbability(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "loss-probability",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "loss-probability",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_OpenWaitTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "open-wait-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "open-wait-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase1ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase1ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase1ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase1Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase1Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase1WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase2ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase2ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase2ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase2Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase2Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase2WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase3ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase3ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase3ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase3Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase3Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Phase3WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_ProbExceedMaxServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "prob-exceed-max-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "prob-exceed-max-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_ProcUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "proc-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "proc-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockReaderHolding(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-holding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-holding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockReaderUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockReaderWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockReaderWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockWriterHolding(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-holding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-holding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockWriterUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockWriterWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_RwlockWriterWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_SemaphoreUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_SemaphoreWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_SemaphoreWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_SquaredCoeffVariation(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "squared-coeff-variation",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "squared-coeff-variation",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Throughput(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "throughput",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "throughput",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_ThroughputBound(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "throughput-bound",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "throughput-bound",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf95Type1_WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.resultConf99TypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "result-conf-99_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "result-conf-99_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getResultConf99Type_JoinVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "join-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "join-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type_JoinWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "join-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "join-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.resultConf99Type1EClass,
                 source,
                 new String[]
-                        {
-                "name", "result-conf-99_._1_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "result-conf-99_._1_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getResultConf99Type1_LossProbability(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "loss-probability",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "loss-probability",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_OpenWaitTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "open-wait-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "open-wait-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase1ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase1ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase1ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase1Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase1Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase1WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase1-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase1-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase2ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase2ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase2ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase2Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase2Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase2WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase2-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase2-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase3ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase3ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase3ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase3Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase3Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Phase3WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "phase3-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "phase3-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_ProbExceedMaxServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "prob-exceed-max-service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "prob-exceed-max-service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_ProcUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "proc-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "proc-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_ProcWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "proc-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "proc-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockReaderHolding(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-holding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-holding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockReaderUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockReaderWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockReaderWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-reader-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-reader-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockWriterHolding(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-holding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-holding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockWriterUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockWriterWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_RwlockWriterWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "rwlock-writer-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "rwlock-writer-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_SemaphoreUtilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_SemaphoreWaiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_SemaphoreWaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "semaphore-waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "semaphore-waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_ServiceTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "service-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "service-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_ServiceTimeVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "service-time-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "service-time-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_SquaredCoeffVariation(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "squared-coeff-variation",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "squared-coeff-variation",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Throughput(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "throughput",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "throughput",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_ThroughputBound(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "throughput-bound",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "throughput-bound",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Utilization(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "utilization",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "utilization",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_Waiting(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "waiting",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "waiting",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultConf99Type1_WaitingVariance(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "waiting-variance",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "waiting-variance",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.resultGeneralTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "result-general_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "result-general_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getResultGeneralType_MvaInfo(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "mva-info",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "mva-info",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_ConvVal(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "conv-val",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "conv-val",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_ElapsedTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "elapsed-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "elapsed-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_Iterations(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "iterations",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "iterations",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_PlatformInfo(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "platform-info",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "platform-info",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_SolverInfo(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "solver-info",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "solver-info",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_SystemCpuTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "system-cpu-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "system-cpu-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_UserCpuTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "user-cpu-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "user-cpu-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getResultGeneralType_Valid(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "valid",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "valid",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.runControlTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "run-control_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "run-control_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getRunControlType_Para(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "para",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "para",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.rwLockTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "RWLockType"
-                        });
+                {
+                        "name", "RWLockType"
+                });
         this.addAnnotation(this.rwLockTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "RWLockType:Object",
-                "baseType", "RWLockType"
-                        });
+                {
+                        "name", "RWLockType:Object",
+                        "baseType", "RWLockType"
+                });
         this.addAnnotation(this.schedulingTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "SchedulingType"
-                        });
+                {
+                        "name", "SchedulingType"
+                });
         this.addAnnotation(this.schedulingTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "SchedulingType:Object",
-                "baseType", "SchedulingType"
-                        });
+                {
+                        "name", "SchedulingType:Object",
+                        "baseType", "SchedulingType"
+                });
         this.addAnnotation(this.semaphoreTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "SemaphoreType"
-                        });
+                {
+                        "name", "SemaphoreType"
+                });
         this.addAnnotation(this.semaphoreTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "SemaphoreType:Object",
-                "baseType", "SemaphoreType"
-                        });
+                {
+                        "name", "SemaphoreType:Object",
+                        "baseType", "SemaphoreType"
+                });
         this.addAnnotation(this.serviceTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "ServiceType",
-                "kind", "empty"
-                        });
+                {
+                        "name", "ServiceType",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getServiceType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.singleActivityListTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "SingleActivityListType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "SingleActivityListType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getSingleActivityListType_Activity(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "activity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "activity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.slotTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "SlotType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "SlotType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getSlotType_Interface(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "Interface",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "Interface",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSlotType_Binding(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "binding",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "binding",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSlotType_BindTarget(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "bind-target",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "bind-target",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSlotType_Id(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "id",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "id",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSlotType_ReplicNum(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "replic_num",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "replic_num",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.solverParamsTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "solver-params_._type",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "solver-params_._type",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getSolverParamsType_ResultGeneral(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-general",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-general",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSolverParamsType_Pragma(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "pragma",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "pragma",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSolverParamsType_Comment(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "comment",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "comment",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSolverParamsType_ConvVal(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "conv_val",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "conv_val",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSolverParamsType_ItLimit(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "it_limit",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "it_limit",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSolverParamsType_PrintInt(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "print_int",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "print_int",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getSolverParamsType_UnderrelaxCoeff(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "underrelax_coeff",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "underrelax_coeff",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(
                 this.srvnFloatEDataType,
                 source,
                 new String[]
-                        {
+                {
                         "name",
                         "SrvnFloat",
                         "memberTypes",
                         "http://www.eclipse.org/emf/2003/XMLType#double http://www.eclipse.org/emf/2003/XMLType#decimal ExtVariable"
-                        });
+                });
         this.addAnnotation(this.srvnNonNegativeIntegerEDataType,
                 source,
                 new String[]
-                        {
-                "name", "SrvnNonNegativeInteger",
-                "memberTypes", "http://www.eclipse.org/emf/2003/XMLType#nonNegativeInteger ExtVariable"
-                        });
+                {
+                        "name", "SrvnNonNegativeInteger",
+                        "memberTypes", "http://www.eclipse.org/emf/2003/XMLType#nonNegativeInteger ExtVariable"
+                });
         this.addAnnotation(this.synchCallTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "synch-call_._type",
-                "kind", "empty"
-                        });
+                {
+                        "name", "synch-call_._type",
+                        "kind", "empty"
+                });
         this.addAnnotation(this.getSynchCallType_Dest(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "dest",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "dest",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.taskActivityGraphEClass,
                 source,
                 new String[]
-                        {
-                "name", "TaskActivityGraph",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "TaskActivityGraph",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getTaskActivityGraph_ReplyEntry(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "reply-entry",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "reply-entry",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.taskOptionTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "TaskOptionType"
-                        });
+                {
+                        "name", "TaskOptionType"
+                });
         this.addAnnotation(this.taskOptionTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "TaskOptionType:Object",
-                "baseType", "TaskOptionType"
-                        });
+                {
+                        "name", "TaskOptionType:Object",
+                        "baseType", "TaskOptionType"
+                });
         this.addAnnotation(this.taskSchedulingTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "TaskSchedulingType"
-                        });
+                {
+                        "name", "TaskSchedulingType"
+                });
         this.addAnnotation(this.taskSchedulingTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "TaskSchedulingType:Object",
-                "baseType", "TaskSchedulingType"
-                        });
+                {
+                        "name", "TaskSchedulingType:Object",
+                        "baseType", "TaskSchedulingType"
+                });
         this.addAnnotation(this.taskTypeEClass,
                 source,
                 new String[]
-                        {
-                "name", "TaskType",
-                "kind", "elementOnly"
-                        });
+                {
+                        "name", "TaskType",
+                        "kind", "elementOnly"
+                });
         this.addAnnotation(this.getTaskType_ResultTask(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "result-task",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "result-task",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_ServiceTimeDistribution(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "service-time-distribution",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "service-time-distribution",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_FanOut(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "fan-out",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "fan-out",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_FanIn(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "fan-in",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "fan-in",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Entry(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "entry",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "entry",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Service(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "service",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "service",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_TaskActivities(),
                 source,
                 new String[]
-                        {
-            "kind", "element",
-            "name", "task-activities",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "element",
+                        "name", "task-activities",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_ActivityGraph(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "activity-graph",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "activity-graph",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Initially(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "initially",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "initially",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Multiplicity(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "multiplicity",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "multiplicity",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Name(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "name",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "name",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Priority(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "priority",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "priority",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_QueueLength(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "queue-length",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "queue-length",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Replication(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "replication",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "replication",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_Scheduling(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "scheduling",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "scheduling",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.getTaskType_ThinkTime(),
                 source,
                 new String[]
-                        {
-            "kind", "attribute",
-            "name", "think-time",
-            "namespace", "##targetNamespace"
-                        });
+                {
+                        "kind", "attribute",
+                        "name", "think-time",
+                        "namespace", "##targetNamespace"
+                });
         this.addAnnotation(this.typeTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "type_._type"
-                        });
+                {
+                        "name", "type_._type"
+                });
         this.addAnnotation(this.typeTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "type_._type:Object",
-                "baseType", "type_._type"
-                        });
+                {
+                        "name", "type_._type:Object",
+                        "baseType", "type_._type"
+                });
         this.addAnnotation(this.validTypeEEnum,
                 source,
                 new String[]
-                        {
-                "name", "valid_._type"
-                        });
+                {
+                        "name", "valid_._type"
+                });
         this.addAnnotation(this.validTypeObjectEDataType,
                 source,
                 new String[]
-                        {
-                "name", "valid_._type:Object",
-                "baseType", "valid_._type"
-                        });
+                {
+                        "name", "valid_._type:Object",
+                        "baseType", "valid_._type"
+                });
     }
 
 } // LqnPackageImpl

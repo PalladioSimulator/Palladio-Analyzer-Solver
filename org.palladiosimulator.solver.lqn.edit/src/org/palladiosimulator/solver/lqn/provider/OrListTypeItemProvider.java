@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.OrListType;
  * @generated
  */
 public class OrListTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -145,9 +145,9 @@ public class OrListTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY,
-                        LqnFactory.eINSTANCE.createActivityOrType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY,
+                                LqnFactory.eINSTANCE.createActivityOrType()));
     }
 
     /**

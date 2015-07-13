@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class FirstPlotTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -70,13 +70,13 @@ public class FirstPlotTypeItemProvider
      */
     protected void addVariablePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_FirstPlotType_variable_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_FirstPlotType_variable_feature",
-                                "_UI_FirstPlotType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_FirstPlotType_variable_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_FirstPlotType_variable_feature",
+                                        "_UI_FirstPlotType_type"),
                                 LqnPackage.Literals.FIRST_PLOT_TYPE__VARIABLE,
                                 true,
                                 false,
@@ -107,7 +107,7 @@ public class FirstPlotTypeItemProvider
         final String label = ((FirstPlotType) object).getVariable();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_FirstPlotType_type") :
-                this.getString("_UI_FirstPlotType_type") + " " + label;
+                    this.getString("_UI_FirstPlotType_type") + " " + label;
     }
 
     /**

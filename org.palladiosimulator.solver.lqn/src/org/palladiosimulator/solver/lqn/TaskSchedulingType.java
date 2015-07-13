@@ -266,18 +266,18 @@ public enum TaskSchedulingType implements Enumerator {
      */
     private static final TaskSchedulingType[] VALUES_ARRAY =
             new TaskSchedulingType[]
-                    {
-        REF,
-        FCFS,
-        PRI,
-        HOL,
-        BURST,
-        UNIFORM,
-        POLL,
-        INF,
-        SEMAPHORE,
-        RWLOCK,
-                    };
+            {
+                    REF,
+                    FCFS,
+                    PRI,
+                    HOL,
+                    BURST,
+                    UNIFORM,
+                    POLL,
+                    INF,
+                    SEMAPHORE,
+                    RWLOCK,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Task Scheduling Type</b></em>' enumerators. <!--

@@ -74,10 +74,10 @@ public enum TaskOptionType implements Enumerator {
      */
     private static final TaskOptionType[] VALUES_ARRAY =
             new TaskOptionType[]
-                    {
-        YES,
-        NO,
-                    };
+            {
+                    YES,
+                    NO,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Task Option Type</b></em>' enumerators. <!--

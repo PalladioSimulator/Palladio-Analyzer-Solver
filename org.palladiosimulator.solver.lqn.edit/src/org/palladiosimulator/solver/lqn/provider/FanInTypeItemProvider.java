@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class FanInTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -71,12 +71,12 @@ public class FanInTypeItemProvider
      */
     protected void addSourcePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_FanInType_source_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_FanInType_source_feature",
-                                "_UI_FanInType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_FanInType_source_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_FanInType_source_feature",
+                                        "_UI_FanInType_type"),
                                 LqnPackage.Literals.FAN_IN_TYPE__SOURCE,
                                 true,
                                 false,
@@ -94,12 +94,12 @@ public class FanInTypeItemProvider
      */
     protected void addValuePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_FanInType_value_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_FanInType_value_feature",
-                                "_UI_FanInType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_FanInType_value_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_FanInType_value_feature",
+                                        "_UI_FanInType_type"),
                                 LqnPackage.Literals.FAN_IN_TYPE__VALUE,
                                 true,
                                 false,
@@ -130,7 +130,7 @@ public class FanInTypeItemProvider
         final String label = ((FanInType) object).getSource();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_FanInType_type") :
-                this.getString("_UI_FanInType_type") + " " + label;
+                    this.getString("_UI_FanInType_type") + " " + label;
     }
 
     /**

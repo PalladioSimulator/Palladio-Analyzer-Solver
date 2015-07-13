@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.PortBindingType;
  * @generated
  */
 public class PortBindingTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -71,13 +71,13 @@ public class PortBindingTypeItemProvider
      */
     protected void addSourcePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_PortBindingType_source_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_PortBindingType_source_feature",
-                                "_UI_PortBindingType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_PortBindingType_source_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_PortBindingType_source_feature",
+                                        "_UI_PortBindingType_type"),
                                 LqnPackage.Literals.PORT_BINDING_TYPE__SOURCE,
                                 true,
                                 false,
@@ -95,13 +95,13 @@ public class PortBindingTypeItemProvider
      */
     protected void addTargetPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_PortBindingType_target_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_PortBindingType_target_feature",
-                                "_UI_PortBindingType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_PortBindingType_target_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_PortBindingType_target_feature",
+                                        "_UI_PortBindingType_type"),
                                 LqnPackage.Literals.PORT_BINDING_TYPE__TARGET,
                                 true,
                                 false,
@@ -132,7 +132,7 @@ public class PortBindingTypeItemProvider
         final String label = ((PortBindingType) object).getSource();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_PortBindingType_type") :
-                this.getString("_UI_PortBindingType_type") + " " + label;
+                    this.getString("_UI_PortBindingType_type") + " " + label;
     }
 
     /**

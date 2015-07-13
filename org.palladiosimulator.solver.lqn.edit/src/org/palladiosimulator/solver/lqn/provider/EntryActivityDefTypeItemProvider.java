@@ -61,13 +61,13 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
      */
     protected void addFirstActivityPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_EntryActivityDefType_firstActivity_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_EntryActivityDefType_firstActivity_feature",
-                                "_UI_EntryActivityDefType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_EntryActivityDefType_firstActivity_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_EntryActivityDefType_firstActivity_feature",
+                                        "_UI_EntryActivityDefType_type"),
                                 LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY,
                                 true,
                                 false,
@@ -131,7 +131,7 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
         final String label = ((EntryActivityDefType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_EntryActivityDefType_type") :
-                this.getString("_UI_EntryActivityDefType_type") + " " + label;
+                    this.getString("_UI_EntryActivityDefType_type") + " " + label;
     }
 
     /**
@@ -169,23 +169,23 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST,
-                        LqnFactory.eINSTANCE.createCallListType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST,
+                                LqnFactory.eINSTANCE.createCallListType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
-                        FeatureMapUtil.createEntry
-                        (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL,
-                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
+                                FeatureMapUtil.createEntry
+                                        (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL,
+                                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
-                        FeatureMapUtil.createEntry
-                        (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL,
-                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
+                                FeatureMapUtil.createEntry
+                                        (LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL,
+                                                LqnFactory.eINSTANCE.createActivityMakingCallType())));
     }
 
     /**
@@ -210,7 +210,7 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 
         final boolean qualify =
                 childFeature == LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL ||
-                        childFeature == LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL;
+                childFeature == LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL;
 
         if (qualify)
         {

@@ -100,11 +100,11 @@ public enum CallOrderType implements Enumerator {
      */
     private static final CallOrderType[] VALUES_ARRAY =
             new CallOrderType[]
-                    {
-        STOCHASTIC,
-        DETERMINISTIC,
-        LIST,
-                    };
+            {
+                    STOCHASTIC,
+                    DETERMINISTIC,
+                    LIST,
+            };
 
     /**
      * A public read-only list of all the '<em><b>Call Order Type</b></em>' enumerators. <!--

@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.OutputResultType;
  * @generated
  */
 public class OutputResultTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -113,13 +113,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addLossProbabilityPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_lossProbability_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_lossProbability_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_lossProbability_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_lossProbability_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__LOSS_PROBABILITY,
                                 true,
                                 false,
@@ -137,13 +137,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addOpenWaitTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_openWaitTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_openWaitTime_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_openWaitTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_openWaitTime_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME,
                                 true,
                                 false,
@@ -161,12 +161,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase1ProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase1ProcWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase1ProcWaiting_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase1ProcWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase1ProcWaiting_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING,
                                 true,
                                 false,
@@ -184,12 +184,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase1ServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase1ServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase1ServiceTime_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase1ServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase1ServiceTime_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME,
                                 true,
                                 false,
@@ -207,13 +207,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase1ServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase1ServiceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase1ServiceTimeVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase1ServiceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase1ServiceTimeVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -231,12 +231,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase1UtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase1Utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase1Utilization_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase1Utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase1Utilization_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION,
                                 true,
                                 false,
@@ -254,13 +254,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase1WaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase1Waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase1Waiting_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase1Waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase1Waiting_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_WAITING,
                                 true,
                                 false,
@@ -278,13 +278,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase1WaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase1WaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase1WaitingVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase1WaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase1WaitingVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE1_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -302,12 +302,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase2ProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase2ProcWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase2ProcWaiting_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase2ProcWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase2ProcWaiting_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING,
                                 true,
                                 false,
@@ -325,12 +325,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase2ServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase2ServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase2ServiceTime_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase2ServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase2ServiceTime_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME,
                                 true,
                                 false,
@@ -348,13 +348,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase2ServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase2ServiceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase2ServiceTimeVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase2ServiceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase2ServiceTimeVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -372,12 +372,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase2UtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase2Utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase2Utilization_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase2Utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase2Utilization_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION,
                                 true,
                                 false,
@@ -395,13 +395,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase2WaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase2Waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase2Waiting_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase2Waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase2Waiting_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_WAITING,
                                 true,
                                 false,
@@ -419,13 +419,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase2WaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase2WaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase2WaitingVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase2WaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase2WaitingVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE2_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -443,12 +443,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase3ProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase3ProcWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase3ProcWaiting_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase3ProcWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase3ProcWaiting_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING,
                                 true,
                                 false,
@@ -466,12 +466,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase3ServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase3ServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase3ServiceTime_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase3ServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase3ServiceTime_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME,
                                 true,
                                 false,
@@ -489,13 +489,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase3ServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase3ServiceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase3ServiceTimeVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase3ServiceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase3ServiceTimeVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -513,12 +513,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase3UtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase3Utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase3Utilization_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase3Utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase3Utilization_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION,
                                 true,
                                 false,
@@ -536,13 +536,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase3WaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase3Waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase3Waiting_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase3Waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase3Waiting_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_WAITING,
                                 true,
                                 false,
@@ -560,13 +560,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addPhase3WaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_phase3WaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_phase3WaitingVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_phase3WaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_phase3WaitingVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PHASE3_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -584,13 +584,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addProbExceedMaxServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_probExceedMaxServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_probExceedMaxServiceTime_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_probExceedMaxServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_probExceedMaxServiceTime_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROB_EXCEED_MAX_SERVICE_TIME,
                                 true,
                                 false,
@@ -608,13 +608,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addProcUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_procUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_procUtilization_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_procUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_procUtilization_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROC_UTILIZATION,
                                 true,
                                 false,
@@ -632,13 +632,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addProcWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_procWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_procWaiting_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_procWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_procWaiting_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__PROC_WAITING,
                                 true,
                                 false,
@@ -656,13 +656,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockReaderHoldingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockReaderHolding_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockReaderHolding_feature", "_UI_OutputResultType_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockReaderHolding_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockReaderHolding_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_READER_HOLDING,
                                 true,
                                 false,
@@ -680,13 +680,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockReaderUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockReaderUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockReaderUtilization_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockReaderUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockReaderUtilization_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_READER_UTILIZATION,
                                 true,
                                 false,
@@ -704,13 +704,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockReaderWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockReaderWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockReaderWaiting_feature", "_UI_OutputResultType_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockReaderWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockReaderWaiting_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING,
                                 true,
                                 false,
@@ -728,14 +728,14 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockReaderWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockReaderWaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockReaderWaitingVariance_feature",
-                                "_UI_OutputResultType_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockReaderWaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockReaderWaitingVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -753,13 +753,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockWriterHoldingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockWriterHolding_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockWriterHolding_feature", "_UI_OutputResultType_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockWriterHolding_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockWriterHolding_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_HOLDING,
                                 true,
                                 false,
@@ -777,13 +777,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockWriterUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockWriterUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockWriterUtilization_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockWriterUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockWriterUtilization_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_UTILIZATION,
                                 true,
                                 false,
@@ -801,13 +801,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockWriterWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockWriterWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockWriterWaiting_feature", "_UI_OutputResultType_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockWriterWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockWriterWaiting_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING,
                                 true,
                                 false,
@@ -825,14 +825,14 @@ public class OutputResultTypeItemProvider
      */
     protected void addRwlockWriterWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_rwlockWriterWaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_rwlockWriterWaitingVariance_feature",
-                                "_UI_OutputResultType_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_rwlockWriterWaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_rwlockWriterWaitingVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -850,13 +850,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addSemaphoreUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_semaphoreUtilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_semaphoreUtilization_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_semaphoreUtilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_semaphoreUtilization_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__SEMAPHORE_UTILIZATION,
                                 true,
                                 false,
@@ -874,12 +874,12 @@ public class OutputResultTypeItemProvider
      */
     protected void addSemaphoreWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_semaphoreWaiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_semaphoreWaiting_feature", "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_semaphoreWaiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_semaphoreWaiting_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING,
                                 true,
                                 false,
@@ -897,13 +897,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addSemaphoreWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_semaphoreWaitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_semaphoreWaitingVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_semaphoreWaitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_semaphoreWaitingVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING_VARIANCE,
                                 true,
                                 false,
@@ -921,13 +921,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_serviceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_serviceTime_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_serviceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_serviceTime_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__SERVICE_TIME,
                                 true,
                                 false,
@@ -945,13 +945,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addServiceTimeVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-        .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_serviceTimeVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_serviceTimeVariance_feature", "_UI_OutputResultType_type"),
+                .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_serviceTimeVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_serviceTimeVariance_feature", "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE,
                                 true,
                                 false,
@@ -969,13 +969,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addSquaredCoeffVariationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_squaredCoeffVariation_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_squaredCoeffVariation_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_squaredCoeffVariation_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_squaredCoeffVariation_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION,
                                 true,
                                 false,
@@ -993,13 +993,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addThroughputPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_throughput_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_throughput_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_throughput_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_throughput_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__THROUGHPUT,
                                 true,
                                 false,
@@ -1017,13 +1017,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addThroughputBoundPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_throughputBound_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_throughputBound_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_throughputBound_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_throughputBound_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND,
                                 true,
                                 false,
@@ -1041,13 +1041,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addUtilizationPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_utilization_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_utilization_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_utilization_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_utilization_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__UTILIZATION,
                                 true,
                                 false,
@@ -1065,13 +1065,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addWaitingPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_waiting_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_waiting_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_waiting_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_waiting_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__WAITING,
                                 true,
                                 false,
@@ -1089,13 +1089,13 @@ public class OutputResultTypeItemProvider
      */
     protected void addWaitingVariancePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputResultType_waitingVariance_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputResultType_waitingVariance_feature",
-                                "_UI_OutputResultType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputResultType_waitingVariance_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputResultType_waitingVariance_feature",
+                                        "_UI_OutputResultType_type"),
                                 LqnPackage.Literals.OUTPUT_RESULT_TYPE__WAITING_VARIANCE,
                                 true,
                                 false,
@@ -1236,14 +1236,14 @@ public class OutputResultTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF95,
-                        LqnFactory.eINSTANCE.createResultConf95Type1()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF95,
+                                LqnFactory.eINSTANCE.createResultConf95Type1()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF99,
-                        LqnFactory.eINSTANCE.createResultConf99Type1()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.OUTPUT_RESULT_TYPE__RESULT_CONF99,
+                                LqnFactory.eINSTANCE.createResultConf99Type1()));
     }
 
     /**

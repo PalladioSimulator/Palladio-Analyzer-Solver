@@ -891,7 +891,7 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
             return NAME_EDEFAULT == null ? this.name != null : !NAME_EDEFAULT.equals(this.name);
         case LqnPackage.ENTRY_TYPE__OPEN_ARRIVAL_RATE:
             return OPEN_ARRIVAL_RATE_EDEFAULT == null ? this.openArrivalRate != null : !OPEN_ARRIVAL_RATE_EDEFAULT
-            .equals(this.openArrivalRate);
+                    .equals(this.openArrivalRate);
         case LqnPackage.ENTRY_TYPE__PRIORITY:
             return this.isSetPriority();
         case LqnPackage.ENTRY_TYPE__RWLOCK:

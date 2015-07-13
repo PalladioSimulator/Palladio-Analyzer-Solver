@@ -894,7 +894,7 @@ public class LqnModelTypeImpl extends MinimalEObjectImpl.Container implements Lq
             return LQX_EDEFAULT == null ? this.lqx != null : !LQX_EDEFAULT.equals(this.lqx);
         case LqnPackage.LQN_MODEL_TYPE__DESCRIPTION:
             return DESCRIPTION_EDEFAULT == null ? this.description != null : !DESCRIPTION_EDEFAULT
-                    .equals(this.description);
+            .equals(this.description);
         case LqnPackage.LQN_MODEL_TYPE__LQN_SCHEMA_VERSION:
             return this.isSetLqnSchemaVersion();
         case LqnPackage.LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION:

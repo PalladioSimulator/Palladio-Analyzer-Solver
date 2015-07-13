@@ -300,7 +300,7 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
             return !this.getAsynchCall().isEmpty();
         case LqnPackage.ACTIVITY_DEF_TYPE__BOUND_TO_ENTRY:
             return BOUND_TO_ENTRY_EDEFAULT == null ? this.boundToEntry != null : !BOUND_TO_ENTRY_EDEFAULT
-            .equals(this.boundToEntry);
+                    .equals(this.boundToEntry);
         }
         return super.eIsSet(featureID);
     }

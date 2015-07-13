@@ -437,7 +437,7 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
             return this.binding != null && !this.binding.isEmpty();
         case LqnPackage.SLOT_TYPE__BIND_TARGET:
             return BIND_TARGET_EDEFAULT == null ? this.bindTarget != null : !BIND_TARGET_EDEFAULT
-                    .equals(this.bindTarget);
+            .equals(this.bindTarget);
         case LqnPackage.SLOT_TYPE__ID:
             return ID_EDEFAULT == null ? this.id != null : !ID_EDEFAULT.equals(this.id);
         case LqnPackage.SLOT_TYPE__REPLIC_NUM:

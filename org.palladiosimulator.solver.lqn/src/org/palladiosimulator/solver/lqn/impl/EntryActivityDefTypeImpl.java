@@ -302,7 +302,7 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
             return !this.getAsynchCall().isEmpty();
         case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
             return FIRST_ACTIVITY_EDEFAULT == null ? this.firstActivity != null : !FIRST_ACTIVITY_EDEFAULT
-            .equals(this.firstActivity);
+                    .equals(this.firstActivity);
         }
         return super.eIsSet(featureID);
     }

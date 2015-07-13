@@ -57,14 +57,14 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
      */
     protected void addPhasePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors
-                .add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_OutputEntryDistributionType_phase_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_OutputEntryDistributionType_phase_feature",
-                                "_UI_OutputEntryDistributionType_type"),
+        .add
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_OutputEntryDistributionType_phase_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_OutputEntryDistributionType_phase_feature",
+                                        "_UI_OutputEntryDistributionType_type"),
                                 LqnPackage.Literals.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
                                 true,
                                 false,
@@ -141,8 +141,8 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 
         final boolean qualify =
                 childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN ||
-                        childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN ||
-                        childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
+                childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN ||
+                childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
 
         if (qualify)
         {

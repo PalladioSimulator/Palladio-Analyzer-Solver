@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class ActivityDefBaseItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -77,13 +77,13 @@ public class ActivityDefBaseItemProvider
      */
     protected void addCallOrderPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityDefBase_callOrder_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityDefBase_callOrder_feature",
-                                "_UI_ActivityDefBase_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityDefBase_callOrder_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityDefBase_callOrder_feature",
+                                        "_UI_ActivityDefBase_type"),
                                 LqnPackage.Literals.ACTIVITY_DEF_BASE__CALL_ORDER,
                                 true,
                                 false,
@@ -101,13 +101,13 @@ public class ActivityDefBaseItemProvider
      */
     protected void addHostDemandCvsqPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityDefBase_hostDemandCvsq_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityDefBase_hostDemandCvsq_feature",
-                                "_UI_ActivityDefBase_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityDefBase_hostDemandCvsq_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityDefBase_hostDemandCvsq_feature",
+                                        "_UI_ActivityDefBase_type"),
                                 LqnPackage.Literals.ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ,
                                 true,
                                 false,
@@ -125,13 +125,13 @@ public class ActivityDefBaseItemProvider
      */
     protected void addHostDemandMeanPropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityDefBase_hostDemandMean_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityDefBase_hostDemandMean_feature",
-                                "_UI_ActivityDefBase_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityDefBase_hostDemandMean_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityDefBase_hostDemandMean_feature",
+                                        "_UI_ActivityDefBase_type"),
                                 LqnPackage.Literals.ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN,
                                 true,
                                 false,
@@ -149,13 +149,13 @@ public class ActivityDefBaseItemProvider
      */
     protected void addMaxServiceTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityDefBase_maxServiceTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityDefBase_maxServiceTime_feature",
-                                "_UI_ActivityDefBase_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityDefBase_maxServiceTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityDefBase_maxServiceTime_feature",
+                                        "_UI_ActivityDefBase_type"),
                                 LqnPackage.Literals.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME,
                                 true,
                                 false,
@@ -173,13 +173,13 @@ public class ActivityDefBaseItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityDefBase_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityDefBase_name_feature",
-                                "_UI_ActivityDefBase_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityDefBase_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityDefBase_name_feature",
+                                        "_UI_ActivityDefBase_type"),
                                 LqnPackage.Literals.ACTIVITY_DEF_BASE__NAME,
                                 true,
                                 false,
@@ -197,13 +197,13 @@ public class ActivityDefBaseItemProvider
      */
     protected void addThinkTimePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ActivityDefBase_thinkTime_feature"),
-                        this.getString("_UI_PropertyDescriptor_description",
-                                "_UI_ActivityDefBase_thinkTime_feature",
-                                "_UI_ActivityDefBase_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ActivityDefBase_thinkTime_feature"),
+                                this.getString("_UI_PropertyDescriptor_description",
+                                        "_UI_ActivityDefBase_thinkTime_feature",
+                                        "_UI_ActivityDefBase_type"),
                                 LqnPackage.Literals.ACTIVITY_DEF_BASE__THINK_TIME,
                                 true,
                                 false,
@@ -267,7 +267,7 @@ public class ActivityDefBaseItemProvider
         final String label = ((ActivityDefBase) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ActivityDefBase_type") :
-                this.getString("_UI_ActivityDefBase_type") + " " + label;
+                    this.getString("_UI_ActivityDefBase_type") + " " + label;
     }
 
     /**
@@ -310,19 +310,19 @@ public class ActivityDefBaseItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
-                        LqnFactory.eINSTANCE.createOutputDistributionType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
+                                LqnFactory.eINSTANCE.createOutputDistributionType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
-                        LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
+                                LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_ACTIVITY,
-                        LqnFactory.eINSTANCE.createOutputResultType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_ACTIVITY,
+                                LqnFactory.eINSTANCE.createOutputResultType()));
     }
 
     /**

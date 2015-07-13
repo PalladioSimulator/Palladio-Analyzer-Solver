@@ -28,13 +28,13 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * @generated
  */
 public class DocumentRootItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -147,14 +147,14 @@ public class DocumentRootItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE,
-                        LqnFactory.eINSTANCE.createLqnCoreType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE,
+                                LqnFactory.eINSTANCE.createLqnCoreType()));
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
-                        LqnFactory.eINSTANCE.createLqnModelType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
+                                LqnFactory.eINSTANCE.createLqnModelType()));
     }
 
     /**

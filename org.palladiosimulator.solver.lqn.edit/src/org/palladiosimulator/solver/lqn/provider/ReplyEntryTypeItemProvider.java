@@ -30,13 +30,13 @@ import org.palladiosimulator.solver.lqn.ReplyEntryType;
  * @generated
  */
 public class ReplyEntryTypeItemProvider
-        extends ItemProviderAdapter
-        implements
-        IEditingDomainItemProvider,
-        IStructuredItemContentProvider,
-        ITreeItemContentProvider,
-        IItemLabelProvider,
-        IItemPropertySource {
+extends ItemProviderAdapter
+implements
+IEditingDomainItemProvider,
+IStructuredItemContentProvider,
+ITreeItemContentProvider,
+IItemLabelProvider,
+IItemPropertySource {
     /**
      * This constructs an instance from a factory and a notifier. <!-- begin-user-doc --> <!--
      * end-user-doc -->
@@ -72,12 +72,12 @@ public class ReplyEntryTypeItemProvider
      */
     protected void addNamePropertyDescriptor(final Object object) {
         this.itemPropertyDescriptors.add
-                (this.createItemPropertyDescriptor
-                (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
-                        this.getResourceLocator(),
-                        this.getString("_UI_ReplyEntryType_name_feature"),
-                        this.getString("_UI_PropertyDescriptor_description", "_UI_ReplyEntryType_name_feature",
-                                "_UI_ReplyEntryType_type"),
+        (this.createItemPropertyDescriptor
+                        (((ComposeableAdapterFactory) this.adapterFactory).getRootAdapterFactory(),
+                                this.getResourceLocator(),
+                                this.getString("_UI_ReplyEntryType_name_feature"),
+                                this.getString("_UI_PropertyDescriptor_description", "_UI_ReplyEntryType_name_feature",
+                                        "_UI_ReplyEntryType_type"),
                                 LqnPackage.Literals.REPLY_ENTRY_TYPE__NAME,
                                 true,
                                 false,
@@ -140,7 +140,7 @@ public class ReplyEntryTypeItemProvider
         final String label = ((ReplyEntryType) object).getName();
         return label == null || label.length() == 0 ?
                 this.getString("_UI_ReplyEntryType_type") :
-                this.getString("_UI_ReplyEntryType_type") + " " + label;
+                    this.getString("_UI_ReplyEntryType_type") + " " + label;
     }
 
     /**
@@ -177,9 +177,9 @@ public class ReplyEntryTypeItemProvider
         super.collectNewChildDescriptors(newChildDescriptors, object);
 
         newChildDescriptors.add
-                (this.createChildParameter
-                (LqnPackage.Literals.REPLY_ENTRY_TYPE__REPLY_ACTIVITY,
-                        LqnFactory.eINSTANCE.createReplyActivityType()));
+        (this.createChildParameter
+                        (LqnPackage.Literals.REPLY_ENTRY_TYPE__REPLY_ACTIVITY,
+                                LqnFactory.eINSTANCE.createReplyActivityType()));
     }
 
     /**
