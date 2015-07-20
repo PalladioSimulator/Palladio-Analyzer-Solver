@@ -3,6 +3,7 @@ package org.palladiosimulator.solver.runconfig;
 import java.util.ArrayList;
 
 import org.eclipse.core.resources.IContainer;
+import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.debug.core.ILaunchConfigurationWorkingCopy;
@@ -21,6 +22,7 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.DirectoryDialog;
+import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
@@ -51,6 +53,7 @@ public class MainConfigTab extends FileNamesInputTab {
 	private Group sresConfigGroup; 
 	private Group lqnsConfigGroup; 
 	private Group lqsimConfigGroup;
+	private Group lineConfigGroup;
 
 	private StackLayout stackLayout;
 	
@@ -60,6 +63,10 @@ public class MainConfigTab extends FileNamesInputTab {
 	private Text textSREOutputFile;
 	
 	private Button checkboxUseExpressionAsInput;
+	
+	private Button  debugLINEButton;
+	private Text textLINEOutputDir;	
+	private Text textLINEPropFile;
 	
 	// Create a listener for GUI modification events:
 	final ModifyListener listener = new ModifyListener() {
@@ -103,7 +110,8 @@ public class MainConfigTab extends FileNamesInputTab {
 		comboSolver.setItems (new String [] {
 				MessageStrings.SRE_SOLVER,
 				MessageStrings.LQNS_SOLVER,
-				MessageStrings.LQSIM_SOLVER
+				MessageStrings.LQSIM_SOLVER,
+				MessageStrings.LINE_SOLVER
 				});
 		comboSolver.setSize (400, 200);
 		comboSolver.addModifyListener(listener);
@@ -117,7 +125,9 @@ public class MainConfigTab extends FileNamesInputTab {
 		
 		sresConfigGroup = createSREWidgets(innerContainer);
 		lqnsConfigGroup = createLQNSWidgets(innerContainer);
-		lqsimConfigGroup = createLQSIMWidgets(innerContainer);
+		lqsimConfigGroup = createLQSIMWidgets(innerContainer);		
+		lineConfigGroup = createLINEWidgets(innerContainer);
+		
 	}
 
 	
@@ -336,6 +346,72 @@ public class MainConfigTab extends FileNamesInputTab {
 		return group;
 	}
 
+	 
+	private Group createLINEWidgets(Composite container) {
+		final SelectionListener selectionListener = new SelectionListener() {
+			public void widgetDefaultSelected(SelectionEvent e) {
+				MainConfigTab.this.setDirty(true);
+				MainConfigTab.this.updateLaunchConfigurationDialog();
+			}
+
+			public void widgetSelected(SelectionEvent e) {
+				MainConfigTab.this.setDirty(true);
+				MainConfigTab.this.updateLaunchConfigurationDialog();
+			}
+		};
+
+		final GridLayout analysisGL = new GridLayout();
+		analysisGL.numColumns = 4;
+
+		final Group group = new Group(container, SWT.NONE);
+		group.setLayout(analysisGL);
+		group.setText("Configuration (Definition of parameters)");
+		group.setLayoutData(new GridData(500, SWT.DEFAULT));
+
+		GridData threeColumnGridData = new GridData(SWT.LEFT, SWT.CENTER, true, false);
+		threeColumnGridData.horizontalSpan = 3;
+
+
+
+		Label labelOutFolder = new Label(group, SWT.NONE);
+		labelOutFolder.setText("Output Dir:");
+		labelOutFolder.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
+
+		textLINEOutputDir = new Text(group, SWT.SINGLE | SWT.BORDER);
+		textLINEOutputDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
+		textLINEOutputDir.addModifyListener(listener);
+
+
+		createFolderSelectionButtons(group,textLINEOutputDir);
+
+		Label labelPerfFile = new Label(group, SWT.NONE);
+		labelPerfFile.setText("LINE property file:");
+		labelPerfFile.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
+
+		textLINEPropFile = new Text(group, SWT.SINGLE | SWT.BORDER);
+		textLINEPropFile.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
+		textLINEPropFile.addModifyListener(listener);
+
+		createFileSelectionButtons(group,textLINEPropFile);
+
+		debugLINEButton = new Button(group,  SWT.CHECK);
+		debugLINEButton.setEnabled(true);
+		debugLINEButton.setText("Verbose Debugging");
+		debugLINEButton.addSelectionListener(selectionListener);
+		debugLINEButton.setSelection(true);
+		debugLINEButton.setLayoutData(threeColumnGridData);	
+		return group;
+	}
+
+	private void createFileSelectionButtons(final Group group, Text text) {
+		final Button workspaceButton = new Button(group, SWT.NONE);
+		workspaceButton.setText("Workspace...");
+		workspaceButton.addSelectionListener(new WorkspaceFileButtonSelectionListener(text));
+
+		final Button fileSystemButton = new Button(group, SWT.NONE);
+		fileSystemButton.setText("File System...");
+		fileSystemButton.addSelectionListener(new FileSystemButtonSelectionAdapter(text));
+	}
 
 
 	private void createFolderSelectionButtons(final Group group, Text text) {
@@ -512,7 +588,17 @@ public class MainConfigTab extends FileNamesInputTab {
 		} catch(CoreException e){
 			textLqnsOutputDir.setText(System.getProperty("user.dir"));
 		}
-		
+		try{
+			textLINEOutputDir.setText(configuration.getAttribute(MessageStrings.LINE_OUT_DIR, System.getProperty("user.dir")));
+		} catch(CoreException e){
+			textLINEOutputDir.setText(System.getProperty("user.dir"));
+		}
+
+		try{
+			textLINEPropFile.setText(configuration.getAttribute(MessageStrings.LINE_PROP_FILE, System.getProperty("user.dir")+MessageStrings.LINE_PROP_FILENAME));
+		} catch(CoreException e){
+			textLINEPropFile.setText(System.getProperty("user.dir")+MessageStrings.LINE_PROP_FILENAME);
+		}
 		try{
 			lqnsConfigPragma.setText(configuration.getAttribute(MessageStrings.PRAGMAS, ""));
 		} catch(CoreException e){
@@ -553,6 +639,12 @@ public class MainConfigTab extends FileNamesInputTab {
 			this.lqnsConfigStopOnMessageLoss.setSelection(true);
 		}
 		try {
+			this.debugLINEButton.setSelection(configuration.getAttribute(
+				MessageStrings.DEBUG_LINE, true));
+		} catch (CoreException e) {
+			this.debugLINEButton.setSelection(true);
+		}
+		try {
 			this.lqsimConfigStopOnMessageLoss.setSelection(configuration.getAttribute(
 					MessageStrings.STOP_ON_MESSAGE_LOSS_LQSIM, true));
 		} catch (CoreException e) {
@@ -582,7 +674,8 @@ public class MainConfigTab extends FileNamesInputTab {
 			stackLayout.topControl = lqnsConfigGroup;
 		else if (solverStr.equals("LQSIM (Layered Queueing Simulation)"))
 			stackLayout.topControl = lqsimConfigGroup;
-		
+		else if (solverStr.equals(MessageStrings.LINE_SOLVER))
+			stackLayout.topControl = lineConfigGroup;
 		lqsimConfigGroup.getParent().layout();
 	}
 
@@ -600,8 +693,9 @@ public class MainConfigTab extends FileNamesInputTab {
 		configuration.setAttribute(MessageStrings.LQSIM_OUTPUT, comboLqsimOutput.getText());
 		
 		configuration.setAttribute(MessageStrings.STOP_ON_MESSAGE_LOSS_LQNS, lqnsConfigStopOnMessageLoss.getSelection());
-		configuration.setAttribute(MessageStrings.STOP_ON_MESSAGE_LOSS_LQSIM, lqsimConfigStopOnMessageLoss.getSelection());
-
+		configuration.setAttribute(MessageStrings.STOP_ON_MESSAGE_LOSS_LQSIM, lqsimConfigStopOnMessageLoss.getSelection());		
+		configuration.setAttribute(MessageStrings.DEBUG_LINE, debugLINEButton.getSelection());
+		
 		configuration.setAttribute(MessageStrings.INFINITE_TASK_MULTIPLICITY, lqnsConfigInfTaskMult.getSelection());
 		
 		configuration.setAttribute(MessageStrings.RUN_TIME, lqsimConfig1.getText());
@@ -614,6 +708,8 @@ public class MainConfigTab extends FileNamesInputTab {
 		configuration.setAttribute(MessageStrings.LQNS_OUTPUT_DIR, textLqnsOutputDir.getText());
 		configuration.setAttribute(MessageStrings.LQSIM_OUTPUT_DIR, textLqsimOutputDir.getText());
 		configuration.setAttribute(MessageStrings.SRE_OUTPUT_FILE, textSREOutputFile.getText());
+		configuration.setAttribute(MessageStrings.LINE_OUT_DIR, textLINEOutputDir.getText());
+		configuration.setAttribute(MessageStrings.LINE_PROP_FILE, textLINEPropFile.getText());
 		
 		configuration.setAttribute(MessageStrings.SRE_IS_USE_INPUT_MODEL, checkboxUseExpressionAsInput.getSelection());
 	}
@@ -694,6 +790,24 @@ public class MainConfigTab extends FileNamesInputTab {
 		}
 	}
 
+	
+	
+	class FileSystemFileButtonSelectionAdapter extends SelectionAdapter {
+
+		private Text field;
+
+		public FileSystemFileButtonSelectionAdapter(Text field){
+			this.field = field;
+		}
+
+		@Override
+		public void widgetSelected(SelectionEvent e) {
+			String resultOpenFileDialog = openFileSystemFileDialog();
+			if (!resultOpenFileDialog.equals(new String(""))) {
+				field.setText(resultOpenFileDialog);			
+			}
+		}
+	}
 
 	/** Button SelectionListener - call a WorkspaceResourceDialog */
 	class WorkspaceButtonSelectionListener extends SelectionAdapter {
@@ -713,6 +827,25 @@ public class MainConfigTab extends FileNamesInputTab {
 		}
 	}
 	
+	
+	class WorkspaceFileButtonSelectionListener extends SelectionAdapter {
+		
+		private Text field;
+
+		public WorkspaceFileButtonSelectionListener(Text field) {
+			this.field = field;
+		}
+		
+		@Override
+		public void widgetSelected(SelectionEvent e) {
+			String resultOpenFileDialog = openWorkspaceResourceFileDialog();
+			if (!resultOpenFileDialog.equals(new String(""))) {
+				field.setText(resultOpenFileDialog);			
+			}
+		}
+	}
+	
+	
 	private String openFileSystemFolderDialog(){
 		String folderName = "";
 		
@@ -725,7 +858,19 @@ public class MainConfigTab extends FileNamesInputTab {
 		}	
 		return folderName;
 	}
-	
+
+	private String openFileSystemFileDialog(){
+		String fileName = "";
+		FileDialog fDialog = new FileDialog(getShell(), SWT.OPEN);		
+		fDialog.setText("Select a file.");
+
+		if (fDialog.open() != null) {
+			fileName = fDialog.getFilterPath()+System.getProperty("file.separator")+fDialog.getFileName();
+
+		}	
+		return fileName;
+	}
+
 	private String openWorkspaceResourceFolderDialog(){
 		String msg = "Select a folder.";
 		
@@ -738,6 +883,21 @@ public class MainConfigTab extends FileNamesInputTab {
 		if (container != null)
 			return container.getLocation().toOSString();
 		
+		return "";
+	}
+	
+	private String openWorkspaceResourceFileDialog(){
+		String msg = "Select a file.";
+
+		IFile file = null;
+		IFile[] files = WorkspaceResourceDialog.openFileSelection(getShell(), 
+				null, msg, false, null, new ArrayList<ViewerFilter>());
+
+		if (files.length != 0)
+			file = files[0];
+		if (file != null)
+			return file.getLocation().toOSString();
+
 		return "";
 	}
 }

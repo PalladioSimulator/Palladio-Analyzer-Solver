@@ -72,6 +72,8 @@ public class RunPCMAnalysisJob implements
 		} else if (configuration.getSolver()
 				.equals(MessageStrings.LQSIM_SOLVER)) {
 			strategy = new Pcm2LqnStrategy(configuration);
+		} else if (configuration.getSolver().equals(MessageStrings.LINE_SOLVER)) {
+			strategy = new Pcm2LqnStrategy(configuration);
 		}
 
 	}

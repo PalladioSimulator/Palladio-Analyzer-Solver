@@ -20,6 +20,9 @@ public class PCMSolverWorkflowRunConfiguration extends
 	private String logFile;
 	private String lqnsOutput;
 	private String lqnsOutputDir;
+	private String LINEOutputDir;
+	private String LINEPropFile;
+	private boolean debugLINE;
 
 	private String lqsimBlocks;
 	private String lqsimOutput;
@@ -464,4 +467,32 @@ public class PCMSolverWorkflowRunConfiguration extends
 	}
 
 
+	public String getLINEPropFile() {
+		return LINEPropFile;
+	}
+
+	public String getLINEOutputDir() {
+		return LINEOutputDir;
+	}
+
+	public void setLINEOutputDir(String lINEOutputDir) {
+		LINEOutputDir = lINEOutputDir;
+	}
+
+	public void setLINEPropFile(String lINEPropFile) {
+		LINEPropFile = lINEPropFile;
+	}
+
+	public boolean isDebugLINE() {
+		return debugLINE;
+	}
+
+	public void setDebugLINE(boolean debugLINE) {
+		this.debugLINE = debugLINE;
+	}
+	
+	
+	
+	
+	
 }

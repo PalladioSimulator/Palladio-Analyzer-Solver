@@ -64,5 +64,13 @@ public class MessageStrings {
 	
 	public static final String SAVE_RESULTS_TO_FILE_ENABLED = "saveResultsToFileEnabled";
 	public static final String SAVE_FILE_DEFAULT = "saveFileDefault";
+		
+	public static final String LINE_SOLVER = "LINE";
+	public static final String DEBUG_LINE = "LINEDebug";
+	public static final String LINE_OUT_DIR = "LINEOutputDir";
+	public static final String LINE_PROP_FILE = "LINEPropFile";
+	public static final String LINE_PROP_FILENAME = "LINE.properties";
+	public static final String SHOW_HTML_RESULT = "showHtmlResult";
+	
 
 }
