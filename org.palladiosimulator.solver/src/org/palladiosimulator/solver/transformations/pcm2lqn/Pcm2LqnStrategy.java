@@ -112,15 +112,15 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		//TODO delete XML variable as lqn one is not used anymore?
 		filenameInputXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn" + timestamp
-				+ ".xml";
+				+ ".in.lqxo";
 		filenameResultHumanReadable = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn" + timestamp
 				+ ".out";
 		filenameResultXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn"
-				+ timestamp + ".lqxo";
+				+ timestamp + ".out.lqxo";
 		filenameLQN = getOutputFolder() + System.getProperty("file.separator")
-				+ "pcm2lqn" + timestamp + ".xml";
+				+ "pcm2lqn" + timestamp + ".in.lqxo";
 	}
 
 	public String getFilenameResultXML() {

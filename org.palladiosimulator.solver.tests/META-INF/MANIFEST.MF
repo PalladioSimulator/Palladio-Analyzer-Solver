@@ -7,7 +7,8 @@ Bundle-Activator: org.palladiosimulator.solver.tests.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.junit,
  org.palladiosimulator.solver.lqn,
- org.apache.log4j
+ org.apache.log4j,
+ org.palladiosimulator.solver
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.palladiosimulator.solver.tests

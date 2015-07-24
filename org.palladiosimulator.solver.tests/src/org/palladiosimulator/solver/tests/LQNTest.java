@@ -1,20 +1,11 @@
 package org.palladiosimulator.solver.tests;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.math.BigInteger;
-import java.util.Collections;
 
 import org.apache.log4j.Logger;
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.palladiosimulator.solver.lqn.ActivityMakingCallType;
@@ -29,12 +20,13 @@ import org.palladiosimulator.solver.lqn.SolverParamsType;
 import org.palladiosimulator.solver.lqn.TaskSchedulingType;
 import org.palladiosimulator.solver.lqn.TaskType;
 import org.palladiosimulator.solver.lqn.TypeType;
+import org.palladiosimulator.solver.transformations.pcm2lqn.LqnXmlHandler;
 
 import junit.framework.JUnit4TestAdapter;
 
 public class LQNTest {
 
-    private static Logger logger = Logger.getLogger(LQNTest.class.getName());
+	private static Logger logger = Logger.getLogger(LQNTest.class.getName());
     private static final String FILENAME_INPUT = "C:\\Temp\\test.xml";
     private static final String FILENAME_RESULT = "C:\\Temp\\test.out";
     private static final String FILENAME_LQN = "C:\\Temp\\test.lqn";;
@@ -63,8 +55,9 @@ public class LQNTest {
         getProcessor2(fac, lmt);
         getProcessor3(fac, lmt);
 
-        saveToXMIFile(lmt, FILENAME_INPUT);
-        fixFile(FILENAME_INPUT);
+        LqnXmlHandler handler = new LqnXmlHandler(lmt);
+        handler.saveModelToXMI(FILENAME_INPUT);
+        LqnXmlHandler.fixXMLFile(FILENAME_INPUT);
         runLqnTools();
 
         printResultToConsole();
@@ -102,51 +95,6 @@ public class LQNTest {
         } catch (final InterruptedException e) {
             e.printStackTrace();
         }
-    }
-
-    private void fixFile(final String filename) {
-        FileInputStream fis = null;
-        byte b[] = null;
-        try {
-            fis = new FileInputStream(filename);
-            int x = 0;
-            x = fis.available();
-            b = new byte[x];
-            fis.read(b);
-            fis.close();
-        } catch (final FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-
-        String content = new String(b);
-        content = content.replaceAll("LqnModelType", "lqn-model");
-        content = content.replaceAll("entryPhaseActivities", "entry-phase-activities");
-        content = content.replaceAll("solverParams", "solver-params");
-        content = content.replaceAll("synchCall", "synch-call");
-        content = content.replaceAll("convVal", "conv_val");
-        content = content.replaceAll("itLimit", "it_limit");
-        content = content.replaceAll("printInt", "print_int");
-        content = content.replaceAll("underrelaxCoeff", "underrelax_coeff");
-        content = content.replaceAll("hostDemandMean", "host-demand-mean");
-        content = content.replaceAll("callsMean", "calls-mean");
-        content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"",
-                "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
-        content = content.replaceAll("xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"",
-                "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
-
-        FileOutputStream fos;
-        try {
-            fos = new FileOutputStream(filename);
-            fos.write(content.getBytes());
-            fos.close();
-        } catch (final FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
-
     }
 
     private void getProcessor3(final LqnFactory fac, final LqnModelType lmt) {
@@ -275,25 +223,6 @@ public class LQNTest {
         amct2.setCallsMean("2");
         amct2.setDest("Application_Rqst");
         apt.getSynchCall().add(amct2);
-    }
-
-    private void saveToXMIFile(final EObject modelToSave, final String fileName) {
-        // Create a resource set.
-        final ResourceSet resourceSet = new ResourceSetImpl();
-
-        // Register the default resource factory -- only needed for stand-alone!
-        resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
-                .put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
-
-        final URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
-        final Resource resource = resourceSet.createResource(fileURI);
-        resource.getContents().add(modelToSave);
-
-        try {
-            resource.save(Collections.EMPTY_MAP);
-        } catch (final IOException e) {
-            logger.error(e.getMessage());
-        }
     }
 
     public static junit.framework.Test suite() {

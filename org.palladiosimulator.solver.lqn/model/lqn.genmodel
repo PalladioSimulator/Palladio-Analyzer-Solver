@@ -13,7 +13,7 @@
   </genAnnotations>
   <foreignModel>file:/C:/Program%20Files%20(x86)/LQNSolvers/lqn.xsd</foreignModel>
   <genPackages prefix="Lqn" basePackage="org.palladiosimulator.solver" resource="XML"
-      disposableProviderFactory="true" ecorePackage="LqnCore.ecore#/">
+      disposableProviderFactory="true" fileExtensions="lqxo" ecorePackage="LqnCore.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="LqnCore.ecore#//CallOrderType">
       <genEnumLiterals ecoreEnumLiteral="LqnCore.ecore#//CallOrderType/STOCHASTIC"/>
       <genEnumLiterals ecoreEnumLiteral="LqnCore.ecore#//CallOrderType/DETERMINISTIC"/>

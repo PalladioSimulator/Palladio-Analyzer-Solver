@@ -11,16 +11,30 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.util.ExtendedMetaData;
+import org.eclipse.emf.ecore.xmi.FeatureNotFoundException;
 import org.eclipse.emf.ecore.xmi.XMIResource;
+import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import org.palladiosimulator.solver.lqn.DocumentRoot;
+import org.palladiosimulator.solver.lqn.LqnFactory;
 import org.palladiosimulator.solver.lqn.LqnModelType;
+import org.palladiosimulator.solver.lqn.LqnPackage;
+import org.palladiosimulator.solver.lqn.util.LqnResourceFactoryImpl;
 
 public class LqnXmlHandler {
 
@@ -28,43 +42,140 @@ public class LqnXmlHandler {
 	
 	LqnModelType lqnModel;
 	
+	static private LqnXmlToEmfMap[] lqnTermsToReplace = {
+			//new LqnXmlToEmfMap("lqn:LqnModelType", "lqn-model"), 
+			//new LqnXmlToEmfMap("LqnModelType", "lqn-model"),
+			//new LqnXmlToEmfMap("xmlns:lqn", "xsi:noNamespaceSchemaLocation"),
+			new LqnXmlToEmfMap("xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"", "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"")
+			/*new LqnXmlToEmfMap("entryActivityGraph", "entry-activity-graph"),
+			new LqnXmlToEmfMap("thinkTime", "think-time"),
+			new LqnXmlToEmfMap("entryPhaseActivities", "entry-phase-activities"),
+			new LqnXmlToEmfMap("solverParams", "solver-params"),
+			new LqnXmlToEmfMap("synchCall", "synch-call"),
+			new LqnXmlToEmfMap("itLimit", "it_limit"),
+			new LqnXmlToEmfMap("printInt", "print_int"),
+			new LqnXmlToEmfMap("underrelaxCoeff", "underrelax_coeff"),
+			new LqnXmlToEmfMap("callOrder", "call-order"),
+			new LqnXmlToEmfMap("hostDemandMean", "host-demand-mean"),
+			new LqnXmlToEmfMap("hostDemandCvsq", "host-demand-cvsq"),
+			new LqnXmlToEmfMap("callsMean", "calls-mean"),
+			new LqnXmlToEmfMap("replyActivity", "reply-activity"),
+			new LqnXmlToEmfMap("postOR", "post-OR"),
+			new LqnXmlToEmfMap("postAND", "post-AND"),
+			new LqnXmlToEmfMap("preOR", "pre-OR"),
+			new LqnXmlToEmfMap("preAND", "pre-AND"),
+			new LqnXmlToEmfMap("taskActivities", "task-activities"),
+			new LqnXmlToEmfMap("boundToEntry", "bound-to-entry"),
+			new LqnXmlToEmfMap("replyEntry", "reply-entry"),
+			new LqnXmlToEmfMap("activityGraph", "activity-graph"),
+			new LqnXmlToEmfMap("speedFactor", "speed-factor"),
+			new LqnXmlToEmfMap("serviceTimeDistribution", "service-time-distribution"),
+			new LqnXmlToEmfMap("openArrivalRate", "open-arrival-rate"),
+			new LqnXmlToEmfMap("openWaitTime", "open-wait-time"),
+			new LqnXmlToEmfMap("binSize", "bin-size"),
+			new LqnXmlToEmfMap("midPoint", "mid-point"),
+			new LqnXmlToEmfMap("numberBins", "number-bins"),
+			new LqnXmlToEmfMap("stdDev", "std-dev"),
+			new LqnXmlToEmfMap("histogramBin", "histogram-bin"),
+			new LqnXmlToEmfMap("overflowBin", "overflow-bin"),
+			new LqnXmlToEmfMap("waitingVariance", "waiting-variance"),
+			new LqnXmlToEmfMap("phase1ProcWaiting", "phase1-procWaiting"),
+			new LqnXmlToEmfMap("phase1ServiceTime", "phase1-serviceTime"),
+			new LqnXmlToEmfMap("phase1ServiceTimeVariance", "phase1-serviceTime"),
+			// some of the subsequent replacement rules are relevant only for result files
+			new LqnXmlToEmfMap("resultGeneral", "result-general"),
+			new LqnXmlToEmfMap("resultJoinDelay", "result-join-delay"),
+			new LqnXmlToEmfMap("joinVariance","join-variance"),
+			new LqnXmlToEmfMap("joinWaiting", "join-waiting"),
+			new LqnXmlToEmfMap("elapsedTime", "elapsed-time"),
+			new LqnXmlToEmfMap("solverInfo", "solver-info"),
+			new LqnXmlToEmfMap("resultTask", "result-task"),
+			new LqnXmlToEmfMap("phase1Utilization", "phase1-utilization"),
+			new LqnXmlToEmfMap("procUtilization", "proc-utilization"),
+			new LqnXmlToEmfMap("resultEntry", "result-entry"),
+			new LqnXmlToEmfMap("squaredCoeffVariation", "squared-coeff-variation"),
+			new LqnXmlToEmfMap("throughputBound", "throughput-bound"),
+			new LqnXmlToEmfMap("resultActivity", "result-activity"),
+			new LqnXmlToEmfMap("procWaiting", "proc-waiting"),
+			// As "service-time" is a prefix of "service-time-variance", a following "=" is needed
+			new LqnXmlToEmfMap("serviceTime=", "service-time="),   
+			new LqnXmlToEmfMap("serviceTimeVariance", "service-time-variance"),
+			new LqnXmlToEmfMap("resultCall", "result-call"),
+			new LqnXmlToEmfMap("resultProcessor", "result-processor"),
+			new LqnXmlToEmfMap("platformInfo", "platform-info"),
+			new LqnXmlToEmfMap("userCpuTime", "user-cpu-time"),
+			new LqnXmlToEmfMap("systemCpuTime", "system-cpu-time"),
+			new LqnXmlToEmfMap("mvaInfo", "mva-info")*/
+			
+	};
+	
+	static private LqnXmlToEmfMap[] lqnTermsToReplaceToEmf = {
+			/* both conv_val and conv-val are mapped to convVal */
+			//new LqnXmlToEmfMap("convVal", "conv-val"),
+			//new LqnXmlToEmfMap("convVal", "conv_val")
+			//new LqnXmlToEmfMap("lqn:LqnModelType", "lqn-model"),
+			new LqnXmlToEmfMap("LqnModelType", "lqn-model")
+	};
+	
+	static private LqnXmlToEmfMap[] lqnTermsToReplaceToXml = {
+			/* in generated lqn files, only conv_val is needed (conv-val is for results)*/
+			new LqnXmlToEmfMap("LqnModelType", "lqn-model"),
+			//new LqnXmlToEmfMap("convVal", "conv_val")
+	};
+	
 	public LqnXmlHandler(LqnModelType anLqnModel) {
 		lqnModel = anLqnModel;
+	}
+	
+	protected LqnPackage lqnPackage = LqnPackage.eINSTANCE;
+	protected LqnFactory lqnFactory = lqnPackage.getLqnFactory();
+	
+	/** copied from org.palladiosimulator.solver.lqn.presentation.LqnModelWizard */
+	protected EObject createInitialModel() {
+		EClass eClass = ExtendedMetaData.INSTANCE.getDocumentRoot(lqnPackage);
+		EStructuralFeature eStructuralFeature = eClass.getEStructuralFeature("lqnModel");
+		EObject rootObject = lqnFactory.create(eClass);
+		rootObject.eSet(eStructuralFeature, EcoreUtil.create((EClass) eStructuralFeature.getEType()));
+		return rootObject;
 	}
 
 	public void saveModelToXMI(String fileName) {
 		// Create a resource set.
 		ResourceSet resourceSet = new ResourceSetImpl();
 
-		// Register the default resource factory -- only needed for stand-alone!
-		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
-				.put(Resource.Factory.Registry.DEFAULT_EXTENSION,
-						new XMIResourceFactoryImpl());
+//		// Register the default resource factory -- only needed for stand-alone!
+//		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
+//				.put(Resource.Factory.Registry.DEFAULT_EXTENSION,
+//						new XMIResourceFactoryImpl());
 		
 		URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
+
+		//LqnResourceFactoryImpl factory = new LqnResourceFactoryImpl();
+
+		Resource resource = resourceSet.createResource(fileURI);
+		//Resource resource = factory.createResource(fileURI);
 		
 		//Resource resource = resourceSet.createResource(fileURI);
-		XMIResource resource = (XMIResource) resourceSet.createResource(fileURI);
-		resource.getContents().add(lqnModel);
+		//XMIResource resource = (XMIResource) resourceSet.createResource(fileURI);
+		
+		DocumentRoot rootObject = (DocumentRoot) createInitialModel();
+		rootObject.setLqnModel(lqnModel);
+		
+		resource.getContents().add(rootObject);
 		
 		//resource.getDefaultSaveOptions().put(XMLResource.OPTION_KEEP_DEFAULT_CONTENT, true);
 		
+		Map<String, Boolean> options = new HashMap();
+		options.put(XMLResource.OPTION_EXTENDED_META_DATA, true);
+		
 		try {
-			resource.save(Collections.EMPTY_MAP);
+			resource.save(options);
 		} catch (IOException e) {
 			logger.error(e.getMessage());
 		}
 
-		fixXMLFile(fileName);
-		try {
-			fixXmlHeader(fileName);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		//fixXMLFile(fileName);
 		
 	}
 	
@@ -79,30 +190,75 @@ public class LqnXmlHandler {
 	 */
 	public static LqnModelType loadModelFromXMI(String fileName) {
 		// Revert the Ecore tag names
-		revertXMLFile(fileName);
+		//revertXMLFile(fileName);
 		
-		// Create a resource set.
-		ResourceSet resourceSet = new ResourceSetImpl();
-
-		// Register the default resource factory -- only needed for stand-alone!
-		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
-				.put(Resource.Factory.Registry.DEFAULT_EXTENSION,
-						new XMIResourceFactoryImpl());
-
 		URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
 		
-		Resource resource = resourceSet.createResource(fileURI);
-		
 		LqnModelType lqnModel = null;
+		
 		try {
-			resource.load(Collections.EMPTY_MAP);
+			Resource resource = loadIntoResourceSet(fileURI);
 			lqnModel = (LqnModelType) resource.getContents().get(0);
+			
 		} catch (IOException e) {
 			logger.error(e.getMessage());
+//			if (e.getCause() instanceof FeatureNotFoundException){
+//				String missingFeature = extractMissingFeature((FeatureNotFoundException) e.getCause());
+//				repairXmlFile(fileName, missingFeature);
+//			}
+			
 		}
 		
 		// Can be null if there were problems retrieving the model
 		return lqnModel;
+	}
+	
+	private static String extractMissingFeature(FeatureNotFoundException e){
+		String message = e.getMessage();
+		int firstQuoteIndex = message.indexOf("'");
+		int secondQuoteIndex = message.indexOf("'", firstQuoteIndex+1);
+		String missingFeature = message.substring(firstQuoteIndex+1, secondQuoteIndex);
+		return missingFeature;
+	}
+	
+	private static void repairXmlFile(String fileName, String missingFeature){
+		
+		if (missingFeature.indexOf("-") != -1){
+			
+			//replace all dashes
+			//missingFeature.replaceAll("([^_A-Z])([A-Z])", "$1_$2");
+		}
+		
+		String content = readContentFromFile(fileName);
+		
+		
+		
+		writeContentToFile(fileName, content);
+		
+	}
+	
+	private static Resource loadIntoResourceSet(URI fileURI) throws IOException{
+		
+		// Create a resource set.
+		ResourceSet resourceSet = new ResourceSetImpl();
+		
+		LqnResourceFactoryImpl factory = new LqnResourceFactoryImpl();
+
+//		// Register the default resource factory -- only needed for stand-alone!
+		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
+				.put("lqxo",
+						new LqnResourceFactoryImpl());
+		
+		Resource resource = factory.createResource(fileURI);
+		
+		//Resource resource = resourceSet.createResource(fileURI);
+
+		Map<String, Boolean> options = new HashMap();
+		options.put(XMLResource.OPTION_EXTENDED_META_DATA, true);
+		resource.load(options);
+		return resource;
+
+		
 	}
 
 	/**
@@ -111,7 +267,53 @@ public class LqnXmlHandler {
 	 * 
 	 * @param filename
 	 */
-	private void fixXMLFile(String filename) {
+	public static void fixXMLFile(String filename) {
+		String content = readContentFromFile(filename);
+		
+		//TODO: remove hard coded path to xsd file.
+		
+		/* Only when fixing the LQN file for lqns / lqsim, not on the way back (as this would destroy XML comments and names with dashes, too) */
+		//content = content.replaceAll("_", "-");
+		
+		/* Possibly only needed for LINE */
+		content = content.replaceAll("xml version=\"1.0\" encoding=\"ASCII\"", "xml version=\"1.0\" encoding=\"us-ascii\"");
+		
+		String lqnDir = System.getenv("LQNDIR");
+		if (lqnDir != null && lqnDir !=""){
+			lqnDir = lqnDir.replaceAll("\\\\", "/");
+			lqnDir = lqnDir.replaceAll(" ", "%20");
+			content = content.replaceAll("xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0", "xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn-core.xsd\"");
+		} else {
+			content = content.replaceAll("xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0", "xsi:noNamespaceSchemaLocation=\"file:/C:/Program Files/LQNSolvers/lqn-core.xsd");
+		}
+		
+		for (LqnXmlToEmfMap term : lqnTermsToReplace) {
+			content = content.replaceAll(term.getLqnEmfTerm(), term.getLqnXmlTerm());
+		}
+		
+		for (LqnXmlToEmfMap term : lqnTermsToReplaceToXml) {
+			content = content.replaceAll(term.getLqnEmfTerm(), term.getLqnXmlTerm());
+		}
+		
+		
+		writeContentToFile(filename, content);
+
+	}
+
+	private static void writeContentToFile(String filename, String content) {
+		FileOutputStream fos;
+		try {
+			fos = new FileOutputStream(filename);
+			fos.write(content.getBytes());
+			fos.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static String readContentFromFile(String filename) {
 		FileInputStream fis = null;
 		byte b[]= null;
 		try {
@@ -127,74 +329,8 @@ public class LqnXmlHandler {
 			e.printStackTrace();
 		}
 		
-		//TODO: remove hard coded path to xsd file. 
 		String content = new String(b);
-		content = content.replaceAll("lqn:LqnModelType", "lqn-model");
-		content = content.replaceAll("_","-");
-		
-		String lqnDir = System.getenv("LQNDIR");
-		if (lqnDir != null && lqnDir !=""){
-			
-			lqnDir = lqnDir.replaceAll("\\\\", "/");
-			lqnDir = lqnDir.replaceAll(" ", "%20");
-			content = content.replaceAll("xmlns:lqn=\"file:/C:/Program Files/LQNSolvers/lqn-core.xsd", "xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn.xsd\"");
-		} else {
-			//content = content.replaceAll("LQNSolvers/lqn-core.xsd", "LQN Solvers/lqn.xsd");
-		}
-		
-		content = content.replaceAll("xmlns:lqn", "xsi:noNamespaceSchemaLocation");
-		content = content.replaceAll("xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"", "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
-
-		content = content.replaceAll("entryActivityGraph", "entry-activity-graph");
-		content = content.replaceAll("thinkTime", "think-time");
-
-		content = content.replaceAll("entryPhaseActivities", "entry-phase-activities");
-		content = content.replaceAll("solverParams", "solver-params");
-		content = content.replaceAll("synchCall", "synch-call");
-		content = content.replaceAll("convVal", "conv_val");
-		content = content.replaceAll("itLimit", "it_limit");
-		content = content.replaceAll("printInt", "print_int");
-		content = content.replaceAll("underrelaxCoeff", "underrelax_coeff");
-		content = content.replaceAll("callOrder", "call-order");
-		content = content.replaceAll("hostDemandMean", "host-demand-mean");
-		content = content.replaceAll("hostDemandCvsq", "host-demand-cvsq");
-		content = content.replaceAll("callsMean", "calls-mean");
-		content = content.replaceAll("replyActivity", "reply-activity");
-		content = content.replaceAll("postOR", "post-OR");
-		content = content.replaceAll("postAND", "post-AND");
-		content = content.replaceAll("preOR", "pre-OR");
-		content = content.replaceAll("preAND", "pre-AND");
-		content = content.replaceAll("taskActivities", "task-activities");
-		content = content.replaceAll("boundToEntry", "bound-to-entry");
-		content = content.replaceAll("replyEntry", "reply-entry");
-		content = content.replaceAll("activityGraph", "activity-graph");
-		content = content.replaceAll("speedFactor", "speed-factor");
-		content = content.replaceAll("serviceTimeDistribution", "service-time-distribution");
-		content = content.replaceAll("openArrivalRate", "open-arrival-rate");
-		content = content.replaceAll("openWaitTime", "open-wait-time");
-		content = content.replaceAll("binSize", "bin-size");
-		content = content.replaceAll("midPoint", "mid-point");
-		content = content.replaceAll("numberBins", "number-bins");
-		content = content.replaceAll("stdDev", "std-dev");
-		content = content.replaceAll("histogramBin", "histogram-bin");
-		content = content.replaceAll("overflowBin", "overflow-bin");
-		content = content.replaceAll("waitingVariance", "waiting-variance");
-		content = content.replaceAll("phase1ProcWaiting", "phase1-procWaiting");
-		content = content.replaceAll("phase1ServiceTime", "phase1-serviceTime");
-		content = content.replaceAll("phase1ServiceTimeVariance", "phase1-serviceTime");
-		content = content.replaceAll("resultJoinDelay", "result-join-delay");
-		
-		FileOutputStream fos;
-		try {
-			fos = new FileOutputStream(filename);
-			fos.write(content.getBytes());
-			fos.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+		return content;
 	}
 	
 	/**
@@ -205,153 +341,52 @@ public class LqnXmlHandler {
 	 * @param filename
 	 */
 	private static void revertXMLFile(String filename) {
-		FileInputStream fis = null;
-		byte b[]= null;
-		try {
-			fis = new FileInputStream(filename);
-			int x = 0;
-			x = fis.available();
-			b= new byte[x];
-			fis.read(b);
-			fis.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		String content = new String(b);
-		content = content.replaceAll("lqn-model", "LqnModelType");
+		String content = readContentFromFile(filename);
 		
 		String lqnDir = System.getenv("LQNDIR");
 		if (lqnDir != null && lqnDir !=""){
 			
 			lqnDir = lqnDir.replaceAll("\\\\", "/");
 			lqnDir = lqnDir.replaceAll(" ", "%20");
-			content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn.xsd\"", "xmlns:lqn=\"file:/C:/Program Files/LQNSolvers/lqn-core.xsd");
+			content = content.replaceAll("xmlns:lqn=\"file:///"+lqnDir+"lqn.xsd\"", "xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0");
+			content = content.replaceAll("xmlns:lqn=\"file:///"+lqnDir+"lqn-core.xsd\"", "xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0");
 		} else {
-			//content = content.replaceAll("LQNSolvers/lqn-core.xsd", "LQN Solvers/lqn.xsd");
+			//content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn-core.xsd", "xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0");
+			//content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn.xsd", "xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0");
+			content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn.xsd", "xsi:schemaLocation=\"null http://palladiosimulator.org/Solver/LQN/2.0");
+			//content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn.xsd\"", "xmlns=\"http://palladiosimulator.org/Solver/LQN/2.0\"");
+		}
+				
+		for (LqnXmlToEmfMap term : lqnTermsToReplace) {
+			content = content.replaceAll(term.getLqnXmlTerm(), term.getLqnEmfTerm());
 		}
 		
-		content = content.replaceAll("xsi:noNamespaceSchemaLocation", "xmlns:lqn");
-		content = content.replaceAll("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"", "xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"");
-		
-		content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
-
-		content = content.replaceAll("entry-activity-graph", "entryActivityGraph");
-		content = content.replaceAll("think-time", "thinkTime");
-
-		content = content.replaceAll("entry-phase-activities", "entryPhaseActivities");
-		content = content.replaceAll("solver-params", "solverParams");
-		content = content.replaceAll("synch-call", "synchCall");
-		content = content.replaceAll("conv_val", "convVal");
-		content = content.replaceAll("it_limit", "itLimit");
-		content = content.replaceAll("print_int", "printInt");
-		content = content.replaceAll("underrelax_coeff", "underrelaxCoeff");
-		content = content.replaceAll("host-demand-mean", "hostDemandMean");
-		content = content.replaceAll("host-demand-cvsq", "hostDemandCvsq");
-		content = content.replaceAll("calls-mean", "callsMean");
-		content = content.replaceAll("reply-activity", "replyActivity");
-		content = content.replaceAll("post-OR", "postOR");
-		content = content.replaceAll("pre-OR", "preOR");
-		content = content.replaceAll("postAND", "post-AND");
-		content = content.replaceAll("preAND", "pre-AND");
-		
-		content = content.replaceAll("task-activities", "taskActivities");
-		content = content.replaceAll("bound-to-entry", "boundToEntry");
-		content = content.replaceAll("reply-entry", "replyEntry");
-		content = content.replaceAll("activity-graph", "activityGraph");
-		content = content.replaceAll("speed-factor", "speedFactor");
-		content = content.replaceAll("service-time-distribution", "serviceTimeDistribution");
-		content = content.replaceAll("open-arrival-rate", "openArrivalRate");
-		
-		// the subsequent replacement rules are relevant only for result files
-		content = content.replaceAll("result-general", "resultGeneral");
-		content = content.replaceAll("result-join-delay", "resultJoinDelay");
-		content = content.replaceAll("join-variance", "joinVariance");
-		content = content.replaceAll("join-waiting", "joinWaiting");
-		content = content.replaceAll("conv-val", "convVal");
-		content = content.replaceAll("elapsed-time", "elapsedTime");
-		content = content.replaceAll("solver-info", "solverInfo");
-		content = content.replaceAll("result-task", "resultTask");
-		content = content.replaceAll("phase1-utilization", "phase1Utilization");
-		content = content.replaceAll("proc-utilization", "procUtilization");
-		content = content.replaceAll("result-entry", "resultEntry");
-		content = content.replaceAll("squared-coeff-variation", "squaredCoeffVariation");
-		content = content.replaceAll("throughput-bound", "throughputBound");
-		content = content.replaceAll("result-activity", "resultActivity");
-		content = content.replaceAll("proc-waiting", "procWaiting");
-		// As "service-time" is a prefix of "service-time-variance", a following "=" is needed
-		content = content.replaceAll("service-time=", "serviceTime=");   
-		content = content.replaceAll("service-time-variance", "serviceTimeVariance");
-		content = content.replaceAll("result-call", "resultCall");
-		content = content.replaceAll("result-processor", "resultProcessor");
-		content = content.replaceAll("open-wait-time", "openWaitTime");
-		content = content.replaceAll("bin-size", "binSize");
-		content = content.replaceAll("mid-point", "midPoint");
-		content = content.replaceAll("number-bins", "numberBins");
-		content = content.replaceAll("std-dev", "stdDev");
-		content = content.replaceAll("histogram-bin", "histogramBin");
-		content = content.replaceAll("overflow-bin", "overflowBin");
-		content = content.replaceAll("waiting-variance", "waitingVariance");
-		content = content.replaceAll("phase1-procWaiting", "phase1ProcWaiting");
-		content = content.replaceAll("phase1-serviceTime", "phase1ServiceTime");
-		content = content.replaceAll("phase1-serviceTime", "phase1ServiceTimeVariance");
-		
-		FileOutputStream fos;
-		try {
-			fos = new FileOutputStream(filename);
-			fos.write(content.getBytes());
-			fos.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		for (LqnXmlToEmfMap term : lqnTermsToReplaceToEmf) {
+			content = content.replaceAll(term.getLqnXmlTerm(), term.getLqnEmfTerm());
 		}
+		
+		
+		writeContentToFile(filename, content);
 	}
 	
-		/**
-		 * Original patch from Gregory Franks, used to fix the xml header of the generated file
-		 * @param inputFile
-		 * @throws FileNotFoundException
-		 * @throws IOException
-		 */
-		private void fixXmlHeader(String inputFile) throws FileNotFoundException,
-				IOException {
-			//Read the XML input file encoding the LQN instance
-			FileReader fr = new FileReader(inputFile);
-			BufferedReader br = new BufferedReader(fr);
-			//Skip the first line (wrong encoding ASCII)
-			br.readLine();
-			//Read the following lines
-			List<String> content = new ArrayList<String>();
-			String line = br.readLine();
-			while (line != null) {
-				content.add(line + "\n");
-				line = br.readLine();
-	 		}
-			//Close the file
-			br.close();
-			fr.close();
-			//Delete the file
-			File f = new File(inputFile);
-			f.delete();
-			//Create a new file with the same name and start writing in it				
-			File recordFile = new File(inputFile);			
-			FileWriter recordFw = new FileWriter(recordFile);
-			BufferedWriter recordBw = new BufferedWriter(recordFw);
-			//Write the correct XML header (encoding us-ascii)
-			recordBw.write("<?xml version=\"1.0\" encoding=\"us-ascii\"?>\n");
-			recordBw.flush();
-			//Write all the following lines
-			for (String s : content) {
-				recordBw.write(s);
-				recordBw.flush();
-			}
-			//Close the file
-			recordBw.close();
-			recordFw.close();
-	 	}
-
 	
+}
+
+class LqnXmlToEmfMap {
+	String lqnXmlTerm = "";
+	String lqnEmfTerm = "";
+	
+	public LqnXmlToEmfMap (String lqnEmfTerm, String lqnXmlTerm){
+		this.lqnXmlTerm = lqnXmlTerm;
+		this.lqnEmfTerm = lqnEmfTerm;
+	}
+	
+	public String getLqnXmlTerm() {
+		return lqnXmlTerm;
+	}
+
+	public String getLqnEmfTerm() {
+		return lqnEmfTerm;
+	}	
+
 }

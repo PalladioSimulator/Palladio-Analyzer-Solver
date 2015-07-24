@@ -3,7 +3,6 @@ The ecore file was created by importing the LQN xsd file as described by the
 
 Then, the following manual changes were made
 * renamed LqnCore to lqn in the root element (name and nsPrefix)
-* changed ns URI of this lqn element to "file:/C:/Program Files/LQNSolvers/lqn-core.xsd"
-* changed all other occurrences of "Program%20Files%20(x86)" to "Program Files" except in lqn.xsd2ecore model by searching the whole workspace for that string
+* changed ns URI of this lqn element to "http://palladiosimulator.org/Solver/LQN/2.0" and the prefix to "org.palladiosimulator.solver"
 * in lqn.genmodel: renamed LqnCore root element to Lqn (property prefix, then file extension was changed automatically, too)
 * in lqn.genmodel, set base package of Lqn to org.palladiosimulator.solver 

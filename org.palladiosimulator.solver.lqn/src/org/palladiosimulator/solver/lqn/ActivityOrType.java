@@ -8,71 +8,66 @@ package org.palladiosimulator.solver.lqn;
  *
  * <p>
  * The following features are supported:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb <em>Prob</em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb <em>Prob</em>}</li>
+ * </ul>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityOrType()
  * @model extendedMetaData="name='ActivityOrType' kind='empty'"
  * @generated
  */
 public interface ActivityOrType extends ActivityType {
-    /**
-     * Returns the value of the '<em><b>Prob</b></em>' attribute. The default value is
-     * <code>"1"</code>. <!-- begin-user-doc -->
-     * <p>
-     * If the meaning of the '<em>Prob</em>' attribute isn't clear, there really should be more of a
-     * description here...
-     * </p>
-     * <!-- end-user-doc -->
-     *
-     * @return the value of the '<em>Prob</em>' attribute.
-     * @see #isSetProb()
-     * @see #unsetProb()
-     * @see #setProb(String)
-     * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityOrType_Prob()
-     * @model default="1" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
-     *        extendedMetaData="kind='attribute' name='prob' namespace='##targetNamespace'"
-     * @generated
-     */
-    String getProb();
+	/**
+	 * Returns the value of the '<em><b>Prob</b></em>' attribute.
+	 * The default value is <code>"1"</code>.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Prob</em>' attribute isn't clear, there really should be more of a
+	 * description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Prob</em>' attribute.
+	 * @see #isSetProb()
+	 * @see #unsetProb()
+	 * @see #setProb(String)
+	 * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityOrType_Prob()
+	 * @model default="1" unsettable="true" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='prob' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	String getProb();
 
-    /**
-     * Sets the value of the '{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb
-     * <em>Prob</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @param value
-     *            the new value of the '<em>Prob</em>' attribute.
-     * @see #isSetProb()
-     * @see #unsetProb()
-     * @see #getProb()
-     * @generated
-     */
-    void setProb(String value);
+	/**
+	 * Sets the value of the '{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb <em>Prob</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Prob</em>' attribute.
+	 * @see #isSetProb()
+	 * @see #unsetProb()
+	 * @see #getProb()
+	 * @generated
+	 */
+	void setProb(String value);
 
-    /**
-     * Unsets the value of the '{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb
-     * <em>Prob</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @see #isSetProb()
-     * @see #getProb()
-     * @see #setProb(String)
-     * @generated
-     */
-    void unsetProb();
+	/**
+	 * Unsets the value of the '{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb <em>Prob</em>}' attribute.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #isSetProb()
+	 * @see #getProb()
+	 * @see #setProb(String)
+	 * @generated
+	 */
+	void unsetProb();
 
-    /**
-     * Returns whether the value of the '
-     * {@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb <em>Prob</em>}' attribute is
-     * set. <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @return whether the value of the '<em>Prob</em>' attribute is set.
-     * @see #unsetProb()
-     * @see #getProb()
-     * @see #setProb(String)
-     * @generated
-     */
-    boolean isSetProb();
+	/**
+	 * Returns whether the value of the '{@link org.palladiosimulator.solver.lqn.ActivityOrType#getProb <em>Prob</em>}' attribute is set.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @return whether the value of the '<em>Prob</em>' attribute is set.
+	 * @see #unsetProb()
+	 * @see #getProb()
+	 * @see #setProb(String)
+	 * @generated
+	 */
+	boolean isSetProb();
 
 } // ActivityOrType

@@ -13,7 +13,7 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated lqn -->
       <factory
-            uri="file:/C:/Program%20Files/LQNSolvers/lqn-core.xsd"
+            uri="http://palladiosimulator.org/Solver/LQN/2.0"
             class="org.palladiosimulator.solver.lqn.provider.LqnItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider

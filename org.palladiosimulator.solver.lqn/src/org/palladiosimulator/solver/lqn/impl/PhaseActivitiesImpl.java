@@ -20,137 +20,120 @@ import org.palladiosimulator.solver.lqn.PhaseActivities;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * <ul>
- * <li>{@link org.palladiosimulator.solver.lqn.impl.PhaseActivitiesImpl#getActivity <em>Activity
- * </em>}</li>
- * </ul>
  * </p>
+ * <ul>
+ *   <li>{@link org.palladiosimulator.solver.lqn.impl.PhaseActivitiesImpl#getActivity <em>Activity</em>}</li>
+ * </ul>
  *
  * @generated
  */
 public class PhaseActivitiesImpl extends MinimalEObjectImpl.Container implements PhaseActivities {
-    /**
-     * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference
-     * list. <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @see #getActivity()
-     * @generated
-     * @ordered
-     */
-    protected EList<ActivityPhasesType> activity;
+	/**
+	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #getActivity()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ActivityPhasesType> activity;
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    protected PhaseActivitiesImpl() {
-        super();
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PhaseActivitiesImpl() {
+		super();
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    @Override
-    protected EClass eStaticClass() {
-        return LqnPackage.Literals.PHASE_ACTIVITIES;
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return LqnPackage.Literals.PHASE_ACTIVITIES;
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    @Override
-    public EList<ActivityPhasesType> getActivity() {
-        if (this.activity == null)
-        {
-            this.activity = new EObjectContainmentEList<ActivityPhasesType>(ActivityPhasesType.class, this,
-                    LqnPackage.PHASE_ACTIVITIES__ACTIVITY);
-        }
-        return this.activity;
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ActivityPhasesType> getActivity() {
+		if (activity == null) {
+			activity = new EObjectContainmentEList<ActivityPhasesType>(ActivityPhasesType.class, this,
+					LqnPackage.PHASE_ACTIVITIES__ACTIVITY);
+		}
+		return activity;
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    @Override
-    public NotificationChain eInverseRemove(final InternalEObject otherEnd, final int featureID,
-            final NotificationChain msgs) {
-        switch (featureID)
-        {
-        case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
-            return ((InternalEList<?>) this.getActivity()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+		case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
+			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    @Override
-    public Object eGet(final int featureID, final boolean resolve, final boolean coreType) {
-        switch (featureID)
-        {
-        case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
-            return this.getActivity();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+		case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
+			return getActivity();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    @SuppressWarnings("unchecked")
-    @Override
-    public void eSet(final int featureID, final Object newValue) {
-        switch (featureID)
-        {
-        case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
-            this.getActivity().clear();
-            this.getActivity().addAll((Collection<? extends ActivityPhasesType>) newValue);
-            return;
-        }
-        super.eSet(featureID, newValue);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+		case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
+			getActivity().clear();
+			getActivity().addAll((Collection<? extends ActivityPhasesType>) newValue);
+			return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    @Override
-    public void eUnset(final int featureID) {
-        switch (featureID)
-        {
-        case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
-            this.getActivity().clear();
-            return;
-        }
-        super.eUnset(featureID);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+		case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
+			getActivity().clear();
+			return;
+		}
+		super.eUnset(featureID);
+	}
 
-    /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     *
-     * @generated
-     */
-    @Override
-    public boolean eIsSet(final int featureID) {
-        switch (featureID)
-        {
-        case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
-            return this.activity != null && !this.activity.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+		case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
+			return activity != null && !activity.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // PhaseActivitiesImpl
