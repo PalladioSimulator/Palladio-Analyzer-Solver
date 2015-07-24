@@ -223,18 +223,20 @@ public class LqnXmlHandler {
 		String content = new String(b);
 		content = content.replaceAll("lqn-model", "LqnModelType");
 		
-//		String lqnDir = System.getenv("LQNDIR");
-//		if (lqnDir != null && lqnDir !=""){
-//			lqnDir = lqnDir.replaceAll("\\\\", "/");
-//			//lqnDir = lqnDir.replaceAll(" ", "%20");
-//			content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"", "xmlns=\"file:///"+lqnDir+"lqn-core.xsd\"");
-//		} else {
-//			content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"", "xmlns=\"file:///C:/Program%20Files/LQN%20Solvers/lqn-core.xsd\"");
-//		}
-		content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"", "xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"");
+		String lqnDir = System.getenv("LQNDIR");
+		if (lqnDir != null && lqnDir !=""){
+			
+			lqnDir = lqnDir.replaceAll("\\\\", "/");
+			lqnDir = lqnDir.replaceAll(" ", "%20");
+			content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:///"+lqnDir+"lqn.xsd\"", "xmlns:lqn=\"file:/C:/Program Files/LQNSolvers/lqn-core.xsd");
+		} else {
+			//content = content.replaceAll("LQNSolvers/lqn-core.xsd", "LQN Solvers/lqn.xsd");
+		}
 		
-		
+		content = content.replaceAll("xsi:noNamespaceSchemaLocation", "xmlns:lqn");
 		content = content.replaceAll("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"", "xmi:version=\"2.0\" xmlns:xmi=\"http://www.omg.org/XMI\"");
+		
+		content = content.replaceAll("xmlns=\"http://palladiosimulator.org/Solver/LQN/1.0\"", "xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"");
 
 		content = content.replaceAll("entry-activity-graph", "entryActivityGraph");
 		content = content.replaceAll("think-time", "thinkTime");
