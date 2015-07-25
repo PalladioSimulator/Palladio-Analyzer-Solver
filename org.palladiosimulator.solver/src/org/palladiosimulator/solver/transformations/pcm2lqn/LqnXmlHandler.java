@@ -6,8 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.URI;
@@ -19,7 +17,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
-import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.palladiosimulator.solver.lqn.DocumentRoot;
 import org.palladiosimulator.solver.lqn.LqnFactory;
 import org.palladiosimulator.solver.lqn.LqnModelType;
