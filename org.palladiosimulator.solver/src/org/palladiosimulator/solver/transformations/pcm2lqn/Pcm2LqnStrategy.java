@@ -85,7 +85,6 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	private String filenameInputXML;
 	private String filenameResultHumanReadable;
 	private String filenameResultXML;
-	private String filenameLQN;
 
 	// the lqn tools should be in the system path
 	private static final String FILENAME_LQNS = "lqns";
@@ -110,6 +109,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		String timestamp = dateFormat.format(date);
 
 		//TODO delete XML variable as lqn one is not used anymore?
+		//FIXME: the filename needs to be always the same as EMF serializes differently if other file extensions than the registered one are used. lqxo is registered. 
 		filenameInputXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn" + timestamp
 				+ ".in.lqxo";
@@ -119,8 +119,6 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		filenameResultXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn"
 				+ timestamp + ".out.lqxo";
-		filenameLQN = getOutputFolder() + System.getProperty("file.separator")
-				+ "pcm2lqn" + timestamp + ".in.lqxo";
 	}
 
 	public String getFilenameResultXML() {
@@ -180,7 +178,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				}
 				if (lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_HUMAN)
 					) {
-					inputFile = filenameLQN;
+					inputFile = filenameInputXML;
 					resultFile = filenameResultHumanReadable;
 					command = solverProgram
 							+ options
@@ -212,7 +210,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				
 				if (lqnSimOutputType.equals(MessageStrings.LQN_OUTPUT_HUMAN)
 					|| lqnSimOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)) {
-					inputFile = filenameLQN;
+					inputFile = filenameInputXML;
 					resultFile = filenameResultHumanReadable;
 					command = solverProgram
 							+ options
@@ -293,7 +291,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		/* return if results are available or throw exception. */
 		if(!solverProgram.equals(FILENAME_LINE)){
 			if (exitVal == LQNS_RETURN_SUCCESS) {
-				logger.warn("Analysis Result has been written to: " + resultFile);
+				logger.warn("Analysis Result has been written to the .out file (human readable), the input file (in which case the original is saved with ~ suffix), or " + resultFile);
 				if (lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)){
 					//showOutput(resultFile);
 					LQNHtmlResultGenerator result = new LQNHtmlResultGenerator(resultFile);
@@ -461,92 +459,6 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		//runLqn2Xml();
 		//runLqn2XmlReformat();
 
-	}
-
-	/**
-	 * Converts the resulting XML file back to the old LQN file format.
-	 */
-	private void runLqn2Xml() {
-		try {
-
-			ProcessBuilder pb = new ProcessBuilder(
-					splitToCommandArray(FILENAME_LQN2XML + " -o" + filenameLQN
-							+ " -Oxml " + filenameInputXML));
-			pb.redirectErrorStream(true);
-			// Process proc = Runtime.getRuntime().exec(
-			// FILENAME_LQN2XML+" -o" + FILENAME_LQN +
-			// " -Oxml " + FILENAME_INPUT_XML);
-
-			// StreamGobbler errorGobbler = new StreamGobbler(proc
-			// .getErrorStream(), "ERROR");
-			// StreamGobbler outputGobbler = new StreamGobbler(proc
-			// .getInputStream(), "OUTPUT");
-			// errorGobbler.start();
-			// outputGobbler.start();
-
-			Process proc = pb.start();
-
-			this.readStream(proc.getInputStream());
-
-			int exitVal = proc.waitFor();
-			proc.destroy();
-
-			if (exitVal == 0) {
-				logger.info("lqn2xml terminated successfully");
-			} else {
-				logger.error("lqn2xml terminated unsuccessfully. Exit value was "
-								+ exitVal + ".");
-			}
-
-		} catch (Throwable e) {
-			logger.error("lqn2xml terminated unsuccessfully. Exception "+e.getMessage());
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Performs a reformat of the resulting XML file in order to produce XML
-	 * which can be processed from lqns. This is done utilizing lqn2xml. Without
-	 * the reformat lqns don't like the XML file and will probably return an
-	 * error.
-	 * <p>
-	 * The reformatted file will be written to {@link #filenameResultXML}.
-	 */
-	private void runLqn2XmlReformat() {
-		try {
-			ProcessBuilder pb = new ProcessBuilder(
-					splitToCommandArray(FILENAME_LQN2XML + " -o"
-							+ filenameResultXML + " -Oxml " + filenameInputXML));
-			pb.redirectErrorStream(true);
-
-			// Process proc = Runtime.getRuntime().exec(
-			// FILENAME_LQN2XML+" -o" + FILENAME_RESULT_XML +
-			// " -Oxml " + FILENAME_INPUT_XML);
-			//			
-			Process proc = pb.start();
-
-			// StreamGobbler errorGobbler = new StreamGobbler(proc
-			// .getErrorStream(), "ERROR");
-			// StreamGobbler outputGobbler = new StreamGobbler(proc
-			// .getInputStream(), "OUTPUT");
-			// errorGobbler.start();
-			// outputGobbler.start();
-
-			this.readStream(proc.getInputStream());
-
-			int exitVal = proc.waitFor();
-			proc.destroy();
-
-			if (exitVal == 0) {
-				logger.info("lqn2xml terminated sucessfully");
-			} else {
-				logger
-						.warn("lqn2xml terminated unsuccessfully. Exit value was "
-								+ exitVal + ".");
-			}
-		} catch (Throwable e) {
-			e.printStackTrace();
-		}
 	}
 
 	private void runDSolver(PCMInstance model) {

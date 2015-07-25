@@ -2489,6 +2489,16 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getOutputResultType_BottleneckStrength() {
+		return (EAttribute) outputResultTypeEClass.getEStructuralFeatures().get(44);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -4661,6 +4671,7 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
 		createEAttribute(outputResultTypeEClass, OUTPUT_RESULT_TYPE__UTILIZATION);
 		createEAttribute(outputResultTypeEClass, OUTPUT_RESULT_TYPE__WAITING);
 		createEAttribute(outputResultTypeEClass, OUTPUT_RESULT_TYPE__WAITING_VARIANCE);
+		createEAttribute(outputResultTypeEClass, OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH);
 
 		parameterTypeEClass = createEClass(PARAMETER_TYPE);
 		createEAttribute(parameterTypeEClass, PARAMETER_TYPE__NAME);
@@ -5535,6 +5546,9 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
 		initEAttribute(getOutputResultType_WaitingVariance(), theXMLTypePackage.getDouble(), "waitingVariance", null, 0,
 				1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOutputResultType_BottleneckStrength(), theXMLTypePackage.getInt(), "bottleneckStrength", null,
+				0, 1, OutputResultType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(parameterTypeEClass, ParameterType.class, "ParameterType", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -6572,6 +6586,8 @@ public class LqnPackageImpl extends EPackageImpl implements LqnPackage {
 				new String[] { "kind", "attribute", "name", "waiting", "namespace", "##targetNamespace" });
 		addAnnotation(getOutputResultType_WaitingVariance(), source,
 				new String[] { "kind", "attribute", "name", "waiting-variance", "namespace", "##targetNamespace" });
+		addAnnotation(getOutputResultType_BottleneckStrength(), source,
+				new String[] { "kind", "attribute", "name", "bottleneck-strength", "namespace", "##targetNamespace" });
 		addAnnotation(parameterTypeEClass, source, new String[] { "name", "parameter_._type", "kind", "empty" });
 		addAnnotation(getParameterType_Name(), source,
 				new String[] { "kind", "attribute", "name", "name", "namespace", "##targetNamespace" });

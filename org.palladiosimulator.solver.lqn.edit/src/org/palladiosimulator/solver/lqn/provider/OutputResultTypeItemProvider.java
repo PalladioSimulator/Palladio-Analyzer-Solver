@@ -93,6 +93,7 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
 			addUtilizationPropertyDescriptor(object);
 			addWaitingPropertyDescriptor(object);
 			addWaitingVariancePropertyDescriptor(object);
+			addBottleneckStrengthPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -770,6 +771,22 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
 	}
 
 	/**
+	 * This adds a property descriptor for the Bottleneck Strength feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addBottleneckStrengthPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				getString("_UI_OutputResultType_bottleneckStrength_feature"),
+				getString("_UI_PropertyDescriptor_description", "_UI_OutputResultType_bottleneckStrength_feature",
+						"_UI_OutputResultType_type"),
+				LqnPackage.Literals.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH, true, false, false,
+				ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate
 	 * feature for an {@link org.eclipse.emf.edit.command.AddCommand},
 	 * {@link org.eclipse.emf.edit.command.RemoveCommand} or
@@ -875,6 +892,7 @@ public class OutputResultTypeItemProvider extends ItemProviderAdapter implements
 		case LqnPackage.OUTPUT_RESULT_TYPE__UTILIZATION:
 		case LqnPackage.OUTPUT_RESULT_TYPE__WAITING:
 		case LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE:
+		case LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH:
 			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95:

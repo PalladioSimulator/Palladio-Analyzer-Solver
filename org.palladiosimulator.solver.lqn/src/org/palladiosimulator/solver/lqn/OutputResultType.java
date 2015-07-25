@@ -56,6 +56,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getUtilization <em>Utilization</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getWaiting <em>Waiting</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getWaitingVariance <em>Waiting Variance</em>}</li>
+ *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getBottleneckStrength <em>Bottleneck Strength</em>}</li>
  * </ul>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType()
@@ -2379,5 +2380,32 @@ public interface OutputResultType extends EObject {
 	 * @generated
 	 */
 	boolean isSetWaitingVariance();
+
+	/**
+	 * Returns the value of the '<em><b>Bottleneck Strength</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Bottleneck Strength</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Bottleneck Strength</em>' attribute.
+	 * @see #setBottleneckStrength(int)
+	 * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType_BottleneckStrength()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+	 *        extendedMetaData="kind='attribute' name='bottleneck-strength' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	int getBottleneckStrength();
+
+	/**
+	 * Sets the value of the '{@link org.palladiosimulator.solver.lqn.OutputResultType#getBottleneckStrength <em>Bottleneck Strength</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Bottleneck Strength</em>' attribute.
+	 * @see #getBottleneckStrength()
+	 * @generated
+	 */
+	void setBottleneckStrength(int value);
 
 } // OutputResultType

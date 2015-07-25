@@ -2904,13 +2904,22 @@ public interface LqnPackage extends EPackage {
 	int OUTPUT_RESULT_TYPE__WAITING_VARIANCE = 43;
 
 	/**
+	 * The feature id for the '<em><b>Bottleneck Strength</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH = 44;
+
+	/**
 	 * The number of structural features of the '<em>Output Result Type</em>' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
 	 * @generated
 	 * @ordered
 	 */
-	int OUTPUT_RESULT_TYPE_FEATURE_COUNT = 44;
+	int OUTPUT_RESULT_TYPE_FEATURE_COUNT = 45;
 
 	/**
 	 * The number of operations of the '<em>Output Result Type</em>' class.
@@ -7430,6 +7439,17 @@ public interface LqnPackage extends EPackage {
 	EAttribute getOutputResultType_WaitingVariance();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.palladiosimulator.solver.lqn.OutputResultType#getBottleneckStrength <em>Bottleneck Strength</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Bottleneck Strength</em>'.
+	 * @see org.palladiosimulator.solver.lqn.OutputResultType#getBottleneckStrength()
+	 * @see #getOutputResultType()
+	 * @generated
+	 */
+	EAttribute getOutputResultType_BottleneckStrength();
+
+	/**
 	 * Returns the meta object for class '{@link org.palladiosimulator.solver.lqn.ParameterType <em>Parameter Type</em>}'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Parameter Type</em>'.
@@ -11243,6 +11263,14 @@ public interface LqnPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute OUTPUT_RESULT_TYPE__WAITING_VARIANCE = eINSTANCE.getOutputResultType_WaitingVariance();
+
+		/**
+		 * The meta object literal for the '<em><b>Bottleneck Strength</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH = eINSTANCE.getOutputResultType_BottleneckStrength();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ParameterTypeImpl <em>Parameter Type</em>}' class.

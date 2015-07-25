@@ -64,6 +64,7 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type1;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getUtilization <em>Utilization</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getWaiting <em>Waiting</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getWaitingVariance <em>Waiting Variance</em>}</li>
+ *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getBottleneckStrength <em>Bottleneck Strength</em>}</li>
  * </ul>
  *
  * @generated
@@ -1259,6 +1260,26 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @ordered
 	 */
 	protected boolean waitingVarianceESet;
+
+	/**
+	 * The default value of the '{@link #getBottleneckStrength() <em>Bottleneck Strength</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBottleneckStrength()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int BOTTLENECK_STRENGTH_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getBottleneckStrength() <em>Bottleneck Strength</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBottleneckStrength()
+	 * @generated
+	 * @ordered
+	 */
+	protected int bottleneckStrength = BOTTLENECK_STRENGTH_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -3424,6 +3445,30 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int getBottleneckStrength() {
+		return bottleneckStrength;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBottleneckStrength(int newBottleneckStrength) {
+		int oldBottleneckStrength = bottleneckStrength;
+		bottleneckStrength = newBottleneckStrength;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH,
+					oldBottleneckStrength, bottleneckStrength));
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -3533,6 +3578,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 			return getWaiting();
 		case LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE:
 			return getWaitingVariance();
+		case LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH:
+			return getBottleneckStrength();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -3675,6 +3722,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 			return;
 		case LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE:
 			setWaitingVariance((Double) newValue);
+			return;
+		case LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH:
+			setBottleneckStrength((Integer) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -3819,6 +3869,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		case LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE:
 			unsetWaitingVariance();
 			return;
+		case LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH:
+			setBottleneckStrength(BOTTLENECK_STRENGTH_EDEFAULT);
+			return;
 		}
 		super.eUnset(featureID);
 	}
@@ -3918,6 +3971,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 			return isSetWaiting();
 		case LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE:
 			return isSetWaitingVariance();
+		case LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH:
+			return bottleneckStrength != BOTTLENECK_STRENGTH_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -4142,6 +4197,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 			result.append(waitingVariance);
 		else
 			result.append("<unset>");
+		result.append(", bottleneckStrength: ");
+		result.append(bottleneckStrength);
 		result.append(')');
 		return result.toString();
 	}
