@@ -89,7 +89,6 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	// the lqn tools should be in the system path
 	private static final String FILENAME_LQNS = "lqns";
 	private static final String FILENAME_LQSIM = "lqsim";
-	private static final String FILENAME_LQN2XML = "lqn2xml";
 	private static final String FILENAME_LINE = "LINE";
 
 	// Return values of lqns
@@ -108,8 +107,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		Date date = new Date();
 		String timestamp = dateFormat.format(date);
 
-		//TODO delete XML variable as lqn one is not used anymore?
-		//FIXME: the filename needs to be always the same as EMF serializes differently if other file extensions than the registered one are used. lqxo is registered. 
+		//file extension for XML should be .lqxo as that is registered in the org.palladio....lqn plugins now. Should not be one of .in, .lqn or .xlqn, as these are interpreted as the textual format by lqns. All other files extensions are interpreted as XML (see lqns manual). 
 		filenameInputXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn" + timestamp
 				+ ".in.lqxo";
@@ -150,7 +148,6 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 
 		String resultFile = "";
 		String inputFile = "";
-		String xmlresultFile = "";
 
 		long timeBeforeCalc = System.nanoTime();
 
@@ -162,68 +159,55 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 			
 			
 			
-			// Process proc = null;
-			if (solverProgram.equals(FILENAME_LQNS)) {
-				
-				// check whether Pragmas (see LQN documentation) are used and if yes, set -P option
-				if (!config.getStopOnMessageLossLQNS() 
-						|| !"".equals(config.getPragmas())){
-					options += " -P ";
-					if (!config.getStopOnMessageLossLQNS()){
-						options += "stop-on-message-loss=false "; 
+			if (solverProgram.equals(FILENAME_LQNS) || solverProgram.equals(FILENAME_LQSIM)){
+				String lqnOutputType = "";
+				if (solverProgram.equals(FILENAME_LQNS)) {
+
+					// check whether Pragmas (see LQN documentation) are used and if yes, set -P option
+					if (!config.getStopOnMessageLossLQNS() 
+							|| !"".equals(config.getPragmas())){
+						options += " -P ";
+						if (!config.getStopOnMessageLossLQNS()){
+							options += "stop-on-message-loss=false "; 
+						}
+						if (!"".equals(config.getPragmas())){
+							options += config.getPragmas();
+						}
 					}
-					if (!"".equals(config.getPragmas())){
-						options += config.getPragmas();
+					
+					lqnOutputType = lqnsOutputType;
+				} else if (solverProgram.equals(FILENAME_LQSIM)) {
+					// LQSim config
+					String blocks = config.getLQSimBlocks();
+					String runtime = config.getLQSimRuntime();
+
+					if (runtime != null && runtime != ""){
+						options += " -A "+runtime;
 					}
+					if (blocks != null && blocks != ""){
+						options += " -B "+blocks;
+					}
+					if (!config.getStopOnMessageLossLQSim()){
+						options += " -P stop-on-message-loss=false";
+					}
+					
+					lqnOutputType = lqnSimOutputType;
+
 				}
-				if (lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_HUMAN)
-					) {
+				if (lqnOutputType.equals(MessageStrings.LQN_OUTPUT_HUMAN)) {
 					inputFile = filenameInputXML;
 					resultFile = filenameResultHumanReadable;
 					command = solverProgram
 							+ options
 							+ " -o" + resultFile + " " + inputFile;
-				} else if (lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_XML)
-						|| lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)) {
-					// The lqns produces XML output when the input is as well in
-					// XML
+				} else if (lqnOutputType.equals(MessageStrings.LQN_OUTPUT_XML)
+						|| lqnOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)) {
+
 					inputFile = filenameInputXML;
 					resultFile = filenameResultXML;
 					command = solverProgram
 							+ options
-							+ " " + inputFile;
-				}
-			} else if (solverProgram.equals(FILENAME_LQSIM)) {
-				// LQSim config
-				String blocks = config.getLQSimBlocks();
-				String runtime = config.getLQSimRuntime();
-				
-				if (runtime != null && runtime != ""){
-					options += " -A "+runtime;
-				}
-				if (blocks != null && blocks != ""){
-					options += " -B "+blocks;
-				}
-				if (!config.getStopOnMessageLossLQSim()){
-					options += " -P stop-on-message-loss=false";
-				}
-				
-				if (lqnSimOutputType.equals(MessageStrings.LQN_OUTPUT_HUMAN)
-					|| lqnSimOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)) {
-					inputFile = filenameInputXML;
-					resultFile = filenameResultHumanReadable;
-					command = solverProgram
-							+ options
-							+ " -o" + resultFile + " " + inputFile;
-				} else if (lqnSimOutputType
-						.equals(MessageStrings.LQN_OUTPUT_XML)) {
-					// The lqsim produces XML output when the input is as well
-					// in XML
-					inputFile = filenameResultXML;
-					resultFile = inputFile;
-					command = solverProgram
-							+ options
-							+ " " + inputFile;
+							+ " -x -o" + resultFile + " " + inputFile;
 				}
 			} else if(solverProgram.equals(FILENAME_LINE)){			
 				//Using line requires interaction with the server so execute it directly here
