@@ -6,6 +6,7 @@ Then, the following manual changes were made
 * changed ns URI of this lqn element to "http://palladiosimulator.org/Solver/LQN/2.0" and the prefix to "org.palladiosimulator.solver"
 * in lqn.genmodel: renamed LqnCore root element to Lqn (property prefix, then file extension was changed automatically, too)
 * in lqn.genmodel, set base package of Lqn to org.palladiosimulator.solver
+* in lqn.genmodel, set file extension to .lqxo (as .lqn is interpreted as a textual file by lqns as default and .lqxo is the file extension used as default output by lqns) 
 
 Added manually
 * bottleneckStrength attribute in ecore file (with annotations for XML) 
