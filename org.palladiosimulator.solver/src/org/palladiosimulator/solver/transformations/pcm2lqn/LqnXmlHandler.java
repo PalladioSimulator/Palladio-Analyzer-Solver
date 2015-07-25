@@ -123,6 +123,7 @@ public class LqnXmlHandler {
 			//new LqnXmlToEmfMap("convVal", "conv_val")
 	};
 	
+
 	public LqnXmlHandler(LqnModelType anLqnModel) {
 		lqnModel = anLqnModel;
 	}
@@ -170,6 +171,7 @@ public class LqnXmlHandler {
 		
 		try {
 			resource.save(options);
+			
 		} catch (IOException e) {
 			logger.error(e.getMessage());
 		}
@@ -190,15 +192,14 @@ public class LqnXmlHandler {
 	 */
 	public static LqnModelType loadModelFromXMI(String fileName) {
 		// Revert the Ecore tag names
-		//revertXMLFile(fileName);
-		
-		URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
+		revertXMLFile(fileName);
 		
 		LqnModelType lqnModel = null;
 		
 		try {
-			Resource resource = loadIntoResourceSet(fileURI);
-			lqnModel = (LqnModelType) resource.getContents().get(0);
+			Resource resource = loadIntoResourceSet(fileName);
+			DocumentRoot documentRoot = (DocumentRoot) resource.getContents().get(0);
+			lqnModel = documentRoot.getLqnModel();
 			
 		} catch (IOException e) {
 			logger.error(e.getMessage());
@@ -237,25 +238,30 @@ public class LqnXmlHandler {
 		
 	}
 	
-	private static Resource loadIntoResourceSet(URI fileURI) throws IOException{
+	private static Resource loadIntoResourceSet(String fileName) throws IOException{
+		
+		
+		URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
 		
 		// Create a resource set.
 		ResourceSet resourceSet = new ResourceSetImpl();
 		
-		LqnResourceFactoryImpl factory = new LqnResourceFactoryImpl();
+		//LqnResourceFactoryImpl factory = new LqnResourceFactoryImpl();
 
 //		// Register the default resource factory -- only needed for stand-alone!
-		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
-				.put("lqxo",
-						new LqnResourceFactoryImpl());
+//		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap()
+//				.put("lqxo",
+//						new LqnResourceFactoryImpl());
 		
-		Resource resource = factory.createResource(fileURI);
+		//Resource resource = factory.createResource(fileURI);
 		
-		//Resource resource = resourceSet.createResource(fileURI);
+		Resource resource = resourceSet.createResource(fileURI);
 
-		Map<String, Boolean> options = new HashMap();
-		options.put(XMLResource.OPTION_EXTENDED_META_DATA, true);
-		resource.load(options);
+		//Map<String, Boolean> options = new HashMap();
+		//options.put(XMLResource.OPTION_EXTENDED_META_DATA, true);
+		
+		resource.load(Collections.EMPTY_MAP);
+
 		return resource;
 
 		
@@ -353,17 +359,19 @@ public class LqnXmlHandler {
 		} else {
 			//content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn-core.xsd", "xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0");
 			//content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn.xsd", "xmlns:lqn=\"http://palladiosimulator.org/Solver/LQN/2.0");
-			content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn.xsd", "xsi:schemaLocation=\"null http://palladiosimulator.org/Solver/LQN/2.0");
+			//content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn.xsd", "xsi:schemaLocation=\"null http://palladiosimulator.org/Solver/LQN/2.0");
 			//content = content.replaceAll("xsi:noNamespaceSchemaLocation=\"file:/.*/lqn.xsd\"", "xmlns=\"http://palladiosimulator.org/Solver/LQN/2.0\"");
+			content = content.replaceAll("xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"file:///C:/Program Files/LQN Solvers/lqn.xsd\"", "");
+			
 		}
 				
-		for (LqnXmlToEmfMap term : lqnTermsToReplace) {
-			content = content.replaceAll(term.getLqnXmlTerm(), term.getLqnEmfTerm());
-		}
-		
-		for (LqnXmlToEmfMap term : lqnTermsToReplaceToEmf) {
-			content = content.replaceAll(term.getLqnXmlTerm(), term.getLqnEmfTerm());
-		}
+//		for (LqnXmlToEmfMap term : lqnTermsToReplace) {
+//			content = content.replaceAll(term.getLqnXmlTerm(), term.getLqnEmfTerm());
+//		}
+//		
+//		for (LqnXmlToEmfMap term : lqnTermsToReplaceToEmf) {
+//			content = content.replaceAll(term.getLqnXmlTerm(), term.getLqnEmfTerm());
+//		}
 		
 		
 		writeContentToFile(filename, content);
