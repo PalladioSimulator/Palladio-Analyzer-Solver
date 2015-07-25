@@ -867,10 +867,11 @@ public class LqnEditor extends MultiPageEditorPart
 	/**
 	 * This is the method called to load a resource into the editing domain's resource set based on the editor's input.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
+	 * @generated not
+	 * Manually removed second argument from call to EditUIUtil as that has only been added in org.eclipse.emf-edit.ui.util 2.11
 	 */
 	public void createModel() {
-		URI resourceURI = EditUIUtil.getURI(getEditorInput(), editingDomain.getResourceSet().getURIConverter());
+		URI resourceURI = EditUIUtil.getURI(getEditorInput());
 		Exception exception = null;
 		Resource resource = null;
 		try {
