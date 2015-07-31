@@ -27,17 +27,16 @@ import junit.framework.JUnit4TestAdapter;
 public class LQNTest {
 
 	private static Logger logger = Logger.getLogger(LQNTest.class.getName());
-    private static final String FILENAME_INPUT = "C:\\Temp\\test.xml";
-    private static final String FILENAME_RESULT = "C:\\Temp\\test.out";
-    private static final String FILENAME_LQN = "C:\\Temp\\test.lqn";;
-
+    private static final String FILENAME_INPUT = "C:\\Temp\\test.lqxo";
+    private static final String FILENAME_RESULT = "C:\\Temp\\test.out.lqxo";
+    
     @Before
     public void setUp() {
 
     }
 
     @Test
-    public void handle() {
+    public void handle() throws IOException {
 
         final LqnFactory fac = LqnFactory.eINSTANCE;
         final LqnModelType lmt = fac.createLqnModelType();
@@ -58,27 +57,26 @@ public class LQNTest {
         LqnXmlHandler handler = new LqnXmlHandler(lmt);
         handler.saveModelToXMI(FILENAME_INPUT);
         LqnXmlHandler.fixXMLFile(FILENAME_INPUT);
-        runLqnTools();
+        
+        LqnXmlHandler.loadModelFromXMI(FILENAME_INPUT);
+        
+        /* removed actually running lqns as that needs to be available in the environment */
+        //runLqnTools();
 
-        printResultToConsole();
+        //printResultToConsole();
 
     }
 
-    private void printResultToConsole() {
+    private void printResultToConsole() throws IOException {
         FileInputStream fis = null;
         byte b[] = null;
-        try {
-            fis = new FileInputStream(FILENAME_RESULT);
-            int x = 0;
-            x = fis.available();
-            b = new byte[x];
-            fis.read(b);
-            fis.close();
-        } catch (final FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (final IOException e) {
-            e.printStackTrace();
-        }
+
+        fis = new FileInputStream(FILENAME_RESULT);
+        int x = 0;
+        x = fis.available();
+        b = new byte[x];
+        fis.read(b);
+        fis.close();
 
         final String content = new String(b);
         System.out.println(content);
@@ -86,26 +84,24 @@ public class LQNTest {
 
     private void runLqnTools() {
         try {
-            Runtime.getRuntime().exec("lqn2xml -o" + FILENAME_LQN + " -Olqn " + FILENAME_INPUT);
-            Thread.sleep(500);
-            Runtime.getRuntime().exec("lqns -o" + FILENAME_RESULT + " " + FILENAME_LQN);
+           Runtime.getRuntime().exec("lqns -x -o" + FILENAME_RESULT + " " + FILENAME_INPUT);
 
         } catch (final IOException e) {
             e.printStackTrace();
-        } catch (final InterruptedException e) {
-            e.printStackTrace();
-        }
+        } 
     }
 
     private void getProcessor3(final LqnFactory fac, final LqnModelType lmt) {
 
         final ProcessorType pt = fac.createProcessorType();
         pt.setName("FileServer");
+        pt.setMultiplicity(new BigInteger("200"));
         pt.setScheduling(SchedulingType.FCFS);
         lmt.getProcessor().add(pt);
 
         final TaskType tt = fac.createTaskType();
         tt.setName("FileServer");
+        tt.setMultiplicity(new BigInteger("200"));
         tt.setScheduling(TaskSchedulingType.FCFS);
         pt.getTask().add(tt);
 
@@ -153,11 +149,13 @@ public class LQNTest {
     private void getProcessor2(final LqnFactory fac, final LqnModelType lmt) {
         final ProcessorType pt2 = fac.createProcessorType();
         pt2.setName("Application");
+        pt2.setMultiplicity(new BigInteger("200"));
         pt2.setScheduling(SchedulingType.FCFS);
         lmt.getProcessor().add(pt2);
 
         final TaskType tt2 = fac.createTaskType();
         tt2.setName("Application");
+        tt2.setMultiplicity(new BigInteger("200"));
         tt2.setScheduling(TaskSchedulingType.FCFS);
         pt2.getTask().add(tt2);
 
