@@ -27,8 +27,8 @@ import junit.framework.JUnit4TestAdapter;
 public class LQNTest {
 
 	private static Logger logger = Logger.getLogger(LQNTest.class.getName());
-    private static final String FILENAME_INPUT = "C:\\Temp\\test.lqxo";
-    private static final String FILENAME_RESULT = "C:\\Temp\\test.out.lqxo";
+    private static final String FILENAME_INPUT = "/test.lqxo";
+    private static final String FILENAME_RESULT = "/test.out.lqxo";
     
     @Before
     public void setUp() {
@@ -37,6 +37,8 @@ public class LQNTest {
 
     @Test
     public void handle() throws IOException {
+    	
+    	String tmpdir = System.getProperty("java.io.tmpdir");
 
         final LqnFactory fac = LqnFactory.eINSTANCE;
         final LqnModelType lmt = fac.createLqnModelType();
@@ -55,10 +57,10 @@ public class LQNTest {
         getProcessor3(fac, lmt);
 
         LqnXmlHandler handler = new LqnXmlHandler(lmt);
-        handler.saveModelToXMI(FILENAME_INPUT);
-        LqnXmlHandler.fixXMLFile(FILENAME_INPUT);
+        handler.saveModelToXMI(tmpdir+FILENAME_INPUT);
+        LqnXmlHandler.fixXMLFile(tmpdir+FILENAME_INPUT);
         
-        LqnXmlHandler.loadModelFromXMI(FILENAME_INPUT);
+        LqnXmlHandler.loadModelFromXMI(tmpdir+FILENAME_INPUT);
         
         /* removed actually running lqns as that needs to be available in the environment */
         //runLqnTools();
