@@ -20,7 +20,8 @@ import org.palladiosimulator.solver.lqn.OutputEntryDistributionType;
  * --> <!-- end-user-doc -->
  * @generated
  */
-public class OutputEntryDistributionTypeItemProvider extends OutputDistributionTypeItemProvider {
+public class OutputEntryDistributionTypeItemProvider extends
+		OutputDistributionTypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -54,13 +55,17 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 	 * @generated
 	 */
 	protected void addPhasePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutputEntryDistributionType_phase_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutputEntryDistributionType_phase_feature",
-								"_UI_OutputEntryDistributionType_type"),
-				LqnPackage.Literals.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE, true, false, false,
-				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_OutputEntryDistributionType_phase_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputEntryDistributionType_phase_feature",
+						"_UI_OutputEntryDistributionType_type"),
+				LqnPackage.Literals.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
+				true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -70,7 +75,10 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/OutputEntryDistributionType"));
+		return overlayImage(
+				object,
+				getResourceLocator().getImage(
+						"full/obj16/OutputEntryDistributionType"));
 	}
 
 	/**
@@ -82,7 +90,8 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 	@Override
 	public String getText(Object object) {
 		OutputEntryDistributionType outputEntryDistributionType = (OutputEntryDistributionType) object;
-		return getString("_UI_OutputEntryDistributionType_type") + " " + outputEntryDistributionType.getBinSize();
+		return getString("_UI_OutputEntryDistributionType_type") + " "
+				+ outputEntryDistributionType.getBinSize();
 	}
 
 	/**
@@ -97,7 +106,8 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 
 		switch (notification.getFeatureID(OutputEntryDistributionType.class)) {
 		case LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -110,7 +120,8 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 
@@ -121,7 +132,8 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 	 * @generated
 	 */
 	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+	public String getCreateChildText(Object owner, Object feature,
+			Object child, Collection<?> selection) {
 		Object childFeature = feature;
 		Object childObject = child;
 
@@ -130,8 +142,9 @@ public class OutputEntryDistributionTypeItemProvider extends OutputDistributionT
 				|| childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
 
 		if (qualify) {
-			return getString("_UI_CreateChild_text2",
-					new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+			return getString("_UI_CreateChild_text2", new Object[] {
+					getTypeText(childObject), getFeatureText(childFeature),
+					getTypeText(owner) });
 		}
 		return super.getCreateChildText(owner, feature, child, selection);
 	}

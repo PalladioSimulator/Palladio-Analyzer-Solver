@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.InPortType#getConnectFrom <em>Connect From</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.InPortType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.InPortType#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getInPortType()
  * @model extendedMetaData="name='in-port_._type' kind='empty'"

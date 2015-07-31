@@ -22,15 +22,16 @@ import org.palladiosimulator.solver.lqn.OutputResultType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getResultCall <em>Result Call</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl#getDest <em>Dest</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class MakingCallTypeImpl extends MinimalEObjectImpl.Container implements MakingCallType {
+public class MakingCallTypeImpl extends MinimalEObjectImpl.Container implements
+		MakingCallType {
 	/**
 	 * The cached value of the '{@link #getResultCall() <em>Result Call</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -84,7 +85,8 @@ public class MakingCallTypeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public EList<OutputResultType> getResultCall() {
 		if (resultCall == null) {
-			resultCall = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
+			resultCall = new EObjectContainmentEList<OutputResultType>(
+					OutputResultType.class, this,
 					LqnPackage.MAKING_CALL_TYPE__RESULT_CALL);
 		}
 		return resultCall;
@@ -108,7 +110,8 @@ public class MakingCallTypeImpl extends MinimalEObjectImpl.Container implements 
 		String oldDest = dest;
 		dest = newDest;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MAKING_CALL_TYPE__DEST, oldDest, dest));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MAKING_CALL_TYPE__DEST, oldDest, dest));
 	}
 
 	/**
@@ -116,10 +119,12 @@ public class MakingCallTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
-			return ((InternalEList<?>) getResultCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getResultCall()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -149,7 +154,8 @@ public class MakingCallTypeImpl extends MinimalEObjectImpl.Container implements 
 		switch (featureID) {
 		case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
 			getResultCall().clear();
-			getResultCall().addAll((Collection<? extends OutputResultType>) newValue);
+			getResultCall().addAll(
+					(Collection<? extends OutputResultType>) newValue);
 			return;
 		case LqnPackage.MAKING_CALL_TYPE__DEST:
 			setDest((String) newValue);
@@ -185,7 +191,8 @@ public class MakingCallTypeImpl extends MinimalEObjectImpl.Container implements 
 		case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
 			return resultCall != null && !resultCall.isEmpty();
 		case LqnPackage.MAKING_CALL_TYPE__DEST:
-			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT.equals(dest);
+			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT
+					.equals(dest);
 		}
 		return super.eIsSet(featureID);
 	}

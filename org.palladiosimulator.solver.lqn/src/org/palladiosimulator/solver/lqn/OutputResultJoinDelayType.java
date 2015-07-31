@@ -10,13 +10,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultJoinDelayType#getResultConf95 <em>Result Conf95</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultJoinDelayType#getResultConf99 <em>Result Conf99</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultJoinDelayType#getJoinVariance <em>Join Variance</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultJoinDelayType#getJoinWaiting <em>Join Waiting</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultJoinDelayType()
  * @model extendedMetaData="name='OutputResultJoinDelayType' kind='elementOnly'"

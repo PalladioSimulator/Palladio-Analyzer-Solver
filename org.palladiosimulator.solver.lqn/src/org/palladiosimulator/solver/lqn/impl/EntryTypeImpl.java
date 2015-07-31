@@ -29,7 +29,6 @@ import org.palladiosimulator.solver.lqn.TypeType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getResultEntry <em>Result Entry</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getServiceTimeDistribution <em>Service Time Distribution</em>}</li>
@@ -43,10 +42,12 @@ import org.palladiosimulator.solver.lqn.TypeType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getSemaphore <em>Semaphore</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl#getType <em>Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class EntryTypeImpl extends MinimalEObjectImpl.Container implements EntryType {
+public class EntryTypeImpl extends MinimalEObjectImpl.Container implements
+		EntryType {
 	/**
 	 * The cached value of the '{@link #getResultEntry() <em>Result Entry</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -271,7 +272,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 	@Override
 	public EList<OutputResultType> getResultEntry() {
 		if (resultEntry == null) {
-			resultEntry = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
+			resultEntry = new EObjectContainmentEList<OutputResultType>(
+					OutputResultType.class, this,
 					LqnPackage.ENTRY_TYPE__RESULT_ENTRY);
 		}
 		return resultEntry;
@@ -285,7 +287,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 	public EList<OutputEntryDistributionType> getServiceTimeDistribution() {
 		if (serviceTimeDistribution == null) {
 			serviceTimeDistribution = new EObjectContainmentEList<OutputEntryDistributionType>(
-					OutputEntryDistributionType.class, this, LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION);
+					OutputEntryDistributionType.class, this,
+					LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION);
 		}
 		return serviceTimeDistribution;
 	}
@@ -297,7 +300,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 	@Override
 	public EList<EntryMakingCallType> getForwarding() {
 		if (forwarding == null) {
-			forwarding = new EObjectContainmentEList<EntryMakingCallType>(EntryMakingCallType.class, this,
+			forwarding = new EObjectContainmentEList<EntryMakingCallType>(
+					EntryMakingCallType.class, this,
 					LqnPackage.ENTRY_TYPE__FORWARDING);
 		}
 		return forwarding;
@@ -316,13 +320,15 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEntryActivityGraph(EntryActivityGraph newEntryActivityGraph,
-			NotificationChain msgs) {
+	public NotificationChain basicSetEntryActivityGraph(
+			EntryActivityGraph newEntryActivityGraph, NotificationChain msgs) {
 		EntryActivityGraph oldEntryActivityGraph = entryActivityGraph;
 		entryActivityGraph = newEntryActivityGraph;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, oldEntryActivityGraph, newEntryActivityGraph);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
+					oldEntryActivityGraph, newEntryActivityGraph);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -340,16 +346,21 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		if (newEntryActivityGraph != entryActivityGraph) {
 			NotificationChain msgs = null;
 			if (entryActivityGraph != null)
-				msgs = ((InternalEObject) entryActivityGraph).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, null, msgs);
+				msgs = ((InternalEObject) entryActivityGraph).eInverseRemove(
+						this, EOPPOSITE_FEATURE_BASE
+								- LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
+						null, msgs);
 			if (newEntryActivityGraph != null)
-				msgs = ((InternalEObject) newEntryActivityGraph).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH, null, msgs);
+				msgs = ((InternalEObject) newEntryActivityGraph).eInverseAdd(
+						this, EOPPOSITE_FEATURE_BASE
+								- LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
+						null, msgs);
 			msgs = basicSetEntryActivityGraph(newEntryActivityGraph, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
 					newEntryActivityGraph, newEntryActivityGraph));
 	}
 
@@ -366,13 +377,15 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEntryPhaseActivities(PhaseActivities newEntryPhaseActivities,
-			NotificationChain msgs) {
+	public NotificationChain basicSetEntryPhaseActivities(
+			PhaseActivities newEntryPhaseActivities, NotificationChain msgs) {
 		PhaseActivities oldEntryPhaseActivities = entryPhaseActivities;
 		entryPhaseActivities = newEntryPhaseActivities;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, oldEntryPhaseActivities, newEntryPhaseActivities);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
+					oldEntryPhaseActivities, newEntryPhaseActivities);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -390,16 +403,25 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		if (newEntryPhaseActivities != entryPhaseActivities) {
 			NotificationChain msgs = null;
 			if (entryPhaseActivities != null)
-				msgs = ((InternalEObject) entryPhaseActivities).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, null, msgs);
+				msgs = ((InternalEObject) entryPhaseActivities)
+						.eInverseRemove(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
+								null, msgs);
 			if (newEntryPhaseActivities != null)
-				msgs = ((InternalEObject) newEntryPhaseActivities).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES, null, msgs);
+				msgs = ((InternalEObject) newEntryPhaseActivities)
+						.eInverseAdd(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
+								null, msgs);
 			msgs = basicSetEntryPhaseActivities(newEntryPhaseActivities, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
 					newEntryPhaseActivities, newEntryPhaseActivities));
 	}
 
@@ -421,7 +443,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -442,7 +465,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		Object oldOpenArrivalRate = openArrivalRate;
 		openArrivalRate = newOpenArrivalRate;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__OPEN_ARRIVAL_RATE,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__OPEN_ARRIVAL_RATE,
 					oldOpenArrivalRate, openArrivalRate));
 	}
 
@@ -466,8 +490,9 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		boolean oldPriorityESet = priorityESet;
 		priorityESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__PRIORITY, oldPriority,
-					priority, !oldPriorityESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__PRIORITY, oldPriority, priority,
+					!oldPriorityESet));
 	}
 
 	/**
@@ -481,7 +506,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		priority = PRIORITY_EDEFAULT;
 		priorityESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ENTRY_TYPE__PRIORITY, oldPriority,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.ENTRY_TYPE__PRIORITY, oldPriority,
 					PRIORITY_EDEFAULT, oldPriorityESet));
 	}
 
@@ -514,7 +540,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		boolean oldRwlockESet = rwlockESet;
 		rwlockESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__RWLOCK, oldRwlock, rwlock,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__RWLOCK, oldRwlock, rwlock,
 					!oldRwlockESet));
 	}
 
@@ -529,8 +556,9 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		rwlock = RWLOCK_EDEFAULT;
 		rwlockESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ENTRY_TYPE__RWLOCK, oldRwlock,
-					RWLOCK_EDEFAULT, oldRwlockESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.ENTRY_TYPE__RWLOCK, oldRwlock, RWLOCK_EDEFAULT,
+					oldRwlockESet));
 	}
 
 	/**
@@ -562,8 +590,9 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		boolean oldSemaphoreESet = semaphoreESet;
 		semaphoreESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__SEMAPHORE, oldSemaphore,
-					semaphore, !oldSemaphoreESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__SEMAPHORE, oldSemaphore, semaphore,
+					!oldSemaphoreESet));
 	}
 
 	/**
@@ -577,7 +606,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		semaphore = SEMAPHORE_EDEFAULT;
 		semaphoreESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ENTRY_TYPE__SEMAPHORE, oldSemaphore,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.ENTRY_TYPE__SEMAPHORE, oldSemaphore,
 					SEMAPHORE_EDEFAULT, oldSemaphoreESet));
 	}
 
@@ -610,8 +640,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		boolean oldTypeESet = typeESet;
 		typeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_TYPE__TYPE, oldType, type,
-					!oldTypeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_TYPE__TYPE, oldType, type, !oldTypeESet));
 	}
 
 	/**
@@ -625,7 +655,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		type = TYPE_EDEFAULT;
 		typeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ENTRY_TYPE__TYPE, oldType, TYPE_EDEFAULT,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.ENTRY_TYPE__TYPE, oldType, TYPE_EDEFAULT,
 					oldTypeESet));
 	}
 
@@ -643,14 +674,18 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
-			return ((InternalEList<?>) getResultEntry()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getResultEntry()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION:
-			return ((InternalEList<?>) getServiceTimeDistribution()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getServiceTimeDistribution())
+					.basicRemove(otherEnd, msgs);
 		case LqnPackage.ENTRY_TYPE__FORWARDING:
-			return ((InternalEList<?>) getForwarding()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getForwarding()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH:
 			return basicSetEntryActivityGraph(null, msgs);
 		case LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES:
@@ -702,15 +737,18 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		switch (featureID) {
 		case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
 			getResultEntry().clear();
-			getResultEntry().addAll((Collection<? extends OutputResultType>) newValue);
+			getResultEntry().addAll(
+					(Collection<? extends OutputResultType>) newValue);
 			return;
 		case LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION:
 			getServiceTimeDistribution().clear();
-			getServiceTimeDistribution().addAll((Collection<? extends OutputEntryDistributionType>) newValue);
+			getServiceTimeDistribution()
+					.addAll((Collection<? extends OutputEntryDistributionType>) newValue);
 			return;
 		case LqnPackage.ENTRY_TYPE__FORWARDING:
 			getForwarding().clear();
-			getForwarding().addAll((Collection<? extends EntryMakingCallType>) newValue);
+			getForwarding().addAll(
+					(Collection<? extends EntryMakingCallType>) newValue);
 			return;
 		case LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH:
 			setEntryActivityGraph((EntryActivityGraph) newValue);
@@ -794,7 +832,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
 			return resultEntry != null && !resultEntry.isEmpty();
 		case LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION:
-			return serviceTimeDistribution != null && !serviceTimeDistribution.isEmpty();
+			return serviceTimeDistribution != null
+					&& !serviceTimeDistribution.isEmpty();
 		case LqnPackage.ENTRY_TYPE__FORWARDING:
 			return forwarding != null && !forwarding.isEmpty();
 		case LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH:
@@ -802,7 +841,8 @@ public class EntryTypeImpl extends MinimalEObjectImpl.Container implements Entry
 		case LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES:
 			return entryPhaseActivities != null;
 		case LqnPackage.ENTRY_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		case LqnPackage.ENTRY_TYPE__OPEN_ARRIVAL_RATE:
 			return OPEN_ARRIVAL_RATE_EDEFAULT == null ? openArrivalRate != null
 					: !OPEN_ARRIVAL_RATE_EDEFAULT.equals(openArrivalRate);

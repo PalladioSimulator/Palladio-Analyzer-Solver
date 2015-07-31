@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.ServiceType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ServiceTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ServiceTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -62,12 +63,17 @@ public class ServiceTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ServiceType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ServiceType_name_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ServiceType_name_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_ServiceType_name_feature",
 								"_UI_ServiceType_type"),
-						LqnPackage.Literals.SERVICE_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+						LqnPackage.Literals.SERVICE_TYPE__NAME, true, false,
+						false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+						null, null));
 	}
 
 	/**
@@ -77,7 +83,8 @@ public class ServiceTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ServiceType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ServiceType"));
 	}
 
 	/**
@@ -105,7 +112,8 @@ public class ServiceTypeItemProvider extends ItemProviderAdapter implements IEdi
 
 		switch (notification.getFeatureID(ServiceType.class)) {
 		case LqnPackage.SERVICE_TYPE__NAME:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -118,7 +126,8 @@ public class ServiceTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

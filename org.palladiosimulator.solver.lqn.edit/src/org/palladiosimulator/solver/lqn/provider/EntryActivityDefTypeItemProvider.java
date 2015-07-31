@@ -24,7 +24,8 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvider {
+public class EntryActivityDefTypeItemProvider extends
+		ActivityDefBaseItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -59,12 +60,16 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 	 */
 	protected void addFirstActivityPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_EntryActivityDefType_firstActivity_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_EntryActivityDefType_firstActivity_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_EntryActivityDefType_firstActivity_feature",
 						"_UI_EntryActivityDefType_type"),
-				LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY, true, false, false,
-				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY,
+				true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -77,11 +82,14 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST);
-			childrenFeatures.add(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP);
+			childrenFeatures
+					.add(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST);
+			childrenFeatures
+					.add(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP);
 		}
 		return childrenFeatures;
 	}
@@ -105,7 +113,9 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/EntryActivityDefType"));
+		return overlayImage(object,
+				getResourceLocator()
+						.getImage("full/obj16/EntryActivityDefType"));
 	}
 
 	/**
@@ -133,11 +143,13 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 
 		switch (notification.getFeatureID(EntryActivityDefType.class)) {
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -150,19 +162,31 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST,
 				LqnFactory.eINSTANCE.createCallListType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
-				FeatureMapUtil.createEntry(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL,
-						LqnFactory.eINSTANCE.createActivityMakingCallType())));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
+						FeatureMapUtil
+								.createEntry(
+										LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL,
+										LqnFactory.eINSTANCE
+												.createActivityMakingCallType())));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
-				FeatureMapUtil.createEntry(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL,
-						LqnFactory.eINSTANCE.createActivityMakingCallType())));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__GROUP,
+						FeatureMapUtil
+								.createEntry(
+										LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL,
+										LqnFactory.eINSTANCE
+												.createActivityMakingCallType())));
 	}
 
 	/**
@@ -172,12 +196,14 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 	 * @generated
 	 */
 	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+	public String getCreateChildText(Object owner, Object feature,
+			Object child, Collection<?> selection) {
 		Object childFeature = feature;
 		Object childObject = child;
 
 		if (childFeature instanceof EStructuralFeature
-				&& FeatureMapUtil.isFeatureMap((EStructuralFeature) childFeature)) {
+				&& FeatureMapUtil
+						.isFeatureMap((EStructuralFeature) childFeature)) {
 			FeatureMap.Entry entry = (FeatureMap.Entry) childObject;
 			childFeature = entry.getEStructuralFeature();
 			childObject = entry.getValue();
@@ -187,8 +213,9 @@ public class EntryActivityDefTypeItemProvider extends ActivityDefBaseItemProvide
 				|| childFeature == LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL;
 
 		if (qualify) {
-			return getString("_UI_CreateChild_text2",
-					new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+			return getString("_UI_CreateChild_text2", new Object[] {
+					getTypeText(childObject), getFeatureText(childFeature),
+					getTypeText(owner) });
 		}
 		return super.getCreateChildText(owner, feature, child, selection);
 	}

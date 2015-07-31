@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.SlotType#getInterface <em>Interface</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.SlotType#getBinding <em>Binding</em>}</li>
@@ -19,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.SlotType#getId <em>Id</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.SlotType#getReplicNum <em>Replic Num</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getSlotType()
  * @model extendedMetaData="name='SlotType' kind='elementOnly'"

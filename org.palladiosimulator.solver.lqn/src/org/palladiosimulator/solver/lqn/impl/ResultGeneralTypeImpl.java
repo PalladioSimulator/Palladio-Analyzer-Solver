@@ -20,7 +20,6 @@ import org.palladiosimulator.solver.lqn.ValidType;
  * <em><b>Result General Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getMvaInfo <em>Mva Info</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getConvVal <em>Conv Val</em>}</li>
@@ -32,10 +31,12 @@ import org.palladiosimulator.solver.lqn.ValidType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getUserCpuTime <em>User Cpu Time</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl#getValid <em>Valid</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implements ResultGeneralType {
+public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container
+		implements ResultGeneralType {
 	/**
 	 * The cached value of the '{@link #getMvaInfo() <em>Mva Info</em>}' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -261,12 +262,14 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetMvaInfo(MvaInfoType newMvaInfo, NotificationChain msgs) {
+	public NotificationChain basicSetMvaInfo(MvaInfoType newMvaInfo,
+			NotificationChain msgs) {
 		MvaInfoType oldMvaInfo = mvaInfo;
 		mvaInfo = newMvaInfo;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO, oldMvaInfo, newMvaInfo);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO,
+					oldMvaInfo, newMvaInfo);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -285,15 +288,20 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 			NotificationChain msgs = null;
 			if (mvaInfo != null)
 				msgs = ((InternalEObject) mvaInfo).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO,
+						null, msgs);
 			if (newMvaInfo != null)
 				msgs = ((InternalEObject) newMvaInfo).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO,
+						null, msgs);
 			msgs = basicSetMvaInfo(newMvaInfo, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO, newMvaInfo,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO, newMvaInfo,
 					newMvaInfo));
 	}
 
@@ -317,7 +325,8 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		boolean oldConvValESet = convValESet;
 		convValESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL, oldConvVal,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL, oldConvVal,
 					convVal, !oldConvValESet));
 	}
 
@@ -332,8 +341,9 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		convVal = CONV_VAL_EDEFAULT;
 		convValESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL,
-					oldConvVal, CONV_VAL_EDEFAULT, oldConvValESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL, oldConvVal,
+					CONV_VAL_EDEFAULT, oldConvValESet));
 	}
 
 	/**
@@ -363,7 +373,8 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		XMLGregorianCalendar oldElapsedTime = elapsedTime;
 		elapsedTime = newElapsedTime;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__ELAPSED_TIME,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__ELAPSED_TIME,
 					oldElapsedTime, elapsedTime));
 	}
 
@@ -387,8 +398,9 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		boolean oldIterationsESet = iterationsESet;
 		iterationsESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS,
-					oldIterations, iterations, !oldIterationsESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS, oldIterations,
+					iterations, !oldIterationsESet));
 	}
 
 	/**
@@ -402,8 +414,9 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		iterations = ITERATIONS_EDEFAULT;
 		iterationsESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS,
-					oldIterations, ITERATIONS_EDEFAULT, oldIterationsESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS, oldIterations,
+					ITERATIONS_EDEFAULT, oldIterationsESet));
 	}
 
 	/**
@@ -433,7 +446,8 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		String oldPlatformInfo = platformInfo;
 		platformInfo = newPlatformInfo;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__PLATFORM_INFO,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__PLATFORM_INFO,
 					oldPlatformInfo, platformInfo));
 	}
 
@@ -455,8 +469,9 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		String oldSolverInfo = solverInfo;
 		solverInfo = newSolverInfo;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__SOLVER_INFO,
-					oldSolverInfo, solverInfo));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__SOLVER_INFO, oldSolverInfo,
+					solverInfo));
 	}
 
 	/**
@@ -477,7 +492,8 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		XMLGregorianCalendar oldSystemCpuTime = systemCpuTime;
 		systemCpuTime = newSystemCpuTime;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME,
 					oldSystemCpuTime, systemCpuTime));
 	}
 
@@ -499,7 +515,8 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		XMLGregorianCalendar oldUserCpuTime = userCpuTime;
 		userCpuTime = newUserCpuTime;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__USER_CPU_TIME,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__USER_CPU_TIME,
 					oldUserCpuTime, userCpuTime));
 	}
 
@@ -523,8 +540,9 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		boolean oldValidESet = validESet;
 		validESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_GENERAL_TYPE__VALID, oldValid,
-					valid, !oldValidESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_GENERAL_TYPE__VALID, oldValid, valid,
+					!oldValidESet));
 	}
 
 	/**
@@ -538,7 +556,8 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		valid = VALID_EDEFAULT;
 		validESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.RESULT_GENERAL_TYPE__VALID, oldValid,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.RESULT_GENERAL_TYPE__VALID, oldValid,
 					VALID_EDEFAULT, oldValidESet));
 	}
 
@@ -556,7 +575,8 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO:
 			return basicSetMvaInfo(null, msgs);
@@ -681,18 +701,22 @@ public class ResultGeneralTypeImpl extends MinimalEObjectImpl.Container implemen
 		case LqnPackage.RESULT_GENERAL_TYPE__CONV_VAL:
 			return isSetConvVal();
 		case LqnPackage.RESULT_GENERAL_TYPE__ELAPSED_TIME:
-			return ELAPSED_TIME_EDEFAULT == null ? elapsedTime != null : !ELAPSED_TIME_EDEFAULT.equals(elapsedTime);
+			return ELAPSED_TIME_EDEFAULT == null ? elapsedTime != null
+					: !ELAPSED_TIME_EDEFAULT.equals(elapsedTime);
 		case LqnPackage.RESULT_GENERAL_TYPE__ITERATIONS:
 			return isSetIterations();
 		case LqnPackage.RESULT_GENERAL_TYPE__PLATFORM_INFO:
-			return PLATFORM_INFO_EDEFAULT == null ? platformInfo != null : !PLATFORM_INFO_EDEFAULT.equals(platformInfo);
+			return PLATFORM_INFO_EDEFAULT == null ? platformInfo != null
+					: !PLATFORM_INFO_EDEFAULT.equals(platformInfo);
 		case LqnPackage.RESULT_GENERAL_TYPE__SOLVER_INFO:
-			return SOLVER_INFO_EDEFAULT == null ? solverInfo != null : !SOLVER_INFO_EDEFAULT.equals(solverInfo);
+			return SOLVER_INFO_EDEFAULT == null ? solverInfo != null
+					: !SOLVER_INFO_EDEFAULT.equals(solverInfo);
 		case LqnPackage.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME:
 			return SYSTEM_CPU_TIME_EDEFAULT == null ? systemCpuTime != null
 					: !SYSTEM_CPU_TIME_EDEFAULT.equals(systemCpuTime);
 		case LqnPackage.RESULT_GENERAL_TYPE__USER_CPU_TIME:
-			return USER_CPU_TIME_EDEFAULT == null ? userCpuTime != null : !USER_CPU_TIME_EDEFAULT.equals(userCpuTime);
+			return USER_CPU_TIME_EDEFAULT == null ? userCpuTime != null
+					: !USER_CPU_TIME_EDEFAULT.equals(userCpuTime);
 		case LqnPackage.RESULT_GENERAL_TYPE__VALID:
 			return isSetValid();
 		}

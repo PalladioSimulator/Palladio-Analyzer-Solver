@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -68,13 +69,16 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	protected void addCallOrderPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityDefBase_callOrder_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityDefBase_callOrder_feature",
-								"_UI_ActivityDefBase_type"),
-						LqnPackage.Literals.ACTIVITY_DEF_BASE__CALL_ORDER, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityDefBase_callOrder_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityDefBase_callOrder_feature",
+						"_UI_ActivityDefBase_type"),
+				LqnPackage.Literals.ACTIVITY_DEF_BASE__CALL_ORDER, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -84,13 +88,17 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	protected void addHostDemandCvsqPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityDefBase_hostDemandCvsq_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityDefBase_hostDemandCvsq_feature",
-								"_UI_ActivityDefBase_type"),
-						LqnPackage.Literals.ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityDefBase_hostDemandCvsq_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityDefBase_hostDemandCvsq_feature",
+						"_UI_ActivityDefBase_type"),
+				LqnPackage.Literals.ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -100,13 +108,17 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	protected void addHostDemandMeanPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityDefBase_hostDemandMean_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityDefBase_hostDemandMean_feature",
-								"_UI_ActivityDefBase_type"),
-						LqnPackage.Literals.ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityDefBase_hostDemandMean_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityDefBase_hostDemandMean_feature",
+						"_UI_ActivityDefBase_type"),
+				LqnPackage.Literals.ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -116,13 +128,17 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	protected void addMaxServiceTimePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityDefBase_maxServiceTime_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityDefBase_maxServiceTime_feature",
-								"_UI_ActivityDefBase_type"),
-						LqnPackage.Literals.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityDefBase_maxServiceTime_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityDefBase_maxServiceTime_feature",
+						"_UI_ActivityDefBase_type"),
+				LqnPackage.Literals.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -132,13 +148,16 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityDefBase_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityDefBase_name_feature",
-								"_UI_ActivityDefBase_type"),
-						LqnPackage.Literals.ACTIVITY_DEF_BASE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityDefBase_name_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityDefBase_name_feature",
+						"_UI_ActivityDefBase_type"),
+				LqnPackage.Literals.ACTIVITY_DEF_BASE__NAME, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -148,13 +167,16 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	protected void addThinkTimePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityDefBase_thinkTime_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityDefBase_thinkTime_feature",
-								"_UI_ActivityDefBase_type"),
-						LqnPackage.Literals.ACTIVITY_DEF_BASE__THINK_TIME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityDefBase_thinkTime_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityDefBase_thinkTime_feature",
+						"_UI_ActivityDefBase_type"),
+				LqnPackage.Literals.ACTIVITY_DEF_BASE__THINK_TIME, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -167,11 +189,14 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION);
-			childrenFeatures.add(LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION);
+			childrenFeatures
+					.add(LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_ACTIVITY);
 		}
 		return childrenFeatures;
 	}
@@ -195,7 +220,8 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ActivityDefBase"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ActivityDefBase"));
 	}
 
 	/**
@@ -228,11 +254,13 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 		case LqnPackage.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME:
 		case LqnPackage.ACTIVITY_DEF_BASE__NAME:
 		case LqnPackage.ACTIVITY_DEF_BASE__THINK_TIME:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION:
 		case LqnPackage.ACTIVITY_DEF_BASE__RESULT_ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -245,16 +273,23 @@ public class ActivityDefBaseItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
-				LqnFactory.eINSTANCE.createOutputDistributionType()));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
+						LqnFactory.eINSTANCE.createOutputDistributionType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
-				LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION,
+						LqnFactory.eINSTANCE
+								.createOutputEntryDistributionType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ACTIVITY_DEF_BASE__RESULT_ACTIVITY,
 				LqnFactory.eINSTANCE.createOutputResultType()));
 	}
 

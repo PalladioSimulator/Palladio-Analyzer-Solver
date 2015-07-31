@@ -10,10 +10,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.SynchCallType#getDest <em>Dest</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getSynchCallType()
  * @model extendedMetaData="name='synch-call_._type' kind='empty'"

@@ -23,7 +23,6 @@ import org.palladiosimulator.solver.lqn.SlotType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getInterface <em>Interface</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getBinding <em>Binding</em>}</li>
@@ -31,10 +30,12 @@ import org.palladiosimulator.solver.lqn.SlotType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getId <em>Id</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl#getReplicNum <em>Replic Num</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotType {
+public class SlotTypeImpl extends MinimalEObjectImpl.Container implements
+		SlotType {
 	/**
 	 * The cached value of the '{@link #getInterface() <em>Interface</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -152,12 +153,14 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetInterface(InterfaceType newInterface, NotificationChain msgs) {
+	public NotificationChain basicSetInterface(InterfaceType newInterface,
+			NotificationChain msgs) {
 		InterfaceType oldInterface = interface_;
 		interface_ = newInterface;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.SLOT_TYPE__INTERFACE, oldInterface, newInterface);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.SLOT_TYPE__INTERFACE,
+					oldInterface, newInterface);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -176,16 +179,18 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 			NotificationChain msgs = null;
 			if (interface_ != null)
 				msgs = ((InternalEObject) interface_).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
 			if (newInterface != null)
 				msgs = ((InternalEObject) newInterface).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.SLOT_TYPE__INTERFACE, null, msgs);
 			msgs = basicSetInterface(newInterface, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SLOT_TYPE__INTERFACE, newInterface,
-					newInterface));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SLOT_TYPE__INTERFACE, newInterface, newInterface));
 	}
 
 	/**
@@ -195,7 +200,8 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 	@Override
 	public EList<BindType> getBinding() {
 		if (binding == null) {
-			binding = new EObjectContainmentEList<BindType>(BindType.class, this, LqnPackage.SLOT_TYPE__BINDING);
+			binding = new EObjectContainmentEList<BindType>(BindType.class,
+					this, LqnPackage.SLOT_TYPE__BINDING);
 		}
 		return binding;
 	}
@@ -218,7 +224,8 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 		String oldBindTarget = bindTarget;
 		bindTarget = newBindTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SLOT_TYPE__BIND_TARGET, oldBindTarget,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SLOT_TYPE__BIND_TARGET, oldBindTarget,
 					bindTarget));
 	}
 
@@ -240,7 +247,8 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SLOT_TYPE__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SLOT_TYPE__ID, oldId, id));
 	}
 
 	/**
@@ -263,8 +271,9 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 		boolean oldReplicNumESet = replicNumESet;
 		replicNumESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SLOT_TYPE__REPLIC_NUM, oldReplicNum,
-					replicNum, !oldReplicNumESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SLOT_TYPE__REPLIC_NUM, oldReplicNum, replicNum,
+					!oldReplicNumESet));
 	}
 
 	/**
@@ -278,7 +287,8 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 		replicNum = REPLIC_NUM_EDEFAULT;
 		replicNumESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SLOT_TYPE__REPLIC_NUM, oldReplicNum,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.SLOT_TYPE__REPLIC_NUM, oldReplicNum,
 					REPLIC_NUM_EDEFAULT, oldReplicNumESet));
 	}
 
@@ -296,12 +306,14 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.SLOT_TYPE__INTERFACE:
 			return basicSetInterface(null, msgs);
 		case LqnPackage.SLOT_TYPE__BINDING:
-			return ((InternalEList<?>) getBinding()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getBinding())
+					.basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -393,7 +405,8 @@ public class SlotTypeImpl extends MinimalEObjectImpl.Container implements SlotTy
 		case LqnPackage.SLOT_TYPE__BINDING:
 			return binding != null && !binding.isEmpty();
 		case LqnPackage.SLOT_TYPE__BIND_TARGET:
-			return BIND_TARGET_EDEFAULT == null ? bindTarget != null : !BIND_TARGET_EDEFAULT.equals(bindTarget);
+			return BIND_TARGET_EDEFAULT == null ? bindTarget != null
+					: !BIND_TARGET_EDEFAULT.equals(bindTarget);
 		case LqnPackage.SLOT_TYPE__ID:
 			return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
 		case LqnPackage.SLOT_TYPE__REPLIC_NUM:

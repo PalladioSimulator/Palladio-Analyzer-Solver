@@ -18,17 +18,18 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type;
  * <em><b>Output Result Join Delay Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultJoinDelayTypeImpl#getResultConf95 <em>Result Conf95</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultJoinDelayTypeImpl#getResultConf99 <em>Result Conf99</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultJoinDelayTypeImpl#getJoinVariance <em>Join Variance</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultJoinDelayTypeImpl#getJoinWaiting <em>Join Waiting</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container implements OutputResultJoinDelayType {
+public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container
+		implements OutputResultJoinDelayType {
 	/**
 	 * The cached value of the '{@link #getResultConf95() <em>Result Conf95</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -135,12 +136,15 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResultConf95(ResultConf95Type newResultConf95, NotificationChain msgs) {
+	public NotificationChain basicSetResultConf95(
+			ResultConf95Type newResultConf95, NotificationChain msgs) {
 		ResultConf95Type oldResultConf95 = resultConf95;
 		resultConf95 = newResultConf95;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95, oldResultConf95, newResultConf95);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
+					oldResultConf95, newResultConf95);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -158,17 +162,26 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 		if (newResultConf95 != resultConf95) {
 			NotificationChain msgs = null;
 			if (resultConf95 != null)
-				msgs = ((InternalEObject) resultConf95).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95, null, msgs);
+				msgs = ((InternalEObject) resultConf95)
+						.eInverseRemove(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
+								null, msgs);
 			if (newResultConf95 != null)
-				msgs = ((InternalEObject) newResultConf95).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95, null, msgs);
+				msgs = ((InternalEObject) newResultConf95)
+						.eInverseAdd(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
+								null, msgs);
 			msgs = basicSetResultConf95(newResultConf95, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95, newResultConf95, newResultConf95));
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
+					newResultConf95, newResultConf95));
 	}
 
 	/**
@@ -184,12 +197,15 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResultConf99(ResultConf99Type newResultConf99, NotificationChain msgs) {
+	public NotificationChain basicSetResultConf99(
+			ResultConf99Type newResultConf99, NotificationChain msgs) {
 		ResultConf99Type oldResultConf99 = resultConf99;
 		resultConf99 = newResultConf99;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99, oldResultConf99, newResultConf99);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
+					oldResultConf99, newResultConf99);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -207,17 +223,26 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 		if (newResultConf99 != resultConf99) {
 			NotificationChain msgs = null;
 			if (resultConf99 != null)
-				msgs = ((InternalEObject) resultConf99).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99, null, msgs);
+				msgs = ((InternalEObject) resultConf99)
+						.eInverseRemove(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
+								null, msgs);
 			if (newResultConf99 != null)
-				msgs = ((InternalEObject) newResultConf99).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99, null, msgs);
+				msgs = ((InternalEObject) newResultConf99)
+						.eInverseAdd(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
+								null, msgs);
 			msgs = basicSetResultConf99(newResultConf99, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99, newResultConf99, newResultConf99));
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
+					newResultConf99, newResultConf99));
 	}
 
 	/**
@@ -241,8 +266,8 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 		joinVarianceESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE, oldJoinVariance, joinVariance,
-					!oldJoinVarianceESet));
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE,
+					oldJoinVariance, joinVariance, !oldJoinVarianceESet));
 	}
 
 	/**
@@ -257,7 +282,8 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 		joinVarianceESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE, oldJoinVariance, JOIN_VARIANCE_EDEFAULT,
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE,
+					oldJoinVariance, JOIN_VARIANCE_EDEFAULT,
 					oldJoinVarianceESet));
 	}
 
@@ -291,8 +317,8 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 		joinWaitingESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING, oldJoinWaiting, joinWaiting,
-					!oldJoinWaitingESet));
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING,
+					oldJoinWaiting, joinWaiting, !oldJoinWaitingESet));
 	}
 
 	/**
@@ -307,8 +333,8 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 		joinWaitingESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING, oldJoinWaiting, JOIN_WAITING_EDEFAULT,
-					oldJoinWaitingESet));
+					LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING,
+					oldJoinWaiting, JOIN_WAITING_EDEFAULT, oldJoinWaitingESet));
 	}
 
 	/**
@@ -325,7 +351,8 @@ public class OutputResultJoinDelayTypeImpl extends MinimalEObjectImpl.Container 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95:
 			return basicSetResultConf95(null, msgs);

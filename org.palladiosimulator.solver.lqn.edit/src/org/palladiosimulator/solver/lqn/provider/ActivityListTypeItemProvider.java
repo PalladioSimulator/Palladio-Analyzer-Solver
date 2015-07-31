@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ActivityListTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,10 +64,12 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY);
 		}
 		return childrenFeatures;
 	}
@@ -90,7 +93,8 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ActivityListType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ActivityListType"));
 	}
 
 	/**
@@ -116,7 +120,8 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
 
 		switch (notification.getFeatureID(ActivityListType.class)) {
 		case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -129,16 +134,20 @@ public class ActivityListTypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityLoopType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ACTIVITY_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityOrType()));
 	}
 

@@ -286,12 +286,14 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseOutputEntryDistributionType(OutputEntryDistributionType object) {
+		public Adapter caseOutputEntryDistributionType(
+				OutputEntryDistributionType object) {
 			return createOutputEntryDistributionTypeAdapter();
 		}
 
 		@Override
-		public Adapter caseOutputResultJoinDelayType(OutputResultJoinDelayType object) {
+		public Adapter caseOutputResultJoinDelayType(
+				OutputResultJoinDelayType object) {
 			return createOutputResultJoinDelayTypeAdapter();
 		}
 
@@ -445,12 +447,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ActivityDefBase <em>Activity Def Base</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ActivityDefBase <em>Activity Def Base</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityDefBase
 	 * @generated
 	 */
@@ -460,12 +462,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ActivityDefType <em>Activity Def Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ActivityDefType <em>Activity Def Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityDefType
 	 * @generated
 	 */
@@ -476,8 +478,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ActivityGraphBase <em>Activity Graph Base</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityGraphBase
 	 * @generated
@@ -488,12 +490,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ActivityListType <em>Activity List Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ActivityListType <em>Activity List Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityListType
 	 * @generated
 	 */
@@ -504,8 +506,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ActivityLoopListType <em>Activity Loop List Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation
-	         * returns null so that we can easily ignore cases; it's useful to ignore a case when
-	         * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityLoopListType
 	 * @generated
@@ -516,12 +518,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ActivityLoopType <em>Activity Loop Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ActivityLoopType <em>Activity Loop Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityLoopType
 	 * @generated
 	 */
@@ -532,8 +534,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ActivityMakingCallType <em>Activity Making Call Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation
-	         * returns null so that we can easily ignore cases; it's useful to ignore a case when
-	         * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityMakingCallType
 	 * @generated
@@ -544,12 +546,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ActivityOrType <em>Activity Or Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ActivityOrType <em>Activity Or Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityOrType
 	 * @generated
 	 */
@@ -560,8 +562,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ActivityPhasesType <em>Activity Phases Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityPhasesType
 	 * @generated
@@ -572,12 +574,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ActivityType <em>Activity Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ActivityType <em>Activity Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ActivityType
 	 * @generated
 	 */
@@ -587,12 +589,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.AndJoinListType <em>And Join List Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.AndJoinListType <em>And Join List Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.AndJoinListType
 	 * @generated
 	 */
@@ -602,12 +604,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.AsynchCallType <em>Asynch Call Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.AsynchCallType <em>Asynch Call Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.AsynchCallType
 	 * @generated
 	 */
@@ -618,8 +620,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.BindType <em>Bind Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.BindType
 	 * @generated
@@ -630,12 +632,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.CallListType <em>Call List Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.CallListType <em>Call List Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.CallListType
 	 * @generated
 	 */
@@ -645,12 +647,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.DocumentRoot <em>Document Root</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.DocumentRoot <em>Document Root</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.DocumentRoot
 	 * @generated
 	 */
@@ -661,8 +663,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.EntryActivityDefType <em>Entry Activity Def Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation
-	         * returns null so that we can easily ignore cases; it's useful to ignore a case when
-	         * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.EntryActivityDefType
 	 * @generated
@@ -674,8 +676,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.EntryActivityGraph <em>Entry Activity Graph</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.EntryActivityGraph
 	 * @generated
@@ -687,8 +689,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.EntryMakingCallType <em>Entry Making Call Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily
-	         * ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway.
-	         * <!-- end-user-doc -->
+	 * ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.EntryMakingCallType
 	 * @generated
@@ -700,8 +702,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.EntryType <em>Entry Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.EntryType
 	 * @generated
@@ -713,8 +715,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.FanInType <em>Fan In Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.FanInType
 	 * @generated
@@ -725,12 +727,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.FanOutType <em>Fan Out Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.FanOutType <em>Fan Out Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.FanOutType
 	 * @generated
 	 */
@@ -740,12 +742,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.FirstPlotType <em>First Plot Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.FirstPlotType <em>First Plot Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.FirstPlotType
 	 * @generated
 	 */
@@ -756,8 +758,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.GroupType <em>Group Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.GroupType
 	 * @generated
@@ -768,12 +770,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.HistogramBinType <em>Histogram Bin Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.HistogramBinType <em>Histogram Bin Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.HistogramBinType
 	 * @generated
 	 */
@@ -783,12 +785,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.InPortType <em>In Port Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.InPortType <em>In Port Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.InPortType
 	 * @generated
 	 */
@@ -798,12 +800,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.InterfaceType <em>Interface Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.InterfaceType <em>Interface Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.InterfaceType
 	 * @generated
 	 */
@@ -814,8 +816,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.LqnCoreType <em>Core Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.LqnCoreType
 	 * @generated
@@ -826,12 +828,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.LqnModelType <em>Model Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.LqnModelType <em>Model Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.LqnModelType
 	 * @generated
 	 */
@@ -841,12 +843,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.MakingCallType <em>Making Call Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.MakingCallType <em>Making Call Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.MakingCallType
 	 * @generated
 	 */
@@ -856,12 +858,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.MvaInfoType <em>Mva Info Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.MvaInfoType <em>Mva Info Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.MvaInfoType
 	 * @generated
 	 */
@@ -871,12 +873,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.OrListType <em>Or List Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.OrListType <em>Or List Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.OrListType
 	 * @generated
 	 */
@@ -886,12 +888,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.OutPortType <em>Out Port Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.OutPortType <em>Out Port Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.OutPortType
 	 * @generated
 	 */
@@ -902,8 +904,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.OutputDistributionType <em>Output Distribution Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation
-	         * returns null so that we can easily ignore cases; it's useful to ignore a case when
-	         * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.OutputDistributionType
 	 * @generated
@@ -915,8 +917,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.OutputEntryDistributionType <em>Output Entry Distribution Type</em>}'.
 	 * <!-- begin-user-doc --> This default
-	         * implementation returns null so that we can easily ignore cases; it's useful to ignore a case
-	         * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * implementation returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.OutputEntryDistributionType
 	 * @generated
@@ -928,8 +930,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.OutputResultJoinDelayType <em>Output Result Join Delay Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation
-	         * returns null so that we can easily ignore cases; it's useful to ignore a case when
-	         * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.OutputResultJoinDelayType
 	 * @generated
@@ -940,12 +942,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.OutputResultType <em>Output Result Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.OutputResultType <em>Output Result Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.OutputResultType
 	 * @generated
 	 */
@@ -955,12 +957,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ParameterType <em>Parameter Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ParameterType <em>Parameter Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ParameterType
 	 * @generated
 	 */
@@ -971,8 +973,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ParaType <em>Para Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ParaType
 	 * @generated
@@ -983,12 +985,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.PhaseActivities <em>Phase Activities</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.PhaseActivities <em>Phase Activities</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.PhaseActivities
 	 * @generated
 	 */
@@ -998,12 +1000,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.PlotControlType <em>Plot Control Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.PlotControlType <em>Plot Control Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.PlotControlType
 	 * @generated
 	 */
@@ -1014,8 +1016,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.PlotType <em>Plot Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.PlotType
 	 * @generated
@@ -1026,12 +1028,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.PortBindingType <em>Port Binding Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.PortBindingType <em>Port Binding Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.PortBindingType
 	 * @generated
 	 */
@@ -1041,12 +1043,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.PragmaType <em>Pragma Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.PragmaType <em>Pragma Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.PragmaType
 	 * @generated
 	 */
@@ -1056,12 +1058,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.PrecedenceType <em>Precedence Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.PrecedenceType <em>Precedence Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.PrecedenceType
 	 * @generated
 	 */
@@ -1072,8 +1074,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ProcessorBindingType <em>Processor Binding Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily
-	         * ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway.
-	         * <!-- end-user-doc -->
+	 * ignore cases; it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ProcessorBindingType
 	 * @generated
@@ -1084,12 +1086,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ProcessorType <em>Processor Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ProcessorType <em>Processor Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ProcessorType
 	 * @generated
 	 */
@@ -1100,8 +1102,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ReplyActivityType <em>Reply Activity Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ReplyActivityType
 	 * @generated
@@ -1112,12 +1114,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ReplyEntryType <em>Reply Entry Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ReplyEntryType <em>Reply Entry Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ReplyEntryType
 	 * @generated
 	 */
@@ -1127,12 +1129,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ResultConf95Type <em>Result Conf95 Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ResultConf95Type <em>Result Conf95 Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ResultConf95Type
 	 * @generated
 	 */
@@ -1143,8 +1145,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ResultConf95Type1 <em>Result Conf95 Type1</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ResultConf95Type1
 	 * @generated
@@ -1155,12 +1157,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ResultConf99Type <em>Result Conf99 Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ResultConf99Type <em>Result Conf99 Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ResultConf99Type
 	 * @generated
 	 */
@@ -1171,8 +1173,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ResultConf99Type1 <em>Result Conf99 Type1</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ResultConf99Type1
 	 * @generated
@@ -1184,8 +1186,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.ResultGeneralType <em>Result General Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ResultGeneralType
 	 * @generated
@@ -1196,12 +1198,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.RunControlType <em>Run Control Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.RunControlType <em>Run Control Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.RunControlType
 	 * @generated
 	 */
@@ -1211,12 +1213,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.ServiceType <em>Service Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.ServiceType <em>Service Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.ServiceType
 	 * @generated
 	 */
@@ -1227,8 +1229,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.SingleActivityListType <em>Single Activity List Type</em>}'.
 	 * <!-- begin-user-doc --> This default implementation
-	         * returns null so that we can easily ignore cases; it's useful to ignore a case when
-	         * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.SingleActivityListType
 	 * @generated
@@ -1240,8 +1242,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.SlotType <em>Slot Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.SlotType
 	 * @generated
@@ -1252,12 +1254,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.SolverParamsType <em>Solver Params Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.SolverParamsType <em>Solver Params Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.SolverParamsType
 	 * @generated
 	 */
@@ -1267,12 +1269,12 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	         * {@link org.palladiosimulator.solver.lqn.SynchCallType <em>Synch Call Type</em>}'. <!--
-	         * begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
-	         *
-	         * @return the new adapter.
+	 * {@link org.palladiosimulator.solver.lqn.SynchCallType <em>Synch Call Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can easily ignore
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 *
+	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.SynchCallType
 	 * @generated
 	 */
@@ -1283,8 +1285,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.TaskActivityGraph <em>Task Activity Graph</em>}'.
 	 * <!-- begin-user-doc --> This default implementation returns null so that we can easily ignore
-	         * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
-	         * end-user-doc -->
+	 * cases; it's useful to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.TaskActivityGraph
 	 * @generated
@@ -1296,8 +1298,8 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for an object of class '{@link org.palladiosimulator.solver.lqn.TaskType <em>Task Type</em>}'.
 	 * <!-- begin-user-doc
-	         * --> This default implementation returns null so that we can easily ignore cases; it's useful
-	         * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * --> This default implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @see org.palladiosimulator.solver.lqn.TaskType
 	 * @generated
@@ -1309,7 +1311,7 @@ public class LqnAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * Creates a new adapter for the default case.
 	 * <!-- begin-user-doc --> This default
-	         * implementation returns null. <!-- end-user-doc -->
+	 * implementation returns null. <!-- end-user-doc -->
 	 * @return the new adapter.
 	 * @generated
 	 */

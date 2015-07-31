@@ -27,8 +27,9 @@ import org.palladiosimulator.solver.lqn.SingleActivityListType;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SingleActivityListTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class SingleActivityListTypeItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -64,10 +65,12 @@ public class SingleActivityListTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY);
 		}
 		return childrenFeatures;
 	}
@@ -91,7 +94,10 @@ public class SingleActivityListTypeItemProvider extends ItemProviderAdapter impl
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/SingleActivityListType"));
+		return overlayImage(
+				object,
+				getResourceLocator().getImage(
+						"full/obj16/SingleActivityListType"));
 	}
 
 	/**
@@ -117,7 +123,8 @@ public class SingleActivityListTypeItemProvider extends ItemProviderAdapter impl
 
 		switch (notification.getFeatureID(SingleActivityListType.class)) {
 		case LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -130,16 +137,20 @@ public class SingleActivityListTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityLoopType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityOrType()));
 	}
 

@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class EntryTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -68,13 +69,15 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_EntryType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_EntryType_name_feature",
-								"_UI_EntryType_type"),
-						LqnPackage.Literals.ENTRY_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_EntryType_name_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_EntryType_name_feature", "_UI_EntryType_type"),
+				LqnPackage.Literals.ENTRY_TYPE__NAME, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -84,13 +87,16 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addOpenArrivalRatePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_EntryType_openArrivalRate_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_EntryType_openArrivalRate_feature",
-								"_UI_EntryType_type"),
-						LqnPackage.Literals.ENTRY_TYPE__OPEN_ARRIVAL_RATE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_EntryType_openArrivalRate_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_EntryType_openArrivalRate_feature",
+						"_UI_EntryType_type"),
+				LqnPackage.Literals.ENTRY_TYPE__OPEN_ARRIVAL_RATE, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -101,12 +107,17 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 */
 	protected void addPriorityPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_EntryType_priority_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_EntryType_priority_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_EntryType_priority_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_EntryType_priority_feature",
 								"_UI_EntryType_type"),
-						LqnPackage.Literals.ENTRY_TYPE__PRIORITY, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+						LqnPackage.Literals.ENTRY_TYPE__PRIORITY, true, false,
+						false, ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+						null, null));
 	}
 
 	/**
@@ -116,13 +127,15 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addRwlockPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_EntryType_rwlock_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_EntryType_rwlock_feature",
-								"_UI_EntryType_type"),
-						LqnPackage.Literals.ENTRY_TYPE__RWLOCK, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_EntryType_rwlock_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_EntryType_rwlock_feature", "_UI_EntryType_type"),
+				LqnPackage.Literals.ENTRY_TYPE__RWLOCK, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -133,12 +146,17 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 */
 	protected void addSemaphorePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_EntryType_semaphore_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_EntryType_semaphore_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_EntryType_semaphore_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_EntryType_semaphore_feature",
 								"_UI_EntryType_type"),
-						LqnPackage.Literals.ENTRY_TYPE__SEMAPHORE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+						LqnPackage.Literals.ENTRY_TYPE__SEMAPHORE, true, false,
+						false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+						null, null));
 	}
 
 	/**
@@ -148,13 +166,15 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addTypePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_EntryType_type_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_EntryType_type_feature",
-								"_UI_EntryType_type"),
-						LqnPackage.Literals.ENTRY_TYPE__TYPE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_EntryType_type_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_EntryType_type_feature", "_UI_EntryType_type"),
+				LqnPackage.Literals.ENTRY_TYPE__TYPE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -167,14 +187,18 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.ENTRY_TYPE__RESULT_ENTRY);
-			childrenFeatures.add(LqnPackage.Literals.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION);
+			childrenFeatures
+					.add(LqnPackage.Literals.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION);
 			childrenFeatures.add(LqnPackage.Literals.ENTRY_TYPE__FORWARDING);
-			childrenFeatures.add(LqnPackage.Literals.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH);
-			childrenFeatures.add(LqnPackage.Literals.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES);
+			childrenFeatures
+					.add(LqnPackage.Literals.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH);
+			childrenFeatures
+					.add(LqnPackage.Literals.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES);
 		}
 		return childrenFeatures;
 	}
@@ -198,7 +222,8 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/EntryType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/EntryType"));
 	}
 
 	/**
@@ -231,14 +256,16 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 		case LqnPackage.ENTRY_TYPE__RWLOCK:
 		case LqnPackage.ENTRY_TYPE__SEMAPHORE:
 		case LqnPackage.ENTRY_TYPE__TYPE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.ENTRY_TYPE__RESULT_ENTRY:
 		case LqnPackage.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION:
 		case LqnPackage.ENTRY_TYPE__FORWARDING:
 		case LqnPackage.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH:
 		case LqnPackage.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -251,22 +278,28 @@ public class EntryTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_TYPE__RESULT_ENTRY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ENTRY_TYPE__RESULT_ENTRY,
 				LqnFactory.eINSTANCE.createOutputResultType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION,
 				LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_TYPE__FORWARDING,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ENTRY_TYPE__FORWARDING,
 				LqnFactory.eINSTANCE.createEntryMakingCallType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH,
 				LqnFactory.eINSTANCE.createEntryActivityGraph()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES,
 				LqnFactory.eINSTANCE.createPhaseActivities()));
 	}
 

@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class GroupTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -65,13 +66,15 @@ public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addCapPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_GroupType_cap_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_GroupType_cap_feature",
-								"_UI_GroupType_type"),
-						LqnPackage.Literals.GROUP_TYPE__CAP, true, false, false,
-						ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_GroupType_cap_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_GroupType_cap_feature", "_UI_GroupType_type"),
+				LqnPackage.Literals.GROUP_TYPE__CAP, true, false, false,
+				ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -81,13 +84,15 @@ public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_GroupType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_GroupType_name_feature",
-								"_UI_GroupType_type"),
-						LqnPackage.Literals.GROUP_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_GroupType_name_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_GroupType_name_feature", "_UI_GroupType_type"),
+				LqnPackage.Literals.GROUP_TYPE__NAME, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -97,13 +102,15 @@ public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addSharePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_GroupType_share_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_GroupType_share_feature",
-								"_UI_GroupType_type"),
-						LqnPackage.Literals.GROUP_TYPE__SHARE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_GroupType_share_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_GroupType_share_feature", "_UI_GroupType_type"),
+				LqnPackage.Literals.GROUP_TYPE__SHARE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -116,7 +123,8 @@ public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.GROUP_TYPE__RESULT_GROUP);
@@ -144,7 +152,8 @@ public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/GroupType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/GroupType"));
 	}
 
 	/**
@@ -174,11 +183,13 @@ public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditi
 		case LqnPackage.GROUP_TYPE__CAP:
 		case LqnPackage.GROUP_TYPE__NAME:
 		case LqnPackage.GROUP_TYPE__SHARE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.GROUP_TYPE__RESULT_GROUP:
 		case LqnPackage.GROUP_TYPE__TASK:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -191,14 +202,17 @@ public class GroupTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.GROUP_TYPE__RESULT_GROUP,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.GROUP_TYPE__RESULT_GROUP,
 				LqnFactory.eINSTANCE.createOutputResultType()));
 
-		newChildDescriptors
-				.add(createChildParameter(LqnPackage.Literals.GROUP_TYPE__TASK, LqnFactory.eINSTANCE.createTaskType()));
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.GROUP_TYPE__TASK,
+				LqnFactory.eINSTANCE.createTaskType()));
 	}
 
 	/**

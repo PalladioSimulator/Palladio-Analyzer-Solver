@@ -14,7 +14,6 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getBegin <em>Begin</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getConf95 <em>Conf95</em>}</li>
@@ -22,10 +21,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getEnd <em>End</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.HistogramBinTypeImpl#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implements HistogramBinType {
+public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container
+		implements HistogramBinType {
 	/**
 	 * The default value of the '{@link #getBegin() <em>Begin</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -207,7 +208,8 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldBeginESet = beginESet;
 		beginESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN, oldBegin, begin,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN, oldBegin, begin,
 					!oldBeginESet));
 	}
 
@@ -222,7 +224,8 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		begin = BEGIN_EDEFAULT;
 		beginESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN, oldBegin,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__BEGIN, oldBegin,
 					BEGIN_EDEFAULT, oldBeginESet));
 	}
 
@@ -255,8 +258,9 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldConf95ESet = conf95ESet;
 		conf95ESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF95, oldConf95,
-					conf95, !oldConf95ESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__CONF95, oldConf95, conf95,
+					!oldConf95ESet));
 	}
 
 	/**
@@ -270,7 +274,8 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		conf95 = CONF95_EDEFAULT;
 		conf95ESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF95, oldConf95,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__CONF95, oldConf95,
 					CONF95_EDEFAULT, oldConf95ESet));
 	}
 
@@ -303,8 +308,9 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldConf99ESet = conf99ESet;
 		conf99ESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF99, oldConf99,
-					conf99, !oldConf99ESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__CONF99, oldConf99, conf99,
+					!oldConf99ESet));
 	}
 
 	/**
@@ -318,7 +324,8 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		conf99 = CONF99_EDEFAULT;
 		conf99ESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.HISTOGRAM_BIN_TYPE__CONF99, oldConf99,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__CONF99, oldConf99,
 					CONF99_EDEFAULT, oldConf99ESet));
 	}
 
@@ -351,7 +358,8 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldEndESet = endESet;
 		endESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__END, oldEnd, end,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__END, oldEnd, end,
 					!oldEndESet));
 	}
 
@@ -366,8 +374,9 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		end = END_EDEFAULT;
 		endESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.HISTOGRAM_BIN_TYPE__END, oldEnd,
-					END_EDEFAULT, oldEndESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__END, oldEnd, END_EDEFAULT,
+					oldEndESet));
 	}
 
 	/**
@@ -399,7 +408,8 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldProbESet = probESet;
 		probESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.HISTOGRAM_BIN_TYPE__PROB, oldProb, prob,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__PROB, oldProb, prob,
 					!oldProbESet));
 	}
 
@@ -414,7 +424,8 @@ public class HistogramBinTypeImpl extends MinimalEObjectImpl.Container implement
 		prob = PROB_EDEFAULT;
 		probESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.HISTOGRAM_BIN_TYPE__PROB, oldProb,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.HISTOGRAM_BIN_TYPE__PROB, oldProb,
 					PROB_EDEFAULT, oldProbESet));
 	}
 

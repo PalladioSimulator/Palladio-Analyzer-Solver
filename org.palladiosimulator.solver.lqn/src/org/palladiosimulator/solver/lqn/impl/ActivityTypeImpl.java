@@ -14,14 +14,15 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityTypeImpl extends MinimalEObjectImpl.Container implements ActivityType {
+public class ActivityTypeImpl extends MinimalEObjectImpl.Container implements
+		ActivityType {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -77,7 +78,8 @@ public class ActivityTypeImpl extends MinimalEObjectImpl.Container implements Ac
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -129,7 +131,8 @@ public class ActivityTypeImpl extends MinimalEObjectImpl.Container implements Ac
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}

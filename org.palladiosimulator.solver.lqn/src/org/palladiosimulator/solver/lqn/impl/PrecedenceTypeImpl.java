@@ -21,7 +21,6 @@ import org.palladiosimulator.solver.lqn.SingleActivityListType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPre <em>Pre</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPreOR <em>Pre OR</em>}</li>
@@ -31,10 +30,12 @@ import org.palladiosimulator.solver.lqn.SingleActivityListType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPostAND <em>Post AND</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PrecedenceTypeImpl#getPostLOOP <em>Post LOOP</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements PrecedenceType {
+public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements
+		PrecedenceType {
 	/**
 	 * The cached value of the '{@link #getPre() <em>Pre</em>}' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -134,12 +135,14 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPre(SingleActivityListType newPre, NotificationChain msgs) {
+	public NotificationChain basicSetPre(SingleActivityListType newPre,
+			NotificationChain msgs) {
 		SingleActivityListType oldPre = pre;
 		pre = newPre;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PRECEDENCE_TYPE__PRE, oldPre, newPre);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE, oldPre,
+					newPre);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -158,15 +161,18 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 			NotificationChain msgs = null;
 			if (pre != null)
 				msgs = ((InternalEObject) pre).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
 			if (newPre != null)
 				msgs = ((InternalEObject) newPre).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__PRE, null, msgs);
 			msgs = basicSetPre(newPre, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE, newPre, newPre));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRECEDENCE_TYPE__PRE, newPre, newPre));
 	}
 
 	/**
@@ -182,12 +188,14 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPreOR(ActivityListType newPreOR, NotificationChain msgs) {
+	public NotificationChain basicSetPreOR(ActivityListType newPreOR,
+			NotificationChain msgs) {
 		ActivityListType oldPreOR = preOR;
 		preOR = newPreOR;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PRECEDENCE_TYPE__PRE_OR, oldPreOR, newPreOR);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE_OR,
+					oldPreOR, newPreOR);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -206,16 +214,20 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 			NotificationChain msgs = null;
 			if (preOR != null)
 				msgs = ((InternalEObject) preOR).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__PRE_OR, null,
+						msgs);
 			if (newPreOR != null)
 				msgs = ((InternalEObject) newPreOR).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_OR, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__PRE_OR, null,
+						msgs);
 			msgs = basicSetPreOR(newPreOR, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE_OR, newPreOR,
-					newPreOR));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRECEDENCE_TYPE__PRE_OR, newPreOR, newPreOR));
 	}
 
 	/**
@@ -231,12 +243,14 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPreAND(AndJoinListType newPreAND, NotificationChain msgs) {
+	public NotificationChain basicSetPreAND(AndJoinListType newPreAND,
+			NotificationChain msgs) {
 		AndJoinListType oldPreAND = preAND;
 		preAND = newPreAND;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PRECEDENCE_TYPE__PRE_AND, oldPreAND, newPreAND);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE_AND,
+					oldPreAND, newPreAND);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -255,16 +269,20 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 			NotificationChain msgs = null;
 			if (preAND != null)
 				msgs = ((InternalEObject) preAND).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__PRE_AND, null,
+						msgs);
 			if (newPreAND != null)
 				msgs = ((InternalEObject) newPreAND).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__PRE_AND, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__PRE_AND, null,
+						msgs);
 			msgs = basicSetPreAND(newPreAND, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__PRE_AND, newPreAND,
-					newPreAND));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRECEDENCE_TYPE__PRE_AND, newPreAND, newPreAND));
 	}
 
 	/**
@@ -280,12 +298,14 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPost(SingleActivityListType newPost, NotificationChain msgs) {
+	public NotificationChain basicSetPost(SingleActivityListType newPost,
+			NotificationChain msgs) {
 		SingleActivityListType oldPost = post;
 		post = newPost;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PRECEDENCE_TYPE__POST, oldPost, newPost);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST,
+					oldPost, newPost);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -304,15 +324,18 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 			NotificationChain msgs = null;
 			if (post != null)
 				msgs = ((InternalEObject) post).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
 			if (newPost != null)
 				msgs = ((InternalEObject) newPost).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST, null, msgs);
 			msgs = basicSetPost(newPost, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST, newPost, newPost));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRECEDENCE_TYPE__POST, newPost, newPost));
 	}
 
 	/**
@@ -328,12 +351,14 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPostOR(OrListType newPostOR, NotificationChain msgs) {
+	public NotificationChain basicSetPostOR(OrListType newPostOR,
+			NotificationChain msgs) {
 		OrListType oldPostOR = postOR;
 		postOR = newPostOR;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PRECEDENCE_TYPE__POST_OR, oldPostOR, newPostOR);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_OR,
+					oldPostOR, newPostOR);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -352,16 +377,20 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 			NotificationChain msgs = null;
 			if (postOR != null)
 				msgs = ((InternalEObject) postOR).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST_OR, null,
+						msgs);
 			if (newPostOR != null)
 				msgs = ((InternalEObject) newPostOR).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_OR, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST_OR, null,
+						msgs);
 			msgs = basicSetPostOR(newPostOR, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_OR, newPostOR,
-					newPostOR));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRECEDENCE_TYPE__POST_OR, newPostOR, newPostOR));
 	}
 
 	/**
@@ -377,12 +406,14 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPostAND(ActivityListType newPostAND, NotificationChain msgs) {
+	public NotificationChain basicSetPostAND(ActivityListType newPostAND,
+			NotificationChain msgs) {
 		ActivityListType oldPostAND = postAND;
 		postAND = newPostAND;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PRECEDENCE_TYPE__POST_AND, oldPostAND, newPostAND);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_AND,
+					oldPostAND, newPostAND);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -401,15 +432,20 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 			NotificationChain msgs = null;
 			if (postAND != null)
 				msgs = ((InternalEObject) postAND).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST_AND, null,
+						msgs);
 			if (newPostAND != null)
 				msgs = ((InternalEObject) newPostAND).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_AND, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST_AND, null,
+						msgs);
 			msgs = basicSetPostAND(newPostAND, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_AND, newPostAND,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRECEDENCE_TYPE__POST_AND, newPostAND,
 					newPostAND));
 	}
 
@@ -426,12 +462,14 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetPostLOOP(ActivityLoopListType newPostLOOP, NotificationChain msgs) {
+	public NotificationChain basicSetPostLOOP(ActivityLoopListType newPostLOOP,
+			NotificationChain msgs) {
 		ActivityLoopListType oldPostLOOP = postLOOP;
 		postLOOP = newPostLOOP;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PRECEDENCE_TYPE__POST_LOOP, oldPostLOOP, newPostLOOP);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_LOOP,
+					oldPostLOOP, newPostLOOP);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -450,15 +488,20 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 			NotificationChain msgs = null;
 			if (postLOOP != null)
 				msgs = ((InternalEObject) postLOOP).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null,
+						msgs);
 			if (newPostLOOP != null)
 				msgs = ((InternalEObject) newPostLOOP).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PRECEDENCE_TYPE__POST_LOOP, null,
+						msgs);
 			msgs = basicSetPostLOOP(newPostLOOP, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRECEDENCE_TYPE__POST_LOOP, newPostLOOP,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRECEDENCE_TYPE__POST_LOOP, newPostLOOP,
 					newPostLOOP));
 	}
 
@@ -467,7 +510,8 @@ public class PrecedenceTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.PRECEDENCE_TYPE__PRE:
 			return basicSetPre(null, msgs);

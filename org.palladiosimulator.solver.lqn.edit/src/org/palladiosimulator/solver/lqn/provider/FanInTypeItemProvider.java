@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class FanInTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class FanInTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -62,13 +63,15 @@ public class FanInTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addSourcePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_FanInType_source_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_FanInType_source_feature",
-								"_UI_FanInType_type"),
-						LqnPackage.Literals.FAN_IN_TYPE__SOURCE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_FanInType_source_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_FanInType_source_feature", "_UI_FanInType_type"),
+				LqnPackage.Literals.FAN_IN_TYPE__SOURCE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -78,13 +81,15 @@ public class FanInTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	protected void addValuePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_FanInType_value_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_FanInType_value_feature",
-								"_UI_FanInType_type"),
-						LqnPackage.Literals.FAN_IN_TYPE__VALUE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_FanInType_value_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_FanInType_value_feature", "_UI_FanInType_type"),
+				LqnPackage.Literals.FAN_IN_TYPE__VALUE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -94,7 +99,8 @@ public class FanInTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/FanInType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/FanInType"));
 	}
 
 	/**
@@ -123,7 +129,8 @@ public class FanInTypeItemProvider extends ItemProviderAdapter implements IEditi
 		switch (notification.getFeatureID(FanInType.class)) {
 		case LqnPackage.FAN_IN_TYPE__SOURCE:
 		case LqnPackage.FAN_IN_TYPE__VALUE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -136,7 +143,8 @@ public class FanInTypeItemProvider extends ItemProviderAdapter implements IEditi
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

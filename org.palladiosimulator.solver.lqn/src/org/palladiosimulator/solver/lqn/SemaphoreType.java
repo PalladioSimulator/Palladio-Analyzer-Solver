@@ -70,7 +70,8 @@ public enum SemaphoreType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final SemaphoreType[] VALUES_ARRAY = new SemaphoreType[] { SIGNAL, WAIT, };
+	private static final SemaphoreType[] VALUES_ARRAY = new SemaphoreType[] {
+			SIGNAL, WAIT, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Semaphore Type</b></em>' enumerators. <!--
@@ -78,7 +79,8 @@ public enum SemaphoreType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<SemaphoreType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<SemaphoreType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Semaphore Type</b></em>' literal with the specified literal value. <!--

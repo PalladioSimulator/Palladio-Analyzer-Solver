@@ -29,8 +29,9 @@ import org.palladiosimulator.solver.lqn.OutputResultJoinDelayType;
  * --> <!-- end-user-doc -->
  * @generated
  */
-public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -65,13 +66,19 @@ public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter i
 	 * @generated
 	 */
 	protected void addJoinVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_OutputResultJoinDelayType_joinVariance_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_OutputResultJoinDelayType_joinVariance_feature",
-						"_UI_OutputResultJoinDelayType_type"),
-				LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_OutputResultJoinDelayType_joinVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_OutputResultJoinDelayType_joinVariance_feature",
+								"_UI_OutputResultJoinDelayType_type"),
+						LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -81,13 +88,19 @@ public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter i
 	 * @generated
 	 */
 	protected void addJoinWaitingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_OutputResultJoinDelayType_joinWaiting_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_OutputResultJoinDelayType_joinWaiting_feature",
-						"_UI_OutputResultJoinDelayType_type"),
-				LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_OutputResultJoinDelayType_joinWaiting_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_OutputResultJoinDelayType_joinWaiting_feature",
+								"_UI_OutputResultJoinDelayType_type"),
+						LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -100,11 +113,14 @@ public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter i
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95);
-			childrenFeatures.add(LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99);
+			childrenFeatures
+					.add(LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95);
+			childrenFeatures
+					.add(LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99);
 		}
 		return childrenFeatures;
 	}
@@ -128,7 +144,10 @@ public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter i
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/OutputResultJoinDelayType"));
+		return overlayImage(
+				object,
+				getResourceLocator().getImage(
+						"full/obj16/OutputResultJoinDelayType"));
 	}
 
 	/**
@@ -140,7 +159,8 @@ public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter i
 	@Override
 	public String getText(Object object) {
 		OutputResultJoinDelayType outputResultJoinDelayType = (OutputResultJoinDelayType) object;
-		return getString("_UI_OutputResultJoinDelayType_type") + " " + outputResultJoinDelayType.getJoinVariance();
+		return getString("_UI_OutputResultJoinDelayType_type") + " "
+				+ outputResultJoinDelayType.getJoinVariance();
 	}
 
 	/**
@@ -156,11 +176,13 @@ public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter i
 		switch (notification.getFeatureID(OutputResultJoinDelayType.class)) {
 		case LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE:
 		case LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95:
 		case LqnPackage.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -173,14 +195,19 @@ public class OutputResultJoinDelayTypeItemProvider extends ItemProviderAdapter i
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
-				LqnFactory.eINSTANCE.createResultConf95Type()));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95,
+						LqnFactory.eINSTANCE.createResultConf95Type()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
-				LqnFactory.eINSTANCE.createResultConf99Type()));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99,
+						LqnFactory.eINSTANCE.createResultConf99Type()));
 	}
 
 	/**

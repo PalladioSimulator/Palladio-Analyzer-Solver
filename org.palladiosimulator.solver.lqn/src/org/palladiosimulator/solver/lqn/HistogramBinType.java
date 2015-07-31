@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getBegin <em>Begin</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getConf95 <em>Conf95</em>}</li>
@@ -18,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getEnd <em>End</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.HistogramBinType#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getHistogramBinType()
  * @model extendedMetaData="name='HistogramBinType' kind='empty'"

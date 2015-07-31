@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class BindTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class BindTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,11 +64,13 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.BIND_TYPE__PARAMETER);
-			childrenFeatures.add(LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING);
+			childrenFeatures
+					.add(LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING);
 			childrenFeatures.add(LqnPackage.Literals.BIND_TYPE__PORT_BINDING);
 		}
 		return childrenFeatures;
@@ -92,7 +95,8 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/BindType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/BindType"));
 	}
 
 	/**
@@ -120,7 +124,8 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
 		case LqnPackage.BIND_TYPE__PARAMETER:
 		case LqnPackage.BIND_TYPE__PROCESSOR_BINDING:
 		case LqnPackage.BIND_TYPE__PORT_BINDING:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -133,16 +138,20 @@ public class BindTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.BIND_TYPE__PARAMETER,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.BIND_TYPE__PARAMETER,
 				LqnFactory.eINSTANCE.createParameterType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.BIND_TYPE__PROCESSOR_BINDING,
 				LqnFactory.eINSTANCE.createProcessorBindingType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.BIND_TYPE__PORT_BINDING,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.BIND_TYPE__PORT_BINDING,
 				LqnFactory.eINSTANCE.createPortBindingType()));
 	}
 

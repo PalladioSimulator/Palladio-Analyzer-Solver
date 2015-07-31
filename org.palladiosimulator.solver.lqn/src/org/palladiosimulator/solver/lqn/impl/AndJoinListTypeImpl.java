@@ -25,17 +25,18 @@ import org.palladiosimulator.solver.lqn.OutputResultJoinDelayType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getResultJoinDelay <em>Result Join Delay</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getServiceTimeDistribution <em>Service Time Distribution</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getActivity <em>Activity</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.AndJoinListTypeImpl#getQuorum <em>Quorum</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements AndJoinListType {
+public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
+		AndJoinListType {
 	/**
 	 * The cached value of the '{@link #getResultJoinDelay() <em>Result Join Delay</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -117,8 +118,9 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public EList<OutputResultJoinDelayType> getResultJoinDelay() {
 		if (resultJoinDelay == null) {
-			resultJoinDelay = new EObjectContainmentEList<OutputResultJoinDelayType>(OutputResultJoinDelayType.class,
-					this, LqnPackage.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY);
+			resultJoinDelay = new EObjectContainmentEList<OutputResultJoinDelayType>(
+					OutputResultJoinDelayType.class, this,
+					LqnPackage.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY);
 		}
 		return resultJoinDelay;
 	}
@@ -130,8 +132,9 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public EList<OutputDistributionType> getServiceTimeDistribution() {
 		if (serviceTimeDistribution == null) {
-			serviceTimeDistribution = new EObjectContainmentEList<OutputDistributionType>(OutputDistributionType.class,
-					this, LqnPackage.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION);
+			serviceTimeDistribution = new EObjectContainmentEList<OutputDistributionType>(
+					OutputDistributionType.class, this,
+					LqnPackage.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION);
 		}
 		return serviceTimeDistribution;
 	}
@@ -143,7 +146,8 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public EList<ActivityType> getActivity() {
 		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityType>(ActivityType.class, this,
+			activity = new EObjectContainmentEList<ActivityType>(
+					ActivityType.class, this,
 					LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY);
 		}
 		return activity;
@@ -169,8 +173,9 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 		boolean oldQuorumESet = quorumESet;
 		quorumESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum,
-					quorum, !oldQuorumESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum, quorum,
+					!oldQuorumESet));
 	}
 
 	/**
@@ -184,7 +189,8 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 		quorum = QUORUM_EDEFAULT;
 		quorumESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.AND_JOIN_LIST_TYPE__QUORUM, oldQuorum,
 					QUORUM_EDEFAULT, oldQuorumESet));
 	}
 
@@ -202,14 +208,18 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY:
-			return ((InternalEList<?>) getResultJoinDelay()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getResultJoinDelay()).basicRemove(
+					otherEnd, msgs);
 		case LqnPackage.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION:
-			return ((InternalEList<?>) getServiceTimeDistribution()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getServiceTimeDistribution())
+					.basicRemove(otherEnd, msgs);
 		case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
-			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -243,11 +253,13 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 		switch (featureID) {
 		case LqnPackage.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY:
 			getResultJoinDelay().clear();
-			getResultJoinDelay().addAll((Collection<? extends OutputResultJoinDelayType>) newValue);
+			getResultJoinDelay().addAll(
+					(Collection<? extends OutputResultJoinDelayType>) newValue);
 			return;
 		case LqnPackage.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION:
 			getServiceTimeDistribution().clear();
-			getServiceTimeDistribution().addAll((Collection<? extends OutputDistributionType>) newValue);
+			getServiceTimeDistribution().addAll(
+					(Collection<? extends OutputDistributionType>) newValue);
 			return;
 		case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
 			getActivity().clear();
@@ -293,7 +305,8 @@ public class AndJoinListTypeImpl extends MinimalEObjectImpl.Container implements
 		case LqnPackage.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY:
 			return resultJoinDelay != null && !resultJoinDelay.isEmpty();
 		case LqnPackage.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION:
-			return serviceTimeDistribution != null && !serviceTimeDistribution.isEmpty();
+			return serviceTimeDistribution != null
+					&& !serviceTimeDistribution.isEmpty();
 		case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
 			return activity != null && !activity.isEmpty();
 		case LqnPackage.AND_JOIN_LIST_TYPE__QUORUM:

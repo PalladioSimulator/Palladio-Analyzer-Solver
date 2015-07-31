@@ -23,7 +23,6 @@ import org.palladiosimulator.solver.lqn.OutputDistributionType;
  * <em><b>Output Distribution Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getUnderflowBin <em>Underflow Bin</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getHistogramBin <em>Histogram Bin</em>}</li>
@@ -38,10 +37,12 @@ import org.palladiosimulator.solver.lqn.OutputDistributionType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getSkew <em>Skew</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputDistributionTypeImpl#getStdDev <em>Std Dev</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container implements OutputDistributionType {
+public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container
+		implements OutputDistributionType {
 	/**
 	 * The cached value of the '{@link #getUnderflowBin() <em>Underflow Bin</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -249,7 +250,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BigInteger NUMBER_BINS_EDEFAULT = new BigInteger("20");
+	protected static final BigInteger NUMBER_BINS_EDEFAULT = new BigInteger(
+			"20");
 
 	/**
 	 * The cached value of the '{@link #getNumberBins() <em>Number Bins</em>}' attribute. <!--
@@ -358,12 +360,15 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetUnderflowBin(HistogramBinType newUnderflowBin, NotificationChain msgs) {
+	public NotificationChain basicSetUnderflowBin(
+			HistogramBinType newUnderflowBin, NotificationChain msgs) {
 		HistogramBinType oldUnderflowBin = underflowBin;
 		underflowBin = newUnderflowBin;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, oldUnderflowBin, newUnderflowBin);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
+					oldUnderflowBin, newUnderflowBin);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -381,16 +386,25 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		if (newUnderflowBin != underflowBin) {
 			NotificationChain msgs = null;
 			if (underflowBin != null)
-				msgs = ((InternalEObject) underflowBin).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, null, msgs);
+				msgs = ((InternalEObject) underflowBin)
+						.eInverseRemove(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
+								null, msgs);
 			if (newUnderflowBin != null)
-				msgs = ((InternalEObject) newUnderflowBin).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN, null, msgs);
+				msgs = ((InternalEObject) newUnderflowBin)
+						.eInverseAdd(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
+								null, msgs);
 			msgs = basicSetUnderflowBin(newUnderflowBin, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
 					newUnderflowBin, newUnderflowBin));
 	}
 
@@ -401,7 +415,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 	@Override
 	public EList<HistogramBinType> getHistogramBin() {
 		if (histogramBin == null) {
-			histogramBin = new EObjectContainmentEList<HistogramBinType>(HistogramBinType.class, this,
+			histogramBin = new EObjectContainmentEList<HistogramBinType>(
+					HistogramBinType.class, this,
 					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN);
 		}
 		return histogramBin;
@@ -420,12 +435,15 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetOverflowBin(HistogramBinType newOverflowBin, NotificationChain msgs) {
+	public NotificationChain basicSetOverflowBin(
+			HistogramBinType newOverflowBin, NotificationChain msgs) {
 		HistogramBinType oldOverflowBin = overflowBin;
 		overflowBin = newOverflowBin;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, oldOverflowBin, newOverflowBin);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
+					oldOverflowBin, newOverflowBin);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -443,16 +461,25 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		if (newOverflowBin != overflowBin) {
 			NotificationChain msgs = null;
 			if (overflowBin != null)
-				msgs = ((InternalEObject) overflowBin).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, null, msgs);
+				msgs = ((InternalEObject) overflowBin)
+						.eInverseRemove(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
+								null, msgs);
 			if (newOverflowBin != null)
-				msgs = ((InternalEObject) newOverflowBin).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN, null, msgs);
+				msgs = ((InternalEObject) newOverflowBin)
+						.eInverseAdd(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
+								null, msgs);
 			msgs = basicSetOverflowBin(newOverflowBin, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
 					newOverflowBin, newOverflowBin));
 	}
 
@@ -476,8 +503,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldBinSizeESet = binSizeESet;
 		binSizeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE,
-					oldBinSize, binSize, !oldBinSizeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE, oldBinSize,
+					binSize, !oldBinSizeESet));
 	}
 
 	/**
@@ -491,8 +519,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		binSize = BIN_SIZE_EDEFAULT;
 		binSizeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE,
-					oldBinSize, BIN_SIZE_EDEFAULT, oldBinSizeESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE, oldBinSize,
+					BIN_SIZE_EDEFAULT, oldBinSizeESet));
 	}
 
 	/**
@@ -524,8 +553,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldKurtosisESet = kurtosisESet;
 		kurtosisESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS,
-					oldKurtosis, kurtosis, !oldKurtosisESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS, oldKurtosis,
+					kurtosis, !oldKurtosisESet));
 	}
 
 	/**
@@ -539,8 +569,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		kurtosis = KURTOSIS_EDEFAULT;
 		kurtosisESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS,
-					oldKurtosis, KURTOSIS_EDEFAULT, oldKurtosisESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS, oldKurtosis,
+					KURTOSIS_EDEFAULT, oldKurtosisESet));
 	}
 
 	/**
@@ -572,7 +603,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldMaxESet = maxESet;
 		maxESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MAX, oldMax, max,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MAX, oldMax, max,
 					!oldMaxESet));
 	}
 
@@ -587,7 +619,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		max = MAX_EDEFAULT;
 		maxESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MAX, oldMax,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MAX, oldMax,
 					MAX_EDEFAULT, oldMaxESet));
 	}
 
@@ -620,8 +653,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldMeanESet = meanESet;
 		meanESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MEAN, oldMean,
-					mean, !oldMeanESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MEAN, oldMean, mean,
+					!oldMeanESet));
 	}
 
 	/**
@@ -635,7 +669,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		mean = MEAN_EDEFAULT;
 		meanESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MEAN, oldMean,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MEAN, oldMean,
 					MEAN_EDEFAULT, oldMeanESet));
 	}
 
@@ -668,7 +703,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldMidPointESet = midPointESet;
 		midPointESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MID_POINT,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MID_POINT,
 					oldMidPoint, midPoint, !oldMidPointESet));
 	}
 
@@ -683,7 +719,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		midPoint = MID_POINT_EDEFAULT;
 		midPointESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MID_POINT,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MID_POINT,
 					oldMidPoint, MID_POINT_EDEFAULT, oldMidPointESet));
 	}
 
@@ -716,7 +753,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldMinESet = minESet;
 		minESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MIN, oldMin, min,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MIN, oldMin, min,
 					!oldMinESet));
 	}
 
@@ -731,7 +769,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		min = MIN_EDEFAULT;
 		minESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MIN, oldMin,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__MIN, oldMin,
 					MIN_EDEFAULT, oldMinESet));
 	}
 
@@ -764,7 +803,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldNumberBinsESet = numberBinsESet;
 		numberBinsESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
 					oldNumberBins, numberBins, !oldNumberBinsESet));
 	}
 
@@ -779,7 +819,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		numberBins = NUMBER_BINS_EDEFAULT;
 		numberBinsESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
 					oldNumberBins, NUMBER_BINS_EDEFAULT, oldNumberBinsESet));
 	}
 
@@ -812,8 +853,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldSkewESet = skewESet;
 		skewESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__SKEW, oldSkew,
-					skew, !oldSkewESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__SKEW, oldSkew, skew,
+					!oldSkewESet));
 	}
 
 	/**
@@ -827,7 +869,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		skew = SKEW_EDEFAULT;
 		skewESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__SKEW, oldSkew,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__SKEW, oldSkew,
 					SKEW_EDEFAULT, oldSkewESet));
 	}
 
@@ -860,8 +903,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		boolean oldStdDevESet = stdDevESet;
 		stdDevESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__STD_DEV,
-					oldStdDev, stdDev, !oldStdDevESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__STD_DEV, oldStdDev,
+					stdDev, !oldStdDevESet));
 	}
 
 	/**
@@ -875,8 +919,9 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 		stdDev = STD_DEV_EDEFAULT;
 		stdDevESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_DISTRIBUTION_TYPE__STD_DEV,
-					oldStdDev, STD_DEV_EDEFAULT, oldStdDevESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_DISTRIBUTION_TYPE__STD_DEV, oldStdDev,
+					STD_DEV_EDEFAULT, oldStdDevESet));
 	}
 
 	/**
@@ -893,12 +938,14 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN:
 			return basicSetUnderflowBin(null, msgs);
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN:
-			return ((InternalEList<?>) getHistogramBin()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getHistogramBin()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN:
 			return basicSetOverflowBin(null, msgs);
 		}
@@ -953,7 +1000,8 @@ public class OutputDistributionTypeImpl extends MinimalEObjectImpl.Container imp
 			return;
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN:
 			getHistogramBin().clear();
-			getHistogramBin().addAll((Collection<? extends HistogramBinType>) newValue);
+			getHistogramBin().addAll(
+					(Collection<? extends HistogramBinType>) newValue);
 			return;
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN:
 			setOverflowBin((HistogramBinType) newValue);

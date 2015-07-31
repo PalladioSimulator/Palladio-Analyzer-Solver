@@ -29,8 +29,9 @@ import org.palladiosimulator.solver.lqn.ResultGeneralType;
  * end-user-doc -->
  * @generated
  */
-public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ResultGeneralTypeItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -71,13 +72,16 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addConvValPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_convVal_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_convVal_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__CONV_VAL, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_convVal_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_convVal_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__CONV_VAL, true, false,
+				false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -87,13 +91,17 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addElapsedTimePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_elapsedTime_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_elapsedTime_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__ELAPSED_TIME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_elapsedTime_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_elapsedTime_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__ELAPSED_TIME, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -103,13 +111,17 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addIterationsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_iterations_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_iterations_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__ITERATIONS, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_iterations_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_iterations_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__ITERATIONS, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -119,13 +131,17 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPlatformInfoPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_platformInfo_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_platformInfo_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__PLATFORM_INFO, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_platformInfo_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_platformInfo_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__PLATFORM_INFO, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -135,13 +151,17 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addSolverInfoPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_solverInfo_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_solverInfo_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__SOLVER_INFO, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_solverInfo_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_solverInfo_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__SOLVER_INFO, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -151,13 +171,17 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addSystemCpuTimePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_systemCpuTime_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_systemCpuTime_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_systemCpuTime_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_systemCpuTime_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -167,13 +191,17 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addUserCpuTimePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_userCpuTime_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_userCpuTime_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__USER_CPU_TIME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_userCpuTime_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_userCpuTime_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__USER_CPU_TIME, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -183,13 +211,16 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addValidPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultGeneralType_valid_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultGeneralType_valid_feature",
-								"_UI_ResultGeneralType_type"),
-						LqnPackage.Literals.RESULT_GENERAL_TYPE__VALID, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultGeneralType_valid_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultGeneralType_valid_feature",
+						"_UI_ResultGeneralType_type"),
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__VALID, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -202,10 +233,12 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.RESULT_GENERAL_TYPE__MVA_INFO);
+			childrenFeatures
+					.add(LqnPackage.Literals.RESULT_GENERAL_TYPE__MVA_INFO);
 		}
 		return childrenFeatures;
 	}
@@ -229,7 +262,8 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ResultGeneralType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ResultGeneralType"));
 	}
 
 	/**
@@ -241,7 +275,8 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	@Override
 	public String getText(Object object) {
 		ResultGeneralType resultGeneralType = (ResultGeneralType) object;
-		return getString("_UI_ResultGeneralType_type") + " " + resultGeneralType.getConvVal();
+		return getString("_UI_ResultGeneralType_type") + " "
+				+ resultGeneralType.getConvVal();
 	}
 
 	/**
@@ -263,10 +298,12 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 		case LqnPackage.RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME:
 		case LqnPackage.RESULT_GENERAL_TYPE__USER_CPU_TIME:
 		case LqnPackage.RESULT_GENERAL_TYPE__VALID:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.RESULT_GENERAL_TYPE__MVA_INFO:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -279,10 +316,12 @@ public class ResultGeneralTypeItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.RESULT_GENERAL_TYPE__MVA_INFO,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.RESULT_GENERAL_TYPE__MVA_INFO,
 				LqnFactory.eINSTANCE.createMvaInfoType()));
 	}
 

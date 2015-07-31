@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryType#getResultEntry <em>Result Entry</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryType#getServiceTimeDistribution <em>Service Time Distribution</em>}</li>
@@ -25,6 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryType#getSemaphore <em>Semaphore</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryType#getType <em>Type</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryType()
  * @model extendedMetaData="name='EntryType' kind='elementOnly'"

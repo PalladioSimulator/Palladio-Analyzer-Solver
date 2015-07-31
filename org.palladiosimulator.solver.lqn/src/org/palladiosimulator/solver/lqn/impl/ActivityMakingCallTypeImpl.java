@@ -13,14 +13,15 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Activity Making Call Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityMakingCallTypeImpl#getCallsMean <em>Calls Mean</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements ActivityMakingCallType {
+public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements
+		ActivityMakingCallType {
 	/**
 	 * The default value of the '{@link #getCallsMean() <em>Calls Mean</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -76,7 +77,8 @@ public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements Ac
 		Object oldCallsMean = callsMean;
 		callsMean = newCallsMean;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN,
 					oldCallsMean, callsMean));
 	}
 
@@ -129,7 +131,8 @@ public class ActivityMakingCallTypeImpl extends MakingCallTypeImpl implements Ac
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN:
-			return CALLS_MEAN_EDEFAULT == null ? callsMean != null : !CALLS_MEAN_EDEFAULT.equals(callsMean);
+			return CALLS_MEAN_EDEFAULT == null ? callsMean != null
+					: !CALLS_MEAN_EDEFAULT.equals(callsMean);
 		}
 		return super.eIsSet(featureID);
 	}

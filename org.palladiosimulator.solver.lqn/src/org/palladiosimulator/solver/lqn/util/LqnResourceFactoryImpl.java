@@ -32,7 +32,8 @@ public class LqnResourceFactoryImpl extends ResourceFactoryImpl {
 	 */
 	public LqnResourceFactoryImpl() {
 		super();
-		extendedMetaData = new BasicExtendedMetaData(new EPackageRegistryImpl(EPackage.Registry.INSTANCE));
+		extendedMetaData = new BasicExtendedMetaData(new EPackageRegistryImpl(
+				EPackage.Registry.INSTANCE));
 		extendedMetaData.putPackage(null, LqnPackage.eINSTANCE);
 	}
 
@@ -44,15 +45,21 @@ public class LqnResourceFactoryImpl extends ResourceFactoryImpl {
 	@Override
 	public Resource createResource(URI uri) {
 		XMLResource result = new LqnResourceImpl(uri);
-		result.getDefaultSaveOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData);
-		result.getDefaultLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData);
+		result.getDefaultSaveOptions().put(
+				XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData);
+		result.getDefaultLoadOptions().put(
+				XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData);
 
-		result.getDefaultSaveOptions().put(XMLResource.OPTION_SCHEMA_LOCATION, Boolean.TRUE);
+		result.getDefaultSaveOptions().put(XMLResource.OPTION_SCHEMA_LOCATION,
+				Boolean.TRUE);
 
-		result.getDefaultLoadOptions().put(XMLResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE);
-		result.getDefaultSaveOptions().put(XMLResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE);
+		result.getDefaultLoadOptions().put(
+				XMLResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE);
+		result.getDefaultSaveOptions().put(
+				XMLResource.OPTION_USE_ENCODED_ATTRIBUTE_STYLE, Boolean.TRUE);
 
-		result.getDefaultLoadOptions().put(XMLResource.OPTION_USE_LEXICAL_HANDLER, Boolean.TRUE);
+		result.getDefaultLoadOptions().put(
+				XMLResource.OPTION_USE_LEXICAL_HANDLER, Boolean.TRUE);
 		return result;
 	}
 

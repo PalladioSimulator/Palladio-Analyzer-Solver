@@ -10,11 +10,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.PragmaType#getParam <em>Param</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.PragmaType#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPragmaType()
  * @model extendedMetaData="name='pragma_._type' kind='empty'"

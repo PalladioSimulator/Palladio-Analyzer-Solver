@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.ParameterType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ParameterTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ParameterTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -62,13 +63,16 @@ public class ParameterTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ParameterType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ParameterType_name_feature",
-								"_UI_ParameterType_type"),
-						LqnPackage.Literals.PARAMETER_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ParameterType_name_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ParameterType_name_feature",
+						"_UI_ParameterType_type"),
+				LqnPackage.Literals.PARAMETER_TYPE__NAME, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -78,13 +82,16 @@ public class ParameterTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addValuePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ParameterType_value_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ParameterType_value_feature",
-								"_UI_ParameterType_type"),
-						LqnPackage.Literals.PARAMETER_TYPE__VALUE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ParameterType_value_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ParameterType_value_feature",
+						"_UI_ParameterType_type"),
+				LqnPackage.Literals.PARAMETER_TYPE__VALUE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -94,7 +101,8 @@ public class ParameterTypeItemProvider extends ItemProviderAdapter implements IE
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ParameterType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ParameterType"));
 	}
 
 	/**
@@ -123,7 +131,8 @@ public class ParameterTypeItemProvider extends ItemProviderAdapter implements IE
 		switch (notification.getFeatureID(ParameterType.class)) {
 		case LqnPackage.PARAMETER_TYPE__NAME:
 		case LqnPackage.PARAMETER_TYPE__VALUE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -136,7 +145,8 @@ public class ParameterTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

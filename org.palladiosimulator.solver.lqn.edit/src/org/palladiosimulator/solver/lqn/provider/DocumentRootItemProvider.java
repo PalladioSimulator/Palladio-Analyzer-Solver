@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class DocumentRootItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class DocumentRootItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,7 +64,8 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE);
@@ -91,7 +93,8 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/DocumentRoot"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/DocumentRoot"));
 	}
 
 	/**
@@ -118,7 +121,8 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
 		switch (notification.getFeatureID(DocumentRoot.class)) {
 		case LqnPackage.DOCUMENT_ROOT__LQN_CORE:
 		case LqnPackage.DOCUMENT_ROOT__LQN_MODEL:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -131,13 +135,16 @@ public class DocumentRootItemProvider extends ItemProviderAdapter implements IEd
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE,
 				LqnFactory.eINSTANCE.createLqnCoreType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
 				LqnFactory.eINSTANCE.createLqnModelType()));
 	}
 

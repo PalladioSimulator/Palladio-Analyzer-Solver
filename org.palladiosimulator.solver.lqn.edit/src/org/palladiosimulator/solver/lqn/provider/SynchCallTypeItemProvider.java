@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.SynchCallType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class SynchCallTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -61,13 +62,16 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addDestPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SynchCallType_dest_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SynchCallType_dest_feature",
-								"_UI_SynchCallType_type"),
-						LqnPackage.Literals.SYNCH_CALL_TYPE__DEST, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_SynchCallType_dest_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_SynchCallType_dest_feature",
+						"_UI_SynchCallType_type"),
+				LqnPackage.Literals.SYNCH_CALL_TYPE__DEST, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -77,7 +81,8 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/SynchCallType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/SynchCallType"));
 	}
 
 	/**
@@ -105,7 +110,8 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
 
 		switch (notification.getFeatureID(SynchCallType.class)) {
 		case LqnPackage.SYNCH_CALL_TYPE__DEST:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -118,7 +124,8 @@ public class SynchCallTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

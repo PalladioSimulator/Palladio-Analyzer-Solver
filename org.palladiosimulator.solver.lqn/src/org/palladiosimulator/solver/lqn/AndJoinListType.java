@@ -13,13 +13,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.AndJoinListType#getResultJoinDelay <em>Result Join Delay</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.AndJoinListType#getServiceTimeDistribution <em>Service Time Distribution</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.AndJoinListType#getActivity <em>Activity</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.AndJoinListType#getQuorum <em>Quorum</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getAndJoinListType()
  * @model extendedMetaData="name='AndJoinListType' kind='elementOnly'"

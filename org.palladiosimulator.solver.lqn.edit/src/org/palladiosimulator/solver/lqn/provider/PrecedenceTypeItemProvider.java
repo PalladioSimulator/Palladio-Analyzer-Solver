@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.PrecedenceType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,7 +64,8 @@ public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.PRECEDENCE_TYPE__PRE);
@@ -72,7 +74,8 @@ public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements I
 			childrenFeatures.add(LqnPackage.Literals.PRECEDENCE_TYPE__POST);
 			childrenFeatures.add(LqnPackage.Literals.PRECEDENCE_TYPE__POST_OR);
 			childrenFeatures.add(LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND);
-			childrenFeatures.add(LqnPackage.Literals.PRECEDENCE_TYPE__POST_LOOP);
+			childrenFeatures
+					.add(LqnPackage.Literals.PRECEDENCE_TYPE__POST_LOOP);
 		}
 		return childrenFeatures;
 	}
@@ -96,7 +99,8 @@ public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements I
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/PrecedenceType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/PrecedenceType"));
 	}
 
 	/**
@@ -128,7 +132,8 @@ public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements I
 		case LqnPackage.PRECEDENCE_TYPE__POST_OR:
 		case LqnPackage.PRECEDENCE_TYPE__POST_AND:
 		case LqnPackage.PRECEDENCE_TYPE__POST_LOOP:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -141,28 +146,36 @@ public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PRECEDENCE_TYPE__PRE,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PRECEDENCE_TYPE__PRE,
 				LqnFactory.eINSTANCE.createSingleActivityListType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PRECEDENCE_TYPE__PRE_OR,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PRECEDENCE_TYPE__PRE_OR,
 				LqnFactory.eINSTANCE.createActivityListType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PRECEDENCE_TYPE__PRE_AND,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PRECEDENCE_TYPE__PRE_AND,
 				LqnFactory.eINSTANCE.createAndJoinListType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PRECEDENCE_TYPE__POST,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PRECEDENCE_TYPE__POST,
 				LqnFactory.eINSTANCE.createSingleActivityListType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PRECEDENCE_TYPE__POST_OR,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PRECEDENCE_TYPE__POST_OR,
 				LqnFactory.eINSTANCE.createOrListType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND,
 				LqnFactory.eINSTANCE.createActivityListType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PRECEDENCE_TYPE__POST_LOOP,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PRECEDENCE_TYPE__POST_LOOP,
 				LqnFactory.eINSTANCE.createActivityLoopListType()));
 	}
 
@@ -173,7 +186,8 @@ public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+	public String getCreateChildText(Object owner, Object feature,
+			Object child, Collection<?> selection) {
 		Object childFeature = feature;
 		Object childObject = child;
 
@@ -183,8 +197,9 @@ public class PrecedenceTypeItemProvider extends ItemProviderAdapter implements I
 				|| childFeature == LqnPackage.Literals.PRECEDENCE_TYPE__POST_AND;
 
 		if (qualify) {
-			return getString("_UI_CreateChild_text2",
-					new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+			return getString("_UI_CreateChild_text2", new Object[] {
+					getTypeText(childObject), getFeatureText(childFeature),
+					getTypeText(owner) });
 		}
 		return super.getCreateChildText(owner, feature, child, selection);
 	}

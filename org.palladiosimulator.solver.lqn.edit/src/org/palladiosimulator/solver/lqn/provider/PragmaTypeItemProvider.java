@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.PragmaType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class PragmaTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -62,13 +63,15 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	protected void addParamPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_PragmaType_param_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_PragmaType_param_feature",
-								"_UI_PragmaType_type"),
-						LqnPackage.Literals.PRAGMA_TYPE__PARAM, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_PragmaType_param_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_PragmaType_param_feature", "_UI_PragmaType_type"),
+				LqnPackage.Literals.PRAGMA_TYPE__PARAM, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -78,13 +81,15 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	protected void addValuePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_PragmaType_value_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_PragmaType_value_feature",
-								"_UI_PragmaType_type"),
-						LqnPackage.Literals.PRAGMA_TYPE__VALUE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_PragmaType_value_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_PragmaType_value_feature", "_UI_PragmaType_type"),
+				LqnPackage.Literals.PRAGMA_TYPE__VALUE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -94,7 +99,8 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/PragmaType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/PragmaType"));
 	}
 
 	/**
@@ -123,7 +129,8 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
 		switch (notification.getFeatureID(PragmaType.class)) {
 		case LqnPackage.PRAGMA_TYPE__PARAM:
 		case LqnPackage.PRAGMA_TYPE__VALUE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -136,7 +143,8 @@ public class PragmaTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

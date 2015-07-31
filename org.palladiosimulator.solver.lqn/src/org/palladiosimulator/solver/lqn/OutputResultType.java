@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getResultConf95 <em>Result Conf95</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getResultConf99 <em>Result Conf99</em>}</li>
@@ -58,6 +57,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getWaitingVariance <em>Waiting Variance</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputResultType#getBottleneckStrength <em>Bottleneck Strength</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputResultType()
  * @model extendedMetaData="name='OutputResultType' kind='elementOnly'"

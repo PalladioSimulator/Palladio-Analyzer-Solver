@@ -16,7 +16,6 @@ import org.palladiosimulator.solver.lqn.MvaInfoType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.MvaInfoTypeImpl#getCore <em>Core</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.MvaInfoTypeImpl#getFaults <em>Faults</em>}</li>
@@ -26,10 +25,12 @@ import org.palladiosimulator.solver.lqn.MvaInfoType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.MvaInfoTypeImpl#getWait <em>Wait</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.MvaInfoTypeImpl#getWaitSquared <em>Wait Squared</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements MvaInfoType {
+public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements
+		MvaInfoType {
 	/**
 	 * The default value of the '{@link #getCore() <em>Core</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -241,7 +242,8 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		BigInteger oldCore = core;
 		core = newCore;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MVA_INFO_TYPE__CORE, oldCore, core));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MVA_INFO_TYPE__CORE, oldCore, core));
 	}
 
 	/**
@@ -262,7 +264,8 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		BigInteger oldFaults = faults;
 		faults = newFaults;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MVA_INFO_TYPE__FAULTS, oldFaults, faults));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MVA_INFO_TYPE__FAULTS, oldFaults, faults));
 	}
 
 	/**
@@ -285,8 +288,8 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		boolean oldStepESet = stepESet;
 		stepESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MVA_INFO_TYPE__STEP, oldStep, step,
-					!oldStepESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MVA_INFO_TYPE__STEP, oldStep, step, !oldStepESet));
 	}
 
 	/**
@@ -300,8 +303,9 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		step = STEP_EDEFAULT;
 		stepESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.MVA_INFO_TYPE__STEP, oldStep,
-					STEP_EDEFAULT, oldStepESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.MVA_INFO_TYPE__STEP, oldStep, STEP_EDEFAULT,
+					oldStepESet));
 	}
 
 	/**
@@ -333,8 +337,9 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		boolean oldStepSquaredESet = stepSquaredESet;
 		stepSquaredESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MVA_INFO_TYPE__STEP_SQUARED,
-					oldStepSquared, stepSquared, !oldStepSquaredESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MVA_INFO_TYPE__STEP_SQUARED, oldStepSquared,
+					stepSquared, !oldStepSquaredESet));
 	}
 
 	/**
@@ -348,8 +353,9 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		stepSquared = STEP_SQUARED_EDEFAULT;
 		stepSquaredESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.MVA_INFO_TYPE__STEP_SQUARED,
-					oldStepSquared, STEP_SQUARED_EDEFAULT, oldStepSquaredESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.MVA_INFO_TYPE__STEP_SQUARED, oldStepSquared,
+					STEP_SQUARED_EDEFAULT, oldStepSquaredESet));
 	}
 
 	/**
@@ -379,7 +385,8 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		BigInteger oldSubmodels = submodels;
 		submodels = newSubmodels;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MVA_INFO_TYPE__SUBMODELS, oldSubmodels,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MVA_INFO_TYPE__SUBMODELS, oldSubmodels,
 					submodels));
 	}
 
@@ -403,8 +410,8 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		boolean oldWaitESet = waitESet;
 		waitESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MVA_INFO_TYPE__WAIT, oldWait, wait,
-					!oldWaitESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MVA_INFO_TYPE__WAIT, oldWait, wait, !oldWaitESet));
 	}
 
 	/**
@@ -418,8 +425,9 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		wait = WAIT_EDEFAULT;
 		waitESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.MVA_INFO_TYPE__WAIT, oldWait,
-					WAIT_EDEFAULT, oldWaitESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.MVA_INFO_TYPE__WAIT, oldWait, WAIT_EDEFAULT,
+					oldWaitESet));
 	}
 
 	/**
@@ -451,8 +459,9 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		boolean oldWaitSquaredESet = waitSquaredESet;
 		waitSquaredESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.MVA_INFO_TYPE__WAIT_SQUARED,
-					oldWaitSquared, waitSquared, !oldWaitSquaredESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.MVA_INFO_TYPE__WAIT_SQUARED, oldWaitSquared,
+					waitSquared, !oldWaitSquaredESet));
 	}
 
 	/**
@@ -466,8 +475,9 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 		waitSquared = WAIT_SQUARED_EDEFAULT;
 		waitSquaredESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.MVA_INFO_TYPE__WAIT_SQUARED,
-					oldWaitSquared, WAIT_SQUARED_EDEFAULT, oldWaitSquaredESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.MVA_INFO_TYPE__WAIT_SQUARED, oldWaitSquared,
+					WAIT_SQUARED_EDEFAULT, oldWaitSquaredESet));
 	}
 
 	/**
@@ -576,15 +586,18 @@ public class MvaInfoTypeImpl extends MinimalEObjectImpl.Container implements Mva
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.MVA_INFO_TYPE__CORE:
-			return CORE_EDEFAULT == null ? core != null : !CORE_EDEFAULT.equals(core);
+			return CORE_EDEFAULT == null ? core != null : !CORE_EDEFAULT
+					.equals(core);
 		case LqnPackage.MVA_INFO_TYPE__FAULTS:
-			return FAULTS_EDEFAULT == null ? faults != null : !FAULTS_EDEFAULT.equals(faults);
+			return FAULTS_EDEFAULT == null ? faults != null : !FAULTS_EDEFAULT
+					.equals(faults);
 		case LqnPackage.MVA_INFO_TYPE__STEP:
 			return isSetStep();
 		case LqnPackage.MVA_INFO_TYPE__STEP_SQUARED:
 			return isSetStepSquared();
 		case LqnPackage.MVA_INFO_TYPE__SUBMODELS:
-			return SUBMODELS_EDEFAULT == null ? submodels != null : !SUBMODELS_EDEFAULT.equals(submodels);
+			return SUBMODELS_EDEFAULT == null ? submodels != null
+					: !SUBMODELS_EDEFAULT.equals(submodels);
 		case LqnPackage.MVA_INFO_TYPE__WAIT:
 			return isSetWait();
 		case LqnPackage.MVA_INFO_TYPE__WAIT_SQUARED:

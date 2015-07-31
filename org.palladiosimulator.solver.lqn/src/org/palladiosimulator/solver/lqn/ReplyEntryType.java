@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.ReplyEntryType#getReplyActivity <em>Reply Activity</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ReplyEntryType#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getReplyEntryType()
  * @model extendedMetaData="name='reply-entry_._type' kind='elementOnly'"

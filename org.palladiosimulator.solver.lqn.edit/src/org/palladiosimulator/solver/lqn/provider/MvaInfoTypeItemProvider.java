@@ -27,8 +27,9 @@ import org.palladiosimulator.solver.lqn.MvaInfoType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -69,12 +70,17 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	protected void addCorePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MvaInfoType_core_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_core_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_MvaInfoType_core_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_MvaInfoType_core_feature",
 								"_UI_MvaInfoType_type"),
-						LqnPackage.Literals.MVA_INFO_TYPE__CORE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+						LqnPackage.Literals.MVA_INFO_TYPE__CORE, true, false,
+						false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+						null, null));
 	}
 
 	/**
@@ -84,13 +90,16 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	protected void addFaultsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MvaInfoType_faults_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_faults_feature",
-								"_UI_MvaInfoType_type"),
-						LqnPackage.Literals.MVA_INFO_TYPE__FAULTS, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_MvaInfoType_faults_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_MvaInfoType_faults_feature",
+						"_UI_MvaInfoType_type"),
+				LqnPackage.Literals.MVA_INFO_TYPE__FAULTS, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -101,12 +110,17 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	protected void addStepPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MvaInfoType_step_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_step_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_MvaInfoType_step_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_MvaInfoType_step_feature",
 								"_UI_MvaInfoType_type"),
-						LqnPackage.Literals.MVA_INFO_TYPE__STEP, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+						LqnPackage.Literals.MVA_INFO_TYPE__STEP, true, false,
+						false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+						null));
 	}
 
 	/**
@@ -116,13 +130,16 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	protected void addStepSquaredPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MvaInfoType_stepSquared_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_stepSquared_feature",
-								"_UI_MvaInfoType_type"),
-						LqnPackage.Literals.MVA_INFO_TYPE__STEP_SQUARED, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_MvaInfoType_stepSquared_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_MvaInfoType_stepSquared_feature",
+						"_UI_MvaInfoType_type"),
+				LqnPackage.Literals.MVA_INFO_TYPE__STEP_SQUARED, true, false,
+				false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -132,13 +149,16 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	protected void addSubmodelsPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MvaInfoType_submodels_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_submodels_feature",
-								"_UI_MvaInfoType_type"),
-						LqnPackage.Literals.MVA_INFO_TYPE__SUBMODELS, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_MvaInfoType_submodels_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_MvaInfoType_submodels_feature",
+						"_UI_MvaInfoType_type"),
+				LqnPackage.Literals.MVA_INFO_TYPE__SUBMODELS, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -149,12 +169,17 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	protected void addWaitPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MvaInfoType_wait_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_wait_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_MvaInfoType_wait_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_MvaInfoType_wait_feature",
 								"_UI_MvaInfoType_type"),
-						LqnPackage.Literals.MVA_INFO_TYPE__WAIT, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+						LqnPackage.Literals.MVA_INFO_TYPE__WAIT, true, false,
+						false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+						null));
 	}
 
 	/**
@@ -164,13 +189,16 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	protected void addWaitSquaredPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MvaInfoType_waitSquared_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MvaInfoType_waitSquared_feature",
-								"_UI_MvaInfoType_type"),
-						LqnPackage.Literals.MVA_INFO_TYPE__WAIT_SQUARED, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_MvaInfoType_waitSquared_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_MvaInfoType_waitSquared_feature",
+						"_UI_MvaInfoType_type"),
+				LqnPackage.Literals.MVA_INFO_TYPE__WAIT_SQUARED, true, false,
+				false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -180,7 +208,8 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/MvaInfoType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/MvaInfoType"));
 	}
 
 	/**
@@ -215,7 +244,8 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 		case LqnPackage.MVA_INFO_TYPE__SUBMODELS:
 		case LqnPackage.MVA_INFO_TYPE__WAIT:
 		case LqnPackage.MVA_INFO_TYPE__WAIT_SQUARED:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -228,7 +258,8 @@ public class MvaInfoTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

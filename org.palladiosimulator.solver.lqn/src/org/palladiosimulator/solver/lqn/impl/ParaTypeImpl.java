@@ -18,17 +18,18 @@ import org.palladiosimulator.solver.lqn.ParaType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getStartValue <em>Start Value</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getEndValue <em>End Value</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getStepValue <em>Step Value</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ParaTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaType {
+public class ParaTypeImpl extends MinimalEObjectImpl.Container implements
+		ParaType {
 	/**
 	 * The default value of the '{@link #getStartValue() <em>Start Value</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -163,7 +164,8 @@ public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaTy
 		boolean oldStartValueESet = startValueESet;
 		startValueESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PARA_TYPE__START_VALUE, oldStartValue,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PARA_TYPE__START_VALUE, oldStartValue,
 					startValue, !oldStartValueESet));
 	}
 
@@ -178,7 +180,8 @@ public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaTy
 		startValue = START_VALUE_EDEFAULT;
 		startValueESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PARA_TYPE__START_VALUE, oldStartValue,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PARA_TYPE__START_VALUE, oldStartValue,
 					START_VALUE_EDEFAULT, oldStartValueESet));
 	}
 
@@ -211,8 +214,9 @@ public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaTy
 		boolean oldEndValueESet = endValueESet;
 		endValueESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PARA_TYPE__END_VALUE, oldEndValue,
-					endValue, !oldEndValueESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PARA_TYPE__END_VALUE, oldEndValue, endValue,
+					!oldEndValueESet));
 	}
 
 	/**
@@ -226,7 +230,8 @@ public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaTy
 		endValue = END_VALUE_EDEFAULT;
 		endValueESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PARA_TYPE__END_VALUE, oldEndValue,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PARA_TYPE__END_VALUE, oldEndValue,
 					END_VALUE_EDEFAULT, oldEndValueESet));
 	}
 
@@ -259,8 +264,9 @@ public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaTy
 		boolean oldStepValueESet = stepValueESet;
 		stepValueESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PARA_TYPE__STEP_VALUE, oldStepValue,
-					stepValue, !oldStepValueESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PARA_TYPE__STEP_VALUE, oldStepValue, stepValue,
+					!oldStepValueESet));
 	}
 
 	/**
@@ -274,7 +280,8 @@ public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaTy
 		stepValue = STEP_VALUE_EDEFAULT;
 		stepValueESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PARA_TYPE__STEP_VALUE, oldStepValue,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PARA_TYPE__STEP_VALUE, oldStepValue,
 					STEP_VALUE_EDEFAULT, oldStepValueESet));
 	}
 
@@ -294,7 +301,8 @@ public class ParaTypeImpl extends MinimalEObjectImpl.Container implements ParaTy
 	@Override
 	public EList<Integer> getValue() {
 		if (value == null) {
-			value = new EDataTypeEList<Integer>(Integer.class, this, LqnPackage.PARA_TYPE__VALUE);
+			value = new EDataTypeEList<Integer>(Integer.class, this,
+					LqnPackage.PARA_TYPE__VALUE);
 		}
 		return value;
 	}

@@ -78,7 +78,8 @@ public enum ValidType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<ValidType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<ValidType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Valid Type</b></em>' literal with the specified literal value. <!--
@@ -100,8 +101,6 @@ public enum ValidType implements Enumerator {
 	 * Returns the '<em><b>Valid Type</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static ValidType getByName(String name) {

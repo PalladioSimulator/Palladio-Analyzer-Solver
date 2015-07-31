@@ -14,14 +14,15 @@ import org.palladiosimulator.solver.lqn.PlotType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PlotTypeImpl#getVariable <em>Variable</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class PlotTypeImpl extends MinimalEObjectImpl.Container implements PlotType {
+public class PlotTypeImpl extends MinimalEObjectImpl.Container implements
+		PlotType {
 	/**
 	 * The default value of the '{@link #getVariable() <em>Variable</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -77,8 +78,8 @@ public class PlotTypeImpl extends MinimalEObjectImpl.Container implements PlotTy
 		String oldVariable = variable;
 		variable = newVariable;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PLOT_TYPE__VARIABLE, oldVariable,
-					variable));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PLOT_TYPE__VARIABLE, oldVariable, variable));
 	}
 
 	/**
@@ -130,7 +131,8 @@ public class PlotTypeImpl extends MinimalEObjectImpl.Container implements PlotTy
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.PLOT_TYPE__VARIABLE:
-			return VARIABLE_EDEFAULT == null ? variable != null : !VARIABLE_EDEFAULT.equals(variable);
+			return VARIABLE_EDEFAULT == null ? variable != null
+					: !VARIABLE_EDEFAULT.equals(variable);
 		}
 		return super.eIsSet(featureID);
 	}

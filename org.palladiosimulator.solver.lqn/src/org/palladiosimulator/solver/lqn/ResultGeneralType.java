@@ -12,7 +12,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getMvaInfo <em>Mva Info</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getConvVal <em>Conv Val</em>}</li>
@@ -24,6 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getUserCpuTime <em>User Cpu Time</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ResultGeneralType#getValid <em>Valid</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultGeneralType()
  * @model extendedMetaData="name='result-general_._type' kind='elementOnly'"

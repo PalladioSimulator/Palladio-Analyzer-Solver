@@ -22,15 +22,16 @@ import org.palladiosimulator.solver.lqn.ReplyEntryType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl#getReplyActivity <em>Reply Activity</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ReplyEntryTypeImpl extends MinimalEObjectImpl.Container implements ReplyEntryType {
+public class ReplyEntryTypeImpl extends MinimalEObjectImpl.Container implements
+		ReplyEntryType {
 	/**
 	 * The cached value of the '{@link #getReplyActivity() <em>Reply Activity</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -84,7 +85,8 @@ public class ReplyEntryTypeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public EList<ReplyActivityType> getReplyActivity() {
 		if (replyActivity == null) {
-			replyActivity = new EObjectContainmentEList<ReplyActivityType>(ReplyActivityType.class, this,
+			replyActivity = new EObjectContainmentEList<ReplyActivityType>(
+					ReplyActivityType.class, this,
 					LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY);
 		}
 		return replyActivity;
@@ -108,7 +110,8 @@ public class ReplyEntryTypeImpl extends MinimalEObjectImpl.Container implements 
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.REPLY_ENTRY_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.REPLY_ENTRY_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -116,10 +119,12 @@ public class ReplyEntryTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
-			return ((InternalEList<?>) getReplyActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getReplyActivity()).basicRemove(
+					otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -149,7 +154,8 @@ public class ReplyEntryTypeImpl extends MinimalEObjectImpl.Container implements 
 		switch (featureID) {
 		case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
 			getReplyActivity().clear();
-			getReplyActivity().addAll((Collection<? extends ReplyActivityType>) newValue);
+			getReplyActivity().addAll(
+					(Collection<? extends ReplyActivityType>) newValue);
 			return;
 		case LqnPackage.REPLY_ENTRY_TYPE__NAME:
 			setName((String) newValue);
@@ -185,7 +191,8 @@ public class ReplyEntryTypeImpl extends MinimalEObjectImpl.Container implements 
 		case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
 			return replyActivity != null && !replyActivity.isEmpty();
 		case LqnPackage.REPLY_ENTRY_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}

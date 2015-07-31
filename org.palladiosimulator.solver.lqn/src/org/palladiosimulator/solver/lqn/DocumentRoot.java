@@ -12,7 +12,6 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.DocumentRoot#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
@@ -20,6 +19,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *   <li>{@link org.palladiosimulator.solver.lqn.DocumentRoot#getLqnCore <em>Lqn Core</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.DocumentRoot#getLqnModel <em>Lqn Model</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getDocumentRoot()
  * @model extendedMetaData="name='' kind='mixed'"

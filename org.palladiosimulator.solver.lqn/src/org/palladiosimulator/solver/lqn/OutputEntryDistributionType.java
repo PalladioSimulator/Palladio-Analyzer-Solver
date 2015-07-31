@@ -10,10 +10,10 @@ import java.math.BigInteger;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputEntryDistributionType#getPhase <em>Phase</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputEntryDistributionType()
  * @model extendedMetaData="name='OutputEntryDistributionType' kind='elementOnly'"

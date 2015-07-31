@@ -23,7 +23,6 @@ import org.palladiosimulator.solver.lqn.TaskType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.GroupTypeImpl#getResultGroup <em>Result Group</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.GroupTypeImpl#getTask <em>Task</em>}</li>
@@ -31,10 +30,12 @@ import org.palladiosimulator.solver.lqn.TaskType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.GroupTypeImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.GroupTypeImpl#getShare <em>Share</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class GroupTypeImpl extends MinimalEObjectImpl.Container implements GroupType {
+public class GroupTypeImpl extends MinimalEObjectImpl.Container implements
+		GroupType {
 	/**
 	 * The cached value of the '{@link #getResultGroup() <em>Result Group</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -146,7 +147,8 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 	@Override
 	public EList<OutputResultType> getResultGroup() {
 		if (resultGroup == null) {
-			resultGroup = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
+			resultGroup = new EObjectContainmentEList<OutputResultType>(
+					OutputResultType.class, this,
 					LqnPackage.GROUP_TYPE__RESULT_GROUP);
 		}
 		return resultGroup;
@@ -159,7 +161,8 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 	@Override
 	public EList<TaskType> getTask() {
 		if (task == null) {
-			task = new EObjectContainmentEList<TaskType>(TaskType.class, this, LqnPackage.GROUP_TYPE__TASK);
+			task = new EObjectContainmentEList<TaskType>(TaskType.class, this,
+					LqnPackage.GROUP_TYPE__TASK);
 		}
 		return task;
 	}
@@ -184,8 +187,8 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 		boolean oldCapESet = capESet;
 		capESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.GROUP_TYPE__CAP, oldCap, cap,
-					!oldCapESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.GROUP_TYPE__CAP, oldCap, cap, !oldCapESet));
 	}
 
 	/**
@@ -199,7 +202,8 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 		cap = CAP_EDEFAULT;
 		capESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.GROUP_TYPE__CAP, oldCap, CAP_EDEFAULT,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.GROUP_TYPE__CAP, oldCap, CAP_EDEFAULT,
 					oldCapESet));
 	}
 
@@ -230,7 +234,8 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.GROUP_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.GROUP_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -251,7 +256,8 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 		Object oldShare = share;
 		share = newShare;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.GROUP_TYPE__SHARE, oldShare, share));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.GROUP_TYPE__SHARE, oldShare, share));
 	}
 
 	/**
@@ -259,10 +265,12 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.GROUP_TYPE__RESULT_GROUP:
-			return ((InternalEList<?>) getResultGroup()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getResultGroup()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.GROUP_TYPE__TASK:
 			return ((InternalEList<?>) getTask()).basicRemove(otherEnd, msgs);
 		}
@@ -300,7 +308,8 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 		switch (featureID) {
 		case LqnPackage.GROUP_TYPE__RESULT_GROUP:
 			getResultGroup().clear();
-			getResultGroup().addAll((Collection<? extends OutputResultType>) newValue);
+			getResultGroup().addAll(
+					(Collection<? extends OutputResultType>) newValue);
 			return;
 		case LqnPackage.GROUP_TYPE__TASK:
 			getTask().clear();
@@ -359,9 +368,11 @@ public class GroupTypeImpl extends MinimalEObjectImpl.Container implements Group
 		case LqnPackage.GROUP_TYPE__CAP:
 			return isSetCap();
 		case LqnPackage.GROUP_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		case LqnPackage.GROUP_TYPE__SHARE:
-			return SHARE_EDEFAULT == null ? share != null : !SHARE_EDEFAULT.equals(share);
+			return SHARE_EDEFAULT == null ? share != null : !SHARE_EDEFAULT
+					.equals(share);
 		}
 		return super.eIsSet(featureID);
 	}

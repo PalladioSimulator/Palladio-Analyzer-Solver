@@ -21,15 +21,16 @@ import org.palladiosimulator.solver.lqn.PrecedenceType;
  * <em><b>Activity Graph Base</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityGraphBaseImpl#getActivity <em>Activity</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityGraphBaseImpl#getPrecedence <em>Precedence</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityGraphBaseImpl extends MinimalEObjectImpl.Container implements ActivityGraphBase {
+public class ActivityGraphBaseImpl extends MinimalEObjectImpl.Container
+		implements ActivityGraphBase {
 	/**
 	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -72,7 +73,8 @@ public class ActivityGraphBaseImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public EList<ActivityDefType> getActivity() {
 		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityDefType>(ActivityDefType.class, this,
+			activity = new EObjectContainmentEList<ActivityDefType>(
+					ActivityDefType.class, this,
 					LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY);
 		}
 		return activity;
@@ -85,7 +87,8 @@ public class ActivityGraphBaseImpl extends MinimalEObjectImpl.Container implemen
 	@Override
 	public EList<PrecedenceType> getPrecedence() {
 		if (precedence == null) {
-			precedence = new EObjectContainmentEList<PrecedenceType>(PrecedenceType.class, this,
+			precedence = new EObjectContainmentEList<PrecedenceType>(
+					PrecedenceType.class, this,
 					LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE);
 		}
 		return precedence;
@@ -96,12 +99,15 @@ public class ActivityGraphBaseImpl extends MinimalEObjectImpl.Container implemen
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
-			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
-			return ((InternalEList<?>) getPrecedence()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getPrecedence()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -131,11 +137,13 @@ public class ActivityGraphBaseImpl extends MinimalEObjectImpl.Container implemen
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
 			getActivity().clear();
-			getActivity().addAll((Collection<? extends ActivityDefType>) newValue);
+			getActivity().addAll(
+					(Collection<? extends ActivityDefType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
 			getPrecedence().clear();
-			getPrecedence().addAll((Collection<? extends PrecedenceType>) newValue);
+			getPrecedence().addAll(
+					(Collection<? extends PrecedenceType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

@@ -11,13 +11,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.ParaType#getStartValue <em>Start Value</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ParaType#getEndValue <em>End Value</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ParaType#getStepValue <em>Step Value</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ParaType#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getParaType()
  * @model extendedMetaData="name='para_._type' kind='elementOnly'"

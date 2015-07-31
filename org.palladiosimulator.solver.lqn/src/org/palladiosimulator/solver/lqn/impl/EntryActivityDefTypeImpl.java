@@ -24,7 +24,6 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Entry Activity Def Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryActivityDefTypeImpl#getCallList <em>Call List</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryActivityDefTypeImpl#getGroup <em>Group</em>}</li>
@@ -32,10 +31,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryActivityDefTypeImpl#getAsynchCall <em>Asynch Call</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryActivityDefTypeImpl#getFirstActivity <em>First Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements EntryActivityDefType {
+public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements
+		EntryActivityDefType {
 	/**
 	 * The cached value of the '{@link #getCallList() <em>Call List</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -98,7 +99,8 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
 	@Override
 	public EList<CallListType> getCallList() {
 		if (callList == null) {
-			callList = new EObjectContainmentEList<CallListType>(CallListType.class, this,
+			callList = new EObjectContainmentEList<CallListType>(
+					CallListType.class, this,
 					LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST);
 		}
 		return callList;
@@ -111,7 +113,8 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
 	@Override
 	public FeatureMap getGroup() {
 		if (group == null) {
-			group = new BasicFeatureMap(this, LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP);
+			group = new BasicFeatureMap(this,
+					LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP);
 		}
 		return group;
 	}
@@ -122,7 +125,8 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
 	 */
 	@Override
 	public EList<ActivityMakingCallType> getSynchCall() {
-		return getGroup().list(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL);
+		return getGroup().list(
+				LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL);
 	}
 
 	/**
@@ -131,7 +135,8 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
 	 */
 	@Override
 	public EList<ActivityMakingCallType> getAsynchCall() {
-		return getGroup().list(LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL);
+		return getGroup().list(
+				LqnPackage.Literals.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL);
 	}
 
 	/**
@@ -152,7 +157,8 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
 		String oldFirstActivity = firstActivity;
 		firstActivity = newFirstActivity;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY,
 					oldFirstActivity, firstActivity));
 	}
 
@@ -161,16 +167,20 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST:
-			return ((InternalEList<?>) getCallList()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getCallList()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__GROUP:
 			return ((InternalEList<?>) getGroup()).basicRemove(otherEnd, msgs);
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
-			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
-			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -215,11 +225,13 @@ public class EntryActivityDefTypeImpl extends ActivityDefBaseImpl implements Ent
 			return;
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL:
 			getSynchCall().clear();
-			getSynchCall().addAll((Collection<? extends ActivityMakingCallType>) newValue);
+			getSynchCall().addAll(
+					(Collection<? extends ActivityMakingCallType>) newValue);
 			return;
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL:
 			getAsynchCall().clear();
-			getAsynchCall().addAll((Collection<? extends ActivityMakingCallType>) newValue);
+			getAsynchCall().addAll(
+					(Collection<? extends ActivityMakingCallType>) newValue);
 			return;
 		case LqnPackage.ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY:
 			setFirstActivity((String) newValue);

@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class InterfaceTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,7 +64,8 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.INTERFACE_TYPE__IN_PORT);
@@ -91,7 +93,8 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/InterfaceType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/InterfaceType"));
 	}
 
 	/**
@@ -118,7 +121,8 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
 		switch (notification.getFeatureID(InterfaceType.class)) {
 		case LqnPackage.INTERFACE_TYPE__IN_PORT:
 		case LqnPackage.INTERFACE_TYPE__OUT_PORT:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -131,13 +135,16 @@ public class InterfaceTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.INTERFACE_TYPE__IN_PORT,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.INTERFACE_TYPE__IN_PORT,
 				LqnFactory.eINSTANCE.createInPortType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.INTERFACE_TYPE__OUT_PORT,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.INTERFACE_TYPE__OUT_PORT,
 				LqnFactory.eINSTANCE.createOutPortType()));
 	}
 

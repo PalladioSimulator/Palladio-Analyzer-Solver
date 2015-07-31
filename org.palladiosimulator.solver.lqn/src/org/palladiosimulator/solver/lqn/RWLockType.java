@@ -118,7 +118,8 @@ public enum RWLockType implements Enumerator {
 	 * end-user-doc -->
 	 * @generated
 	 */
-	private static final RWLockType[] VALUES_ARRAY = new RWLockType[] { RUNLOCK, RLOCK, WUNLOCK, WLOCK, };
+	private static final RWLockType[] VALUES_ARRAY = new RWLockType[] {
+			RUNLOCK, RLOCK, WUNLOCK, WLOCK, };
 
 	/**
 	 * A public read-only list of all the '<em><b>RW Lock Type</b></em>' enumerators. <!--
@@ -126,7 +127,8 @@ public enum RWLockType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<RWLockType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<RWLockType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>RW Lock Type</b></em>' literal with the specified literal value. <!--

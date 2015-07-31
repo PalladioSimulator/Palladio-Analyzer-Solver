@@ -18,7 +18,6 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type1;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getResultConf95 <em>Result Conf95</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getResultConf99 <em>Result Conf99</em>}</li>
@@ -66,10 +65,12 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type1;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getWaitingVariance <em>Waiting Variance</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl#getBottleneckStrength <em>Bottleneck Strength</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implements OutputResultType {
+public class OutputResultTypeImpl extends MinimalEObjectImpl.Container
+		implements OutputResultType {
 	/**
 	 * The cached value of the '{@link #getResultConf95() <em>Result Conf95</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -1311,12 +1312,15 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResultConf95(ResultConf95Type1 newResultConf95, NotificationChain msgs) {
+	public NotificationChain basicSetResultConf95(
+			ResultConf95Type1 newResultConf95, NotificationChain msgs) {
 		ResultConf95Type1 oldResultConf95 = resultConf95;
 		resultConf95 = newResultConf95;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95, oldResultConf95, newResultConf95);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95,
+					oldResultConf95, newResultConf95);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -1335,15 +1339,20 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 			NotificationChain msgs = null;
 			if (resultConf95 != null)
 				msgs = ((InternalEObject) resultConf95).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95,
+						null, msgs);
 			if (newResultConf95 != null)
 				msgs = ((InternalEObject) newResultConf95).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95,
+						null, msgs);
 			msgs = basicSetResultConf95(newResultConf95, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95,
 					newResultConf95, newResultConf95));
 	}
 
@@ -1360,12 +1369,15 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResultConf99(ResultConf99Type1 newResultConf99, NotificationChain msgs) {
+	public NotificationChain basicSetResultConf99(
+			ResultConf99Type1 newResultConf99, NotificationChain msgs) {
 		ResultConf99Type1 oldResultConf99 = resultConf99;
 		resultConf99 = newResultConf99;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99, oldResultConf99, newResultConf99);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99,
+					oldResultConf99, newResultConf99);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -1384,15 +1396,20 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 			NotificationChain msgs = null;
 			if (resultConf99 != null)
 				msgs = ((InternalEObject) resultConf99).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99,
+						null, msgs);
 			if (newResultConf99 != null)
 				msgs = ((InternalEObject) newResultConf99).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99,
+						null, msgs);
 			msgs = basicSetResultConf99(newResultConf99, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF99,
 					newResultConf99, newResultConf99));
 	}
 
@@ -1416,8 +1433,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldLossProbabilityESet = lossProbabilityESet;
 		lossProbabilityESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__LOSS_PROBABILITY,
-					oldLossProbability, lossProbability, !oldLossProbabilityESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__LOSS_PROBABILITY,
+					oldLossProbability, lossProbability,
+					!oldLossProbabilityESet));
 	}
 
 	/**
@@ -1431,8 +1450,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		lossProbability = LOSS_PROBABILITY_EDEFAULT;
 		lossProbabilityESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__LOSS_PROBABILITY,
-					oldLossProbability, LOSS_PROBABILITY_EDEFAULT, oldLossProbabilityESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__LOSS_PROBABILITY,
+					oldLossProbability, LOSS_PROBABILITY_EDEFAULT,
+					oldLossProbabilityESet));
 	}
 
 	/**
@@ -1464,7 +1485,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldOpenWaitTimeESet = openWaitTimeESet;
 		openWaitTimeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME,
 					oldOpenWaitTime, openWaitTime, !oldOpenWaitTimeESet));
 	}
 
@@ -1479,8 +1501,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		openWaitTime = OPEN_WAIT_TIME_EDEFAULT;
 		openWaitTimeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME,
-					oldOpenWaitTime, OPEN_WAIT_TIME_EDEFAULT, oldOpenWaitTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME,
+					oldOpenWaitTime, OPEN_WAIT_TIME_EDEFAULT,
+					oldOpenWaitTimeESet));
 	}
 
 	/**
@@ -1512,8 +1536,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase1ProcWaitingESet = phase1ProcWaitingESet;
 		phase1ProcWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING,
-					oldPhase1ProcWaiting, phase1ProcWaiting, !oldPhase1ProcWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING,
+					oldPhase1ProcWaiting, phase1ProcWaiting,
+					!oldPhase1ProcWaitingESet));
 	}
 
 	/**
@@ -1527,8 +1553,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase1ProcWaiting = PHASE1_PROC_WAITING_EDEFAULT;
 		phase1ProcWaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING,
-					oldPhase1ProcWaiting, PHASE1_PROC_WAITING_EDEFAULT, oldPhase1ProcWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING,
+					oldPhase1ProcWaiting, PHASE1_PROC_WAITING_EDEFAULT,
+					oldPhase1ProcWaitingESet));
 	}
 
 	/**
@@ -1560,8 +1588,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase1ServiceTimeESet = phase1ServiceTimeESet;
 		phase1ServiceTimeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME,
-					oldPhase1ServiceTime, phase1ServiceTime, !oldPhase1ServiceTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME,
+					oldPhase1ServiceTime, phase1ServiceTime,
+					!oldPhase1ServiceTimeESet));
 	}
 
 	/**
@@ -1575,8 +1605,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase1ServiceTime = PHASE1_SERVICE_TIME_EDEFAULT;
 		phase1ServiceTimeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME,
-					oldPhase1ServiceTime, PHASE1_SERVICE_TIME_EDEFAULT, oldPhase1ServiceTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME,
+					oldPhase1ServiceTime, PHASE1_SERVICE_TIME_EDEFAULT,
+					oldPhase1ServiceTimeESet));
 	}
 
 	/**
@@ -1608,9 +1640,12 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase1ServiceTimeVarianceESet = phase1ServiceTimeVarianceESet;
 		phase1ServiceTimeVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME_VARIANCE, oldPhase1ServiceTimeVariance,
-					phase1ServiceTimeVariance, !oldPhase1ServiceTimeVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME_VARIANCE,
+					oldPhase1ServiceTimeVariance, phase1ServiceTimeVariance,
+					!oldPhase1ServiceTimeVarianceESet));
 	}
 
 	/**
@@ -1624,9 +1659,13 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase1ServiceTimeVariance = PHASE1_SERVICE_TIME_VARIANCE_EDEFAULT;
 		phase1ServiceTimeVarianceESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME_VARIANCE, oldPhase1ServiceTimeVariance,
-					PHASE1_SERVICE_TIME_VARIANCE_EDEFAULT, oldPhase1ServiceTimeVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME_VARIANCE,
+					oldPhase1ServiceTimeVariance,
+					PHASE1_SERVICE_TIME_VARIANCE_EDEFAULT,
+					oldPhase1ServiceTimeVarianceESet));
 	}
 
 	/**
@@ -1658,8 +1697,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase1UtilizationESet = phase1UtilizationESet;
 		phase1UtilizationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION,
-					oldPhase1Utilization, phase1Utilization, !oldPhase1UtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION,
+					oldPhase1Utilization, phase1Utilization,
+					!oldPhase1UtilizationESet));
 	}
 
 	/**
@@ -1673,8 +1714,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase1Utilization = PHASE1_UTILIZATION_EDEFAULT;
 		phase1UtilizationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION,
-					oldPhase1Utilization, PHASE1_UTILIZATION_EDEFAULT, oldPhase1UtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION,
+					oldPhase1Utilization, PHASE1_UTILIZATION_EDEFAULT,
+					oldPhase1UtilizationESet));
 	}
 
 	/**
@@ -1706,7 +1749,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase1WaitingESet = phase1WaitingESet;
 		phase1WaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING,
 					oldPhase1Waiting, phase1Waiting, !oldPhase1WaitingESet));
 	}
 
@@ -1721,8 +1765,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase1Waiting = PHASE1_WAITING_EDEFAULT;
 		phase1WaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING,
-					oldPhase1Waiting, PHASE1_WAITING_EDEFAULT, oldPhase1WaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING,
+					oldPhase1Waiting, PHASE1_WAITING_EDEFAULT,
+					oldPhase1WaitingESet));
 	}
 
 	/**
@@ -1755,8 +1801,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase1WaitingVarianceESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING_VARIANCE, oldPhase1WaitingVariance,
-					phase1WaitingVariance, !oldPhase1WaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING_VARIANCE,
+					oldPhase1WaitingVariance, phase1WaitingVariance,
+					!oldPhase1WaitingVarianceESet));
 	}
 
 	/**
@@ -1771,8 +1818,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase1WaitingVarianceESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING_VARIANCE, oldPhase1WaitingVariance,
-					PHASE1_WAITING_VARIANCE_EDEFAULT, oldPhase1WaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE1_WAITING_VARIANCE,
+					oldPhase1WaitingVariance, PHASE1_WAITING_VARIANCE_EDEFAULT,
+					oldPhase1WaitingVarianceESet));
 	}
 
 	/**
@@ -1804,8 +1852,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase2ProcWaitingESet = phase2ProcWaitingESet;
 		phase2ProcWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING,
-					oldPhase2ProcWaiting, phase2ProcWaiting, !oldPhase2ProcWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING,
+					oldPhase2ProcWaiting, phase2ProcWaiting,
+					!oldPhase2ProcWaitingESet));
 	}
 
 	/**
@@ -1819,8 +1869,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase2ProcWaiting = PHASE2_PROC_WAITING_EDEFAULT;
 		phase2ProcWaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING,
-					oldPhase2ProcWaiting, PHASE2_PROC_WAITING_EDEFAULT, oldPhase2ProcWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING,
+					oldPhase2ProcWaiting, PHASE2_PROC_WAITING_EDEFAULT,
+					oldPhase2ProcWaitingESet));
 	}
 
 	/**
@@ -1852,8 +1904,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase2ServiceTimeESet = phase2ServiceTimeESet;
 		phase2ServiceTimeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME,
-					oldPhase2ServiceTime, phase2ServiceTime, !oldPhase2ServiceTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME,
+					oldPhase2ServiceTime, phase2ServiceTime,
+					!oldPhase2ServiceTimeESet));
 	}
 
 	/**
@@ -1867,8 +1921,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase2ServiceTime = PHASE2_SERVICE_TIME_EDEFAULT;
 		phase2ServiceTimeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME,
-					oldPhase2ServiceTime, PHASE2_SERVICE_TIME_EDEFAULT, oldPhase2ServiceTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME,
+					oldPhase2ServiceTime, PHASE2_SERVICE_TIME_EDEFAULT,
+					oldPhase2ServiceTimeESet));
 	}
 
 	/**
@@ -1900,9 +1956,12 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase2ServiceTimeVarianceESet = phase2ServiceTimeVarianceESet;
 		phase2ServiceTimeVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME_VARIANCE, oldPhase2ServiceTimeVariance,
-					phase2ServiceTimeVariance, !oldPhase2ServiceTimeVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME_VARIANCE,
+					oldPhase2ServiceTimeVariance, phase2ServiceTimeVariance,
+					!oldPhase2ServiceTimeVarianceESet));
 	}
 
 	/**
@@ -1916,9 +1975,13 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase2ServiceTimeVariance = PHASE2_SERVICE_TIME_VARIANCE_EDEFAULT;
 		phase2ServiceTimeVarianceESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME_VARIANCE, oldPhase2ServiceTimeVariance,
-					PHASE2_SERVICE_TIME_VARIANCE_EDEFAULT, oldPhase2ServiceTimeVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME_VARIANCE,
+					oldPhase2ServiceTimeVariance,
+					PHASE2_SERVICE_TIME_VARIANCE_EDEFAULT,
+					oldPhase2ServiceTimeVarianceESet));
 	}
 
 	/**
@@ -1950,8 +2013,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase2UtilizationESet = phase2UtilizationESet;
 		phase2UtilizationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION,
-					oldPhase2Utilization, phase2Utilization, !oldPhase2UtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION,
+					oldPhase2Utilization, phase2Utilization,
+					!oldPhase2UtilizationESet));
 	}
 
 	/**
@@ -1965,8 +2030,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase2Utilization = PHASE2_UTILIZATION_EDEFAULT;
 		phase2UtilizationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION,
-					oldPhase2Utilization, PHASE2_UTILIZATION_EDEFAULT, oldPhase2UtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION,
+					oldPhase2Utilization, PHASE2_UTILIZATION_EDEFAULT,
+					oldPhase2UtilizationESet));
 	}
 
 	/**
@@ -1998,7 +2065,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase2WaitingESet = phase2WaitingESet;
 		phase2WaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING,
 					oldPhase2Waiting, phase2Waiting, !oldPhase2WaitingESet));
 	}
 
@@ -2013,8 +2081,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase2Waiting = PHASE2_WAITING_EDEFAULT;
 		phase2WaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING,
-					oldPhase2Waiting, PHASE2_WAITING_EDEFAULT, oldPhase2WaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING,
+					oldPhase2Waiting, PHASE2_WAITING_EDEFAULT,
+					oldPhase2WaitingESet));
 	}
 
 	/**
@@ -2047,8 +2117,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase2WaitingVarianceESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING_VARIANCE, oldPhase2WaitingVariance,
-					phase2WaitingVariance, !oldPhase2WaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING_VARIANCE,
+					oldPhase2WaitingVariance, phase2WaitingVariance,
+					!oldPhase2WaitingVarianceESet));
 	}
 
 	/**
@@ -2063,8 +2134,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase2WaitingVarianceESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING_VARIANCE, oldPhase2WaitingVariance,
-					PHASE2_WAITING_VARIANCE_EDEFAULT, oldPhase2WaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE2_WAITING_VARIANCE,
+					oldPhase2WaitingVariance, PHASE2_WAITING_VARIANCE_EDEFAULT,
+					oldPhase2WaitingVarianceESet));
 	}
 
 	/**
@@ -2096,8 +2168,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase3ProcWaitingESet = phase3ProcWaitingESet;
 		phase3ProcWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING,
-					oldPhase3ProcWaiting, phase3ProcWaiting, !oldPhase3ProcWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING,
+					oldPhase3ProcWaiting, phase3ProcWaiting,
+					!oldPhase3ProcWaitingESet));
 	}
 
 	/**
@@ -2111,8 +2185,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase3ProcWaiting = PHASE3_PROC_WAITING_EDEFAULT;
 		phase3ProcWaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING,
-					oldPhase3ProcWaiting, PHASE3_PROC_WAITING_EDEFAULT, oldPhase3ProcWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING,
+					oldPhase3ProcWaiting, PHASE3_PROC_WAITING_EDEFAULT,
+					oldPhase3ProcWaitingESet));
 	}
 
 	/**
@@ -2144,8 +2220,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase3ServiceTimeESet = phase3ServiceTimeESet;
 		phase3ServiceTimeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME,
-					oldPhase3ServiceTime, phase3ServiceTime, !oldPhase3ServiceTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME,
+					oldPhase3ServiceTime, phase3ServiceTime,
+					!oldPhase3ServiceTimeESet));
 	}
 
 	/**
@@ -2159,8 +2237,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase3ServiceTime = PHASE3_SERVICE_TIME_EDEFAULT;
 		phase3ServiceTimeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME,
-					oldPhase3ServiceTime, PHASE3_SERVICE_TIME_EDEFAULT, oldPhase3ServiceTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME,
+					oldPhase3ServiceTime, PHASE3_SERVICE_TIME_EDEFAULT,
+					oldPhase3ServiceTimeESet));
 	}
 
 	/**
@@ -2192,9 +2272,12 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase3ServiceTimeVarianceESet = phase3ServiceTimeVarianceESet;
 		phase3ServiceTimeVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME_VARIANCE, oldPhase3ServiceTimeVariance,
-					phase3ServiceTimeVariance, !oldPhase3ServiceTimeVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME_VARIANCE,
+					oldPhase3ServiceTimeVariance, phase3ServiceTimeVariance,
+					!oldPhase3ServiceTimeVarianceESet));
 	}
 
 	/**
@@ -2208,9 +2291,13 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase3ServiceTimeVariance = PHASE3_SERVICE_TIME_VARIANCE_EDEFAULT;
 		phase3ServiceTimeVarianceESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME_VARIANCE, oldPhase3ServiceTimeVariance,
-					PHASE3_SERVICE_TIME_VARIANCE_EDEFAULT, oldPhase3ServiceTimeVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME_VARIANCE,
+					oldPhase3ServiceTimeVariance,
+					PHASE3_SERVICE_TIME_VARIANCE_EDEFAULT,
+					oldPhase3ServiceTimeVarianceESet));
 	}
 
 	/**
@@ -2242,8 +2329,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase3UtilizationESet = phase3UtilizationESet;
 		phase3UtilizationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION,
-					oldPhase3Utilization, phase3Utilization, !oldPhase3UtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION,
+					oldPhase3Utilization, phase3Utilization,
+					!oldPhase3UtilizationESet));
 	}
 
 	/**
@@ -2257,8 +2346,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase3Utilization = PHASE3_UTILIZATION_EDEFAULT;
 		phase3UtilizationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION,
-					oldPhase3Utilization, PHASE3_UTILIZATION_EDEFAULT, oldPhase3UtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION,
+					oldPhase3Utilization, PHASE3_UTILIZATION_EDEFAULT,
+					oldPhase3UtilizationESet));
 	}
 
 	/**
@@ -2290,7 +2381,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPhase3WaitingESet = phase3WaitingESet;
 		phase3WaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING,
 					oldPhase3Waiting, phase3Waiting, !oldPhase3WaitingESet));
 	}
 
@@ -2305,8 +2397,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase3Waiting = PHASE3_WAITING_EDEFAULT;
 		phase3WaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING,
-					oldPhase3Waiting, PHASE3_WAITING_EDEFAULT, oldPhase3WaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING,
+					oldPhase3Waiting, PHASE3_WAITING_EDEFAULT,
+					oldPhase3WaitingESet));
 	}
 
 	/**
@@ -2339,8 +2433,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase3WaitingVarianceESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING_VARIANCE, oldPhase3WaitingVariance,
-					phase3WaitingVariance, !oldPhase3WaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING_VARIANCE,
+					oldPhase3WaitingVariance, phase3WaitingVariance,
+					!oldPhase3WaitingVarianceESet));
 	}
 
 	/**
@@ -2355,8 +2450,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		phase3WaitingVarianceESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING_VARIANCE, oldPhase3WaitingVariance,
-					PHASE3_WAITING_VARIANCE_EDEFAULT, oldPhase3WaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__PHASE3_WAITING_VARIANCE,
+					oldPhase3WaitingVariance, PHASE3_WAITING_VARIANCE_EDEFAULT,
+					oldPhase3WaitingVarianceESet));
 	}
 
 	/**
@@ -2388,9 +2484,12 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldProbExceedMaxServiceTimeESet = probExceedMaxServiceTimeESet;
 		probExceedMaxServiceTimeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PROB_EXCEED_MAX_SERVICE_TIME, oldProbExceedMaxServiceTime,
-					probExceedMaxServiceTime, !oldProbExceedMaxServiceTimeESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PROB_EXCEED_MAX_SERVICE_TIME,
+					oldProbExceedMaxServiceTime, probExceedMaxServiceTime,
+					!oldProbExceedMaxServiceTimeESet));
 	}
 
 	/**
@@ -2404,9 +2503,13 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		probExceedMaxServiceTime = PROB_EXCEED_MAX_SERVICE_TIME_EDEFAULT;
 		probExceedMaxServiceTimeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__PROB_EXCEED_MAX_SERVICE_TIME, oldProbExceedMaxServiceTime,
-					PROB_EXCEED_MAX_SERVICE_TIME_EDEFAULT, oldProbExceedMaxServiceTimeESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PROB_EXCEED_MAX_SERVICE_TIME,
+					oldProbExceedMaxServiceTime,
+					PROB_EXCEED_MAX_SERVICE_TIME_EDEFAULT,
+					oldProbExceedMaxServiceTimeESet));
 	}
 
 	/**
@@ -2438,8 +2541,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldProcUtilizationESet = procUtilizationESet;
 		procUtilizationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PROC_UTILIZATION,
-					oldProcUtilization, procUtilization, !oldProcUtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PROC_UTILIZATION,
+					oldProcUtilization, procUtilization,
+					!oldProcUtilizationESet));
 	}
 
 	/**
@@ -2453,8 +2558,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		procUtilization = PROC_UTILIZATION_EDEFAULT;
 		procUtilizationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PROC_UTILIZATION,
-					oldProcUtilization, PROC_UTILIZATION_EDEFAULT, oldProcUtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PROC_UTILIZATION,
+					oldProcUtilization, PROC_UTILIZATION_EDEFAULT,
+					oldProcUtilizationESet));
 	}
 
 	/**
@@ -2486,7 +2593,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldProcWaitingESet = procWaitingESet;
 		procWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__PROC_WAITING,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PROC_WAITING,
 					oldProcWaiting, procWaiting, !oldProcWaitingESet));
 	}
 
@@ -2501,7 +2609,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		procWaiting = PROC_WAITING_EDEFAULT;
 		procWaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__PROC_WAITING,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__PROC_WAITING,
 					oldProcWaiting, PROC_WAITING_EDEFAULT, oldProcWaitingESet));
 	}
 
@@ -2534,8 +2643,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldRwlockReaderHoldingESet = rwlockReaderHoldingESet;
 		rwlockReaderHoldingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_HOLDING,
-					oldRwlockReaderHolding, rwlockReaderHolding, !oldRwlockReaderHoldingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_HOLDING,
+					oldRwlockReaderHolding, rwlockReaderHolding,
+					!oldRwlockReaderHoldingESet));
 	}
 
 	/**
@@ -2550,8 +2661,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockReaderHoldingESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_HOLDING, oldRwlockReaderHolding,
-					RWLOCK_READER_HOLDING_EDEFAULT, oldRwlockReaderHoldingESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_HOLDING,
+					oldRwlockReaderHolding, RWLOCK_READER_HOLDING_EDEFAULT,
+					oldRwlockReaderHoldingESet));
 	}
 
 	/**
@@ -2584,8 +2696,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockReaderUtilizationESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_UTILIZATION, oldRwlockReaderUtilization,
-					rwlockReaderUtilization, !oldRwlockReaderUtilizationESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_UTILIZATION,
+					oldRwlockReaderUtilization, rwlockReaderUtilization,
+					!oldRwlockReaderUtilizationESet));
 	}
 
 	/**
@@ -2600,8 +2713,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockReaderUtilizationESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_UTILIZATION, oldRwlockReaderUtilization,
-					RWLOCK_READER_UTILIZATION_EDEFAULT, oldRwlockReaderUtilizationESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_UTILIZATION,
+					oldRwlockReaderUtilization,
+					RWLOCK_READER_UTILIZATION_EDEFAULT,
+					oldRwlockReaderUtilizationESet));
 	}
 
 	/**
@@ -2633,8 +2748,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldRwlockReaderWaitingESet = rwlockReaderWaitingESet;
 		rwlockReaderWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING,
-					oldRwlockReaderWaiting, rwlockReaderWaiting, !oldRwlockReaderWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING,
+					oldRwlockReaderWaiting, rwlockReaderWaiting,
+					!oldRwlockReaderWaitingESet));
 	}
 
 	/**
@@ -2649,8 +2766,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockReaderWaitingESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING, oldRwlockReaderWaiting,
-					RWLOCK_READER_WAITING_EDEFAULT, oldRwlockReaderWaitingESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING,
+					oldRwlockReaderWaiting, RWLOCK_READER_WAITING_EDEFAULT,
+					oldRwlockReaderWaitingESet));
 	}
 
 	/**
@@ -2676,15 +2794,20 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void setRwlockReaderWaitingVariance(double newRwlockReaderWaitingVariance) {
+	public void setRwlockReaderWaitingVariance(
+			double newRwlockReaderWaitingVariance) {
 		double oldRwlockReaderWaitingVariance = rwlockReaderWaitingVariance;
 		rwlockReaderWaitingVariance = newRwlockReaderWaitingVariance;
 		boolean oldRwlockReaderWaitingVarianceESet = rwlockReaderWaitingVarianceESet;
 		rwlockReaderWaitingVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING_VARIANCE, oldRwlockReaderWaitingVariance,
-					rwlockReaderWaitingVariance, !oldRwlockReaderWaitingVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING_VARIANCE,
+					oldRwlockReaderWaitingVariance,
+					rwlockReaderWaitingVariance,
+					!oldRwlockReaderWaitingVarianceESet));
 	}
 
 	/**
@@ -2698,9 +2821,13 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockReaderWaitingVariance = RWLOCK_READER_WAITING_VARIANCE_EDEFAULT;
 		rwlockReaderWaitingVarianceESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING_VARIANCE, oldRwlockReaderWaitingVariance,
-					RWLOCK_READER_WAITING_VARIANCE_EDEFAULT, oldRwlockReaderWaitingVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING_VARIANCE,
+					oldRwlockReaderWaitingVariance,
+					RWLOCK_READER_WAITING_VARIANCE_EDEFAULT,
+					oldRwlockReaderWaitingVarianceESet));
 	}
 
 	/**
@@ -2732,8 +2859,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldRwlockWriterHoldingESet = rwlockWriterHoldingESet;
 		rwlockWriterHoldingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_HOLDING,
-					oldRwlockWriterHolding, rwlockWriterHolding, !oldRwlockWriterHoldingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_HOLDING,
+					oldRwlockWriterHolding, rwlockWriterHolding,
+					!oldRwlockWriterHoldingESet));
 	}
 
 	/**
@@ -2748,8 +2877,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockWriterHoldingESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_HOLDING, oldRwlockWriterHolding,
-					RWLOCK_WRITER_HOLDING_EDEFAULT, oldRwlockWriterHoldingESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_HOLDING,
+					oldRwlockWriterHolding, RWLOCK_WRITER_HOLDING_EDEFAULT,
+					oldRwlockWriterHoldingESet));
 	}
 
 	/**
@@ -2782,8 +2912,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockWriterUtilizationESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_UTILIZATION, oldRwlockWriterUtilization,
-					rwlockWriterUtilization, !oldRwlockWriterUtilizationESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_UTILIZATION,
+					oldRwlockWriterUtilization, rwlockWriterUtilization,
+					!oldRwlockWriterUtilizationESet));
 	}
 
 	/**
@@ -2798,8 +2929,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockWriterUtilizationESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_UTILIZATION, oldRwlockWriterUtilization,
-					RWLOCK_WRITER_UTILIZATION_EDEFAULT, oldRwlockWriterUtilizationESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_UTILIZATION,
+					oldRwlockWriterUtilization,
+					RWLOCK_WRITER_UTILIZATION_EDEFAULT,
+					oldRwlockWriterUtilizationESet));
 	}
 
 	/**
@@ -2831,8 +2964,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldRwlockWriterWaitingESet = rwlockWriterWaitingESet;
 		rwlockWriterWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING,
-					oldRwlockWriterWaiting, rwlockWriterWaiting, !oldRwlockWriterWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING,
+					oldRwlockWriterWaiting, rwlockWriterWaiting,
+					!oldRwlockWriterWaitingESet));
 	}
 
 	/**
@@ -2847,8 +2982,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockWriterWaitingESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING, oldRwlockWriterWaiting,
-					RWLOCK_WRITER_WAITING_EDEFAULT, oldRwlockWriterWaitingESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING,
+					oldRwlockWriterWaiting, RWLOCK_WRITER_WAITING_EDEFAULT,
+					oldRwlockWriterWaitingESet));
 	}
 
 	/**
@@ -2874,15 +3010,20 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public void setRwlockWriterWaitingVariance(double newRwlockWriterWaitingVariance) {
+	public void setRwlockWriterWaitingVariance(
+			double newRwlockWriterWaitingVariance) {
 		double oldRwlockWriterWaitingVariance = rwlockWriterWaitingVariance;
 		rwlockWriterWaitingVariance = newRwlockWriterWaitingVariance;
 		boolean oldRwlockWriterWaitingVarianceESet = rwlockWriterWaitingVarianceESet;
 		rwlockWriterWaitingVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING_VARIANCE, oldRwlockWriterWaitingVariance,
-					rwlockWriterWaitingVariance, !oldRwlockWriterWaitingVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING_VARIANCE,
+					oldRwlockWriterWaitingVariance,
+					rwlockWriterWaitingVariance,
+					!oldRwlockWriterWaitingVarianceESet));
 	}
 
 	/**
@@ -2896,9 +3037,13 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		rwlockWriterWaitingVariance = RWLOCK_WRITER_WAITING_VARIANCE_EDEFAULT;
 		rwlockWriterWaitingVarianceESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING_VARIANCE, oldRwlockWriterWaitingVariance,
-					RWLOCK_WRITER_WAITING_VARIANCE_EDEFAULT, oldRwlockWriterWaitingVarianceESet));
+			eNotify(new ENotificationImpl(
+					this,
+					Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING_VARIANCE,
+					oldRwlockWriterWaitingVariance,
+					RWLOCK_WRITER_WAITING_VARIANCE_EDEFAULT,
+					oldRwlockWriterWaitingVarianceESet));
 	}
 
 	/**
@@ -2930,8 +3075,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldSemaphoreUtilizationESet = semaphoreUtilizationESet;
 		semaphoreUtilizationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_UTILIZATION,
-					oldSemaphoreUtilization, semaphoreUtilization, !oldSemaphoreUtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_UTILIZATION,
+					oldSemaphoreUtilization, semaphoreUtilization,
+					!oldSemaphoreUtilizationESet));
 	}
 
 	/**
@@ -2946,8 +3093,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		semaphoreUtilizationESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_UTILIZATION, oldSemaphoreUtilization,
-					SEMAPHORE_UTILIZATION_EDEFAULT, oldSemaphoreUtilizationESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_UTILIZATION,
+					oldSemaphoreUtilization, SEMAPHORE_UTILIZATION_EDEFAULT,
+					oldSemaphoreUtilizationESet));
 	}
 
 	/**
@@ -2979,8 +3127,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldSemaphoreWaitingESet = semaphoreWaitingESet;
 		semaphoreWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING,
-					oldSemaphoreWaiting, semaphoreWaiting, !oldSemaphoreWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING,
+					oldSemaphoreWaiting, semaphoreWaiting,
+					!oldSemaphoreWaitingESet));
 	}
 
 	/**
@@ -2994,8 +3144,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		semaphoreWaiting = SEMAPHORE_WAITING_EDEFAULT;
 		semaphoreWaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING,
-					oldSemaphoreWaiting, SEMAPHORE_WAITING_EDEFAULT, oldSemaphoreWaitingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING,
+					oldSemaphoreWaiting, SEMAPHORE_WAITING_EDEFAULT,
+					oldSemaphoreWaitingESet));
 	}
 
 	/**
@@ -3028,8 +3180,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		semaphoreWaitingVarianceESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING_VARIANCE, oldSemaphoreWaitingVariance,
-					semaphoreWaitingVariance, !oldSemaphoreWaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING_VARIANCE,
+					oldSemaphoreWaitingVariance, semaphoreWaitingVariance,
+					!oldSemaphoreWaitingVarianceESet));
 	}
 
 	/**
@@ -3044,8 +3197,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		semaphoreWaitingVarianceESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING_VARIANCE, oldSemaphoreWaitingVariance,
-					SEMAPHORE_WAITING_VARIANCE_EDEFAULT, oldSemaphoreWaitingVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING_VARIANCE,
+					oldSemaphoreWaitingVariance,
+					SEMAPHORE_WAITING_VARIANCE_EDEFAULT,
+					oldSemaphoreWaitingVarianceESet));
 	}
 
 	/**
@@ -3077,7 +3232,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldServiceTimeESet = serviceTimeESet;
 		serviceTimeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME,
 					oldServiceTime, serviceTime, !oldServiceTimeESet));
 	}
 
@@ -3092,7 +3248,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		serviceTime = SERVICE_TIME_EDEFAULT;
 		serviceTimeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME,
 					oldServiceTime, SERVICE_TIME_EDEFAULT, oldServiceTimeESet));
 	}
 
@@ -3125,8 +3282,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldServiceTimeVarianceESet = serviceTimeVarianceESet;
 		serviceTimeVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE,
-					oldServiceTimeVariance, serviceTimeVariance, !oldServiceTimeVarianceESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE,
+					oldServiceTimeVariance, serviceTimeVariance,
+					!oldServiceTimeVarianceESet));
 	}
 
 	/**
@@ -3141,8 +3300,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		serviceTimeVarianceESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE, oldServiceTimeVariance,
-					SERVICE_TIME_VARIANCE_EDEFAULT, oldServiceTimeVarianceESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE,
+					oldServiceTimeVariance, SERVICE_TIME_VARIANCE_EDEFAULT,
+					oldServiceTimeVarianceESet));
 	}
 
 	/**
@@ -3175,8 +3335,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		squaredCoeffVariationESet = true;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					LqnPackage.OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION, oldSquaredCoeffVariation,
-					squaredCoeffVariation, !oldSquaredCoeffVariationESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION,
+					oldSquaredCoeffVariation, squaredCoeffVariation,
+					!oldSquaredCoeffVariationESet));
 	}
 
 	/**
@@ -3191,8 +3352,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		squaredCoeffVariationESet = false;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.UNSET,
-					LqnPackage.OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION, oldSquaredCoeffVariation,
-					SQUARED_COEFF_VARIATION_EDEFAULT, oldSquaredCoeffVariationESet));
+					LqnPackage.OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION,
+					oldSquaredCoeffVariation, SQUARED_COEFF_VARIATION_EDEFAULT,
+					oldSquaredCoeffVariationESet));
 	}
 
 	/**
@@ -3224,8 +3386,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldThroughputESet = throughputESet;
 		throughputESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT,
-					oldThroughput, throughput, !oldThroughputESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT, oldThroughput,
+					throughput, !oldThroughputESet));
 	}
 
 	/**
@@ -3239,8 +3402,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		throughput = THROUGHPUT_EDEFAULT;
 		throughputESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT,
-					oldThroughput, THROUGHPUT_EDEFAULT, oldThroughputESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT, oldThroughput,
+					THROUGHPUT_EDEFAULT, oldThroughputESet));
 	}
 
 	/**
@@ -3272,8 +3436,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldThroughputBoundESet = throughputBoundESet;
 		throughputBoundESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND,
-					oldThroughputBound, throughputBound, !oldThroughputBoundESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND,
+					oldThroughputBound, throughputBound,
+					!oldThroughputBoundESet));
 	}
 
 	/**
@@ -3287,8 +3453,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		throughputBound = THROUGHPUT_BOUND_EDEFAULT;
 		throughputBoundESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND,
-					oldThroughputBound, THROUGHPUT_BOUND_EDEFAULT, oldThroughputBoundESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND,
+					oldThroughputBound, THROUGHPUT_BOUND_EDEFAULT,
+					oldThroughputBoundESet));
 	}
 
 	/**
@@ -3320,8 +3488,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldUtilizationESet = utilizationESet;
 		utilizationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__UTILIZATION,
-					oldUtilization, utilization, !oldUtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__UTILIZATION, oldUtilization,
+					utilization, !oldUtilizationESet));
 	}
 
 	/**
@@ -3335,8 +3504,9 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		utilization = UTILIZATION_EDEFAULT;
 		utilizationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__UTILIZATION,
-					oldUtilization, UTILIZATION_EDEFAULT, oldUtilizationESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__UTILIZATION, oldUtilization,
+					UTILIZATION_EDEFAULT, oldUtilizationESet));
 	}
 
 	/**
@@ -3368,7 +3538,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldWaitingESet = waitingESet;
 		waitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__WAITING, oldWaiting,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__WAITING, oldWaiting,
 					waiting, !oldWaitingESet));
 	}
 
@@ -3383,7 +3554,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		waiting = WAITING_EDEFAULT;
 		waitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__WAITING, oldWaiting,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__WAITING, oldWaiting,
 					WAITING_EDEFAULT, oldWaitingESet));
 	}
 
@@ -3416,8 +3588,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldWaitingVarianceESet = waitingVarianceESet;
 		waitingVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE,
-					oldWaitingVariance, waitingVariance, !oldWaitingVarianceESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE,
+					oldWaitingVariance, waitingVariance,
+					!oldWaitingVarianceESet));
 	}
 
 	/**
@@ -3431,8 +3605,10 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		waitingVariance = WAITING_VARIANCE_EDEFAULT;
 		waitingVarianceESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE,
-					oldWaitingVariance, WAITING_VARIANCE_EDEFAULT, oldWaitingVarianceESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.OUTPUT_RESULT_TYPE__WAITING_VARIANCE,
+					oldWaitingVariance, WAITING_VARIANCE_EDEFAULT,
+					oldWaitingVarianceESet));
 	}
 
 	/**
@@ -3464,7 +3640,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 		int oldBottleneckStrength = bottleneckStrength;
 		bottleneckStrength = newBottleneckStrength;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH,
 					oldBottleneckStrength, bottleneckStrength));
 	}
 
@@ -3473,7 +3650,8 @@ public class OutputResultTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.OUTPUT_RESULT_TYPE__RESULT_CONF95:
 			return basicSetResultConf95(null, msgs);

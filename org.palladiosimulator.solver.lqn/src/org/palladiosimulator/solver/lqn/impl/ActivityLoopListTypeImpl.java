@@ -22,15 +22,16 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Activity Loop List Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopListTypeImpl#getActivity <em>Activity</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopListTypeImpl#getEnd <em>End</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityLoopListTypeImpl extends MinimalEObjectImpl.Container implements ActivityLoopListType {
+public class ActivityLoopListTypeImpl extends MinimalEObjectImpl.Container
+		implements ActivityLoopListType {
 	/**
 	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -84,7 +85,8 @@ public class ActivityLoopListTypeImpl extends MinimalEObjectImpl.Container imple
 	@Override
 	public EList<ActivityLoopType> getActivity() {
 		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityLoopType>(ActivityLoopType.class, this,
+			activity = new EObjectContainmentEList<ActivityLoopType>(
+					ActivityLoopType.class, this,
 					LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY);
 		}
 		return activity;
@@ -108,8 +110,8 @@ public class ActivityLoopListTypeImpl extends MinimalEObjectImpl.Container imple
 		String oldEnd = end;
 		end = newEnd;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END, oldEnd,
-					end));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END, oldEnd, end));
 	}
 
 	/**
@@ -117,10 +119,12 @@ public class ActivityLoopListTypeImpl extends MinimalEObjectImpl.Container imple
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
-			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -150,7 +154,8 @@ public class ActivityLoopListTypeImpl extends MinimalEObjectImpl.Container imple
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
 			getActivity().clear();
-			getActivity().addAll((Collection<? extends ActivityLoopType>) newValue);
+			getActivity().addAll(
+					(Collection<? extends ActivityLoopType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END:
 			setEnd((String) newValue);
@@ -186,7 +191,8 @@ public class ActivityLoopListTypeImpl extends MinimalEObjectImpl.Container imple
 		case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
 			return activity != null && !activity.isEmpty();
 		case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END:
-			return END_EDEFAULT == null ? end != null : !END_EDEFAULT.equals(end);
+			return END_EDEFAULT == null ? end != null : !END_EDEFAULT
+					.equals(end);
 		}
 		return super.eIsSet(featureID);
 	}

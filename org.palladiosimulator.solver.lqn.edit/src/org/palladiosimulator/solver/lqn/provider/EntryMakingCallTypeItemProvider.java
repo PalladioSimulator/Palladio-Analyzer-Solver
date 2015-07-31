@@ -54,13 +54,16 @@ public class EntryMakingCallTypeItemProvider extends MakingCallTypeItemProvider 
 	 * @generated
 	 */
 	protected void addProbPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_EntryMakingCallType_prob_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_EntryMakingCallType_prob_feature",
-								"_UI_EntryMakingCallType_type"),
-						LqnPackage.Literals.ENTRY_MAKING_CALL_TYPE__PROB, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_EntryMakingCallType_prob_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_EntryMakingCallType_prob_feature",
+						"_UI_EntryMakingCallType_type"),
+				LqnPackage.Literals.ENTRY_MAKING_CALL_TYPE__PROB, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -70,7 +73,8 @@ public class EntryMakingCallTypeItemProvider extends MakingCallTypeItemProvider 
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/EntryMakingCallType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/EntryMakingCallType"));
 	}
 
 	/**
@@ -98,7 +102,8 @@ public class EntryMakingCallTypeItemProvider extends MakingCallTypeItemProvider 
 
 		switch (notification.getFeatureID(EntryMakingCallType.class)) {
 		case LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -111,7 +116,8 @@ public class EntryMakingCallTypeItemProvider extends MakingCallTypeItemProvider 
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

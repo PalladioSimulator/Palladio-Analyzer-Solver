@@ -8,10 +8,10 @@ package org.palladiosimulator.solver.lqn;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.ActivityLoopType#getCount <em>Count</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityLoopType()
  * @model extendedMetaData="name='ActivityLoopType' kind='empty'"

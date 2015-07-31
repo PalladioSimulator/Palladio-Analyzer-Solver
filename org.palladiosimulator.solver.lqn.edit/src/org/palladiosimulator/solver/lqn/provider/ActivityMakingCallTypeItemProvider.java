@@ -20,7 +20,8 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvider {
+public class ActivityMakingCallTypeItemProvider extends
+		MakingCallTypeItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -55,12 +56,16 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
 	 */
 	protected void addCallsMeanPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ActivityMakingCallType_callsMean_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ActivityMakingCallType_callsMean_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityMakingCallType_callsMean_feature",
 						"_UI_ActivityMakingCallType_type"),
-				LqnPackage.Literals.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN, true, false, false,
-				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN,
+				true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -70,7 +75,10 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ActivityMakingCallType"));
+		return overlayImage(
+				object,
+				getResourceLocator().getImage(
+						"full/obj16/ActivityMakingCallType"));
 	}
 
 	/**
@@ -98,7 +106,8 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
 
 		switch (notification.getFeatureID(ActivityMakingCallType.class)) {
 		case LqnPackage.ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -111,7 +120,8 @@ public class ActivityMakingCallTypeItemProvider extends MakingCallTypeItemProvid
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

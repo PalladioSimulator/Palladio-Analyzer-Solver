@@ -263,8 +263,8 @@ public enum TaskSchedulingType implements Enumerator {
 	 * --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final TaskSchedulingType[] VALUES_ARRAY = new TaskSchedulingType[] { REF, FCFS, PRI, HOL, BURST,
-			UNIFORM, POLL, INF, SEMAPHORE, RWLOCK, };
+	private static final TaskSchedulingType[] VALUES_ARRAY = new TaskSchedulingType[] {
+			REF, FCFS, PRI, HOL, BURST, UNIFORM, POLL, INF, SEMAPHORE, RWLOCK, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Task Scheduling Type</b></em>' enumerators. <!--
@@ -272,13 +272,12 @@ public enum TaskSchedulingType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<TaskSchedulingType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<TaskSchedulingType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Task Scheduling Type</b></em>' literal with the specified literal value.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param literal the literal.
-	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static TaskSchedulingType get(String literal) {
@@ -310,8 +309,6 @@ public enum TaskSchedulingType implements Enumerator {
 	/**
 	 * Returns the '<em><b>Task Scheduling Type</b></em>' literal with the specified integer value.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @param value the integer value.
-	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static TaskSchedulingType get(int value) {

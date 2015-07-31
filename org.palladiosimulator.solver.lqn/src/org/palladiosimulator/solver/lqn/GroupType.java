@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.GroupType#getResultGroup <em>Result Group</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.GroupType#getTask <em>Task</em>}</li>
@@ -19,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.GroupType#getName <em>Name</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.GroupType#getShare <em>Share</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getGroupType()
  * @model extendedMetaData="name='GroupType' kind='elementOnly'"

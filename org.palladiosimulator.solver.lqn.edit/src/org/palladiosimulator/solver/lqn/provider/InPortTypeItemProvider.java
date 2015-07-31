@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class InPortTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class InPortTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,13 +64,16 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	protected void addConnectFromPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_InPortType_connectFrom_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_InPortType_connectFrom_feature",
-								"_UI_InPortType_type"),
-						LqnPackage.Literals.IN_PORT_TYPE__CONNECT_FROM, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_InPortType_connectFrom_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_InPortType_connectFrom_feature",
+						"_UI_InPortType_type"),
+				LqnPackage.Literals.IN_PORT_TYPE__CONNECT_FROM, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -79,13 +83,16 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	protected void addDescriptionPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_InPortType_description_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_InPortType_description_feature",
-								"_UI_InPortType_type"),
-						LqnPackage.Literals.IN_PORT_TYPE__DESCRIPTION, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_InPortType_description_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_InPortType_description_feature",
+						"_UI_InPortType_type"),
+				LqnPackage.Literals.IN_PORT_TYPE__DESCRIPTION, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -95,13 +102,15 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_InPortType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_InPortType_name_feature",
-								"_UI_InPortType_type"),
-						LqnPackage.Literals.IN_PORT_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_InPortType_name_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_InPortType_name_feature", "_UI_InPortType_type"),
+				LqnPackage.Literals.IN_PORT_TYPE__NAME, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -111,7 +120,8 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/InPortType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/InPortType"));
 	}
 
 	/**
@@ -141,7 +151,8 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
 		case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
 		case LqnPackage.IN_PORT_TYPE__DESCRIPTION:
 		case LqnPackage.IN_PORT_TYPE__NAME:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -154,7 +165,8 @@ public class InPortTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

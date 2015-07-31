@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.PlotControlType#getFirstPlot <em>First Plot</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.PlotControlType#getPlot <em>Plot</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPlotControlType()
  * @model extendedMetaData="name='plot-control_._type' kind='elementOnly'"

@@ -20,7 +20,8 @@ import org.palladiosimulator.solver.lqn.TaskActivityGraph;
  * end-user-doc -->
  * @generated
  */
-public class TaskActivityGraphItemProvider extends ActivityGraphBaseItemProvider {
+public class TaskActivityGraphItemProvider extends
+		ActivityGraphBaseItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -56,10 +57,12 @@ public class TaskActivityGraphItemProvider extends ActivityGraphBaseItemProvider
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.TASK_ACTIVITY_GRAPH__REPLY_ENTRY);
+			childrenFeatures
+					.add(LqnPackage.Literals.TASK_ACTIVITY_GRAPH__REPLY_ENTRY);
 		}
 		return childrenFeatures;
 	}
@@ -83,7 +86,8 @@ public class TaskActivityGraphItemProvider extends ActivityGraphBaseItemProvider
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/TaskActivityGraph"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/TaskActivityGraph"));
 	}
 
 	/**
@@ -109,7 +113,8 @@ public class TaskActivityGraphItemProvider extends ActivityGraphBaseItemProvider
 
 		switch (notification.getFeatureID(TaskActivityGraph.class)) {
 		case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -122,10 +127,12 @@ public class TaskActivityGraphItemProvider extends ActivityGraphBaseItemProvider
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.TASK_ACTIVITY_GRAPH__REPLY_ENTRY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.TASK_ACTIVITY_GRAPH__REPLY_ENTRY,
 				LqnFactory.eINSTANCE.createReplyEntryType()));
 	}
 

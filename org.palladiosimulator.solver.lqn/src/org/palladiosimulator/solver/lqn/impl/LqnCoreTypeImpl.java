@@ -21,15 +21,16 @@ import org.palladiosimulator.solver.lqn.SlotType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.LqnCoreTypeImpl#getProcessor <em>Processor</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.LqnCoreTypeImpl#getSlot <em>Slot</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class LqnCoreTypeImpl extends MinimalEObjectImpl.Container implements LqnCoreType {
+public class LqnCoreTypeImpl extends MinimalEObjectImpl.Container implements
+		LqnCoreType {
 	/**
 	 * The cached value of the '{@link #getProcessor() <em>Processor</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -73,7 +74,8 @@ public class LqnCoreTypeImpl extends MinimalEObjectImpl.Container implements Lqn
 	@Override
 	public EList<ProcessorType> getProcessor() {
 		if (processor == null) {
-			processor = new EObjectContainmentEList<ProcessorType>(ProcessorType.class, this,
+			processor = new EObjectContainmentEList<ProcessorType>(
+					ProcessorType.class, this,
 					LqnPackage.LQN_CORE_TYPE__PROCESSOR);
 		}
 		return processor;
@@ -86,7 +88,8 @@ public class LqnCoreTypeImpl extends MinimalEObjectImpl.Container implements Lqn
 	@Override
 	public EList<SlotType> getSlot() {
 		if (slot == null) {
-			slot = new EObjectContainmentEList<SlotType>(SlotType.class, this, LqnPackage.LQN_CORE_TYPE__SLOT);
+			slot = new EObjectContainmentEList<SlotType>(SlotType.class, this,
+					LqnPackage.LQN_CORE_TYPE__SLOT);
 		}
 		return slot;
 	}
@@ -96,10 +99,12 @@ public class LqnCoreTypeImpl extends MinimalEObjectImpl.Container implements Lqn
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
-			return ((InternalEList<?>) getProcessor()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getProcessor()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.LQN_CORE_TYPE__SLOT:
 			return ((InternalEList<?>) getSlot()).basicRemove(otherEnd, msgs);
 		}
@@ -131,7 +136,8 @@ public class LqnCoreTypeImpl extends MinimalEObjectImpl.Container implements Lqn
 		switch (featureID) {
 		case LqnPackage.LQN_CORE_TYPE__PROCESSOR:
 			getProcessor().clear();
-			getProcessor().addAll((Collection<? extends ProcessorType>) newValue);
+			getProcessor().addAll(
+					(Collection<? extends ProcessorType>) newValue);
 			return;
 		case LqnPackage.LQN_CORE_TYPE__SLOT:
 			getSlot().clear();

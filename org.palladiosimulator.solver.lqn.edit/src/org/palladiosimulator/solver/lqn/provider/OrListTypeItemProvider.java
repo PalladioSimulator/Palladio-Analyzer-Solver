@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.OrListType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class OrListTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class OrListTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,7 +64,8 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY);
@@ -90,7 +92,8 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/OrListType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/OrListType"));
 	}
 
 	/**
@@ -116,7 +119,8 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
 
 		switch (notification.getFeatureID(OrListType.class)) {
 		case LqnPackage.OR_LIST_TYPE__ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -129,10 +133,12 @@ public class OrListTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.OR_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityOrType()));
 	}
 

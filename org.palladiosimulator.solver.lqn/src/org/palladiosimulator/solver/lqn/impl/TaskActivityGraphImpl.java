@@ -19,14 +19,15 @@ import org.palladiosimulator.solver.lqn.TaskActivityGraph;
  * <em><b>Task Activity Graph</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.TaskActivityGraphImpl#getReplyEntry <em>Reply Entry</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements TaskActivityGraph {
+public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements
+		TaskActivityGraph {
 	/**
 	 * The cached value of the '{@link #getReplyEntry() <em>Reply Entry</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -60,7 +61,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
 	@Override
 	public EList<ReplyEntryType> getReplyEntry() {
 		if (replyEntry == null) {
-			replyEntry = new EObjectContainmentEList<ReplyEntryType>(ReplyEntryType.class, this,
+			replyEntry = new EObjectContainmentEList<ReplyEntryType>(
+					ReplyEntryType.class, this,
 					LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY);
 		}
 		return replyEntry;
@@ -71,10 +73,12 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
-			return ((InternalEList<?>) getReplyEntry()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getReplyEntry()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -102,7 +106,8 @@ public class TaskActivityGraphImpl extends ActivityGraphBaseImpl implements Task
 		switch (featureID) {
 		case LqnPackage.TASK_ACTIVITY_GRAPH__REPLY_ENTRY:
 			getReplyEntry().clear();
-			getReplyEntry().addAll((Collection<? extends ReplyEntryType>) newValue);
+			getReplyEntry().addAll(
+					(Collection<? extends ReplyEntryType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

@@ -27,8 +27,9 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type1;
  * end-user-doc -->
  * @generated
  */
-public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ResultConf99Type1ItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -104,12 +105,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addLossProbabilityPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_lossProbability_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_lossProbability_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_lossProbability_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__LOSS_PROBABILITY, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__LOSS_PROBABILITY,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -119,13 +124,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addOpenWaitTimePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_openWaitTime_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_openWaitTime_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__OPEN_WAIT_TIME, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_openWaitTime_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_openWaitTime_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__OPEN_WAIT_TIME, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -136,12 +145,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase1ProcWaitingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase1ProcWaiting_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase1ProcWaiting_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase1ProcWaiting_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -152,12 +165,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase1ServiceTimePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase1ServiceTime_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase1ServiceTime_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase1ServiceTime_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -167,13 +184,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase1ServiceTimeVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature"),
-				getString("_UI_PropertyDescriptor_description",
-						"_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_phase1ServiceTimeVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -184,12 +207,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase1UtilizationPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase1Utilization_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase1Utilization_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase1Utilization_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_UTILIZATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_UTILIZATION,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -199,13 +226,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase1WaitingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_phase1Waiting_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase1Waiting_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_WAITING, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_phase1Waiting_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase1Waiting_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_WAITING, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -215,13 +246,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase1WaitingVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_phase1WaitingVariance_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase1WaitingVariance_feature",
-						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_WAITING_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_phase1WaitingVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_phase1WaitingVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE1_WAITING_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -232,12 +269,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase2ProcWaitingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase2ProcWaiting_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase2ProcWaiting_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase2ProcWaiting_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -248,12 +289,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase2ServiceTimePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase2ServiceTime_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase2ServiceTime_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase2ServiceTime_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -263,13 +308,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase2ServiceTimeVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature"),
-				getString("_UI_PropertyDescriptor_description",
-						"_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_phase2ServiceTimeVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -280,12 +331,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase2UtilizationPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase2Utilization_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase2Utilization_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase2Utilization_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_UTILIZATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_UTILIZATION,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -295,13 +350,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase2WaitingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_phase2Waiting_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase2Waiting_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_WAITING, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_phase2Waiting_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase2Waiting_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_WAITING, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -311,13 +370,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase2WaitingVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_phase2WaitingVariance_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase2WaitingVariance_feature",
-						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_WAITING_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_phase2WaitingVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_phase2WaitingVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE2_WAITING_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -328,12 +393,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase3ProcWaitingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase3ProcWaiting_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase3ProcWaiting_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase3ProcWaiting_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -344,12 +413,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase3ServiceTimePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase3ServiceTime_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase3ServiceTime_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase3ServiceTime_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -359,13 +432,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase3ServiceTimeVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature"),
-				getString("_UI_PropertyDescriptor_description",
-						"_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_phase3ServiceTimeVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -376,12 +455,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addPhase3UtilizationPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_phase3Utilization_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase3Utilization_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase3Utilization_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_UTILIZATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_UTILIZATION,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -391,13 +474,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase3WaitingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_phase3Waiting_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase3Waiting_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_WAITING, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_phase3Waiting_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_phase3Waiting_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_WAITING, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -407,13 +494,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addPhase3WaitingVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_phase3WaitingVariance_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_phase3WaitingVariance_feature",
-						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_WAITING_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_phase3WaitingVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_phase3WaitingVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__PHASE3_WAITING_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -424,12 +517,18 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addProbExceedMaxServiceTimePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_probExceedMaxServiceTime_feature"),
-						getString("_UI_PropertyDescriptor_description",
-								"_UI_ResultConf99Type1_probExceedMaxServiceTime_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PROB_EXCEED_MAX_SERVICE_TIME, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_probExceedMaxServiceTime_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_probExceedMaxServiceTime_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__PROB_EXCEED_MAX_SERVICE_TIME,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -440,12 +539,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addProcUtilizationPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_procUtilization_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_procUtilization_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_procUtilization_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__PROC_UTILIZATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PROC_UTILIZATION,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -455,13 +558,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addProcWaitingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_procWaiting_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_procWaiting_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__PROC_WAITING, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_procWaiting_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_procWaiting_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__PROC_WAITING, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -472,12 +579,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addRwlockReaderHoldingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_rwlockReaderHolding_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_rwlockReaderHolding_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_rwlockReaderHolding_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_HOLDING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_HOLDING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -488,12 +599,18 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addRwlockReaderUtilizationPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_rwlockReaderUtilization_feature"),
-						getString("_UI_PropertyDescriptor_description",
-								"_UI_ResultConf99Type1_rwlockReaderUtilization_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_UTILIZATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_rwlockReaderUtilization_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_rwlockReaderUtilization_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_UTILIZATION,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -504,12 +621,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addRwlockReaderWaitingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_rwlockReaderWaiting_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_rwlockReaderWaiting_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_rwlockReaderWaiting_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -518,14 +639,21 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 *
 	 * @generated
 	 */
-	protected void addRwlockReaderWaitingVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature"),
-				getString("_UI_PropertyDescriptor_description",
-						"_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+	protected void addRwlockReaderWaitingVariancePropertyDescriptor(
+			Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_rwlockReaderWaitingVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -536,12 +664,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addRwlockWriterHoldingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_rwlockWriterHolding_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_rwlockWriterHolding_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_rwlockWriterHolding_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_HOLDING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_HOLDING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -552,12 +684,18 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addRwlockWriterUtilizationPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_rwlockWriterUtilization_feature"),
-						getString("_UI_PropertyDescriptor_description",
-								"_UI_ResultConf99Type1_rwlockWriterUtilization_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_UTILIZATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_rwlockWriterUtilization_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_rwlockWriterUtilization_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_UTILIZATION,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -568,12 +706,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addRwlockWriterWaitingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_rwlockWriterWaiting_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_rwlockWriterWaiting_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_rwlockWriterWaiting_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -582,14 +724,21 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 *
 	 * @generated
 	 */
-	protected void addRwlockWriterWaitingVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature"),
-				getString("_UI_PropertyDescriptor_description",
-						"_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+	protected void addRwlockWriterWaitingVariancePropertyDescriptor(
+			Object object) {
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_rwlockWriterWaitingVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -599,13 +748,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addSemaphoreUtilizationPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_semaphoreUtilization_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_semaphoreUtilization_feature",
-						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_UTILIZATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_semaphoreUtilization_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_semaphoreUtilization_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_UTILIZATION,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -616,12 +771,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addSemaphoreWaitingPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_semaphoreWaiting_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_semaphoreWaiting_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_semaphoreWaiting_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_WAITING, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_WAITING,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -632,12 +791,18 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addSemaphoreWaitingVariancePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_semaphoreWaitingVariance_feature"),
-						getString("_UI_PropertyDescriptor_description",
-								"_UI_ResultConf99Type1_semaphoreWaitingVariance_feature", "_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_WAITING_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_semaphoreWaitingVariance_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_semaphoreWaitingVariance_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__SEMAPHORE_WAITING_VARIANCE,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -647,13 +812,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addServiceTimePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_serviceTime_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_serviceTime_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__SERVICE_TIME, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_serviceTime_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_serviceTime_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__SERVICE_TIME, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -664,12 +833,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addServiceTimeVariancePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_serviceTimeVariance_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_serviceTimeVariance_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_serviceTimeVariance_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -679,13 +852,19 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addSquaredCoeffVariationPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-				getString("_UI_ResultConf99Type1_squaredCoeffVariation_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_squaredCoeffVariation_feature",
-						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__SQUARED_COEFF_VARIATION, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ResultConf99Type1_squaredCoeffVariation_feature"),
+						getString(
+								"_UI_PropertyDescriptor_description",
+								"_UI_ResultConf99Type1_squaredCoeffVariation_feature",
+								"_UI_ResultConf99Type1_type"),
+						LqnPackage.Literals.RESULT_CONF99_TYPE1__SQUARED_COEFF_VARIATION,
+						true, false, false,
+						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -695,13 +874,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addThroughputPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_throughput_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_throughput_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__THROUGHPUT, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_throughput_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_throughput_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__THROUGHPUT, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -712,12 +895,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addThroughputBoundPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_throughputBound_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_throughputBound_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_throughputBound_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__THROUGHPUT_BOUND, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__THROUGHPUT_BOUND,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -727,13 +914,17 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addUtilizationPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_utilization_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_utilization_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__UTILIZATION, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_utilization_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_utilization_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__UTILIZATION, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -743,13 +934,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	protected void addWaitingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf99Type1_waiting_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_waiting_feature",
-								"_UI_ResultConf99Type1_type"),
-						LqnPackage.Literals.RESULT_CONF99_TYPE1__WAITING, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf99Type1_waiting_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_waiting_feature",
+						"_UI_ResultConf99Type1_type"),
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__WAITING, true, false,
+				false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -760,12 +954,16 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	protected void addWaitingVariancePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_ResultConf99Type1_waitingVariance_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_ResultConf99Type1_waitingVariance_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf99Type1_waitingVariance_feature",
 						"_UI_ResultConf99Type1_type"),
-				LqnPackage.Literals.RESULT_CONF99_TYPE1__WAITING_VARIANCE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.RESULT_CONF99_TYPE1__WAITING_VARIANCE,
+				true, false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -775,7 +973,8 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ResultConf99Type1"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ResultConf99Type1"));
 	}
 
 	/**
@@ -787,7 +986,8 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	@Override
 	public String getText(Object object) {
 		ResultConf99Type1 resultConf99Type1 = (ResultConf99Type1) object;
-		return getString("_UI_ResultConf99Type1_type") + " " + resultConf99Type1.getLossProbability();
+		return getString("_UI_ResultConf99Type1_type") + " "
+				+ resultConf99Type1.getLossProbability();
 	}
 
 	/**
@@ -843,7 +1043,8 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 		case LqnPackage.RESULT_CONF99_TYPE1__UTILIZATION:
 		case LqnPackage.RESULT_CONF99_TYPE1__WAITING:
 		case LqnPackage.RESULT_CONF99_TYPE1__WAITING_VARIANCE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -856,7 +1057,8 @@ public class ResultConf99Type1ItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

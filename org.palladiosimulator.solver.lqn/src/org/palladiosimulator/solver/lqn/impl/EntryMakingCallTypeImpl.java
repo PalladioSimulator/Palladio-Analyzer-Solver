@@ -13,14 +13,15 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Entry Making Call Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryMakingCallTypeImpl#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements EntryMakingCallType {
+public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements
+		EntryMakingCallType {
 	/**
 	 * The default value of the '{@link #getProb() <em>Prob</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -76,8 +77,8 @@ public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements Entry
 		Object oldProb = prob;
 		prob = newProb;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB, oldProb,
-					prob));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB, oldProb, prob));
 	}
 
 	/**
@@ -129,7 +130,8 @@ public class EntryMakingCallTypeImpl extends MakingCallTypeImpl implements Entry
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.ENTRY_MAKING_CALL_TYPE__PROB:
-			return PROB_EDEFAULT == null ? prob != null : !PROB_EDEFAULT.equals(prob);
+			return PROB_EDEFAULT == null ? prob != null : !PROB_EDEFAULT
+					.equals(prob);
 		}
 		return super.eIsSet(featureID);
 	}

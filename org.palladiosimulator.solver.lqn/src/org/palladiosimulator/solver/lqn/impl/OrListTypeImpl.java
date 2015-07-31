@@ -20,14 +20,15 @@ import org.palladiosimulator.solver.lqn.OrListType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OrListTypeImpl#getActivity <em>Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class OrListTypeImpl extends MinimalEObjectImpl.Container implements OrListType {
+public class OrListTypeImpl extends MinimalEObjectImpl.Container implements
+		OrListType {
 	/**
 	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -61,7 +62,8 @@ public class OrListTypeImpl extends MinimalEObjectImpl.Container implements OrLi
 	@Override
 	public EList<ActivityOrType> getActivity() {
 		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityOrType>(ActivityOrType.class, this,
+			activity = new EObjectContainmentEList<ActivityOrType>(
+					ActivityOrType.class, this,
 					LqnPackage.OR_LIST_TYPE__ACTIVITY);
 		}
 		return activity;
@@ -72,10 +74,12 @@ public class OrListTypeImpl extends MinimalEObjectImpl.Container implements OrLi
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.OR_LIST_TYPE__ACTIVITY:
-			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -103,7 +107,8 @@ public class OrListTypeImpl extends MinimalEObjectImpl.Container implements OrLi
 		switch (featureID) {
 		case LqnPackage.OR_LIST_TYPE__ACTIVITY:
 			getActivity().clear();
-			getActivity().addAll((Collection<? extends ActivityOrType>) newValue);
+			getActivity().addAll(
+					(Collection<? extends ActivityOrType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

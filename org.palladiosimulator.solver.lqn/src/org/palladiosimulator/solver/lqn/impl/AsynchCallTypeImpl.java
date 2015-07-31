@@ -14,14 +14,15 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl#getDest <em>Dest</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class AsynchCallTypeImpl extends MinimalEObjectImpl.Container implements AsynchCallType {
+public class AsynchCallTypeImpl extends MinimalEObjectImpl.Container implements
+		AsynchCallType {
 	/**
 	 * The default value of the '{@link #getDest() <em>Dest</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -77,7 +78,8 @@ public class AsynchCallTypeImpl extends MinimalEObjectImpl.Container implements 
 		String oldDest = dest;
 		dest = newDest;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ASYNCH_CALL_TYPE__DEST, oldDest, dest));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ASYNCH_CALL_TYPE__DEST, oldDest, dest));
 	}
 
 	/**
@@ -129,7 +131,8 @@ public class AsynchCallTypeImpl extends MinimalEObjectImpl.Container implements 
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.ASYNCH_CALL_TYPE__DEST:
-			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT.equals(dest);
+			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT
+					.equals(dest);
 		}
 		return super.eIsSet(featureID);
 	}

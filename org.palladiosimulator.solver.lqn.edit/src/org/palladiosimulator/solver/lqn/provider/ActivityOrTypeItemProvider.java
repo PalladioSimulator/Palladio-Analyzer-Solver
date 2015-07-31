@@ -53,13 +53,16 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
 	 * @generated
 	 */
 	protected void addProbPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityOrType_prob_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityOrType_prob_feature",
-								"_UI_ActivityOrType_type"),
-						LqnPackage.Literals.ACTIVITY_OR_TYPE__PROB, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityOrType_prob_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityOrType_prob_feature",
+						"_UI_ActivityOrType_type"),
+				LqnPackage.Literals.ACTIVITY_OR_TYPE__PROB, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -69,7 +72,8 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ActivityOrType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ActivityOrType"));
 	}
 
 	/**
@@ -97,7 +101,8 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
 
 		switch (notification.getFeatureID(ActivityOrType.class)) {
 		case LqnPackage.ACTIVITY_OR_TYPE__PROB:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -110,7 +115,8 @@ public class ActivityOrTypeItemProvider extends ActivityTypeItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

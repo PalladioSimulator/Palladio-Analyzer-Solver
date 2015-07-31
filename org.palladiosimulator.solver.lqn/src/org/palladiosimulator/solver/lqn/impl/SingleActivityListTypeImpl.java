@@ -17,14 +17,15 @@ import org.palladiosimulator.solver.lqn.SingleActivityListType;
  * <em><b>Single Activity List Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SingleActivityListTypeImpl#getActivity <em>Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class SingleActivityListTypeImpl extends MinimalEObjectImpl.Container implements SingleActivityListType {
+public class SingleActivityListTypeImpl extends MinimalEObjectImpl.Container
+		implements SingleActivityListType {
 	/**
 	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -64,12 +65,15 @@ public class SingleActivityListTypeImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetActivity(ActivityType newActivity, NotificationChain msgs) {
+	public NotificationChain basicSetActivity(ActivityType newActivity,
+			NotificationChain msgs) {
 		ActivityType oldActivity = activity;
 		activity = newActivity;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, oldActivity, newActivity);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
+					oldActivity, newActivity);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -87,16 +91,25 @@ public class SingleActivityListTypeImpl extends MinimalEObjectImpl.Container imp
 		if (newActivity != activity) {
 			NotificationChain msgs = null;
 			if (activity != null)
-				msgs = ((InternalEObject) activity).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, null, msgs);
+				msgs = ((InternalEObject) activity)
+						.eInverseRemove(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
+								null, msgs);
 			if (newActivity != null)
-				msgs = ((InternalEObject) newActivity).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY, null, msgs);
+				msgs = ((InternalEObject) newActivity)
+						.eInverseAdd(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
+								null, msgs);
 			msgs = basicSetActivity(newActivity, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY,
 					newActivity, newActivity));
 	}
 
@@ -105,7 +118,8 @@ public class SingleActivityListTypeImpl extends MinimalEObjectImpl.Container imp
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY:
 			return basicSetActivity(null, msgs);

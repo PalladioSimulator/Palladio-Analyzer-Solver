@@ -25,7 +25,6 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <em><b>Activity Phases Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getCallList <em>Call List</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getGroup <em>Group</em>}</li>
@@ -33,10 +32,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getAsynchCall <em>Asynch Call</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityPhasesTypeImpl#getPhase <em>Phase</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements ActivityPhasesType {
+public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements
+		ActivityPhasesType {
 	/**
 	 * The cached value of the '{@link #getCallList() <em>Call List</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -100,7 +101,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 	@Override
 	public EList<CallListType> getCallList() {
 		if (callList == null) {
-			callList = new EObjectContainmentEList<CallListType>(CallListType.class, this,
+			callList = new EObjectContainmentEList<CallListType>(
+					CallListType.class, this,
 					LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST);
 		}
 		return callList;
@@ -113,7 +115,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 	@Override
 	public FeatureMap getGroup() {
 		if (group == null) {
-			group = new BasicFeatureMap(this, LqnPackage.ACTIVITY_PHASES_TYPE__GROUP);
+			group = new BasicFeatureMap(this,
+					LqnPackage.ACTIVITY_PHASES_TYPE__GROUP);
 		}
 		return group;
 	}
@@ -124,7 +127,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 	 */
 	@Override
 	public EList<ActivityMakingCallType> getSynchCall() {
-		return getGroup().list(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL);
+		return getGroup().list(
+				LqnPackage.Literals.ACTIVITY_PHASES_TYPE__SYNCH_CALL);
 	}
 
 	/**
@@ -133,7 +137,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 	 */
 	@Override
 	public EList<ActivityMakingCallType> getAsynchCall() {
-		return getGroup().list(LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL);
+		return getGroup().list(
+				LqnPackage.Literals.ACTIVITY_PHASES_TYPE__ASYNCH_CALL);
 	}
 
 	/**
@@ -154,8 +159,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 		BigInteger oldPhase = phase;
 		phase = newPhase;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_PHASES_TYPE__PHASE, oldPhase,
-					phase));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_PHASES_TYPE__PHASE, oldPhase, phase));
 	}
 
 	/**
@@ -163,16 +168,20 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_PHASES_TYPE__CALL_LIST:
-			return ((InternalEList<?>) getCallList()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getCallList()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ACTIVITY_PHASES_TYPE__GROUP:
 			return ((InternalEList<?>) getGroup()).basicRemove(otherEnd, msgs);
 		case LqnPackage.ACTIVITY_PHASES_TYPE__SYNCH_CALL:
-			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ACTIVITY_PHASES_TYPE__ASYNCH_CALL:
-			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -217,11 +226,13 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 			return;
 		case LqnPackage.ACTIVITY_PHASES_TYPE__SYNCH_CALL:
 			getSynchCall().clear();
-			getSynchCall().addAll((Collection<? extends ActivityMakingCallType>) newValue);
+			getSynchCall().addAll(
+					(Collection<? extends ActivityMakingCallType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_PHASES_TYPE__ASYNCH_CALL:
 			getAsynchCall().clear();
-			getAsynchCall().addAll((Collection<? extends ActivityMakingCallType>) newValue);
+			getAsynchCall().addAll(
+					(Collection<? extends ActivityMakingCallType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_PHASES_TYPE__PHASE:
 			setPhase((BigInteger) newValue);
@@ -272,7 +283,8 @@ public class ActivityPhasesTypeImpl extends ActivityDefBaseImpl implements Activ
 		case LqnPackage.ACTIVITY_PHASES_TYPE__ASYNCH_CALL:
 			return !getAsynchCall().isEmpty();
 		case LqnPackage.ACTIVITY_PHASES_TYPE__PHASE:
-			return PHASE_EDEFAULT == null ? phase != null : !PHASE_EDEFAULT.equals(phase);
+			return PHASE_EDEFAULT == null ? phase != null : !PHASE_EDEFAULT
+					.equals(phase);
 		}
 		return super.eIsSet(featureID);
 	}

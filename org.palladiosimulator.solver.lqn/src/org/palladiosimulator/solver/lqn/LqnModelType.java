@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getRunControl <em>Run Control</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getPlotControl <em>Plot Control</em>}</li>
@@ -27,6 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#getName <em>Name</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.LqnModelType#isXmlDebug <em>Xml Debug</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getLqnModelType()
  * @model extendedMetaData="name='LqnModelType' kind='elementOnly'"

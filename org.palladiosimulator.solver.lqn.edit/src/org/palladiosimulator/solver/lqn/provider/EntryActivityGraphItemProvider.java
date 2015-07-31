@@ -20,7 +20,8 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * end-user-doc -->
  * @generated
  */
-public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvider {
+public class EntryActivityGraphItemProvider extends
+		ActivityGraphBaseItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -56,10 +57,12 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY);
 		}
 		return childrenFeatures;
 	}
@@ -83,7 +86,8 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/EntryActivityGraph"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/EntryActivityGraph"));
 	}
 
 	/**
@@ -109,7 +113,8 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
 
 		switch (notification.getFeatureID(EntryActivityGraph.class)) {
 		case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -122,10 +127,12 @@ public class EntryActivityGraphItemProvider extends ActivityGraphBaseItemProvide
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY,
 				LqnFactory.eINSTANCE.createReplyActivityType()));
 	}
 

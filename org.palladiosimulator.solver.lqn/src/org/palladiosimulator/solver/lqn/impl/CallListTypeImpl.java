@@ -21,15 +21,16 @@ import org.palladiosimulator.solver.lqn.SynchCallType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.CallListTypeImpl#getSynchCall <em>Synch Call</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.CallListTypeImpl#getAsynchCall <em>Asynch Call</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class CallListTypeImpl extends MinimalEObjectImpl.Container implements CallListType {
+public class CallListTypeImpl extends MinimalEObjectImpl.Container implements
+		CallListType {
 	/**
 	 * The cached value of the '{@link #getSynchCall() <em>Synch Call</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -72,7 +73,8 @@ public class CallListTypeImpl extends MinimalEObjectImpl.Container implements Ca
 	@Override
 	public EList<SynchCallType> getSynchCall() {
 		if (synchCall == null) {
-			synchCall = new EObjectContainmentEList<SynchCallType>(SynchCallType.class, this,
+			synchCall = new EObjectContainmentEList<SynchCallType>(
+					SynchCallType.class, this,
 					LqnPackage.CALL_LIST_TYPE__SYNCH_CALL);
 		}
 		return synchCall;
@@ -85,7 +87,8 @@ public class CallListTypeImpl extends MinimalEObjectImpl.Container implements Ca
 	@Override
 	public EList<AsynchCallType> getAsynchCall() {
 		if (asynchCall == null) {
-			asynchCall = new EObjectContainmentEList<AsynchCallType>(AsynchCallType.class, this,
+			asynchCall = new EObjectContainmentEList<AsynchCallType>(
+					AsynchCallType.class, this,
 					LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL);
 		}
 		return asynchCall;
@@ -96,12 +99,15 @@ public class CallListTypeImpl extends MinimalEObjectImpl.Container implements Ca
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
-			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL:
-			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -131,11 +137,13 @@ public class CallListTypeImpl extends MinimalEObjectImpl.Container implements Ca
 		switch (featureID) {
 		case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
 			getSynchCall().clear();
-			getSynchCall().addAll((Collection<? extends SynchCallType>) newValue);
+			getSynchCall().addAll(
+					(Collection<? extends SynchCallType>) newValue);
 			return;
 		case LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL:
 			getAsynchCall().clear();
-			getAsynchCall().addAll((Collection<? extends AsynchCallType>) newValue);
+			getAsynchCall().addAll(
+					(Collection<? extends AsynchCallType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

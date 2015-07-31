@@ -20,14 +20,15 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityListTypeImpl#getActivity <em>Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityListTypeImpl extends MinimalEObjectImpl.Container implements ActivityListType {
+public class ActivityListTypeImpl extends MinimalEObjectImpl.Container
+		implements ActivityListType {
 	/**
 	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -61,7 +62,8 @@ public class ActivityListTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public EList<ActivityType> getActivity() {
 		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityType>(ActivityType.class, this,
+			activity = new EObjectContainmentEList<ActivityType>(
+					ActivityType.class, this,
 					LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY);
 		}
 		return activity;
@@ -72,10 +74,12 @@ public class ActivityListTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_LIST_TYPE__ACTIVITY:
-			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

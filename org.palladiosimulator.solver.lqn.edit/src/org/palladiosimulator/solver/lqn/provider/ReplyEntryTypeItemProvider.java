@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.ReplyEntryType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ReplyEntryTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ReplyEntryTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,13 +64,16 @@ public class ReplyEntryTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ReplyEntryType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ReplyEntryType_name_feature",
-								"_UI_ReplyEntryType_type"),
-						LqnPackage.Literals.REPLY_ENTRY_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ReplyEntryType_name_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ReplyEntryType_name_feature",
+						"_UI_ReplyEntryType_type"),
+				LqnPackage.Literals.REPLY_ENTRY_TYPE__NAME, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -82,10 +86,12 @@ public class ReplyEntryTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.REPLY_ENTRY_TYPE__REPLY_ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.REPLY_ENTRY_TYPE__REPLY_ACTIVITY);
 		}
 		return childrenFeatures;
 	}
@@ -109,7 +115,8 @@ public class ReplyEntryTypeItemProvider extends ItemProviderAdapter implements I
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ReplyEntryType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ReplyEntryType"));
 	}
 
 	/**
@@ -137,10 +144,12 @@ public class ReplyEntryTypeItemProvider extends ItemProviderAdapter implements I
 
 		switch (notification.getFeatureID(ReplyEntryType.class)) {
 		case LqnPackage.REPLY_ENTRY_TYPE__NAME:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.REPLY_ENTRY_TYPE__REPLY_ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -153,10 +162,12 @@ public class ReplyEntryTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.REPLY_ENTRY_TYPE__REPLY_ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.REPLY_ENTRY_TYPE__REPLY_ACTIVITY,
 				LqnFactory.eINSTANCE.createReplyActivityType()));
 	}
 

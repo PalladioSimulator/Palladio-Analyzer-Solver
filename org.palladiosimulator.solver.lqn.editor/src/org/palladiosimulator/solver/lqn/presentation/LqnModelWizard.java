@@ -73,8 +73,9 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final List<String> FILE_EXTENSIONS = Collections.unmodifiableList(
-			Arrays.asList(LqnEditorPlugin.INSTANCE.getString("_UI_LqnEditorFilenameExtensions").split("\\s*,\\s*")));
+	public static final List<String> FILE_EXTENSIONS = Collections
+			.unmodifiableList(Arrays.asList(LqnEditorPlugin.INSTANCE.getString(
+					"_UI_LqnEditorFilenameExtensions").split("\\s*,\\s*")));
 
 	/**
 	 * A formatted list of supported file extensions, suitable for display.
@@ -83,7 +84,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 	 * @generated
 	 */
 	public static final String FORMATTED_FILE_EXTENSIONS = LqnEditorPlugin.INSTANCE
-			.getString("_UI_LqnEditorFilenameExtensions").replaceAll("\\s*,\\s*", ", ");
+			.getString("_UI_LqnEditorFilenameExtensions").replaceAll(
+					"\\s*,\\s*", ", ");
 
 	/**
 	 * This caches an instance of the model package.
@@ -147,7 +149,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 		this.selection = selection;
 		setWindowTitle(LqnEditorPlugin.INSTANCE.getString("_UI_Wizard_label"));
 		setDefaultPageImageDescriptor(ExtendedImageRegistry.INSTANCE
-				.getImageDescriptor(LqnEditorPlugin.INSTANCE.getImage("full/wizban/NewLqn")));
+				.getImageDescriptor(LqnEditorPlugin.INSTANCE
+						.getImage("full/wizban/NewLqn")));
 	}
 
 	/**
@@ -160,18 +163,21 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 		if (initialObjectNames == null) {
 			initialObjectNames = new ArrayList<String>();
 			for (EStructuralFeature eStructuralFeature : ExtendedMetaData.INSTANCE
-					.getAllElements(ExtendedMetaData.INSTANCE.getDocumentRoot(lqnPackage))) {
+					.getAllElements(ExtendedMetaData.INSTANCE
+							.getDocumentRoot(lqnPackage))) {
 				if (eStructuralFeature.isChangeable()) {
 					EClassifier eClassifier = eStructuralFeature.getEType();
 					if (eClassifier instanceof EClass) {
 						EClass eClass = (EClass) eClassifier;
 						if (!eClass.isAbstract()) {
-							initialObjectNames.add(eStructuralFeature.getName());
+							initialObjectNames
+									.add(eStructuralFeature.getName());
 						}
 					}
 				}
 			}
-			Collections.sort(initialObjectNames, CommonPlugin.INSTANCE.getComparator());
+			Collections.sort(initialObjectNames,
+					CommonPlugin.INSTANCE.getComparator());
 		}
 		return initialObjectNames;
 	}
@@ -184,9 +190,11 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 	protected EObject createInitialModel() {
 		EClass eClass = ExtendedMetaData.INSTANCE.getDocumentRoot(lqnPackage);
 		EStructuralFeature eStructuralFeature = eClass
-				.getEStructuralFeature(initialObjectCreationPage.getInitialObjectName());
+				.getEStructuralFeature(initialObjectCreationPage
+						.getInitialObjectName());
 		EObject rootObject = lqnFactory.create(eClass);
-		rootObject.eSet(eStructuralFeature, EcoreUtil.create((EClass) eStructuralFeature.getEType()));
+		rootObject.eSet(eStructuralFeature,
+				EcoreUtil.create((EClass) eStructuralFeature.getEType()));
 		return rootObject;
 	}
 
@@ -214,7 +222,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 
 						// Get the URI of the model file.
 						//
-						URI fileURI = URI.createPlatformResourceURI(modelFile.getFullPath().toString(), true);
+						URI fileURI = URI.createPlatformResourceURI(modelFile
+								.getFullPath().toString(), true);
 
 						// Create a resource for this file.
 						//
@@ -230,7 +239,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 						// Save the contents of the resource to the file system.
 						//
 						Map<Object, Object> options = new HashMap<Object, Object>();
-						options.put(XMLResource.OPTION_ENCODING, initialObjectCreationPage.getEncoding());
+						options.put(XMLResource.OPTION_ENCODING,
+								initialObjectCreationPage.getEncoding());
 						resource.save(options);
 					} catch (Exception exception) {
 						LqnEditorPlugin.INSTANCE.log(exception);
@@ -244,15 +254,18 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 
 			// Select the new file resource in the current view.
 			//
-			IWorkbenchWindow workbenchWindow = workbench.getActiveWorkbenchWindow();
+			IWorkbenchWindow workbenchWindow = workbench
+					.getActiveWorkbenchWindow();
 			IWorkbenchPage page = workbenchWindow.getActivePage();
 			final IWorkbenchPart activePart = page.getActivePart();
 			if (activePart instanceof ISetSelectionTarget) {
-				final ISelection targetSelection = new StructuredSelection(modelFile);
+				final ISelection targetSelection = new StructuredSelection(
+						modelFile);
 				getShell().getDisplay().asyncExec(new Runnable() {
 					@Override
 					public void run() {
-						((ISetSelectionTarget) activePart).selectReveal(targetSelection);
+						((ISetSelectionTarget) activePart)
+								.selectReveal(targetSelection);
 					}
 				});
 			}
@@ -260,11 +273,18 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 			// Open an editor on the new file.
 			//
 			try {
-				page.openEditor(new FileEditorInput(modelFile),
-						workbench.getEditorRegistry().getDefaultEditor(modelFile.getFullPath().toString()).getId());
+				page.openEditor(
+						new FileEditorInput(modelFile),
+						workbench
+								.getEditorRegistry()
+								.getDefaultEditor(
+										modelFile.getFullPath().toString())
+								.getId());
 			} catch (PartInitException exception) {
 				MessageDialog.openError(workbenchWindow.getShell(),
-						LqnEditorPlugin.INSTANCE.getString("_UI_OpenEditorError_label"), exception.getMessage());
+						LqnEditorPlugin.INSTANCE
+								.getString("_UI_OpenEditorError_label"),
+						exception.getMessage());
 				return false;
 			}
 
@@ -280,13 +300,15 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public class LqnModelWizardNewFileCreationPage extends WizardNewFileCreationPage {
+	public class LqnModelWizardNewFileCreationPage extends
+			WizardNewFileCreationPage {
 		/**
 		 * Pass in the selection.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		public LqnModelWizardNewFileCreationPage(String pageId, IStructuredSelection selection) {
+		public LqnModelWizardNewFileCreationPage(String pageId,
+				IStructuredSelection selection) {
 			super(pageId, selection);
 		}
 
@@ -301,9 +323,10 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 			if (super.validatePage()) {
 				String extension = new Path(getFileName()).getFileExtension();
 				if (extension == null || !FILE_EXTENSIONS.contains(extension)) {
-					String key = FILE_EXTENSIONS.size() > 1 ? "_WARN_FilenameExtensions" : "_WARN_FilenameExtension";
-					setErrorMessage(
-							LqnEditorPlugin.INSTANCE.getString(key, new Object[] { FORMATTED_FILE_EXTENSIONS }));
+					String key = FILE_EXTENSIONS.size() > 1 ? "_WARN_FilenameExtensions"
+							: "_WARN_FilenameExtension";
+					setErrorMessage(LqnEditorPlugin.INSTANCE.getString(key,
+							new Object[] { FORMATTED_FILE_EXTENSIONS }));
 					return false;
 				}
 				return true;
@@ -316,7 +339,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 		 * @generated
 		 */
 		public IFile getModelFile() {
-			return ResourcesPlugin.getWorkspace().getRoot().getFile(getContainerFullPath().append(getFileName()));
+			return ResourcesPlugin.getWorkspace().getRoot()
+					.getFile(getContainerFullPath().append(getFileName()));
 		}
 	}
 
@@ -375,7 +399,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 
 			Label containerLabel = new Label(composite, SWT.LEFT);
 			{
-				containerLabel.setText(LqnEditorPlugin.INSTANCE.getString("_UI_ModelObject"));
+				containerLabel.setText(LqnEditorPlugin.INSTANCE
+						.getString("_UI_ModelObject"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -401,7 +426,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 
 			Label encodingLabel = new Label(composite, SWT.LEFT);
 			{
-				encodingLabel.setText(LqnEditorPlugin.INSTANCE.getString("_UI_XMLEncoding"));
+				encodingLabel.setText(LqnEditorPlugin.INSTANCE
+						.getString("_UI_XMLEncoding"));
 
 				GridData data = new GridData();
 				data.horizontalAlignment = GridData.FILL;
@@ -442,7 +468,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 		 * @generated
 		 */
 		protected boolean validatePage() {
-			return getInitialObjectName() != null && getEncodings().contains(encodingField.getText());
+			return getInitialObjectName() != null
+					&& getEncodings().contains(encodingField.getText());
 		}
 
 		/**
@@ -494,7 +521,8 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 		 */
 		protected String getLabel(String featureName) {
 			try {
-				return LqnEditPlugin.INSTANCE.getString("_UI_DocumentRoot_" + featureName + "_feature");
+				return LqnEditPlugin.INSTANCE.getString("_UI_DocumentRoot_"
+						+ featureName + "_feature");
 			} catch (MissingResourceException mre) {
 				LqnEditorPlugin.INSTANCE.log(mre);
 			}
@@ -509,8 +537,9 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 			if (encodings == null) {
 				encodings = new ArrayList<String>();
 				for (StringTokenizer stringTokenizer = new StringTokenizer(
-						LqnEditorPlugin.INSTANCE.getString("_UI_XMLEncodingChoices")); stringTokenizer
-								.hasMoreTokens();) {
+						LqnEditorPlugin.INSTANCE
+								.getString("_UI_XMLEncodingChoices")); stringTokenizer
+						.hasMoreTokens();) {
 					encodings.add(stringTokenizer.nextToken());
 				}
 			}
@@ -528,11 +557,16 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 	public void addPages() {
 		// Create a page, set the title, and the initial model file name.
 		//
-		newFileCreationPage = new LqnModelWizardNewFileCreationPage("Whatever", selection);
-		newFileCreationPage.setTitle(LqnEditorPlugin.INSTANCE.getString("_UI_LqnModelWizard_label"));
-		newFileCreationPage.setDescription(LqnEditorPlugin.INSTANCE.getString("_UI_LqnModelWizard_description"));
-		newFileCreationPage.setFileName(
-				LqnEditorPlugin.INSTANCE.getString("_UI_LqnEditorFilenameDefaultBase") + "." + FILE_EXTENSIONS.get(0));
+		newFileCreationPage = new LqnModelWizardNewFileCreationPage("Whatever",
+				selection);
+		newFileCreationPage.setTitle(LqnEditorPlugin.INSTANCE
+				.getString("_UI_LqnModelWizard_label"));
+		newFileCreationPage.setDescription(LqnEditorPlugin.INSTANCE
+				.getString("_UI_LqnModelWizard_description"));
+		newFileCreationPage.setFileName(LqnEditorPlugin.INSTANCE
+				.getString("_UI_LqnEditorFilenameDefaultBase")
+				+ "."
+				+ FILE_EXTENSIONS.get(0));
 		addPage(newFileCreationPage);
 
 		// Try and get the resource selection to determine a current directory for the file dialog.
@@ -551,28 +585,36 @@ public class LqnModelWizard extends Wizard implements INewWizard {
 
 				// This gives us a directory...
 				//
-				if (selectedResource instanceof IFolder || selectedResource instanceof IProject) {
+				if (selectedResource instanceof IFolder
+						|| selectedResource instanceof IProject) {
 					// Set this for the container.
 					//
-					newFileCreationPage.setContainerFullPath(selectedResource.getFullPath());
+					newFileCreationPage.setContainerFullPath(selectedResource
+							.getFullPath());
 
 					// Make up a unique new name here.
 					//
 					String defaultModelBaseFilename = LqnEditorPlugin.INSTANCE
 							.getString("_UI_LqnEditorFilenameDefaultBase");
-					String defaultModelFilenameExtension = FILE_EXTENSIONS.get(0);
-					String modelFilename = defaultModelBaseFilename + "." + defaultModelFilenameExtension;
-					for (int i = 1; ((IContainer) selectedResource).findMember(modelFilename) != null; ++i) {
-						modelFilename = defaultModelBaseFilename + i + "." + defaultModelFilenameExtension;
+					String defaultModelFilenameExtension = FILE_EXTENSIONS
+							.get(0);
+					String modelFilename = defaultModelBaseFilename + "."
+							+ defaultModelFilenameExtension;
+					for (int i = 1; ((IContainer) selectedResource)
+							.findMember(modelFilename) != null; ++i) {
+						modelFilename = defaultModelBaseFilename + i + "."
+								+ defaultModelFilenameExtension;
 					}
 					newFileCreationPage.setFileName(modelFilename);
 				}
 			}
 		}
-		initialObjectCreationPage = new LqnModelWizardInitialObjectCreationPage("Whatever2");
-		initialObjectCreationPage.setTitle(LqnEditorPlugin.INSTANCE.getString("_UI_LqnModelWizard_label"));
-		initialObjectCreationPage
-				.setDescription(LqnEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));
+		initialObjectCreationPage = new LqnModelWizardInitialObjectCreationPage(
+				"Whatever2");
+		initialObjectCreationPage.setTitle(LqnEditorPlugin.INSTANCE
+				.getString("_UI_LqnModelWizard_label"));
+		initialObjectCreationPage.setDescription(LqnEditorPlugin.INSTANCE
+				.getString("_UI_Wizard_initial_object_description"));
 		addPage(initialObjectCreationPage);
 	}
 

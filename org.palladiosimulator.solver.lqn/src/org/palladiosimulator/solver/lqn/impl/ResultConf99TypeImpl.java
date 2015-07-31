@@ -14,15 +14,16 @@ import org.palladiosimulator.solver.lqn.ResultConf99Type;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99TypeImpl#getJoinVariance <em>Join Variance</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ResultConf99TypeImpl#getJoinWaiting <em>Join Waiting</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ResultConf99TypeImpl extends MinimalEObjectImpl.Container implements ResultConf99Type {
+public class ResultConf99TypeImpl extends MinimalEObjectImpl.Container
+		implements ResultConf99Type {
 	/**
 	 * The default value of the '{@link #getJoinVariance() <em>Join Variance</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -118,7 +119,8 @@ public class ResultConf99TypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldJoinVarianceESet = joinVarianceESet;
 		joinVarianceESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF99_TYPE__JOIN_VARIANCE,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_CONF99_TYPE__JOIN_VARIANCE,
 					oldJoinVariance, joinVariance, !oldJoinVarianceESet));
 	}
 
@@ -133,8 +135,10 @@ public class ResultConf99TypeImpl extends MinimalEObjectImpl.Container implement
 		joinVariance = JOIN_VARIANCE_EDEFAULT;
 		joinVarianceESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.RESULT_CONF99_TYPE__JOIN_VARIANCE,
-					oldJoinVariance, JOIN_VARIANCE_EDEFAULT, oldJoinVarianceESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.RESULT_CONF99_TYPE__JOIN_VARIANCE,
+					oldJoinVariance, JOIN_VARIANCE_EDEFAULT,
+					oldJoinVarianceESet));
 	}
 
 	/**
@@ -166,7 +170,8 @@ public class ResultConf99TypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldJoinWaitingESet = joinWaitingESet;
 		joinWaitingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.RESULT_CONF99_TYPE__JOIN_WAITING,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.RESULT_CONF99_TYPE__JOIN_WAITING,
 					oldJoinWaiting, joinWaiting, !oldJoinWaitingESet));
 	}
 
@@ -181,7 +186,8 @@ public class ResultConf99TypeImpl extends MinimalEObjectImpl.Container implement
 		joinWaiting = JOIN_WAITING_EDEFAULT;
 		joinWaitingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.RESULT_CONF99_TYPE__JOIN_WAITING,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.RESULT_CONF99_TYPE__JOIN_WAITING,
 					oldJoinWaiting, JOIN_WAITING_EDEFAULT, oldJoinWaitingESet));
 	}
 

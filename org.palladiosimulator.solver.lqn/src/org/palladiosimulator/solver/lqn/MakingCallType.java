@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.MakingCallType#getResultCall <em>Result Call</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.MakingCallType#getDest <em>Dest</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getMakingCallType()
  * @model extendedMetaData="name='MakingCallType' kind='elementOnly'"

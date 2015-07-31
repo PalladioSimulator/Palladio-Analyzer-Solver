@@ -20,14 +20,15 @@ import org.palladiosimulator.solver.lqn.PhaseActivities;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PhaseActivitiesImpl#getActivity <em>Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class PhaseActivitiesImpl extends MinimalEObjectImpl.Container implements PhaseActivities {
+public class PhaseActivitiesImpl extends MinimalEObjectImpl.Container implements
+		PhaseActivities {
 	/**
 	 * The cached value of the '{@link #getActivity() <em>Activity</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -61,7 +62,8 @@ public class PhaseActivitiesImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public EList<ActivityPhasesType> getActivity() {
 		if (activity == null) {
-			activity = new EObjectContainmentEList<ActivityPhasesType>(ActivityPhasesType.class, this,
+			activity = new EObjectContainmentEList<ActivityPhasesType>(
+					ActivityPhasesType.class, this,
 					LqnPackage.PHASE_ACTIVITIES__ACTIVITY);
 		}
 		return activity;
@@ -72,10 +74,12 @@ public class PhaseActivitiesImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
-			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getActivity()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -103,7 +107,8 @@ public class PhaseActivitiesImpl extends MinimalEObjectImpl.Container implements
 		switch (featureID) {
 		case LqnPackage.PHASE_ACTIVITIES__ACTIVITY:
 			getActivity().clear();
-			getActivity().addAll((Collection<? extends ActivityPhasesType>) newValue);
+			getActivity().addAll(
+					(Collection<? extends ActivityPhasesType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

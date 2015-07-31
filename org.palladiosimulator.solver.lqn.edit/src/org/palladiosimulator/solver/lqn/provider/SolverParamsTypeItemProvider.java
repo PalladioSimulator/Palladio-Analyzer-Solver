@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.SolverParamsType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -67,13 +68,16 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	protected void addCommentPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SolverParamsType_comment_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_comment_feature",
-								"_UI_SolverParamsType_type"),
-						LqnPackage.Literals.SOLVER_PARAMS_TYPE__COMMENT, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_SolverParamsType_comment_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_SolverParamsType_comment_feature",
+						"_UI_SolverParamsType_type"),
+				LqnPackage.Literals.SOLVER_PARAMS_TYPE__COMMENT, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -83,13 +87,16 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	protected void addConvValPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SolverParamsType_convVal_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_convVal_feature",
-								"_UI_SolverParamsType_type"),
-						LqnPackage.Literals.SOLVER_PARAMS_TYPE__CONV_VAL, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_SolverParamsType_convVal_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_SolverParamsType_convVal_feature",
+						"_UI_SolverParamsType_type"),
+				LqnPackage.Literals.SOLVER_PARAMS_TYPE__CONV_VAL, true, false,
+				false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -100,11 +107,16 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 */
 	protected void addItLimitPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SolverParamsType_itLimit_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_itLimit_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_SolverParamsType_itLimit_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_SolverParamsType_itLimit_feature",
 								"_UI_SolverParamsType_type"),
-						LqnPackage.Literals.SOLVER_PARAMS_TYPE__IT_LIMIT, true, false, false,
+						LqnPackage.Literals.SOLVER_PARAMS_TYPE__IT_LIMIT, true,
+						false, false,
 						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
@@ -116,11 +128,16 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 */
 	protected void addPrintIntPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SolverParamsType_printInt_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_printInt_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_SolverParamsType_printInt_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_SolverParamsType_printInt_feature",
 								"_UI_SolverParamsType_type"),
-						LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRINT_INT, true, false, false,
+						LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRINT_INT,
+						true, false, false,
 						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
@@ -131,13 +148,17 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	protected void addUnderrelaxCoeffPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SolverParamsType_underrelaxCoeff_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SolverParamsType_underrelaxCoeff_feature",
-								"_UI_SolverParamsType_type"),
-						LqnPackage.Literals.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_SolverParamsType_underrelaxCoeff_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_SolverParamsType_underrelaxCoeff_feature",
+						"_UI_SolverParamsType_type"),
+				LqnPackage.Literals.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -150,11 +171,14 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.SOLVER_PARAMS_TYPE__RESULT_GENERAL);
-			childrenFeatures.add(LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRAGMA);
+			childrenFeatures
+					.add(LqnPackage.Literals.SOLVER_PARAMS_TYPE__RESULT_GENERAL);
+			childrenFeatures
+					.add(LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRAGMA);
 		}
 		return childrenFeatures;
 	}
@@ -178,7 +202,8 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/SolverParamsType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/SolverParamsType"));
 	}
 
 	/**
@@ -210,11 +235,13 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 		case LqnPackage.SOLVER_PARAMS_TYPE__IT_LIMIT:
 		case LqnPackage.SOLVER_PARAMS_TYPE__PRINT_INT:
 		case LqnPackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
 		case LqnPackage.SOLVER_PARAMS_TYPE__PRAGMA:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -227,13 +254,16 @@ public class SolverParamsTypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
 				LqnFactory.eINSTANCE.createResultGeneralType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRAGMA,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.SOLVER_PARAMS_TYPE__PRAGMA,
 				LqnFactory.eINSTANCE.createPragmaType()));
 	}
 

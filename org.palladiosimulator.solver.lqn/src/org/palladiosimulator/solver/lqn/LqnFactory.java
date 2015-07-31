@@ -16,7 +16,8 @@ public interface LqnFactory extends EFactory {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	LqnFactory eINSTANCE = org.palladiosimulator.solver.lqn.impl.LqnFactoryImpl.init();
+	LqnFactory eINSTANCE = org.palladiosimulator.solver.lqn.impl.LqnFactoryImpl
+			.init();
 
 	/**
 	 * Returns a new object of class '<em>Activity Def Base</em>'.

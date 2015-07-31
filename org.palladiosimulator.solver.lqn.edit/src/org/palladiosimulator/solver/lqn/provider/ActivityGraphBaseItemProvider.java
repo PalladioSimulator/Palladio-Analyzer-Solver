@@ -27,8 +27,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * end-user-doc -->
  * @generated
  */
-public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ActivityGraphBaseItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -64,11 +65,14 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY);
-			childrenFeatures.add(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE);
+			childrenFeatures
+					.add(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE);
 		}
 		return childrenFeatures;
 	}
@@ -92,7 +96,8 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ActivityGraphBase"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ActivityGraphBase"));
 	}
 
 	/**
@@ -119,7 +124,8 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
 		switch (notification.getFeatureID(ActivityGraphBase.class)) {
 		case LqnPackage.ACTIVITY_GRAPH_BASE__ACTIVITY:
 		case LqnPackage.ACTIVITY_GRAPH_BASE__PRECEDENCE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -132,13 +138,16 @@ public class ActivityGraphBaseItemProvider extends ItemProviderAdapter implement
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ACTIVITY_GRAPH_BASE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityDefType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ACTIVITY_GRAPH_BASE__PRECEDENCE,
 				LqnFactory.eINSTANCE.createPrecedenceType()));
 	}
 

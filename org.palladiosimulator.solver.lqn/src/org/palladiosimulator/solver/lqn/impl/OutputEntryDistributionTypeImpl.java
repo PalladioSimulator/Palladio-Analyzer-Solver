@@ -15,14 +15,15 @@ import org.palladiosimulator.solver.lqn.OutputEntryDistributionType;
  * <em><b>Output Entry Distribution Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutputEntryDistributionTypeImpl#getPhase <em>Phase</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl implements OutputEntryDistributionType {
+public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl
+		implements OutputEntryDistributionType {
 	/**
 	 * The default value of the '{@link #getPhase() <em>Phase</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -78,8 +79,9 @@ public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl 
 		BigInteger oldPhase = phase;
 		phase = newPhase;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE,
-					oldPhase, phase));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE, oldPhase,
+					phase));
 	}
 
 	/**
@@ -131,7 +133,8 @@ public class OutputEntryDistributionTypeImpl extends OutputDistributionTypeImpl 
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE:
-			return PHASE_EDEFAULT == null ? phase != null : !PHASE_EDEFAULT.equals(phase);
+			return PHASE_EDEFAULT == null ? phase != null : !PHASE_EDEFAULT
+					.equals(phase);
 		}
 		return super.eIsSet(featureID);
 	}

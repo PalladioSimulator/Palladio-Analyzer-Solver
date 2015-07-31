@@ -16,16 +16,17 @@ import org.palladiosimulator.solver.lqn.OutPortType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getConnectTo <em>Connect To</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.OutPortTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class OutPortTypeImpl extends MinimalEObjectImpl.Container implements OutPortType {
+public class OutPortTypeImpl extends MinimalEObjectImpl.Container implements
+		OutPortType {
 	/**
 	 * The default value of the '{@link #getConnectTo() <em>Connect To</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -121,7 +122,8 @@ public class OutPortTypeImpl extends MinimalEObjectImpl.Container implements Out
 		List<String> oldConnectTo = connectTo;
 		connectTo = newConnectTo;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUT_PORT_TYPE__CONNECT_TO, oldConnectTo,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUT_PORT_TYPE__CONNECT_TO, oldConnectTo,
 					connectTo));
 	}
 
@@ -143,7 +145,8 @@ public class OutPortTypeImpl extends MinimalEObjectImpl.Container implements Out
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUT_PORT_TYPE__DESCRIPTION, oldDescription,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUT_PORT_TYPE__DESCRIPTION, oldDescription,
 					description));
 	}
 
@@ -165,7 +168,8 @@ public class OutPortTypeImpl extends MinimalEObjectImpl.Container implements Out
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.OUT_PORT_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.OUT_PORT_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -234,11 +238,14 @@ public class OutPortTypeImpl extends MinimalEObjectImpl.Container implements Out
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.OUT_PORT_TYPE__CONNECT_TO:
-			return CONNECT_TO_EDEFAULT == null ? connectTo != null : !CONNECT_TO_EDEFAULT.equals(connectTo);
+			return CONNECT_TO_EDEFAULT == null ? connectTo != null
+					: !CONNECT_TO_EDEFAULT.equals(connectTo);
 		case LqnPackage.OUT_PORT_TYPE__DESCRIPTION:
-			return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			return DESCRIPTION_EDEFAULT == null ? description != null
+					: !DESCRIPTION_EDEFAULT.equals(description);
 		case LqnPackage.OUT_PORT_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}

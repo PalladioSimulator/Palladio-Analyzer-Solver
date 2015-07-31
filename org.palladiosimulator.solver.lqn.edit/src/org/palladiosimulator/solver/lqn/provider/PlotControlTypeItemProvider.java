@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.PlotControlType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class PlotControlTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class PlotControlTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,10 +64,12 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT);
+			childrenFeatures
+					.add(LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT);
 			childrenFeatures.add(LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT);
 		}
 		return childrenFeatures;
@@ -91,7 +94,8 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/PlotControlType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/PlotControlType"));
 	}
 
 	/**
@@ -118,7 +122,8 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
 		switch (notification.getFeatureID(PlotControlType.class)) {
 		case LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT:
 		case LqnPackage.PLOT_CONTROL_TYPE__PLOT:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -131,13 +136,16 @@ public class PlotControlTypeItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PLOT_CONTROL_TYPE__FIRST_PLOT,
 				LqnFactory.eINSTANCE.createFirstPlotType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PLOT_CONTROL_TYPE__PLOT,
 				LqnFactory.eINSTANCE.createPlotType()));
 	}
 

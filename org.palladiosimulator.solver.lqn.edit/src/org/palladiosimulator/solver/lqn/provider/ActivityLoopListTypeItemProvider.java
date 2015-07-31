@@ -29,8 +29,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -64,13 +65,16 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
 	 * @generated
 	 */
 	protected void addEndPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityLoopListType_end_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityLoopListType_end_feature",
-								"_UI_ActivityLoopListType_type"),
-						LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__END, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityLoopListType_end_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityLoopListType_end_feature",
+						"_UI_ActivityLoopListType_type"),
+				LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__END, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -83,10 +87,12 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY);
 		}
 		return childrenFeatures;
 	}
@@ -110,7 +116,9 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ActivityLoopListType"));
+		return overlayImage(object,
+				getResourceLocator()
+						.getImage("full/obj16/ActivityLoopListType"));
 	}
 
 	/**
@@ -138,10 +146,12 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
 
 		switch (notification.getFeatureID(ActivityLoopListType.class)) {
 		case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__END:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -154,10 +164,12 @@ public class ActivityLoopListTypeItemProvider extends ItemProviderAdapter implem
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.ACTIVITY_LOOP_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityLoopType()));
 	}
 

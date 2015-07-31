@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.ResultConf95Type;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -62,13 +63,17 @@ public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	protected void addJoinVariancePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf95Type_joinVariance_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf95Type_joinVariance_feature",
-								"_UI_ResultConf95Type_type"),
-						LqnPackage.Literals.RESULT_CONF95_TYPE__JOIN_VARIANCE, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf95Type_joinVariance_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf95Type_joinVariance_feature",
+						"_UI_ResultConf95Type_type"),
+				LqnPackage.Literals.RESULT_CONF95_TYPE__JOIN_VARIANCE, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -78,13 +83,17 @@ public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	protected void addJoinWaitingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ResultConf95Type_joinWaiting_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ResultConf95Type_joinWaiting_feature",
-								"_UI_ResultConf95Type_type"),
-						LqnPackage.Literals.RESULT_CONF95_TYPE__JOIN_WAITING, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ResultConf95Type_joinWaiting_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ResultConf95Type_joinWaiting_feature",
+						"_UI_ResultConf95Type_type"),
+				LqnPackage.Literals.RESULT_CONF95_TYPE__JOIN_WAITING, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -94,7 +103,8 @@ public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ResultConf95Type"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ResultConf95Type"));
 	}
 
 	/**
@@ -106,7 +116,8 @@ public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements
 	@Override
 	public String getText(Object object) {
 		ResultConf95Type resultConf95Type = (ResultConf95Type) object;
-		return getString("_UI_ResultConf95Type_type") + " " + resultConf95Type.getJoinVariance();
+		return getString("_UI_ResultConf95Type_type") + " "
+				+ resultConf95Type.getJoinVariance();
 	}
 
 	/**
@@ -122,7 +133,8 @@ public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements
 		switch (notification.getFeatureID(ResultConf95Type.class)) {
 		case LqnPackage.RESULT_CONF95_TYPE__JOIN_VARIANCE:
 		case LqnPackage.RESULT_CONF95_TYPE__JOIN_WAITING:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -135,7 +147,8 @@ public class ResultConf95TypeItemProvider extends ItemProviderAdapter implements
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

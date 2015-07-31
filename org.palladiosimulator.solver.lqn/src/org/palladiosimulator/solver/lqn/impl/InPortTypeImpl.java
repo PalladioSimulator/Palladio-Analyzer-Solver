@@ -16,16 +16,17 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getConnectFrom <em>Connect From</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class InPortTypeImpl extends MinimalEObjectImpl.Container implements InPortType {
+public class InPortTypeImpl extends MinimalEObjectImpl.Container implements
+		InPortType {
 	/**
 	 * The default value of the '{@link #getConnectFrom() <em>Connect From</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -121,7 +122,8 @@ public class InPortTypeImpl extends MinimalEObjectImpl.Container implements InPo
 		List<String> oldConnectFrom = connectFrom;
 		connectFrom = newConnectFrom;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.IN_PORT_TYPE__CONNECT_FROM, oldConnectFrom,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.IN_PORT_TYPE__CONNECT_FROM, oldConnectFrom,
 					connectFrom));
 	}
 
@@ -143,7 +145,8 @@ public class InPortTypeImpl extends MinimalEObjectImpl.Container implements InPo
 		String oldDescription = description;
 		description = newDescription;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.IN_PORT_TYPE__DESCRIPTION, oldDescription,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.IN_PORT_TYPE__DESCRIPTION, oldDescription,
 					description));
 	}
 
@@ -165,7 +168,8 @@ public class InPortTypeImpl extends MinimalEObjectImpl.Container implements InPo
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.IN_PORT_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.IN_PORT_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -234,11 +238,14 @@ public class InPortTypeImpl extends MinimalEObjectImpl.Container implements InPo
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.IN_PORT_TYPE__CONNECT_FROM:
-			return CONNECT_FROM_EDEFAULT == null ? connectFrom != null : !CONNECT_FROM_EDEFAULT.equals(connectFrom);
+			return CONNECT_FROM_EDEFAULT == null ? connectFrom != null
+					: !CONNECT_FROM_EDEFAULT.equals(connectFrom);
 		case LqnPackage.IN_PORT_TYPE__DESCRIPTION:
-			return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			return DESCRIPTION_EDEFAULT == null ? description != null
+					: !DESCRIPTION_EDEFAULT.equals(description);
 		case LqnPackage.IN_PORT_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}

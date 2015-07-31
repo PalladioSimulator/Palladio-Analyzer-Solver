@@ -72,7 +72,8 @@ public enum TaskOptionType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final TaskOptionType[] VALUES_ARRAY = new TaskOptionType[] { YES, NO, };
+	private static final TaskOptionType[] VALUES_ARRAY = new TaskOptionType[] {
+			YES, NO, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Task Option Type</b></em>' enumerators. <!--
@@ -80,7 +81,8 @@ public enum TaskOptionType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<TaskOptionType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<TaskOptionType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Task Option Type</b></em>' literal with the specified literal value. <!--

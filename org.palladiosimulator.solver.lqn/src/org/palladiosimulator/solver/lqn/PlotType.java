@@ -10,10 +10,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.PlotType#getVariable <em>Variable</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPlotType()
  * @model extendedMetaData="name='plot_._type' kind='empty'"

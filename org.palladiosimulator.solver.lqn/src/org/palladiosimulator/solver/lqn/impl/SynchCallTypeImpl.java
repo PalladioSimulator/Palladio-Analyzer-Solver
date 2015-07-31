@@ -14,14 +14,15 @@ import org.palladiosimulator.solver.lqn.SynchCallType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SynchCallTypeImpl#getDest <em>Dest</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class SynchCallTypeImpl extends MinimalEObjectImpl.Container implements SynchCallType {
+public class SynchCallTypeImpl extends MinimalEObjectImpl.Container implements
+		SynchCallType {
 	/**
 	 * The default value of the '{@link #getDest() <em>Dest</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -77,7 +78,8 @@ public class SynchCallTypeImpl extends MinimalEObjectImpl.Container implements S
 		String oldDest = dest;
 		dest = newDest;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SYNCH_CALL_TYPE__DEST, oldDest, dest));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SYNCH_CALL_TYPE__DEST, oldDest, dest));
 	}
 
 	/**
@@ -129,7 +131,8 @@ public class SynchCallTypeImpl extends MinimalEObjectImpl.Container implements S
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.SYNCH_CALL_TYPE__DEST:
-			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT.equals(dest);
+			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT
+					.equals(dest);
 		}
 		return super.eIsSet(featureID);
 	}

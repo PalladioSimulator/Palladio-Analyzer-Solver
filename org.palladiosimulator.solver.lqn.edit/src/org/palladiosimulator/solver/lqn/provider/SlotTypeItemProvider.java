@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.SlotType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class SlotTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -66,11 +67,16 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 */
 	protected void addBindTargetPropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SlotType_bindTarget_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SlotType_bindTarget_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_SlotType_bindTarget_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_SlotType_bindTarget_feature",
 								"_UI_SlotType_type"),
-						LqnPackage.Literals.SLOT_TYPE__BIND_TARGET, true, false, false,
+						LqnPackage.Literals.SLOT_TYPE__BIND_TARGET, true,
+						false, false,
 						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
@@ -81,12 +87,15 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	protected void addIdPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SlotType_id_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SlotType_id_feature", "_UI_SlotType_type"),
-						LqnPackage.Literals.SLOT_TYPE__ID, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_SlotType_id_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_SlotType_id_feature", "_UI_SlotType_type"),
+				LqnPackage.Literals.SLOT_TYPE__ID, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -96,13 +105,15 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	protected void addReplicNumPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_SlotType_replicNum_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_SlotType_replicNum_feature",
-								"_UI_SlotType_type"),
-						LqnPackage.Literals.SLOT_TYPE__REPLIC_NUM, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_SlotType_replicNum_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_SlotType_replicNum_feature", "_UI_SlotType_type"),
+				LqnPackage.Literals.SLOT_TYPE__REPLIC_NUM, true, false, false,
+				ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -115,7 +126,8 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(LqnPackage.Literals.SLOT_TYPE__INTERFACE);
@@ -143,7 +155,8 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/SlotType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/SlotType"));
 	}
 
 	/**
@@ -173,11 +186,13 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 		case LqnPackage.SLOT_TYPE__BIND_TARGET:
 		case LqnPackage.SLOT_TYPE__ID:
 		case LqnPackage.SLOT_TYPE__REPLIC_NUM:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.SLOT_TYPE__INTERFACE:
 		case LqnPackage.SLOT_TYPE__BINDING:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -190,14 +205,17 @@ public class SlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.SLOT_TYPE__INTERFACE,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.SLOT_TYPE__INTERFACE,
 				LqnFactory.eINSTANCE.createInterfaceType()));
 
-		newChildDescriptors.add(
-				createChildParameter(LqnPackage.Literals.SLOT_TYPE__BINDING, LqnFactory.eINSTANCE.createBindType()));
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.SLOT_TYPE__BINDING,
+				LqnFactory.eINSTANCE.createBindType()));
 	}
 
 	/**

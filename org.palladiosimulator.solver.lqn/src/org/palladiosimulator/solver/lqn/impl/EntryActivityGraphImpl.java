@@ -19,14 +19,15 @@ import org.palladiosimulator.solver.lqn.ReplyActivityType;
  * <em><b>Entry Activity Graph</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.EntryActivityGraphImpl#getReplyActivity <em>Reply Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements EntryActivityGraph {
+public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements
+		EntryActivityGraph {
 	/**
 	 * The cached value of the '{@link #getReplyActivity() <em>Reply Activity</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -60,7 +61,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
 	@Override
 	public EList<ReplyActivityType> getReplyActivity() {
 		if (replyActivity == null) {
-			replyActivity = new EObjectContainmentEList<ReplyActivityType>(ReplyActivityType.class, this,
+			replyActivity = new EObjectContainmentEList<ReplyActivityType>(
+					ReplyActivityType.class, this,
 					LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY);
 		}
 		return replyActivity;
@@ -71,10 +73,12 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
-			return ((InternalEList<?>) getReplyActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getReplyActivity()).basicRemove(
+					otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -102,7 +106,8 @@ public class EntryActivityGraphImpl extends ActivityGraphBaseImpl implements Ent
 		switch (featureID) {
 		case LqnPackage.ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY:
 			getReplyActivity().clear();
-			getReplyActivity().addAll((Collection<? extends ReplyActivityType>) newValue);
+			getReplyActivity().addAll(
+					(Collection<? extends ReplyActivityType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

@@ -94,7 +94,8 @@ public enum TypeType implements Enumerator {
 	 * end-user-doc -->
 	 * @generated
 	 */
-	private static final TypeType[] VALUES_ARRAY = new TypeType[] { PH1PH2, GRAPH, NONE, };
+	private static final TypeType[] VALUES_ARRAY = new TypeType[] { PH1PH2,
+			GRAPH, NONE, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Type Type</b></em>' enumerators. <!--
@@ -102,7 +103,8 @@ public enum TypeType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<TypeType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<TypeType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Type Type</b></em>' literal with the specified literal value. <!--
@@ -124,8 +126,6 @@ public enum TypeType implements Enumerator {
 	 * Returns the '<em><b>Type Type</b></em>' literal with the specified name.
 	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * @param name the name.
-	 * @return the matching enumerator or <code>null</code>.
 	 * @generated
 	 */
 	public static TypeType getByName(String name) {

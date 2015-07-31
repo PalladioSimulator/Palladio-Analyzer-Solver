@@ -10,10 +10,10 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryActivityGraph#getReplyActivity <em>Reply Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryActivityGraph()
  * @model extendedMetaData="name='EntryActivityGraph' kind='elementOnly'"

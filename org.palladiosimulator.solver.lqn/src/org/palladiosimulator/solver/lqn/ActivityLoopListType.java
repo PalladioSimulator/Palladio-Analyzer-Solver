@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.ActivityLoopListType#getActivity <em>Activity</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ActivityLoopListType#getEnd <em>End</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getActivityLoopListType()
  * @model extendedMetaData="name='ActivityLoopListType' kind='elementOnly'"

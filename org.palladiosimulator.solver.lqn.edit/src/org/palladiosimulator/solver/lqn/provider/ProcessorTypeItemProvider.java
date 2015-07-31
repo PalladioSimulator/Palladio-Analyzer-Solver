@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.ProcessorType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ProcessorTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -68,13 +69,16 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addMultiplicityPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorType_multiplicity_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_multiplicity_feature",
-								"_UI_ProcessorType_type"),
-						LqnPackage.Literals.PROCESSOR_TYPE__MULTIPLICITY, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorType_multiplicity_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorType_multiplicity_feature",
+						"_UI_ProcessorType_type"),
+				LqnPackage.Literals.PROCESSOR_TYPE__MULTIPLICITY, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -84,13 +88,16 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_name_feature",
-								"_UI_ProcessorType_type"),
-						LqnPackage.Literals.PROCESSOR_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorType_name_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorType_name_feature",
+						"_UI_ProcessorType_type"),
+				LqnPackage.Literals.PROCESSOR_TYPE__NAME, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -100,13 +107,16 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addQuantumPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorType_quantum_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_quantum_feature",
-								"_UI_ProcessorType_type"),
-						LqnPackage.Literals.PROCESSOR_TYPE__QUANTUM, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorType_quantum_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorType_quantum_feature",
+						"_UI_ProcessorType_type"),
+				LqnPackage.Literals.PROCESSOR_TYPE__QUANTUM, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -116,13 +126,16 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addReplicationPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorType_replication_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_replication_feature",
-								"_UI_ProcessorType_type"),
-						LqnPackage.Literals.PROCESSOR_TYPE__REPLICATION, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorType_replication_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorType_replication_feature",
+						"_UI_ProcessorType_type"),
+				LqnPackage.Literals.PROCESSOR_TYPE__REPLICATION, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -132,13 +145,16 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addSchedulingPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorType_scheduling_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_scheduling_feature",
-								"_UI_ProcessorType_type"),
-						LqnPackage.Literals.PROCESSOR_TYPE__SCHEDULING, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorType_scheduling_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorType_scheduling_feature",
+						"_UI_ProcessorType_type"),
+				LqnPackage.Literals.PROCESSOR_TYPE__SCHEDULING, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -148,13 +164,16 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	protected void addSpeedFactorPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorType_speedFactor_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorType_speedFactor_feature",
-								"_UI_ProcessorType_type"),
-						LqnPackage.Literals.PROCESSOR_TYPE__SPEED_FACTOR, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorType_speedFactor_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorType_speedFactor_feature",
+						"_UI_ProcessorType_type"),
+				LqnPackage.Literals.PROCESSOR_TYPE__SPEED_FACTOR, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -167,10 +186,12 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR);
+			childrenFeatures
+					.add(LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR);
 			childrenFeatures.add(LqnPackage.Literals.PROCESSOR_TYPE__GROUP);
 			childrenFeatures.add(LqnPackage.Literals.PROCESSOR_TYPE__TASK);
 		}
@@ -196,7 +217,8 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ProcessorType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ProcessorType"));
 	}
 
 	/**
@@ -229,12 +251,14 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 		case LqnPackage.PROCESSOR_TYPE__REPLICATION:
 		case LqnPackage.PROCESSOR_TYPE__SCHEDULING:
 		case LqnPackage.PROCESSOR_TYPE__SPEED_FACTOR:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
 		case LqnPackage.PROCESSOR_TYPE__GROUP:
 		case LqnPackage.PROCESSOR_TYPE__TASK:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -247,17 +271,21 @@ public class ProcessorTypeItemProvider extends ItemProviderAdapter implements IE
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PROCESSOR_TYPE__RESULT_PROCESSOR,
 				LqnFactory.eINSTANCE.createOutputResultType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.PROCESSOR_TYPE__GROUP,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PROCESSOR_TYPE__GROUP,
 				LqnFactory.eINSTANCE.createGroupType()));
 
-		newChildDescriptors.add(
-				createChildParameter(LqnPackage.Literals.PROCESSOR_TYPE__TASK, LqnFactory.eINSTANCE.createTaskType()));
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.PROCESSOR_TYPE__TASK,
+				LqnFactory.eINSTANCE.createTaskType()));
 	}
 
 	/**

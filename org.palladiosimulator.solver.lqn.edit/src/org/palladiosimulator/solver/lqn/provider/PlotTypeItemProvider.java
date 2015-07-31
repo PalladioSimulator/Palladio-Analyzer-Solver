@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.PlotType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class PlotTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class PlotTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -61,13 +62,15 @@ public class PlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	protected void addVariablePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_PlotType_variable_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_PlotType_variable_feature",
-								"_UI_PlotType_type"),
-						LqnPackage.Literals.PLOT_TYPE__VARIABLE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_PlotType_variable_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_PlotType_variable_feature", "_UI_PlotType_type"),
+				LqnPackage.Literals.PLOT_TYPE__VARIABLE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -77,7 +80,8 @@ public class PlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/PlotType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/PlotType"));
 	}
 
 	/**
@@ -105,7 +109,8 @@ public class PlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 
 		switch (notification.getFeatureID(PlotType.class)) {
 		case LqnPackage.PLOT_TYPE__VARIABLE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -118,7 +123,8 @@ public class PlotTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

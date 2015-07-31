@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.ParaType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ParaTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -65,11 +66,16 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 */
 	protected void addStartValuePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ParaType_startValue_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ParaType_startValue_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_ParaType_startValue_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_ParaType_startValue_feature",
 								"_UI_ParaType_type"),
-						LqnPackage.Literals.PARA_TYPE__START_VALUE, true, false, false,
+						LqnPackage.Literals.PARA_TYPE__START_VALUE, true,
+						false, false,
 						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
@@ -80,13 +86,15 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	protected void addEndValuePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ParaType_endValue_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ParaType_endValue_feature",
-								"_UI_ParaType_type"),
-						LqnPackage.Literals.PARA_TYPE__END_VALUE, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ParaType_endValue_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ParaType_endValue_feature", "_UI_ParaType_type"),
+				LqnPackage.Literals.PARA_TYPE__END_VALUE, true, false, false,
+				ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -96,13 +104,15 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	protected void addStepValuePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ParaType_stepValue_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ParaType_stepValue_feature",
-								"_UI_ParaType_type"),
-						LqnPackage.Literals.PARA_TYPE__STEP_VALUE, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ParaType_stepValue_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ParaType_stepValue_feature", "_UI_ParaType_type"),
+				LqnPackage.Literals.PARA_TYPE__STEP_VALUE, true, false, false,
+				ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -112,13 +122,15 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	protected void addValuePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ParaType_value_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ParaType_value_feature",
-								"_UI_ParaType_type"),
-						LqnPackage.Literals.PARA_TYPE__VALUE, true, false, false,
-						ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ParaType_value_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ParaType_value_feature", "_UI_ParaType_type"),
+				LqnPackage.Literals.PARA_TYPE__VALUE, true, false, false,
+				ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -128,7 +140,8 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ParaType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ParaType"));
 	}
 
 	/**
@@ -158,7 +171,8 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
 		case LqnPackage.PARA_TYPE__END_VALUE:
 		case LqnPackage.PARA_TYPE__STEP_VALUE:
 		case LqnPackage.PARA_TYPE__VALUE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -171,7 +185,8 @@ public class ParaTypeItemProvider extends ItemProviderAdapter implements IEditin
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

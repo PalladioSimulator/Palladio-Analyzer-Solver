@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class FanOutTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class FanOutTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -62,13 +63,15 @@ public class FanOutTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	protected void addDestPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_FanOutType_dest_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_FanOutType_dest_feature",
-								"_UI_FanOutType_type"),
-						LqnPackage.Literals.FAN_OUT_TYPE__DEST, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_FanOutType_dest_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_FanOutType_dest_feature", "_UI_FanOutType_type"),
+				LqnPackage.Literals.FAN_OUT_TYPE__DEST, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -78,13 +81,15 @@ public class FanOutTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	protected void addValuePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_FanOutType_value_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_FanOutType_value_feature",
-								"_UI_FanOutType_type"),
-						LqnPackage.Literals.FAN_OUT_TYPE__VALUE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_FanOutType_value_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_FanOutType_value_feature", "_UI_FanOutType_type"),
+				LqnPackage.Literals.FAN_OUT_TYPE__VALUE, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -94,7 +99,8 @@ public class FanOutTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/FanOutType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/FanOutType"));
 	}
 
 	/**
@@ -123,7 +129,8 @@ public class FanOutTypeItemProvider extends ItemProviderAdapter implements IEdit
 		switch (notification.getFeatureID(FanOutType.class)) {
 		case LqnPackage.FAN_OUT_TYPE__DEST:
 		case LqnPackage.FAN_OUT_TYPE__VALUE:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -136,7 +143,8 @@ public class FanOutTypeItemProvider extends ItemProviderAdapter implements IEdit
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

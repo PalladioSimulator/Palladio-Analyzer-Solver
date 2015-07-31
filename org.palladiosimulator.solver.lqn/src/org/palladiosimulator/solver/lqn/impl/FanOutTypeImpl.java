@@ -16,15 +16,16 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.FanOutTypeImpl#getDest <em>Dest</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.FanOutTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class FanOutTypeImpl extends MinimalEObjectImpl.Container implements FanOutType {
+public class FanOutTypeImpl extends MinimalEObjectImpl.Container implements
+		FanOutType {
 	/**
 	 * The default value of the '{@link #getDest() <em>Dest</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -100,7 +101,8 @@ public class FanOutTypeImpl extends MinimalEObjectImpl.Container implements FanO
 		String oldDest = dest;
 		dest = newDest;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.FAN_OUT_TYPE__DEST, oldDest, dest));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.FAN_OUT_TYPE__DEST, oldDest, dest));
 	}
 
 	/**
@@ -121,7 +123,8 @@ public class FanOutTypeImpl extends MinimalEObjectImpl.Container implements FanO
 		BigInteger oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.FAN_OUT_TYPE__VALUE, oldValue, value));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.FAN_OUT_TYPE__VALUE, oldValue, value));
 	}
 
 	/**
@@ -181,9 +184,11 @@ public class FanOutTypeImpl extends MinimalEObjectImpl.Container implements FanO
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.FAN_OUT_TYPE__DEST:
-			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT.equals(dest);
+			return DEST_EDEFAULT == null ? dest != null : !DEST_EDEFAULT
+					.equals(dest);
 		case LqnPackage.FAN_OUT_TYPE__VALUE:
-			return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT
+					.equals(value);
 		}
 		return super.eIsSet(featureID);
 	}

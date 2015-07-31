@@ -23,7 +23,6 @@ import org.palladiosimulator.solver.lqn.SolverParamsType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getResultGeneral <em>Result General</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getPragma <em>Pragma</em>}</li>
@@ -33,10 +32,12 @@ import org.palladiosimulator.solver.lqn.SolverParamsType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getPrintInt <em>Print Int</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.SolverParamsTypeImpl#getUnderrelaxCoeff <em>Underrelax Coeff</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implements SolverParamsType {
+public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container
+		implements SolverParamsType {
 	/**
 	 * The cached value of the '{@link #getResultGeneral() <em>Result General</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -228,12 +229,15 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetResultGeneral(ResultGeneralType newResultGeneral, NotificationChain msgs) {
+	public NotificationChain basicSetResultGeneral(
+			ResultGeneralType newResultGeneral, NotificationChain msgs) {
 		ResultGeneralType oldResultGeneral = resultGeneral;
 		resultGeneral = newResultGeneral;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, oldResultGeneral, newResultGeneral);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET,
+					LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
+					oldResultGeneral, newResultGeneral);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -251,16 +255,25 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		if (newResultGeneral != resultGeneral) {
 			NotificationChain msgs = null;
 			if (resultGeneral != null)
-				msgs = ((InternalEObject) resultGeneral).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
+				msgs = ((InternalEObject) resultGeneral)
+						.eInverseRemove(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
+								null, msgs);
 			if (newResultGeneral != null)
-				msgs = ((InternalEObject) newResultGeneral).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL, null, msgs);
+				msgs = ((InternalEObject) newResultGeneral)
+						.eInverseAdd(
+								this,
+								EOPPOSITE_FEATURE_BASE
+										- LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
+								null, msgs);
 			msgs = basicSetResultGeneral(newResultGeneral, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL,
 					newResultGeneral, newResultGeneral));
 	}
 
@@ -271,8 +284,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 	@Override
 	public EList<PragmaType> getPragma() {
 		if (pragma == null) {
-			pragma = new EObjectContainmentEList<PragmaType>(PragmaType.class, this,
-					LqnPackage.SOLVER_PARAMS_TYPE__PRAGMA);
+			pragma = new EObjectContainmentEList<PragmaType>(PragmaType.class,
+					this, LqnPackage.SOLVER_PARAMS_TYPE__PRAGMA);
 		}
 		return pragma;
 	}
@@ -297,7 +310,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldCommentESet = commentESet;
 		commentESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment,
 					comment, !oldCommentESet));
 	}
 
@@ -312,7 +326,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		comment = COMMENT_EDEFAULT;
 		commentESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.SOLVER_PARAMS_TYPE__COMMENT, oldComment,
 					COMMENT_EDEFAULT, oldCommentESet));
 	}
 
@@ -345,7 +360,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldConvValESet = convValESet;
 		convValESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal,
 					convVal, !oldConvValESet));
 	}
 
@@ -360,7 +376,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		convVal = CONV_VAL_EDEFAULT;
 		convValESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.SOLVER_PARAMS_TYPE__CONV_VAL, oldConvVal,
 					CONV_VAL_EDEFAULT, oldConvValESet));
 	}
 
@@ -393,7 +410,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldItLimitESet = itLimitESet;
 		itLimitESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit,
 					itLimit, !oldItLimitESet));
 	}
 
@@ -408,7 +426,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		itLimit = IT_LIMIT_EDEFAULT;
 		itLimitESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.SOLVER_PARAMS_TYPE__IT_LIMIT, oldItLimit,
 					IT_LIMIT_EDEFAULT, oldItLimitESet));
 	}
 
@@ -441,7 +460,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldPrintIntESet = printIntESet;
 		printIntESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__PRINT_INT, oldPrintInt,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SOLVER_PARAMS_TYPE__PRINT_INT, oldPrintInt,
 					printInt, !oldPrintIntESet));
 	}
 
@@ -456,8 +476,9 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		printInt = PRINT_INT_EDEFAULT;
 		printIntESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SOLVER_PARAMS_TYPE__PRINT_INT,
-					oldPrintInt, PRINT_INT_EDEFAULT, oldPrintIntESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.SOLVER_PARAMS_TYPE__PRINT_INT, oldPrintInt,
+					PRINT_INT_EDEFAULT, oldPrintIntESet));
 	}
 
 	/**
@@ -489,8 +510,10 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		boolean oldUnderrelaxCoeffESet = underrelaxCoeffESet;
 		underrelaxCoeffESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF,
-					oldUnderrelaxCoeff, underrelaxCoeff, !oldUnderrelaxCoeffESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF,
+					oldUnderrelaxCoeff, underrelaxCoeff,
+					!oldUnderrelaxCoeffESet));
 	}
 
 	/**
@@ -504,8 +527,10 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 		underrelaxCoeff = UNDERRELAX_COEFF_EDEFAULT;
 		underrelaxCoeffESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF,
-					oldUnderrelaxCoeff, UNDERRELAX_COEFF_EDEFAULT, oldUnderrelaxCoeffESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF,
+					oldUnderrelaxCoeff, UNDERRELAX_COEFF_EDEFAULT,
+					oldUnderrelaxCoeffESet));
 	}
 
 	/**
@@ -522,7 +547,8 @@ public class SolverParamsTypeImpl extends MinimalEObjectImpl.Container implement
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.SOLVER_PARAMS_TYPE__RESULT_GENERAL:
 			return basicSetResultGeneral(null, msgs);

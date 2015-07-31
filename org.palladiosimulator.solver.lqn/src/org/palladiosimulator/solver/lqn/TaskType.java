@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.TaskType#getResultTask <em>Result Task</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.TaskType#getServiceTimeDistribution <em>Service Time Distribution</em>}</li>
@@ -32,6 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.TaskType#getScheduling <em>Scheduling</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.TaskType#getThinkTime <em>Think Time</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getTaskType()
  * @model extendedMetaData="name='TaskType' kind='elementOnly'"

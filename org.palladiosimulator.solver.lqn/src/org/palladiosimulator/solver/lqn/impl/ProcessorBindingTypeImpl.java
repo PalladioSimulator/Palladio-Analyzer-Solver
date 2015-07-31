@@ -14,15 +14,16 @@ import org.palladiosimulator.solver.lqn.ProcessorBindingType;
  * <em><b>Processor Binding Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getSource <em>Source</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl#getTarget <em>Target</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ProcessorBindingTypeImpl extends MinimalEObjectImpl.Container implements ProcessorBindingType {
+public class ProcessorBindingTypeImpl extends MinimalEObjectImpl.Container
+		implements ProcessorBindingType {
 	/**
 	 * The default value of the '{@link #getSource() <em>Source</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -98,7 +99,8 @@ public class ProcessorBindingTypeImpl extends MinimalEObjectImpl.Container imple
 		String oldSource = source;
 		source = newSource;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE, oldSource,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE, oldSource,
 					source));
 	}
 
@@ -120,7 +122,8 @@ public class ProcessorBindingTypeImpl extends MinimalEObjectImpl.Container imple
 		String oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_BINDING_TYPE__TARGET, oldTarget,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_BINDING_TYPE__TARGET, oldTarget,
 					target));
 	}
 
@@ -181,9 +184,11 @@ public class ProcessorBindingTypeImpl extends MinimalEObjectImpl.Container imple
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
-			return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
+			return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT
+					.equals(source);
 		case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
-			return TARGET_EDEFAULT == null ? target != null : !TARGET_EDEFAULT.equals(target);
+			return TARGET_EDEFAULT == null ? target != null : !TARGET_EDEFAULT
+					.equals(target);
 		}
 		return super.eIsSet(featureID);
 	}

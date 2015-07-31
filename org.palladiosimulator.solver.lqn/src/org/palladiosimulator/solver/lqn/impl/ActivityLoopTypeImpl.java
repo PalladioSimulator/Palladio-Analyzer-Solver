@@ -13,14 +13,15 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopTypeImpl#getCount <em>Count</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityLoopTypeImpl extends ActivityTypeImpl implements ActivityLoopType {
+public class ActivityLoopTypeImpl extends ActivityTypeImpl implements
+		ActivityLoopType {
 	/**
 	 * The default value of the '{@link #getCount() <em>Count</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -76,8 +77,8 @@ public class ActivityLoopTypeImpl extends ActivityTypeImpl implements ActivityLo
 		Object oldCount = count;
 		count = newCount;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_LOOP_TYPE__COUNT, oldCount,
-					count));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_LOOP_TYPE__COUNT, oldCount, count));
 	}
 
 	/**
@@ -129,7 +130,8 @@ public class ActivityLoopTypeImpl extends ActivityTypeImpl implements ActivityLo
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_LOOP_TYPE__COUNT:
-			return COUNT_EDEFAULT == null ? count != null : !COUNT_EDEFAULT.equals(count);
+			return COUNT_EDEFAULT == null ? count != null : !COUNT_EDEFAULT
+					.equals(count);
 		}
 		return super.eIsSet(featureID);
 	}

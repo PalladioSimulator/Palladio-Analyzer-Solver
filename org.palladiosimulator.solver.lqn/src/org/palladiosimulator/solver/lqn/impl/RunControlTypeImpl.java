@@ -20,14 +20,15 @@ import org.palladiosimulator.solver.lqn.RunControlType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.RunControlTypeImpl#getPara <em>Para</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class RunControlTypeImpl extends MinimalEObjectImpl.Container implements RunControlType {
+public class RunControlTypeImpl extends MinimalEObjectImpl.Container implements
+		RunControlType {
 	/**
 	 * The cached value of the '{@link #getPara() <em>Para</em>}' containment reference list. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -62,7 +63,8 @@ public class RunControlTypeImpl extends MinimalEObjectImpl.Container implements 
 	@Override
 	public EList<ParaType> getPara() {
 		if (para == null) {
-			para = new EObjectContainmentEList<ParaType>(ParaType.class, this, LqnPackage.RUN_CONTROL_TYPE__PARA);
+			para = new EObjectContainmentEList<ParaType>(ParaType.class, this,
+					LqnPackage.RUN_CONTROL_TYPE__PARA);
 		}
 		return para;
 	}
@@ -72,7 +74,8 @@ public class RunControlTypeImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.RUN_CONTROL_TYPE__PARA:
 			return ((InternalEList<?>) getPara()).basicRemove(otherEnd, msgs);

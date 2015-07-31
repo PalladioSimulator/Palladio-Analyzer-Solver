@@ -10,7 +10,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPre <em>Pre</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPreOR <em>Pre OR</em>}</li>
@@ -20,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPostAND <em>Post AND</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.PrecedenceType#getPostLOOP <em>Post LOOP</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getPrecedenceType()
  * @model extendedMetaData="name='PrecedenceType' kind='elementOnly'"

@@ -24,7 +24,6 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getCallList <em>Call List</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getGroup <em>Group</em>}</li>
@@ -32,10 +31,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getAsynchCall <em>Asynch Call</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl#getBoundToEntry <em>Bound To Entry</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements ActivityDefType {
+public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements
+		ActivityDefType {
 	/**
 	 * The cached value of the '{@link #getCallList() <em>Call List</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -99,7 +100,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
 	@Override
 	public EList<CallListType> getCallList() {
 		if (callList == null) {
-			callList = new EObjectContainmentEList<CallListType>(CallListType.class, this,
+			callList = new EObjectContainmentEList<CallListType>(
+					CallListType.class, this,
 					LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST);
 		}
 		return callList;
@@ -112,7 +114,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
 	@Override
 	public FeatureMap getGroup() {
 		if (group == null) {
-			group = new BasicFeatureMap(this, LqnPackage.ACTIVITY_DEF_TYPE__GROUP);
+			group = new BasicFeatureMap(this,
+					LqnPackage.ACTIVITY_DEF_TYPE__GROUP);
 		}
 		return group;
 	}
@@ -123,7 +126,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
 	 */
 	@Override
 	public EList<ActivityMakingCallType> getSynchCall() {
-		return getGroup().list(LqnPackage.Literals.ACTIVITY_DEF_TYPE__SYNCH_CALL);
+		return getGroup().list(
+				LqnPackage.Literals.ACTIVITY_DEF_TYPE__SYNCH_CALL);
 	}
 
 	/**
@@ -132,7 +136,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
 	 */
 	@Override
 	public EList<ActivityMakingCallType> getAsynchCall() {
-		return getGroup().list(LqnPackage.Literals.ACTIVITY_DEF_TYPE__ASYNCH_CALL);
+		return getGroup().list(
+				LqnPackage.Literals.ACTIVITY_DEF_TYPE__ASYNCH_CALL);
 	}
 
 	/**
@@ -153,7 +158,8 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
 		String oldBoundToEntry = boundToEntry;
 		boundToEntry = newBoundToEntry;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_DEF_TYPE__BOUND_TO_ENTRY,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_DEF_TYPE__BOUND_TO_ENTRY,
 					oldBoundToEntry, boundToEntry));
 	}
 
@@ -162,16 +168,20 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_DEF_TYPE__CALL_LIST:
-			return ((InternalEList<?>) getCallList()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getCallList()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ACTIVITY_DEF_TYPE__GROUP:
 			return ((InternalEList<?>) getGroup()).basicRemove(otherEnd, msgs);
 		case LqnPackage.ACTIVITY_DEF_TYPE__SYNCH_CALL:
-			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getSynchCall()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.ACTIVITY_DEF_TYPE__ASYNCH_CALL:
-			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getAsynchCall()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -216,11 +226,13 @@ public class ActivityDefTypeImpl extends ActivityDefBaseImpl implements Activity
 			return;
 		case LqnPackage.ACTIVITY_DEF_TYPE__SYNCH_CALL:
 			getSynchCall().clear();
-			getSynchCall().addAll((Collection<? extends ActivityMakingCallType>) newValue);
+			getSynchCall().addAll(
+					(Collection<? extends ActivityMakingCallType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_DEF_TYPE__ASYNCH_CALL:
 			getAsynchCall().clear();
-			getAsynchCall().addAll((Collection<? extends ActivityMakingCallType>) newValue);
+			getAsynchCall().addAll(
+					(Collection<? extends ActivityMakingCallType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_DEF_TYPE__BOUND_TO_ENTRY:
 			setBoundToEntry((String) newValue);

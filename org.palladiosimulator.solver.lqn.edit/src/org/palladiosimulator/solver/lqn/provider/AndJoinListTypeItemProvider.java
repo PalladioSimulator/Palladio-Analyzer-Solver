@@ -29,8 +29,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -64,13 +65,16 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	protected void addQuorumPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_AndJoinListType_quorum_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_AndJoinListType_quorum_feature",
-								"_UI_AndJoinListType_type"),
-						LqnPackage.Literals.AND_JOIN_LIST_TYPE__QUORUM, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_AndJoinListType_quorum_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_AndJoinListType_quorum_feature",
+						"_UI_AndJoinListType_type"),
+				LqnPackage.Literals.AND_JOIN_LIST_TYPE__QUORUM, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -83,12 +87,16 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY);
-			childrenFeatures.add(LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION);
-			childrenFeatures.add(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY);
+			childrenFeatures
+					.add(LqnPackage.Literals.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY);
+			childrenFeatures
+					.add(LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION);
+			childrenFeatures
+					.add(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY);
 		}
 		return childrenFeatures;
 	}
@@ -112,7 +120,8 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/AndJoinListType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/AndJoinListType"));
 	}
 
 	/**
@@ -141,12 +150,14 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
 
 		switch (notification.getFeatureID(AndJoinListType.class)) {
 		case LqnPackage.AND_JOIN_LIST_TYPE__QUORUM:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY:
 		case LqnPackage.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION:
 		case LqnPackage.AND_JOIN_LIST_TYPE__ACTIVITY:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -159,25 +170,35 @@ public class AndJoinListTypeItemProvider extends ItemProviderAdapter implements 
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY,
 				LqnFactory.eINSTANCE.createOutputResultJoinDelayType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
-				LqnFactory.eINSTANCE.createOutputDistributionType()));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
+						LqnFactory.eINSTANCE.createOutputDistributionType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
-				LqnFactory.eINSTANCE.createOutputEntryDistributionType()));
+		newChildDescriptors
+				.add(createChildParameter(
+						LqnPackage.Literals.AND_JOIN_LIST_TYPE__SERVICE_TIME_DISTRIBUTION,
+						LqnFactory.eINSTANCE
+								.createOutputEntryDistributionType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityLoopType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.AND_JOIN_LIST_TYPE__ACTIVITY,
 				LqnFactory.eINSTANCE.createActivityOrType()));
 	}
 

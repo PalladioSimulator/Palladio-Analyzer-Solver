@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutPortType#getConnectTo <em>Connect To</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutPortType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutPortType#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutPortType()
  * @model extendedMetaData="name='out-port_._type' kind='empty'"

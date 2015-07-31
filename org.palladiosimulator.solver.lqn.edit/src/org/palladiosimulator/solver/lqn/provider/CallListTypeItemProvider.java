@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class CallListTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class CallListTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,11 +64,14 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL);
-			childrenFeatures.add(LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL);
+			childrenFeatures
+					.add(LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL);
+			childrenFeatures
+					.add(LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL);
 		}
 		return childrenFeatures;
 	}
@@ -91,7 +95,8 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/CallListType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/CallListType"));
 	}
 
 	/**
@@ -118,7 +123,8 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
 		switch (notification.getFeatureID(CallListType.class)) {
 		case LqnPackage.CALL_LIST_TYPE__SYNCH_CALL:
 		case LqnPackage.CALL_LIST_TYPE__ASYNCH_CALL:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -131,13 +137,16 @@ public class CallListTypeItemProvider extends ItemProviderAdapter implements IEd
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.CALL_LIST_TYPE__SYNCH_CALL,
 				LqnFactory.eINSTANCE.createSynchCallType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.CALL_LIST_TYPE__ASYNCH_CALL,
 				LqnFactory.eINSTANCE.createAsynchCallType()));
 	}
 

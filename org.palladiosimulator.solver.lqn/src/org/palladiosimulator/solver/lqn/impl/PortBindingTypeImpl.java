@@ -14,15 +14,16 @@ import org.palladiosimulator.solver.lqn.PortBindingType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PortBindingTypeImpl#getSource <em>Source</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PortBindingTypeImpl#getTarget <em>Target</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class PortBindingTypeImpl extends MinimalEObjectImpl.Container implements PortBindingType {
+public class PortBindingTypeImpl extends MinimalEObjectImpl.Container implements
+		PortBindingType {
 	/**
 	 * The default value of the '{@link #getSource() <em>Source</em>}' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -98,8 +99,8 @@ public class PortBindingTypeImpl extends MinimalEObjectImpl.Container implements
 		String oldSource = source;
 		source = newSource;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PORT_BINDING_TYPE__SOURCE, oldSource,
-					source));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PORT_BINDING_TYPE__SOURCE, oldSource, source));
 	}
 
 	/**
@@ -120,8 +121,8 @@ public class PortBindingTypeImpl extends MinimalEObjectImpl.Container implements
 		String oldTarget = target;
 		target = newTarget;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PORT_BINDING_TYPE__TARGET, oldTarget,
-					target));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PORT_BINDING_TYPE__TARGET, oldTarget, target));
 	}
 
 	/**
@@ -181,9 +182,11 @@ public class PortBindingTypeImpl extends MinimalEObjectImpl.Container implements
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.PORT_BINDING_TYPE__SOURCE:
-			return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
+			return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT
+					.equals(source);
 		case LqnPackage.PORT_BINDING_TYPE__TARGET:
-			return TARGET_EDEFAULT == null ? target != null : !TARGET_EDEFAULT.equals(target);
+			return TARGET_EDEFAULT == null ? target != null : !TARGET_EDEFAULT
+					.equals(target);
 		}
 		return super.eIsSet(featureID);
 	}

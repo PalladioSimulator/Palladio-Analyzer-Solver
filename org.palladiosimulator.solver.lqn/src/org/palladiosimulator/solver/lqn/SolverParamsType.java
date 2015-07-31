@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getResultGeneral <em>Result General</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getPragma <em>Pragma</em>}</li>
@@ -21,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getPrintInt <em>Print Int</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.SolverParamsType#getUnderrelaxCoeff <em>Underrelax Coeff</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getSolverParamsType()
  * @model extendedMetaData="name='solver-params_._type' kind='elementOnly'"

@@ -240,8 +240,8 @@ public enum SchedulingType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final SchedulingType[] VALUES_ARRAY = new SchedulingType[] { FCFS, PS, PP, INF, RAND, HOL, PS_HOL,
-			PS_PP, CFS, };
+	private static final SchedulingType[] VALUES_ARRAY = new SchedulingType[] {
+			FCFS, PS, PP, INF, RAND, HOL, PS_HOL, PS_PP, CFS, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Scheduling Type</b></em>' enumerators. <!--
@@ -249,7 +249,8 @@ public enum SchedulingType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<SchedulingType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<SchedulingType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Scheduling Type</b></em>' literal with the specified literal value. <!--

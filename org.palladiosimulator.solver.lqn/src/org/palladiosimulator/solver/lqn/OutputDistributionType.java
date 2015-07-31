@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getUnderflowBin <em>Underflow Bin</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getHistogramBin <em>Histogram Bin</em>}</li>
@@ -28,6 +27,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getSkew <em>Skew</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.OutputDistributionType#getStdDev <em>Std Dev</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getOutputDistributionType()
  * @model extendedMetaData="name='OutputDistributionType' kind='elementOnly'"

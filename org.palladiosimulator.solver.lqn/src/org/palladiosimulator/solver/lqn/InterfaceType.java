@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.InterfaceType#getInPort <em>In Port</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.InterfaceType#getOutPort <em>Out Port</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getInterfaceType()
  * @model extendedMetaData="name='Interface_._type' kind='elementOnly'"

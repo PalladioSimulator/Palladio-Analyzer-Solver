@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class AsynchCallTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class AsynchCallTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -61,13 +62,16 @@ public class AsynchCallTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	protected void addDestPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_AsynchCallType_dest_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_AsynchCallType_dest_feature",
-								"_UI_AsynchCallType_type"),
-						LqnPackage.Literals.ASYNCH_CALL_TYPE__DEST, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_AsynchCallType_dest_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_AsynchCallType_dest_feature",
+						"_UI_AsynchCallType_type"),
+				LqnPackage.Literals.ASYNCH_CALL_TYPE__DEST, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -77,7 +81,8 @@ public class AsynchCallTypeItemProvider extends ItemProviderAdapter implements I
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/AsynchCallType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/AsynchCallType"));
 	}
 
 	/**
@@ -105,7 +110,8 @@ public class AsynchCallTypeItemProvider extends ItemProviderAdapter implements I
 
 		switch (notification.getFeatureID(AsynchCallType.class)) {
 		case LqnPackage.ASYNCH_CALL_TYPE__DEST:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -118,7 +124,8 @@ public class AsynchCallTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

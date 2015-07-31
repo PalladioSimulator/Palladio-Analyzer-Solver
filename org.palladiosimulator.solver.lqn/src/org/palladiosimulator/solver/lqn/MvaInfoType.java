@@ -12,7 +12,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.MvaInfoType#getCore <em>Core</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.MvaInfoType#getFaults <em>Faults</em>}</li>
@@ -22,6 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.MvaInfoType#getWait <em>Wait</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.MvaInfoType#getWaitSquared <em>Wait Squared</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getMvaInfoType()
  * @model extendedMetaData="name='mva-info_._type' kind='empty'"

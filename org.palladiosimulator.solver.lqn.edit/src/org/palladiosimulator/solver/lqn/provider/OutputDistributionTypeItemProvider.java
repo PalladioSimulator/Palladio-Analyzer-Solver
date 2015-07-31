@@ -29,8 +29,9 @@ import org.palladiosimulator.solver.lqn.OutputDistributionType;
  * <!-- end-user-doc -->
  * @generated
  */
-public class OutputDistributionTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class OutputDistributionTypeItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -73,12 +74,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 */
 	protected void addBinSizePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_OutputDistributionType_binSize_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_binSize_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_binSize_feature",
 						"_UI_OutputDistributionType_type"),
-				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -89,12 +94,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 */
 	protected void addKurtosisPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_OutputDistributionType_kurtosis_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_kurtosis_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_kurtosis_feature",
 						"_UI_OutputDistributionType_type"),
-				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__KURTOSIS, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -104,13 +113,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	protected void addMaxPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutputDistributionType_max_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_max_feature",
-								"_UI_OutputDistributionType_type"),
-						LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MAX, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_OutputDistributionType_max_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_max_feature",
+						"_UI_OutputDistributionType_type"),
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MAX, true, false,
+				false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -120,13 +132,17 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	protected void addMeanPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutputDistributionType_mean_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_mean_feature",
-								"_UI_OutputDistributionType_type"),
-						LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MEAN, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_OutputDistributionType_mean_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_mean_feature",
+						"_UI_OutputDistributionType_type"),
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MEAN, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -137,12 +153,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 */
 	protected void addMidPointPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_OutputDistributionType_midPoint_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_midPoint_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_midPoint_feature",
 						"_UI_OutputDistributionType_type"),
-				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MID_POINT, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MID_POINT, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -152,13 +172,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	protected void addMinPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutputDistributionType_min_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_min_feature",
-								"_UI_OutputDistributionType_type"),
-						LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MIN, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_OutputDistributionType_min_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_min_feature",
+						"_UI_OutputDistributionType_type"),
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__MIN, true, false,
+				false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -169,12 +192,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 */
 	protected void addNumberBinsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_OutputDistributionType_numberBins_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_numberBins_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_numberBins_feature",
 						"_UI_OutputDistributionType_type"),
-				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS, true, false, false,
-				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS,
+				true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				null, null));
 	}
 
 	/**
@@ -184,13 +211,17 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	protected void addSkewPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutputDistributionType_skew_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_skew_feature",
-								"_UI_OutputDistributionType_type"),
-						LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__SKEW, true, false, false,
-						ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_OutputDistributionType_skew_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_skew_feature",
+						"_UI_OutputDistributionType_type"),
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__SKEW, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -201,12 +232,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 */
 	protected void addStdDevPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add(createItemPropertyDescriptor(
-				((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(), getResourceLocator(),
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
 				getString("_UI_OutputDistributionType_stdDev_feature"),
-				getString("_UI_PropertyDescriptor_description", "_UI_OutputDistributionType_stdDev_feature",
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutputDistributionType_stdDev_feature",
 						"_UI_OutputDistributionType_type"),
-				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__STD_DEV, true, false, false,
-				ItemPropertyDescriptor.REAL_VALUE_IMAGE, null, null));
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__STD_DEV, true,
+				false, false, ItemPropertyDescriptor.REAL_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -219,12 +254,16 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN);
-			childrenFeatures.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN);
-			childrenFeatures.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN);
+			childrenFeatures
+					.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN);
+			childrenFeatures
+					.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN);
+			childrenFeatures
+					.add(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN);
 		}
 		return childrenFeatures;
 	}
@@ -248,7 +287,10 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/OutputDistributionType"));
+		return overlayImage(
+				object,
+				getResourceLocator().getImage(
+						"full/obj16/OutputDistributionType"));
 	}
 
 	/**
@@ -260,7 +302,8 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	@Override
 	public String getText(Object object) {
 		OutputDistributionType outputDistributionType = (OutputDistributionType) object;
-		return getString("_UI_OutputDistributionType_type") + " " + outputDistributionType.getBinSize();
+		return getString("_UI_OutputDistributionType_type") + " "
+				+ outputDistributionType.getBinSize();
 	}
 
 	/**
@@ -283,12 +326,14 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS:
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__SKEW:
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__STD_DEV:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN:
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN:
 		case LqnPackage.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -301,16 +346,20 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN,
 				LqnFactory.eINSTANCE.createHistogramBinType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN,
 				LqnFactory.eINSTANCE.createHistogramBinType()));
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN,
 				LqnFactory.eINSTANCE.createHistogramBinType()));
 	}
 
@@ -321,7 +370,8 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 	 * @generated
 	 */
 	@Override
-	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+	public String getCreateChildText(Object owner, Object feature,
+			Object child, Collection<?> selection) {
 		Object childFeature = feature;
 		Object childObject = child;
 
@@ -330,8 +380,9 @@ public class OutputDistributionTypeItemProvider extends ItemProviderAdapter impl
 				|| childFeature == LqnPackage.Literals.OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN;
 
 		if (qualify) {
-			return getString("_UI_CreateChild_text2",
-					new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+			return getString("_UI_CreateChild_text2", new Object[] {
+					getTypeText(childObject), getFeatureText(childFeature),
+					getTypeText(owner) });
 		}
 		return super.getCreateChildText(owner, feature, child, selection);
 	}

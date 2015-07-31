@@ -32,7 +32,6 @@ import org.palladiosimulator.solver.lqn.TaskType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getResultTask <em>Result Task</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getServiceTimeDistribution <em>Service Time Distribution</em>}</li>
@@ -51,10 +50,12 @@ import org.palladiosimulator.solver.lqn.TaskType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getScheduling <em>Scheduling</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl#getThinkTime <em>Think Time</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskType {
+public class TaskTypeImpl extends MinimalEObjectImpl.Container implements
+		TaskType {
 	/**
 	 * The cached value of the '{@link #getResultTask() <em>Result Task</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -177,7 +178,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	 * @ordered
 	 */
 	protected static final Object MULTIPLICITY_EDEFAULT = LqnFactory.eINSTANCE
-			.createFromString(LqnPackage.eINSTANCE.getSrvnNonNegativeInteger(), "1");
+			.createFromString(LqnPackage.eINSTANCE.getSrvnNonNegativeInteger(),
+					"1");
 
 	/**
 	 * The cached value of the '{@link #getMultiplicity() <em>Multiplicity</em>}' attribute. <!--
@@ -255,7 +257,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BigInteger QUEUE_LENGTH_EDEFAULT = new BigInteger("0");
+	protected static final BigInteger QUEUE_LENGTH_EDEFAULT = new BigInteger(
+			"0");
 
 	/**
 	 * The cached value of the '{@link #getQueueLength() <em>Queue Length</em>}' attribute. <!--
@@ -388,7 +391,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public EList<OutputResultType> getResultTask() {
 		if (resultTask == null) {
-			resultTask = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
+			resultTask = new EObjectContainmentEList<OutputResultType>(
+					OutputResultType.class, this,
 					LqnPackage.TASK_TYPE__RESULT_TASK);
 		}
 		return resultTask;
@@ -401,8 +405,9 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public EList<OutputDistributionType> getServiceTimeDistribution() {
 		if (serviceTimeDistribution == null) {
-			serviceTimeDistribution = new EObjectContainmentEList<OutputDistributionType>(OutputDistributionType.class,
-					this, LqnPackage.TASK_TYPE__SERVICE_TIME_DISTRIBUTION);
+			serviceTimeDistribution = new EObjectContainmentEList<OutputDistributionType>(
+					OutputDistributionType.class, this,
+					LqnPackage.TASK_TYPE__SERVICE_TIME_DISTRIBUTION);
 		}
 		return serviceTimeDistribution;
 	}
@@ -414,7 +419,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public EList<FanOutType> getFanOut() {
 		if (fanOut == null) {
-			fanOut = new EObjectContainmentEList<FanOutType>(FanOutType.class, this, LqnPackage.TASK_TYPE__FAN_OUT);
+			fanOut = new EObjectContainmentEList<FanOutType>(FanOutType.class,
+					this, LqnPackage.TASK_TYPE__FAN_OUT);
 		}
 		return fanOut;
 	}
@@ -426,7 +432,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public EList<FanInType> getFanIn() {
 		if (fanIn == null) {
-			fanIn = new EObjectContainmentEList<FanInType>(FanInType.class, this, LqnPackage.TASK_TYPE__FAN_IN);
+			fanIn = new EObjectContainmentEList<FanInType>(FanInType.class,
+					this, LqnPackage.TASK_TYPE__FAN_IN);
 		}
 		return fanIn;
 	}
@@ -438,7 +445,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public EList<EntryType> getEntry() {
 		if (entry == null) {
-			entry = new EObjectContainmentEList<EntryType>(EntryType.class, this, LqnPackage.TASK_TYPE__ENTRY);
+			entry = new EObjectContainmentEList<EntryType>(EntryType.class,
+					this, LqnPackage.TASK_TYPE__ENTRY);
 		}
 		return entry;
 	}
@@ -450,7 +458,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public EList<ServiceType> getService() {
 		if (service == null) {
-			service = new EObjectContainmentEList<ServiceType>(ServiceType.class, this, LqnPackage.TASK_TYPE__SERVICE);
+			service = new EObjectContainmentEList<ServiceType>(
+					ServiceType.class, this, LqnPackage.TASK_TYPE__SERVICE);
 		}
 		return service;
 	}
@@ -468,12 +477,14 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetTaskActivities(TaskActivityGraph newTaskActivities, NotificationChain msgs) {
+	public NotificationChain basicSetTaskActivities(
+			TaskActivityGraph newTaskActivities, NotificationChain msgs) {
 		TaskActivityGraph oldTaskActivities = taskActivities;
 		taskActivities = newTaskActivities;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.TASK_TYPE__TASK_ACTIVITIES, oldTaskActivities, newTaskActivities);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.TASK_TYPE__TASK_ACTIVITIES,
+					oldTaskActivities, newTaskActivities);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -492,16 +503,21 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 			NotificationChain msgs = null;
 			if (taskActivities != null)
 				msgs = ((InternalEObject) taskActivities).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null,
+						msgs);
 			if (newTaskActivities != null)
 				msgs = ((InternalEObject) newTaskActivities).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.TASK_TYPE__TASK_ACTIVITIES, null,
+						msgs);
 			msgs = basicSetTaskActivities(newTaskActivities, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__TASK_ACTIVITIES,
-					newTaskActivities, newTaskActivities));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__TASK_ACTIVITIES, newTaskActivities,
+					newTaskActivities));
 	}
 
 	/**
@@ -520,12 +536,14 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public void setActivityGraph(TaskOptionType newActivityGraph) {
 		TaskOptionType oldActivityGraph = activityGraph;
-		activityGraph = newActivityGraph == null ? ACTIVITY_GRAPH_EDEFAULT : newActivityGraph;
+		activityGraph = newActivityGraph == null ? ACTIVITY_GRAPH_EDEFAULT
+				: newActivityGraph;
 		boolean oldActivityGraphESet = activityGraphESet;
 		activityGraphESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__ACTIVITY_GRAPH,
-					oldActivityGraph, activityGraph, !oldActivityGraphESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__ACTIVITY_GRAPH, oldActivityGraph,
+					activityGraph, !oldActivityGraphESet));
 	}
 
 	/**
@@ -539,8 +557,9 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		activityGraph = ACTIVITY_GRAPH_EDEFAULT;
 		activityGraphESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__ACTIVITY_GRAPH,
-					oldActivityGraph, ACTIVITY_GRAPH_EDEFAULT, oldActivityGraphESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.TASK_TYPE__ACTIVITY_GRAPH, oldActivityGraph,
+					ACTIVITY_GRAPH_EDEFAULT, oldActivityGraphESet));
 	}
 
 	/**
@@ -570,8 +589,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		BigInteger oldInitially = initially;
 		initially = newInitially;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__INITIALLY, oldInitially,
-					initially));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__INITIALLY, oldInitially, initially));
 	}
 
 	/**
@@ -594,7 +613,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		boolean oldMultiplicityESet = multiplicityESet;
 		multiplicityESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__MULTIPLICITY, oldMultiplicity,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__MULTIPLICITY, oldMultiplicity,
 					multiplicity, !oldMultiplicityESet));
 	}
 
@@ -609,7 +629,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		multiplicity = MULTIPLICITY_EDEFAULT;
 		multiplicityESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__MULTIPLICITY, oldMultiplicity,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.TASK_TYPE__MULTIPLICITY, oldMultiplicity,
 					MULTIPLICITY_EDEFAULT, oldMultiplicityESet));
 	}
 
@@ -640,7 +661,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -663,7 +685,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		boolean oldPriorityESet = priorityESet;
 		priorityESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__PRIORITY, oldPriority, priority,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__PRIORITY, oldPriority, priority,
 					!oldPriorityESet));
 	}
 
@@ -678,7 +701,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		priority = PRIORITY_EDEFAULT;
 		priorityESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__PRIORITY, oldPriority,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.TASK_TYPE__PRIORITY, oldPriority,
 					PRIORITY_EDEFAULT, oldPriorityESet));
 	}
 
@@ -711,7 +735,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		boolean oldQueueLengthESet = queueLengthESet;
 		queueLengthESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__QUEUE_LENGTH, oldQueueLength,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__QUEUE_LENGTH, oldQueueLength,
 					queueLength, !oldQueueLengthESet));
 	}
 
@@ -726,7 +751,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		queueLength = QUEUE_LENGTH_EDEFAULT;
 		queueLengthESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__QUEUE_LENGTH, oldQueueLength,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.TASK_TYPE__QUEUE_LENGTH, oldQueueLength,
 					QUEUE_LENGTH_EDEFAULT, oldQueueLengthESet));
 	}
 
@@ -759,7 +785,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		boolean oldReplicationESet = replicationESet;
 		replicationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__REPLICATION, oldReplication,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__REPLICATION, oldReplication,
 					replication, !oldReplicationESet));
 	}
 
@@ -774,7 +801,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		replication = REPLICATION_EDEFAULT;
 		replicationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__REPLICATION, oldReplication,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.TASK_TYPE__REPLICATION, oldReplication,
 					REPLICATION_EDEFAULT, oldReplicationESet));
 	}
 
@@ -803,11 +831,13 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	@Override
 	public void setScheduling(TaskSchedulingType newScheduling) {
 		TaskSchedulingType oldScheduling = scheduling;
-		scheduling = newScheduling == null ? SCHEDULING_EDEFAULT : newScheduling;
+		scheduling = newScheduling == null ? SCHEDULING_EDEFAULT
+				: newScheduling;
 		boolean oldSchedulingESet = schedulingESet;
 		schedulingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__SCHEDULING, oldScheduling,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__SCHEDULING, oldScheduling,
 					scheduling, !oldSchedulingESet));
 	}
 
@@ -822,7 +852,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		scheduling = SCHEDULING_EDEFAULT;
 		schedulingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__SCHEDULING, oldScheduling,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.TASK_TYPE__SCHEDULING, oldScheduling,
 					SCHEDULING_EDEFAULT, oldSchedulingESet));
 	}
 
@@ -855,8 +886,9 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		boolean oldThinkTimeESet = thinkTimeESet;
 		thinkTimeESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.TASK_TYPE__THINK_TIME, oldThinkTime,
-					thinkTime, !oldThinkTimeESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.TASK_TYPE__THINK_TIME, oldThinkTime, thinkTime,
+					!oldThinkTimeESet));
 	}
 
 	/**
@@ -870,7 +902,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		thinkTime = THINK_TIME_EDEFAULT;
 		thinkTimeESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.TASK_TYPE__THINK_TIME, oldThinkTime,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.TASK_TYPE__THINK_TIME, oldThinkTime,
 					THINK_TIME_EDEFAULT, oldThinkTimeESet));
 	}
 
@@ -888,12 +921,15 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.TASK_TYPE__RESULT_TASK:
-			return ((InternalEList<?>) getResultTask()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getResultTask()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.TASK_TYPE__SERVICE_TIME_DISTRIBUTION:
-			return ((InternalEList<?>) getServiceTimeDistribution()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getServiceTimeDistribution())
+					.basicRemove(otherEnd, msgs);
 		case LqnPackage.TASK_TYPE__FAN_OUT:
 			return ((InternalEList<?>) getFanOut()).basicRemove(otherEnd, msgs);
 		case LqnPackage.TASK_TYPE__FAN_IN:
@@ -901,7 +937,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		case LqnPackage.TASK_TYPE__ENTRY:
 			return ((InternalEList<?>) getEntry()).basicRemove(otherEnd, msgs);
 		case LqnPackage.TASK_TYPE__SERVICE:
-			return ((InternalEList<?>) getService()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getService())
+					.basicRemove(otherEnd, msgs);
 		case LqnPackage.TASK_TYPE__TASK_ACTIVITIES:
 			return basicSetTaskActivities(null, msgs);
 		}
@@ -961,11 +998,13 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		switch (featureID) {
 		case LqnPackage.TASK_TYPE__RESULT_TASK:
 			getResultTask().clear();
-			getResultTask().addAll((Collection<? extends OutputResultType>) newValue);
+			getResultTask().addAll(
+					(Collection<? extends OutputResultType>) newValue);
 			return;
 		case LqnPackage.TASK_TYPE__SERVICE_TIME_DISTRIBUTION:
 			getServiceTimeDistribution().clear();
-			getServiceTimeDistribution().addAll((Collection<? extends OutputDistributionType>) newValue);
+			getServiceTimeDistribution().addAll(
+					(Collection<? extends OutputDistributionType>) newValue);
 			return;
 		case LqnPackage.TASK_TYPE__FAN_OUT:
 			getFanOut().clear();
@@ -1086,7 +1125,8 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		case LqnPackage.TASK_TYPE__RESULT_TASK:
 			return resultTask != null && !resultTask.isEmpty();
 		case LqnPackage.TASK_TYPE__SERVICE_TIME_DISTRIBUTION:
-			return serviceTimeDistribution != null && !serviceTimeDistribution.isEmpty();
+			return serviceTimeDistribution != null
+					&& !serviceTimeDistribution.isEmpty();
 		case LqnPackage.TASK_TYPE__FAN_OUT:
 			return fanOut != null && !fanOut.isEmpty();
 		case LqnPackage.TASK_TYPE__FAN_IN:
@@ -1100,11 +1140,13 @@ public class TaskTypeImpl extends MinimalEObjectImpl.Container implements TaskTy
 		case LqnPackage.TASK_TYPE__ACTIVITY_GRAPH:
 			return isSetActivityGraph();
 		case LqnPackage.TASK_TYPE__INITIALLY:
-			return INITIALLY_EDEFAULT == null ? initially != null : !INITIALLY_EDEFAULT.equals(initially);
+			return INITIALLY_EDEFAULT == null ? initially != null
+					: !INITIALLY_EDEFAULT.equals(initially);
 		case LqnPackage.TASK_TYPE__MULTIPLICITY:
 			return isSetMultiplicity();
 		case LqnPackage.TASK_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		case LqnPackage.TASK_TYPE__PRIORITY:
 			return isSetPriority();
 		case LqnPackage.TASK_TYPE__QUEUE_LENGTH:

@@ -24,7 +24,6 @@ import org.palladiosimulator.solver.lqn.OutputResultType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getServiceTimeDistribution <em>Service Time Distribution</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getResultActivity <em>Result Activity</em>}</li>
@@ -35,10 +34,12 @@ import org.palladiosimulator.solver.lqn.OutputResultType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl#getThinkTime <em>Think Time</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements ActivityDefBase {
+public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
+		ActivityDefBase {
 	/**
 	 * The cached value of the '{@link #getServiceTimeDistribution() <em>Service Time Distribution</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!--
@@ -205,8 +206,9 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public EList<OutputDistributionType> getServiceTimeDistribution() {
 		if (serviceTimeDistribution == null) {
-			serviceTimeDistribution = new EObjectContainmentEList<OutputDistributionType>(OutputDistributionType.class,
-					this, LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION);
+			serviceTimeDistribution = new EObjectContainmentEList<OutputDistributionType>(
+					OutputDistributionType.class, this,
+					LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION);
 		}
 		return serviceTimeDistribution;
 	}
@@ -218,7 +220,8 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public EList<OutputResultType> getResultActivity() {
 		if (resultActivity == null) {
-			resultActivity = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
+			resultActivity = new EObjectContainmentEList<OutputResultType>(
+					OutputResultType.class, this,
 					LqnPackage.ACTIVITY_DEF_BASE__RESULT_ACTIVITY);
 		}
 		return resultActivity;
@@ -244,8 +247,9 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		boolean oldCallOrderESet = callOrderESet;
 		callOrderESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_DEF_BASE__CALL_ORDER,
-					oldCallOrder, callOrder, !oldCallOrderESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_DEF_BASE__CALL_ORDER, oldCallOrder,
+					callOrder, !oldCallOrderESet));
 	}
 
 	/**
@@ -259,8 +263,9 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		callOrder = CALL_ORDER_EDEFAULT;
 		callOrderESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ACTIVITY_DEF_BASE__CALL_ORDER,
-					oldCallOrder, CALL_ORDER_EDEFAULT, oldCallOrderESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.ACTIVITY_DEF_BASE__CALL_ORDER, oldCallOrder,
+					CALL_ORDER_EDEFAULT, oldCallOrderESet));
 	}
 
 	/**
@@ -290,7 +295,8 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		Object oldHostDemandCvsq = hostDemandCvsq;
 		hostDemandCvsq = newHostDemandCvsq;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ,
 					oldHostDemandCvsq, hostDemandCvsq));
 	}
 
@@ -312,7 +318,8 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		Object oldHostDemandMean = hostDemandMean;
 		hostDemandMean = newHostDemandMean;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN,
 					oldHostDemandMean, hostDemandMean));
 	}
 
@@ -334,7 +341,8 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		Object oldMaxServiceTime = maxServiceTime;
 		maxServiceTime = newMaxServiceTime;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_DEF_BASE__MAX_SERVICE_TIME,
 					oldMaxServiceTime, maxServiceTime));
 	}
 
@@ -356,7 +364,8 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_DEF_BASE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_DEF_BASE__NAME, oldName, name));
 	}
 
 	/**
@@ -377,8 +386,9 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		Object oldThinkTime = thinkTime;
 		thinkTime = newThinkTime;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_DEF_BASE__THINK_TIME,
-					oldThinkTime, thinkTime));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_DEF_BASE__THINK_TIME, oldThinkTime,
+					thinkTime));
 	}
 
 	/**
@@ -386,12 +396,15 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION:
-			return ((InternalEList<?>) getServiceTimeDistribution()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getServiceTimeDistribution())
+					.basicRemove(otherEnd, msgs);
 		case LqnPackage.ACTIVITY_DEF_BASE__RESULT_ACTIVITY:
-			return ((InternalEList<?>) getResultActivity()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getResultActivity()).basicRemove(
+					otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -433,11 +446,13 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION:
 			getServiceTimeDistribution().clear();
-			getServiceTimeDistribution().addAll((Collection<? extends OutputDistributionType>) newValue);
+			getServiceTimeDistribution().addAll(
+					(Collection<? extends OutputDistributionType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_DEF_BASE__RESULT_ACTIVITY:
 			getResultActivity().clear();
-			getResultActivity().addAll((Collection<? extends OutputResultType>) newValue);
+			getResultActivity().addAll(
+					(Collection<? extends OutputResultType>) newValue);
 			return;
 		case LqnPackage.ACTIVITY_DEF_BASE__CALL_ORDER:
 			setCallOrder((CallOrderType) newValue);
@@ -504,7 +519,8 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.ACTIVITY_DEF_BASE__SERVICE_TIME_DISTRIBUTION:
-			return serviceTimeDistribution != null && !serviceTimeDistribution.isEmpty();
+			return serviceTimeDistribution != null
+					&& !serviceTimeDistribution.isEmpty();
 		case LqnPackage.ACTIVITY_DEF_BASE__RESULT_ACTIVITY:
 			return resultActivity != null && !resultActivity.isEmpty();
 		case LqnPackage.ACTIVITY_DEF_BASE__CALL_ORDER:
@@ -519,9 +535,11 @@ public class ActivityDefBaseImpl extends MinimalEObjectImpl.Container implements
 			return MAX_SERVICE_TIME_EDEFAULT == null ? maxServiceTime != null
 					: !MAX_SERVICE_TIME_EDEFAULT.equals(maxServiceTime);
 		case LqnPackage.ACTIVITY_DEF_BASE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		case LqnPackage.ACTIVITY_DEF_BASE__THINK_TIME:
-			return THINK_TIME_EDEFAULT == null ? thinkTime != null : !THINK_TIME_EDEFAULT.equals(thinkTime);
+			return THINK_TIME_EDEFAULT == null ? thinkTime != null
+					: !THINK_TIME_EDEFAULT.equals(thinkTime);
 		}
 		return super.eIsSet(featureID);
 	}

@@ -22,16 +22,17 @@ import org.palladiosimulator.solver.lqn.ProcessorBindingType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getParameter <em>Parameter</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getProcessorBinding <em>Processor Binding</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.BindTypeImpl#getPortBinding <em>Port Binding</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class BindTypeImpl extends MinimalEObjectImpl.Container implements BindType {
+public class BindTypeImpl extends MinimalEObjectImpl.Container implements
+		BindType {
 	/**
 	 * The cached value of the '{@link #getParameter() <em>Parameter</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -83,8 +84,8 @@ public class BindTypeImpl extends MinimalEObjectImpl.Container implements BindTy
 	@Override
 	public EList<ParameterType> getParameter() {
 		if (parameter == null) {
-			parameter = new EObjectContainmentEList<ParameterType>(ParameterType.class, this,
-					LqnPackage.BIND_TYPE__PARAMETER);
+			parameter = new EObjectContainmentEList<ParameterType>(
+					ParameterType.class, this, LqnPackage.BIND_TYPE__PARAMETER);
 		}
 		return parameter;
 	}
@@ -96,7 +97,8 @@ public class BindTypeImpl extends MinimalEObjectImpl.Container implements BindTy
 	@Override
 	public EList<ProcessorBindingType> getProcessorBinding() {
 		if (processorBinding == null) {
-			processorBinding = new EObjectContainmentEList<ProcessorBindingType>(ProcessorBindingType.class, this,
+			processorBinding = new EObjectContainmentEList<ProcessorBindingType>(
+					ProcessorBindingType.class, this,
 					LqnPackage.BIND_TYPE__PROCESSOR_BINDING);
 		}
 		return processorBinding;
@@ -109,7 +111,8 @@ public class BindTypeImpl extends MinimalEObjectImpl.Container implements BindTy
 	@Override
 	public EList<PortBindingType> getPortBinding() {
 		if (portBinding == null) {
-			portBinding = new EObjectContainmentEList<PortBindingType>(PortBindingType.class, this,
+			portBinding = new EObjectContainmentEList<PortBindingType>(
+					PortBindingType.class, this,
 					LqnPackage.BIND_TYPE__PORT_BINDING);
 		}
 		return portBinding;
@@ -120,14 +123,18 @@ public class BindTypeImpl extends MinimalEObjectImpl.Container implements BindTy
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.BIND_TYPE__PARAMETER:
-			return ((InternalEList<?>) getParameter()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getParameter()).basicRemove(otherEnd,
+					msgs);
 		case LqnPackage.BIND_TYPE__PROCESSOR_BINDING:
-			return ((InternalEList<?>) getProcessorBinding()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getProcessorBinding()).basicRemove(
+					otherEnd, msgs);
 		case LqnPackage.BIND_TYPE__PORT_BINDING:
-			return ((InternalEList<?>) getPortBinding()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getPortBinding()).basicRemove(otherEnd,
+					msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -159,15 +166,18 @@ public class BindTypeImpl extends MinimalEObjectImpl.Container implements BindTy
 		switch (featureID) {
 		case LqnPackage.BIND_TYPE__PARAMETER:
 			getParameter().clear();
-			getParameter().addAll((Collection<? extends ParameterType>) newValue);
+			getParameter().addAll(
+					(Collection<? extends ParameterType>) newValue);
 			return;
 		case LqnPackage.BIND_TYPE__PROCESSOR_BINDING:
 			getProcessorBinding().clear();
-			getProcessorBinding().addAll((Collection<? extends ProcessorBindingType>) newValue);
+			getProcessorBinding().addAll(
+					(Collection<? extends ProcessorBindingType>) newValue);
 			return;
 		case LqnPackage.BIND_TYPE__PORT_BINDING:
 			getPortBinding().clear();
-			getPortBinding().addAll((Collection<? extends PortBindingType>) newValue);
+			getPortBinding().addAll(
+					(Collection<? extends PortBindingType>) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);

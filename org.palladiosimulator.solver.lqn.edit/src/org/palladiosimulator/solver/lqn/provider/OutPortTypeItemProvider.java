@@ -26,8 +26,9 @@ import org.palladiosimulator.solver.lqn.OutPortType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class OutPortTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,13 +64,16 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	protected void addConnectToPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutPortType_connectTo_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutPortType_connectTo_feature",
-								"_UI_OutPortType_type"),
-						LqnPackage.Literals.OUT_PORT_TYPE__CONNECT_TO, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_OutPortType_connectTo_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutPortType_connectTo_feature",
+						"_UI_OutPortType_type"),
+				LqnPackage.Literals.OUT_PORT_TYPE__CONNECT_TO, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -79,13 +83,16 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	protected void addDescriptionPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutPortType_description_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutPortType_description_feature",
-								"_UI_OutPortType_type"),
-						LqnPackage.Literals.OUT_PORT_TYPE__DESCRIPTION, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_OutPortType_description_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_OutPortType_description_feature",
+						"_UI_OutPortType_type"),
+				LqnPackage.Literals.OUT_PORT_TYPE__DESCRIPTION, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -96,12 +103,17 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	protected void addNamePropertyDescriptor(Object object) {
 		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_OutPortType_name_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_OutPortType_name_feature",
+				.add(createItemPropertyDescriptor(
+						((ComposeableAdapterFactory) adapterFactory)
+								.getRootAdapterFactory(),
+						getResourceLocator(),
+						getString("_UI_OutPortType_name_feature"),
+						getString("_UI_PropertyDescriptor_description",
+								"_UI_OutPortType_name_feature",
 								"_UI_OutPortType_type"),
-						LqnPackage.Literals.OUT_PORT_TYPE__NAME, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+						LqnPackage.Literals.OUT_PORT_TYPE__NAME, true, false,
+						false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+						null, null));
 	}
 
 	/**
@@ -111,7 +123,8 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/OutPortType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/OutPortType"));
 	}
 
 	/**
@@ -141,7 +154,8 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
 		case LqnPackage.OUT_PORT_TYPE__CONNECT_TO:
 		case LqnPackage.OUT_PORT_TYPE__DESCRIPTION:
 		case LqnPackage.OUT_PORT_TYPE__NAME:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -154,7 +168,8 @@ public class OutPortTypeItemProvider extends ItemProviderAdapter implements IEdi
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

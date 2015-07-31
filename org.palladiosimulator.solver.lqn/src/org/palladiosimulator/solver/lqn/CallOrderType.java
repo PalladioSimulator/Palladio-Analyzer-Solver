@@ -98,7 +98,8 @@ public enum CallOrderType implements Enumerator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final CallOrderType[] VALUES_ARRAY = new CallOrderType[] { STOCHASTIC, DETERMINISTIC, LIST, };
+	private static final CallOrderType[] VALUES_ARRAY = new CallOrderType[] {
+			STOCHASTIC, DETERMINISTIC, LIST, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Call Order Type</b></em>' enumerators. <!--
@@ -106,7 +107,8 @@ public enum CallOrderType implements Enumerator {
 	 *
 	 * @generated
 	 */
-	public static final List<CallOrderType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
+	public static final List<CallOrderType> VALUES = Collections
+			.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
 	 * Returns the '<em><b>Call Order Type</b></em>' literal with the specified literal value. <!--

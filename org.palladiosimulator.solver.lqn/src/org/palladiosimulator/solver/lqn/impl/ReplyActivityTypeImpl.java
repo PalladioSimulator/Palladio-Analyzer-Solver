@@ -14,14 +14,15 @@ import org.palladiosimulator.solver.lqn.ReplyActivityType;
  * <em><b>Reply Activity Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ReplyActivityTypeImpl#getName <em>Name</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ReplyActivityTypeImpl extends MinimalEObjectImpl.Container implements ReplyActivityType {
+public class ReplyActivityTypeImpl extends MinimalEObjectImpl.Container
+		implements ReplyActivityType {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -77,7 +78,8 @@ public class ReplyActivityTypeImpl extends MinimalEObjectImpl.Container implemen
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.REPLY_ACTIVITY_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.REPLY_ACTIVITY_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -129,7 +131,8 @@ public class ReplyActivityTypeImpl extends MinimalEObjectImpl.Container implemen
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.REPLY_ACTIVITY_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}

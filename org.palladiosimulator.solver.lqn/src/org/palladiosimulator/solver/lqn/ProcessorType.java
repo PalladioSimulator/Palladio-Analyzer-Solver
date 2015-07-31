@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getResultProcessor <em>Result Processor</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getGroup <em>Group</em>}</li>
@@ -29,6 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getScheduling <em>Scheduling</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ProcessorType#getSpeedFactor <em>Speed Factor</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getProcessorType()
  * @model extendedMetaData="name='ProcessorType' kind='elementOnly'"

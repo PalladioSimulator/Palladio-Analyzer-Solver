@@ -27,8 +27,9 @@ import org.palladiosimulator.solver.lqn.ProcessorBindingType;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter
+		implements IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,13 +64,17 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
 	 * @generated
 	 */
 	protected void addSourcePropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorBindingType_source_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorBindingType_source_feature",
-								"_UI_ProcessorBindingType_type"),
-						LqnPackage.Literals.PROCESSOR_BINDING_TYPE__SOURCE, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorBindingType_source_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorBindingType_source_feature",
+						"_UI_ProcessorBindingType_type"),
+				LqnPackage.Literals.PROCESSOR_BINDING_TYPE__SOURCE, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -79,13 +84,17 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
 	 * @generated
 	 */
 	protected void addTargetPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ProcessorBindingType_target_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ProcessorBindingType_target_feature",
-								"_UI_ProcessorBindingType_type"),
-						LqnPackage.Literals.PROCESSOR_BINDING_TYPE__TARGET, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ProcessorBindingType_target_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ProcessorBindingType_target_feature",
+						"_UI_ProcessorBindingType_type"),
+				LqnPackage.Literals.PROCESSOR_BINDING_TYPE__TARGET, true,
+				false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null,
+				null));
 	}
 
 	/**
@@ -95,7 +104,9 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ProcessorBindingType"));
+		return overlayImage(object,
+				getResourceLocator()
+						.getImage("full/obj16/ProcessorBindingType"));
 	}
 
 	/**
@@ -124,7 +135,8 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
 		switch (notification.getFeatureID(ProcessorBindingType.class)) {
 		case LqnPackage.PROCESSOR_BINDING_TYPE__SOURCE:
 		case LqnPackage.PROCESSOR_BINDING_TYPE__TARGET:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -137,7 +149,8 @@ public class ProcessorBindingTypeItemProvider extends ItemProviderAdapter implem
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

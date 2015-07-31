@@ -23,15 +23,16 @@ import org.palladiosimulator.solver.lqn.PlotType;
  * '. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PlotControlTypeImpl#getFirstPlot <em>First Plot</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PlotControlTypeImpl#getPlot <em>Plot</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class PlotControlTypeImpl extends MinimalEObjectImpl.Container implements PlotControlType {
+public class PlotControlTypeImpl extends MinimalEObjectImpl.Container implements
+		PlotControlType {
 	/**
 	 * The cached value of the '{@link #getFirstPlot() <em>First Plot</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -81,12 +82,14 @@ public class PlotControlTypeImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetFirstPlot(FirstPlotType newFirstPlot, NotificationChain msgs) {
+	public NotificationChain basicSetFirstPlot(FirstPlotType newFirstPlot,
+			NotificationChain msgs) {
 		FirstPlotType oldFirstPlot = firstPlot;
 		firstPlot = newFirstPlot;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT, oldFirstPlot, newFirstPlot);
+			ENotificationImpl notification = new ENotificationImpl(this,
+					Notification.SET, LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT,
+					oldFirstPlot, newFirstPlot);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -105,16 +108,21 @@ public class PlotControlTypeImpl extends MinimalEObjectImpl.Container implements
 			NotificationChain msgs = null;
 			if (firstPlot != null)
 				msgs = ((InternalEObject) firstPlot).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT,
+						null, msgs);
 			if (newFirstPlot != null)
 				msgs = ((InternalEObject) newFirstPlot).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT, null, msgs);
+						EOPPOSITE_FEATURE_BASE
+								- LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT,
+						null, msgs);
 			msgs = basicSetFirstPlot(newFirstPlot, msgs);
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT,
-					newFirstPlot, newFirstPlot));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT, newFirstPlot,
+					newFirstPlot));
 	}
 
 	/**
@@ -124,7 +132,8 @@ public class PlotControlTypeImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public EList<PlotType> getPlot() {
 		if (plot == null) {
-			plot = new EObjectContainmentEList<PlotType>(PlotType.class, this, LqnPackage.PLOT_CONTROL_TYPE__PLOT);
+			plot = new EObjectContainmentEList<PlotType>(PlotType.class, this,
+					LqnPackage.PLOT_CONTROL_TYPE__PLOT);
 		}
 		return plot;
 	}
@@ -134,7 +143,8 @@ public class PlotControlTypeImpl extends MinimalEObjectImpl.Container implements
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.PLOT_CONTROL_TYPE__FIRST_PLOT:
 			return basicSetFirstPlot(null, msgs);

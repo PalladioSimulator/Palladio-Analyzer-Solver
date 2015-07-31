@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.FanInType#getSource <em>Source</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.FanInType#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getFanInType()
  * @model extendedMetaData="name='FanInType' kind='empty'"

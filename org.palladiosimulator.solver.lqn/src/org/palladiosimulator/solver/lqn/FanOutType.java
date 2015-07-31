@@ -12,11 +12,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.FanOutType#getDest <em>Dest</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.FanOutType#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getFanOutType()
  * @model extendedMetaData="name='FanOutType' kind='empty'"

@@ -24,7 +24,6 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
@@ -32,10 +31,12 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getLqnCore <em>Lqn Core</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl#getLqnModel <em>Lqn Model</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class DocumentRootImpl extends MinimalEObjectImpl.Container implements DocumentRoot {
+public class DocumentRootImpl extends MinimalEObjectImpl.Container implements
+		DocumentRoot {
 	/**
 	 * The cached value of the '{@link #getMixed() <em>Mixed</em>}' attribute list. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
@@ -101,8 +102,10 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	@Override
 	public EMap<String, String> getXMLNSPrefixMap() {
 		if (xMLNSPrefixMap == null) {
-			xMLNSPrefixMap = new EcoreEMap<String, String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY,
-					EStringToStringMapEntryImpl.class, this, LqnPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
+			xMLNSPrefixMap = new EcoreEMap<String, String>(
+					EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY,
+					EStringToStringMapEntryImpl.class, this,
+					LqnPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP);
 		}
 		return xMLNSPrefixMap;
 	}
@@ -114,8 +117,10 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	@Override
 	public EMap<String, String> getXSISchemaLocation() {
 		if (xSISchemaLocation == null) {
-			xSISchemaLocation = new EcoreEMap<String, String>(EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY,
-					EStringToStringMapEntryImpl.class, this, LqnPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
+			xSISchemaLocation = new EcoreEMap<String, String>(
+					EcorePackage.Literals.ESTRING_TO_STRING_MAP_ENTRY,
+					EStringToStringMapEntryImpl.class, this,
+					LqnPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION);
 		}
 		return xSISchemaLocation;
 	}
@@ -126,16 +131,18 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public LqnCoreType getLqnCore() {
-		return (LqnCoreType) getMixed().get(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE, true);
+		return (LqnCoreType) getMixed().get(
+				LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLqnCore(LqnCoreType newLqnCore, NotificationChain msgs) {
-		return ((FeatureMap.Internal) getMixed()).basicAdd(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE, newLqnCore,
-				msgs);
+	public NotificationChain basicSetLqnCore(LqnCoreType newLqnCore,
+			NotificationChain msgs) {
+		return ((FeatureMap.Internal) getMixed()).basicAdd(
+				LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE, newLqnCore, msgs);
 	}
 
 	/**
@@ -144,7 +151,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setLqnCore(LqnCoreType newLqnCore) {
-		((FeatureMap.Internal) getMixed()).set(LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE, newLqnCore);
+		((FeatureMap.Internal) getMixed()).set(
+				LqnPackage.Literals.DOCUMENT_ROOT__LQN_CORE, newLqnCore);
 	}
 
 	/**
@@ -153,16 +161,19 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public LqnModelType getLqnModel() {
-		return (LqnModelType) getMixed().get(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL, true);
+		return (LqnModelType) getMixed().get(
+				LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetLqnModel(LqnModelType newLqnModel, NotificationChain msgs) {
-		return ((FeatureMap.Internal) getMixed()).basicAdd(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL, newLqnModel,
-				msgs);
+	public NotificationChain basicSetLqnModel(LqnModelType newLqnModel,
+			NotificationChain msgs) {
+		return ((FeatureMap.Internal) getMixed())
+				.basicAdd(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL,
+						newLqnModel, msgs);
 	}
 
 	/**
@@ -171,7 +182,8 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 */
 	@Override
 	public void setLqnModel(LqnModelType newLqnModel) {
-		((FeatureMap.Internal) getMixed()).set(LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL, newLqnModel);
+		((FeatureMap.Internal) getMixed()).set(
+				LqnPackage.Literals.DOCUMENT_ROOT__LQN_MODEL, newLqnModel);
 	}
 
 	/**
@@ -179,14 +191,17 @@ public class DocumentRootImpl extends MinimalEObjectImpl.Container implements Do
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.DOCUMENT_ROOT__MIXED:
 			return ((InternalEList<?>) getMixed()).basicRemove(otherEnd, msgs);
 		case LqnPackage.DOCUMENT_ROOT__XMLNS_PREFIX_MAP:
-			return ((InternalEList<?>) getXMLNSPrefixMap()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getXMLNSPrefixMap()).basicRemove(
+					otherEnd, msgs);
 		case LqnPackage.DOCUMENT_ROOT__XSI_SCHEMA_LOCATION:
-			return ((InternalEList<?>) getXSISchemaLocation()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getXSISchemaLocation()).basicRemove(
+					otherEnd, msgs);
 		case LqnPackage.DOCUMENT_ROOT__LQN_CORE:
 			return basicSetLqnCore(null, msgs);
 		case LqnPackage.DOCUMENT_ROOT__LQN_MODEL:

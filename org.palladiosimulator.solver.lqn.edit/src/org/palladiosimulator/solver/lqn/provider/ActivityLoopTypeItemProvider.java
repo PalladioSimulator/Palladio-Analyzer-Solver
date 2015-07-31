@@ -53,13 +53,16 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
 	 * @generated
 	 */
 	protected void addCountPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_ActivityLoopType_count_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_ActivityLoopType_count_feature",
-								"_UI_ActivityLoopType_type"),
-						LqnPackage.Literals.ACTIVITY_LOOP_TYPE__COUNT, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_ActivityLoopType_count_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_ActivityLoopType_count_feature",
+						"_UI_ActivityLoopType_type"),
+				LqnPackage.Literals.ACTIVITY_LOOP_TYPE__COUNT, true, false,
+				false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -69,7 +72,8 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/ActivityLoopType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/ActivityLoopType"));
 	}
 
 	/**
@@ -97,7 +101,8 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
 
 		switch (notification.getFeatureID(ActivityLoopType.class)) {
 		case LqnPackage.ACTIVITY_LOOP_TYPE__COUNT:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -110,7 +115,8 @@ public class ActivityLoopTypeItemProvider extends ActivityTypeItemProvider {
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 	}
 

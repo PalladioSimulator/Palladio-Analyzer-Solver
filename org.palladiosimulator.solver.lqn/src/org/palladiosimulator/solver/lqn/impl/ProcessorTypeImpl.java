@@ -27,7 +27,6 @@ import org.palladiosimulator.solver.lqn.TaskType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getResultProcessor <em>Result Processor</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getGroup <em>Group</em>}</li>
@@ -39,10 +38,12 @@ import org.palladiosimulator.solver.lqn.TaskType;
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getScheduling <em>Scheduling</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl#getSpeedFactor <em>Speed Factor</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements ProcessorType {
+public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements
+		ProcessorType {
 	/**
 	 * The cached value of the '{@link #getResultProcessor() <em>Result Processor</em>}' containment reference list.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -81,7 +82,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 	 * @ordered
 	 */
 	protected static final Object MULTIPLICITY_EDEFAULT = LqnFactory.eINSTANCE
-			.createFromString(LqnPackage.eINSTANCE.getSrvnNonNegativeInteger(), "1");
+			.createFromString(LqnPackage.eINSTANCE.getSrvnNonNegativeInteger(),
+					"1");
 
 	/**
 	 * The cached value of the '{@link #getMultiplicity() <em>Multiplicity</em>}' attribute. <!--
@@ -264,7 +266,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 	@Override
 	public EList<OutputResultType> getResultProcessor() {
 		if (resultProcessor == null) {
-			resultProcessor = new EObjectContainmentEList<OutputResultType>(OutputResultType.class, this,
+			resultProcessor = new EObjectContainmentEList<OutputResultType>(
+					OutputResultType.class, this,
 					LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR);
 		}
 		return resultProcessor;
@@ -277,7 +280,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 	@Override
 	public EList<GroupType> getGroup() {
 		if (group == null) {
-			group = new EObjectContainmentEList<GroupType>(GroupType.class, this, LqnPackage.PROCESSOR_TYPE__GROUP);
+			group = new EObjectContainmentEList<GroupType>(GroupType.class,
+					this, LqnPackage.PROCESSOR_TYPE__GROUP);
 		}
 		return group;
 	}
@@ -289,7 +293,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 	@Override
 	public EList<TaskType> getTask() {
 		if (task == null) {
-			task = new EObjectContainmentEList<TaskType>(TaskType.class, this, LqnPackage.PROCESSOR_TYPE__TASK);
+			task = new EObjectContainmentEList<TaskType>(TaskType.class, this,
+					LqnPackage.PROCESSOR_TYPE__TASK);
 		}
 		return task;
 	}
@@ -314,8 +319,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		boolean oldMultiplicityESet = multiplicityESet;
 		multiplicityESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__MULTIPLICITY,
-					oldMultiplicity, multiplicity, !oldMultiplicityESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_TYPE__MULTIPLICITY, oldMultiplicity,
+					multiplicity, !oldMultiplicityESet));
 	}
 
 	/**
@@ -329,8 +335,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		multiplicity = MULTIPLICITY_EDEFAULT;
 		multiplicityESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PROCESSOR_TYPE__MULTIPLICITY,
-					oldMultiplicity, MULTIPLICITY_EDEFAULT, oldMultiplicityESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PROCESSOR_TYPE__MULTIPLICITY, oldMultiplicity,
+					MULTIPLICITY_EDEFAULT, oldMultiplicityESet));
 	}
 
 	/**
@@ -360,7 +367,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_TYPE__NAME, oldName, name));
 	}
 
 	/**
@@ -383,8 +391,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		boolean oldQuantumESet = quantumESet;
 		quantumESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__QUANTUM, oldQuantum,
-					quantum, !oldQuantumESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_TYPE__QUANTUM, oldQuantum, quantum,
+					!oldQuantumESet));
 	}
 
 	/**
@@ -398,7 +407,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		quantum = QUANTUM_EDEFAULT;
 		quantumESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PROCESSOR_TYPE__QUANTUM, oldQuantum,
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PROCESSOR_TYPE__QUANTUM, oldQuantum,
 					QUANTUM_EDEFAULT, oldQuantumESet));
 	}
 
@@ -431,8 +441,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		boolean oldReplicationESet = replicationESet;
 		replicationESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__REPLICATION,
-					oldReplication, replication, !oldReplicationESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_TYPE__REPLICATION, oldReplication,
+					replication, !oldReplicationESet));
 	}
 
 	/**
@@ -446,8 +457,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		replication = REPLICATION_EDEFAULT;
 		replicationESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PROCESSOR_TYPE__REPLICATION,
-					oldReplication, REPLICATION_EDEFAULT, oldReplicationESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PROCESSOR_TYPE__REPLICATION, oldReplication,
+					REPLICATION_EDEFAULT, oldReplicationESet));
 	}
 
 	/**
@@ -475,11 +487,13 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 	@Override
 	public void setScheduling(SchedulingType newScheduling) {
 		SchedulingType oldScheduling = scheduling;
-		scheduling = newScheduling == null ? SCHEDULING_EDEFAULT : newScheduling;
+		scheduling = newScheduling == null ? SCHEDULING_EDEFAULT
+				: newScheduling;
 		boolean oldSchedulingESet = schedulingESet;
 		schedulingESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__SCHEDULING, oldScheduling,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_TYPE__SCHEDULING, oldScheduling,
 					scheduling, !oldSchedulingESet));
 	}
 
@@ -494,8 +508,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		scheduling = SCHEDULING_EDEFAULT;
 		schedulingESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PROCESSOR_TYPE__SCHEDULING,
-					oldScheduling, SCHEDULING_EDEFAULT, oldSchedulingESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PROCESSOR_TYPE__SCHEDULING, oldScheduling,
+					SCHEDULING_EDEFAULT, oldSchedulingESet));
 	}
 
 	/**
@@ -527,8 +542,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		boolean oldSpeedFactorESet = speedFactorESet;
 		speedFactorESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PROCESSOR_TYPE__SPEED_FACTOR,
-					oldSpeedFactor, speedFactor, !oldSpeedFactorESet));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PROCESSOR_TYPE__SPEED_FACTOR, oldSpeedFactor,
+					speedFactor, !oldSpeedFactorESet));
 	}
 
 	/**
@@ -542,8 +558,9 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		speedFactor = SPEED_FACTOR_EDEFAULT;
 		speedFactorESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.PROCESSOR_TYPE__SPEED_FACTOR,
-					oldSpeedFactor, SPEED_FACTOR_EDEFAULT, oldSpeedFactorESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.PROCESSOR_TYPE__SPEED_FACTOR, oldSpeedFactor,
+					SPEED_FACTOR_EDEFAULT, oldSpeedFactorESet));
 	}
 
 	/**
@@ -560,10 +577,12 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+	public NotificationChain eInverseRemove(InternalEObject otherEnd,
+			int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
-			return ((InternalEList<?>) getResultProcessor()).basicRemove(otherEnd, msgs);
+			return ((InternalEList<?>) getResultProcessor()).basicRemove(
+					otherEnd, msgs);
 		case LqnPackage.PROCESSOR_TYPE__GROUP:
 			return ((InternalEList<?>) getGroup()).basicRemove(otherEnd, msgs);
 		case LqnPackage.PROCESSOR_TYPE__TASK:
@@ -611,7 +630,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		switch (featureID) {
 		case LqnPackage.PROCESSOR_TYPE__RESULT_PROCESSOR:
 			getResultProcessor().clear();
-			getResultProcessor().addAll((Collection<? extends OutputResultType>) newValue);
+			getResultProcessor().addAll(
+					(Collection<? extends OutputResultType>) newValue);
 			return;
 		case LqnPackage.PROCESSOR_TYPE__GROUP:
 			getGroup().clear();
@@ -697,7 +717,8 @@ public class ProcessorTypeImpl extends MinimalEObjectImpl.Container implements P
 		case LqnPackage.PROCESSOR_TYPE__MULTIPLICITY:
 			return isSetMultiplicity();
 		case LqnPackage.PROCESSOR_TYPE__NAME:
-			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT
+					.equals(name);
 		case LqnPackage.PROCESSOR_TYPE__QUANTUM:
 			return isSetQuantum();
 		case LqnPackage.PROCESSOR_TYPE__REPLICATION:

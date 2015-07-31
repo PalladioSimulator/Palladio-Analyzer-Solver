@@ -11,7 +11,6 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getCallList <em>Call List</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getGroup <em>Group</em>}</li>
@@ -19,6 +18,7 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getAsynchCall <em>Asynch Call</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.EntryActivityDefType#getFirstActivity <em>First Activity</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getEntryActivityDefType()
  * @model extendedMetaData="name='EntryActivityDefType' kind='elementOnly'"

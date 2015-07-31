@@ -14,15 +14,16 @@ import org.palladiosimulator.solver.lqn.PragmaType;
  * end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PragmaTypeImpl#getParam <em>Param</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.PragmaTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class PragmaTypeImpl extends MinimalEObjectImpl.Container implements PragmaType {
+public class PragmaTypeImpl extends MinimalEObjectImpl.Container implements
+		PragmaType {
 	/**
 	 * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -98,7 +99,8 @@ public class PragmaTypeImpl extends MinimalEObjectImpl.Container implements Prag
 		String oldParam = param;
 		param = newParam;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRAGMA_TYPE__PARAM, oldParam, param));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRAGMA_TYPE__PARAM, oldParam, param));
 	}
 
 	/**
@@ -119,7 +121,8 @@ public class PragmaTypeImpl extends MinimalEObjectImpl.Container implements Prag
 		String oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.PRAGMA_TYPE__VALUE, oldValue, value));
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.PRAGMA_TYPE__VALUE, oldValue, value));
 	}
 
 	/**
@@ -179,9 +182,11 @@ public class PragmaTypeImpl extends MinimalEObjectImpl.Container implements Prag
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 		case LqnPackage.PRAGMA_TYPE__PARAM:
-			return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
+			return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT
+					.equals(param);
 		case LqnPackage.PRAGMA_TYPE__VALUE:
-			return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT
+					.equals(value);
 		}
 		return super.eIsSet(featureID);
 	}

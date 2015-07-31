@@ -13,14 +13,15 @@ import org.palladiosimulator.solver.lqn.LqnPackage;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.impl.ActivityOrTypeImpl#getProb <em>Prob</em>}</li>
  * </ul>
+ * </p>
  *
  * @generated
  */
-public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrType {
+public class ActivityOrTypeImpl extends ActivityTypeImpl implements
+		ActivityOrType {
 	/**
 	 * The default value of the '{@link #getProb() <em>Prob</em>}' attribute.
 	 * <!-- begin-user-doc
@@ -87,7 +88,8 @@ public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrTy
 		boolean oldProbESet = probESet;
 		probESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LqnPackage.ACTIVITY_OR_TYPE__PROB, oldProb, prob,
+			eNotify(new ENotificationImpl(this, Notification.SET,
+					LqnPackage.ACTIVITY_OR_TYPE__PROB, oldProb, prob,
 					!oldProbESet));
 	}
 
@@ -102,8 +104,9 @@ public class ActivityOrTypeImpl extends ActivityTypeImpl implements ActivityOrTy
 		prob = PROB_EDEFAULT;
 		probESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LqnPackage.ACTIVITY_OR_TYPE__PROB, oldProb,
-					PROB_EDEFAULT, oldProbESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET,
+					LqnPackage.ACTIVITY_OR_TYPE__PROB, oldProb, PROB_EDEFAULT,
+					oldProbESet));
 	}
 
 	/**

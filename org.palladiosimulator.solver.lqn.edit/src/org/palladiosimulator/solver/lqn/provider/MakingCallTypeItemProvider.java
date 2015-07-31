@@ -28,8 +28,9 @@ import org.palladiosimulator.solver.lqn.MakingCallType;
  * <!-- begin-user-doc --> <!-- end-user-doc -->
  * @generated
  */
-public class MakingCallTypeItemProvider extends ItemProviderAdapter implements IEditingDomainItemProvider,
-		IStructuredItemContentProvider, ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
+public class MakingCallTypeItemProvider extends ItemProviderAdapter implements
+		IEditingDomainItemProvider, IStructuredItemContentProvider,
+		ITreeItemContentProvider, IItemLabelProvider, IItemPropertySource {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc --> <!--
@@ -63,13 +64,16 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	protected void addDestPropertyDescriptor(Object object) {
-		itemPropertyDescriptors
-				.add(createItemPropertyDescriptor(((ComposeableAdapterFactory) adapterFactory).getRootAdapterFactory(),
-						getResourceLocator(), getString("_UI_MakingCallType_dest_feature"),
-						getString("_UI_PropertyDescriptor_description", "_UI_MakingCallType_dest_feature",
-								"_UI_MakingCallType_type"),
-						LqnPackage.Literals.MAKING_CALL_TYPE__DEST, true, false, false,
-						ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
+		itemPropertyDescriptors.add(createItemPropertyDescriptor(
+				((ComposeableAdapterFactory) adapterFactory)
+						.getRootAdapterFactory(),
+				getResourceLocator(),
+				getString("_UI_MakingCallType_dest_feature"),
+				getString("_UI_PropertyDescriptor_description",
+						"_UI_MakingCallType_dest_feature",
+						"_UI_MakingCallType_type"),
+				LqnPackage.Literals.MAKING_CALL_TYPE__DEST, true, false, false,
+				ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
 	}
 
 	/**
@@ -82,10 +86,12 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
+	public Collection<? extends EStructuralFeature> getChildrenFeatures(
+			Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(LqnPackage.Literals.MAKING_CALL_TYPE__RESULT_CALL);
+			childrenFeatures
+					.add(LqnPackage.Literals.MAKING_CALL_TYPE__RESULT_CALL);
 		}
 		return childrenFeatures;
 	}
@@ -109,7 +115,8 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/MakingCallType"));
+		return overlayImage(object,
+				getResourceLocator().getImage("full/obj16/MakingCallType"));
 	}
 
 	/**
@@ -137,10 +144,12 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
 
 		switch (notification.getFeatureID(MakingCallType.class)) {
 		case LqnPackage.MAKING_CALL_TYPE__DEST:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), false, true));
 			return;
 		case LqnPackage.MAKING_CALL_TYPE__RESULT_CALL:
-			fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+			fireNotifyChanged(new ViewerNotification(notification,
+					notification.getNotifier(), true, false));
 			return;
 		}
 		super.notifyChanged(notification);
@@ -153,10 +162,12 @@ public class MakingCallTypeItemProvider extends ItemProviderAdapter implements I
 	 * @generated
 	 */
 	@Override
-	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
+	protected void collectNewChildDescriptors(
+			Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-		newChildDescriptors.add(createChildParameter(LqnPackage.Literals.MAKING_CALL_TYPE__RESULT_CALL,
+		newChildDescriptors.add(createChildParameter(
+				LqnPackage.Literals.MAKING_CALL_TYPE__RESULT_CALL,
 				LqnFactory.eINSTANCE.createOutputResultType()));
 	}
 

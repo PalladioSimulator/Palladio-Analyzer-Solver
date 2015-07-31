@@ -10,11 +10,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
- * </p>
  * <ul>
  *   <li>{@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinVariance <em>Join Variance</em>}</li>
  *   <li>{@link org.palladiosimulator.solver.lqn.ResultConf95Type#getJoinWaiting <em>Join Waiting</em>}</li>
  * </ul>
+ * </p>
  *
  * @see org.palladiosimulator.solver.lqn.LqnPackage#getResultConf95Type()
  * @model extendedMetaData="name='result-conf-95_._type' kind='empty'"

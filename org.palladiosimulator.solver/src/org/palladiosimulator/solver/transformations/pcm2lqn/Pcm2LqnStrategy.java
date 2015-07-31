@@ -275,7 +275,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		/* return if results are available or throw exception. */
 		if(!solverProgram.equals(FILENAME_LINE)){
 			if (exitVal == LQNS_RETURN_SUCCESS) {
-				logger.warn("Analysis Result has been written to the .out file (human readable), the input file (in which case the original is saved with ~ suffix), or " + resultFile);
+				logger.warn("Analysis Result has been written to " + resultFile);
 				if (lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)){
 					//showOutput(resultFile);
 					LQNHtmlResultGenerator result = new LQNHtmlResultGenerator(resultFile);

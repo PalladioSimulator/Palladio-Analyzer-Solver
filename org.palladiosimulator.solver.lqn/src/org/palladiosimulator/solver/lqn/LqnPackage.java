@@ -52,7 +52,8 @@ public interface LqnPackage extends EPackage {
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	LqnPackage eINSTANCE = org.palladiosimulator.solver.lqn.impl.LqnPackageImpl.init();
+	LqnPackage eINSTANCE = org.palladiosimulator.solver.lqn.impl.LqnPackageImpl
+			.init();
 
 	/**
 	 * The meta object id for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityDefBaseImpl <em>Activity Def Base</em>}' class.
@@ -9701,7 +9702,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_DEF_BASE__RESULT_ACTIVITY = eINSTANCE.getActivityDefBase_ResultActivity();
+		EReference ACTIVITY_DEF_BASE__RESULT_ACTIVITY = eINSTANCE
+				.getActivityDefBase_ResultActivity();
 
 		/**
 		 * The meta object literal for the '<em><b>Call Order</b></em>' attribute feature. <!--
@@ -9709,28 +9711,32 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_BASE__CALL_ORDER = eINSTANCE.getActivityDefBase_CallOrder();
+		EAttribute ACTIVITY_DEF_BASE__CALL_ORDER = eINSTANCE
+				.getActivityDefBase_CallOrder();
 
 		/**
 		 * The meta object literal for the '<em><b>Host Demand Cvsq</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ = eINSTANCE.getActivityDefBase_HostDemandCvsq();
+		EAttribute ACTIVITY_DEF_BASE__HOST_DEMAND_CVSQ = eINSTANCE
+				.getActivityDefBase_HostDemandCvsq();
 
 		/**
 		 * The meta object literal for the '<em><b>Host Demand Mean</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN = eINSTANCE.getActivityDefBase_HostDemandMean();
+		EAttribute ACTIVITY_DEF_BASE__HOST_DEMAND_MEAN = eINSTANCE
+				.getActivityDefBase_HostDemandMean();
 
 		/**
 		 * The meta object literal for the '<em><b>Max Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_BASE__MAX_SERVICE_TIME = eINSTANCE.getActivityDefBase_MaxServiceTime();
+		EAttribute ACTIVITY_DEF_BASE__MAX_SERVICE_TIME = eINSTANCE
+				.getActivityDefBase_MaxServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -9738,7 +9744,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_BASE__NAME = eINSTANCE.getActivityDefBase_Name();
+		EAttribute ACTIVITY_DEF_BASE__NAME = eINSTANCE
+				.getActivityDefBase_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Think Time</b></em>' attribute feature. <!--
@@ -9746,7 +9753,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_BASE__THINK_TIME = eINSTANCE.getActivityDefBase_ThinkTime();
+		EAttribute ACTIVITY_DEF_BASE__THINK_TIME = eINSTANCE
+				.getActivityDefBase_ThinkTime();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityDefTypeImpl <em>Activity Def Type</em>}' class.
@@ -9762,7 +9770,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_DEF_TYPE__CALL_LIST = eINSTANCE.getActivityDefType_CallList();
+		EReference ACTIVITY_DEF_TYPE__CALL_LIST = eINSTANCE
+				.getActivityDefType_CallList();
 
 		/**
 		 * The meta object literal for the '<em><b>Group</b></em>' attribute list feature. <!--
@@ -9770,21 +9779,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_TYPE__GROUP = eINSTANCE.getActivityDefType_Group();
+		EAttribute ACTIVITY_DEF_TYPE__GROUP = eINSTANCE
+				.getActivityDefType_Group();
 
 		/**
 		 * The meta object literal for the '<em><b>Synch Call</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_DEF_TYPE__SYNCH_CALL = eINSTANCE.getActivityDefType_SynchCall();
+		EReference ACTIVITY_DEF_TYPE__SYNCH_CALL = eINSTANCE
+				.getActivityDefType_SynchCall();
 
 		/**
 		 * The meta object literal for the '<em><b>Asynch Call</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_DEF_TYPE__ASYNCH_CALL = eINSTANCE.getActivityDefType_AsynchCall();
+		EReference ACTIVITY_DEF_TYPE__ASYNCH_CALL = eINSTANCE
+				.getActivityDefType_AsynchCall();
 
 		/**
 		 * The meta object literal for the '<em><b>Bound To Entry</b></em>' attribute feature. <!--
@@ -9792,7 +9804,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_DEF_TYPE__BOUND_TO_ENTRY = eINSTANCE.getActivityDefType_BoundToEntry();
+		EAttribute ACTIVITY_DEF_TYPE__BOUND_TO_ENTRY = eINSTANCE
+				.getActivityDefType_BoundToEntry();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityGraphBaseImpl <em>Activity Graph Base</em>}' class.
@@ -9808,14 +9821,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_GRAPH_BASE__ACTIVITY = eINSTANCE.getActivityGraphBase_Activity();
+		EReference ACTIVITY_GRAPH_BASE__ACTIVITY = eINSTANCE
+				.getActivityGraphBase_Activity();
 
 		/**
 		 * The meta object literal for the '<em><b>Precedence</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_GRAPH_BASE__PRECEDENCE = eINSTANCE.getActivityGraphBase_Precedence();
+		EReference ACTIVITY_GRAPH_BASE__PRECEDENCE = eINSTANCE
+				.getActivityGraphBase_Precedence();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityListTypeImpl <em>Activity List Type</em>}' class.
@@ -9831,7 +9846,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_LIST_TYPE__ACTIVITY = eINSTANCE.getActivityListType_Activity();
+		EReference ACTIVITY_LIST_TYPE__ACTIVITY = eINSTANCE
+				.getActivityListType_Activity();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopListTypeImpl <em>Activity Loop List Type</em>}' class.
@@ -9847,7 +9863,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_LOOP_LIST_TYPE__ACTIVITY = eINSTANCE.getActivityLoopListType_Activity();
+		EReference ACTIVITY_LOOP_LIST_TYPE__ACTIVITY = eINSTANCE
+				.getActivityLoopListType_Activity();
 
 		/**
 		 * The meta object literal for the '<em><b>End</b></em>' attribute feature. <!--
@@ -9855,7 +9872,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_LOOP_LIST_TYPE__END = eINSTANCE.getActivityLoopListType_End();
+		EAttribute ACTIVITY_LOOP_LIST_TYPE__END = eINSTANCE
+				.getActivityLoopListType_End();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityLoopTypeImpl <em>Activity Loop Type</em>}' class.
@@ -9872,7 +9890,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_LOOP_TYPE__COUNT = eINSTANCE.getActivityLoopType_Count();
+		EAttribute ACTIVITY_LOOP_TYPE__COUNT = eINSTANCE
+				.getActivityLoopType_Count();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityMakingCallTypeImpl <em>Activity Making Call Type</em>}' class.
@@ -9881,7 +9900,8 @@ public interface LqnPackage extends EPackage {
 		 * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getActivityMakingCallType()
 		 * @generated
 		 */
-		EClass ACTIVITY_MAKING_CALL_TYPE = eINSTANCE.getActivityMakingCallType();
+		EClass ACTIVITY_MAKING_CALL_TYPE = eINSTANCE
+				.getActivityMakingCallType();
 
 		/**
 		 * The meta object literal for the '<em><b>Calls Mean</b></em>' attribute feature. <!--
@@ -9889,7 +9909,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN = eINSTANCE.getActivityMakingCallType_CallsMean();
+		EAttribute ACTIVITY_MAKING_CALL_TYPE__CALLS_MEAN = eINSTANCE
+				.getActivityMakingCallType_CallsMean();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityOrTypeImpl <em>Activity Or Type</em>}' class.
@@ -9922,7 +9943,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_PHASES_TYPE__CALL_LIST = eINSTANCE.getActivityPhasesType_CallList();
+		EReference ACTIVITY_PHASES_TYPE__CALL_LIST = eINSTANCE
+				.getActivityPhasesType_CallList();
 
 		/**
 		 * The meta object literal for the '<em><b>Group</b></em>' attribute list feature. <!--
@@ -9930,21 +9952,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_PHASES_TYPE__GROUP = eINSTANCE.getActivityPhasesType_Group();
+		EAttribute ACTIVITY_PHASES_TYPE__GROUP = eINSTANCE
+				.getActivityPhasesType_Group();
 
 		/**
 		 * The meta object literal for the '<em><b>Synch Call</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_PHASES_TYPE__SYNCH_CALL = eINSTANCE.getActivityPhasesType_SynchCall();
+		EReference ACTIVITY_PHASES_TYPE__SYNCH_CALL = eINSTANCE
+				.getActivityPhasesType_SynchCall();
 
 		/**
 		 * The meta object literal for the '<em><b>Asynch Call</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ACTIVITY_PHASES_TYPE__ASYNCH_CALL = eINSTANCE.getActivityPhasesType_AsynchCall();
+		EReference ACTIVITY_PHASES_TYPE__ASYNCH_CALL = eINSTANCE
+				.getActivityPhasesType_AsynchCall();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase</b></em>' attribute feature. <!--
@@ -9952,7 +9977,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ACTIVITY_PHASES_TYPE__PHASE = eINSTANCE.getActivityPhasesType_Phase();
+		EAttribute ACTIVITY_PHASES_TYPE__PHASE = eINSTANCE
+				.getActivityPhasesType_Phase();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ActivityTypeImpl <em>Activity Type</em>}' class.
@@ -9985,7 +10011,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY = eINSTANCE.getAndJoinListType_ResultJoinDelay();
+		EReference AND_JOIN_LIST_TYPE__RESULT_JOIN_DELAY = eINSTANCE
+				.getAndJoinListType_ResultJoinDelay();
 
 		/**
 		 * The meta object literal for the '<em><b>Service Time Distribution</b></em>' containment reference list feature.
@@ -10000,7 +10027,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference AND_JOIN_LIST_TYPE__ACTIVITY = eINSTANCE.getAndJoinListType_Activity();
+		EReference AND_JOIN_LIST_TYPE__ACTIVITY = eINSTANCE
+				.getAndJoinListType_Activity();
 
 		/**
 		 * The meta object literal for the '<em><b>Quorum</b></em>' attribute feature. <!--
@@ -10008,7 +10036,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute AND_JOIN_LIST_TYPE__QUORUM = eINSTANCE.getAndJoinListType_Quorum();
+		EAttribute AND_JOIN_LIST_TYPE__QUORUM = eINSTANCE
+				.getAndJoinListType_Quorum();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.AsynchCallTypeImpl <em>Asynch Call Type</em>}' class.
@@ -10048,14 +10077,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference BIND_TYPE__PROCESSOR_BINDING = eINSTANCE.getBindType_ProcessorBinding();
+		EReference BIND_TYPE__PROCESSOR_BINDING = eINSTANCE
+				.getBindType_ProcessorBinding();
 
 		/**
 		 * The meta object literal for the '<em><b>Port Binding</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference BIND_TYPE__PORT_BINDING = eINSTANCE.getBindType_PortBinding();
+		EReference BIND_TYPE__PORT_BINDING = eINSTANCE
+				.getBindType_PortBinding();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.CallListTypeImpl <em>Call List Type</em>}' class.
@@ -10071,14 +10102,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CALL_LIST_TYPE__SYNCH_CALL = eINSTANCE.getCallListType_SynchCall();
+		EReference CALL_LIST_TYPE__SYNCH_CALL = eINSTANCE
+				.getCallListType_SynchCall();
 
 		/**
 		 * The meta object literal for the '<em><b>Asynch Call</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CALL_LIST_TYPE__ASYNCH_CALL = eINSTANCE.getCallListType_AsynchCall();
+		EReference CALL_LIST_TYPE__ASYNCH_CALL = eINSTANCE
+				.getCallListType_AsynchCall();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.DocumentRootImpl <em>Document Root</em>}' class.
@@ -10103,7 +10136,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EReference DOCUMENT_ROOT__XMLNS_PREFIX_MAP = eINSTANCE.getDocumentRoot_XMLNSPrefixMap();
+		EReference DOCUMENT_ROOT__XMLNS_PREFIX_MAP = eINSTANCE
+				.getDocumentRoot_XMLNSPrefixMap();
 
 		/**
 		 * The meta object literal for the '<em><b>XSI Schema Location</b></em>' map feature. <!--
@@ -10111,21 +10145,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EReference DOCUMENT_ROOT__XSI_SCHEMA_LOCATION = eINSTANCE.getDocumentRoot_XSISchemaLocation();
+		EReference DOCUMENT_ROOT__XSI_SCHEMA_LOCATION = eINSTANCE
+				.getDocumentRoot_XSISchemaLocation();
 
 		/**
 		 * The meta object literal for the '<em><b>Lqn Core</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DOCUMENT_ROOT__LQN_CORE = eINSTANCE.getDocumentRoot_LqnCore();
+		EReference DOCUMENT_ROOT__LQN_CORE = eINSTANCE
+				.getDocumentRoot_LqnCore();
 
 		/**
 		 * The meta object literal for the '<em><b>Lqn Model</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DOCUMENT_ROOT__LQN_MODEL = eINSTANCE.getDocumentRoot_LqnModel();
+		EReference DOCUMENT_ROOT__LQN_MODEL = eINSTANCE
+				.getDocumentRoot_LqnModel();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.EntryActivityDefTypeImpl <em>Entry Activity Def Type</em>}' class.
@@ -10141,7 +10178,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST = eINSTANCE.getEntryActivityDefType_CallList();
+		EReference ENTRY_ACTIVITY_DEF_TYPE__CALL_LIST = eINSTANCE
+				.getEntryActivityDefType_CallList();
 
 		/**
 		 * The meta object literal for the '<em><b>Group</b></em>' attribute list feature. <!--
@@ -10149,21 +10187,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ENTRY_ACTIVITY_DEF_TYPE__GROUP = eINSTANCE.getEntryActivityDefType_Group();
+		EAttribute ENTRY_ACTIVITY_DEF_TYPE__GROUP = eINSTANCE
+				.getEntryActivityDefType_Group();
 
 		/**
 		 * The meta object literal for the '<em><b>Synch Call</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL = eINSTANCE.getEntryActivityDefType_SynchCall();
+		EReference ENTRY_ACTIVITY_DEF_TYPE__SYNCH_CALL = eINSTANCE
+				.getEntryActivityDefType_SynchCall();
 
 		/**
 		 * The meta object literal for the '<em><b>Asynch Call</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL = eINSTANCE.getEntryActivityDefType_AsynchCall();
+		EReference ENTRY_ACTIVITY_DEF_TYPE__ASYNCH_CALL = eINSTANCE
+				.getEntryActivityDefType_AsynchCall();
 
 		/**
 		 * The meta object literal for the '<em><b>First Activity</b></em>' attribute feature. <!--
@@ -10171,7 +10212,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY = eINSTANCE.getEntryActivityDefType_FirstActivity();
+		EAttribute ENTRY_ACTIVITY_DEF_TYPE__FIRST_ACTIVITY = eINSTANCE
+				.getEntryActivityDefType_FirstActivity();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.EntryActivityGraphImpl <em>Entry Activity Graph</em>}' class.
@@ -10187,7 +10229,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY = eINSTANCE.getEntryActivityGraph_ReplyActivity();
+		EReference ENTRY_ACTIVITY_GRAPH__REPLY_ACTIVITY = eINSTANCE
+				.getEntryActivityGraph_ReplyActivity();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.EntryMakingCallTypeImpl <em>Entry Making Call Type</em>}' class.
@@ -10204,7 +10247,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute ENTRY_MAKING_CALL_TYPE__PROB = eINSTANCE.getEntryMakingCallType_Prob();
+		EAttribute ENTRY_MAKING_CALL_TYPE__PROB = eINSTANCE
+				.getEntryMakingCallType_Prob();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.EntryTypeImpl <em>Entry Type</em>}' class.
@@ -10220,14 +10264,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_TYPE__RESULT_ENTRY = eINSTANCE.getEntryType_ResultEntry();
+		EReference ENTRY_TYPE__RESULT_ENTRY = eINSTANCE
+				.getEntryType_ResultEntry();
 
 		/**
 		 * The meta object literal for the '<em><b>Service Time Distribution</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION = eINSTANCE.getEntryType_ServiceTimeDistribution();
+		EReference ENTRY_TYPE__SERVICE_TIME_DISTRIBUTION = eINSTANCE
+				.getEntryType_ServiceTimeDistribution();
 
 		/**
 		 * The meta object literal for the '<em><b>Forwarding</b></em>' containment reference list feature.
@@ -10241,14 +10287,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH = eINSTANCE.getEntryType_EntryActivityGraph();
+		EReference ENTRY_TYPE__ENTRY_ACTIVITY_GRAPH = eINSTANCE
+				.getEntryType_EntryActivityGraph();
 
 		/**
 		 * The meta object literal for the '<em><b>Entry Phase Activities</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES = eINSTANCE.getEntryType_EntryPhaseActivities();
+		EReference ENTRY_TYPE__ENTRY_PHASE_ACTIVITIES = eINSTANCE
+				.getEntryType_EntryPhaseActivities();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -10263,7 +10311,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ENTRY_TYPE__OPEN_ARRIVAL_RATE = eINSTANCE.getEntryType_OpenArrivalRate();
+		EAttribute ENTRY_TYPE__OPEN_ARRIVAL_RATE = eINSTANCE
+				.getEntryType_OpenArrivalRate();
 
 		/**
 		 * The meta object literal for the '<em><b>Priority</b></em>' attribute feature. <!--
@@ -10362,7 +10411,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute FIRST_PLOT_TYPE__VARIABLE = eINSTANCE.getFirstPlotType_Variable();
+		EAttribute FIRST_PLOT_TYPE__VARIABLE = eINSTANCE
+				.getFirstPlotType_Variable();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.GroupTypeImpl <em>Group Type</em>}' class.
@@ -10378,7 +10428,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference GROUP_TYPE__RESULT_GROUP = eINSTANCE.getGroupType_ResultGroup();
+		EReference GROUP_TYPE__RESULT_GROUP = eINSTANCE
+				.getGroupType_ResultGroup();
 
 		/**
 		 * The meta object literal for the '<em><b>Task</b></em>' containment reference list feature.
@@ -10426,7 +10477,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute HISTOGRAM_BIN_TYPE__BEGIN = eINSTANCE.getHistogramBinType_Begin();
+		EAttribute HISTOGRAM_BIN_TYPE__BEGIN = eINSTANCE
+				.getHistogramBinType_Begin();
 
 		/**
 		 * The meta object literal for the '<em><b>Conf95</b></em>' attribute feature. <!--
@@ -10434,7 +10486,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute HISTOGRAM_BIN_TYPE__CONF95 = eINSTANCE.getHistogramBinType_Conf95();
+		EAttribute HISTOGRAM_BIN_TYPE__CONF95 = eINSTANCE
+				.getHistogramBinType_Conf95();
 
 		/**
 		 * The meta object literal for the '<em><b>Conf99</b></em>' attribute feature. <!--
@@ -10442,7 +10495,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute HISTOGRAM_BIN_TYPE__CONF99 = eINSTANCE.getHistogramBinType_Conf99();
+		EAttribute HISTOGRAM_BIN_TYPE__CONF99 = eINSTANCE
+				.getHistogramBinType_Conf99();
 
 		/**
 		 * The meta object literal for the '<em><b>End</b></em>' attribute feature. <!--
@@ -10450,7 +10504,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute HISTOGRAM_BIN_TYPE__END = eINSTANCE.getHistogramBinType_End();
+		EAttribute HISTOGRAM_BIN_TYPE__END = eINSTANCE
+				.getHistogramBinType_End();
 
 		/**
 		 * The meta object literal for the '<em><b>Prob</b></em>' attribute feature. <!--
@@ -10458,7 +10513,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute HISTOGRAM_BIN_TYPE__PROB = eINSTANCE.getHistogramBinType_Prob();
+		EAttribute HISTOGRAM_BIN_TYPE__PROB = eINSTANCE
+				.getHistogramBinType_Prob();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.InPortTypeImpl <em>In Port Type</em>}' class.
@@ -10475,7 +10531,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute IN_PORT_TYPE__CONNECT_FROM = eINSTANCE.getInPortType_ConnectFrom();
+		EAttribute IN_PORT_TYPE__CONNECT_FROM = eINSTANCE
+				.getInPortType_ConnectFrom();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature. <!--
@@ -10483,7 +10540,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute IN_PORT_TYPE__DESCRIPTION = eINSTANCE.getInPortType_Description();
+		EAttribute IN_PORT_TYPE__DESCRIPTION = eINSTANCE
+				.getInPortType_Description();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -10507,14 +10565,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference INTERFACE_TYPE__IN_PORT = eINSTANCE.getInterfaceType_InPort();
+		EReference INTERFACE_TYPE__IN_PORT = eINSTANCE
+				.getInterfaceType_InPort();
 
 		/**
 		 * The meta object literal for the '<em><b>Out Port</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference INTERFACE_TYPE__OUT_PORT = eINSTANCE.getInterfaceType_OutPort();
+		EReference INTERFACE_TYPE__OUT_PORT = eINSTANCE
+				.getInterfaceType_OutPort();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.LqnCoreTypeImpl <em>Core Type</em>}' class.
@@ -10530,7 +10590,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LQN_CORE_TYPE__PROCESSOR = eINSTANCE.getLqnCoreType_Processor();
+		EReference LQN_CORE_TYPE__PROCESSOR = eINSTANCE
+				.getLqnCoreType_Processor();
 
 		/**
 		 * The meta object literal for the '<em><b>Slot</b></em>' containment reference list feature.
@@ -10553,28 +10614,32 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LQN_MODEL_TYPE__RUN_CONTROL = eINSTANCE.getLqnModelType_RunControl();
+		EReference LQN_MODEL_TYPE__RUN_CONTROL = eINSTANCE
+				.getLqnModelType_RunControl();
 
 		/**
 		 * The meta object literal for the '<em><b>Plot Control</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LQN_MODEL_TYPE__PLOT_CONTROL = eINSTANCE.getLqnModelType_PlotControl();
+		EReference LQN_MODEL_TYPE__PLOT_CONTROL = eINSTANCE
+				.getLqnModelType_PlotControl();
 
 		/**
 		 * The meta object literal for the '<em><b>Solver Params</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LQN_MODEL_TYPE__SOLVER_PARAMS = eINSTANCE.getLqnModelType_SolverParams();
+		EReference LQN_MODEL_TYPE__SOLVER_PARAMS = eINSTANCE
+				.getLqnModelType_SolverParams();
 
 		/**
 		 * The meta object literal for the '<em><b>Processor</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LQN_MODEL_TYPE__PROCESSOR = eINSTANCE.getLqnModelType_Processor();
+		EReference LQN_MODEL_TYPE__PROCESSOR = eINSTANCE
+				.getLqnModelType_Processor();
 
 		/**
 		 * The meta object literal for the '<em><b>Slot</b></em>' containment reference list feature.
@@ -10597,21 +10662,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute LQN_MODEL_TYPE__DESCRIPTION = eINSTANCE.getLqnModelType_Description();
+		EAttribute LQN_MODEL_TYPE__DESCRIPTION = eINSTANCE
+				.getLqnModelType_Description();
 
 		/**
 		 * The meta object literal for the '<em><b>Lqn Schema Version</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute LQN_MODEL_TYPE__LQN_SCHEMA_VERSION = eINSTANCE.getLqnModelType_LqnSchemaVersion();
+		EAttribute LQN_MODEL_TYPE__LQN_SCHEMA_VERSION = eINSTANCE
+				.getLqnModelType_LqnSchemaVersion();
 
 		/**
 		 * The meta object literal for the '<em><b>Lqncore Schema Version</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION = eINSTANCE.getLqnModelType_LqncoreSchemaVersion();
+		EAttribute LQN_MODEL_TYPE__LQNCORE_SCHEMA_VERSION = eINSTANCE
+				.getLqnModelType_LqncoreSchemaVersion();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -10627,7 +10695,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute LQN_MODEL_TYPE__XML_DEBUG = eINSTANCE.getLqnModelType_XmlDebug();
+		EAttribute LQN_MODEL_TYPE__XML_DEBUG = eINSTANCE
+				.getLqnModelType_XmlDebug();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.MakingCallTypeImpl <em>Making Call Type</em>}' class.
@@ -10643,7 +10712,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MAKING_CALL_TYPE__RESULT_CALL = eINSTANCE.getMakingCallType_ResultCall();
+		EReference MAKING_CALL_TYPE__RESULT_CALL = eINSTANCE
+				.getMakingCallType_ResultCall();
 
 		/**
 		 * The meta object literal for the '<em><b>Dest</b></em>' attribute feature. <!--
@@ -10692,7 +10762,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute MVA_INFO_TYPE__STEP_SQUARED = eINSTANCE.getMvaInfoType_StepSquared();
+		EAttribute MVA_INFO_TYPE__STEP_SQUARED = eINSTANCE
+				.getMvaInfoType_StepSquared();
 
 		/**
 		 * The meta object literal for the '<em><b>Submodels</b></em>' attribute feature. <!--
@@ -10700,7 +10771,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute MVA_INFO_TYPE__SUBMODELS = eINSTANCE.getMvaInfoType_Submodels();
+		EAttribute MVA_INFO_TYPE__SUBMODELS = eINSTANCE
+				.getMvaInfoType_Submodels();
 
 		/**
 		 * The meta object literal for the '<em><b>Wait</b></em>' attribute feature. <!--
@@ -10716,7 +10788,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute MVA_INFO_TYPE__WAIT_SQUARED = eINSTANCE.getMvaInfoType_WaitSquared();
+		EAttribute MVA_INFO_TYPE__WAIT_SQUARED = eINSTANCE
+				.getMvaInfoType_WaitSquared();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.OrListTypeImpl <em>Or List Type</em>}' class.
@@ -10749,7 +10822,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUT_PORT_TYPE__CONNECT_TO = eINSTANCE.getOutPortType_ConnectTo();
+		EAttribute OUT_PORT_TYPE__CONNECT_TO = eINSTANCE
+				.getOutPortType_ConnectTo();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature. <!--
@@ -10757,7 +10831,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUT_PORT_TYPE__DESCRIPTION = eINSTANCE.getOutPortType_Description();
+		EAttribute OUT_PORT_TYPE__DESCRIPTION = eINSTANCE
+				.getOutPortType_Description();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -10781,21 +10856,24 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN = eINSTANCE.getOutputDistributionType_UnderflowBin();
+		EReference OUTPUT_DISTRIBUTION_TYPE__UNDERFLOW_BIN = eINSTANCE
+				.getOutputDistributionType_UnderflowBin();
 
 		/**
 		 * The meta object literal for the '<em><b>Histogram Bin</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN = eINSTANCE.getOutputDistributionType_HistogramBin();
+		EReference OUTPUT_DISTRIBUTION_TYPE__HISTOGRAM_BIN = eINSTANCE
+				.getOutputDistributionType_HistogramBin();
 
 		/**
 		 * The meta object literal for the '<em><b>Overflow Bin</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN = eINSTANCE.getOutputDistributionType_OverflowBin();
+		EReference OUTPUT_DISTRIBUTION_TYPE__OVERFLOW_BIN = eINSTANCE
+				.getOutputDistributionType_OverflowBin();
 
 		/**
 		 * The meta object literal for the '<em><b>Bin Size</b></em>' attribute feature. <!--
@@ -10803,7 +10881,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE = eINSTANCE.getOutputDistributionType_BinSize();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__BIN_SIZE = eINSTANCE
+				.getOutputDistributionType_BinSize();
 
 		/**
 		 * The meta object literal for the '<em><b>Kurtosis</b></em>' attribute feature. <!--
@@ -10811,7 +10890,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__KURTOSIS = eINSTANCE.getOutputDistributionType_Kurtosis();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__KURTOSIS = eINSTANCE
+				.getOutputDistributionType_Kurtosis();
 
 		/**
 		 * The meta object literal for the '<em><b>Max</b></em>' attribute feature. <!--
@@ -10819,7 +10899,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__MAX = eINSTANCE.getOutputDistributionType_Max();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__MAX = eINSTANCE
+				.getOutputDistributionType_Max();
 
 		/**
 		 * The meta object literal for the '<em><b>Mean</b></em>' attribute feature. <!--
@@ -10827,7 +10908,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__MEAN = eINSTANCE.getOutputDistributionType_Mean();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__MEAN = eINSTANCE
+				.getOutputDistributionType_Mean();
 
 		/**
 		 * The meta object literal for the '<em><b>Mid Point</b></em>' attribute feature. <!--
@@ -10835,7 +10917,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__MID_POINT = eINSTANCE.getOutputDistributionType_MidPoint();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__MID_POINT = eINSTANCE
+				.getOutputDistributionType_MidPoint();
 
 		/**
 		 * The meta object literal for the '<em><b>Min</b></em>' attribute feature. <!--
@@ -10843,7 +10926,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__MIN = eINSTANCE.getOutputDistributionType_Min();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__MIN = eINSTANCE
+				.getOutputDistributionType_Min();
 
 		/**
 		 * The meta object literal for the '<em><b>Number Bins</b></em>' attribute feature. <!--
@@ -10851,7 +10935,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS = eINSTANCE.getOutputDistributionType_NumberBins();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__NUMBER_BINS = eINSTANCE
+				.getOutputDistributionType_NumberBins();
 
 		/**
 		 * The meta object literal for the '<em><b>Skew</b></em>' attribute feature. <!--
@@ -10859,7 +10944,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__SKEW = eINSTANCE.getOutputDistributionType_Skew();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__SKEW = eINSTANCE
+				.getOutputDistributionType_Skew();
 
 		/**
 		 * The meta object literal for the '<em><b>Std Dev</b></em>' attribute feature. <!--
@@ -10867,7 +10953,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_DISTRIBUTION_TYPE__STD_DEV = eINSTANCE.getOutputDistributionType_StdDev();
+		EAttribute OUTPUT_DISTRIBUTION_TYPE__STD_DEV = eINSTANCE
+				.getOutputDistributionType_StdDev();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.OutputEntryDistributionTypeImpl <em>Output Entry Distribution Type</em>}' class.
@@ -10877,7 +10964,8 @@ public interface LqnPackage extends EPackage {
 		 * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getOutputEntryDistributionType()
 		 * @generated
 		 */
-		EClass OUTPUT_ENTRY_DISTRIBUTION_TYPE = eINSTANCE.getOutputEntryDistributionType();
+		EClass OUTPUT_ENTRY_DISTRIBUTION_TYPE = eINSTANCE
+				.getOutputEntryDistributionType();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase</b></em>' attribute feature. <!--
@@ -10885,7 +10973,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE = eINSTANCE.getOutputEntryDistributionType_Phase();
+		EAttribute OUTPUT_ENTRY_DISTRIBUTION_TYPE__PHASE = eINSTANCE
+				.getOutputEntryDistributionType_Phase();
 
 		/**
 		 * The meta object literal for the '
@@ -10897,21 +10986,24 @@ public interface LqnPackage extends EPackage {
 		 * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getOutputResultJoinDelayType()
 		 * @generated
 		 */
-		EClass OUTPUT_RESULT_JOIN_DELAY_TYPE = eINSTANCE.getOutputResultJoinDelayType();
+		EClass OUTPUT_RESULT_JOIN_DELAY_TYPE = eINSTANCE
+				.getOutputResultJoinDelayType();
 
 		/**
 		 * The meta object literal for the '<em><b>Result Conf95</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95 = eINSTANCE.getOutputResultJoinDelayType_ResultConf95();
+		EReference OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF95 = eINSTANCE
+				.getOutputResultJoinDelayType_ResultConf95();
 
 		/**
 		 * The meta object literal for the '<em><b>Result Conf99</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99 = eINSTANCE.getOutputResultJoinDelayType_ResultConf99();
+		EReference OUTPUT_RESULT_JOIN_DELAY_TYPE__RESULT_CONF99 = eINSTANCE
+				.getOutputResultJoinDelayType_ResultConf99();
 
 		/**
 		 * The meta object literal for the '<em><b>Join Variance</b></em>' attribute feature. <!--
@@ -10919,7 +11011,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE = eINSTANCE.getOutputResultJoinDelayType_JoinVariance();
+		EAttribute OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_VARIANCE = eINSTANCE
+				.getOutputResultJoinDelayType_JoinVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Join Waiting</b></em>' attribute feature. <!--
@@ -10927,7 +11020,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING = eINSTANCE.getOutputResultJoinDelayType_JoinWaiting();
+		EAttribute OUTPUT_RESULT_JOIN_DELAY_TYPE__JOIN_WAITING = eINSTANCE
+				.getOutputResultJoinDelayType_JoinWaiting();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.OutputResultTypeImpl <em>Output Result Type</em>}' class.
@@ -10943,21 +11037,24 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference OUTPUT_RESULT_TYPE__RESULT_CONF95 = eINSTANCE.getOutputResultType_ResultConf95();
+		EReference OUTPUT_RESULT_TYPE__RESULT_CONF95 = eINSTANCE
+				.getOutputResultType_ResultConf95();
 
 		/**
 		 * The meta object literal for the '<em><b>Result Conf99</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference OUTPUT_RESULT_TYPE__RESULT_CONF99 = eINSTANCE.getOutputResultType_ResultConf99();
+		EReference OUTPUT_RESULT_TYPE__RESULT_CONF99 = eINSTANCE
+				.getOutputResultType_ResultConf99();
 
 		/**
 		 * The meta object literal for the '<em><b>Loss Probability</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__LOSS_PROBABILITY = eINSTANCE.getOutputResultType_LossProbability();
+		EAttribute OUTPUT_RESULT_TYPE__LOSS_PROBABILITY = eINSTANCE
+				.getOutputResultType_LossProbability();
 
 		/**
 		 * The meta object literal for the '<em><b>Open Wait Time</b></em>' attribute feature. <!--
@@ -10965,21 +11062,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME = eINSTANCE.getOutputResultType_OpenWaitTime();
+		EAttribute OUTPUT_RESULT_TYPE__OPEN_WAIT_TIME = eINSTANCE
+				.getOutputResultType_OpenWaitTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Proc Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING = eINSTANCE.getOutputResultType_Phase1ProcWaiting();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE1_PROC_WAITING = eINSTANCE
+				.getOutputResultType_Phase1ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME = eINSTANCE.getOutputResultType_Phase1ServiceTime();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE1_SERVICE_TIME = eINSTANCE
+				.getOutputResultType_Phase1ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Service Time Variance</b></em>' attribute feature.
@@ -10994,7 +11094,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION = eINSTANCE.getOutputResultType_Phase1Utilization();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE1_UTILIZATION = eINSTANCE
+				.getOutputResultType_Phase1Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Waiting</b></em>' attribute feature. <!--
@@ -11002,28 +11103,32 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE1_WAITING = eINSTANCE.getOutputResultType_Phase1Waiting();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE1_WAITING = eINSTANCE
+				.getOutputResultType_Phase1Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Waiting Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE1_WAITING_VARIANCE = eINSTANCE.getOutputResultType_Phase1WaitingVariance();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE1_WAITING_VARIANCE = eINSTANCE
+				.getOutputResultType_Phase1WaitingVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Proc Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING = eINSTANCE.getOutputResultType_Phase2ProcWaiting();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE2_PROC_WAITING = eINSTANCE
+				.getOutputResultType_Phase2ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME = eINSTANCE.getOutputResultType_Phase2ServiceTime();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE2_SERVICE_TIME = eINSTANCE
+				.getOutputResultType_Phase2ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Service Time Variance</b></em>' attribute feature.
@@ -11038,7 +11143,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION = eINSTANCE.getOutputResultType_Phase2Utilization();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE2_UTILIZATION = eINSTANCE
+				.getOutputResultType_Phase2Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Waiting</b></em>' attribute feature. <!--
@@ -11046,28 +11152,32 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE2_WAITING = eINSTANCE.getOutputResultType_Phase2Waiting();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE2_WAITING = eINSTANCE
+				.getOutputResultType_Phase2Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Waiting Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE2_WAITING_VARIANCE = eINSTANCE.getOutputResultType_Phase2WaitingVariance();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE2_WAITING_VARIANCE = eINSTANCE
+				.getOutputResultType_Phase2WaitingVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Proc Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING = eINSTANCE.getOutputResultType_Phase3ProcWaiting();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE3_PROC_WAITING = eINSTANCE
+				.getOutputResultType_Phase3ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME = eINSTANCE.getOutputResultType_Phase3ServiceTime();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE3_SERVICE_TIME = eINSTANCE
+				.getOutputResultType_Phase3ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Service Time Variance</b></em>' attribute feature.
@@ -11082,7 +11192,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION = eINSTANCE.getOutputResultType_Phase3Utilization();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE3_UTILIZATION = eINSTANCE
+				.getOutputResultType_Phase3Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Waiting</b></em>' attribute feature. <!--
@@ -11090,14 +11201,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE3_WAITING = eINSTANCE.getOutputResultType_Phase3Waiting();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE3_WAITING = eINSTANCE
+				.getOutputResultType_Phase3Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Waiting Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PHASE3_WAITING_VARIANCE = eINSTANCE.getOutputResultType_Phase3WaitingVariance();
+		EAttribute OUTPUT_RESULT_TYPE__PHASE3_WAITING_VARIANCE = eINSTANCE
+				.getOutputResultType_Phase3WaitingVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Prob Exceed Max Service Time</b></em>' attribute feature.
@@ -11112,7 +11225,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PROC_UTILIZATION = eINSTANCE.getOutputResultType_ProcUtilization();
+		EAttribute OUTPUT_RESULT_TYPE__PROC_UTILIZATION = eINSTANCE
+				.getOutputResultType_ProcUtilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Proc Waiting</b></em>' attribute feature. <!--
@@ -11120,14 +11234,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__PROC_WAITING = eINSTANCE.getOutputResultType_ProcWaiting();
+		EAttribute OUTPUT_RESULT_TYPE__PROC_WAITING = eINSTANCE
+				.getOutputResultType_ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Holding</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_READER_HOLDING = eINSTANCE.getOutputResultType_RwlockReaderHolding();
+		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_READER_HOLDING = eINSTANCE
+				.getOutputResultType_RwlockReaderHolding();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Utilization</b></em>' attribute feature.
@@ -11142,7 +11258,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING = eINSTANCE.getOutputResultType_RwlockReaderWaiting();
+		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_READER_WAITING = eINSTANCE
+				.getOutputResultType_RwlockReaderWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Waiting Variance</b></em>' attribute feature.
@@ -11157,7 +11274,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_WRITER_HOLDING = eINSTANCE.getOutputResultType_RwlockWriterHolding();
+		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_WRITER_HOLDING = eINSTANCE
+				.getOutputResultType_RwlockWriterHolding();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Writer Utilization</b></em>' attribute feature.
@@ -11172,7 +11290,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING = eINSTANCE.getOutputResultType_RwlockWriterWaiting();
+		EAttribute OUTPUT_RESULT_TYPE__RWLOCK_WRITER_WAITING = eINSTANCE
+				.getOutputResultType_RwlockWriterWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Writer Waiting Variance</b></em>' attribute feature.
@@ -11187,14 +11306,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__SEMAPHORE_UTILIZATION = eINSTANCE.getOutputResultType_SemaphoreUtilization();
+		EAttribute OUTPUT_RESULT_TYPE__SEMAPHORE_UTILIZATION = eINSTANCE
+				.getOutputResultType_SemaphoreUtilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Semaphore Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING = eINSTANCE.getOutputResultType_SemaphoreWaiting();
+		EAttribute OUTPUT_RESULT_TYPE__SEMAPHORE_WAITING = eINSTANCE
+				.getOutputResultType_SemaphoreWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Semaphore Waiting Variance</b></em>' attribute feature.
@@ -11210,21 +11331,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__SERVICE_TIME = eINSTANCE.getOutputResultType_ServiceTime();
+		EAttribute OUTPUT_RESULT_TYPE__SERVICE_TIME = eINSTANCE
+				.getOutputResultType_ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Service Time Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE = eINSTANCE.getOutputResultType_ServiceTimeVariance();
+		EAttribute OUTPUT_RESULT_TYPE__SERVICE_TIME_VARIANCE = eINSTANCE
+				.getOutputResultType_ServiceTimeVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Squared Coeff Variation</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION = eINSTANCE.getOutputResultType_SquaredCoeffVariation();
+		EAttribute OUTPUT_RESULT_TYPE__SQUARED_COEFF_VARIATION = eINSTANCE
+				.getOutputResultType_SquaredCoeffVariation();
 
 		/**
 		 * The meta object literal for the '<em><b>Throughput</b></em>' attribute feature. <!--
@@ -11232,14 +11356,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__THROUGHPUT = eINSTANCE.getOutputResultType_Throughput();
+		EAttribute OUTPUT_RESULT_TYPE__THROUGHPUT = eINSTANCE
+				.getOutputResultType_Throughput();
 
 		/**
 		 * The meta object literal for the '<em><b>Throughput Bound</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND = eINSTANCE.getOutputResultType_ThroughputBound();
+		EAttribute OUTPUT_RESULT_TYPE__THROUGHPUT_BOUND = eINSTANCE
+				.getOutputResultType_ThroughputBound();
 
 		/**
 		 * The meta object literal for the '<em><b>Utilization</b></em>' attribute feature. <!--
@@ -11247,7 +11373,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__UTILIZATION = eINSTANCE.getOutputResultType_Utilization();
+		EAttribute OUTPUT_RESULT_TYPE__UTILIZATION = eINSTANCE
+				.getOutputResultType_Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Waiting</b></em>' attribute feature. <!--
@@ -11255,14 +11382,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__WAITING = eINSTANCE.getOutputResultType_Waiting();
+		EAttribute OUTPUT_RESULT_TYPE__WAITING = eINSTANCE
+				.getOutputResultType_Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Waiting Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__WAITING_VARIANCE = eINSTANCE.getOutputResultType_WaitingVariance();
+		EAttribute OUTPUT_RESULT_TYPE__WAITING_VARIANCE = eINSTANCE
+				.getOutputResultType_WaitingVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Bottleneck Strength</b></em>' attribute feature.
@@ -11270,7 +11399,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH = eINSTANCE.getOutputResultType_BottleneckStrength();
+		EAttribute OUTPUT_RESULT_TYPE__BOTTLENECK_STRENGTH = eINSTANCE
+				.getOutputResultType_BottleneckStrength();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ParameterTypeImpl <em>Parameter Type</em>}' class.
@@ -11352,7 +11482,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PHASE_ACTIVITIES__ACTIVITY = eINSTANCE.getPhaseActivities_Activity();
+		EReference PHASE_ACTIVITIES__ACTIVITY = eINSTANCE
+				.getPhaseActivities_Activity();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.PlotControlTypeImpl <em>Plot Control Type</em>}' class.
@@ -11368,14 +11499,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PLOT_CONTROL_TYPE__FIRST_PLOT = eINSTANCE.getPlotControlType_FirstPlot();
+		EReference PLOT_CONTROL_TYPE__FIRST_PLOT = eINSTANCE
+				.getPlotControlType_FirstPlot();
 
 		/**
 		 * The meta object literal for the '<em><b>Plot</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PLOT_CONTROL_TYPE__PLOT = eINSTANCE.getPlotControlType_Plot();
+		EReference PLOT_CONTROL_TYPE__PLOT = eINSTANCE
+				.getPlotControlType_Plot();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.PlotTypeImpl <em>Plot Type</em>}' class.
@@ -11409,7 +11542,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PORT_BINDING_TYPE__SOURCE = eINSTANCE.getPortBindingType_Source();
+		EAttribute PORT_BINDING_TYPE__SOURCE = eINSTANCE
+				.getPortBindingType_Source();
 
 		/**
 		 * The meta object literal for the '<em><b>Target</b></em>' attribute feature. <!--
@@ -11417,7 +11551,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PORT_BINDING_TYPE__TARGET = eINSTANCE.getPortBindingType_Target();
+		EAttribute PORT_BINDING_TYPE__TARGET = eINSTANCE
+				.getPortBindingType_Target();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.PragmaTypeImpl <em>Pragma Type</em>}' class.
@@ -11466,14 +11601,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRECEDENCE_TYPE__PRE_OR = eINSTANCE.getPrecedenceType_PreOR();
+		EReference PRECEDENCE_TYPE__PRE_OR = eINSTANCE
+				.getPrecedenceType_PreOR();
 
 		/**
 		 * The meta object literal for the '<em><b>Pre AND</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRECEDENCE_TYPE__PRE_AND = eINSTANCE.getPrecedenceType_PreAND();
+		EReference PRECEDENCE_TYPE__PRE_AND = eINSTANCE
+				.getPrecedenceType_PreAND();
 
 		/**
 		 * The meta object literal for the '<em><b>Post</b></em>' containment reference feature.
@@ -11487,21 +11624,24 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRECEDENCE_TYPE__POST_OR = eINSTANCE.getPrecedenceType_PostOR();
+		EReference PRECEDENCE_TYPE__POST_OR = eINSTANCE
+				.getPrecedenceType_PostOR();
 
 		/**
 		 * The meta object literal for the '<em><b>Post AND</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRECEDENCE_TYPE__POST_AND = eINSTANCE.getPrecedenceType_PostAND();
+		EReference PRECEDENCE_TYPE__POST_AND = eINSTANCE
+				.getPrecedenceType_PostAND();
 
 		/**
 		 * The meta object literal for the '<em><b>Post LOOP</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PRECEDENCE_TYPE__POST_LOOP = eINSTANCE.getPrecedenceType_PostLOOP();
+		EReference PRECEDENCE_TYPE__POST_LOOP = eINSTANCE
+				.getPrecedenceType_PostLOOP();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ProcessorBindingTypeImpl <em>Processor Binding Type</em>}' class.
@@ -11518,7 +11658,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PROCESSOR_BINDING_TYPE__SOURCE = eINSTANCE.getProcessorBindingType_Source();
+		EAttribute PROCESSOR_BINDING_TYPE__SOURCE = eINSTANCE
+				.getProcessorBindingType_Source();
 
 		/**
 		 * The meta object literal for the '<em><b>Target</b></em>' attribute feature. <!--
@@ -11526,7 +11667,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PROCESSOR_BINDING_TYPE__TARGET = eINSTANCE.getProcessorBindingType_Target();
+		EAttribute PROCESSOR_BINDING_TYPE__TARGET = eINSTANCE
+				.getProcessorBindingType_Target();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ProcessorTypeImpl <em>Processor Type</em>}' class.
@@ -11542,7 +11684,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PROCESSOR_TYPE__RESULT_PROCESSOR = eINSTANCE.getProcessorType_ResultProcessor();
+		EReference PROCESSOR_TYPE__RESULT_PROCESSOR = eINSTANCE
+				.getProcessorType_ResultProcessor();
 
 		/**
 		 * The meta object literal for the '<em><b>Group</b></em>' containment reference list feature.
@@ -11564,7 +11707,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PROCESSOR_TYPE__MULTIPLICITY = eINSTANCE.getProcessorType_Multiplicity();
+		EAttribute PROCESSOR_TYPE__MULTIPLICITY = eINSTANCE
+				.getProcessorType_Multiplicity();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -11580,7 +11724,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PROCESSOR_TYPE__QUANTUM = eINSTANCE.getProcessorType_Quantum();
+		EAttribute PROCESSOR_TYPE__QUANTUM = eINSTANCE
+				.getProcessorType_Quantum();
 
 		/**
 		 * The meta object literal for the '<em><b>Replication</b></em>' attribute feature. <!--
@@ -11588,7 +11733,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PROCESSOR_TYPE__REPLICATION = eINSTANCE.getProcessorType_Replication();
+		EAttribute PROCESSOR_TYPE__REPLICATION = eINSTANCE
+				.getProcessorType_Replication();
 
 		/**
 		 * The meta object literal for the '<em><b>Scheduling</b></em>' attribute feature. <!--
@@ -11596,7 +11742,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PROCESSOR_TYPE__SCHEDULING = eINSTANCE.getProcessorType_Scheduling();
+		EAttribute PROCESSOR_TYPE__SCHEDULING = eINSTANCE
+				.getProcessorType_Scheduling();
 
 		/**
 		 * The meta object literal for the '<em><b>Speed Factor</b></em>' attribute feature. <!--
@@ -11604,7 +11751,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute PROCESSOR_TYPE__SPEED_FACTOR = eINSTANCE.getProcessorType_SpeedFactor();
+		EAttribute PROCESSOR_TYPE__SPEED_FACTOR = eINSTANCE
+				.getProcessorType_SpeedFactor();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ReplyActivityTypeImpl <em>Reply Activity Type</em>}' class.
@@ -11621,7 +11769,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute REPLY_ACTIVITY_TYPE__NAME = eINSTANCE.getReplyActivityType_Name();
+		EAttribute REPLY_ACTIVITY_TYPE__NAME = eINSTANCE
+				.getReplyActivityType_Name();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ReplyEntryTypeImpl <em>Reply Entry Type</em>}' class.
@@ -11637,7 +11786,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference REPLY_ENTRY_TYPE__REPLY_ACTIVITY = eINSTANCE.getReplyEntryType_ReplyActivity();
+		EReference REPLY_ENTRY_TYPE__REPLY_ACTIVITY = eINSTANCE
+				.getReplyEntryType_ReplyActivity();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -11662,7 +11812,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE__JOIN_VARIANCE = eINSTANCE.getResultConf95Type_JoinVariance();
+		EAttribute RESULT_CONF95_TYPE__JOIN_VARIANCE = eINSTANCE
+				.getResultConf95Type_JoinVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Join Waiting</b></em>' attribute feature. <!--
@@ -11670,7 +11821,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE__JOIN_WAITING = eINSTANCE.getResultConf95Type_JoinWaiting();
+		EAttribute RESULT_CONF95_TYPE__JOIN_WAITING = eINSTANCE
+				.getResultConf95Type_JoinWaiting();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ResultConf95Type1Impl <em>Result Conf95 Type1</em>}' class.
@@ -11686,7 +11838,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__LOSS_PROBABILITY = eINSTANCE.getResultConf95Type1_LossProbability();
+		EAttribute RESULT_CONF95_TYPE1__LOSS_PROBABILITY = eINSTANCE
+				.getResultConf95Type1_LossProbability();
 
 		/**
 		 * The meta object literal for the '<em><b>Open Wait Time</b></em>' attribute feature. <!--
@@ -11694,21 +11847,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__OPEN_WAIT_TIME = eINSTANCE.getResultConf95Type1_OpenWaitTime();
+		EAttribute RESULT_CONF95_TYPE1__OPEN_WAIT_TIME = eINSTANCE
+				.getResultConf95Type1_OpenWaitTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Proc Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE1_PROC_WAITING = eINSTANCE.getResultConf95Type1_Phase1ProcWaiting();
+		EAttribute RESULT_CONF95_TYPE1__PHASE1_PROC_WAITING = eINSTANCE
+				.getResultConf95Type1_Phase1ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE1_SERVICE_TIME = eINSTANCE.getResultConf95Type1_Phase1ServiceTime();
+		EAttribute RESULT_CONF95_TYPE1__PHASE1_SERVICE_TIME = eINSTANCE
+				.getResultConf95Type1_Phase1ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Service Time Variance</b></em>' attribute feature.
@@ -11723,7 +11879,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE1_UTILIZATION = eINSTANCE.getResultConf95Type1_Phase1Utilization();
+		EAttribute RESULT_CONF95_TYPE1__PHASE1_UTILIZATION = eINSTANCE
+				.getResultConf95Type1_Phase1Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Waiting</b></em>' attribute feature. <!--
@@ -11731,7 +11888,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE1_WAITING = eINSTANCE.getResultConf95Type1_Phase1Waiting();
+		EAttribute RESULT_CONF95_TYPE1__PHASE1_WAITING = eINSTANCE
+				.getResultConf95Type1_Phase1Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Waiting Variance</b></em>' attribute feature.
@@ -11746,14 +11904,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE2_PROC_WAITING = eINSTANCE.getResultConf95Type1_Phase2ProcWaiting();
+		EAttribute RESULT_CONF95_TYPE1__PHASE2_PROC_WAITING = eINSTANCE
+				.getResultConf95Type1_Phase2ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE2_SERVICE_TIME = eINSTANCE.getResultConf95Type1_Phase2ServiceTime();
+		EAttribute RESULT_CONF95_TYPE1__PHASE2_SERVICE_TIME = eINSTANCE
+				.getResultConf95Type1_Phase2ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Service Time Variance</b></em>' attribute feature.
@@ -11768,7 +11928,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE2_UTILIZATION = eINSTANCE.getResultConf95Type1_Phase2Utilization();
+		EAttribute RESULT_CONF95_TYPE1__PHASE2_UTILIZATION = eINSTANCE
+				.getResultConf95Type1_Phase2Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Waiting</b></em>' attribute feature. <!--
@@ -11776,7 +11937,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE2_WAITING = eINSTANCE.getResultConf95Type1_Phase2Waiting();
+		EAttribute RESULT_CONF95_TYPE1__PHASE2_WAITING = eINSTANCE
+				.getResultConf95Type1_Phase2Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Waiting Variance</b></em>' attribute feature.
@@ -11791,14 +11953,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE3_PROC_WAITING = eINSTANCE.getResultConf95Type1_Phase3ProcWaiting();
+		EAttribute RESULT_CONF95_TYPE1__PHASE3_PROC_WAITING = eINSTANCE
+				.getResultConf95Type1_Phase3ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE3_SERVICE_TIME = eINSTANCE.getResultConf95Type1_Phase3ServiceTime();
+		EAttribute RESULT_CONF95_TYPE1__PHASE3_SERVICE_TIME = eINSTANCE
+				.getResultConf95Type1_Phase3ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Service Time Variance</b></em>' attribute feature.
@@ -11813,7 +11977,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE3_UTILIZATION = eINSTANCE.getResultConf95Type1_Phase3Utilization();
+		EAttribute RESULT_CONF95_TYPE1__PHASE3_UTILIZATION = eINSTANCE
+				.getResultConf95Type1_Phase3Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Waiting</b></em>' attribute feature. <!--
@@ -11821,7 +11986,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PHASE3_WAITING = eINSTANCE.getResultConf95Type1_Phase3Waiting();
+		EAttribute RESULT_CONF95_TYPE1__PHASE3_WAITING = eINSTANCE
+				.getResultConf95Type1_Phase3Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Waiting Variance</b></em>' attribute feature.
@@ -11844,7 +12010,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PROC_UTILIZATION = eINSTANCE.getResultConf95Type1_ProcUtilization();
+		EAttribute RESULT_CONF95_TYPE1__PROC_UTILIZATION = eINSTANCE
+				.getResultConf95Type1_ProcUtilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Proc Waiting</b></em>' attribute feature. <!--
@@ -11852,14 +12019,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__PROC_WAITING = eINSTANCE.getResultConf95Type1_ProcWaiting();
+		EAttribute RESULT_CONF95_TYPE1__PROC_WAITING = eINSTANCE
+				.getResultConf95Type1_ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Holding</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__RWLOCK_READER_HOLDING = eINSTANCE.getResultConf95Type1_RwlockReaderHolding();
+		EAttribute RESULT_CONF95_TYPE1__RWLOCK_READER_HOLDING = eINSTANCE
+				.getResultConf95Type1_RwlockReaderHolding();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Utilization</b></em>' attribute feature.
@@ -11874,7 +12043,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__RWLOCK_READER_WAITING = eINSTANCE.getResultConf95Type1_RwlockReaderWaiting();
+		EAttribute RESULT_CONF95_TYPE1__RWLOCK_READER_WAITING = eINSTANCE
+				.getResultConf95Type1_RwlockReaderWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Waiting Variance</b></em>' attribute feature.
@@ -11889,7 +12059,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__RWLOCK_WRITER_HOLDING = eINSTANCE.getResultConf95Type1_RwlockWriterHolding();
+		EAttribute RESULT_CONF95_TYPE1__RWLOCK_WRITER_HOLDING = eINSTANCE
+				.getResultConf95Type1_RwlockWriterHolding();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Writer Utilization</b></em>' attribute feature.
@@ -11904,7 +12075,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__RWLOCK_WRITER_WAITING = eINSTANCE.getResultConf95Type1_RwlockWriterWaiting();
+		EAttribute RESULT_CONF95_TYPE1__RWLOCK_WRITER_WAITING = eINSTANCE
+				.getResultConf95Type1_RwlockWriterWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Writer Waiting Variance</b></em>' attribute feature.
@@ -11919,14 +12091,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__SEMAPHORE_UTILIZATION = eINSTANCE.getResultConf95Type1_SemaphoreUtilization();
+		EAttribute RESULT_CONF95_TYPE1__SEMAPHORE_UTILIZATION = eINSTANCE
+				.getResultConf95Type1_SemaphoreUtilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Semaphore Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__SEMAPHORE_WAITING = eINSTANCE.getResultConf95Type1_SemaphoreWaiting();
+		EAttribute RESULT_CONF95_TYPE1__SEMAPHORE_WAITING = eINSTANCE
+				.getResultConf95Type1_SemaphoreWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Semaphore Waiting Variance</b></em>' attribute feature.
@@ -11942,14 +12116,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__SERVICE_TIME = eINSTANCE.getResultConf95Type1_ServiceTime();
+		EAttribute RESULT_CONF95_TYPE1__SERVICE_TIME = eINSTANCE
+				.getResultConf95Type1_ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Service Time Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__SERVICE_TIME_VARIANCE = eINSTANCE.getResultConf95Type1_ServiceTimeVariance();
+		EAttribute RESULT_CONF95_TYPE1__SERVICE_TIME_VARIANCE = eINSTANCE
+				.getResultConf95Type1_ServiceTimeVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Squared Coeff Variation</b></em>' attribute feature.
@@ -11965,14 +12141,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__THROUGHPUT = eINSTANCE.getResultConf95Type1_Throughput();
+		EAttribute RESULT_CONF95_TYPE1__THROUGHPUT = eINSTANCE
+				.getResultConf95Type1_Throughput();
 
 		/**
 		 * The meta object literal for the '<em><b>Throughput Bound</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__THROUGHPUT_BOUND = eINSTANCE.getResultConf95Type1_ThroughputBound();
+		EAttribute RESULT_CONF95_TYPE1__THROUGHPUT_BOUND = eINSTANCE
+				.getResultConf95Type1_ThroughputBound();
 
 		/**
 		 * The meta object literal for the '<em><b>Utilization</b></em>' attribute feature. <!--
@@ -11980,7 +12158,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__UTILIZATION = eINSTANCE.getResultConf95Type1_Utilization();
+		EAttribute RESULT_CONF95_TYPE1__UTILIZATION = eINSTANCE
+				.getResultConf95Type1_Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Waiting</b></em>' attribute feature. <!--
@@ -11988,14 +12167,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__WAITING = eINSTANCE.getResultConf95Type1_Waiting();
+		EAttribute RESULT_CONF95_TYPE1__WAITING = eINSTANCE
+				.getResultConf95Type1_Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Waiting Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF95_TYPE1__WAITING_VARIANCE = eINSTANCE.getResultConf95Type1_WaitingVariance();
+		EAttribute RESULT_CONF95_TYPE1__WAITING_VARIANCE = eINSTANCE
+				.getResultConf95Type1_WaitingVariance();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ResultConf99TypeImpl <em>Result Conf99 Type</em>}' class.
@@ -12012,7 +12193,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE__JOIN_VARIANCE = eINSTANCE.getResultConf99Type_JoinVariance();
+		EAttribute RESULT_CONF99_TYPE__JOIN_VARIANCE = eINSTANCE
+				.getResultConf99Type_JoinVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Join Waiting</b></em>' attribute feature. <!--
@@ -12020,7 +12202,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE__JOIN_WAITING = eINSTANCE.getResultConf99Type_JoinWaiting();
+		EAttribute RESULT_CONF99_TYPE__JOIN_WAITING = eINSTANCE
+				.getResultConf99Type_JoinWaiting();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ResultConf99Type1Impl <em>Result Conf99 Type1</em>}' class.
@@ -12036,7 +12219,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__LOSS_PROBABILITY = eINSTANCE.getResultConf99Type1_LossProbability();
+		EAttribute RESULT_CONF99_TYPE1__LOSS_PROBABILITY = eINSTANCE
+				.getResultConf99Type1_LossProbability();
 
 		/**
 		 * The meta object literal for the '<em><b>Open Wait Time</b></em>' attribute feature. <!--
@@ -12044,21 +12228,24 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__OPEN_WAIT_TIME = eINSTANCE.getResultConf99Type1_OpenWaitTime();
+		EAttribute RESULT_CONF99_TYPE1__OPEN_WAIT_TIME = eINSTANCE
+				.getResultConf99Type1_OpenWaitTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Proc Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING = eINSTANCE.getResultConf99Type1_Phase1ProcWaiting();
+		EAttribute RESULT_CONF99_TYPE1__PHASE1_PROC_WAITING = eINSTANCE
+				.getResultConf99Type1_Phase1ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME = eINSTANCE.getResultConf99Type1_Phase1ServiceTime();
+		EAttribute RESULT_CONF99_TYPE1__PHASE1_SERVICE_TIME = eINSTANCE
+				.getResultConf99Type1_Phase1ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Service Time Variance</b></em>' attribute feature.
@@ -12073,7 +12260,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE1_UTILIZATION = eINSTANCE.getResultConf99Type1_Phase1Utilization();
+		EAttribute RESULT_CONF99_TYPE1__PHASE1_UTILIZATION = eINSTANCE
+				.getResultConf99Type1_Phase1Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Waiting</b></em>' attribute feature. <!--
@@ -12081,7 +12269,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE1_WAITING = eINSTANCE.getResultConf99Type1_Phase1Waiting();
+		EAttribute RESULT_CONF99_TYPE1__PHASE1_WAITING = eINSTANCE
+				.getResultConf99Type1_Phase1Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase1 Waiting Variance</b></em>' attribute feature.
@@ -12096,14 +12285,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING = eINSTANCE.getResultConf99Type1_Phase2ProcWaiting();
+		EAttribute RESULT_CONF99_TYPE1__PHASE2_PROC_WAITING = eINSTANCE
+				.getResultConf99Type1_Phase2ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME = eINSTANCE.getResultConf99Type1_Phase2ServiceTime();
+		EAttribute RESULT_CONF99_TYPE1__PHASE2_SERVICE_TIME = eINSTANCE
+				.getResultConf99Type1_Phase2ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Service Time Variance</b></em>' attribute feature.
@@ -12118,7 +12309,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE2_UTILIZATION = eINSTANCE.getResultConf99Type1_Phase2Utilization();
+		EAttribute RESULT_CONF99_TYPE1__PHASE2_UTILIZATION = eINSTANCE
+				.getResultConf99Type1_Phase2Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Waiting</b></em>' attribute feature. <!--
@@ -12126,7 +12318,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE2_WAITING = eINSTANCE.getResultConf99Type1_Phase2Waiting();
+		EAttribute RESULT_CONF99_TYPE1__PHASE2_WAITING = eINSTANCE
+				.getResultConf99Type1_Phase2Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase2 Waiting Variance</b></em>' attribute feature.
@@ -12141,14 +12334,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING = eINSTANCE.getResultConf99Type1_Phase3ProcWaiting();
+		EAttribute RESULT_CONF99_TYPE1__PHASE3_PROC_WAITING = eINSTANCE
+				.getResultConf99Type1_Phase3ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Service Time</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME = eINSTANCE.getResultConf99Type1_Phase3ServiceTime();
+		EAttribute RESULT_CONF99_TYPE1__PHASE3_SERVICE_TIME = eINSTANCE
+				.getResultConf99Type1_Phase3ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Service Time Variance</b></em>' attribute feature.
@@ -12163,7 +12358,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE3_UTILIZATION = eINSTANCE.getResultConf99Type1_Phase3Utilization();
+		EAttribute RESULT_CONF99_TYPE1__PHASE3_UTILIZATION = eINSTANCE
+				.getResultConf99Type1_Phase3Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Waiting</b></em>' attribute feature. <!--
@@ -12171,7 +12367,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PHASE3_WAITING = eINSTANCE.getResultConf99Type1_Phase3Waiting();
+		EAttribute RESULT_CONF99_TYPE1__PHASE3_WAITING = eINSTANCE
+				.getResultConf99Type1_Phase3Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Phase3 Waiting Variance</b></em>' attribute feature.
@@ -12194,7 +12391,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PROC_UTILIZATION = eINSTANCE.getResultConf99Type1_ProcUtilization();
+		EAttribute RESULT_CONF99_TYPE1__PROC_UTILIZATION = eINSTANCE
+				.getResultConf99Type1_ProcUtilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Proc Waiting</b></em>' attribute feature. <!--
@@ -12202,14 +12400,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__PROC_WAITING = eINSTANCE.getResultConf99Type1_ProcWaiting();
+		EAttribute RESULT_CONF99_TYPE1__PROC_WAITING = eINSTANCE
+				.getResultConf99Type1_ProcWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Holding</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__RWLOCK_READER_HOLDING = eINSTANCE.getResultConf99Type1_RwlockReaderHolding();
+		EAttribute RESULT_CONF99_TYPE1__RWLOCK_READER_HOLDING = eINSTANCE
+				.getResultConf99Type1_RwlockReaderHolding();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Utilization</b></em>' attribute feature.
@@ -12224,7 +12424,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING = eINSTANCE.getResultConf99Type1_RwlockReaderWaiting();
+		EAttribute RESULT_CONF99_TYPE1__RWLOCK_READER_WAITING = eINSTANCE
+				.getResultConf99Type1_RwlockReaderWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Reader Waiting Variance</b></em>' attribute feature.
@@ -12239,7 +12440,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__RWLOCK_WRITER_HOLDING = eINSTANCE.getResultConf99Type1_RwlockWriterHolding();
+		EAttribute RESULT_CONF99_TYPE1__RWLOCK_WRITER_HOLDING = eINSTANCE
+				.getResultConf99Type1_RwlockWriterHolding();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Writer Utilization</b></em>' attribute feature.
@@ -12254,7 +12456,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING = eINSTANCE.getResultConf99Type1_RwlockWriterWaiting();
+		EAttribute RESULT_CONF99_TYPE1__RWLOCK_WRITER_WAITING = eINSTANCE
+				.getResultConf99Type1_RwlockWriterWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Rwlock Writer Waiting Variance</b></em>' attribute feature.
@@ -12269,14 +12472,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__SEMAPHORE_UTILIZATION = eINSTANCE.getResultConf99Type1_SemaphoreUtilization();
+		EAttribute RESULT_CONF99_TYPE1__SEMAPHORE_UTILIZATION = eINSTANCE
+				.getResultConf99Type1_SemaphoreUtilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Semaphore Waiting</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__SEMAPHORE_WAITING = eINSTANCE.getResultConf99Type1_SemaphoreWaiting();
+		EAttribute RESULT_CONF99_TYPE1__SEMAPHORE_WAITING = eINSTANCE
+				.getResultConf99Type1_SemaphoreWaiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Semaphore Waiting Variance</b></em>' attribute feature.
@@ -12292,14 +12497,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__SERVICE_TIME = eINSTANCE.getResultConf99Type1_ServiceTime();
+		EAttribute RESULT_CONF99_TYPE1__SERVICE_TIME = eINSTANCE
+				.getResultConf99Type1_ServiceTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Service Time Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE = eINSTANCE.getResultConf99Type1_ServiceTimeVariance();
+		EAttribute RESULT_CONF99_TYPE1__SERVICE_TIME_VARIANCE = eINSTANCE
+				.getResultConf99Type1_ServiceTimeVariance();
 
 		/**
 		 * The meta object literal for the '<em><b>Squared Coeff Variation</b></em>' attribute feature.
@@ -12315,14 +12522,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__THROUGHPUT = eINSTANCE.getResultConf99Type1_Throughput();
+		EAttribute RESULT_CONF99_TYPE1__THROUGHPUT = eINSTANCE
+				.getResultConf99Type1_Throughput();
 
 		/**
 		 * The meta object literal for the '<em><b>Throughput Bound</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__THROUGHPUT_BOUND = eINSTANCE.getResultConf99Type1_ThroughputBound();
+		EAttribute RESULT_CONF99_TYPE1__THROUGHPUT_BOUND = eINSTANCE
+				.getResultConf99Type1_ThroughputBound();
 
 		/**
 		 * The meta object literal for the '<em><b>Utilization</b></em>' attribute feature. <!--
@@ -12330,7 +12539,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__UTILIZATION = eINSTANCE.getResultConf99Type1_Utilization();
+		EAttribute RESULT_CONF99_TYPE1__UTILIZATION = eINSTANCE
+				.getResultConf99Type1_Utilization();
 
 		/**
 		 * The meta object literal for the '<em><b>Waiting</b></em>' attribute feature. <!--
@@ -12338,14 +12548,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__WAITING = eINSTANCE.getResultConf99Type1_Waiting();
+		EAttribute RESULT_CONF99_TYPE1__WAITING = eINSTANCE
+				.getResultConf99Type1_Waiting();
 
 		/**
 		 * The meta object literal for the '<em><b>Waiting Variance</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute RESULT_CONF99_TYPE1__WAITING_VARIANCE = eINSTANCE.getResultConf99Type1_WaitingVariance();
+		EAttribute RESULT_CONF99_TYPE1__WAITING_VARIANCE = eINSTANCE
+				.getResultConf99Type1_WaitingVariance();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.ResultGeneralTypeImpl <em>Result General Type</em>}' class.
@@ -12361,7 +12573,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference RESULT_GENERAL_TYPE__MVA_INFO = eINSTANCE.getResultGeneralType_MvaInfo();
+		EReference RESULT_GENERAL_TYPE__MVA_INFO = eINSTANCE
+				.getResultGeneralType_MvaInfo();
 
 		/**
 		 * The meta object literal for the '<em><b>Conv Val</b></em>' attribute feature. <!--
@@ -12369,7 +12582,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__CONV_VAL = eINSTANCE.getResultGeneralType_ConvVal();
+		EAttribute RESULT_GENERAL_TYPE__CONV_VAL = eINSTANCE
+				.getResultGeneralType_ConvVal();
 
 		/**
 		 * The meta object literal for the '<em><b>Elapsed Time</b></em>' attribute feature. <!--
@@ -12377,7 +12591,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__ELAPSED_TIME = eINSTANCE.getResultGeneralType_ElapsedTime();
+		EAttribute RESULT_GENERAL_TYPE__ELAPSED_TIME = eINSTANCE
+				.getResultGeneralType_ElapsedTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Iterations</b></em>' attribute feature. <!--
@@ -12385,7 +12600,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__ITERATIONS = eINSTANCE.getResultGeneralType_Iterations();
+		EAttribute RESULT_GENERAL_TYPE__ITERATIONS = eINSTANCE
+				.getResultGeneralType_Iterations();
 
 		/**
 		 * The meta object literal for the '<em><b>Platform Info</b></em>' attribute feature. <!--
@@ -12393,7 +12609,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__PLATFORM_INFO = eINSTANCE.getResultGeneralType_PlatformInfo();
+		EAttribute RESULT_GENERAL_TYPE__PLATFORM_INFO = eINSTANCE
+				.getResultGeneralType_PlatformInfo();
 
 		/**
 		 * The meta object literal for the '<em><b>Solver Info</b></em>' attribute feature. <!--
@@ -12401,7 +12618,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__SOLVER_INFO = eINSTANCE.getResultGeneralType_SolverInfo();
+		EAttribute RESULT_GENERAL_TYPE__SOLVER_INFO = eINSTANCE
+				.getResultGeneralType_SolverInfo();
 
 		/**
 		 * The meta object literal for the '<em><b>System Cpu Time</b></em>' attribute feature. <!--
@@ -12409,7 +12627,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME = eINSTANCE.getResultGeneralType_SystemCpuTime();
+		EAttribute RESULT_GENERAL_TYPE__SYSTEM_CPU_TIME = eINSTANCE
+				.getResultGeneralType_SystemCpuTime();
 
 		/**
 		 * The meta object literal for the '<em><b>User Cpu Time</b></em>' attribute feature. <!--
@@ -12417,7 +12636,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__USER_CPU_TIME = eINSTANCE.getResultGeneralType_UserCpuTime();
+		EAttribute RESULT_GENERAL_TYPE__USER_CPU_TIME = eINSTANCE
+				.getResultGeneralType_UserCpuTime();
 
 		/**
 		 * The meta object literal for the '<em><b>Valid</b></em>' attribute feature. <!--
@@ -12425,7 +12645,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute RESULT_GENERAL_TYPE__VALID = eINSTANCE.getResultGeneralType_Valid();
+		EAttribute RESULT_GENERAL_TYPE__VALID = eINSTANCE
+				.getResultGeneralType_Valid();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.RunControlTypeImpl <em>Run Control Type</em>}' class.
@@ -12467,14 +12688,16 @@ public interface LqnPackage extends EPackage {
 		 * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getSingleActivityListType()
 		 * @generated
 		 */
-		EClass SINGLE_ACTIVITY_LIST_TYPE = eINSTANCE.getSingleActivityListType();
+		EClass SINGLE_ACTIVITY_LIST_TYPE = eINSTANCE
+				.getSingleActivityListType();
 
 		/**
 		 * The meta object literal for the '<em><b>Activity</b></em>' containment reference feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY = eINSTANCE.getSingleActivityListType_Activity();
+		EReference SINGLE_ACTIVITY_LIST_TYPE__ACTIVITY = eINSTANCE
+				.getSingleActivityListType_Activity();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.SlotTypeImpl <em>Slot Type</em>}' class.
@@ -12537,14 +12760,16 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SOLVER_PARAMS_TYPE__RESULT_GENERAL = eINSTANCE.getSolverParamsType_ResultGeneral();
+		EReference SOLVER_PARAMS_TYPE__RESULT_GENERAL = eINSTANCE
+				.getSolverParamsType_ResultGeneral();
 
 		/**
 		 * The meta object literal for the '<em><b>Pragma</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference SOLVER_PARAMS_TYPE__PRAGMA = eINSTANCE.getSolverParamsType_Pragma();
+		EReference SOLVER_PARAMS_TYPE__PRAGMA = eINSTANCE
+				.getSolverParamsType_Pragma();
 
 		/**
 		 * The meta object literal for the '<em><b>Comment</b></em>' attribute feature. <!--
@@ -12552,7 +12777,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute SOLVER_PARAMS_TYPE__COMMENT = eINSTANCE.getSolverParamsType_Comment();
+		EAttribute SOLVER_PARAMS_TYPE__COMMENT = eINSTANCE
+				.getSolverParamsType_Comment();
 
 		/**
 		 * The meta object literal for the '<em><b>Conv Val</b></em>' attribute feature. <!--
@@ -12560,7 +12786,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute SOLVER_PARAMS_TYPE__CONV_VAL = eINSTANCE.getSolverParamsType_ConvVal();
+		EAttribute SOLVER_PARAMS_TYPE__CONV_VAL = eINSTANCE
+				.getSolverParamsType_ConvVal();
 
 		/**
 		 * The meta object literal for the '<em><b>It Limit</b></em>' attribute feature. <!--
@@ -12568,7 +12795,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute SOLVER_PARAMS_TYPE__IT_LIMIT = eINSTANCE.getSolverParamsType_ItLimit();
+		EAttribute SOLVER_PARAMS_TYPE__IT_LIMIT = eINSTANCE
+				.getSolverParamsType_ItLimit();
 
 		/**
 		 * The meta object literal for the '<em><b>Print Int</b></em>' attribute feature. <!--
@@ -12576,14 +12804,16 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute SOLVER_PARAMS_TYPE__PRINT_INT = eINSTANCE.getSolverParamsType_PrintInt();
+		EAttribute SOLVER_PARAMS_TYPE__PRINT_INT = eINSTANCE
+				.getSolverParamsType_PrintInt();
 
 		/**
 		 * The meta object literal for the '<em><b>Underrelax Coeff</b></em>' attribute feature.
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF = eINSTANCE.getSolverParamsType_UnderrelaxCoeff();
+		EAttribute SOLVER_PARAMS_TYPE__UNDERRELAX_COEFF = eINSTANCE
+				.getSolverParamsType_UnderrelaxCoeff();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.SynchCallTypeImpl <em>Synch Call Type</em>}' class.
@@ -12616,7 +12846,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TASK_ACTIVITY_GRAPH__REPLY_ENTRY = eINSTANCE.getTaskActivityGraph_ReplyEntry();
+		EReference TASK_ACTIVITY_GRAPH__REPLY_ENTRY = eINSTANCE
+				.getTaskActivityGraph_ReplyEntry();
 
 		/**
 		 * The meta object literal for the '{@link org.palladiosimulator.solver.lqn.impl.TaskTypeImpl <em>Task Type</em>}' class.
@@ -12639,7 +12870,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TASK_TYPE__SERVICE_TIME_DISTRIBUTION = eINSTANCE.getTaskType_ServiceTimeDistribution();
+		EReference TASK_TYPE__SERVICE_TIME_DISTRIBUTION = eINSTANCE
+				.getTaskType_ServiceTimeDistribution();
 
 		/**
 		 * The meta object literal for the '<em><b>Fan Out</b></em>' containment reference list feature.
@@ -12674,7 +12906,8 @@ public interface LqnPackage extends EPackage {
 		 * <!-- begin-user-doc --> <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference TASK_TYPE__TASK_ACTIVITIES = eINSTANCE.getTaskType_TaskActivities();
+		EReference TASK_TYPE__TASK_ACTIVITIES = eINSTANCE
+				.getTaskType_TaskActivities();
 
 		/**
 		 * The meta object literal for the '<em><b>Activity Graph</b></em>' attribute feature. <!--
@@ -12682,7 +12915,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute TASK_TYPE__ACTIVITY_GRAPH = eINSTANCE.getTaskType_ActivityGraph();
+		EAttribute TASK_TYPE__ACTIVITY_GRAPH = eINSTANCE
+				.getTaskType_ActivityGraph();
 
 		/**
 		 * The meta object literal for the '<em><b>Initially</b></em>' attribute feature. <!--
@@ -12698,7 +12932,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute TASK_TYPE__MULTIPLICITY = eINSTANCE.getTaskType_Multiplicity();
+		EAttribute TASK_TYPE__MULTIPLICITY = eINSTANCE
+				.getTaskType_Multiplicity();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature. <!--
@@ -12722,7 +12957,8 @@ public interface LqnPackage extends EPackage {
 		 *
 		 * @generated
 		 */
-		EAttribute TASK_TYPE__QUEUE_LENGTH = eINSTANCE.getTaskType_QueueLength();
+		EAttribute TASK_TYPE__QUEUE_LENGTH = eINSTANCE
+				.getTaskType_QueueLength();
 
 		/**
 		 * The meta object literal for the '<em><b>Replication</b></em>' attribute feature. <!--
@@ -12918,7 +13154,8 @@ public interface LqnPackage extends EPackage {
 		 * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getSrvnNonNegativeInteger()
 		 * @generated
 		 */
-		EDataType SRVN_NON_NEGATIVE_INTEGER = eINSTANCE.getSrvnNonNegativeInteger();
+		EDataType SRVN_NON_NEGATIVE_INTEGER = eINSTANCE
+				.getSrvnNonNegativeInteger();
 
 		/**
 		 * The meta object literal for the '<em>Task Option Type Object</em>' data type. <!--
@@ -12938,7 +13175,8 @@ public interface LqnPackage extends EPackage {
 		 * @see org.palladiosimulator.solver.lqn.impl.LqnPackageImpl#getTaskSchedulingTypeObject()
 		 * @generated
 		 */
-		EDataType TASK_SCHEDULING_TYPE_OBJECT = eINSTANCE.getTaskSchedulingTypeObject();
+		EDataType TASK_SCHEDULING_TYPE_OBJECT = eINSTANCE
+				.getTaskSchedulingTypeObject();
 
 		/**
 		 * The meta object literal for the '<em>Type Type Object</em>' data type. <!--
