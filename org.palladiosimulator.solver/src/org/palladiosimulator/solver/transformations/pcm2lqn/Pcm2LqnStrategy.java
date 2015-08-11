@@ -18,6 +18,9 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PartInitException;
@@ -127,6 +130,10 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 
 	private String getOutputFolder() {
 		if (getSolverProgramName().equals(FILENAME_LQNS)) {
+			
+	        final URI uri = URI.createURI(config.getLqnsOutputDir());
+	        FileLocator.resolve(uri)
+
 			return config.getLqnsOutputDir();
 		} else if (getSolverProgramName().equals(FILENAME_LINE)) {
 			return config.getLINEOutputDir();

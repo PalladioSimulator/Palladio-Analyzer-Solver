@@ -26,7 +26,10 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Group;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
+import org.palladiosimulator.analyzer.workflow.ConstantsContainer;
 import org.palladiosimulator.analyzer.workflow.runconfig.FileNamesInputTab;
+
+import de.uka.ipd.sdq.workflow.launchconfig.tabs.TabHelper;
 
 public class MainConfigTab extends FileNamesInputTab {
 
@@ -147,17 +150,22 @@ public class MainConfigTab extends FileNamesInputTab {
 			}
 		};
 		
+		final GridLayout outerAnalysisGL = new GridLayout();
+		
+		final Group outerGroup = new Group(container, SWT.NONE);
+		outerGroup.setLayout(outerAnalysisGL);
+		outerGroup.setText("Configuration (see LQSim manual for details or use defaults)");
+
 		final GridLayout analysisGL = new GridLayout();
 		analysisGL.numColumns = 4;
 
-		final Group group = new Group(container, SWT.NONE);
+		final Group group = new Group(outerGroup, SWT.NONE);
 		group.setLayout(analysisGL);
-		group.setText("Configuration (see LQSim manual for details or use defaults)");
-		group.setLayoutData(new GridData(500, SWT.DEFAULT));
+		group.setText("Analysis parameters");
 
 		GridData threeColumnGridData = new GridData(SWT.LEFT, SWT.CENTER, true, false);
 		threeColumnGridData.horizontalSpan = 3;
-		
+
 		Label label1 = new Label(group, SWT.NONE);
 		label1.setText("Run Time (optional):");
 		label1.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
@@ -182,17 +190,32 @@ public class MainConfigTab extends FileNamesInputTab {
 		lqsimConfig3.setLayoutData(threeColumnGridData);
 		lqsimConfig3.addModifyListener(listener);
 		
-		Label labelStopOnMessageLoss = new Label(group, SWT.NONE);
+		final Group pragmaGroup = new Group(outerGroup, SWT.NONE);
+		pragmaGroup.setLayout(analysisGL);
+		pragmaGroup.setText("LQSim Pragmas");
+
+		GridData twoColumnGridData = new GridData(SWT.LEFT, SWT.CENTER, true, false);
+		twoColumnGridData.horizontalSpan = 3;
+		
+		Label labelStopOnMessageLoss = new Label(pragmaGroup, SWT.NONE);
 		labelStopOnMessageLoss.setText("\"Stop On Message Loss\" Pragma:");
 		labelStopOnMessageLoss.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
 		
-		lqsimConfigStopOnMessageLoss = new Button(group,  SWT.CHECK);
+		lqsimConfigStopOnMessageLoss = new Button(pragmaGroup,  SWT.CHECK);
 		lqsimConfigStopOnMessageLoss.setEnabled(true);
 		lqsimConfigStopOnMessageLoss.setText("Stop on message loss");
 		lqsimConfigStopOnMessageLoss.addSelectionListener(selectionListener);
 		lqsimConfigStopOnMessageLoss.setSelection(true);
 		lqsimConfigStopOnMessageLoss.setLayoutData(threeColumnGridData);
 
+		Label labelPragma = new Label(pragmaGroup, SWT.NONE);
+		labelPragma.setText("Additional Pragmas:");
+		labelPragma.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
+		
+		lqnsimConfigPragma = new Text(pragmaGroup, SWT.SINGLE | SWT.BORDER);
+		lqnsimConfigPragma.setLayoutData(twoColumnGridData);
+		lqnsimConfigPragma.addModifyListener(listener);
+		
 		Label label4 = new Label(group, SWT.NONE);
 		label4.setText("Output Type:");
 		label4.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
@@ -207,26 +230,11 @@ public class MainConfigTab extends FileNamesInputTab {
 		comboLqsimOutput.setLayoutData(threeColumnGridData);
 		comboLqsimOutput.addModifyListener(listener);
 //		comboLqsimOutput.addSelectionListener(comboListener);
-
-		Label label5 = new Label(group, SWT.NONE);
-		label5.setText("Output Dir:");
-		label5.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
 		
-		textLqsimOutputDir = new Text(group, SWT.SINGLE | SWT.BORDER);
-		textLqsimOutputDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
-		textLqsimOutputDir.addModifyListener(listener);
+		textLqsimOutputDir = new Text(outerGroup, SWT.SINGLE | SWT.BORDER);
+		TabHelper.createFolderInputSection(outerGroup, this.listener, "Output Dir", textLqsimOutputDir, "Select Output Directory", getShell(), "");
 
-		createFolderSelectionButtons(group,textLqsimOutputDir);
-		
-		Label labelPragma = new Label(group, SWT.NONE);
-		labelPragma.setText("Additional Pragmas:");
-		labelPragma.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
-		
-		lqnsimConfigPragma = new Text(group, SWT.SINGLE | SWT.BORDER);
-		lqnsimConfigPragma.setLayoutData(threeColumnGridData);
-		lqnsimConfigPragma.addModifyListener(listener);
-
-		return group;
+		return outerGroup;
 	}
 
 
@@ -245,13 +253,18 @@ public class MainConfigTab extends FileNamesInputTab {
 			}
 		};
 		
+		final GridLayout outerAnalysisGL = new GridLayout();
+		
+		final Group outerGroup = new Group(container, SWT.NONE);
+		outerGroup.setLayout(outerAnalysisGL);
+		outerGroup.setText("Configuration (see LQNS manual for details or use defaults)");
+
 		final GridLayout analysisGL = new GridLayout();
 		analysisGL.numColumns = 4;
 
-		final Group group = new Group(container, SWT.NONE);
+		final Group group = new Group(outerGroup, SWT.NONE);
 		group.setLayout(analysisGL);
-		group.setText("Configuration (see LQNS manual for details or use defaults)");
-		group.setLayoutData(new GridData(500, SWT.DEFAULT));
+		group.setText("Analysis parameters");
 
 		GridData threeColumnGridData = new GridData(SWT.LEFT, SWT.CENTER, true, false);
 		threeColumnGridData.horizontalSpan = 3;
@@ -288,17 +301,6 @@ public class MainConfigTab extends FileNamesInputTab {
 		lqnsConfig4.setLayoutData(threeColumnGridData);
 		lqnsConfig4.addModifyListener(listener);
 		
-		Label labelStopOnMessageLoss = new Label(group, SWT.NONE);
-		labelStopOnMessageLoss.setText("\"Stop On Message Loss\" Pragma:");
-		labelStopOnMessageLoss.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
-		
-		lqnsConfigStopOnMessageLoss = new Button(group,  SWT.CHECK);
-		lqnsConfigStopOnMessageLoss.setEnabled(true);
-		lqnsConfigStopOnMessageLoss.setText("Stop on message loss");
-		lqnsConfigStopOnMessageLoss.addSelectionListener(selectionListener);
-		lqnsConfigStopOnMessageLoss.setSelection(true);
-		lqnsConfigStopOnMessageLoss.setLayoutData(threeColumnGridData);
-		
 		Label labelInfTaskMult = new Label(group, SWT.NONE);
 		labelInfTaskMult.setText("Infinite Task Multiplicity:");
 		labelInfTaskMult.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
@@ -309,6 +311,33 @@ public class MainConfigTab extends FileNamesInputTab {
 		lqnsConfigInfTaskMult.addSelectionListener(selectionListener);
 		lqnsConfigInfTaskMult.setSelection(true);
 		lqnsConfigInfTaskMult.setLayoutData(threeColumnGridData);
+		
+		final Group pragmaGroup = new Group(outerGroup, SWT.NONE);
+		pragmaGroup.setLayout(analysisGL);
+		pragmaGroup.setText("LQNS Pragmas");
+
+		GridData twoColumnGridData = new GridData(SWT.LEFT, SWT.CENTER, true, false);
+		twoColumnGridData.horizontalSpan = 3;
+		
+		Label labelStopOnMessageLoss = new Label(pragmaGroup, SWT.NONE);
+		labelStopOnMessageLoss.setText("\"Stop On Message Loss\" Pragma:");
+		labelStopOnMessageLoss.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
+		
+		lqnsConfigStopOnMessageLoss = new Button(pragmaGroup,  SWT.CHECK);
+		lqnsConfigStopOnMessageLoss.setEnabled(true);
+		lqnsConfigStopOnMessageLoss.setText("Stop on message loss");
+		lqnsConfigStopOnMessageLoss.addSelectionListener(selectionListener);
+		lqnsConfigStopOnMessageLoss.setSelection(true);
+		lqnsConfigStopOnMessageLoss.setLayoutData(threeColumnGridData);
+		
+		Label labelPragma = new Label(pragmaGroup, SWT.NONE);
+		labelPragma.setText("Additional Pragmas:");
+		labelPragma.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
+		
+		lqnsConfigPragma = new Text(pragmaGroup, SWT.SINGLE | SWT.BORDER);
+		lqnsConfigPragma.setLayoutData(twoColumnGridData);
+		lqnsConfigPragma.addModifyListener(listener);
+		
 		
 		Label label5 = new Label(group, SWT.NONE);
 		label5.setText("Output Type:");
@@ -325,25 +354,10 @@ public class MainConfigTab extends FileNamesInputTab {
 		comboLqnsOutput.addModifyListener(listener);
 		comboLqnsOutput.addSelectionListener(comboListener);
 		
-		Label label6 = new Label(group, SWT.NONE);
-		label6.setText("Output Dir:");
-		label6.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
+		textLqnsOutputDir = new Text(outerGroup, SWT.SINGLE | SWT.BORDER);
+		TabHelper.createFolderInputSection(outerGroup, this.listener, "Output Dir", textLqnsOutputDir, "Select Output Directory", getShell(), "");
 		
-		textLqnsOutputDir = new Text(group, SWT.SINGLE | SWT.BORDER);
-		textLqnsOutputDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
-		textLqnsOutputDir.addModifyListener(listener);
-
-		createFolderSelectionButtons(group,textLqnsOutputDir);
-		
-		Label labelPragma = new Label(group, SWT.NONE);
-		labelPragma.setText("Additional Pragmas:");
-		labelPragma.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
-		
-		lqnsConfigPragma = new Text(group, SWT.SINGLE | SWT.BORDER);
-		lqnsConfigPragma.setLayoutData(threeColumnGridData);
-		lqnsConfigPragma.addModifyListener(listener);
-		
-		return group;
+		return outerGroup;
 	}
 
 	 
@@ -361,7 +375,6 @@ public class MainConfigTab extends FileNamesInputTab {
 		};
 
 		final GridLayout analysisGL = new GridLayout();
-		analysisGL.numColumns = 4;
 
 		final Group group = new Group(container, SWT.NONE);
 		group.setLayout(analysisGL);
@@ -369,31 +382,13 @@ public class MainConfigTab extends FileNamesInputTab {
 		group.setLayoutData(new GridData(500, SWT.DEFAULT));
 
 		GridData threeColumnGridData = new GridData(SWT.LEFT, SWT.CENTER, true, false);
-		threeColumnGridData.horizontalSpan = 3;
-
-
-
-		Label labelOutFolder = new Label(group, SWT.NONE);
-		labelOutFolder.setText("Output Dir:");
-		labelOutFolder.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
 
 		textLINEOutputDir = new Text(group, SWT.SINGLE | SWT.BORDER);
-		textLINEOutputDir.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
-		textLINEOutputDir.addModifyListener(listener);
-
-
-		createFolderSelectionButtons(group,textLINEOutputDir);
-
-		Label labelPerfFile = new Label(group, SWT.NONE);
-		labelPerfFile.setText("LINE property file:");
-		labelPerfFile.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
+		TabHelper.createFolderInputSection(group, this.listener, "Output Dir", textLINEOutputDir, "Select Output Directory", getShell(), "");
 
 		textLINEPropFile = new Text(group, SWT.SINGLE | SWT.BORDER);
-		textLINEPropFile.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
-		textLINEPropFile.addModifyListener(listener);
-
-		createFileSelectionButtons(group,textLINEPropFile);
-
+		TabHelper.createFileInputSection(group, this.listener, "LINE property file", new String[] { "*.properties" }, textLINEPropFile, "Select LINE property file:", getShell(), "");
+		
 		debugLINEButton = new Button(group,  SWT.CHECK);
 		debugLINEButton.setEnabled(true);
 		debugLINEButton.setText("Verbose Debugging");
