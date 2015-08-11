@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.palladiosimulator.solver.transformations.pcm2lqn.Pcm2LqnStrategy;
 
 public class LineMessageHandler implements Runnable {
 	private BufferedReader in;
@@ -107,12 +108,12 @@ public class LineMessageHandler implements Runnable {
 
 		String modelName = tokens[1];
 
-		while (modelName.indexOf("xml") == -1) {
+		while (modelName.indexOf(Pcm2LqnStrategy.LQN_FILE_EXTENSION) == -1) {
 			modelName = " " + tokens[2 + offset];
 			offset++;
 		}
 
-		modelName = modelName.replace("_line.xml", ".xml");
+		modelName = modelName.replace("_line."+Pcm2LqnStrategy.LQN_FILE_EXTENSION, "."+Pcm2LqnStrategy.LQN_FILE_EXTENSION);
 		modelName = Paths.get(modelName).toString();
 		String status = null;
 		if (tokens.length == (4 + offset))

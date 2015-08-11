@@ -90,6 +90,9 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	private static final String FILENAME_LQNS = "lqns";
 	private static final String FILENAME_LQSIM = "lqsim";
 	private static final String FILENAME_LINE = "LINE";
+	
+	//file extension for XML should be .lqxo as that is registered in the org.palladio....lqn plugins now. Should not be one of .in, .lqn or .xlqn, as these are interpreted as the textual format by lqns. All other files extensions are interpreted as XML (see lqns manual). 
+	public static final String LQN_FILE_EXTENSION = "lqxo";
 
 	// Return values of lqns
 	private static final int LQNS_RETURN_SUCCESS = 0;
@@ -107,16 +110,15 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 		Date date = new Date();
 		String timestamp = dateFormat.format(date);
 
-		//file extension for XML should be .lqxo as that is registered in the org.palladio....lqn plugins now. Should not be one of .in, .lqn or .xlqn, as these are interpreted as the textual format by lqns. All other files extensions are interpreted as XML (see lqns manual). 
 		filenameInputXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn" + timestamp
-				+ ".in.lqxo";
+				+ ".in."+LQN_FILE_EXTENSION;
 		filenameResultHumanReadable = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn" + timestamp
 				+ ".out";
 		filenameResultXML = getOutputFolder()
 				+ System.getProperty("file.separator") + "pcm2lqn"
-				+ timestamp + ".out.lqxo";
+				+ timestamp + ".out."+LQN_FILE_EXTENSION;
 	}
 
 	public String getFilenameResultXML() {
