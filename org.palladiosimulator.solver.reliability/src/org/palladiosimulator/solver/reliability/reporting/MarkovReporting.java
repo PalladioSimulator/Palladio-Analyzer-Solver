@@ -694,6 +694,7 @@ public class MarkovReporting {
         internalSoftwareFailuresTableHeaderRow.add("Interface");
         internalSoftwareFailuresTableHeaderRow.add("Signature");
         internalSoftwareFailuresTableHeaderRow.add("Internal Action");
+        internalSoftwareFailuresTableHeaderRow.add("Internal Action id");
         internalSoftwareFailuresTableHeaderRow.add("Failure Type");
         internalSoftwareFailuresTableHeaderRow.add("Failure Mode Probability");
         internalSoftwareFailuresTable.setHeaderRow(internalSoftwareFailuresTableHeaderRow);
@@ -703,6 +704,7 @@ public class MarkovReporting {
                 "System-internal hardware-induced failure modes");
         List<String> internalHardwareFailuresTableHeaderRow = new ArrayList<String>(3);
         internalHardwareFailuresTableHeaderRow.add("Resource Container");
+        internalHardwareFailuresTableHeaderRow.add("Resource Container id");
         internalHardwareFailuresTableHeaderRow.add("Resource Type");
         internalHardwareFailuresTableHeaderRow.add("Failure Mode Probablity");
         internalHardwareFailuresTable.setHeaderRow(internalHardwareFailuresTableHeaderRow);
@@ -712,6 +714,7 @@ public class MarkovReporting {
                 "System-internal network-induced failure modes");
         List<String> internalNetworkFailuresTableHeaderRow = new ArrayList<String>(3);
         internalNetworkFailuresTableHeaderRow.add("Communication Link");
+        internalNetworkFailuresTableHeaderRow.add("Communication Link id");
         internalNetworkFailuresTableHeaderRow.add("Communication Resource Type");
         internalNetworkFailuresTableHeaderRow.add("Failure Mode Probablity");
         internalNetworkFailuresTable.setHeaderRow(internalNetworkFailuresTableHeaderRow);
@@ -724,6 +727,7 @@ public class MarkovReporting {
                 "System-external software-induced failure modes");
         List<String> externalSoftwareFailuresTableHeaderRow = new ArrayList<String>(4);
         externalSoftwareFailuresTableHeaderRow.add("System-required Role");
+        externalSoftwareFailuresTableHeaderRow.add("System-required Role id");
         externalSoftwareFailuresTableHeaderRow.add("Signature");
         externalSoftwareFailuresTableHeaderRow.add("Failure Type");
         externalSoftwareFailuresTableHeaderRow.add("Failure Mode Probability");
@@ -734,6 +738,7 @@ public class MarkovReporting {
                 "System-external hardware-induced failure modes");
         List<String> externalHardwareFailuresTableHeaderRow = new ArrayList<String>(4);
         externalHardwareFailuresTableHeaderRow.add("System-required Role");
+        externalHardwareFailuresTableHeaderRow.add("System-required Role id");
         externalHardwareFailuresTableHeaderRow.add("Signature");
         externalHardwareFailuresTableHeaderRow.add("Communication Resource Type");
         externalHardwareFailuresTableHeaderRow.add("Failure Mode Probablity");
@@ -744,6 +749,7 @@ public class MarkovReporting {
                 "System-external network-induced failure modes");
         List<String> externalNetworkFailuresTableHeaderRow = new ArrayList<String>(4);
         externalNetworkFailuresTableHeaderRow.add("System-required Role");
+        externalNetworkFailuresTableHeaderRow.add("System-required Role id");
         externalNetworkFailuresTableHeaderRow.add("Signature");
         externalNetworkFailuresTableHeaderRow.add("Communication Resource Type");
         externalNetworkFailuresTableHeaderRow.add("Failure Mode Probablity");
@@ -763,6 +769,7 @@ public class MarkovReporting {
                     externalSoftwareFailuresTableRow = new ArrayList<String>(
                             externalSoftwareFailuresTableHeaderRow.size());
                     externalSoftwareFailuresTableRow.add(softwareInducedFailureType.getRoleName());
+                    externalSoftwareFailuresTableRow.add(softwareInducedFailureType.getRoleId());
                     externalSoftwareFailuresTableRow.add(softwareInducedFailureType.getSignatureName());
                     externalSoftwareFailuresTableRow.add(softwareInducedFailureType.getSoftwareFailureName());
                     externalSoftwareFailuresTableRow.add(doApproximate ? getFormattedProbabilityAsString(
@@ -784,6 +791,7 @@ public class MarkovReporting {
                     externalHardwareFailuresTableRow = new ArrayList<String>(
                             externalHardwareFailuresTableHeaderRow.size());
                     externalHardwareFailuresTableRow.add(hardwareInducedFailureType.getRoleName());
+                    externalHardwareFailuresTableRow.add(hardwareInducedFailureType.getRoleId());
                     externalHardwareFailuresTableRow.add(hardwareInducedFailureType.getSignatureName());
                     externalHardwareFailuresTableRow.add(hardwareInducedFailureType.getResourceTypeName());
                     externalHardwareFailuresTableRow.add(doApproximate ? getFormattedProbabilityAsString(
@@ -811,6 +819,7 @@ public class MarkovReporting {
                     externalNetworkFailuresTableRow = new ArrayList<String>(
                             externalNetworkFailuresTableHeaderRow.size());
                     externalNetworkFailuresTableRow.add(networkInducedFailureType.getRoleName());
+                    externalNetworkFailuresTableRow.add(networkInducedFailureType.getRoleId());
                     externalNetworkFailuresTableRow.add(networkInducedFailureType.getSignatureName());
                     externalNetworkFailuresTableRow.add(networkInducedFailureType.getCommLinkResourceTypeName());
                     externalNetworkFailuresTableRow.add(doApproximate ? getFormattedProbabilityAsString(
@@ -843,6 +852,7 @@ public class MarkovReporting {
                     internalSoftwareFailuresTableRow.add(softwareInducedFailureType.getInterfaceName());
                     internalSoftwareFailuresTableRow.add(softwareInducedFailureType.getSignatureName());
                     internalSoftwareFailuresTableRow.add(softwareInducedFailureType.getInternalActionName());
+                    internalSoftwareFailuresTableRow.add(softwareInducedFailureType.getInternalActionId());
                     internalSoftwareFailuresTableRow.add(softwareInducedFailureType.getSoftwareFailureName());
                     internalSoftwareFailuresTableRow.add(doApproximate ? getFormattedProbabilityAsString(
                     /*
@@ -869,6 +879,7 @@ public class MarkovReporting {
                     internalHardwareFailuresTableRow = new ArrayList<String>(
                             internalHardwareFailuresTableHeaderRow.size());
                     internalHardwareFailuresTableRow.add(hardwareInducedFailureType.getResourceContainerName());
+                    internalHardwareFailuresTableRow.add(hardwareInducedFailureType.getResourceContainerId());
                     internalHardwareFailuresTableRow.add(hardwareInducedFailureType.getResourceTypeName());
                     internalHardwareFailuresTableRow.add(doApproximate ? getFormattedProbabilityAsString(
                     /*
@@ -895,6 +906,7 @@ public class MarkovReporting {
                     internalNetworkFailuresTableRow = new ArrayList<String>(
                             internalNetworkFailuresTableHeaderRow.size());
                     internalNetworkFailuresTableRow.add(networkInducedFailureType.getLinkingResourceName());
+                    internalNetworkFailuresTableRow.add(networkInducedFailureType.getLinkingResourceId());
                     internalNetworkFailuresTableRow.add(networkInducedFailureType.getCommLinkResourceTypeName());
                     internalNetworkFailuresTableRow.add(doApproximate ? getFormattedProbabilityAsString(
                     /*
@@ -970,32 +982,15 @@ public class MarkovReporting {
         List<TypesFailureProbabilityAggregation> failureProbabilityAggregations = new ArrayList<TypesFailureProbabilityAggregation>();
         for (MarkovFailureType type : cumulatedFailureTypeProbabilities.keySet()) {
             if (!type.isSystemExternal()) { // only consider internal failures
-                if (type instanceof MarkovSoftwareInducedFailureType) { // only
-                                                                        // consider
-                                                                        // software-induced
-                                                                        // failures
+                if (type instanceof MarkovSoftwareInducedFailureType) { 
+                	// only consider software-induced failures
                     MarkovSoftwareInducedFailureType softwareInducedFailureType = (MarkovSoftwareInducedFailureType) type;
                     boolean foundEntry = false;
                     for (TypesFailureProbabilityAggregation aggregation : failureProbabilityAggregations) {
-                        if (aggregation.compareTo(FailureAnalysisFailureType.SOFTWARE_INDUCED,
-                                softwareInducedFailureType.getSoftwareFailureName())) { // see if
-                                                                                        // there
-                                                                                        // exists
-                                                                                        // already
-                                                                                        // a
-                                                                                        // fitting
-                                                                                        // aggregation
-                                                                                        // to
-                                                                                        // which
-                                                                                        // can
-                                                                                        // add
-                                                                                        // this
-                                                                                        // type's
-                                                                                        // failure
-                                                                                        // probability
-                                                                                        // to
-                            // yes, we found such an entry, so add up the
-                            // probabilities
+						// see if there exists already a fitting aggregation to which can add this type's failure probability to
+                    	if (aggregation.compareTo(FailureAnalysisFailureType.SOFTWARE_INDUCED,
+                                softwareInducedFailureType.getSoftwareFailureName())) { 
+                        	// yes, we found such an entry, so add up the probabilities
                             aggregation.addToFailureProbability(cumulatedFailureTypeProbabilities
                                     .get(softwareInducedFailureType));
                             foundEntry = true;
