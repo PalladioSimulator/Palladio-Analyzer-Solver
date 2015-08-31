@@ -39,6 +39,7 @@ public class LQNTest {
     public void handle() throws IOException {
     	
     	String tmpdir = System.getProperty("java.io.tmpdir");
+    	// C:\Users\Anne\AppData\Local\Temp\test.lqxo on Anne's Windows 8 system. 
 
         final LqnFactory fac = LqnFactory.eINSTANCE;
         final LqnModelType lmt = fac.createLqnModelType();
@@ -58,6 +59,7 @@ public class LQNTest {
 
         LqnXmlHandler handler = new LqnXmlHandler(lmt);
         handler.saveModelToXMI(tmpdir+FILENAME_INPUT);
+        System.out.println("The model was saved to "+tmpdir+FILENAME_INPUT);
         LqnXmlHandler.fixXMLFile(tmpdir+FILENAME_INPUT);
         
         LqnXmlHandler.loadModelFromXMI(tmpdir+FILENAME_INPUT);
