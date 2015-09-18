@@ -6,6 +6,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 import org.palladiosimulator.pcm.allocation.AllocationContext;
+import org.palladiosimulator.pcm.core.composition.AssemblyContext;
 import org.palladiosimulator.pcm.resourceenvironment.CommunicationLinkResourceSpecification;
 import org.palladiosimulator.pcm.resourceenvironment.ProcessingResourceSpecification;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
@@ -71,10 +72,10 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 
 	private ContextWrapper myContextWrapper;
 	private LqnBuilder lqnBuilder;
-	
-	public Rdseff2Lqn(LqnBuilder aLqnBuilder, ContextWrapper aContextWrapper) {
-		lqnBuilder = aLqnBuilder;
-		myContextWrapper = aContextWrapper;
+
+	public Rdseff2Lqn(LqnBuilder lqnBuilder, ContextWrapper contextWrapper) {
+		this.lqnBuilder = lqnBuilder;
+		this.myContextWrapper = contextWrapper;
 	}
 
 	/**
@@ -94,21 +95,21 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 	 */
 	@Override
 	public String caseAcquireAction(AcquireAction object) {
-		
+
 		String successorId;
 		if (lqnBuilder.isLQSimAnalysis()) {
 			String id = Pcm2LqnHelper.getId(object, myContextWrapper);
 			String passiveResourceId = Pcm2LqnHelper.getIdForPassiveResource(object.getPassiveresource_AcquireAction(), myContextWrapper.getAllCtx());
-			
+
 			ProcessorType pt = lqnBuilder.addProcessor(passiveResourceId);
-			
+
 			lqnBuilder.addSemaphoreTask(passiveResourceId, pt, Integer.valueOf(object
 					.getPassiveresource_AcquireAction()
 					.getCapacity_PassiveResource().getSpecification()));
 
 			ActivityDefType adt = lqnBuilder.addActivityDef(id);
 			adt.setCallOrder(CallOrderType.DETERMINISTIC);
-			
+
 			lqnBuilder.addActivityMakingCall(id, Pcm2LqnHelper.getWaitEntryId(passiveResourceId), CallType.SYNCH);
 			successorId = (String) doSwitch(object
 					.getSuccessor_AbstractAction());
@@ -126,8 +127,8 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 					.getSuccessor_AbstractAction());
 			return successorId;
 		}
-		
-		
+
+
 	}
 
 	/**
@@ -135,50 +136,50 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 	 */
 	@Override
 	public String caseReleaseAction(ReleaseAction object) {
-		
+
 		String successorId;
 		if (lqnBuilder.isLQSimAnalysis()) {
 			String id = Pcm2LqnHelper.getId(object, myContextWrapper);
-			
+
 			ActivityDefType adt = lqnBuilder.addActivityDef(id);
 			adt.setCallOrder(CallOrderType.DETERMINISTIC);
-			
+
 			String passiveResourceId = Pcm2LqnHelper.getIdForPassiveResource(object.getPassiveResource_ReleaseAction(), myContextWrapper.getAllCtx());
-			
+
 			lqnBuilder.addActivityMakingCall(id, Pcm2LqnHelper.getSignalEntryId(passiveResourceId), CallType.SYNCH);
 			successorId = (String) doSwitch(object.getSuccessor_AbstractAction());
 			lqnBuilder.addSequencePrecedence(id, successorId);
 			return id;
-		
+
 		} else {
 			logger.warn("Ignored release action because it is not supported by LQNS. Be aware that the passive resource is not analysed.");
 			successorId = (String) doSwitch(object
 					.getSuccessor_AbstractAction());
 			return successorId;
 		}
-		
+
 	}
 
 	@Override
 	public String caseResourceDemandingSEFF(ResourceDemandingSEFF object) {
 		String id = Pcm2LqnHelper.getId(object, myContextWrapper);
-				
+
 		ProcessorType pt = lqnBuilder.addProcessor(id);
-		
+
 		TaskType tt = lqnBuilder.addTask(id, pt);
 		//tt.setMultiplicity(new BigInteger("1"));
 		//tt.setScheduling(TaskSchedulingType.INF);
 
 		EntryType et = lqnBuilder.addEntry(id, tt);
 		lqnBuilder.addTaskActivityGraph(tt);
-		
+
 		ResourceDemandingBehaviour rdb = (ResourceDemandingBehaviour)object;
 		String startId = (String)doSwitch(getStartAction(rdb));
 		String stopId = Pcm2LqnHelper.getId(getStopAction(rdb), myContextWrapper);
 		lqnBuilder.addReplyActivity(id, startId, stopId);
-		
+
 		lqnBuilder.restoreFormerTaskActivityGraph();
-		
+
 		return et.getName();
 	}
 
@@ -187,7 +188,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		String id = Pcm2LqnHelper.getId(object, myContextWrapper);
 		handleLoop(object, id);
 		return id;
-		
+
 	}
 
 	private void handleLoop(AbstractLoopAction object, String id) {
@@ -201,7 +202,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		String successorId = (String)doSwitch(object.getSuccessor_AbstractAction());
 		lqnBuilder.addSequencePrecedence(id, successorId);
 	}
-	
+
 	private String handleLoopBody(AbstractLoopAction loop,String id) {
 		ProcessorType pt = lqnBuilder.addProcessor(id);
 		TaskType tt = lqnBuilder.addTask(id,pt);
@@ -212,9 +213,9 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		String startId = (String) doSwitch(getStartAction(rdb));
 		String stopId = Pcm2LqnHelper.getId(getStopAction(rdb), myContextWrapper);
 		lqnBuilder.addReplyActivity(id, startId, stopId);
-		
+
 		lqnBuilder.restoreFormerTaskActivityGraph();
-		
+
 		return startId;
 	}
 
@@ -244,12 +245,12 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 	public String caseResourceDemandingBehaviour(ResourceDemandingBehaviour object) {
 		return doSwitch(getStartAction(object));
 	}
-	
+
 	@Override
 	public String caseStartAction(StartAction object) {
 		String id = Pcm2LqnHelper.getId(object, myContextWrapper);
 		String entryId = "";
-		
+
 		if (object.eContainer() instanceof ResourceDemandingSEFF){
 			ResourceDemandingSEFF rdseff = (ResourceDemandingSEFF)object.eContainer();
 			ActivityDefType adt = lqnBuilder.addActivityDef(id);
@@ -275,19 +276,19 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		} else { //nested resource demanding behaviour
 			lqnBuilder.addActivityDef(id);
 		}
-		
+
 		String successorId = (String) doSwitch(object.getSuccessor_AbstractAction());
 		lqnBuilder.addSequencePrecedence(id, successorId);
-		
+
 		if (entryId.equals("")) return id;
 		else return entryId;
 	}
-	
+
 
 	@Override
 	public String caseBranchAction(BranchAction object) {
 		String id = Pcm2LqnHelper.getId(object, myContextWrapper);
-		
+
 		lqnBuilder.addActivityDef(id);
 		PrecedenceType ptBegin = lqnBuilder.addBeginBranchPrecedence(id);
 		PrecedenceType ptEnd = lqnBuilder.addEndBranchPrecedence();
@@ -297,13 +298,13 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 			ResourceDemandingBehaviour rdb = bt.getBranchBehaviour_BranchTransition();
 
 			// the lqn solver complains if a branch has zero probability
-//			if(contextWrapper.getBranchProbability(bt)!=0.0){
+			//			if(contextWrapper.getBranchProbability(bt)!=0.0){
 			Double branchProbNumeric = myContextWrapper.getBranchProbability(bt);
 			if (branchProbNumeric > 0){
 				String startId = (String) doSwitch(rdb);
-	
+
 				String branchProb = branchProbNumeric.toString();
-				
+
 				lqnBuilder.addActivityOrType(startId,branchProb, ptBegin);
 
 				String stopId = Pcm2LqnHelper.getId(getStopAction(rdb), myContextWrapper);
@@ -319,7 +320,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		//This can happen if this SEFF is called from multiple contexts. 
 		//TODO: should we not be able to distinguish multiple contexts?
 		// -> I have put the deletion of duplicate precedences in the LQNBuilder. 
-		
+
 
 		return id;
 	}
@@ -334,9 +335,11 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 	public String caseExternalCallAction(ExternalCallAction object) {
 		return handleExternalCallAction(object, CallType.SYNCH, object.getSuccessor_AbstractAction());
 	}
-	
+
 	/**
-	 * Handle an {@link ExternalCallAction}
+	 * Handle an {@link ExternalCallAction}. This method is able to handle 1:n mappings of 1 {@link AssemblyContext} with n 
+	 * {@link AllocationContext}s. 
+	 * Change is described at https://sdqweb.ipd.kit.edu/wiki/PCM_Changelog#1:n_mapping_of_AssemblyContext_to_AllocationContext_.28Anne.29
 	 * @param object The {@link ExternalCallAction}
 	 * @param callType
 	 * @param successor The successor action is determined by the caller, so that it does not necessarily have to be 
@@ -347,9 +350,9 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 	 */
 	private String handleExternalCallAction(ExternalCallAction object, CallType callType, AbstractAction successor){
 		String callId = Pcm2LqnHelper.getId(object, myContextWrapper);
-		
+
 		AllocationContext callerAllocationContext = myContextWrapper.getAllCtx();
-		
+
 		ResourceDemandingSEFF seff = (ResourceDemandingSEFF)myContextWrapper.getNextSEFF(object);
 		if (seff == null){
 			// this is a system external call
@@ -362,7 +365,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 
 			List<ContextWrapper> contextWrapperList = myContextWrapper.getContextWrapperFor(object);
 			List<AllocationContext> calledAllocationContextList = new ArrayList<AllocationContext>(contextWrapperList.size());
-						
+
 			// if one of the contextWrappers refers to the same allocation context than the current one, then 
 			// then direct all calls to only this one
 			// assume there is at most component instance per resource container (more should be prohibited by the metamodel)
@@ -390,7 +393,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 				createCallActivity(callId, seff, callType);
 
 			} else {
-				// need to create a branch because several remote component instances are called
+				// need to create several synch-calls because several remote component instances are called
 				// thus, iterate over all context wrappers and call the following SEFF for them. 
 
 				double branchProb = 1.0/contextWrapperList.size();
@@ -400,28 +403,28 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 
 					AllocationContext toAllocationContext = myContextWrapper.getAllCtx();
 					calledAllocationContextList.add(toAllocationContext);
-					
+
 					// create LQN call
 					createCallActivity(callId, seff, callType, branchProb);
 
 					// the ends of the branches are connected below after it has been decided whether to include network calls.
 				}
-				
+
 			}
 
 			myContextWrapper = oldContextWrapper;
-			
+
 			String successorId = (String) doSwitch(successor);
-			
+
 			// Handle network calls. 
 			// Just create a network call before the call created above that calls any network, 
 			// and another one for the response afterwards. 
 			// this is inaccurate, because the network of replica 1 may be called before replica 2 is called now,  
 			// the proper dependency is lost.  
 			// For the LQNS MVA analysis, it does not matter, though, because the mean values will stay the same
-			
+
 			for (AllocationContext targetAllocationContext : calledAllocationContextList) {
-				
+
 				// Add linking resource demand if this is a remote call.
 				// careful: The linking resource processor is only generated if the latency is != 0. 
 				if (callerAllocationContext.getResourceContainer_AllocationContext() != targetAllocationContext.getResourceContainer_AllocationContext()){
@@ -464,7 +467,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 						}
 
 						return networkCallId;
-	
+
 
 					} else {
 						if (link == null){
@@ -474,27 +477,27 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 					// else go to return statement below and return the id of the external call itself.
 				}
 			}
-			
-            //only come here if no linking resource calls have been created, e.g. because there is no latency defined.  
+
+			//only come here if no linking resource calls have been created, e.g. because there is no latency defined.  
 			lqnBuilder.addSequencePrecedence(callId, successorId);
-			
-			
-			
+
+
+
 			// all possible communication paths are thus the following
 			// replication and LAN:     branch, LAN, external, LAN, branch, successor
 			// no replication and LAN:          LAN, external, LAN,         successor
-            // no replication and local:             external,              successor
+			// no replication and local:             external,              successor
 			//
 			// The last combination, namely
 			// replication and no LAN:  branch,      external,      branch, successor
 			// is usually not used because two replicas cannot be on the same node, so branch is always combined with remote.
 			// However, if a remote call has no latency specified, then this will be generated, ignoring the link. 
 			// 
-			
+
 			return callId; // for predecessor
 		}
 	}
-	
+
 	private void createCallActivity(String callerId, ResourceDemandingSEFF sefftoBeCalled, CallType callType) {
 		createCallActivity(callerId, sefftoBeCalled, callType, 1.0);
 	}
@@ -517,18 +520,18 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 	@Override
 	public String caseInternalAction(InternalAction object) {
 		String id = Pcm2LqnHelper.getId(object, myContextWrapper);
-		
+
 		EList<ParametricResourceDemand> resDemList = object.getResourceDemand_Action();
 		int counter = 0; // for the number of resource demands (mapped to entry name)
 		for (ParametricResourceDemand resourceDemand : resDemList){
 			String processorId = getProcessorName(resourceDemand);
 
-//			// create a new task for the resource demand
-//			ProcessorType pt = lqnBuilder.getProcessor(processorId);
-//			TaskType tt = lqnBuilder.addTaskForResourceDemand(id+counter, pt);
-//			EntryType et = lqnBuilder.addEntry(id+counter, tt);
-//			et.setType(TypeType.PH1PH2);
-			
+			//			// create a new task for the resource demand
+			//			ProcessorType pt = lqnBuilder.getProcessor(processorId);
+			//			TaskType tt = lqnBuilder.addTaskForResourceDemand(id+counter, pt);
+			//			EntryType et = lqnBuilder.addEntry(id+counter, tt);
+			//			et.setType(TypeType.PH1PH2);
+
 			// first a new entry for the resource demand
 			TaskType tt = lqnBuilder.getTaskForProcessor(processorId);
 			EntryType et = lqnBuilder.addEntry(id+counter, tt);
@@ -539,7 +542,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 			Double demand = myContextWrapper.getMeanTimeConsumption(resourceDemand);
 			String hostDemand = demand.toString();
 			apt.setHostDemandMean(hostDemand);
-			
+
 			//if continuous function, get coefficient of variance
 			//TODO: also get this for stepwise defined functions!
 			//Check whether this has been a distribution originally 
@@ -553,10 +556,10 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 					apt.setHostDemandCvsq(squaredcv.toString());
 				}
 			}
-			
+
 			PhaseActivities pa = lqnBuilder.addPhaseActivities(apt);
 			et.setEntryPhaseActivities(pa);
-			
+
 			// now another activity in the current task graph making the 
 			// call to the entry created for the resource demand
 			lqnBuilder.addActivityDef(id+counter);
@@ -564,10 +567,10 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 			if (counter<resDemList.size()-1){
 				lqnBuilder.addSequencePrecedence(id+counter, id+(counter+1));	
 			}
-			
+
 			counter++;
 		}
-		
+
 		String successorId = (String) doSwitch(object.getSuccessor_AbstractAction());
 		if ( resDemList.size() > 0){
 			//Only add a sequence predecence if there actually was a resource demand in the list, i.e. if an activity etc. has been created
@@ -601,21 +604,21 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		// Precedence has already been created by predecessor
 		return id;
 	}
-	
+
 	private StartAction getStartAction(ResourceDemandingBehaviour behaviour) {
 		StartAction startAction = (StartAction) EMFQueryHelper.getObjectByType(
 				behaviour.getSteps_Behaviour(), StartAction.class);
 		return startAction;
 	}
 
-	
+
 	private StopAction getStopAction(ResourceDemandingBehaviour behaviour) {
 		StopAction stopAction = (StopAction) EMFQueryHelper.getObjectByType(
 				behaviour.getSteps_Behaviour(), StopAction.class);
 		return stopAction;
 	}
 
-	
+
 	public String caseForkActionOld(ForkAction object) {
 		// if this fork action is asynchronous and only contains an external call, 
 		// it can be modelled in LQN by just changing the call to send-no-reply
@@ -623,7 +626,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		// should be possible to map them to the same constructs, too.
 		if (object.getAsynchronousForkedBehaviours_ForkAction().size() == 1
 				&& (object.getSynchronisingBehaviours_ForkAction() == null 
-					|| object.getSynchronisingBehaviours_ForkAction().getSynchronousForkedBehaviours_SynchronisationPoint().size() == 0)){
+				|| object.getSynchronisingBehaviours_ForkAction().getSynchronousForkedBehaviours_SynchronisationPoint().size() == 0)){
 			ForkedBehaviour innerFork = object.getAsynchronousForkedBehaviours_ForkAction().get(0);
 			// if there is only an external call, that means there are three steps (start, call, stop) and one is an external call
 			if (innerFork.getSteps_Behaviour().size() == 3){
@@ -641,14 +644,14 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 				}
 				// else return super.caseFork (i.e. go to end of method)
 			}
-				
+
 		} 
 		logger.warn("No arbitrary Fork action supported yet, only asnychronous Forks containing a single ExternalCall are supported.");
-		
+
 		return super.caseForkAction(object);
-		
+
 	}
-	
+
 	@Override
 	public String caseForkAction(ForkAction object){
 		String id = Pcm2LqnHelper.getId(object, myContextWrapper);
@@ -660,7 +663,7 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 		EList<ForkedBehaviour> asyncBehList = object.getAsynchronousForkedBehaviours_ForkAction();
 		for (ForkedBehaviour asyncBeh : asyncBehList){
 			currentId = Pcm2LqnHelper.getIdForForkedBehaviour(asyncBeh, myContextWrapper);
-			
+
 			// create new task graph for the forked behaviour
 			ProcessorType pt = lqnBuilder.addProcessor(currentId);
 			TaskType tt = lqnBuilder.addTask(currentId,pt);
@@ -669,33 +672,33 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 
 			// create the actions of the new task graph by traversing the forked behavior's steps
 			doSwitch(getStartAction(asyncBeh));
-			
+
 			lqnBuilder.restoreFormerTaskActivityGraph();
-			
+
 			// create an asynchronous external call to the task representing the forked behaviour
 			lqnBuilder.addActivityDef(currentId+"_Action");
 			lqnBuilder.addActivityMakingCall(currentId+"_Action", currentId+"_Entry", CallType.ASYNCH);
-			
+
 			lqnBuilder.addSequencePrecedence(predecessorId, currentId+"_Action");
 			predecessorId = currentId+"_Action";
-			
+
 		}
-		
+
 		if (object.getSynchronisingBehaviours_ForkAction() != null
-			&& object.getSynchronisingBehaviours_ForkAction().getSynchronousForkedBehaviours_SynchronisationPoint().size() > 0) {
+				&& object.getSynchronisingBehaviours_ForkAction().getSynchronousForkedBehaviours_SynchronisationPoint().size() > 0) {
 			EList<ForkedBehaviour> syncBehList = object.getSynchronisingBehaviours_ForkAction().getSynchronousForkedBehaviours_SynchronisationPoint();
-		
+
 			PrecedenceType ptBegin = lqnBuilder.addBeginForkPrecedence(currentId+"_Action");
 			PrecedenceType ptEnd = lqnBuilder.addEndForkPrecedence();		
 
 			for (ForkedBehaviour syncBeh : syncBehList){
-				
+
 				String startId = doSwitch(getStartAction(syncBeh));
 				lqnBuilder.addActivityToPostAnd(startId, ptBegin);
-				
+
 				String stopId = Pcm2LqnHelper.getId(getStopAction(syncBeh), myContextWrapper);
 				lqnBuilder.addActivityToPreAnd(stopId, ptEnd);
-				
+
 			}
 			String successorId = (String) doSwitch(object.getSuccessor_AbstractAction());
 			ptEnd.getPost().getActivity().setName(successorId);
@@ -703,9 +706,9 @@ public class Rdseff2Lqn extends SeffSwitch<String> {
 			String successorId = (String) doSwitch(object.getSuccessor_AbstractAction());
 			lqnBuilder.addSequencePrecedence(currentId + "_Action", successorId);
 		}
-		
+
 		return id;
 	}
-	
-	
+
+
 }
