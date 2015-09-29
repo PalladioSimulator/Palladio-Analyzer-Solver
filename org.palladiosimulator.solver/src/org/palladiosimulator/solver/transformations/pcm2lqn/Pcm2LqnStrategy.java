@@ -246,6 +246,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				pb.redirectErrorStream(true);
 				Process proc = pb.start();
 
+				//FIXME: reinstate StreamGobbler to bea able to read without blocking. 
 				// StreamGobbler errorGobbler = new
 				// StreamGobbler(proc.getErrorStream(), "ERROR");
 				// StreamGobbler outputGobbler = new
@@ -254,18 +255,28 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				// outputGobbler.start();
 
 				if (config.getTimeout() >= 0){
-					//FIXME: Anne: I have not managed to read the errors with a timeout, so no error messages are read here (no readStream, but we should do that). 
-					boolean hasTerminated = proc.waitFor(config.getTimeout(), config.getTimeoutTimeUnit());
-					if (!hasTerminated){
-						logger.error("LQN solver did not terminte within the specified timeout. Aborting...");
-						proc.destroy();
-						exitVal = LQNS_RETURN_MODEL_FAILED_TO_CONVERGE;
-					} else {
-						exitVal = LQNS_RETURN_SUCCESS;
+					//FIXME: Anne: I have not managed to read the errors with a timeout, so no error messages are read here (no call to readStream, but we should do that).
+					
+					// waitFor is only available since Java 1.8
+					//boolean hasTerminated = proc.waitFor(config.getTimeout(), config.getTimeoutTimeUnit());
+					
+					long startTime = System.currentTimeMillis();
+					long timeOutInMillis = TimeUnit.MILLISECONDS.convert(config.getTimeout(), config.getTimeoutTimeUnit()); 
+					
+					// loop until time is out
+					while (System.currentTimeMillis() - startTime <= timeOutInMillis){
+						try {
+							exitVal = proc.exitValue();
+							break;
+						} catch (IllegalThreadStateException e) {
+							// process has not yet terminated, try again later. 
+							Thread.sleep(2000);
+						}
 					}
+					
 				} else {
 					// time out after 20 seconds
-					errorMessages = readStream(proc.getInputStream(), 20, TimeUnit.SECONDS);
+					errorMessages = readStream(proc.getInputStream());
 					exitVal = proc.waitFor();
 				}
 				proc.destroy();
@@ -486,35 +497,15 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	 * @param is
 	 * @return the concatenated String of all error messages encountered during the analysis
 	 */
-	private String readStream(InputStream is, long timeout, TimeUnit timeUnitForTimeOut ) {
+	private String readStream(InputStream is) {
 		String errorMessages = "";
 		try {
 			InputStreamReader isr = new InputStreamReader(is);
 			BufferedReader br = new BufferedReader(isr);
 			String line = null;
-			long startTime = System.currentTimeMillis();
-			// timeout is in minutes
-			long timeOutInMillis = TimeUnit.MILLISECONDS.convert(config.getTimeout(), config.getTimeoutTimeUnit()); 
-			boolean hasTimeout = true;
-			if (timeOutInMillis < 0){
-				// do not evaluate SystemcurrentTimeMillis() in the following while if no timeOut was set (lazy evaluation will return quicker). 
-				hasTimeout = false;
-			}
-			while ((!hasTimeout	|| System.currentTimeMillis() - startTime <=  timeOutInMillis)){
+
+			while ((line = br.readLine()) != null){
 				
-				if (!br.ready()){
-					try {
-						timeUnitForTimeOut.sleep(timeout);
-					} catch (InterruptedException e) {
-						//that is fine, continue
-					}
-				}
-				if (br.ready()){
-					line = br.readLine();
-				} else {
-					// reading a line took too long, maybe the lqnsolver has already started solving. 
-					break;
-				}
 				// if (type.equals("ERROR")) logger.error(line);
 				if (line.contains("warning")) {
 					if (isDebug()) {
@@ -607,7 +598,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	
 }
 
-// TODO: Anne: delete this method and the related comments above if the changes
+// FIXME: Anne: use this method again to avoid that we get stuck if lqns gets stuck or the stream has a problem 
 // (to use ProcessBuilder and a single threaded reading out of the output) has
 // proved useful.
 @Deprecated
