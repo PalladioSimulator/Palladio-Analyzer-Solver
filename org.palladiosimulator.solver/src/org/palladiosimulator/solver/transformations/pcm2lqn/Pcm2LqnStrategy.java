@@ -253,9 +253,21 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				// errorGobbler.start();
 				// outputGobbler.start();
 
-				errorMessages = readStream(proc.getInputStream());
-
-				exitVal = proc.waitFor();
+				if (config.getTimeout() >= 0){
+					//FIXME: Anne: I have not managed to read the errors with a timeout, so no error messages are read here (no readStream, but we should do that). 
+					boolean hasTerminated = proc.waitFor(config.getTimeout(), config.getTimeoutTimeUnit());
+					if (!hasTerminated){
+						logger.error("LQN solver did not terminte within the specified timeout. Aborting...");
+						proc.destroy();
+						exitVal = LQNS_RETURN_MODEL_FAILED_TO_CONVERGE;
+					} else {
+						exitVal = LQNS_RETURN_SUCCESS;
+					}
+				} else {
+					// time out after 20 seconds
+					errorMessages = readStream(proc.getInputStream(), 20, TimeUnit.SECONDS);
+					exitVal = proc.waitFor();
+				}
 				proc.destroy();
 			}
 
@@ -276,13 +288,23 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 
 		/* return if results are available or throw exception. */
 		if(!solverProgram.equals(FILENAME_LINE)){
-			if (exitVal == LQNS_RETURN_SUCCESS) {
-				logger.warn("Analysis Result has been written to " + resultFile);
+			if (exitVal == LQNS_RETURN_SUCCESS ) {
+				if (errorMessages.contains("error")){
+					logger.error("LQN analysis threw errors: "+errorMessages);
+//					if (errorMessages.contains("is too high")){
+//						throw new RuntimeException("The lqn model failed to converge. Detailed error: "+errorMessages);
+//					}
+					logger.warn("Trying to continue and writing results to " + resultFile);
+				} else {
+					logger.warn("Analysis Result has been written to " + resultFile);
+				}
 				if (lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)){
 					//showOutput(resultFile);
 					LQNHtmlResultGenerator result = new LQNHtmlResultGenerator(resultFile);
 					result.display();
 				}
+
+				
 
 			} else if (exitVal == LQNS_RETURN_MODEL_FAILED_TO_CONVERGE){
 				logger.error(solverProgram + " exited with " + exitVal
@@ -460,17 +482,39 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	}
 
 	/**
-	 * 
+	 * Reads the stream of the process until the specified timout. 
 	 * @param is
 	 * @return the concatenated String of all error messages encountered during the analysis
 	 */
-	private String readStream(InputStream is) {
+	private String readStream(InputStream is, long timeout, TimeUnit timeUnitForTimeOut ) {
 		String errorMessages = "";
 		try {
 			InputStreamReader isr = new InputStreamReader(is);
 			BufferedReader br = new BufferedReader(isr);
 			String line = null;
-			while ((line = br.readLine()) != null)
+			long startTime = System.currentTimeMillis();
+			// timeout is in minutes
+			long timeOutInMillis = TimeUnit.MILLISECONDS.convert(config.getTimeout(), config.getTimeoutTimeUnit()); 
+			boolean hasTimeout = true;
+			if (timeOutInMillis < 0){
+				// do not evaluate SystemcurrentTimeMillis() in the following while if no timeOut was set (lazy evaluation will return quicker). 
+				hasTimeout = false;
+			}
+			while ((!hasTimeout	|| System.currentTimeMillis() - startTime <=  timeOutInMillis)){
+				
+				if (!br.ready()){
+					try {
+						timeUnitForTimeOut.sleep(timeout);
+					} catch (InterruptedException e) {
+						//that is fine, continue
+					}
+				}
+				if (br.ready()){
+					line = br.readLine();
+				} else {
+					// reading a line took too long, maybe the lqnsolver has already started solving. 
+					break;
+				}
 				// if (type.equals("ERROR")) logger.error(line);
 				if (line.contains("warning")) {
 					if (isDebug()) {
@@ -481,6 +525,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 					logger.warn(line);
 					errorMessages += line + "\n";
 				}
+			}
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}

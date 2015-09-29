@@ -119,6 +119,8 @@ public class PCMSolverConfigurationBasedConfigBuilder extends
 		config.setUnderCoeff(hasAttribute(MessageStrings.UNDER_COEFF) ? getStringAttribute(MessageStrings.UNDER_COEFF)
 				: "0.5");
 		
+		config.setTimeout(hasAttribute(MessageStrings.LQN_TIMEOUT) ? getStringAttribute(MessageStrings.LQN_TIMEOUT) : "-1");
+		
 		config.setStopOnMessageLossLQNS(hasAttribute(MessageStrings.STOP_ON_MESSAGE_LOSS_LQNS) 
 				? getBooleanAttribute(MessageStrings.STOP_ON_MESSAGE_LOSS_LQNS)
 				: true);

@@ -1,5 +1,6 @@
 The ecore file was created by importing the LQN xsd file as described by the 
 "Generating an EMF Model using XML Schema (XSD)" Tutorial (Last updated: May 21, 2008)
+http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.emf.doc%2Ftutorials%2Fxlibmod%2Fxlibmod.html
 
 Then, the following manual changes were made
 * renamed LqnCore to lqn in the root element (name and nsPrefix)
