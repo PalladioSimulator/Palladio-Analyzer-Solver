@@ -125,7 +125,7 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 		PCMRandomVariable thinkTime = closedWorkload
 				.getThinkTime_ClosedWorkload();
 		if (thinkTime == null){
-			throw new RuntimeException("No think tiome defined for closed workload. Fix your model and validate it before running the analyses.");
+			throw new RuntimeException("No think time defined for closed workload. Fix your model and validate it before running the analyses.");
 		}
 		tt.setMultiplicity(new BigInteger(population));
 		tt.setThinkTime(thinkTime.getSpecification());
