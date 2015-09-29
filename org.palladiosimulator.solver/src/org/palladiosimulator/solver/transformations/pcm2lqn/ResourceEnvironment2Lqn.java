@@ -149,6 +149,7 @@ public class ResourceEnvironment2Lqn extends ResourceenvironmentSwitch {
         // pt.setSpeedFactor(processingRateSolved);
 
         final TaskType tt = this.lqnBuilder.addTask(id, pt);
+        tt.setMultiplicity(new BigInteger(""+object.getNumberOfReplicas()));
         final ActivityPhasesType apt = this.lqnBuilder.addActivityPhases(id);
         final PhaseActivities pa = this.lqnBuilder.addPhaseActivities(apt);
         final EntryType et = this.lqnBuilder.addEntry(id, tt);
