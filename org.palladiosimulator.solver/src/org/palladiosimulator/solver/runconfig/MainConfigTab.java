@@ -47,8 +47,6 @@ public class MainConfigTab extends FileNamesInputTab {
 	private Button  lqsimConfigStopOnMessageLoss;
 	protected Combo comboLqsimOutput;
 	
-	private Text lqnsConfigTimeout;
-	
 	private Text lqnsConfigPragma;
 	private Text lqnsimConfigPragma;
 	
@@ -345,14 +343,6 @@ public class MainConfigTab extends FileNamesInputTab {
 		lqnsConfigPragma.setLayoutData(threeColumnGridData);
 		lqnsConfigPragma.addModifyListener(listener);
 		
-		Label labelTimeout = new Label(group, SWT.NONE);
-		labelTimeout.setText("Timeout in minutes (integer, -1 for no timeout):");
-		labelTimeout.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
-		
-		lqnsConfigTimeout = new Text(group, SWT.SINGLE | SWT.BORDER);
-		lqnsConfigTimeout.setLayoutData(threeColumnGridData);
-		lqnsConfigTimeout.addModifyListener(listener);
-		
 		return group;
 	}
 
@@ -614,11 +604,6 @@ public class MainConfigTab extends FileNamesInputTab {
 		} catch(CoreException e){
 			lqnsConfigPragma.setText("");
 		}
-		try{
-			lqnsConfigTimeout.setText(configuration.getAttribute(MessageStrings.LQN_TIMEOUT, "-1"));
-		} catch(CoreException e){
-			lqnsConfigTimeout.setText("-1");
-		}
 		
 		try{
 			lqsimConfig1.setText(configuration.getAttribute(MessageStrings.RUN_TIME, ""));
@@ -716,8 +701,6 @@ public class MainConfigTab extends FileNamesInputTab {
 		configuration.setAttribute(MessageStrings.RUN_TIME, lqsimConfig1.getText());
 		configuration.setAttribute(MessageStrings.BLOCKS, lqsimConfig2.getText());
 		configuration.setAttribute(MessageStrings.PS_QUANTUM, lqsimConfig3.getText());
-		
-		configuration.setAttribute(MessageStrings.LQN_TIMEOUT, lqnsConfigTimeout.getText());
 		
 		configuration.setAttribute(MessageStrings.PRAGMAS, lqnsimConfigPragma.getText());
 		configuration.setAttribute(MessageStrings.PRAGMAS, lqnsConfigPragma.getText());

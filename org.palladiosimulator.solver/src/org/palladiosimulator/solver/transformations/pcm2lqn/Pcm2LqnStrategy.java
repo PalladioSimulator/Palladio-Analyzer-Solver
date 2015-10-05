@@ -246,7 +246,6 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				pb.redirectErrorStream(true);
 				Process proc = pb.start();
 
-				//FIXME: reinstate StreamGobbler to bea able to read without blocking. 
 				// StreamGobbler errorGobbler = new
 				// StreamGobbler(proc.getErrorStream(), "ERROR");
 				// StreamGobbler outputGobbler = new
@@ -254,31 +253,9 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 				// errorGobbler.start();
 				// outputGobbler.start();
 
-				if (config.getTimeout() >= 0){
-					//FIXME: Anne: I have not managed to read the errors with a timeout, so no error messages are read here (no call to readStream, but we should do that).
-					
-					// waitFor is only available since Java 1.8
-					//boolean hasTerminated = proc.waitFor(config.getTimeout(), config.getTimeoutTimeUnit());
-					
-					long startTime = System.currentTimeMillis();
-					long timeOutInMillis = TimeUnit.MILLISECONDS.convert(config.getTimeout(), config.getTimeoutTimeUnit()); 
-					
-					// loop until time is out
-					while (System.currentTimeMillis() - startTime <= timeOutInMillis){
-						try {
-							exitVal = proc.exitValue();
-							break;
-						} catch (IllegalThreadStateException e) {
-							// process has not yet terminated, try again later. 
-							Thread.sleep(2000);
-						}
-					}
-					
-				} else {
-					// time out after 20 seconds
-					errorMessages = readStream(proc.getInputStream());
-					exitVal = proc.waitFor();
-				}
+				errorMessages = readStream(proc.getInputStream());
+
+				exitVal = proc.waitFor();
 				proc.destroy();
 			}
 
@@ -299,23 +276,24 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 
 		/* return if results are available or throw exception. */
 		if(!solverProgram.equals(FILENAME_LINE)){
+			
 			if (exitVal == LQNS_RETURN_SUCCESS ) {
 				if (errorMessages.contains("error")){
 					logger.error("LQN analysis threw errors: "+errorMessages);
-//					if (errorMessages.contains("is too high")){
-//						throw new RuntimeException("The lqn model failed to converge. Detailed error: "+errorMessages);
-//					}
+					//					if (errorMessages.contains("is too high")){
+					//						throw new RuntimeException("The lqn model failed to converge. Detailed error: "+errorMessages);
+					//					}
 					logger.warn("Trying to continue and writing results to " + resultFile);
 				} else {
 					logger.warn("Analysis Result has been written to " + resultFile);
 				}
+
+				logger.warn("Analysis Result has been written to " + resultFile);
 				if (lqnsOutputType.equals(MessageStrings.LQN_OUTPUT_HTML)){
 					//showOutput(resultFile);
 					LQNHtmlResultGenerator result = new LQNHtmlResultGenerator(resultFile);
 					result.display();
 				}
-
-				
 
 			} else if (exitVal == LQNS_RETURN_MODEL_FAILED_TO_CONVERGE){
 				logger.error(solverProgram + " exited with " + exitVal
@@ -493,7 +471,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	}
 
 	/**
-	 * Reads the stream of the process until the specified timout. 
+	 * 
 	 * @param is
 	 * @return the concatenated String of all error messages encountered during the analysis
 	 */
@@ -503,9 +481,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 			InputStreamReader isr = new InputStreamReader(is);
 			BufferedReader br = new BufferedReader(isr);
 			String line = null;
-
-			while ((line = br.readLine()) != null){
-				
+			while ((line = br.readLine()) != null)
 				// if (type.equals("ERROR")) logger.error(line);
 				if (line.contains("warning")) {
 					if (isDebug()) {
@@ -516,7 +492,6 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 					logger.warn(line);
 					errorMessages += line + "\n";
 				}
-			}
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
@@ -598,7 +573,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	
 }
 
-// FIXME: Anne: use this method again to avoid that we get stuck if lqns gets stuck or the stream has a problem 
+// TODO: Anne: delete this method and the related comments above if the changes
 // (to use ProcessBuilder and a single threaded reading out of the output) has
 // proved useful.
 @Deprecated

@@ -25,7 +25,6 @@ public class MessageStrings {
 	public static final String UNDER_COEFF = "underCoeff";
 	public static final String LQNS_OUTPUT = "output";
 	public static final String LQSIM_OUTPUT = "lqsimoutput";
-	public static final String LQN_TIMEOUT = "lqntimeout";
 	
 	public static final String PRAGMAS = "lqnPragmas";
 

@@ -1,7 +1,5 @@
 package org.palladiosimulator.solver.runconfig;
 
-import java.util.concurrent.TimeUnit;
-
 import org.palladiosimulator.analyzer.workflow.configurations.AbstractCodeGenerationWorkflowRunConfiguration;
 
 public class PCMSolverWorkflowRunConfiguration extends
@@ -84,8 +82,6 @@ public class PCMSolverWorkflowRunConfiguration extends
 	private String underCoeff;
 
 	private String lqnPragmas;
-
-	private int timeout;
 
 	public PCMSolverWorkflowRunConfiguration() {
 		super();
@@ -494,19 +490,7 @@ public class PCMSolverWorkflowRunConfiguration extends
 	public void setDebugLINE(boolean debugLINE) {
 		this.debugLINE = debugLINE;
 	}
-
-	public void setTimeout(String timoutString) {
-		this.timeout = Integer.parseInt(timoutString);
-		
-	}
-
-	public int getTimeout() {
-		return timeout;
-	}
 	
-	public TimeUnit getTimeoutTimeUnit(){
-		return TimeUnit.MINUTES;
-	}
 	
 	
 	
