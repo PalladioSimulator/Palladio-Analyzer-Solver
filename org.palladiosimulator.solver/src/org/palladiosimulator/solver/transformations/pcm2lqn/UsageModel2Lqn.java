@@ -128,7 +128,12 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 			throw new RuntimeException("No think time defined for closed workload. Fix your model and validate it before running the analyses.");
 		}
 		tt.setMultiplicity(new BigInteger(population));
-		tt.setThinkTime(thinkTime.getSpecification());
+		
+		//the PCM think time may contain function slike Exp(0.5). Need to get mean value for LQNs
+		String specification = thinkTime.getSpecification();
+		
+		double thinkTimeValue = getDoubleMeanValueFromSpecification(thinkTime.getSpecification());
+		tt.setThinkTime(thinkTimeValue);
 		tt.setScheduling(TaskSchedulingType.REF);
 
 		EntryType et = lqnBuilder.addEntry(id,tt);
@@ -149,34 +154,10 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 		EntryType et = lqnBuilder.addEntry(id,tt);
 		
 		//Arrival rate is Kehrwert of the inter arrival time
-		double interarrivaltime = 0;
 		ExpressionInferTypeVisitor visitor = new ExpressionInferTypeVisitor();
 		String specification = openWorkload.getInterArrivalTime_OpenWorkload().getSpecification();
 		
-		Expression exp = ExpressionHelper.parseToExpression(specification);
-		//TOOD: Only handles IntLiterals and DoubleLiterals
-		if (IntLiteral.class.isInstance(exp)){
-			IntLiteral intExp = (IntLiteral) exp;
-			interarrivaltime = intExp.getValue();
-		} else if (DoubleLiteral.class.isInstance(exp)) {
-			DoubleLiteral doubleExp = (DoubleLiteral) exp;
-			interarrivaltime = doubleExp.getValue();
-		} else if(FunctionLiteral.class.isInstance(exp)) {
-			ExpressionSolveVisitor expressionSolveVisitor = new ExpressionSolveVisitor(ExpressionHelper.getTypeAnnotation(exp));
-			Expression result = (Expression) expressionSolveVisitor.doSwitch(exp);
-			if (ProbabilityFunctionLiteral.class.isInstance(result)){
-				ProbabilityFunctionLiteral propFunctionLiteral = (ProbabilityFunctionLiteral)result;
-				ProbabilityFunction probFunc = propFunctionLiteral.getFunction_ProbabilityFunctionLiteral();
-				if (probFunc instanceof ExponentialDistribution){
-					ExponentialDistribution expDistr = (ExponentialDistribution)probFunc;
-					interarrivaltime = 1/expDistr.getRate();
-				}
-		} else {
-				throw new RuntimeException("Only double values, integer values or exponential functions are supported as interarrival time. You provided something else: "+specification);
-		}
-		} else {
-			throw new RuntimeException("Only double values, integer values or exponential functions are supported as interarrival time. You provided something else: "+specification);
-		}
+		double interarrivaltime = getDoubleMeanValueFromSpecification(specification);
 	
 		String arrivalRate = (1.0 / interarrivaltime)+"";
 		et.setOpenArrivalRate(arrivalRate);
@@ -184,6 +165,35 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 		lqnBuilder.addTaskActivityGraph(tt);
 
 		return null;
+	}
+
+	private double getDoubleMeanValueFromSpecification(String specification) {
+		double result = 0.0;
+		Expression exp = ExpressionHelper.parseToExpression(specification);
+		//TOOD: Only handles IntLiterals and DoubleLiterals
+		if (IntLiteral.class.isInstance(exp)){
+			IntLiteral intExp = (IntLiteral) exp;
+			result = intExp.getValue();
+		} else if (DoubleLiteral.class.isInstance(exp)) {
+			DoubleLiteral doubleExp = (DoubleLiteral) exp;
+			result = doubleExp.getValue();
+		} else if(FunctionLiteral.class.isInstance(exp)) {
+			ExpressionSolveVisitor expressionSolveVisitor = new ExpressionSolveVisitor(ExpressionHelper.getTypeAnnotation(exp));
+			Expression resultExpression = (Expression) expressionSolveVisitor.doSwitch(exp);
+			if (ProbabilityFunctionLiteral.class.isInstance(resultExpression)){
+				ProbabilityFunctionLiteral propFunctionLiteral = (ProbabilityFunctionLiteral)resultExpression;
+				ProbabilityFunction probFunc = propFunctionLiteral.getFunction_ProbabilityFunctionLiteral();
+				if (probFunc instanceof ExponentialDistribution){
+					ExponentialDistribution expDistr = (ExponentialDistribution)probFunc;
+					result = 1/expDistr.getRate();
+				}
+		} else {
+				throw new RuntimeException("Only double values, integer values or exponential functions are supported as interarrival or think time time. You provided something else: "+specification);
+		}
+		} else {
+			throw new RuntimeException("Only double values, integer values or exponential functions are supported as interarrival or think time time. You provided something else: "+specification);
+		}
+		return result;
 	}
 
 	@Override
@@ -300,7 +310,7 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 		counter++;
 		
 		String hostDemand = object.getTimeSpecification_Delay().getSpecification();
-		apt.setHostDemandMean(hostDemand);
+		apt.setHostDemandMean(getDoubleMeanValueFromSpecification(hostDemand));
 		
 		PhaseActivities pa = lqnBuilder.addPhaseActivities(apt);
 		et.setEntryPhaseActivities(pa);
