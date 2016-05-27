@@ -262,7 +262,7 @@ public class SeffVisitor extends SeffSwitch {
 	@Override
 	public Object caseInternalAction(final InternalAction action) {
 		logger.debug("Visit " + action.getClass().getSimpleName() + " \""
-				+ action.getEntityName() + "\"");
+				+ action.getEntityName() + "\"(" +action.getId()+")");
 		internalActionHandler.handle(action);
 		doSwitch(action.getSuccessor_AbstractAction());
 		return action;
@@ -364,7 +364,7 @@ public class SeffVisitor extends SeffSwitch {
 	@Override
 	public Object caseSetVariableAction(final SetVariableAction action) {
 		logger.debug("Visit " + action.getClass().getSimpleName() + " \""
-				+ action.getEntityName() + "\"");
+				+ action.getEntityName() + "\" (" +action.getId()+")");
 		setVariableHandler.handle(action);
 		doSwitch(action.getSuccessor_AbstractAction());
 		return action;
@@ -382,7 +382,7 @@ public class SeffVisitor extends SeffSwitch {
 	@Override
 	public Object caseStartAction(final StartAction action) {
 		logger.debug("Visit " + action.getClass().getSimpleName() + " \""
-				+ action.getEntityName() + "\"");
+				+ action.getEntityName() + "\" (" +action.getId()+")" );
 		doSwitch(action.getSuccessor_AbstractAction());
 		return action;
 	}
@@ -400,7 +400,7 @@ public class SeffVisitor extends SeffSwitch {
 	@Override
 	public Object caseStopAction(final StopAction action) {
 		logger.debug("Visit " + action.getClass().getSimpleName() + " \""
-				+ action.getEntityName() + "\"");
+				+ action.getEntityName() + "\"(" +action.getId()+")");
 		if (action.eContainer() instanceof ResourceDemandingSEFF) {
 			saveContexts();
 		}
