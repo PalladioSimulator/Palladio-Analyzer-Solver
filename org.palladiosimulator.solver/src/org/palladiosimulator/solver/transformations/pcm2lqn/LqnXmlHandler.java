@@ -80,6 +80,11 @@ public class LqnXmlHandler {
 	 */
 	public static LqnModelType loadModelFromXMI(String fileName) {
 		
+		//first replace -1.#IND with -1 and 1.#INF with Infinity 
+		//These values are written by lqns if the system is overloaded but cannot be handled by the EMF loading mechanism. 
+		replaceInXMLFile(fileName, "-1.#IND", "-1");
+		replaceInXMLFile(fileName, "1.#INF", "Infinity");
+		
 		LqnModelType lqnModel = null;
 		
 		try {
@@ -117,10 +122,16 @@ public class LqnXmlHandler {
 	 * @param filename
 	 */
 	public static void fixXMLFile(String filename) {
-		String content = readContentFromFile(filename);
 		
 		/* Possibly only needed for LINE */
-		content = content.replaceAll("xml version=\"1.0\" encoding=\"ASCII\"", "xml version=\"1.0\" encoding=\"us-ascii\"");
+		replaceInXMLFile(filename, "xml version=\"1.0\" encoding=\"ASCII\"", "xml version=\"1.0\" encoding=\"us-ascii\"");
+
+	}
+	
+	private static void replaceInXMLFile(String filename, String regexToMatch, String replacement) {
+		String content = readContentFromFile(filename);
+		
+		content = content.replaceAll(regexToMatch, replacement);
 			
 		writeContentToFile(filename, content);
 
