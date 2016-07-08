@@ -47,7 +47,7 @@ dependencies.
       <import plugin="org.jfree.jfreechart"/>
       <import plugin="de.uka.ipd.sdq.workflow.launchconfig"/>
       <import plugin="org.eclipse.emf.query"/>
-      <import plugin="org.palladiosimulator.editors.dialogs"/>
+      <import plugin="org.palladiosimulator.editors.commons.dialogs"/>
       <import plugin="de.uka.ipd.sdq.dialogs"/>
       <import plugin="de.uka.ipd.sdq.workflow.mdsd"/>
       <import plugin="org.palladiosimulator.analyzer.workflow"/>
