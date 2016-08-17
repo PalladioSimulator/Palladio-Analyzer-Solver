@@ -1,10 +1,12 @@
 package org.palladiosimulator.solver.transformations.pcm2lqn;
 
+import java.awt.List;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 
 import org.apache.log4j.Logger;
@@ -17,6 +19,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
+import org.palladiosimulator.solver.Pair;
 import org.palladiosimulator.solver.lqn.DocumentRoot;
 import org.palladiosimulator.solver.lqn.LqnFactory;
 import org.palladiosimulator.solver.lqn.LqnModelType;
@@ -80,10 +83,21 @@ public class LqnXmlHandler {
 	 */
 	public static LqnModelType loadModelFromXMI(String fileName) {
 		
+		ArrayList<Pair<String, String>> stringsToReplace = new ArrayList<Pair<String,String>>(7);
 		//first replace -1.#IND with -1 and 1.#INF with Infinity 
 		//These values are written by lqns if the system is overloaded but cannot be handled by the EMF loading mechanism. 
-		replaceInXMLFile(fileName, "-1.#IND", "-1");
-		replaceInXMLFile(fileName, "1.#INF", "Infinity");
+		stringsToReplace.add(new Pair("-1.#IND", "-1"));
+		stringsToReplace.add(new Pair("1.#INF", "Infinity"));
+		
+		// replace values that are written by lqns version 5.9.2 
+		//TODO: Try handle this already in the .lqn plugins. 
+		stringsToReplace.add(new Pair("proc-waiting=\"inf\"", "proc-waiting=\"Infinity\""));
+		stringsToReplace.add(new Pair("service-time=\"inf\"", "service-time=\"Infinity\""));
+		stringsToReplace.add(new Pair("utilization=\"inf\"", "utilization=\"Infinity\""));
+		stringsToReplace.add(new Pair("squared-coeff-variation=\"inf\"", "squared-coeff-variation=\"Infinity\""));
+		stringsToReplace.add(new Pair("service-time-variance=\"inf\"", "service-time-variance=\"Infinity\""));
+		
+		replaceInXMLFile(fileName, stringsToReplace);
 		
 		LqnModelType lqnModel = null;
 		
@@ -100,7 +114,7 @@ public class LqnXmlHandler {
 		return lqnModel;
 	}
 	
-	
+
 	private static Resource loadIntoResourceSet(String fileName) throws IOException{
 		
 		URI fileURI = URI.createFileURI(new File(fileName).getAbsolutePath());
@@ -128,13 +142,22 @@ public class LqnXmlHandler {
 
 	}
 	
-	private static void replaceInXMLFile(String filename, String regexToMatch, String replacement) {
+	
+	private static void replaceInXMLFile(String filename, ArrayList<Pair<String, String>> stringsToReplace) {
 		String content = readContentFromFile(filename);
 		
-		content = content.replaceAll(regexToMatch, replacement);
-			
+		for (Pair<String, String> pair : stringsToReplace) {
+			content = content.replaceAll(pair.getFirst(), pair.getSecond());
+		}
+				
 		writeContentToFile(filename, content);
-
+		
+	}
+	
+	private static void replaceInXMLFile(String filename, String regexToMatch, String replacement) {
+		ArrayList<Pair<String,String>> stringsToReplace = new ArrayList<Pair<String,String>>(1);
+		stringsToReplace.add(new Pair<String, String>(regexToMatch, replacement));
+		replaceInXMLFile(filename, stringsToReplace);
 	}
 
 	private static void writeContentToFile(String filename, String content) {
