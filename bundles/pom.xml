@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.palladiosimulator.solver</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>bundles</artifactId>
+	<packaging>pom</packaging>
+	
+	<modules>
+		<module>org.palladiosimulator.solver</module>
+		<module>org.palladiosimulator.solver.context</module>
+		<module>org.palladiosimulator.solver.context.edit</module>
+		<module>org.palladiosimulator.solver.context.editor</module>
+		<module>org.palladiosimulator.solver.lqn</module>
+		<module>org.palladiosimulator.solver.lqn.edit</module>
+		<module>org.palladiosimulator.solver.lqn.editor</module>
+		<module>org.palladiosimulator.solver.reliability</module>
+		<module>org.palladiosimulator.solver.spa</module>
+		<module>org.palladiosimulator.solver.spa.basicsolver</module>
+		<module>org.palladiosimulator.solver.spa.resourcemodel</module>
+	</modules>
+	
+</project>
