@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
 	<feature url="features/org.palladiosimulator.solver.feature_4.1.0.qualifier.jar" id="org.palladiosimulator.solver.feature" version="4.1.0.qualifier">
-	   <category name="org.palladiosimulator.addons.category"/>
+	   <category name="org.palladiosimulator.core.category"/>
 	</feature>
 	<feature url="features/org.palladiosimulator.solver.feature.source_4.1.0.qualifier.jar" id="org.palladiosimulator.solver.feature.source" version="4.1.0.qualifier">
-	   <category name="org.palladiosimulator.addons.source.category"/>
+	   <category name="org.palladiosimulator.core.source.category"/>
 	</feature>
-	<category-def name="org.palladiosimulator.addons.category" label="Palladio Bench Addons">
+	<category-def name="org.palladiosimulator.core.category" label="Palladio Bench Core">
 	   <description>
-	      Palladio Bench Addons
+	      Palladio Bench Core
 	   </description>
 	  </category-def>
-	  <category-def name="org.palladiosimulator.addons.source.category" label="Palladio Bench Addons Source">
+	  <category-def name="org.palladiosimulator.core.source.category" label="Palladio Bench Core Source">
 	     <description>
-	        Palladio Bench Addons Source
+	        Palladio Bench Core Source
 	     </description>
 	  </category-def>
 </site>
