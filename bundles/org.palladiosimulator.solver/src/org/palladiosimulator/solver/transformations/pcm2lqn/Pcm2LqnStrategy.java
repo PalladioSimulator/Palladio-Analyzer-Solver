@@ -106,7 +106,7 @@ public class Pcm2LqnStrategy implements SolverStrategy {
 	public Pcm2LqnStrategy(PCMSolverWorkflowRunConfiguration configuration) {
 		config = configuration;
 
-		DateFormat dateFormat = new SimpleDateFormat("-yyyy-MM-dd-HHmmss");
+		DateFormat dateFormat = new SimpleDateFormat("-yyyy-MM-dd-HHmmssS");
 		Date date = new Date();
 		String timestamp = dateFormat.format(date);
 
