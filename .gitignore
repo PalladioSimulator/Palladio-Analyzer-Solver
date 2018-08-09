@@ -1,2 +1,4 @@
 #Folder
 target/
+*.class
+bundles/org.palladiosimulator.solver/bin/
