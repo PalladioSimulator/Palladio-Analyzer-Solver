@@ -35,7 +35,7 @@ public class PCMSolverReliabilityJob extends SequentialBlackboardInteractingJob<
         }
 
         // 4. Transform Event Model Elements
-        this.add(new EventsTransformationJob(config));
+        this.add(new EventsTransformationJob(config.getStoragePluginID(), config.getEventMiddlewareFile(), false));
 
         // -- Stage analysis
         // 5. Store resulting model(s)
