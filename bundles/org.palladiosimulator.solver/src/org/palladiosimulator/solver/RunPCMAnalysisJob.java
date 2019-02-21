@@ -68,6 +68,8 @@ public class RunPCMAnalysisJob implements
 		} else if (configuration.getSolver().equals(MessageStrings.SRE_SOLVER)) {
 			strategy = new Pcm2RegExStrategy(configuration);
 		} else if (configuration.getSolver().equals(MessageStrings.LQNS_SOLVER)) {
+			// TODO FIXME: Infinity has to be false
+			configuration.setInfiniteTaskMultiplicity(false);
 			strategy = new Pcm2LqnStrategy(configuration);
 		} else if (configuration.getSolver()
 				.equals(MessageStrings.LQSIM_SOLVER)) {
