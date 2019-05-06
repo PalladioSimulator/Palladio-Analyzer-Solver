@@ -60,6 +60,7 @@ dependencies.
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability" version="3.1.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability.sensitivity" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.branding"/>
    </requires>
 
    <plugin
@@ -134,13 +135,6 @@ dependencies.
 
    <plugin
          id="org.palladiosimulator.solver.reliability"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.palladiosimulator.branding"
          download-size="0"
          install-size="0"
          version="0.0.0"
