@@ -55,11 +55,8 @@ dependencies.
       <import plugin="org.apache.commons.math" version="2.1.0" match="greaterOrEqual"/>
       <import plugin="org.junit" version="4.11.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.common"/>
-      <import plugin="org.palladiosimulator.reliability.markov" version="3.2.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.common.ui"/>
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.reliability" version="3.1.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.reliability.sensitivity" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.branding"/>
    </requires>
 
@@ -128,13 +125,6 @@ dependencies.
 
    <plugin
          id="org.palladiosimulator.solver.lqn.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.palladiosimulator.solver.reliability"
          download-size="0"
          install-size="0"
          version="0.0.0"
