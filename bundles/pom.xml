@@ -19,7 +19,6 @@
 		<module>org.palladiosimulator.solver.lqn</module>
 		<module>org.palladiosimulator.solver.lqn.edit</module>
 		<module>org.palladiosimulator.solver.lqn.editor</module>
-		<module>org.palladiosimulator.solver.reliability</module>
 		<module>org.palladiosimulator.solver.spa</module>
 		<module>org.palladiosimulator.solver.spa.basicsolver</module>
 		<module>org.palladiosimulator.solver.spa.resourcemodel</module>
