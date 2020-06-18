@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-	<feature url="features/org.palladiosimulator.solver.feature_4.2.0.qualifier.jar" id="org.palladiosimulator.solver.feature" version="4.2.0.qualifier">
+	<feature url="features/org.palladiosimulator.solver.feature_4.3.0.qualifier.jar" id="org.palladiosimulator.solver.feature" version="4.3.0.qualifier">
 	   <category name="org.palladiosimulator.core.category"/>
 	</feature>
-	<feature url="features/org.palladiosimulator.solver.feature.source_4.2.0.qualifier.jar" id="org.palladiosimulator.solver.feature.source" version="4.2.0.qualifier">
+	<feature url="features/org.palladiosimulator.solver.feature.source_4.3.0.qualifier.jar" id="org.palladiosimulator.solver.feature.source" version="4.3.0.qualifier">
 	   <category name="org.palladiosimulator.core.source.category"/>
 	</feature>
 	<category-def name="org.palladiosimulator.core.category" label="Palladio Bench Core">
