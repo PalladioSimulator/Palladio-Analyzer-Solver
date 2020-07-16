@@ -410,7 +410,7 @@ public class MainConfigTab extends FileNamesInputTab {
 
 		final Button fileSystemButton = new Button(group, SWT.NONE);
 		fileSystemButton.setText("File System...");
-		fileSystemButton.addSelectionListener(new FileSystemButtonSelectionAdapter(text));
+		fileSystemButton.addSelectionListener(new FileSystemFileButtonSelectionAdapter(text));
 	}
 
 
@@ -421,7 +421,7 @@ public class MainConfigTab extends FileNamesInputTab {
 		
 		final Button fileSystemButton = new Button(group, SWT.NONE);
 		fileSystemButton.setText("File System...");
-		fileSystemButton.addSelectionListener(new FileSystemButtonSelectionAdapter(text));
+		fileSystemButton.addSelectionListener(new FileSystemFolderButtonSelectionAdapter(text));
 	}
 
 
@@ -489,10 +489,9 @@ public class MainConfigTab extends FileNamesInputTab {
 		textSREOutputFile.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
 		textSREOutputFile.addModifyListener(listener);
 
-		//createFolderSelectionButtons(group,textSREOutputFile);
 		//String[] filenameExtensions = {".expression", ".spa"};
 		//this.createFileInputSection(group, modifyListener, "Expression Model File (use as input or output):", filenameExtensions, textSREOutputFile);
-		createFolderSelectionButtons(group,textSREOutputFile);
+		createFileSelectionButtons(group,textSREOutputFile);
 				
 		return group;
 
@@ -770,11 +769,11 @@ public class MainConfigTab extends FileNamesInputTab {
 	@Override
 	public void deactivated(ILaunchConfigurationWorkingCopy workingCopy) {}
 	
-	class FileSystemButtonSelectionAdapter extends SelectionAdapter {
+	class FileSystemFolderButtonSelectionAdapter extends SelectionAdapter {
 		
 		private Text field;
 		
-		public FileSystemButtonSelectionAdapter(Text field){
+		public FileSystemFolderButtonSelectionAdapter(Text field){
 			this.field = field;
 		}
 		
