@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-import org.antlr.runtime.RecognitionException;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
@@ -46,7 +45,6 @@ import org.palladiosimulator.pcm.system.System;
 import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall;
 import org.palladiosimulator.pcm.usagemodel.UsageModel;
 import org.palladiosimulator.pcm.usagemodel.UserData;
-
 import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationContext;
 import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
 import org.palladiosimulator.solver.context.computed_allocation.ResourceDemand;
@@ -58,12 +56,13 @@ import org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput;
 import org.palladiosimulator.solver.context.computed_usage.Input;
 import org.palladiosimulator.solver.context.computed_usage.LoopIteration;
 import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.utils.ManagedPMFParser;
+import org.palladiosimulator.solver.utils.StringNotPMFException;
 import org.palladiosimulator.solver.visitors.ExpressionHelper;
 import org.palladiosimulator.solver.visitors.VariableUsageHelper;
 
 import de.uka.ipd.sdq.probfunction.math.ManagedPDF;
 import de.uka.ipd.sdq.probfunction.math.ManagedPMF;
-import de.uka.ipd.sdq.probfunction.math.exception.StringNotPDFException;
 import de.uka.ipd.sdq.stoex.AbstractNamedReference;
 import de.uka.ipd.sdq.stoex.Expression;
 import de.uka.ipd.sdq.stoex.NamespaceReference;
@@ -1218,7 +1217,7 @@ public class ContextWrapper implements Cloneable {
 				if (vchar.getType() == VariableCharacterisationType.BYTESIZE) {
 					ManagedPMF pmf;
 					try {
-						pmf = ManagedPMF.createFromString(vchar
+						pmf = ManagedPMFParser.createFromString(vchar
 								.getSpecification_VariableCharacterisation()
 								.getSpecification());
 					} catch (Exception e) {
@@ -1256,7 +1255,7 @@ public class ContextWrapper implements Cloneable {
 				if (vchar.getType() == VariableCharacterisationType.BYTESIZE) {
 					ManagedPMF pmf;
 					try {
-						pmf = ManagedPMF.createFromString(vchar
+						pmf = ManagedPMFParser.createFromString(vchar
 								.getSpecification_VariableCharacterisation()
 								.getSpecification());
 					} catch (Exception e) {
@@ -1480,10 +1479,8 @@ public class ContextWrapper implements Cloneable {
 					.getSpecification();
 			ManagedPMF pmf = null;
 			try {
-				pmf = ManagedPMF.createFromString(spec);
-			} catch (StringNotPDFException e) {
-				e.printStackTrace();
-			} catch (RecognitionException e) {
+				pmf = ManagedPMFParser.createFromString(spec);
+			} catch (StringNotPMFException e) {
 				e.printStackTrace();
 			}
 			loopIters.put(li.getLoopaction_LoopIteration(), pmf);
