@@ -3,7 +3,6 @@ package org.palladiosimulator.solver.transformations.pcm2lqn;
 import java.math.BigInteger;
 import java.util.List;
 
-import org.antlr.runtime.RecognitionException;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
@@ -36,6 +35,8 @@ import org.palladiosimulator.solver.lqn.TaskSchedulingType;
 import org.palladiosimulator.solver.lqn.TaskType;
 import org.palladiosimulator.solver.lqn.TypeType;
 import org.palladiosimulator.solver.transformations.ContextWrapper;
+import org.palladiosimulator.solver.utils.ManagedPMFParser;
+import org.palladiosimulator.solver.utils.StringNotPMFException;
 import org.palladiosimulator.solver.visitors.EMFQueryHelper;
 import org.palladiosimulator.solver.visitors.ExpressionHelper;
 
@@ -44,7 +45,6 @@ import de.uka.ipd.sdq.probfunction.ProbabilityFunction;
 import de.uka.ipd.sdq.probfunction.math.ManagedPMF;
 import de.uka.ipd.sdq.probfunction.math.exception.DomainNotNumbersException;
 import de.uka.ipd.sdq.probfunction.math.exception.FunctionNotInTimeDomainException;
-import de.uka.ipd.sdq.probfunction.math.exception.StringNotPDFException;
 import de.uka.ipd.sdq.stoex.DoubleLiteral;
 import de.uka.ipd.sdq.stoex.Expression;
 import de.uka.ipd.sdq.stoex.FunctionLiteral;
@@ -390,11 +390,9 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 	private String getLoopIterations(Loop object) {
 		ManagedPMF pmf = null;
 		try {
-			pmf = ManagedPMF.createFromString(object.getLoopIteration_Loop()
+			pmf = ManagedPMFParser.createFromString(object.getLoopIteration_Loop()
 					.getSpecification());
-		} catch (StringNotPDFException e) {
-			e.printStackTrace();
-		} catch (RecognitionException e) {
+		} catch (StringNotPMFException e) {
 			e.printStackTrace();
 		}
 		if (pmf != null) {
