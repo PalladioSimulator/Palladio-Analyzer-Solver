@@ -58,6 +58,7 @@ dependencies.
       <import plugin="org.eclipse.emf.common.ui"/>
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.branding"/>
+      <import plugin="org.palladiosimulator.commons.stoex.api"/>
    </requires>
 
    <plugin
