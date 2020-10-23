@@ -1,7 +1,7 @@
 package org.palladiosimulator.solver.utils;
 
+import org.palladiosimulator.commons.stoex.api.StoExParser;
 import org.palladiosimulator.commons.stoex.api.StoExParser.SyntaxErrorException;
-import org.palladiosimulator.solver.Activator;
 
 import de.uka.ipd.sdq.probfunction.ProbabilityMassFunction;
 import de.uka.ipd.sdq.probfunction.math.ManagedPMF;
@@ -13,6 +13,8 @@ import de.uka.ipd.sdq.stoex.ProbabilityFunctionLiteral;
  */
 public final class ManagedPMFParser {
 
+    private static final StoExParser STOEX_PARSER = StoExParser.createInstance();
+    
     private ManagedPMFParser() {
         // intentionally left blank
     }
@@ -29,9 +31,7 @@ public final class ManagedPMFParser {
     public static ManagedPMF createFromString(String serializedStoEx) throws StringNotPMFException {
         Expression parsedStoEx;
         try {
-            parsedStoEx = Activator.getDefault()
-                .getStoExParser()
-                .parse(serializedStoEx);
+            parsedStoEx = STOEX_PARSER.parse(serializedStoEx);
         } catch (SyntaxErrorException e) {
             throw new StringNotPMFException(e.getMessage());
         }

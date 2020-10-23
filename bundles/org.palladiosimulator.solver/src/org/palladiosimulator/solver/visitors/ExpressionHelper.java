@@ -3,36 +3,33 @@ package org.palladiosimulator.solver.visitors;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import org.antlr.runtime.ANTLRStringStream;
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.RecognitionException;
 import org.apache.log4j.Logger;
+import org.palladiosimulator.commons.stoex.api.StoExParser;
+import org.palladiosimulator.commons.stoex.api.StoExParser.SyntaxErrorException;
+import org.palladiosimulator.commons.stoex.api.StoExSerialiser;
+import org.palladiosimulator.commons.stoex.api.StoExSerialiser.SerialisationErrorException;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
-import org.palladiosimulator.pcm.stochasticexpressions.parser.PCMStoExLexer;
-import org.palladiosimulator.pcm.stochasticexpressions.parser.PCMStoExParser;
 import org.palladiosimulator.solver.transformations.ContextWrapper;
 import org.palladiosimulator.solver.transformations.ExpressionToPDFWrapper;
 
 import de.uka.ipd.sdq.stoex.Expression;
 import de.uka.ipd.sdq.stoex.analyser.visitors.ExpressionInferTypeVisitor;
-import de.uka.ipd.sdq.stoex.analyser.visitors.StoExPrettyPrintVisitor;
 import de.uka.ipd.sdq.stoex.analyser.visitors.TypeEnum;
 
 public class ExpressionHelper {
 	
-	private static Logger logger = Logger.getLogger(ExpressionHelper.class.getName());
-
+	private static final Logger logger = Logger.getLogger(ExpressionHelper.class.getName());
+	private static final StoExParser STOEX_PARSER = StoExParser.createInstance();
+	private static final StoExSerialiser STOEX_SERIALISER = StoExSerialiser.createInstance();
+	
 	/**
 	 * @param specification
 	 */
 	public static Expression parseToExpression(String specification) {
 		Expression expression = null;
-		PCMStoExLexer lexer = new PCMStoExLexer(
-				new ANTLRStringStream(specification));
-		PCMStoExParser parser = new PCMStoExParser(new CommonTokenStream(lexer));
 		try {
-			expression = parser.expression();
-		} catch (RecognitionException e) {
+			expression = STOEX_PARSER.parse(specification);
+		} catch (SyntaxErrorException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -41,14 +38,11 @@ public class ExpressionHelper {
 	
 	public static String getSolvedExpressionAsString(String specification, ContextWrapper ctxWrp){
 		Expression solvedExpression = getSolvedExpression(specification, ctxWrp);
-		
-		String solvedExprString = new StoExPrettyPrintVisitor().doSwitch(solvedExpression).toString();
-		
-		if (solvedExpression == null){
-			throw new RuntimeException("Could not print solved expression "+specification);
-		}
-		
-		return solvedExprString;
+        try {
+            return STOEX_SERIALISER.serialise(solvedExpression);
+        } catch (SerialisationErrorException e) {
+            throw new RuntimeException("Could not print solved expression " + specification, e);
+        }
 	}
 		
 	public static Expression getSolvedExpression(String specification,
