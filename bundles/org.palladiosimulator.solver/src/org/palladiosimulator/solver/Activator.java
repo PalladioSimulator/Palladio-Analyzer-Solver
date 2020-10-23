@@ -3,8 +3,6 @@ package org.palladiosimulator.solver;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
-import org.osgi.framework.ServiceReference;
-import org.palladiosimulator.commons.stoex.api.StoExParser;
 
 /**
  * The activator class controls the plug-in life cycle
@@ -16,10 +14,6 @@ public class Activator extends AbstractUIPlugin {
 
 	// The shared instance
 	private static Activator plugin;
-
-	// Singleton references to StoEx parser
-    private ServiceReference<StoExParser> stoExParserReference;
-    private StoExParser stoExParser;
 	
 	/**
 	 * The constructor
@@ -35,10 +29,6 @@ public class Activator extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		plugin = this;
-		
-		// acquire StoEx parser reference
-		stoExParserReference = context.getServiceReference(StoExParser.class);
-		stoExParser = context.getService(stoExParserReference);
 	}
 
 	/*
@@ -47,10 +37,6 @@ public class Activator extends AbstractUIPlugin {
 	 */
 	@Override
 	public void stop(BundleContext context) throws Exception {
-	    // release StoEx parser reference
-	    context.ungetService(stoExParserReference);
-	    stoExParser = null;
-	    
 		plugin = null;
 		super.stop(context);
 	}
@@ -74,12 +60,5 @@ public class Activator extends AbstractUIPlugin {
 	public static ImageDescriptor getImageDescriptor(String path) {
 		return imageDescriptorFromPlugin(PLUGIN_ID, path);
 	}
-	
-	/**
-	 * Returns a singleton instance of StoExParser. 
-	 * @return the parser
-	 */
-	public StoExParser getStoExParser() {
-	    return stoExParser;
-	}
+
 }
