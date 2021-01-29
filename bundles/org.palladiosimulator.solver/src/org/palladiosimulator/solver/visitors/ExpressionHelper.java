@@ -25,7 +25,7 @@ import de.uka.ipd.sdq.stoex.analyser.visitors.TypeEnum;
 
 public class ExpressionHelper {
 	
-	private static final Logger logger = Logger.getLogger(ExpressionHelper.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(ExpressionHelper.class.getName());
 	private static final StoExParser STOEX_PARSER = StoExParser.createInstance();
 	private static final StoExSerialiser STOEX_SERIALISER = StoExSerialiser.createInstance();
 	
@@ -152,20 +152,21 @@ public class ExpressionHelper {
 		return getSolvedExpression(expr, ctxWrp);
 	}
 	
-	public static Expression getSolvedExpression(Expression expr, ContextWrapper ctxWrp){
+	public static Expression getSolvedExpression(Expression expr, ContextWrapper ctxWrp) {
 		ExpressionInferTypeVisitor inferTypeVisitor = new ExpressionInferTypeVisitor();
 		
 		try {
 			
 			inferTypeVisitor.doSwitch(expr);
 			
-		} catch (UnsupportedOperationException e){
+		} catch (UnsupportedOperationException e) {
 			// might be thrown if the inferred types are not compatible. However, sometimes variables are 
 			// interpreted to strictly (e.g. characterization VALUE is assumed to be ANY_PMF), but maybe they
 			// actually are of a type that is easier to handle.
-			logger.error("Infering the type failed with an "+e.getClass().getName()+". I will try to ignore this and continue. Details:\n"
-					+ e.getMessage() + "\n" + Arrays.toString(e.getStackTrace()));
-			
+            LOGGER.error("Infering the type failed with an " + e.getClass()
+                .getName() + ". I will try to ignore this and continue. Details:\n" + e.getMessage() + "\n"
+                    + Arrays.toString(e.getStackTrace()));
+
 			e.printStackTrace();
 			
 		}
@@ -179,7 +180,7 @@ public class ExpressionHelper {
 		return (Expression) solveVisitor.doSwitch(expr);
 	}
 	
-	public static HashMap<Expression,TypeEnum> getTypeAnnotation(Expression expr){
+	public static HashMap<Expression, TypeEnum> getTypeAnnotation(Expression expr) {
 		ExpressionInferTypeVisitor inferTypeVisitor = 
 			new ExpressionInferTypeVisitor();
 		inferTypeVisitor.doSwitch(expr);
@@ -198,7 +199,7 @@ public class ExpressionHelper {
 	}
 	
 	
-	public static double getMeanValue(PCMRandomVariable variable){
+	public static double getMeanValue(PCMRandomVariable variable) {
 		ExpressionToPDFWrapper expToPDF = ExpressionToPDFWrapper.createExpressionToPDFWrapper(variable.getExpression());
 		return expToPDF.getMeanValue();
 	}
