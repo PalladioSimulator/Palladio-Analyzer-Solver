@@ -1,13 +1,10 @@
 package org.palladiosimulator.solver.tests;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.math.BigInteger;
 
-import org.apache.log4j.Logger;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.palladiosimulator.solver.lqn.ActivityMakingCallType;
 import org.palladiosimulator.solver.lqn.ActivityPhasesType;
 import org.palladiosimulator.solver.lqn.EntryType;
@@ -22,19 +19,22 @@ import org.palladiosimulator.solver.lqn.TaskType;
 import org.palladiosimulator.solver.lqn.TypeType;
 import org.palladiosimulator.solver.transformations.pcm2lqn.LqnXmlHandler;
 
-import junit.framework.JUnit4TestAdapter;
+import tools.mdsd.library.standalone.initialization.StandaloneInitializationException;
+import tools.mdsd.library.standalone.initialization.StandaloneInitializerBuilder;
+
 
 public class LQNTest {
 
-	private static Logger logger = Logger.getLogger(LQNTest.class.getName());
     private static final String FILENAME_INPUT = "/test.lqxo";
-    private static final String FILENAME_RESULT = "/test.out.lqxo";
-    
-    @Before
-    public void setUp() {
+//    private static final String FILENAME_RESULT = "/test.out.lqxo";
 
+    @BeforeAll
+    public static void init() throws StandaloneInitializationException {
+        StandaloneInitializerBuilder.builder()
+            .build()
+            .init();
     }
-
+    
     @Test
     public void handle() throws IOException {
     	
@@ -71,29 +71,29 @@ public class LQNTest {
 
     }
 
-    private void printResultToConsole() throws IOException {
-        FileInputStream fis = null;
-        byte b[] = null;
-
-        fis = new FileInputStream(FILENAME_RESULT);
-        int x = 0;
-        x = fis.available();
-        b = new byte[x];
-        fis.read(b);
-        fis.close();
-
-        final String content = new String(b);
-        System.out.println(content);
-    }
-
-    private void runLqnTools() {
-        try {
-           Runtime.getRuntime().exec("lqns -x -o" + FILENAME_RESULT + " " + FILENAME_INPUT);
-
-        } catch (final IOException e) {
-            e.printStackTrace();
-        } 
-    }
+//    private void printResultToConsole() throws IOException {
+//        FileInputStream fis = null;
+//        byte b[] = null;
+//
+//        fis = new FileInputStream(FILENAME_RESULT);
+//        int x = 0;
+//        x = fis.available();
+//        b = new byte[x];
+//        fis.read(b);
+//        fis.close();
+//
+//        final String content = new String(b);
+//        System.out.println(content);
+//    }
+//
+//    private void runLqnTools() {
+//        try {
+//           Runtime.getRuntime().exec("lqns -x -o" + FILENAME_RESULT + " " + FILENAME_INPUT);
+//
+//        } catch (final IOException e) {
+//            e.printStackTrace();
+//        } 
+//    }
 
     private void getProcessor3(final LqnFactory fac, final LqnModelType lmt) {
 
@@ -227,7 +227,4 @@ public class LQNTest {
         apt.getSynchCall().add(amct2);
     }
 
-    public static junit.framework.Test suite() {
-        return new JUnit4TestAdapter(LQNTest.class);
-    }
 }

@@ -2,10 +2,9 @@ package org.palladiosimulator.solver.tests;
 
 import java.util.Properties;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import junit.framework.JUnit4TestAdapter;
 
 public class LqnTransformTest {
 
@@ -18,7 +17,7 @@ public class LqnTransformTest {
 	"PalladioCM.PCMSolver\\trunk\\org.palladiosimulator.solver\\" +
 	"src\\de\\uka\\ipd\\sdq\\pcmsolver\\tests\\MediaStore2";
 
-	@Before
+	@BeforeEach
 	public void setUp(){
 		props.setProperty("Filename_Allocation", PATH+"\\MediaStore.allocation");
 		props.setProperty("Filename_Repository", PATH+"\\MediaStore.repository");
@@ -33,10 +32,6 @@ public class LqnTransformTest {
 	public void runLqnTransform(){
 		// PCMSolver solver = new PCMSolver(props);
 	}
-	
-	
-	public static junit.framework.Test suite() {
-		return new JUnit4TestAdapter(LqnTransformTest.class);
-	}
+
 }
 ;
