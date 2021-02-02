@@ -102,7 +102,7 @@
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
 <unit id="org.hamcrest.core" version="0.0.0"/>
 <unit id="org.hamcrest.library" version="0.0.0"/>
-<repository location="http://download.eclipse.org/releases/2020-06/202006171000/"/>
+<repository location="http://download.eclipse.org/releases/2020-12/202012161000/"/>
 </location>
 </locations>
 </target>
