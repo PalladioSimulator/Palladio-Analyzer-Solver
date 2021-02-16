@@ -8,11 +8,11 @@ import java.util.stream.Collectors;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.palladiosimulator.commons.stoex.api.StoExParser;
-import org.palladiosimulator.commons.stoex.api.StoExParser.SyntaxErrorException;
-import org.palladiosimulator.commons.stoex.api.StoExSerialiser;
-import org.palladiosimulator.commons.stoex.api.StoExSerialiser.SerialisationErrorException;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
+import org.palladiosimulator.pcm.stoex.api.StoExParser;
+import org.palladiosimulator.pcm.stoex.api.StoExSerialiser;
+import org.palladiosimulator.pcm.stoex.api.StoExParser.SyntaxErrorException;
+import org.palladiosimulator.pcm.stoex.api.StoExSerialiser.SerialisationErrorException;
 import org.palladiosimulator.solver.transformations.ContextWrapper;
 import org.palladiosimulator.solver.transformations.ExpressionToPDFWrapper;
 
