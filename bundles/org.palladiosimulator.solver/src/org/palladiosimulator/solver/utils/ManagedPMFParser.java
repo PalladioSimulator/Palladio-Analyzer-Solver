@@ -1,7 +1,8 @@
 package org.palladiosimulator.solver.utils;
 
+import java.text.ParseException;
+
 import org.palladiosimulator.pcm.stoex.api.StoExParser;
-import org.palladiosimulator.pcm.stoex.api.StoExParser.SyntaxErrorException;
 
 import de.uka.ipd.sdq.probfunction.ProbabilityMassFunction;
 import de.uka.ipd.sdq.probfunction.math.ManagedPMF;
@@ -32,7 +33,7 @@ public final class ManagedPMFParser {
         Expression parsedStoEx;
         try {
             parsedStoEx = STOEX_PARSER.parse(serializedStoEx);
-        } catch (SyntaxErrorException e) {
+        } catch (ParseException e) {
             throw new StringNotPMFException(e.getMessage());
         }
         if (!(parsedStoEx instanceof ProbabilityFunctionLiteral)) {

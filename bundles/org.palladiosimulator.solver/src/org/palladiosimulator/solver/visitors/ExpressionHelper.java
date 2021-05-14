@@ -1,5 +1,7 @@
 package org.palladiosimulator.solver.visitors;
 
+import java.io.NotSerializableException;
+import java.text.ParseException;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
@@ -11,8 +13,6 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
 import org.palladiosimulator.pcm.stoex.api.StoExParser;
 import org.palladiosimulator.pcm.stoex.api.StoExSerialiser;
-import org.palladiosimulator.pcm.stoex.api.StoExParser.SyntaxErrorException;
-import org.palladiosimulator.pcm.stoex.api.StoExSerialiser.SerialisationErrorException;
 import org.palladiosimulator.solver.transformations.ContextWrapper;
 import org.palladiosimulator.solver.transformations.ExpressionToPDFWrapper;
 
@@ -36,7 +36,7 @@ public class ExpressionHelper {
 		Expression expression = null;
 		try {
 			expression = STOEX_PARSER.parse(specification);
-		} catch (SyntaxErrorException e) {
+		} catch (ParseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -48,7 +48,7 @@ public class ExpressionHelper {
         try {
             Expression typedExpression = transformExpressionToTypedExpression(solvedExpression);
             return STOEX_SERIALISER.serialise(typedExpression);
-        } catch (SerialisationErrorException e) {
+        } catch (NotSerializableException e) {
             throw new RuntimeException("Could not print solved expression " + specification, e);
         }
     }
