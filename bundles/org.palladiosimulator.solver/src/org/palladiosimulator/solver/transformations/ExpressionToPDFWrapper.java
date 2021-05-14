@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.palladiosimulator.pcm.core.CoreFactory;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
+import org.palladiosimulator.pcm.stoex.api.StoExSerialiser;
 import org.palladiosimulator.solver.visitors.ExpressionHelper;
 
 import de.uka.ipd.sdq.probfunction.ProbabilityDensityFunction;
@@ -25,7 +26,6 @@ import de.uka.ipd.sdq.stoex.IntLiteral;
 import de.uka.ipd.sdq.stoex.NumericLiteral;
 import de.uka.ipd.sdq.stoex.ProbabilityFunctionLiteral;
 import de.uka.ipd.sdq.stoex.analyser.probfunction.ProbfunctionHelper;
-import de.uka.ipd.sdq.stoex.analyser.visitors.StoExPrettyPrintVisitor;
 
 /**
  * Wraps the actual content of an expression to allow computation with it. 
@@ -40,7 +40,8 @@ public class ExpressionToPDFWrapper {
 	Double standardDeviation;
 	boolean originalPDF;
 	
-	protected static Logger logger = Logger.getLogger("org.palladiosimulator.solver.transformations");
+	protected static final StoExSerialiser STOEX_SERIALISER = StoExSerialiser.createInstance();
+	protected static final Logger LOGGER = Logger.getLogger("org.palladiosimulator.solver.transformations");
 	
 	public ExpressionToPDFWrapper(ProbabilityDensityFunction pdf){
 		this.pdf = pdf;
@@ -80,8 +81,8 @@ public class ExpressionToPDFWrapper {
 					// try solving last, as this is probably most time-consuming. 
 					Expression solvedExpression = ExpressionHelper.getSolvedExpression(rdExpression, null);
 					// if the content of the Expression has been changed by solving, try again to call this method 
-					String oldExpressionString = new StoExPrettyPrintVisitor().doSwitch(rdExpression).toString();
-					solvedExprString = new StoExPrettyPrintVisitor().doSwitch(solvedExpression).toString();
+					String oldExpressionString = STOEX_SERIALISER.serialise(rdExpression);
+					solvedExprString = STOEX_SERIALISER.serialise(solvedExpression);
 					if (!oldExpressionString.equals(solvedExprString)){
 						return createExpressionToPDFWrapper(solvedExpression);
 					}
@@ -121,7 +122,7 @@ public class ExpressionToPDFWrapper {
 				ContextWrapper.logger.error("Error calculating arithmetic mean value.", e);
 				e.printStackTrace();
 			} catch (RuntimeException e){
-				logger.error("Could not get mean value of PDF "+pdf.toString());
+				LOGGER.error("Could not get mean value of PDF "+pdf.toString());
 				throw e;
 			}
 		}

@@ -10,6 +10,7 @@ import org.palladiosimulator.pcm.repository.BasicComponent;
 import org.palladiosimulator.pcm.repository.RepositoryComponent;
 import org.palladiosimulator.pcm.seff.ResourceDemandingSEFF;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
+import org.palladiosimulator.pcm.stoex.api.StoExSerialiser;
 import org.palladiosimulator.pcm.usagemodel.Branch;
 import org.palladiosimulator.pcm.usagemodel.BranchTransition;
 import org.palladiosimulator.pcm.usagemodel.ClosedWorkload;
@@ -57,8 +58,10 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 
 	private static final String USAGE_DELAY = "USAGE_DELAY";
 
-	private static Logger logger = Logger.getLogger(UsageModel2Lqn.class
+	private static final Logger LOGGER = Logger.getLogger(UsageModel2Lqn.class
 			.getName());
+
+	private static final StoExSerialiser STOEX_SERIALISER = StoExSerialiser.createInstance();
 	
 	private int counter;
 
@@ -178,7 +181,7 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 			DoubleLiteral doubleExp = (DoubleLiteral) exp;
 			result = doubleExp.getValue();
 		} else if(FunctionLiteral.class.isInstance(exp)) {
-			ExpressionSolveVisitor expressionSolveVisitor = new ExpressionSolveVisitor(ExpressionHelper.getTypeAnnotation(exp));
+			ExpressionSolveVisitor expressionSolveVisitor = new ExpressionSolveVisitor(ExpressionHelper.getTypeAnnotation(exp), STOEX_SERIALISER::serialise);
 			Expression resultExpression = (Expression) expressionSolveVisitor.doSwitch(exp);
 			if (ProbabilityFunctionLiteral.class.isInstance(resultExpression)){
 				ProbabilityFunctionLiteral propFunctionLiteral = (ProbabilityFunctionLiteral)resultExpression;
@@ -271,11 +274,11 @@ public class UsageModel2Lqn extends UsagemodelSwitch<String> {
 				entryId = (String) seffVisitor
 						.doSwitch((ResourceDemandingSEFF) seff);
 			} catch (RuntimeException e) {
-				logger.error("Error while visiting RDSEFF");
+				LOGGER.error("Error while visiting RDSEFF");
 				throw e;
 			}
 		} else {
-			logger.error("Composite Component type not yet supported.");
+			LOGGER.error("Composite Component type not yet supported.");
 			throw new UnsupportedOperationException();
 		}
 
