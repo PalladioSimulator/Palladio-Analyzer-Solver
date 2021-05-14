@@ -3,13 +3,12 @@ package org.palladiosimulator.solver.visitors;
 
 import java.util.HashMap;
 
-import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.palladiosimulator.pcm.parameter.CharacterisedVariable;
 import org.palladiosimulator.pcm.parameter.VariableCharacterisation;
 import org.palladiosimulator.pcm.parameter.VariableUsage;
-
+import org.palladiosimulator.pcm.stoex.api.StoExSerialiser;
 import org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput;
 import org.palladiosimulator.solver.context.computed_usage.Input;
 import org.palladiosimulator.solver.transformations.ContextWrapper;
@@ -23,14 +22,13 @@ import de.uka.ipd.sdq.stoex.analyser.visitors.TypeEnum;
 
 public class ExpressionParameterSolverVisitor extends ExpressionSolveVisitor {
 
-	private static Logger logger = Logger
-	.getLogger(ExpressionParameterSolverVisitor.class.getName());
+    private static final StoExSerialiser STOEX_SERIALISER = StoExSerialiser.createInstance();
 
 	//private Context context;
 	private ContextWrapper contextWrapper;
 	
 	public ExpressionParameterSolverVisitor(HashMap<Expression, TypeEnum> typeAnn, ContextWrapper ctxWrp){
-		super(typeAnn);
+		super(typeAnn, STOEX_SERIALISER::serialise);
 		this.contextWrapper = ctxWrp;
 	}
 
