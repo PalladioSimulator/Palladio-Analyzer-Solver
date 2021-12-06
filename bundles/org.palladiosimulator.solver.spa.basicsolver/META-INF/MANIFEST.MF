@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Basicsolver
 Bundle-SymbolicName: org.palladiosimulator.solver.spa.basicsolver
-Bundle-Version: 5.0.0.qualifier
+Bundle-Version: 5.1.0.qualifier
 Require-Bundle: org.eclipse.emf,
  org.eclipse.emf.common,
  org.eclipse.emf.ecore,
