@@ -45,5 +45,5 @@ Export-Package: org.palladiosimulator.solver,
  org.palladiosimulator.solver.utils,
  org.palladiosimulator.solver.visitors,
  org.palladiosimulator.solver.visualisation
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: sdq.ipd.uka.de
