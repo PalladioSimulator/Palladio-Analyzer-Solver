@@ -25,7 +25,6 @@ dependencies.
       <import plugin="de.uka.ipd.sdq.identifier.edit" version="2.1.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm.edit" version="3.6.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.probfunction.edit" version="2.1.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.stoex" version="2.2.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.stoex.edit" version="2.2.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.units.edit" version="2.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.uml2.common.edit"/>
@@ -56,7 +55,6 @@ dependencies.
       <import plugin="org.junit" version="4.11.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.common"/>
       <import plugin="org.eclipse.emf.common.ui"/>
-      <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.branding"/>
    </requires>
 
