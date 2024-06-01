@@ -3,9 +3,6 @@ PCM Solver currently has two main sub-solvers; not all constructs of PCM models 
 * SRE, Stochastic Regular Expressions; an fast analytical solver for a one-user case
 * LQN Solver a analytical solver queuing network solver
 
-## Documentation
-For comprehensive documentation, please visit our [wiki page](https://sdqweb.ipd.kit.edu/wiki/Palladio_Solvers_and_Simulation).
-
 ## Support
 For support
 * visit our [issue tracking system](https://palladio-simulator.com/jira)
