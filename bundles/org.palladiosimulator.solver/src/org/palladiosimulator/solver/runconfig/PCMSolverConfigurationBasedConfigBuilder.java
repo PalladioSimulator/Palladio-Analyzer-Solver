@@ -5,7 +5,7 @@ import org.eclipse.debug.core.ILaunchConfiguration;
 
 import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowBasedRunConfiguration;
 import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowConfigurationBuilder;
-import de.uka.ipd.sdq.workflow.launchconfig.tabs.DebugEnabledCommonTab;
+import de.uka.ipd.sdq.workflow.launchconfig.core.DebugConfigConstants;
 
 /**
  * This class can build PCM solver specific configuration objects out of a given Eclipse Launch
@@ -98,8 +98,8 @@ public class PCMSolverConfigurationBasedConfigBuilder extends AbstractWorkflowCo
                 ? getBooleanAttribute(MessageStrings.SRE_IS_USE_INPUT_MODEL)
                 : false);
 
-        config.setDebugLevel(hasAttribute(DebugEnabledCommonTab.WORKFLOW_ENGINE_DEBUG_LEVEL)
-                ? getIntegerAttribute(DebugEnabledCommonTab.WORKFLOW_ENGINE_DEBUG_LEVEL)
+        config.setDebugLevel(hasAttribute(DebugConfigConstants.WORKFLOW_ENGINE_DEBUG_LEVEL)
+                ? getIntegerAttribute(DebugConfigConstants.WORKFLOW_ENGINE_DEBUG_LEVEL)
                 : 0);
         config.setPsQuantum(
                 hasAttribute(MessageStrings.PS_QUANTUM) ? getStringAttribute(MessageStrings.PS_QUANTUM) : "0.001");
