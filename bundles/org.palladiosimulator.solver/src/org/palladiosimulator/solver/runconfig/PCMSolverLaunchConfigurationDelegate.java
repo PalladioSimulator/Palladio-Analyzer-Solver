@@ -1,6 +1,6 @@
 package org.palladiosimulator.solver.runconfig;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.eclipse.core.runtime.CoreException;
@@ -15,47 +15,40 @@ import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowConfigurationBu
 import de.uka.ipd.sdq.workflow.logging.console.LoggerAppenderStruct;
 
 public class PCMSolverLaunchConfigurationDelegate
-		extends
-		AbstractPCMLaunchConfigurationDelegate<PCMSolverWorkflowRunConfiguration> {
+        extends AbstractPCMLaunchConfigurationDelegate<PCMSolverWorkflowRunConfiguration> {
 
-	@Override
-	protected IJob createWorkflowJob(PCMSolverWorkflowRunConfiguration config,
-			ILaunch launch) throws CoreException {
+    @Override
+    protected IJob createWorkflowJob(PCMSolverWorkflowRunConfiguration config, ILaunch launch) throws CoreException {
 
-		// To enable accuracy analysis, the former top-level job (PCMSolverReliabilityJob)
-		// is replaced through a new AccuracyInfluenceAnalysisJob:
-		PCMSolverWorkflowJobBuilder jobBuilder = new PCMSolverWorkflowJobBuilder(launch);
-		return new AccuracyInfluenceAnalysisJob(config, jobBuilder);
-	}
+        // To enable accuracy analysis, the former top-level job (PCMSolverReliabilityJob)
+        // is replaced through a new AccuracyInfluenceAnalysisJob:
+        PCMSolverWorkflowJobBuilder jobBuilder = new PCMSolverWorkflowJobBuilder(launch);
+        return new AccuracyInfluenceAnalysisJob(config, jobBuilder);
+    }
 
-	@Override
-	protected PCMSolverWorkflowRunConfiguration deriveConfiguration(
-			ILaunchConfiguration configuration, String mode)
-			throws CoreException {
-		PCMSolverWorkflowRunConfiguration solverConfiguration = new PCMSolverWorkflowRunConfiguration();
+    @Override
+    protected PCMSolverWorkflowRunConfiguration deriveConfiguration(ILaunchConfiguration configuration, String mode)
+            throws CoreException {
+        PCMSolverWorkflowRunConfiguration solverConfiguration = new PCMSolverWorkflowRunConfiguration();
 
-		AbstractWorkflowConfigurationBuilder builder;
+        AbstractWorkflowConfigurationBuilder builder;
 
-		builder = new PCMWorkflowConfigurationBuilder(configuration, mode);
-		builder.fillConfiguration(solverConfiguration);
+        builder = new PCMWorkflowConfigurationBuilder(configuration, mode);
+        builder.fillConfiguration(solverConfiguration);
 
-		builder = new PCMSolverConfigurationBasedConfigBuilder(configuration,
-				mode);
-		builder.fillConfiguration(solverConfiguration);
+        builder = new PCMSolverConfigurationBasedConfigBuilder(configuration, mode);
+        builder.fillConfiguration(solverConfiguration);
 
-		return solverConfiguration;
-	}
+        return solverConfiguration;
+    }
 
-	@Override
-	protected ArrayList<LoggerAppenderStruct> setupLogging(Level logLevel)
-			throws CoreException {
-		ArrayList<LoggerAppenderStruct> loggerList = super
-				.setupLogging(logLevel);
-		loggerList.add(setupLogger("org.palladiosimulator.solver", logLevel,
-				Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN
-						: SHORT_LOG_PATTERN));
+    @Override
+    protected List<LoggerAppenderStruct> setupLogging(Level logLevel) throws CoreException {
+        List<LoggerAppenderStruct> loggerList = super.setupLogging(logLevel);
+        loggerList.add(setupLogger("org.palladiosimulator.solver", logLevel,
+                Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN : SHORT_LOG_PATTERN));
 
-		return loggerList;
-	}
+        return loggerList;
+    }
 
 }
