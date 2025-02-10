@@ -11,7 +11,7 @@ package org.palladiosimulator.solver.tests;
 //import java.util.List;
 //import java.util.Map.Entry;
 //
-//import javax.swing.JFrame;
+//import jakarta.swing.JFrame;
 //
 //import org.jfree.chart.ChartFactory;
 //import org.jfree.chart.ChartPanel;

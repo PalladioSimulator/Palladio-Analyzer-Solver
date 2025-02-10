@@ -2,7 +2,7 @@
  */
 package org.palladiosimulator.solver.lqn.impl;
 
-import javax.xml.datatype.XMLGregorianCalendar;
+import jakarta.xml.datatype.XMLGregorianCalendar;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;

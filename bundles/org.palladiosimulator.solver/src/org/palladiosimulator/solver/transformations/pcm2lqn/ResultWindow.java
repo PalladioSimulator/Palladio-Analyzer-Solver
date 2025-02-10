@@ -2,9 +2,9 @@ package org.palladiosimulator.solver.transformations.pcm2lqn;
 
 import java.awt.Font;
 
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
+import jakarta.swing.JFrame;
+import jakarta.swing.JScrollPane;
+import jakarta.swing.JTextArea;
 
 public class ResultWindow {
 
