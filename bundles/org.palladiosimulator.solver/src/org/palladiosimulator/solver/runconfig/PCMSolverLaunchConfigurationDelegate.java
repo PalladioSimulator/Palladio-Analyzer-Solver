@@ -4,20 +4,32 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Level;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.palladiosimulator.analyzer.accuracy.jobs.AccuracyInfluenceAnalysisJob;
 import org.palladiosimulator.analyzer.workflow.configurations.AbstractPCMLaunchConfigurationDelegate;
 import org.palladiosimulator.analyzer.workflow.core.configurations.PCMWorkflowConfigurationBuilder;
 
+import de.uka.ipd.sdq.workflow.BlackboardBasedWorkflow;
 import de.uka.ipd.sdq.workflow.WorkflowExceptionHandler;
 import de.uka.ipd.sdq.workflow.jobs.IJob;
 import de.uka.ipd.sdq.workflow.launchconfig.core.configbuilder.AbstractWorkflowConfigurationBuilder;
 import de.uka.ipd.sdq.workflow.logging.console.LoggerAppenderStruct;
+import de.uka.ipd.sdq.workflow.mdsd.blackboard.MDSDBlackboard;
+import de.uka.ipd.sdq.workflow.ui.UIBasedWorkflow;
 import de.uka.ipd.sdq.workflow.ui.UIBasedWorkflowExceptionHandler;
 
 public class PCMSolverLaunchConfigurationDelegate
         extends AbstractPCMLaunchConfigurationDelegate<PCMSolverWorkflowRunConfiguration> {
+
+    @Override
+    protected BlackboardBasedWorkflow<MDSDBlackboard> createWorkflow(
+            final PCMSolverWorkflowRunConfiguration workflowConfiguration, final IProgressMonitor monitor,
+            final ILaunch launch) throws CoreException {
+        return new UIBasedWorkflow<>(this.createWorkflowJob(workflowConfiguration, launch), monitor,
+                this.createExceptionHandler(workflowConfiguration.isInteractive()), this.createBlackboard());
+    }
 
     @Override
     protected WorkflowExceptionHandler createExceptionHandler(boolean interactive) {
