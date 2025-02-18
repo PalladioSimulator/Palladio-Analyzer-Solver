@@ -1,6 +1,6 @@
 package org.palladiosimulator.solver.runconfig;
 
-import org.palladiosimulator.analyzer.workflow.configurations.AbstractCodeGenerationWorkflowRunConfiguration;
+import org.palladiosimulator.analyzer.workflow.core.configurations.AbstractCodeGenerationWorkflowRunConfiguration;
 
 public class PCMSolverWorkflowRunConfiguration extends
 		AbstractCodeGenerationWorkflowRunConfiguration {
