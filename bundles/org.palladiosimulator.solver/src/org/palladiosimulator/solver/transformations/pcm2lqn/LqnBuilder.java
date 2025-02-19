@@ -9,6 +9,7 @@ import java.util.Stack;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 import org.palladiosimulator.pcm.repository.PassiveResource;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.lqn.ActivityDefType;
 import org.palladiosimulator.solver.lqn.ActivityListType;
 import org.palladiosimulator.solver.lqn.ActivityMakingCallType;
@@ -36,7 +37,6 @@ import org.palladiosimulator.solver.lqn.TaskOptionType;
 import org.palladiosimulator.solver.lqn.TaskSchedulingType;
 import org.palladiosimulator.solver.lqn.TaskType;
 import org.palladiosimulator.solver.lqn.TypeType;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
 
 public class LqnBuilder {
 

@@ -11,6 +11,7 @@ import org.eclipse.debug.core.ILaunchConfiguration;
 import org.palladiosimulator.analyzer.accuracy.jobs.AccuracyInfluenceAnalysisJob;
 import org.palladiosimulator.analyzer.workflow.core.configurations.AbstractPCMLaunchConfigurationDelegate;
 import org.palladiosimulator.analyzer.workflow.core.configurations.PCMWorkflowConfigurationBuilder;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 
 import de.uka.ipd.sdq.workflow.BlackboardBasedWorkflow;
 import de.uka.ipd.sdq.workflow.WorkflowExceptionHandler;

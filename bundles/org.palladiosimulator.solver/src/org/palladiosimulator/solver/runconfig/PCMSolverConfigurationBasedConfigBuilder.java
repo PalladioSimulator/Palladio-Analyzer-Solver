@@ -2,6 +2,7 @@ package org.palladiosimulator.solver.runconfig;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.debug.core.ILaunchConfiguration;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 
 import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowBasedLaunchConfigurationDelegate;
 import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowBasedRunConfiguration;

@@ -13,6 +13,7 @@ import org.palladiosimulator.pcm.resourceenvironment.ResourceEnvironment;
 import org.palladiosimulator.pcm.resourceenvironment.util.ResourceenvironmentSwitch;
 import org.palladiosimulator.pcm.resourcetype.CommunicationLinkResourceType;
 import org.palladiosimulator.pcm.resourcetype.ProcessingResourceType;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.lqn.ActivityPhasesType;
 import org.palladiosimulator.solver.lqn.EntryType;
 import org.palladiosimulator.solver.lqn.PhaseActivities;
@@ -20,7 +21,6 @@ import org.palladiosimulator.solver.lqn.ProcessorType;
 import org.palladiosimulator.solver.lqn.SchedulingType;
 import org.palladiosimulator.solver.lqn.TaskType;
 import org.palladiosimulator.solver.lqn.TypeType;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.transformations.ExpressionToPDFWrapper;
 import org.palladiosimulator.solver.visitors.ExpressionHelper;
 
