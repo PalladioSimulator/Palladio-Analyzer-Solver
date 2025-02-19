@@ -10,7 +10,7 @@ import org.eclipse.debug.core.ILaunchConfiguration;
 import org.eclipse.ui.console.ConsolePlugin;
 import org.eclipse.ui.console.IConsole;
 import org.eclipse.ui.console.MessageConsole;
-import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.core.models.PCMInstance;
 import org.palladiosimulator.solver.runconfig.MessageStrings;
 import org.palladiosimulator.solver.transformations.SolverStrategy;
 

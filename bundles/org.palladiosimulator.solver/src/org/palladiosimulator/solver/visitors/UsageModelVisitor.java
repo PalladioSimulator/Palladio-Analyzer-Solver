@@ -19,7 +19,7 @@ import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
 
 import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
 import org.palladiosimulator.solver.context.computed_usage.ComputedUsageFactory;
-import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.core.models.PCMInstance;
 import org.palladiosimulator.solver.transformations.ContextWrapper;
 
 /**

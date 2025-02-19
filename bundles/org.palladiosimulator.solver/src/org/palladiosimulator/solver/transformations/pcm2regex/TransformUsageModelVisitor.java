@@ -19,7 +19,7 @@ import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour;
 import org.palladiosimulator.pcm.usagemodel.Start;
 import org.palladiosimulator.pcm.usagemodel.Stop;
 import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
-import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.core.models.PCMInstance;
 import org.palladiosimulator.solver.spa.expression.Expression;
 import org.palladiosimulator.solver.spa.expression.ExpressionFactory;
 import org.palladiosimulator.solver.spa.expression.Option;

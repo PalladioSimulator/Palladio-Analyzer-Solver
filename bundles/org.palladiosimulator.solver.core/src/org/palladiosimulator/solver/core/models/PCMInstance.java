@@ -1,4 +1,4 @@
-package org.palladiosimulator.solver.models;
+package org.palladiosimulator.solver.core.models;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -18,7 +18,6 @@ import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceEnvironment;
 import org.palladiosimulator.pcm.resourcetype.ResourceRepository;
 import org.palladiosimulator.pcm.usagemodel.UsageModel;
-
 import org.palladiosimulator.solver.context.aggregatedUsageContext.AggregatedUsageContextFactory;
 import org.palladiosimulator.solver.context.aggregatedUsageContext.ComputedAggregatedUsage;
 import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocation;
@@ -26,43 +25,40 @@ import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocati
 import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
 import org.palladiosimulator.solver.context.computed_usage.ComputedUsage;
 import org.palladiosimulator.solver.context.computed_usage.ComputedUsageFactory;
-import org.palladiosimulator.solver.transformations.EMFHelper;
-
+import org.palladiosimulator.solver.core.transformations.EMFHelper;
 
 public class PCMInstance {
 
-	private ComputedUsage computedUsage = ComputedUsageFactory.eINSTANCE.createComputedUsage();;
+    private ComputedUsage computedUsage = ComputedUsageFactory.eINSTANCE.createComputedUsage();;
 
-	private ComputedAllocation actualAllocation = ComputedAllocationFactory.eINSTANCE.createComputedAllocation();
-	
-	private ComputedAggregatedUsage computedAggregatedUsage = AggregatedUsageContextFactory.eINSTANCE.createComputedAggregatedUsage();;
+    private ComputedAllocation actualAllocation = ComputedAllocationFactory.eINSTANCE.createComputedAllocation();
 
-	private String storagePath;
-	
-	private PCMResourceSetPartition resourceSetPartition;
+    private ComputedAggregatedUsage computedAggregatedUsage = AggregatedUsageContextFactory.eINSTANCE
+        .createComputedAggregatedUsage();;
 
-	public PCMInstance(Properties config) {
-		this.storagePath = config.getProperty("Storage_Path");
-		ArrayList <String> fileList = new ArrayList <String>();
-		fileList.add(config.getProperty("Filename_UsageModel"));
-		fileList.add(config.getProperty("Filename_AllocationModel"));
-		createResourceSetPartition(fileList);
+    private String storagePath;
+
+    private PCMResourceSetPartition resourceSetPartition;
+
+    public PCMInstance(Properties config) {
+        this.storagePath = config.getProperty("Storage_Path");
+        ArrayList<String> fileList = new ArrayList<>();
+        fileList.add(config.getProperty("Filename_UsageModel"));
+        fileList.add(config.getProperty("Filename_AllocationModel"));
+        createResourceSetPartition(fileList);
 //		loadFromFiles(config);
-	}
+    }
 
-	@Deprecated
-	public PCMInstance(ILaunchConfiguration configuration) {
-		try {
-			this.storagePath = configuration.getAttribute("outputPath", ".");
+    @Deprecated
+    public PCMInstance(ILaunchConfiguration configuration) {
+        try {
+            this.storagePath = configuration.getAttribute("outputPath", ".");
 
-			ArrayList <String> fileList = new ArrayList <String>();
-			fileList.add(configuration.getAttribute(
-					ConstantsContainer.USAGE_FILE, ""));
-			fileList.add(configuration.getAttribute(
-					ConstantsContainer.ALLOCATION_FILE, ""));
-			createResourceSetPartition(fileList);
-			
-			
+            ArrayList<String> fileList = new ArrayList<>();
+            fileList.add(configuration.getAttribute(ConstantsContainer.USAGE_FILE, ""));
+            fileList.add(configuration.getAttribute(ConstantsContainer.ALLOCATION_FILE, ""));
+            createResourceSetPartition(fileList);
+
 //			String filename = configuration.getAttribute(
 //					ConstantsContainer.ALLOCATION_FILE, "");
 //			this.allocation = ((Allocation) loadFromXMIFile(filename));
@@ -70,7 +66,7 @@ public class PCMInstance {
 //			filename = configuration.getAttribute(
 //					ConstantsContainer.USAGE_FILE, "");
 //			this.usageModel = ((UsageModel) loadFromXMIFile(filename));
-			
+
 //			filename = configuration.getAttribute(
 //					ConstantsContainer.REPOSITORY_FILE, "");
 //			this.repository = ((Repository) loadFromXMIFile(filename));
@@ -87,106 +83,104 @@ public class PCMInstance {
 //					ConstantsContainer.SYSTEM_FILE, "");
 //			this.system = ((org.palladiosimulator.pcm.system.System) loadFromXMIFile(filename));
 
-
-
-		} catch (CoreException e) {
-			e.printStackTrace();
-		}
-	}
+        } catch (CoreException e) {
+            e.printStackTrace();
+        }
+    }
 
 //BRG
-	public PCMInstance(PCMResourceSetPartition pcmModel) {
-		this.storagePath = ".";
-		this.resourceSetPartition = pcmModel;
+    public PCMInstance(PCMResourceSetPartition pcmModel) {
+        this.storagePath = ".";
+        this.resourceSetPartition = pcmModel;
 
+    }
 
-	}
-	
 //BRG
 
-	/**
-	 * Loads PCM Model contents.
-	 * 
-	 * @param modelFiles List of Strings containing Usage and Allocation FileNames 
-	 */
-	@SuppressWarnings("deprecation")
-	private void createResourceSetPartition(List<String> modelFiles) {
-	
-		resourceSetPartition = new PCMResourceSetPartition();
-		resourceSetPartition.initialiseResourceSetEPackages(AbstractPCMWorkflowRunConfiguration.PCM_EPACKAGES);
-		for (String modelFile : modelFiles) {
-			resourceSetPartition.loadModel(modelFile);
-		}
-		resourceSetPartition.resolveAllProxies();
+    /**
+     * Loads PCM Model contents.
+     * 
+     * @param modelFiles
+     *            List of Strings containing Usage and Allocation FileNames
+     */
+    @SuppressWarnings("deprecation")
+    private void createResourceSetPartition(List<String> modelFiles) {
 
-	}
-	
-	public Allocation getAllocation() {
-		return resourceSetPartition.getAllocation();
-	}
+        resourceSetPartition = new PCMResourceSetPartition();
+        resourceSetPartition.initialiseResourceSetEPackages(AbstractPCMWorkflowRunConfiguration.PCM_EPACKAGES);
+        for (String modelFile : modelFiles) {
+            resourceSetPartition.loadModel(modelFile);
+        }
+        resourceSetPartition.resolveAllProxies();
+
+    }
+
+    public Allocation getAllocation() {
+        return resourceSetPartition.getAllocation();
+    }
 
 //BRG
 //	public void setAllocation(Allocation allocation) {
 //		this.allocation = allocation;
 //	}
 
-	public List<Repository> getRepositories() {
-		return resourceSetPartition.getRepositories();
-	}
+    public List<Repository> getRepositories() {
+        return resourceSetPartition.getRepositories();
+    }
 
 //	public void setRepository(Repository repository) {
 //		this.repository = repository;
 //	}
 
-	public ResourceEnvironment getResourceEnvironment() {
-		return resourceSetPartition.getResourceEnvironment();
-	}
+    public ResourceEnvironment getResourceEnvironment() {
+        return resourceSetPartition.getResourceEnvironment();
+    }
 
 //	public void setResourceEnvironment(ResourceEnvironment resourceEnvironment) {
 //		this.resourceEnvironment = resourceEnvironment;
 //	}
 
-	public ResourceRepository getResourceRepository() {
-		return resourceSetPartition.getResourceTypeRepository();
-	}
+    public ResourceRepository getResourceRepository() {
+        return resourceSetPartition.getResourceTypeRepository();
+    }
 
 //	public void setResourceRepository(ResourceRepository resourceRepository) {
 //		this.resourceRepository = resourceRepository;
 //	}
 
-	public org.palladiosimulator.pcm.system.System getSystem() {
-		return resourceSetPartition.getSystem();
-	}
+    public org.palladiosimulator.pcm.system.System getSystem() {
+        return resourceSetPartition.getSystem();
+    }
 
 //	public void setSystem(org.palladiosimulator.pcm.system.System system) {
 //		this.system = system;
 //	}
 
-	public UsageModel getUsageModel() {
-		return resourceSetPartition.getUsageModel();
-	}
+    public UsageModel getUsageModel() {
+        return resourceSetPartition.getUsageModel();
+    }
 
 //	public void setUsageModel(UsageModel usageModel) {
 //		this.usageModel = usageModel;
 //	}
 
-	public ComputedAllocation getComputedAllocation() {
-		return actualAllocation;
-	}
+    public ComputedAllocation getComputedAllocation() {
+        return actualAllocation;
+    }
 
 //	public void setComputedAllocation(ComputedAllocation actualAllocation) {
 //		this.actualAllocation = actualAllocation;
 //	}
 
-	public ComputedUsage getComputedUsage() {
-		return computedUsage;
-	}
+    public ComputedUsage getComputedUsage() {
+        return computedUsage;
+    }
 
 //	public void setComputedUsage(ComputedUsage usage) {
 //		this.usage = usage;
 //	}
 
-	//BRG
+    // BRG
 //	private void loadFromFiles(Properties config) {
 //		String filename = config.getProperty("Filename_Allocation");
 //		this.allocation = ((Allocation) loadFromXMIFile(filename));
@@ -202,24 +196,23 @@ public class PCMInstance {
 //		this.usageModel = ((UsageModel) loadFromXMIFile(filename));
 //	}
 
-	public void saveToFiles(String fileNamePrefix) {
-		fileNamePrefix = storagePath + "\\" + fileNamePrefix;
-		saveToXMIFile(getAllocation(), fileNamePrefix + ".allocation");
-		List<Repository> repositories = getRepositories();
-		for (Repository repository : repositories) {
-			saveToXMIFile(repository, fileNamePrefix + ".repository");
-		}
-		saveToXMIFile(getResourceEnvironment(), fileNamePrefix
-				+ ".resourceenvironment");
-		saveToXMIFile(getResourceRepository(), fileNamePrefix + ".resourcetype");
-		saveToXMIFile(getSystem(), fileNamePrefix + ".system");
-		saveToXMIFile(getUsageModel(), fileNamePrefix + ".usagemodel");
+    public void saveToFiles(String fileNamePrefix) {
+        fileNamePrefix = storagePath + "\\" + fileNamePrefix;
+        saveToXMIFile(getAllocation(), fileNamePrefix + ".allocation");
+        List<Repository> repositories = getRepositories();
+        for (Repository repository : repositories) {
+            saveToXMIFile(repository, fileNamePrefix + ".repository");
+        }
+        saveToXMIFile(getResourceEnvironment(), fileNamePrefix + ".resourceenvironment");
+        saveToXMIFile(getResourceRepository(), fileNamePrefix + ".resourcetype");
+        saveToXMIFile(getSystem(), fileNamePrefix + ".system");
+        saveToXMIFile(getUsageModel(), fileNamePrefix + ".usagemodel");
 
-		saveToXMIFile(computedUsage, fileNamePrefix + ".usage");
-		saveToXMIFile(actualAllocation, fileNamePrefix + ".actualallocation");
+        saveToXMIFile(computedUsage, fileNamePrefix + ".usage");
+        saveToXMIFile(actualAllocation, fileNamePrefix + ".actualallocation");
 
-	}
-	
+    }
+
 //	public void saveComputedContextToFiles(String fileNamePrefix) {
 //		
 //		saveToXMIFile(computedUsage, fileNamePrefix + ".usage");
@@ -227,7 +220,7 @@ public class PCMInstance {
 //
 //	}
 
-	//BRG
+    // BRG
 //	private EObject loadFromXMIFile(String fileName) {
 //		// Create a resource set to hold the resources.
 //		ResourceSet resourceSet = new ResourceSetImpl();
@@ -278,10 +271,10 @@ public class PCMInstance {
 //		return EcoreUtil.getRootContainer(eObject);
 //	}
 
-	public void saveToXMIFile(EObject modelToSave, String fileName) {
-		EMFHelper.saveToXMIFile(modelToSave, fileName);
-	}
-	
+    public void saveToXMIFile(EObject modelToSave, String fileName) {
+        EMFHelper.saveToXMIFile(modelToSave, fileName);
+    }
+
 //BRG
 //	private void registerPackages(ResourceSet resourceSet) {
 //
@@ -305,65 +298,72 @@ public class PCMInstance {
 //
 //	}
 
-	public boolean isValid(){
-		if (getAllocation() == null ||
-			getRepositories().size() == 0 ||
-			getResourceEnvironment() == null ||
-			getResourceRepository() == null ||
-			getSystem() == null ||
-			computedUsage == null){
-			return false;
-		} else return true;
-			
-	}
-	
-	/**
-	 * Get the used ResourceContainers. These are all resource containers that are references from ComputedAllocationContexts inside the ComputedAllocation.
-	 * 
-	 * If the ComputedAllocation has not yet been calculated, this method returns all resource containers.
-	 * 
-	 * @return A set of all used resource containers. Each container is just contained once.
-	 */
-	public Set<ResourceContainer> getUsedResourceContainer() {
-		//The maximal size of this list is the number of resource containers in the resource environment.
-		Set<ResourceContainer> usedRCList = new HashSet<ResourceContainer>(this.getResourceEnvironment().getResourceContainer_ResourceEnvironment().size());
-		
-		//Check whether the ComputedAllocation has been determined already. If not, return all ResourceContainers.
-		if (this.actualAllocation != null && this.actualAllocation.getComputedAllocationContexts_ComputedAllocation().size() != 0){
-			List<ComputedAllocationContext> computedAllocationContextList = this.actualAllocation.getComputedAllocationContexts_ComputedAllocation();
-			for (ComputedAllocationContext cac : computedAllocationContextList) {
-				ResourceContainer rc = cac.getAllocationContext_ComputedAllocationContext().getResourceContainer_AllocationContext();
-				if (!usedRCList.contains(rc)){
-					usedRCList.add(rc);
-				}
+    public boolean isValid() {
+        if (getAllocation() == null || getRepositories().size() == 0 || getResourceEnvironment() == null
+                || getResourceRepository() == null || getSystem() == null || computedUsage == null) {
+            return false;
+        }
+        return true;
+    }
 
-			}
-		} else {
-			//return all resource containers
-			usedRCList.addAll(this.getResourceEnvironment().getResourceContainer_ResourceEnvironment());
-		}
-		return usedRCList;
-	}
+    /**
+     * Get the used ResourceContainers. These are all resource containers that are references from
+     * ComputedAllocationContexts inside the ComputedAllocation.
+     * 
+     * If the ComputedAllocation has not yet been calculated, this method returns all resource
+     * containers.
+     * 
+     * @return A set of all used resource containers. Each container is just contained once.
+     */
+    public Set<ResourceContainer> getUsedResourceContainer() {
+        // The maximal size of this list is the number of resource containers in the resource
+        // environment.
+        Set<ResourceContainer> usedRCList = new HashSet<>(this.getResourceEnvironment()
+            .getResourceContainer_ResourceEnvironment()
+            .size());
 
-	/**
-	 * @return the computedAggregatedUsage
-	 */
-	public ComputedAggregatedUsage getComputedAggregatedUsage() {
-		return computedAggregatedUsage;
-	}
+        // Check whether the ComputedAllocation has been determined already. If not, return all
+        // ResourceContainers.
+        if (this.actualAllocation != null && this.actualAllocation.getComputedAllocationContexts_ComputedAllocation()
+            .size() != 0) {
+            List<ComputedAllocationContext> computedAllocationContextList = this.actualAllocation
+                .getComputedAllocationContexts_ComputedAllocation();
+            for (ComputedAllocationContext cac : computedAllocationContextList) {
+                ResourceContainer rc = cac.getAllocationContext_ComputedAllocationContext()
+                    .getResourceContainer_AllocationContext();
+                if (!usedRCList.contains(rc)) {
+                    usedRCList.add(rc);
+                }
 
-	public void setComputedContexts(ComputedAllocation computedAllocation,
-			ComputedUsage computedUsage,
-			ComputedAggregatedUsage aggregatedUsage) {
-		this.computedUsage = computedUsage;
-		this.actualAllocation = computedAllocation;
-		this.computedAggregatedUsage = aggregatedUsage;
-		
-	}
-	
-	public void resetComputedContexts(){
-		this.computedUsage = ComputedUsageFactory.eINSTANCE.createComputedUsage();;
-		this.actualAllocation = ComputedAllocationFactory.eINSTANCE.createComputedAllocation();
-		this.computedAggregatedUsage = AggregatedUsageContextFactory.eINSTANCE.createComputedAggregatedUsage();;
-	}
+            }
+        } else {
+            // return all resource containers
+            usedRCList.addAll(this.getResourceEnvironment()
+                .getResourceContainer_ResourceEnvironment());
+        }
+        return usedRCList;
+    }
+
+    /**
+     * @return the computedAggregatedUsage
+     */
+    public ComputedAggregatedUsage getComputedAggregatedUsage() {
+        return computedAggregatedUsage;
+    }
+
+    public void setComputedContexts(ComputedAllocation computedAllocation, ComputedUsage computedUsage,
+            ComputedAggregatedUsage aggregatedUsage) {
+        this.computedUsage = computedUsage;
+        this.actualAllocation = computedAllocation;
+        this.computedAggregatedUsage = aggregatedUsage;
+
+    }
+
+    public void resetComputedContexts() {
+        this.computedUsage = ComputedUsageFactory.eINSTANCE.createComputedUsage();
+        ;
+        this.actualAllocation = ComputedAllocationFactory.eINSTANCE.createComputedAllocation();
+        this.computedAggregatedUsage = AggregatedUsageContextFactory.eINSTANCE.createComputedAggregatedUsage();
+        ;
+    }
 }

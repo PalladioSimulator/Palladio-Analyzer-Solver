@@ -55,7 +55,7 @@ import org.palladiosimulator.solver.context.computed_usage.ExternalCallInput;
 import org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput;
 import org.palladiosimulator.solver.context.computed_usage.Input;
 import org.palladiosimulator.solver.context.computed_usage.LoopIteration;
-import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.core.models.PCMInstance;
 import org.palladiosimulator.solver.utils.ManagedPMFParser;
 import org.palladiosimulator.solver.utils.StringNotPMFException;
 import org.palladiosimulator.solver.visitors.ExpressionHelper;
