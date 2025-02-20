@@ -1,4 +1,4 @@
-package org.palladiosimulator.solver.visitors;
+package org.palladiosimulator.solver.core.visitors;
 
 import java.io.NotSerializableException;
 import java.text.ParseException;
@@ -13,8 +13,8 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
 import org.palladiosimulator.pcm.stoex.api.StoExParser;
 import org.palladiosimulator.pcm.stoex.api.StoExSerialiser;
-import org.palladiosimulator.solver.transformations.ContextWrapper;
-import org.palladiosimulator.solver.transformations.ExpressionToPDFWrapper;
+import org.palladiosimulator.solver.core.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.transformations.ExpressionToPDFWrapper;
 
 import de.uka.ipd.sdq.probfunction.ProbabilityMassFunction;
 import de.uka.ipd.sdq.probfunction.ProbfunctionFactory;
@@ -24,25 +24,25 @@ import de.uka.ipd.sdq.stoex.analyser.visitors.ExpressionInferTypeVisitor;
 import de.uka.ipd.sdq.stoex.analyser.visitors.TypeEnum;
 
 public class ExpressionHelper {
-	
-	private static final Logger LOGGER = Logger.getLogger(ExpressionHelper.class.getName());
-	private static final StoExParser STOEX_PARSER = StoExParser.createInstance();
-	private static final StoExSerialiser STOEX_SERIALISER = StoExSerialiser.createInstance();
-	
-	/**
-	 * @param specification
-	 */
-	public static Expression parseToExpression(String specification) {
-		Expression expression = null;
-		try {
-			expression = STOEX_PARSER.parse(specification);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return expression;
-	}
-	
+
+    private static final Logger LOGGER = Logger.getLogger(ExpressionHelper.class.getName());
+    private static final StoExParser STOEX_PARSER = StoExParser.createInstance();
+    private static final StoExSerialiser STOEX_SERIALISER = StoExSerialiser.createInstance();
+
+    /**
+     * @param specification
+     */
+    public static Expression parseToExpression(String specification) {
+        Expression expression = null;
+        try {
+            expression = STOEX_PARSER.parse(specification);
+        } catch (ParseException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return expression;
+    }
+
     public static String getSolvedExpressionAsString(String specification, ContextWrapper ctxWrp) {
         Expression solvedExpression = getSolvedExpression(specification, ctxWrp);
         try {
@@ -99,14 +99,14 @@ public class ExpressionHelper {
         pmf.getSamples()
             .addAll(typedSamples);
     }
-    
+
     protected static boolean allSamplesHaveBooleanStringLiterals(Collection<Sample<Object>> samples) {
         return samples.stream()
             .map(Sample::getValue)
             .collect(Collectors.toSet())
             .equals(Set.of("true", "false"));
     }
-    
+
     protected static boolean allSamplesHaveSameValueType(Collection<Sample<Object>> samples) {
         return samples.stream()
             .map(Sample::getValue)
@@ -146,61 +146,60 @@ public class ExpressionHelper {
         throw new IllegalArgumentException("Value type contained in sample is not supported.");
     }
 
-    public static Expression getSolvedExpression(String specification,
-			ContextWrapper ctxWrp) {
-		Expression expr = parseToExpression(specification);
-		return getSolvedExpression(expr, ctxWrp);
-	}
-	
-	public static Expression getSolvedExpression(Expression expr, ContextWrapper ctxWrp) {
-		ExpressionInferTypeVisitor inferTypeVisitor = new ExpressionInferTypeVisitor();
-		
-		try {
-			
-			inferTypeVisitor.doSwitch(expr);
-			
-		} catch (UnsupportedOperationException e) {
-			// might be thrown if the inferred types are not compatible. However, sometimes variables are 
-			// interpreted to strictly (e.g. characterization VALUE is assumed to be ANY_PMF), but maybe they
-			// actually are of a type that is easier to handle.
+    public static Expression getSolvedExpression(String specification, ContextWrapper ctxWrp) {
+        Expression expr = parseToExpression(specification);
+        return getSolvedExpression(expr, ctxWrp);
+    }
+
+    public static Expression getSolvedExpression(Expression expr, ContextWrapper ctxWrp) {
+        ExpressionInferTypeVisitor inferTypeVisitor = new ExpressionInferTypeVisitor();
+
+        try {
+
+            inferTypeVisitor.doSwitch(expr);
+
+        } catch (UnsupportedOperationException e) {
+            // might be thrown if the inferred types are not compatible. However, sometimes
+            // variables are
+            // interpreted to strictly (e.g. characterization VALUE is assumed to be ANY_PMF), but
+            // maybe they
+            // actually are of a type that is easier to handle.
             LOGGER.error("Infering the type failed with an " + e.getClass()
                 .getName() + ". I will try to ignore this and continue. Details:\n" + e.getMessage() + "\n"
                     + Arrays.toString(e.getStackTrace()));
 
-			e.printStackTrace();
-			
-		}
+            e.printStackTrace();
 
-		HashMap<Expression, TypeEnum> typeAnnotation = inferTypeVisitor
-				.getTypeAnnotation();
+        }
 
-		ExpressionParameterSolverVisitor solveVisitor = new ExpressionParameterSolverVisitor(
-				typeAnnotation, ctxWrp);
-		
-		return (Expression) solveVisitor.doSwitch(expr);
-	}
-	
-	public static HashMap<Expression, TypeEnum> getTypeAnnotation(Expression expr) {
-		ExpressionInferTypeVisitor inferTypeVisitor = 
-			new ExpressionInferTypeVisitor();
-		inferTypeVisitor.doSwitch(expr);
-		return inferTypeVisitor.getTypeAnnotation();
-	}
+        HashMap<Expression, TypeEnum> typeAnnotation = inferTypeVisitor.getTypeAnnotation();
 
-	/**
-	 * calculated the mean value for a solved expression
-	 * @param expression
-	 * @return
-	 * @throws IllegalArgumentException if the passed expression has not been solved before. 
-	 */
-	public static double meanValue(Expression expression) throws IllegalArgumentException {
-		ExpressionToPDFWrapper wrapper = ExpressionToPDFWrapper.createExpressionToPDFWrapper(expression);
-		return wrapper.getMeanValue();
-	}
-	
-	
-	public static double getMeanValue(PCMRandomVariable variable) {
-		ExpressionToPDFWrapper expToPDF = ExpressionToPDFWrapper.createExpressionToPDFWrapper(variable.getExpression());
-		return expToPDF.getMeanValue();
-	}
+        ExpressionParameterSolverVisitor solveVisitor = new ExpressionParameterSolverVisitor(typeAnnotation, ctxWrp);
+
+        return (Expression) solveVisitor.doSwitch(expr);
+    }
+
+    public static HashMap<Expression, TypeEnum> getTypeAnnotation(Expression expr) {
+        ExpressionInferTypeVisitor inferTypeVisitor = new ExpressionInferTypeVisitor();
+        inferTypeVisitor.doSwitch(expr);
+        return inferTypeVisitor.getTypeAnnotation();
+    }
+
+    /**
+     * calculated the mean value for a solved expression
+     * 
+     * @param expression
+     * @return
+     * @throws IllegalArgumentException
+     *             if the passed expression has not been solved before.
+     */
+    public static double meanValue(Expression expression) throws IllegalArgumentException {
+        ExpressionToPDFWrapper wrapper = ExpressionToPDFWrapper.createExpressionToPDFWrapper(expression);
+        return wrapper.getMeanValue();
+    }
+
+    public static double getMeanValue(PCMRandomVariable variable) {
+        ExpressionToPDFWrapper expToPDF = ExpressionToPDFWrapper.createExpressionToPDFWrapper(variable.getExpression());
+        return expToPDF.getMeanValue();
+    }
 }

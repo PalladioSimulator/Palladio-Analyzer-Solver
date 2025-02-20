@@ -1,8 +1,8 @@
-package org.palladiosimulator.solver.handler;
+package org.palladiosimulator.solver.core.handler;
 
 import org.palladiosimulator.pcm.seff.seff_reliability.RecoveryAction;
 import org.palladiosimulator.pcm.seff.seff_reliability.RecoveryActionBehaviour;
-import org.palladiosimulator.solver.visitors.SeffVisitor;
+import org.palladiosimulator.solver.core.visitors.SeffVisitor;
 
 public class RecoveryBlockActionHandler {
 	private SeffVisitor visitor;

@@ -1,4 +1,4 @@
-package org.palladiosimulator.solver.handler;
+package org.palladiosimulator.solver.core.handler;
 
 import org.apache.log4j.Logger;
 import org.palladiosimulator.pcm.seff.AbstractBranchTransition;
@@ -6,7 +6,7 @@ import org.palladiosimulator.pcm.seff.ResourceDemandingBehaviour;
 
 import org.palladiosimulator.solver.context.computed_usage.BranchProbability;
 import org.palladiosimulator.solver.context.computed_usage.ComputedUsageFactory;
-import org.palladiosimulator.solver.visitors.SeffVisitor;
+import org.palladiosimulator.solver.core.visitors.SeffVisitor;
 
 public abstract class AbstractBranchTransitionHandler {
 

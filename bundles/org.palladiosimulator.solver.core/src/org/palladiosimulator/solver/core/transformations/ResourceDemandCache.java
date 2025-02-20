@@ -1,4 +1,4 @@
-package org.palladiosimulator.solver.transformations;
+package org.palladiosimulator.solver.core.transformations;
 
 import java.util.HashMap;
 

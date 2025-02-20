@@ -16,10 +16,10 @@ import org.apache.log4j.PatternLayout;
 import org.eclipse.debug.core.ILaunchConfiguration;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 import org.palladiosimulator.solver.core.models.PCMInstance;
+import org.palladiosimulator.solver.core.visitors.UsageModelVisitor;
 import org.palladiosimulator.solver.spa.expression.Expression;
 import org.palladiosimulator.solver.transformations.pcm2regex.ExpressionPrinter;
 import org.palladiosimulator.solver.transformations.pcm2regex.TransformUsageModelVisitor;
-import org.palladiosimulator.solver.visitors.UsageModelVisitor;
 import org.palladiosimulator.solver.visualisation.JFVisualisation;
 
 import de.uka.ipd.sdq.probfunction.math.IProbabilityDensityFunction;

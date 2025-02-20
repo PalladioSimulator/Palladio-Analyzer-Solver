@@ -20,13 +20,13 @@ import org.palladiosimulator.pcm.usagemodel.Start;
 import org.palladiosimulator.pcm.usagemodel.Stop;
 import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
 import org.palladiosimulator.solver.core.models.PCMInstance;
+import org.palladiosimulator.solver.core.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.visitors.EMFQueryHelper;
 import org.palladiosimulator.solver.spa.expression.Expression;
 import org.palladiosimulator.solver.spa.expression.ExpressionFactory;
 import org.palladiosimulator.solver.spa.expression.Option;
 import org.palladiosimulator.solver.spa.expression.Sequence;
 import org.palladiosimulator.solver.spa.expression.Symbol;
-import org.palladiosimulator.solver.transformations.ContextWrapper;
-import org.palladiosimulator.solver.visitors.EMFQueryHelper;
 
 import de.uka.ipd.sdq.probfunction.math.IProbabilityFunctionFactory;
 import de.uka.ipd.sdq.stoex.RandomVariable;

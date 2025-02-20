@@ -1,4 +1,4 @@
-package org.palladiosimulator.solver.visitors;
+package org.palladiosimulator.solver.core.visitors;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -18,7 +18,7 @@ import org.palladiosimulator.solver.context.computed_usage.ExternalCallInput;
 import org.palladiosimulator.solver.context.computed_usage.ExternalCallOutput;
 import org.palladiosimulator.solver.context.computed_usage.Input;
 import org.palladiosimulator.solver.context.computed_usage.Output;
-import org.palladiosimulator.solver.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.transformations.ContextWrapper;
 
 import de.uka.ipd.sdq.stoex.AbstractNamedReference;
 import de.uka.ipd.sdq.stoex.NamespaceReference;

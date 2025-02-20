@@ -1,4 +1,4 @@
-package org.palladiosimulator.solver.utils;
+package org.palladiosimulator.solver.core.utils;
 
 import java.text.ParseException;
 

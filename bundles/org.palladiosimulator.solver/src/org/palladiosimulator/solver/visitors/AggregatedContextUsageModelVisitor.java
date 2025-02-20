@@ -13,7 +13,10 @@ import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour;
 import org.palladiosimulator.pcm.usagemodel.UsageModel;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 import org.palladiosimulator.solver.core.models.PCMInstance;
-import org.palladiosimulator.solver.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.visitors.ExpressionHelper;
+import org.palladiosimulator.solver.core.visitors.SeffVisitor;
+import org.palladiosimulator.solver.core.visitors.UsageModelVisitor;
 
 /**
  * Visitor that builds up the context model including the aggregated usage context. 

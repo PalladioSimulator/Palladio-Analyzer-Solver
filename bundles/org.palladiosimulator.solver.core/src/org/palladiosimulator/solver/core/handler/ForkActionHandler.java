@@ -1,9 +1,9 @@
-package org.palladiosimulator.solver.handler;
+package org.palladiosimulator.solver.core.handler;
 
 import org.palladiosimulator.pcm.seff.ForkAction;
 import org.palladiosimulator.pcm.seff.ForkedBehaviour;
 import org.palladiosimulator.pcm.seff.SynchronisationPoint;
-import org.palladiosimulator.solver.visitors.SeffVisitor;
+import org.palladiosimulator.solver.core.visitors.SeffVisitor;
 
 public class ForkActionHandler {
 	private SeffVisitor visitor;

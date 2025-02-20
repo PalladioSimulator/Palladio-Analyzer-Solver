@@ -1,10 +1,10 @@
-package org.palladiosimulator.solver.handler;
+package org.palladiosimulator.solver.core.handler;
 
 import org.eclipse.emf.common.util.EList;
 import org.palladiosimulator.pcm.parameter.VariableUsage;
 import org.palladiosimulator.pcm.seff.SetVariableAction;
-import org.palladiosimulator.solver.visitors.SeffVisitor;
-import org.palladiosimulator.solver.visitors.VariableUsageHelper;
+import org.palladiosimulator.solver.core.visitors.SeffVisitor;
+import org.palladiosimulator.solver.core.visitors.VariableUsageHelper;
 
 public class SetVariableActionHandler {
 

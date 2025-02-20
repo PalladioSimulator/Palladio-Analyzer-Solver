@@ -1,12 +1,12 @@
 /**
  * 
  */
-package org.palladiosimulator.solver.handler;
+package org.palladiosimulator.solver.core.handler;
 
 import org.apache.log4j.Logger;
 import org.palladiosimulator.pcm.seff.LoopAction;
-import org.palladiosimulator.solver.visitors.ExpressionHelper;
-import org.palladiosimulator.solver.visitors.SeffVisitor;
+import org.palladiosimulator.solver.core.visitors.ExpressionHelper;
+import org.palladiosimulator.solver.core.visitors.SeffVisitor;
 
 /**
  * @author Koziolek

@@ -1,11 +1,11 @@
-package org.palladiosimulator.solver.transformations;
+package org.palladiosimulator.solver.core.transformations;
 
 import org.apache.log4j.Logger;
 import org.palladiosimulator.pcm.core.CoreFactory;
 import org.palladiosimulator.pcm.core.PCMRandomVariable;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 import org.palladiosimulator.pcm.stoex.api.StoExSerialiser;
-import org.palladiosimulator.solver.visitors.ExpressionHelper;
+import org.palladiosimulator.solver.core.visitors.ExpressionHelper;
 
 import de.uka.ipd.sdq.probfunction.ProbabilityDensityFunction;
 import de.uka.ipd.sdq.probfunction.ProbabilityFunction;

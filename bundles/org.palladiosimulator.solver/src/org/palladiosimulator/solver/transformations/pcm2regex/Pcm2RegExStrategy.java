@@ -8,10 +8,10 @@ import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 import org.palladiosimulator.solver.core.models.PCMInstance;
 import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.core.transformations.EMFHelper;
+import org.palladiosimulator.solver.core.visitors.UsageModelVisitor;
 import org.palladiosimulator.solver.exprsolver.ExpressionSolver;
 import org.palladiosimulator.solver.spa.expression.Expression;
 import org.palladiosimulator.solver.transformations.SolverStrategy;
-import org.palladiosimulator.solver.visitors.UsageModelVisitor;
 import org.palladiosimulator.solver.visualisation.JFVisualisation;
 
 import de.uka.ipd.sdq.probfunction.math.IProbabilityDensityFunction;

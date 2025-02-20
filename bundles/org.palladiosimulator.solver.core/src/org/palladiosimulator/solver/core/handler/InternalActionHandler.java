@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.palladiosimulator.solver.handler;
+package org.palladiosimulator.solver.core.handler;
 
 import java.util.Iterator;
 
@@ -18,8 +18,8 @@ import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
 
 import org.palladiosimulator.solver.context.computed_allocation.ComputedAllocationFactory;
 import org.palladiosimulator.solver.context.computed_allocation.ResourceDemand;
-import org.palladiosimulator.solver.visitors.ExpressionHelper;
-import org.palladiosimulator.solver.visitors.SeffVisitor;
+import org.palladiosimulator.solver.core.visitors.ExpressionHelper;
+import org.palladiosimulator.solver.core.visitors.SeffVisitor;
 
 import de.uka.ipd.sdq.stoex.Expression;
 

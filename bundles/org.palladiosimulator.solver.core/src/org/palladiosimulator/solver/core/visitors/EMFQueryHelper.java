@@ -1,4 +1,4 @@
-package org.palladiosimulator.solver.visitors;
+package org.palladiosimulator.solver.core.visitors;
 
 import java.util.Iterator;
 
