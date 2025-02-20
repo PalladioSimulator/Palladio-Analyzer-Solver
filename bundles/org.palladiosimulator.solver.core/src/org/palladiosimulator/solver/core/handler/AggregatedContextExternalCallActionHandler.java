@@ -1,13 +1,12 @@
-package org.palladiosimulator.solver.handler;
+package org.palladiosimulator.solver.core.handler;
 
 import org.palladiosimulator.pcm.allocation.AllocationContext;
 import org.palladiosimulator.pcm.core.composition.AssemblyContext;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
-import org.palladiosimulator.solver.core.handler.ExternalCallActionHandler;
 import org.palladiosimulator.solver.core.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.visitors.AggregatedContextSEFFVisitor;
 import org.palladiosimulator.solver.core.visitors.SeffVisitor;
-import org.palladiosimulator.solver.visitors.AggregatedContextSEFFVisitor;
 
 /**
  * Extends the {@link ExternalCallActionHandler} by overwriting
