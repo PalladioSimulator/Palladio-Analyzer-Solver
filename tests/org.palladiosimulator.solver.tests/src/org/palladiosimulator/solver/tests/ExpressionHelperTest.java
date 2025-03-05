@@ -9,7 +9,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
-import org.palladiosimulator.solver.visitors.ExpressionHelper;
+import org.palladiosimulator.solver.core.visitors.ExpressionHelper;
 
 import de.uka.ipd.sdq.probfunction.BoolSample;
 import de.uka.ipd.sdq.probfunction.DoubleSample;

@@ -22,8 +22,8 @@ import org.palladiosimulator.pcm.seff.StartAction;
 import org.palladiosimulator.pcm.usagemodel.EntryLevelSystemCall;
 import org.palladiosimulator.pcm.usagemodel.Loop;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
-import org.palladiosimulator.solver.transformations.ContextWrapper;
-import org.palladiosimulator.solver.visitors.EMFQueryHelper;
+import org.palladiosimulator.solver.core.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.visitors.EMFQueryHelper;
 
 import de.uka.ipd.sdq.identifier.Identifier;
 

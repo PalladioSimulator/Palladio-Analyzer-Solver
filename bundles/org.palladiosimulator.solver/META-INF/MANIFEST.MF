@@ -32,7 +32,8 @@ Require-Bundle: org.eclipse.ui,
  de.uka.ipd.sdq.workflow.mdsd,
  org.palladiosimulator.analyzer.workflow,
  org.palladiosimulator.analyzer.accuracy;bundle-version="1.0.0",
- org.apache.commons.math;bundle-version="2.1.0"
+ org.apache.commons.math;bundle-version="2.1.0",
+ org.palladiosimulator.solver.core;bundle-version="5.2.1";visibility:=reexport
 Bundle-ActivationPolicy: lazy
 Export-Package: org.palladiosimulator.solver,
  org.palladiosimulator.solver.exprsolver,
@@ -42,8 +43,6 @@ Export-Package: org.palladiosimulator.solver,
  org.palladiosimulator.solver.transformations,
  org.palladiosimulator.solver.transformations.pcm2lqn,
  org.palladiosimulator.solver.transformations.pcm2regex,
- org.palladiosimulator.solver.utils,
- org.palladiosimulator.solver.visitors,
  org.palladiosimulator.solver.visualisation
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: sdq.ipd.uka.de

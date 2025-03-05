@@ -12,6 +12,7 @@
 	<packaging>pom</packaging>
 	
 	<modules>
+		<module>org.palladiosimulator.solver.core</module>
 		<module>org.palladiosimulator.solver</module>
 		<module>org.palladiosimulator.solver.context</module>
 		<module>org.palladiosimulator.solver.context.edit</module>

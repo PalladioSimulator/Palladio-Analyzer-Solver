@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
-import org.palladiosimulator.solver.Pair;
+import org.palladiosimulator.solver.core.Pair;
 import org.palladiosimulator.solver.lqn.DocumentRoot;
 import org.palladiosimulator.solver.lqn.LqnFactory;
 import org.palladiosimulator.solver.lqn.LqnModelType;

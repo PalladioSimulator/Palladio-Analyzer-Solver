@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.commons.math.complex.Complex;
 import org.apache.log4j.Logger;
+import org.palladiosimulator.solver.core.visitors.ExpressionHelper;
 import org.palladiosimulator.solver.spa.expression.Alternative;
 import org.palladiosimulator.solver.spa.expression.Expression;
 import org.palladiosimulator.solver.spa.expression.Loop;
@@ -26,7 +27,6 @@ import de.uka.ipd.sdq.probfunction.math.exception.FunctionsInDifferenDomainsExce
 import de.uka.ipd.sdq.probfunction.math.exception.IncompatibleUnitsException;
 import de.uka.ipd.sdq.probfunction.math.exception.UnknownPDFTypeException;
 import org.palladiosimulator.solver.spa.resourcemodel.ResourceUsage;
-import org.palladiosimulator.solver.visitors.ExpressionHelper;
 
 import de.uka.ipd.sdq.stoex.ProbabilityFunctionLiteral;
 

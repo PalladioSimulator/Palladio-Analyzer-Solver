@@ -23,14 +23,14 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.PlatformUI;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+import org.palladiosimulator.solver.core.models.PCMInstance;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.core.transformations.ContextWrapper;
+import org.palladiosimulator.solver.core.visitors.UsageModelVisitor;
 import org.palladiosimulator.solver.handler.LineServerHandler;
 import org.palladiosimulator.solver.handler.LineServerHandlerFactory;
-import org.palladiosimulator.solver.models.PCMInstance;
 import org.palladiosimulator.solver.runconfig.MessageStrings;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
-import org.palladiosimulator.solver.transformations.ContextWrapper;
 import org.palladiosimulator.solver.transformations.SolverStrategy;
-import org.palladiosimulator.solver.visitors.UsageModelVisitor;
 import org.palladiosimulator.solver.visualisation.LQNHtmlResultGenerator;
 import org.palladiosimulator.solver.visualisation.LQNResultEditorInput;
 

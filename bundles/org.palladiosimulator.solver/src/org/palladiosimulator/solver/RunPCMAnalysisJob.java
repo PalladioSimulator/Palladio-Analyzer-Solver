@@ -2,11 +2,11 @@ package org.palladiosimulator.solver;
 
 import org.apache.log4j.Logger;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.palladiosimulator.analyzer.workflow.blackboard.PCMResourceSetPartition;
-import org.palladiosimulator.analyzer.workflow.jobs.LoadPCMModelsIntoBlackboardJob;
-import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.analyzer.workflow.core.blackboard.PCMResourceSetPartition;
+import org.palladiosimulator.analyzer.workflow.core.jobs.LoadPCMModelsIntoBlackboardJob;
+import org.palladiosimulator.solver.core.models.PCMInstance;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.runconfig.MessageStrings;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.transformations.SolverStrategy;
 import org.palladiosimulator.solver.transformations.pcm2lqn.Pcm2LqnStrategy;
 import org.palladiosimulator.solver.transformations.pcm2regex.Pcm2RegExStrategy;
