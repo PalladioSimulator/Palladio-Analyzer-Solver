@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PCM Solver Plug-in
 Bundle-SymbolicName: org.palladiosimulator.solver;singleton:=true
-Bundle-Version: 5.2.1.qualifier
+Bundle-Version: 5.2.2
 Bundle-Activator: org.palladiosimulator.solver.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
@@ -31,10 +31,10 @@ Require-Bundle: org.eclipse.ui,
  de.uka.ipd.sdq.dialogs,
  de.uka.ipd.sdq.workflow.mdsd,
  org.palladiosimulator.analyzer.workflow,
- org.palladiosimulator.analyzer.accuracy;bundle-version="5.2.1",
- org.palladiosimulator.analyzer.accuracy.ui;bundle-version="5.2.1",
+ org.palladiosimulator.analyzer.accuracy;bundle-version="5.2.2",
+ org.palladiosimulator.analyzer.accuracy.ui;bundle-version="5.2.2",
  org.apache.commons.math;bundle-version="2.1.0",
- org.palladiosimulator.solver.core;bundle-version="5.2.1";visibility:=reexport
+ org.palladiosimulator.solver.core;bundle-version="5.2.2";visibility:=reexport
 Bundle-ActivationPolicy: lazy
 Export-Package: org.palladiosimulator.solver,
  org.palladiosimulator.solver.exprsolver,
