@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PCM Solver Core Plug-in
 Bundle-SymbolicName: org.palladiosimulator.solver.core
-Bundle-Version: 5.2.2
+Bundle-Version: 6.0.0.qualifier
 Export-Package: org.palladiosimulator.solver.core,
  org.palladiosimulator.solver.core.handler,
  org.palladiosimulator.solver.core.models,
