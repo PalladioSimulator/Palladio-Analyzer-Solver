@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.palladiosimulator.solver.context.editor;singleton:=true
-Bundle-Version: 5.2.2
+Bundle-Version: 6.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: org.palladiosimulator.solver.context.computed_usage.presentation.ContextEditorPlugin$Implementation
 Bundle-Vendor: %providerName
@@ -12,15 +12,15 @@ Export-Package: org.palladiosimulator.solver.context.aggregatedUsageContext.pres
  org.palladiosimulator.solver.context.computed_usage.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
- org.palladiosimulator.solver.context.edit;bundle-version="2.0.0";visibility:=reexport,
+ org.palladiosimulator.solver.context.edit;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.eclipse.emf.edit.ui;visibility:=reexport,
  org.eclipse.ui.ide;visibility:=reexport,
- de.uka.ipd.sdq.identifier.edit;bundle-version="2.1.0";visibility:=reexport,
- org.palladiosimulator.pcm.edit;bundle-version="3.6.0";visibility:=reexport,
- de.uka.ipd.sdq.probfunction.edit;bundle-version="2.1.0";visibility:=reexport,
- de.uka.ipd.sdq.stoex.edit;bundle-version="2.2.0";visibility:=reexport,
+ de.uka.ipd.sdq.identifier.edit;visibility:=reexport,
+ org.palladiosimulator.pcm.edit;visibility:=reexport,
+ de.uka.ipd.sdq.probfunction.edit;visibility:=reexport,
+ de.uka.ipd.sdq.stoex.edit;visibility:=reexport,
  de.uka.ipd.sdq.units.edit;visibility:=reexport,
- de.uka.ipd.sdq.units.editor;bundle-version="2.0.0"
+ de.uka.ipd.sdq.units.editor
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-17

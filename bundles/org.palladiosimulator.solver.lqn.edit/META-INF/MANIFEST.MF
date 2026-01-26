@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.palladiosimulator.solver.lqn.edit;singleton:=true
-Bundle-Version: 5.2.2
+Bundle-Version: 6.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: org.palladiosimulator.solver.lqn.provider.LqnEditPlugin$Implementation
 Bundle-Vendor: %providerName
@@ -11,6 +11,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: org.palladiosimulator.solver.lqn.provider
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.edit;visibility:=reexport,
- org.palladiosimulator.solver.lqn;bundle-version="2.0.0";visibility:=reexport
+ org.palladiosimulator.solver.lqn;visibility:=reexport
 Bundle-ActivationPolicy: lazy
 
