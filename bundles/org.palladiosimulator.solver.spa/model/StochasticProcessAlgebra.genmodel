@@ -5,7 +5,7 @@
     modelName="StochasticProcessAlgebra" modelPluginClass="" editPluginClass="org.palladiosimulator.solver.spa.provider.StochasticProcessAlgebraEditPlugin"
     editorPluginClass="org.palladiosimulator.solver.spa.presentation.StochasticProcessAlgebraEditorPlugin"
     codeFormatting="true" testSuiteClass="org.palladiosimulator.solver.spa.tests.StochasticProcessAlgebraAllTests"
-    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" editPluginID="org.palladiosimulator.solver.spa.edit"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" editPluginID="org.palladiosimulator.solver.spa.edit"
     editorPluginID="org.palladiosimulator.solver.spa.editor" usedGenPackages="platform:/plugin/de.uka.ipd.sdq.probfunction/model/ProbabilityFunction.genmodel#//probfunction ../../org.palladiosimulator.solver.spa.resourcemodel/model/ResourceModel.genmodel#//resourcemodel platform:/plugin/de.uka.ipd.sdq.units/model/Units.genmodel#//units"
     cleanup="true">
   <foreignModel>StochasticProcessAlgebra.ecore</foreignModel>
