@@ -45,5 +45,5 @@ Export-Package: org.palladiosimulator.solver,
  org.palladiosimulator.solver.transformations.pcm2lqn,
  org.palladiosimulator.solver.transformations.pcm2regex,
  org.palladiosimulator.solver.visualisation
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Bundle-Vendor: sdq.ipd.uka.de
