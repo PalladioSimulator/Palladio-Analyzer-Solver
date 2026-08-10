@@ -23,4 +23,4 @@ Require-Bundle: org.eclipse.core.runtime,
  de.uka.ipd.sdq.units.edit;visibility:=reexport,
  de.uka.ipd.sdq.units.editor
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
