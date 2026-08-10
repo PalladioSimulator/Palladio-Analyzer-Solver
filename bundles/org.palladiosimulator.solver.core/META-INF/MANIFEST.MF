@@ -11,7 +11,6 @@ Export-Package: org.palladiosimulator.solver.core,
  org.palladiosimulator.solver.core.utils,
  org.palladiosimulator.solver.core.visitors
 Require-Bundle: org.apache.log4j;bundle-version="1.2.19",
- org.eclipse.emf.query;bundle-version="1.7.0",
  org.eclipse.debug.core;bundle-version="3.20.0",
  org.palladiosimulator.pcm,
  de.uka.ipd.sdq.workflow.launchconfig.core,
