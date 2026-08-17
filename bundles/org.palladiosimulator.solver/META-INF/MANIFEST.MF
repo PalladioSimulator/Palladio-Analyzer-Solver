@@ -32,7 +32,7 @@ Require-Bundle: org.eclipse.ui,
  org.palladiosimulator.analyzer.workflow,
  org.palladiosimulator.analyzer.accuracy,
  org.palladiosimulator.analyzer.accuracy.ui,
- org.apache.commons.math;bundle-version="2.1.0",
+ org.apache.commons.math3,
  org.palladiosimulator.solver.core;visibility:=reexport
 Bundle-ActivationPolicy: lazy
 Export-Package: org.palladiosimulator.solver,
