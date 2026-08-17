@@ -3,7 +3,7 @@ package org.palladiosimulator.solver.exprsolver;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.math.complex.Complex;
+import org.apache.commons.math3.complex.Complex;
 import org.apache.log4j.Logger;
 import org.palladiosimulator.solver.core.visitors.ExpressionHelper;
 import org.palladiosimulator.solver.spa.expression.Alternative;

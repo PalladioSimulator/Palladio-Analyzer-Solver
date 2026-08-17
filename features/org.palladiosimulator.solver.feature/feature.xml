@@ -50,7 +50,7 @@ dependencies.
       <import plugin="de.uka.ipd.sdq.workflow.mdsd"/>
       <import plugin="org.palladiosimulator.analyzer.workflow"/>
       <import plugin="org.palladiosimulator.analyzer.accuracy"/>
-      <import plugin="org.apache.commons.math" version="2.1.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.math3"/>
       <import plugin="org.junit" version="4.11.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.common"/>
       <import plugin="org.eclipse.emf.common.ui"/>
